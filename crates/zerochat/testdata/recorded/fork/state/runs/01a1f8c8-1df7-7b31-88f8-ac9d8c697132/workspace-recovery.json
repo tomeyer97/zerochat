@@ -1,0 +1,145 @@
+{
+  "submission": {
+    "title": "unknown-model [fork]",
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "initialInput": {
+        "kind": "record",
+        "fields": {
+          "task": {
+            "type": {
+              "kind": "string"
+            },
+            "required": true
+          }
+        }
+      },
+      "policy": {
+        "policy": "policy.native-v2@1",
+        "default": "deny"
+      },
+      "root": {
+        "kind": "seq",
+        "name": "run",
+        "state": {
+          "kind": "record",
+          "fields": {
+            "task": {
+              "type": {
+                "kind": "string"
+              },
+              "required": true
+            }
+          }
+        },
+        "children": [
+          {
+            "kind": "step",
+            "name": "worker",
+            "worker": "builtin.agent.worker@1",
+            "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+            "input": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "output": {
+              "kind": "null"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "source": "state",
+                  "path": [
+                    "task"
+                  ]
+                }
+              }
+            ],
+            "writeBindings": [],
+            "attempts": 1
+          },
+          {
+            "kind": "choice",
+            "name": "worker_result",
+            "state": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "branches": [
+              {
+                "when": {
+                  "kind": "in",
+                  "value": {
+                    "name": "worker",
+                    "source": "error",
+                    "field": null
+                  },
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ]
+                },
+                "node": {
+                  "kind": "fail",
+                  "name": "worker_failed",
+                  "reason": "worker_failed"
+                }
+              }
+            ],
+            "otherwise": {
+              "kind": "succeed",
+              "name": "done",
+              "output": {
+                "kind": "null"
+              },
+              "bindings": []
+            },
+            "promotedStatePaths": []
+          }
+        ],
+        "promotedStatePaths": []
+      }
+    },
+    "initialInput": {
+      "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+    },
+    "runtime": {
+      "harness": "claude",
+      "provider": "anthropic",
+      "size": "small",
+      "nodes": {
+        "worker": {
+          "kind": "agent",
+          "model": "claude-haiku-9-9-does-not-exist",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        }
+      }
+    },
+    "submissionKey": "cli-6ecb5099f6a8f207e9e64c96b1270634"
+  },
+  "workspace": "/work/unknown-model",
+  "deliveryRunId": "01a1f8c8-1df7-7b31-88f8-ac9d8c697132"
+}

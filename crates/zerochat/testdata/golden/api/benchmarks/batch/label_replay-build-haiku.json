@@ -1,0 +1,154 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 30.0,
+        "capSteps": 24,
+        "capUsd": 2.0,
+        "costUsd": 2.0072363,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-160205-fb058c",
+        "score": 0.526785714,
+        "seed": 0,
+        "startedAt": 1793718125793,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 118,
+        "testsTotal": 224,
+        "wallS": 796.309708834,
+        "zeroshotRunId": "01a1a1ee-890c-7f32-b250-1f1a312860b8"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 30.0,
+        "capSteps": 24,
+        "capUsd": 2.0,
+        "costUsd": 1.6228733,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-160205-433564",
+        "score": 0.473214286,
+        "seed": 1,
+        "startedAt": 1793718125794,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 106,
+        "testsTotal": 224,
+        "wallS": 537.314718246,
+        "zeroshotRunId": "01a1a1ee-890c-7ea1-85ff-b8e1c35494aa"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.526785714,
+        "mean": 0.526785714,
+        "min": 0.526785714,
+        "n": 1
+      },
+      {
+        "key": "1",
+        "max": 0.473214286,
+        "mean": 0.473214286,
+        "min": 0.473214286,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793718843034,
+    "harnessVersion": "bb95881e",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "build",
+            "parallel": null
+          }
+        ],
+        "runs": 2,
+        "runtimeFile": null,
+        "runtimeMatches": false,
+        "source": "custom",
+        "variant": null
+      }
+    ],
+    "id": "label:replay-build-haiku",
+    "label": "replay-build-haiku",
+    "limits": {
+      "maxCostUsd": 2.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 30.0
+    },
+    "maxScore": 0.526785714,
+    "meanScore": 0.5,
+    "meanScoreFinished": 0.473214286,
+    "minScore": 0.473214286,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [
+      {
+        "base": "explore#1 (snapshot)",
+        "models": [
+          "claude-haiku-4-5"
+        ],
+        "node": "build#1",
+        "recordedModel": "claude-haiku-4-5",
+        "recordedScore": 0.526785714,
+        "runs": 2,
+        "sourceBatch": "label:clone-v1",
+        "sourceLabel": "clone-v1",
+        "sourceRun": "20261103-151748-ef96e3",
+        "sourceScore": 0.616071429,
+        "sourceTask": "tomnomnom__gron.88a6234",
+        "sourceZeroshotRunId": "01a1a1c5-fa55-7dd0-be80-efd5703a4356",
+        "sweepId": null,
+        "sweepLabel": null,
+        "through": null
+      }
+    ],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.526785714,
+        "mean": 0.5,
+        "min": 0.473214286,
+        "n": 2
+      }
+    ],
+    "seeds": [
+      0,
+      1
+    ],
+    "startLog": null,
+    "startedAt": 1793718125793,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 3.6301096,
+    "totalWallS": 1333.62442708,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

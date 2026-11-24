@@ -1,0 +1,26 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 12.0,
+    "costUsd": null,
+    "exitReason": "runner process died before finishing",
+    "failingTests": [],
+    "label": "replay-build-sonnet",
+    "nodeCosts": [],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": null,
+    "runId": "20261103-161534-90ca94",
+    "score": null,
+    "seed": 0,
+    "state": "interrupted",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": null,
+    "zeroshotRunId": null
+  },
+  "status": 200
+}

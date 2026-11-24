@@ -1,0 +1,599 @@
+[
+  [
+    "",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "#",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "#/",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "/",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "#//",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "#/?utm_source=x",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "#/run",
+    {
+      "kind": "home"
+    }
+  ],
+  [
+    "#/run/local",
+    {
+      "kind": "unknown",
+      "path": "run/local"
+    }
+  ],
+  [
+    "#/run/local/r1",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "run/local/r1",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#run/local/r1",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1?x=1",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/files",
+    {
+      "files": true,
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/files/extra",
+    {
+      "files": true,
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/2",
+    {
+      "kind": "run",
+      "node": "worker",
+      "round": 2,
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/2/attempt/3",
+    {
+      "attempt": 3,
+      "kind": "run",
+      "node": "worker",
+      "round": 2,
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/2/attempt/1",
+    {
+      "attempt": 1,
+      "kind": "run",
+      "node": "worker",
+      "round": 2,
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/0/attempt/0",
+    {
+      "attempt": 0,
+      "kind": "run",
+      "node": "worker",
+      "round": 0,
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/x/attempt/3",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/-1",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/1.5",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/2/attempt",
+    {
+      "kind": "run",
+      "node": "worker",
+      "round": 2,
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/exec/7",
+    {
+      "execution": 7,
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/exec/",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/exec/abc",
+    {
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/5",
+    {
+      "execution": 5,
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/05",
+    {
+      "execution": 5,
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/1e3",
+    {
+      "execution": 1000,
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/0x10",
+    {
+      "execution": 16,
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/ 5",
+    {
+      "execution": 5,
+      "kind": "run",
+      "node": "worker",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/local/r1/node/worker/round/2/../3",
+    {
+      "kind": "run",
+      "node": "worker",
+      "round": 2,
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run/a%2Fb/r%20id/node/n%23x",
+    {
+      "kind": "run",
+      "node": "n#x",
+      "run": "r id",
+      "target": "a/b"
+    }
+  ],
+  [
+    "#/run/a%2/r1",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "a%2"
+    }
+  ],
+  [
+    "#/run/%E0%A4%A/r1/node/%ZZ",
+    {
+      "kind": "run",
+      "node": "%ZZ",
+      "run": "r1",
+      "target": "%E0%A4%A"
+    }
+  ],
+  [
+    "#/run/local/r1/other/thing",
+    {
+      "kind": "run",
+      "run": "r1",
+      "target": "local"
+    }
+  ],
+  [
+    "#/run//r1",
+    {
+      "kind": "unknown",
+      "path": "run//r1"
+    }
+  ],
+  [
+    "#/run/local//node/x",
+    {
+      "kind": "run",
+      "run": "node",
+      "target": "local"
+    }
+  ],
+  [
+    "#/benchmarks",
+    {
+      "kind": "benchmarks"
+    }
+  ],
+  [
+    "#/benchmarks/",
+    {
+      "kind": "benchmarks"
+    }
+  ],
+  [
+    "#/benchmarks/batch",
+    {
+      "kind": "unknown",
+      "path": "benchmarks/batch"
+    }
+  ],
+  [
+    "#/benchmarks/batch/20261108-142204-d474ae",
+    {
+      "id": "20261108-142204-d474ae",
+      "kind": "benchmarksBatch"
+    }
+  ],
+  [
+    "#/benchmarks/batch/label%3Asmoke-haiku",
+    {
+      "id": "label:smoke-haiku",
+      "kind": "benchmarksBatch"
+    }
+  ],
+  [
+    "#/benchmarks/batch/a/b",
+    {
+      "id": "a",
+      "kind": "benchmarksBatch"
+    }
+  ],
+  [
+    "#/benchmarks/compare",
+    {
+      "a": "<undefined>",
+      "b": "<undefined>",
+      "kind": "benchmarksCompare"
+    }
+  ],
+  [
+    "#/benchmarks/compare?a=x&b=y",
+    {
+      "a": "x",
+      "b": "y",
+      "kind": "benchmarksCompare"
+    }
+  ],
+  [
+    "#/benchmarks/compare?a=&b=y",
+    {
+      "a": "",
+      "b": "y",
+      "kind": "benchmarksCompare"
+    }
+  ],
+  [
+    "#/benchmarks/compare?b=y&a=x&a=z",
+    {
+      "a": "x",
+      "b": "y",
+      "kind": "benchmarksCompare"
+    }
+  ],
+  [
+    "#/benchmarks/compare/extra?a=x",
+    {
+      "kind": "unknown",
+      "path": "benchmarks/compare/extra"
+    }
+  ],
+  [
+    "#/benchmarks/compare?a=x?b=y",
+    {
+      "a": "x",
+      "b": "<undefined>",
+      "kind": "benchmarksCompare"
+    }
+  ],
+  [
+    "#/benchmarks/start",
+    {
+      "kind": "benchmarksStart"
+    }
+  ],
+  [
+    "#/benchmarks/start?x=1",
+    {
+      "kind": "benchmarksStart"
+    }
+  ],
+  [
+    "#/benchmarks/start/now",
+    {
+      "kind": "unknown",
+      "path": "benchmarks/start/now"
+    }
+  ],
+  [
+    "#/benchmarks/sweeps",
+    {
+      "kind": "benchmarksSweeps"
+    }
+  ],
+  [
+    "#/benchmarks/sweeps/1",
+    {
+      "kind": "unknown",
+      "path": "benchmarks/sweeps/1"
+    }
+  ],
+  [
+    "#/benchmarks/sweep-report",
+    {
+      "budget": "<undefined>",
+      "ids": [],
+      "kind": "benchmarksSweepReport",
+      "label": "<undefined>",
+      "task": "<undefined>"
+    }
+  ],
+  [
+    "#/benchmarks/sweep-report?ids=a,b,%20c,,&label=L&task=t&budget=2.5",
+    {
+      "budget": "2.5",
+      "ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "kind": "benchmarksSweepReport",
+      "label": "L",
+      "task": "t"
+    }
+  ],
+  [
+    "#/benchmarks/sweep-report?ids=",
+    {
+      "budget": "<undefined>",
+      "ids": [],
+      "kind": "benchmarksSweepReport",
+      "label": "<undefined>",
+      "task": "<undefined>"
+    }
+  ],
+  [
+    "#/benchmarks/sweep-report?label=%E2%9C%93",
+    {
+      "budget": "<undefined>",
+      "ids": [],
+      "kind": "benchmarksSweepReport",
+      "label": "✓",
+      "task": "<undefined>"
+    }
+  ],
+  [
+    "#/benchmarks/unknown",
+    {
+      "kind": "unknown",
+      "path": "benchmarks/unknown"
+    }
+  ],
+  [
+    "#/features",
+    {
+      "kind": "features"
+    }
+  ],
+  [
+    "#/features/",
+    {
+      "kind": "features"
+    }
+  ],
+  [
+    "#/features/calc",
+    {
+      "kind": "feature",
+      "name": "calc"
+    }
+  ],
+  [
+    "#/features/calc/slice/04",
+    {
+      "kind": "feature",
+      "name": "calc",
+      "slice": "04"
+    }
+  ],
+  [
+    "#/features/calc/slice",
+    {
+      "kind": "unknown",
+      "path": "features/calc/slice"
+    }
+  ],
+  [
+    "#/features/calc/other/04",
+    {
+      "kind": "unknown",
+      "path": "features/calc/other/04"
+    }
+  ],
+  [
+    "#/features/calc/slice/04/x",
+    {
+      "kind": "unknown",
+      "path": "features/calc/slice/04/x"
+    }
+  ],
+  [
+    "#/features/a%20b/slice/c%2Fd",
+    {
+      "kind": "feature",
+      "name": "a b",
+      "slice": "c/d"
+    }
+  ],
+  [
+    "#/nope",
+    {
+      "kind": "unknown",
+      "path": "nope"
+    }
+  ],
+  [
+    "#/nope/deeper?q=1",
+    {
+      "kind": "unknown",
+      "path": "nope/deeper"
+    }
+  ],
+  [
+    "#/RUN/local/r1",
+    {
+      "kind": "unknown",
+      "path": "RUN/local/r1"
+    }
+  ]
+]

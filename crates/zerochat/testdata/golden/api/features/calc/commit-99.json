@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "commit_not_found",
+    "message": "This slice has no merged commit."
+  },
+  "status": 404
+}

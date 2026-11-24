@@ -1,0 +1,26 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 5.0,
+    "costUsd": 0.0,
+    "exitReason": "zeroshot exited 1 without a terminal event: {\"schema\":\"zeroshot.error/v1\",\"kind\":\"target\",\"code\":\"target.unavailable\",\"message\":\"local controller operation failed: controller exited before becoming ready: portable controller I/O failed: the bundled restic executable is unavailable; place restic beside zeroshot, on PATH, or name it with ZEROSHOT_RESTIC\",\"path\":null,\"node\":null,\"details\":{}}\n",
+    "failingTests": [],
+    "label": "haiku-adversarial",
+    "nodeCosts": [],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": null,
+    "runId": "20261103-134223-3b1d24",
+    "score": null,
+    "seed": 0,
+    "state": "crashed",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": 6.100586176,
+    "zeroshotRunId": "01a1a16e-a13c-7142-b60b-3fb02b32d760"
+  },
+  "status": 200
+}

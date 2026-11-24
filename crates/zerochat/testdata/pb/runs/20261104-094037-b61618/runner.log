@@ -1,0 +1,11 @@
+09:40:37 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] start label='replay-build-sonnet' version=998df48b06 model=claude-sonnet-5 art=/data/pb/runs/20261104-094037-b61618
+09:40:38 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] replay of 20261103-151748-ef96e3 build#1: starting code = explore#1 (snapshot)
+09:40:38 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] sandbox up; launching zeroshot
+09:40:46 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] node start  build (exec 1, attempt 1)
+10:06:22 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] node done   build -> verified 
+10:06:55 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] agent finished: success — zeroshot succeeded
+10:06:56 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] running hidden tests (programbench eval)…
+10:08:54 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] score 183/224 (ok)
+10:09:02 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] own suite of submission.tar.gz: 45/45
+10:09:02 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] score per step: build#1 81.7%, final 81.7%
+10:09:02 [20261104-094037-b61618 tomnomnom__gron.88a6234 s1] done: success

@@ -1,0 +1,67 @@
+{
+  // Biome config for the web UI (`npm run lint` checks, `npm run fix` writes). A .jsonc file
+  // (biome.json takes no comments) so the rules turned off below can carry their reason.
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "files": {
+    "includes": [
+      "src/**",
+      // Written by `make types`; the generated-types check compares bytes.
+      "!src/generated",
+      // Golden data and its helpers, and fixture data: compared byte for byte.
+      "!src/testdata",
+      "!src/fixtures/**/*.json",
+      "!**/*.md"
+    ]
+  },
+  // The options that change the fewest lines of the existing code: 2-space indent, single quotes,
+  // semicolons, ES5 trailing commas, and a line width of 200 (the code was written wide).
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2, "lineWidth": 200 },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "es5",
+      "arrowParentheses": "always",
+      "bracketSameLine": false
+    }
+  },
+  "css": { "formatter": { "quoteStyle": "single" } },
+  "assist": { "enabled": false },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "a11y": {
+        // Each of these needs a different element, role or focus behaviour: a markup and
+        // keyboard-behaviour change to review on its own, not a lint fix.
+        "useSemanticElements": "off",
+        "noAutofocus": "off",
+        "useFocusableInteractive": "off",
+        "noStaticElementInteractions": "off",
+        "useAriaPropsSupportedByRole": "off",
+        "noNoninteractiveTabindex": "off",
+        "noNoninteractiveElementToInteractiveRole": "off"
+      },
+      "style": {
+        // Removing a `!` needs a real check in its place (a behaviour change) at 88 sites.
+        "noNonNullAssertion": "off",
+        // Reordering CSS rules to satisfy it changes the cascade.
+        "noDescendingSpecificity": "off"
+      },
+      "suspicious": {
+        // Replacing index keys changes how React reuses elements; needs per-list stable ids.
+        "noArrayIndexKey": "off"
+      },
+      "correctness": {
+        // Adding the missing dependencies changes when effects and memos run.
+        "useExhaustiveDependencies": "off"
+      },
+      "complexity": {
+        // Dropping an `!important` changes which CSS rule wins.
+        "noImportantStyles": "off"
+      }
+    }
+  }
+}

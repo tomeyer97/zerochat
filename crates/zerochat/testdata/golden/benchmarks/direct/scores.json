@@ -1,0 +1,3920 @@
+[
+  {
+    "ended": true,
+    "run": "20261103-120654-160a0e",
+    "score": {
+      "batchId": null,
+      "capUsd": 2.0,
+      "costUsd": 1.82763,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "smoke-haiku",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.9010651,
+          "node": "worker"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.8227063,
+          "node": "reviewer"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.1038586,
+          "node": "repair"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 1.82763,
+      "runId": "20261103-120654-160a0e",
+      "score": 0.549107143,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "worker#1",
+          "score": 0.549107143,
+          "seq": 0,
+          "testsPassed": 123,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.549107143,
+          "seq": 1,
+          "testsPassed": 123,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.549107143,
+          "seq": 2,
+          "testsPassed": 123,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 123,
+      "testsTotal": 224,
+      "wallS": 707.141429901,
+      "zeroshotRunId": "01a1a117-3433-7660-97fe-bba97c25f34d"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-121900-29af42",
+    "score": {
+      "batchId": null,
+      "capUsd": 1.0,
+      "costUsd": 0.0620568,
+      "exitReason": "interrupted after 50s, 1 steps",
+      "failingTests": [],
+      "label": "ctrlc-test",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.0620568,
+          "node": "worker"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 0.0,
+      "runId": "20261103-121900-29af42",
+      "score": null,
+      "seed": 0,
+      "state": "interrupted",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": 51.811130285,
+      "zeroshotRunId": "01a1a122-480f-7012-a453-09a724ea9236"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-124230-85bba6",
+    "score": {
+      "batchId": null,
+      "capUsd": 2.0,
+      "costUsd": 2.0027185,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sc-template-haiku",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.6503241,
+          "node": "worker"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5556468,
+          "node": "review_repair"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.4243717,
+          "node": "acceptance"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.3723759,
+          "node": "code"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 1.6735307,
+      "runId": "20261103-124230-85bba6",
+      "score": 0.669642857,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "worker#1",
+          "score": 0.482142857,
+          "seq": 0,
+          "testsPassed": 108,
+          "testsTotal": 224
+        },
+        {
+          "node": "review_repair#1",
+          "score": 0.669642857,
+          "seq": 1,
+          "testsPassed": 150,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.669642857,
+          "seq": 2,
+          "testsPassed": 150,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 150,
+      "testsTotal": 224,
+      "wallS": 988.537200451,
+      "zeroshotRunId": "01a1a137-cdf4-7990-9437-1e3dba6aad32"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-132546-0e4fe3",
+    "score": {
+      "batchId": null,
+      "capUsd": 5.0,
+      "costUsd": 2.6765396,
+      "exitReason": "interrupted after 985s, 9 steps",
+      "failingTests": [],
+      "label": "haiku-adversarial",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 0.9583362,
+          "node": "repair"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6304033,
+          "node": "reviewer"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5905109,
+          "node": "worker"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.3347691,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.1625201,
+          "node": "triage"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 2.4940042,
+      "runId": "20261103-132546-0e4fe3",
+      "score": null,
+      "seed": 0,
+      "state": "interrupted",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": 986.509586096,
+      "zeroshotRunId": "01a1a15f-67c2-7d80-82cf-e32f49ef7fe9"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-134223-3b1d24",
+    "score": {
+      "batchId": null,
+      "capUsd": 5.0,
+      "costUsd": 0.0,
+      "exitReason": "zeroshot exited 1 without a terminal event: {\"schema\":\"zeroshot.error/v1\",\"kind\":\"target\",\"code\":\"target.unavailable\",\"message\":\"local controller operation failed: controller exited before becoming ready: portable controller I/O failed: the bundled restic executable is unavailable; place restic beside zeroshot, on PATH, or name it with ZEROSHOT_RESTIC\",\"path\":null,\"node\":null,\"details\":{}}\n",
+      "failingTests": [],
+      "label": "haiku-adversarial",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261103-134223-3b1d24",
+      "score": null,
+      "seed": 0,
+      "state": "crashed",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": 6.100586176,
+      "zeroshotRunId": "01a1a16e-a13c-7142-b60b-3fb02b32d760"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-134312-42aa68",
+    "score": {
+      "batchId": null,
+      "capUsd": 5.0,
+      "costUsd": 0.0,
+      "exitReason": "zeroshot 11.0.0 runtime_failed: workspace checkpoint Permission denied (reference binary unreadable by restic)",
+      "failingTests": [],
+      "label": "haiku-adversarial",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261103-134312-42aa68",
+      "score": null,
+      "seed": 0,
+      "state": "crashed",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": 8.114544153,
+      "zeroshotRunId": "01a1a16f-60eb-7ec3-9f78-bd21fc2d5db8"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-135046-54abe6",
+    "score": {
+      "batchId": null,
+      "capUsd": 5.0,
+      "costUsd": 3.3099203,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_nested_json_format"
+      ],
+      "label": "haiku-adversarial",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.788812,
+          "node": "worker"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.666637,
+          "node": "postmortem"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6535488,
+          "node": "repair"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.6228941,
+          "node": "reviewer"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.4133239,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.1647045,
+          "node": "triage"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 3.3099203,
+      "runId": "20261103-135046-54abe6",
+      "score": 0.674107143,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "worker#1",
+          "score": 0.633928571,
+          "seq": 0,
+          "testsPassed": 142,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.669642857,
+          "seq": 1,
+          "testsPassed": 150,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#2",
+          "score": 0.674107143,
+          "seq": 2,
+          "testsPassed": 151,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.674107143,
+          "seq": 3,
+          "testsPassed": 151,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 151,
+      "testsTotal": 224,
+      "wallS": 1320.871010542,
+      "zeroshotRunId": "01a1a176-4ee7-7201-8bcd-ac26099f913f"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-135729-f246e7",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 5.4918146,
+      "exitReason": "WSL crashed mid-run (round 1 review); container and runner died",
+      "failingTests": [],
+      "label": "haiku-prototype-plan",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 3.268662,
+          "node": "worker"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.4399783,
+          "node": "prototype"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4698631,
+          "node": "planner"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.183367,
+          "node": "reviewer"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.1299442,
+          "node": "bugfinder"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.1785034,
+      "runId": "20261103-135729-f246e7",
+      "score": null,
+      "seed": 0,
+      "state": "interrupted",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": "01a1a17c-7322-72e2-8b16-56602bf5b25d"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-143843-bad770",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 5.184118,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "haiku-prototype-plan",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.3314585,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.3036262,
+          "node": "worker"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.5552867,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5159976,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4894783,
+          "node": "prototype"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.4144305,
+          "node": "reviewer"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3756414,
+          "node": "planner"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.1981988,
+          "node": "triage"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.184118,
+      "runId": "20261103-143843-bad770",
+      "score": 0.589285714,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "prototype#1",
+          "score": 0.450892857,
+          "seq": 0,
+          "testsPassed": 101,
+          "testsTotal": 224
+        },
+        {
+          "node": "planner#1",
+          "score": 0.0,
+          "seq": 1,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "worker#1",
+          "score": 0.53125,
+          "seq": 2,
+          "testsPassed": 119,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.589285714,
+          "seq": 3,
+          "testsPassed": 132,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.589285714,
+          "seq": 4,
+          "testsPassed": 132,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 132,
+      "testsTotal": 224,
+      "wallS": 2066.506492615,
+      "zeroshotRunId": "01a1a1a2-340a-7792-b5b7-ff6ea97ad009"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-151748-ef96e3",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 5.3990452,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "clone-v1",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 1.5687476,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.9190661,
+          "node": "build"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.9071386,
+          "node": "coverage"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.6974912,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5959826,
+          "node": "postmortem"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.3952672,
+          "node": "triage"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3153519,
+          "node": "explore"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.3990452,
+      "runId": "20261103-151748-ef96e3",
+      "score": 0.616071429,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.526785714,
+          "seq": 1,
+          "testsPassed": 118,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.607142857,
+          "seq": 2,
+          "testsPassed": 136,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#2",
+          "score": 0.616071429,
+          "seq": 3,
+          "testsPassed": 138,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.616071429,
+          "seq": 4,
+          "testsPassed": 138,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 138,
+      "testsTotal": 224,
+      "wallS": 2318.490293264,
+      "zeroshotRunId": "01a1a1c5-fa55-7dd0-be80-efd5703a4356"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-153020-39acd7",
+    "score": {
+      "batchId": null,
+      "capUsd": 10.0,
+      "costUsd": 3.5436976,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "ticket-v1",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.2027516,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4527651,
+          "node": "adversary"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4280876,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3394236,
+          "node": "trace"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3019335,
+          "node": "testfirst"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2969059,
+          "node": "recon"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2484881,
+          "node": "deliver"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2161274,
+          "node": "intake"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.0297042,
+          "node": "triage"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.0275106,
+          "node": "quality"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 3.5436976,
+      "runId": "20261103-153020-39acd7",
+      "score": 0.584821429,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "intake#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "recon#1",
+          "score": 0.0,
+          "seq": 1,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "testfirst#1",
+          "score": 0.0,
+          "seq": 2,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.584821429,
+          "seq": 3,
+          "testsPassed": 131,
+          "testsTotal": 224
+        },
+        {
+          "node": "deliver#1",
+          "score": 0.584821429,
+          "seq": 4,
+          "testsPassed": 131,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.584821429,
+          "seq": 5,
+          "testsPassed": 131,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 131,
+      "testsTotal": 224,
+      "wallS": 1500.702454805,
+      "zeroshotRunId": "01a1a1d1-773a-77a0-843c-1b5fe41dbc5b"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-160205-433564",
+    "score": {
+      "batchId": null,
+      "capUsd": 2.0,
+      "costUsd": 1.6228733,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "replay-build-haiku",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.4086655,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2142078,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 1.6228733,
+      "runId": "20261103-160205-433564",
+      "score": 0.473214286,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "build#1",
+          "score": 0.473214286,
+          "seq": 0,
+          "testsPassed": 106,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.473214286,
+          "seq": 1,
+          "testsPassed": 106,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 106,
+      "testsTotal": 224,
+      "wallS": 537.314718246,
+      "zeroshotRunId": "01a1a1ee-890c-7ea1-85ff-b8e1c35494aa"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-160205-fb058c",
+    "score": {
+      "batchId": null,
+      "capUsd": 2.0,
+      "costUsd": 2.0072363,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "replay-build-haiku",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.0072363,
+          "node": "build"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 0.0,
+      "runId": "20261103-160205-fb058c",
+      "score": 0.526785714,
+      "seed": 0,
+      "state": "scored",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 118,
+      "testsTotal": 224,
+      "wallS": 796.309708834,
+      "zeroshotRunId": "01a1a1ee-890c-7f32-b250-1f1a312860b8"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-161534-59f5da",
+    "score": {
+      "batchId": null,
+      "capUsd": 12.0,
+      "costUsd": null,
+      "exitReason": "runner process died before finishing",
+      "failingTests": [],
+      "label": "replay-build-sonnet",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261103-161534-59f5da",
+      "score": null,
+      "seed": 1,
+      "state": "interrupted",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": null
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261103-161534-90ca94",
+    "score": {
+      "batchId": null,
+      "capUsd": 12.0,
+      "costUsd": null,
+      "exitReason": "runner process died before finishing",
+      "failingTests": [],
+      "label": "replay-build-sonnet",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261103-161534-90ca94",
+      "score": null,
+      "seed": 0,
+      "state": "interrupted",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": null
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-094037-b61618",
+    "score": {
+      "batchId": null,
+      "capUsd": 12.0,
+      "costUsd": 5.263022,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "replay-build-sonnet",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 4.7849936,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4780284,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.263022,
+      "runId": "20261104-094037-b61618",
+      "score": 0.816964286,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "build#1",
+          "score": 0.816964286,
+          "seq": 0,
+          "testsPassed": 183,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.816964286,
+          "seq": 1,
+          "testsPassed": 183,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 183,
+      "testsTotal": 224,
+      "wallS": 1704.791758299,
+      "zeroshotRunId": "01a1a5b7-a50e-7123-bf2e-c8b6b6baf64f"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-094037-fb26fa",
+    "score": {
+      "batchId": null,
+      "capUsd": 12.0,
+      "costUsd": 5.8355968,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "replay-build-sonnet",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 4.8217846,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.0138122,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.8355968,
+      "runId": "20261104-094037-fb26fa",
+      "score": 0.883928571,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "build#1",
+          "score": 0.883928571,
+          "seq": 0,
+          "testsPassed": 198,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.883928571,
+          "seq": 1,
+          "testsPassed": 198,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 198,
+      "testsTotal": 224,
+      "wallS": 1575.639360666,
+      "zeroshotRunId": "01a1a5b7-a50e-7733-b254-b6c04e9480b2"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101121-1ed48b",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 0.9023805,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.3891554,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3501816,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.1630435,
+          "node": "triage"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 0.9023805,
+      "runId": "20261104-101121-1ed48b",
+      "score": 0.616071429,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.616071429,
+          "seq": 0,
+          "testsPassed": 138,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.616071429,
+          "seq": 1,
+          "testsPassed": 138,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 138,
+      "testsTotal": 224,
+      "wallS": 323.516034126,
+      "zeroshotRunId": "01a1a5d3-caa8-7f20-b76a-5c3cd022e1d0"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101121-60f4f8",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 2.2508616,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.7492706,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2714212,
+          "node": "triage"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2301698,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 2.2508616,
+      "runId": "20261104-101121-60f4f8",
+      "score": 0.611607143,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.611607143,
+          "seq": 0,
+          "testsPassed": 137,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.611607143,
+          "seq": 1,
+          "testsPassed": 137,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 137,
+      "testsTotal": 224,
+      "wallS": 458.61809206,
+      "zeroshotRunId": "01a1a5d3-caa8-73d0-a01c-586d33e411bf"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101225-6d2edf",
+    "score": {
+      "batchId": null,
+      "capUsd": 15.0,
+      "costUsd": 12.5032648,
+      "exitReason": null,
+      "failingTests": [
+        "3f23146e627b/eval.tests.test_core_outputs.test_plumbing_output_exact_relative",
+        "3f23146e627b/eval.tests.test_core_outputs.test_text_output_single_group_and_summary"
+      ],
+      "label": "clone-v1-sonnet-build",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 10.2034538,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6885976,
+          "node": "repair"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6489229,
+          "node": "coverage"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3959595,
+          "node": "explore"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.3581028,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.2082282,
+          "node": "triage"
+        }
+      ],
+      "overLimit": "timeout",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 12.3764089,
+      "runId": "20261104-101225-6d2edf",
+      "score": 0.852546917,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 373
+        },
+        {
+          "node": "build#1",
+          "score": 0.852546917,
+          "seq": 1,
+          "testsPassed": 318,
+          "testsTotal": 373
+        },
+        {
+          "node": "repair#1",
+          "score": 0.852546917,
+          "seq": 2,
+          "testsPassed": 318,
+          "testsTotal": 373
+        },
+        {
+          "node": "final",
+          "score": 0.852546917,
+          "seq": 3,
+          "testsPassed": 318,
+          "testsTotal": 373
+        }
+      ],
+      "task": "mibk__dupl.1bf052b",
+      "testsPassed": 318,
+      "testsTotal": 373,
+      "wallS": 4624.187468767,
+      "zeroshotRunId": "01a1a5d4-d097-73d1-a30d-88d56f034760"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101225-e8c831",
+    "score": {
+      "batchId": null,
+      "capUsd": 15.0,
+      "costUsd": 11.775106,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "clone-v1-sonnet-build",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 6.7760712,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 1.6202066,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.3525906,
+          "node": "explore"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.685827,
+          "node": "coverage"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.6039468,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4959934,
+          "node": "postmortem"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.2404704,
+          "node": "triage"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 11.775106,
+      "runId": "20261104-101225-e8c831",
+      "score": 0.888392857,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.879464286,
+          "seq": 1,
+          "testsPassed": 197,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.883928571,
+          "seq": 2,
+          "testsPassed": 198,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#2",
+          "score": 0.888392857,
+          "seq": 3,
+          "testsPassed": 199,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.888392857,
+          "seq": 4,
+          "testsPassed": 199,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 199,
+      "testsTotal": 224,
+      "wallS": 3900.409092188,
+      "zeroshotRunId": "01a1a5d4-c1c2-7e60-b2d1-64f7f105b487"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101225-ed3910",
+    "score": {
+      "batchId": null,
+      "capUsd": 15.0,
+      "costUsd": 12.0446397,
+      "exitReason": null,
+      "failingTests": [
+        "06dabfabaea7/tests.test_basic.test_invalid_flag",
+        "06dabfabaea7/tests.test_clone_installer.test_clone_creates_personal_work_dirs",
+        "06dabfabaea7/tests.test_clone_installer.test_clone_network_timeout_handling",
+        "06dabfabaea7/tests.test_clone_installer.test_clone_to_existing_cloned_dir_fails",
+        "06dabfabaea7/tests.test_clone_installer.test_installer_clone_no",
+        "06dabfabaea7/tests.test_clone_installer.test_installer_clone_yes",
+        "06dabfabaea7/tests.test_clone_installer.test_installer_creates_all_expected_dirs",
+        "06dabfabaea7/tests.test_clone_installer.test_installer_decline_create_config"
+      ],
+      "label": "clone-v1-sonnet-build",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 7.2192906,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 1.8518553,
+          "node": "repair"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.9752492,
+          "node": "coverage"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.9339592,
+          "node": "bugfinder"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4430334,
+          "node": "postmortem"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.3709948,
+          "node": "triage"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2502572,
+          "node": "explore"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 12.0446397,
+      "runId": "20261104-101225-ed3910",
+      "score": 0.565656566,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 297
+        },
+        {
+          "node": "build#1",
+          "score": 0.538720539,
+          "seq": 1,
+          "testsPassed": 160,
+          "testsTotal": 297
+        },
+        {
+          "node": "repair#1",
+          "score": 0.545454545,
+          "seq": 2,
+          "testsPassed": 162,
+          "testsTotal": 297
+        },
+        {
+          "node": "repair#2",
+          "score": 0.565656566,
+          "seq": 3,
+          "testsPassed": 168,
+          "testsTotal": 297
+        },
+        {
+          "node": "final",
+          "score": 0.565656566,
+          "seq": 4,
+          "testsPassed": 168,
+          "testsTotal": 297
+        }
+      ],
+      "task": "cheat__cheat.b8098dc",
+      "testsPassed": 168,
+      "testsTotal": 297,
+      "wallS": 4592.550220013,
+      "zeroshotRunId": "01a1a5d4-d723-7900-a7ba-ffb67e6331eb"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101645-9b2f84",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 0.6023117,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.4355489,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.1667628,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 0.6023117,
+      "runId": "20261104-101645-9b2f84",
+      "score": 0.620535714,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.620535714,
+          "seq": 0,
+          "testsPassed": 139,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.620535714,
+          "seq": 1,
+          "testsPassed": 139,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 139,
+      "testsTotal": 224,
+      "wallS": 240.225838184,
+      "zeroshotRunId": "01a1a5d8-ba67-7d81-bd8a-f1e5d39287c3"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-101900-42baf5",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 2.2438134,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:repair#1:claude-sonnet-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.8214044,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.422409,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 2.071713,
+      "runId": "20261104-101900-42baf5",
+      "score": 0.629464286,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.629464286,
+          "seq": 0,
+          "testsPassed": 141,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.629464286,
+          "seq": 1,
+          "testsPassed": 141,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 141,
+      "testsTotal": 224,
+      "wallS": 917.047191381,
+      "zeroshotRunId": "01a1a5da-ca64-70e1-b4af-5d03b93e0bec"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-102045-d3e151",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 1.508038,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.1398588,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2362262,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.131953,
+          "node": "triage"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 1.508038,
+      "runId": "20261104-102045-d3e151",
+      "score": 0.589285714,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.589285714,
+          "seq": 0,
+          "testsPassed": 132,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.589285714,
+          "seq": 1,
+          "testsPassed": 132,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 132,
+      "testsTotal": 224,
+      "wallS": 551.386436939,
+      "zeroshotRunId": "01a1a5dc-64ab-7260-a8f1-2b600fdc5ca7"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-102957-4a619f",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 1.0845128,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.649408,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2182698,
+          "node": "triage"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.216835,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 1.0845128,
+      "runId": "20261104-102957-4a619f",
+      "score": 0.616071429,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.616071429,
+          "seq": 0,
+          "testsPassed": 138,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.616071429,
+          "seq": 1,
+          "testsPassed": 138,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 138,
+      "testsTotal": 224,
+      "wallS": 458.449437618,
+      "zeroshotRunId": "01a1a5e4-cf79-7712-8905-1a288ab34ac5"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-103417-96c7d8",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 0.5685896,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.404543,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.1640466,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 0.5685896,
+      "runId": "20261104-103417-96c7d8",
+      "score": 0.625,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.625,
+          "seq": 0,
+          "testsPassed": 140,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.625,
+          "seq": 1,
+          "testsPassed": 140,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 140,
+      "testsTotal": 224,
+      "wallS": 249.422466516,
+      "zeroshotRunId": "01a1a5e8-c91b-7073-b3e9-fdbd462600af"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-103735-2a5194",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 2.7494042,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "sweep:sweep-triage-repair:repair#1:claude-sonnet-5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.2366446,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5127596,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 2.7494042,
+      "runId": "20261104-103735-2a5194",
+      "score": 0.616071429,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "repair#1",
+          "score": 0.616071429,
+          "seq": 0,
+          "testsPassed": 138,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.616071429,
+          "seq": 1,
+          "testsPassed": 138,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 138,
+      "testsTotal": 224,
+      "wallS": 988.687349319,
+      "zeroshotRunId": "01a1a5eb-d0d6-7cc2-87af-1150a2b1b9b4"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-114508-306ec8",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 5.0800205,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "replay-sonnet-explore-haiku-build",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 4.1314748,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.9485457,
+          "node": "build"
+        }
+      ],
+      "overLimit": "timeout",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 4.1314748,
+      "runId": "20261104-114508-306ec8",
+      "score": 0.839285714,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.839285714,
+          "seq": 1,
+          "testsPassed": 188,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 188,
+      "testsTotal": 224,
+      "wallS": 2898.492398262,
+      "zeroshotRunId": "01a1a629-a70f-74a3-bc9a-2db2784b763d"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-114508-de4351",
+    "score": {
+      "batchId": null,
+      "capUsd": 8.0,
+      "costUsd": 6.8636835,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "replay-sonnet-explore-haiku-build",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 4.4116026,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.2695802,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.1825007,
+          "node": "build"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 6.5078899,
+      "runId": "20261104-114508-de4351",
+      "score": 0.580357143,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.580357143,
+          "seq": 1,
+          "testsPassed": 130,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.580357143,
+          "seq": 2,
+          "testsPassed": 130,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 130,
+      "testsTotal": 224,
+      "wallS": 2036.397263288,
+      "zeroshotRunId": "01a1a629-a70e-7320-861e-9d1aa51c8125"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261104-123424-e0fb82",
+    "score": {
+      "batchId": null,
+      "capUsd": 25.0,
+      "costUsd": 6.1985388,
+      "exitReason": null,
+      "failingTests": [],
+      "label": "k8s-sc-sonnet5",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 4.76258,
+          "node": "worker"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.7047568,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.380338,
+          "node": "acceptance"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.350864,
+          "node": "code"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": 188,
+      "regressionTotal": 188,
+      "reportedCostUsd": 6.1985388,
+      "runId": "20261104-123424-e0fb82",
+      "score": 1.0,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "worker#1",
+          "score": 1.0,
+          "seq": 0,
+          "testsPassed": 20,
+          "testsTotal": 20
+        },
+        {
+          "node": "final",
+          "score": 1.0,
+          "seq": 1,
+          "testsPassed": 20,
+          "testsTotal": 20
+        }
+      ],
+      "task": "k8s-job-backoff-limit-per-index",
+      "testsPassed": 20,
+      "testsTotal": 20,
+      "wallS": 2135.186195374,
+      "zeroshotRunId": "01a1a656-c536-7252-b6ec-4768f1a2d2c4"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-222316-3f1483",
+    "score": {
+      "batchId": "20261107-222316-910b7d",
+      "capUsd": 6.0,
+      "costUsd": 6.0463509,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r1-ctrl-diffloop",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.5238832,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 2.2117365,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.7432091,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5675221,
+          "node": "explore"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 6.0463509,
+      "runId": "20261107-222316-3f1483",
+      "score": 0.620535714,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.647321429,
+          "seq": 1,
+          "testsPassed": 145,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.616071429,
+          "seq": 2,
+          "testsPassed": 138,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.620535714,
+          "seq": 3,
+          "testsPassed": 139,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 139,
+      "testsTotal": 224,
+      "wallS": 2602.709150314,
+      "zeroshotRunId": "01a1b7e4-f2ba-73f0-9272-88dcb84e5ae4"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-222316-61fcd1",
+    "score": {
+      "batchId": "20261107-222316-910b7d",
+      "capUsd": 6.0,
+      "costUsd": 6.0066345,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r1-ctrl-diffloop",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.8079131,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.6542065,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.9978707,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5466442,
+          "node": "explore"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 4.7035928,
+      "runId": "20261107-222316-61fcd1",
+      "score": 0.50798722,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.0,
+          "seq": 1,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.277955272,
+          "seq": 2,
+          "testsPassed": 87,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.50798722,
+          "seq": 3,
+          "testsPassed": 159,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 159,
+      "testsTotal": 313,
+      "wallS": 2419.962378502,
+      "zeroshotRunId": "01a1b7e5-1993-7ba0-ae62-9d406615e1b9"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-222316-9e1324",
+    "score": {
+      "batchId": "20261107-222316-71f62e",
+      "capUsd": 6.0,
+      "costUsd": 6.0031999,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r1-screen-spec2",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.2588377,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 1.9622046,
+          "node": "repair"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6111605,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.6080599,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5629372,
+          "node": "spec_extend"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.8990974,
+      "runId": "20261107-222316-9e1324",
+      "score": 0.575892857,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "spec_extend#1",
+          "score": 0.0,
+          "seq": 1,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.0,
+          "seq": 2,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.575892857,
+          "seq": 3,
+          "testsPassed": 129,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.575892857,
+          "seq": 4,
+          "testsPassed": 129,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 129,
+      "testsTotal": 224,
+      "wallS": 2135.60679841,
+      "zeroshotRunId": "01a1b7e4-f2b9-77c0-b2b7-c21eed50894e"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-222316-ce9b61",
+    "score": {
+      "batchId": "20261107-222316-910b7d",
+      "capUsd": 6.0,
+      "costUsd": 6.0030317,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r1-ctrl-diffloop",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.3887763,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 1.748275,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.2718421,
+          "node": "explore"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.5941383,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.9258121,
+      "runId": "20261107-222316-ce9b61",
+      "score": 0.674107143,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.558035714,
+          "seq": 1,
+          "testsPassed": 125,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.674107143,
+          "seq": 2,
+          "testsPassed": 151,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.674107143,
+          "seq": 3,
+          "testsPassed": 151,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 151,
+      "testsTotal": 224,
+      "wallS": 2029.113631964,
+      "zeroshotRunId": "01a1b7e4-f2b9-74e1-8b6f-2fbc9b8d3dc3"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-225705-7736ba",
+    "score": {
+      "batchId": "20261107-222316-910b7d",
+      "capUsd": 6.0,
+      "costUsd": 2.5164502,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_interleaved_flag_after_positionals_is_accepted",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r1-ctrl-diffloop",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.7850105,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.7184187,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.530289,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.482732,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 2.5164502,
+      "runId": "20261107-225705-7736ba",
+      "score": 0.405750799,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.405750799,
+          "seq": 1,
+          "testsPassed": 127,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.405750799,
+          "seq": 2,
+          "testsPassed": 127,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 127,
+      "testsTotal": 313,
+      "wallS": 1192.316459179,
+      "zeroshotRunId": "01a1b803-e903-7742-ad98-a35a4d7ad8b9"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-225852-ea4461",
+    "score": {
+      "batchId": "20261107-222316-71f62e",
+      "capUsd": 6.0,
+      "costUsd": 6.0048309,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r1-screen-spec2",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.1193542,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 1.5850208,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.8671837,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.7446818,
+          "node": "spec_extend"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6885904,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.9034924,
+      "runId": "20261107-225852-ea4461",
+      "score": 0.498402556,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "spec_extend#1",
+          "score": 0.0,
+          "seq": 1,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.479233227,
+          "seq": 2,
+          "testsPassed": 150,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.498402556,
+          "seq": 3,
+          "testsPassed": 156,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.498402556,
+          "seq": 4,
+          "testsPassed": 156,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 156,
+      "testsTotal": 313,
+      "wallS": 2626.196182489,
+      "zeroshotRunId": "01a1b805-88e8-7d53-8785-5b539d9cdfb7"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-230336-6afddb",
+    "score": {
+      "batchId": "20261107-222316-910b7d",
+      "capUsd": 6.0,
+      "costUsd": 6.0015822,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r1-ctrl-diffloop",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.4655411,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 2.3720585,
+          "node": "repair"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.7630917,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4008909,
+          "node": "explore"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.3444666,
+      "runId": "20261107-230336-6afddb",
+      "score": 0.683035714,
+      "seed": 2,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.549107143,
+          "seq": 1,
+          "testsPassed": 123,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.683035714,
+          "seq": 2,
+          "testsPassed": 153,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.683035714,
+          "seq": 3,
+          "testsPassed": 153,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 153,
+      "testsTotal": 224,
+      "wallS": 2390.491703987,
+      "zeroshotRunId": "01a1b809-df0d-7433-a28a-91b5e1a62ff1"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261107-230639-bac86d",
+    "score": {
+      "batchId": "20261107-222316-910b7d",
+      "capUsd": 6.0,
+      "costUsd": 6.0000722,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r1-ctrl-diffloop",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.9772075,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.8646436,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.5951102,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5631109,
+          "node": "explore"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.2257061,
+      "runId": "20261107-230639-bac86d",
+      "score": 0.670926518,
+      "seed": 2,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.559105431,
+          "seq": 1,
+          "testsPassed": 175,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.626198083,
+          "seq": 2,
+          "testsPassed": 196,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.670926518,
+          "seq": 3,
+          "testsPassed": 210,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 210,
+      "testsTotal": 313,
+      "wallS": 2503.752878666,
+      "zeroshotRunId": "01a1b80c-a96f-79d3-b86c-f45227349ca3"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-142204-037a6e",
+    "score": {
+      "batchId": "20261108-142204-d474ae",
+      "capUsd": 6.0,
+      "costUsd": 3.6747709,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r2-hermetic",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 1.9460974,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.6626751,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.6478778,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4181206,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": "timeout",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 3.0268931,
+      "runId": "20261108-142204-037a6e",
+      "score": 0.473214286,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.491071429,
+          "seq": 1,
+          "testsPassed": 110,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.473214286,
+          "seq": 2,
+          "testsPassed": 106,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 106,
+      "testsTotal": 224,
+      "wallS": 3773.089498997,
+      "zeroshotRunId": "01a1bb52-c40b-7e20-b626-01b446109434"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-142204-c03693",
+    "score": {
+      "batchId": "20261108-142204-d474ae",
+      "capUsd": 6.0,
+      "costUsd": 6.0065802,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors"
+      ],
+      "label": "r2-hermetic",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.8042837,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.90032,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.7067009,
+          "node": "explore"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.5952756,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 4.7045649,
+      "runId": "20261108-142204-c03693",
+      "score": 0.616613419,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.52715655,
+          "seq": 1,
+          "testsPassed": 165,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.597444089,
+          "seq": 2,
+          "testsPassed": 187,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.616613419,
+          "seq": 3,
+          "testsPassed": 193,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 193,
+      "testsTotal": 313,
+      "wallS": 2377.452301264,
+      "zeroshotRunId": "01a1bb52-c414-7863-aca4-39b2bdda9ef2"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-142204-d922d5",
+    "score": {
+      "batchId": "20261108-142204-d474ae",
+      "capUsd": 6.0,
+      "costUsd": 6.0240695,
+      "exitReason": "budget_exceeded after 2259s, 6 steps",
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_interleaved_flag_after_positionals_is_accepted",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r2-hermetic",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.8597815,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.977273,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6102825,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5767325,
+          "node": "explore"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 4.7575706,
+      "runId": "20261108-142204-d922d5",
+      "score": 0.0,
+      "seed": 0,
+      "state": "over_budget",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.0,
+          "seq": 1,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.0,
+          "seq": 2,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.0,
+          "seq": 3,
+          "testsPassed": 0,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 0,
+      "testsTotal": 313,
+      "wallS": 2311.217468262,
+      "zeroshotRunId": "01a1bb52-c46d-72e2-a295-74a45757c686"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-142204-e54403",
+    "score": {
+      "batchId": "20261108-142204-d474ae",
+      "capUsd": 6.0,
+      "costUsd": 6.1082366,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r2-hermetic",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.2714746,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.9859213,
+          "node": "build"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.933815,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4838092,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4332165,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 6.1082366,
+      "runId": "20261108-142204-e54403",
+      "score": 0.6875,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.660714286,
+          "seq": 1,
+          "testsPassed": 148,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.678571429,
+          "seq": 2,
+          "testsPassed": 152,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#2",
+          "score": 0.6875,
+          "seq": 3,
+          "testsPassed": 154,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.6875,
+          "seq": 4,
+          "testsPassed": 154,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 154,
+      "testsTotal": 224,
+      "wallS": 2114.612761736,
+      "zeroshotRunId": "01a1bb52-c40d-70f2-8cb2-7e4bae7d0be5"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-145719-8916de",
+    "score": {
+      "batchId": "20261108-142204-d474ae",
+      "capUsd": 6.0,
+      "costUsd": 6.901997,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r2-hermetic",
+      "nodeCosts": [
+        {
+          "calls": 3,
+          "costUsd": 3.1423897,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 2.5276851,
+          "node": "build"
+        },
+        {
+          "calls": 3,
+          "costUsd": 0.8890806,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3428416,
+          "node": "explore"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 6.901997,
+      "runId": "20261108-145719-8916de",
+      "score": 0.678571429,
+      "seed": 2,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.647321429,
+          "seq": 1,
+          "testsPassed": 145,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.674107143,
+          "seq": 2,
+          "testsPassed": 151,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#2",
+          "score": 0.683035714,
+          "seq": 3,
+          "testsPassed": 153,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#3",
+          "score": 0.678571429,
+          "seq": 4,
+          "testsPassed": 152,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.678571429,
+          "seq": 5,
+          "testsPassed": 152,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 152,
+      "testsTotal": 224,
+      "wallS": 2651.514712095,
+      "zeroshotRunId": "01a1bb73-07c0-7b01-ba7a-712bb2b59478"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-150036-3c2a78",
+    "score": {
+      "batchId": "20261108-142204-d474ae",
+      "capUsd": 6.0,
+      "costUsd": 6.0021851,
+      "exitReason": "budget_exceeded after 2781s, 12 steps",
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_interleaved_flag_after_positionals_is_accepted",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r2-hermetic",
+      "nodeCosts": [
+        {
+          "calls": 5,
+          "costUsd": 3.4608802,
+          "node": "repair"
+        },
+        {
+          "calls": 5,
+          "costUsd": 1.6779974,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4560244,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4072831,
+          "node": "build"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.5061097,
+      "runId": "20261108-150036-3c2a78",
+      "score": 0.0,
+      "seed": 2,
+      "state": "over_budget",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.373801917,
+          "seq": 1,
+          "testsPassed": 117,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.373801917,
+          "seq": 2,
+          "testsPassed": 117,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#2",
+          "score": 0.361022364,
+          "seq": 3,
+          "testsPassed": 113,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#3",
+          "score": 0.469648562,
+          "seq": 4,
+          "testsPassed": 147,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#4",
+          "score": 0.469648562,
+          "seq": 5,
+          "testsPassed": 147,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.0,
+          "seq": 6,
+          "testsPassed": 0,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 0,
+      "testsTotal": 313,
+      "wallS": 3069.233799219,
+      "zeroshotRunId": "01a1bb76-0748-71e0-8942-70b40d062eb3"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-152720-2cd1bc",
+    "score": {
+      "batchId": "20261108-152720-fb0664",
+      "capUsd": 6.0,
+      "costUsd": 6.01273765,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors"
+      ],
+      "label": "r2-hermetic2",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.90238845,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 2.0462091,
+          "node": "build"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6116144,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4525257,
+          "node": "explore"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.3104403,
+      "runId": "20261108-152720-2cd1bc",
+      "score": 0.722044728,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.322683706,
+          "seq": 1,
+          "testsPassed": 101,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.431309904,
+          "seq": 2,
+          "testsPassed": 135,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.722044728,
+          "seq": 3,
+          "testsPassed": 226,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 226,
+      "testsTotal": 313,
+      "wallS": 2346.423715115,
+      "zeroshotRunId": "01a1bb8e-8377-7510-a477-6af227234ff8"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-152720-47b18a",
+    "score": {
+      "batchId": "20261108-152720-fb0664",
+      "capUsd": 6.0,
+      "costUsd": 6.0542834,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r2-hermetic2",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.550665,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.612412,
+          "node": "build"
+        },
+        {
+          "calls": 3,
+          "costUsd": 1.3109317,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.5802747,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.0,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 6.0542834,
+      "runId": "20261108-152720-47b18a",
+      "score": 0.78125,
+      "seed": 0,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.15625,
+          "seq": 1,
+          "testsPassed": 35,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.183035714,
+          "seq": 2,
+          "testsPassed": 41,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#2",
+          "score": 0.78125,
+          "seq": 3,
+          "testsPassed": 175,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.78125,
+          "seq": 4,
+          "testsPassed": 175,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 175,
+      "testsTotal": 224,
+      "wallS": 3457.537902832,
+      "zeroshotRunId": "01a1bb8e-8377-7e71-b506-53e82f281c70"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-152720-e63bea",
+    "score": {
+      "batchId": "20261108-152720-fb0664",
+      "capUsd": 6.0,
+      "costUsd": 5.4082912,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors"
+      ],
+      "label": "r2-hermetic2",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 2.165256,
+          "node": "repair"
+        },
+        {
+          "calls": 2,
+          "costUsd": 1.4445467,
+          "node": "oracle"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.6905815,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.683748,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.424159,
+          "node": "postmortem"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.4082912,
+      "runId": "20261108-152720-e63bea",
+      "score": 0.565495208,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.549520767,
+          "seq": 1,
+          "testsPassed": 172,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.49201278,
+          "seq": 2,
+          "testsPassed": 154,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.565495208,
+          "seq": 3,
+          "testsPassed": 177,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 177,
+      "testsTotal": 313,
+      "wallS": 2482.284447432,
+      "zeroshotRunId": "01a1bba4-e3b8-7ed3-939d-7622ee69dd55"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-152720-f53c72",
+    "score": {
+      "batchId": "20261108-152720-fb0664",
+      "capUsd": 6.0,
+      "costUsd": 1.7417891,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r2-hermetic2",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 0.6697437,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4313005,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.3793446,
+          "node": "postmortem"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2614003,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 1.7417891,
+      "runId": "20261108-152720-f53c72",
+      "score": 0.428571429,
+      "seed": 1,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.428571429,
+          "seq": 1,
+          "testsPassed": 96,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.428571429,
+          "seq": 2,
+          "testsPassed": 96,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 96,
+      "testsTotal": 224,
+      "wallS": 740.184732199,
+      "zeroshotRunId": "01a1bb9b-7cca-7503-b544-989eba2d064d"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-155351-2efb37",
+    "score": {
+      "batchId": "20261108-152720-fb0664",
+      "capUsd": 6.0,
+      "costUsd": 6.5821604,
+      "exitReason": null,
+      "failingTests": [
+        "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+        "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+        "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+      ],
+      "label": "r2-hermetic2",
+      "nodeCosts": [
+        {
+          "calls": 1,
+          "costUsd": 3.2853545,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 2.5916377,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.4408648,
+          "node": "explore"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.2643034,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 6.5821604,
+      "runId": "20261108-155351-2efb37",
+      "score": 0.526785714,
+      "seed": 2,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 224
+        },
+        {
+          "node": "build#1",
+          "score": 0.46875,
+          "seq": 1,
+          "testsPassed": 105,
+          "testsTotal": 224
+        },
+        {
+          "node": "repair#1",
+          "score": 0.526785714,
+          "seq": 2,
+          "testsPassed": 118,
+          "testsTotal": 224
+        },
+        {
+          "node": "final",
+          "score": 0.526785714,
+          "seq": 3,
+          "testsPassed": 118,
+          "testsTotal": 224
+        }
+      ],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": 118,
+      "testsTotal": 224,
+      "wallS": 1958.608478308,
+      "zeroshotRunId": "01a1bba6-c893-7613-ba8e-1d9408ee0cc1"
+    }
+  },
+  {
+    "ended": true,
+    "run": "20261108-160627-c0d812",
+    "score": {
+      "batchId": "20261108-152720-fb0664",
+      "capUsd": 6.0,
+      "costUsd": 6.0043453,
+      "exitReason": null,
+      "failingTests": [
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+        "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+        "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+        "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+        "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+        "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+      ],
+      "label": "r2-hermetic2",
+      "nodeCosts": [
+        {
+          "calls": 2,
+          "costUsd": 2.6313646,
+          "node": "repair"
+        },
+        {
+          "calls": 1,
+          "costUsd": 1.9716417,
+          "node": "build"
+        },
+        {
+          "calls": 1,
+          "costUsd": 0.7535295,
+          "node": "explore"
+        },
+        {
+          "calls": 2,
+          "costUsd": 0.6478095,
+          "node": "oracle"
+        }
+      ],
+      "overLimit": "budget",
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": 5.3036122,
+      "runId": "20261108-160627-c0d812",
+      "score": 0.674121406,
+      "seed": 2,
+      "state": "scored",
+      "steps": [
+        {
+          "node": "explore#1",
+          "score": 0.0,
+          "seq": 0,
+          "testsPassed": 0,
+          "testsTotal": 313
+        },
+        {
+          "node": "build#1",
+          "score": 0.629392971,
+          "seq": 1,
+          "testsPassed": 197,
+          "testsTotal": 313
+        },
+        {
+          "node": "repair#1",
+          "score": 0.670926518,
+          "seq": 2,
+          "testsPassed": 210,
+          "testsTotal": 313
+        },
+        {
+          "node": "final",
+          "score": 0.674121406,
+          "seq": 3,
+          "testsPassed": 211,
+          "testsTotal": 313
+        }
+      ],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": 211,
+      "testsTotal": 313,
+      "wallS": 2325.142925262,
+      "zeroshotRunId": "01a1bbb2-51bc-7c52-b82d-d7d8150c5e6f"
+    }
+  },
+  {
+    "ended": false,
+    "run": "20261108-170007-024098",
+    "score": {
+      "batchId": "20261108-170007-63721d",
+      "capUsd": 6.0,
+      "costUsd": null,
+      "exitReason": null,
+      "failingTests": [],
+      "label": "r3-noaccept",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261108-170007-024098",
+      "score": null,
+      "seed": 0,
+      "state": "running_agent",
+      "steps": [],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": "01a1bbe3-76b4-7bc0-b82d-31116a963693"
+    }
+  },
+  {
+    "ended": false,
+    "run": "20261108-170007-915c3e",
+    "score": {
+      "batchId": "20261108-170007-63721d",
+      "capUsd": 6.0,
+      "costUsd": null,
+      "exitReason": null,
+      "failingTests": [],
+      "label": "r3-noaccept",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261108-170007-915c3e",
+      "score": null,
+      "seed": 0,
+      "state": "running_agent",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": "01a1bbe3-76b4-7051-bc35-6513b8d18a1c"
+    }
+  },
+  {
+    "ended": false,
+    "run": "20261108-170009-2845db",
+    "score": {
+      "batchId": "20261108-170009-cace9c",
+      "capUsd": 6.0,
+      "costUsd": null,
+      "exitReason": null,
+      "failingTests": [],
+      "label": "r3-h2-noaccept",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261108-170009-2845db",
+      "score": null,
+      "seed": 0,
+      "state": "running_agent",
+      "steps": [],
+      "task": "yaa110__nomino.f892499",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": "01a1bbe3-7e13-7521-8fb6-72ee1220f37e"
+    }
+  },
+  {
+    "ended": false,
+    "run": "20261108-170009-cb5a35",
+    "score": {
+      "batchId": "20261108-170009-cace9c",
+      "capUsd": 6.0,
+      "costUsd": null,
+      "exitReason": null,
+      "failingTests": [],
+      "label": "r3-h2-noaccept",
+      "nodeCosts": [],
+      "overLimit": null,
+      "regressionPassed": null,
+      "regressionTotal": null,
+      "reportedCostUsd": null,
+      "runId": "20261108-170009-cb5a35",
+      "score": null,
+      "seed": 0,
+      "state": "running_agent",
+      "steps": [],
+      "task": "tomnomnom__gron.88a6234",
+      "testsPassed": null,
+      "testsTotal": null,
+      "wallS": null,
+      "zeroshotRunId": "01a1bbe3-7e15-7852-b8d7-27fb6188c998"
+    }
+  }
+]

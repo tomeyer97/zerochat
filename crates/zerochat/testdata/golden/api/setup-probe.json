@@ -1,0 +1,7 @@
+{
+  "body": {
+    "app": "zerochat",
+    "version": "<version>"
+  },
+  "status": 200
+}

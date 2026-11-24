@@ -1,0 +1,130 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 120.0,
+        "capSteps": 16,
+        "capUsd": 25.0,
+        "costUsd": 6.1985388,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": 188,
+        "regressionTotal": 188,
+        "runId": "20261104-123424-e0fb82",
+        "score": 1.0,
+        "seed": 0,
+        "startedAt": 1793792065004,
+        "state": "scored",
+        "task": "k8s-job-backoff-limit-per-index",
+        "testsPassed": 20,
+        "testsTotal": 20,
+        "wallS": 2135.186195374,
+        "zeroshotRunId": "01a1a656-c536-7252-b6ec-4768f1a2d2c4"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793794087989,
+    "harnessVersion": "b34fe3b7",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": "high",
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-sonnet-5",
+            "name": "worker",
+            "parallel": null
+          },
+          {
+            "effort": "medium",
+            "kind": "verifier",
+            "loopMax": 10,
+            "loopName": "change_loop",
+            "model": "claude-sonnet-5",
+            "name": "acceptance",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": "medium",
+            "kind": "verifier",
+            "loopMax": 10,
+            "loopName": "change_loop",
+            "model": "claude-sonnet-5",
+            "name": "code",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": "high",
+            "kind": "step",
+            "loopMax": 10,
+            "loopName": "change_loop",
+            "model": "claude-sonnet-5",
+            "name": "review_repair",
+            "parallel": null
+          }
+        ],
+        "runs": 1,
+        "runtimeFile": null,
+        "runtimeMatches": true,
+        "source": "variant",
+        "variant": "software-change"
+      }
+    ],
+    "id": "label:k8s-sc-sonnet5",
+    "label": "k8s-sc-sonnet5",
+    "limits": {
+      "maxCostUsd": 25.0,
+      "maxSteps": 16,
+      "maxWallMinutes": 120.0
+    },
+    "maxScore": 1.0,
+    "meanScore": 1.0,
+    "meanScoreFinished": null,
+    "minScore": 1.0,
+    "models": [
+      "claude-sonnet-5"
+    ],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "k8s-job-backoff-limit-per-index",
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n": 1
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1793792065004,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "k8s-job-backoff-limit-per-index"
+    ],
+    "totalCostUsd": 6.1985388,
+    "totalWallS": 2135.186195374,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

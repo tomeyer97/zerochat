@@ -1,0 +1,26 @@
+[
+  [
+    "Claude API retry 2/10: rate_limit",
+    "retried 2 of 10 (rate limit)"
+  ],
+  [
+    "Claude API retry 1/10: ",
+    "retried 1 of 10 (a transient error)"
+  ],
+  [
+    "Claude API retry 3/10: unknown",
+    "retried 3 of 10 (a transient error)"
+  ],
+  [
+    "Claude API retry 4/10: overloaded_error",
+    "retried 4 of 10 (overloaded error)"
+  ],
+  [
+    "Claude API retry x",
+    null
+  ],
+  [
+    "something else",
+    null
+  ]
+]

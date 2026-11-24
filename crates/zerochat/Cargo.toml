@@ -1,0 +1,43 @@
+[package]
+name = "zerochat"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish.workspace = true
+description = "Observe, steer and replay Zeroshot runs"
+
+# dist skips `publish = false` packages unless told otherwise: both binaries are released.
+[package.metadata.dist]
+dist = true
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0.8", features = ["macros"] }
+clap = { version = "4.5", features = ["derive", "env"] }
+futures = "0.3"
+glob = "0.3.4"
+include_dir = "0.7"
+libc = "0.2"
+sysinfo.workspace = true
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+toml = "1.2.0"
+tower-http = { version = "0.7.1", features = ["compression-gzip"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+# The TypeScript twins of the API types (web/src/generated/, `make types`).
+ts-rs = { version = "12", default-features = false, features = ["serde-compat", "no-serde-warnings"] }
+# zsf (Zeroshot features), the slice/feature scheduler in this workspace. The Features page
+# uses it as a library: it reads zsf's on-disk store (`zsf::store`, `zsf::model`) directly and
+# drives its daemon, engine and git helpers for the feature and slice actions.
+zsf = { path = "../zsf" }
+[dev-dependencies]
+tempfile = "3"

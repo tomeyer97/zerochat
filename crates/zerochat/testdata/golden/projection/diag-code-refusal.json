@@ -1,0 +1,287 @@
+{
+  "backgroundAgents": [],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+  },
+  "costEstimated": false,
+  "costUsd": null,
+  "createdAt": 1795000960000,
+  "cursor": 11,
+  "endedAt": 1795000966600,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 5100,
+      "endSeq": 10,
+      "endedAt": 1795000966600,
+      "error": {
+        "code": "refusal",
+        "reason": null
+      },
+      "errorLines": [
+        "I can't help with that."
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795000966100,
+      "logLines": 6,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "refusal",
+        "reason": null,
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795000961500,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 1,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    }
+  ],
+  "failure": {
+    "actions": [
+      "replay",
+      "resume"
+    ],
+    "at": 1795000966600,
+    "attempt": 1,
+    "cause": "refused",
+    "class": "agent",
+    "closedAfterMs": null,
+    "closedByPostmortem": false,
+    "detail": "",
+    "execution": 1,
+    "exit": null,
+    "feedback": [],
+    "fix": null,
+    "fixCommand": null,
+    "intoRunMs": 5600,
+    "kept": [],
+    "lastErrors": [
+      "I can't help with that."
+    ],
+    "node": "worker",
+    "nodeKind": "step",
+    "primary": null,
+    "reason": "worker_failed",
+    "resetsAt": null,
+    "round": 1,
+    "title": "worker refused the task"
+  },
+  "features": {
+    "exactTimes": true,
+    "providerCost": false,
+    "toolCalls": true,
+    "workspaceSnapshots": true
+  },
+  "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "attempts": 1,
+          "instructions": "Do the task.",
+          "kind": "step",
+          "name": "worker",
+          "timeoutMs": 45000,
+          "worker": "builtin.agent.worker@1"
+        }
+      ],
+      "kind": "seq",
+      "name": "run"
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": "Do the task.",
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "worker",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": 45000,
+      "worker": "builtin.agent.worker@1"
+    }
+  ],
+  "initialInput": {
+    "task": "Add slugify() to textkit."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "worker"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795000966100,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": true,
+    "workspace": "<root>/work/diag-code-refusal/repo"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+  },
+  "nodes": {
+    "worker": {
+      "activeSince": null,
+      "costEstimated": false,
+      "costUsd": null,
+      "elapsedMs": 5100,
+      "executions": [
+        1
+      ],
+      "rounds": 1,
+      "state": "failed",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1ee65-0400-7010-8010-000000000010",
+  "runLog": [
+    {
+      "at": 1795000961000,
+      "seq": 1,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795000961500,
+      "seq": 3,
+      "stream": "system",
+      "text": "worker started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795000966600,
+      "seq": 10,
+      "stream": "system",
+      "text": "worker failed: refused"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+      "worker": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic"
+  },
+  "source": {
+    "branch": "main",
+    "repository": "example/textkit",
+    "revision": "0000000000000000000000000000000000000000"
+  },
+  "startedAt": 1795000961000,
+  "status": "failed",
+  "target": "local",
+  "terminal": {
+    "context": {
+      "recorded": [
+        {
+          "message": "Node worker failed: refusal after 3.0s: node execution failed: provider failure: I can't help with that.; provider process exited with status 1"
+        }
+      ]
+    },
+    "reason": "worker_failed",
+    "status": "failed"
+  },
+  "title": "diag code refusal",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+  },
+  "usageLive": false,
+  "usagePending": false
+}

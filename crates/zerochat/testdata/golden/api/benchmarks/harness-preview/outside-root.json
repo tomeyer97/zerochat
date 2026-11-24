@@ -1,0 +1,10 @@
+{
+  "body": {
+    "errors": [
+      "graph: ../../etc/passwd: use a path inside the pb project, without `..`."
+    ],
+    "info": null,
+    "warnings": []
+  },
+  "status": 200
+}

@@ -1,0 +1,142 @@
+{
+  "calc/events#0": {
+    "detail": "",
+    "what": "created"
+  },
+  "calc/events#1": {
+    "detail": "",
+    "what": "daemon started"
+  },
+  "calc/events#10": {
+    "detail": "",
+    "what": "run stopped"
+  },
+  "calc/events#11": {
+    "detail": "Infra_failure detail",
+    "what": "infrastructure failure"
+  },
+  "calc/events#12": {
+    "detail": "interrupted detail",
+    "what": "run lost"
+  },
+  "calc/events#13": {
+    "detail": "",
+    "what": "resumed in a new run"
+  },
+  "calc/events#14": {
+    "detail": "resume_failed detail",
+    "what": "resume failed"
+  },
+  "calc/events#15": {
+    "detail": "Paused: paused detail",
+    "what": "paused"
+  },
+  "calc/events#16": {
+    "detail": "",
+    "what": "unpaused"
+  },
+  "calc/events#17": {
+    "detail": "",
+    "what": "waiting for your review"
+  },
+  "calc/events#18": {
+    "detail": "",
+    "what": "approved"
+  },
+  "calc/events#19": {
+    "detail": "retried detail",
+    "what": "retried by you"
+  },
+  "calc/events#2": {
+    "detail": "",
+    "what": "started"
+  },
+  "calc/events#20": {
+    "detail": "accepte",
+    "what": "merged without the gate"
+  },
+  "calc/events#21": {
+    "detail": "skipped detail",
+    "what": "skipped"
+  },
+  "calc/events#22": {
+    "detail": "edited detail",
+    "what": "edited"
+  },
+  "calc/events#23": {
+    "detail": "waiting detail",
+    "what": "held"
+  },
+  "calc/events#24": {
+    "detail": "done detail",
+    "what": "done"
+  },
+  "calc/events#25": {
+    "detail": "integration_failed detail",
+    "what": "merge failed"
+  },
+  "calc/events#26": {
+    "detail": "hook_failed detail",
+    "what": "hook failed"
+  },
+  "calc/events#27": {
+    "detail": "request_rejected detail",
+    "what": "refused"
+  },
+  "calc/events#28": {
+    "detail": "",
+    "what": "stopped launching"
+  },
+  "calc/events#29": {
+    "detail": "",
+    "what": "daemon stopped"
+  },
+  "calc/events#3": {
+    "detail": "launched detail",
+    "what": "started"
+  },
+  "calc/events#30": {
+    "detail": "something_newer detail",
+    "what": "other"
+  },
+  "calc/events#4": {
+    "detail": "launch_failed detail",
+    "what": "launch failed"
+  },
+  "calc/events#5": {
+    "detail": "run finished detail",
+    "what": "run ended"
+  },
+  "calc/events#6": {
+    "detail": "gate_failed detail",
+    "what": "gate failed"
+  },
+  "calc/events#7": {
+    "detail": "merged",
+    "what": "merged"
+  },
+  "calc/events#8": {
+    "detail": "conflict detail",
+    "what": "conflict"
+  },
+  "calc/events#9": {
+    "detail": "",
+    "what": "review rounds ran out"
+  },
+  "calc/events-04#0": {
+    "detail": "launched detail",
+    "what": "started"
+  },
+  "calc/events-04#1": {
+    "detail": "interrupted detail",
+    "what": "run lost"
+  },
+  "calc/events-04#2": {
+    "detail": "skipped detail",
+    "what": "skipped"
+  },
+  "calc/events-04#3": {
+    "detail": "something_newer detail",
+    "what": "other"
+  }
+}

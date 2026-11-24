@@ -1,0 +1,245 @@
+/* ---------- benchmarks: compare, start a batch, sweeps ---------- */
+.bm-subnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.bm-subnav nav {
+  display: flex;
+  gap: 14px;
+  font-size: 13.5px;
+}
+.bm-subnav nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.bm-subnav nav a.on {
+  color: var(--ink);
+  font-weight: 600;
+  border-bottom-color: var(--accent);
+}
+.bm-compare-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  background: var(--group-surface);
+  font-size: 13px;
+}
+.bm-compare-pick {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+}
+.bm-compare-table th.bm-task,
+.bm-compare-table td {
+  white-space: normal;
+}
+.bm-sweep-item {
+  margin-top: 16px;
+}
+.bm-sweep-item h2 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+.bm-recommendation {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+.bm-form {
+  display: grid;
+  gap: 16px;
+  /* Narrower (640px) squeezes the radio labels and long task ids into 2-3 line columns. */
+  max-width: 900px;
+}
+.bm-form fieldset {
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.bm-form legend {
+  padding: 0 4px;
+  font-size: 12.5px;
+  font-weight: 550;
+  color: var(--secondary);
+}
+/* Choice labels: a checkbox or radio with its text beside it. `.bm-check` is a task tick (one
+   line); `.bm-radio` (a harness choice) and `.bm-set` (a task set) wrap under their title, so
+   their input sits at the top. */
+.bm-check,
+.bm-radio,
+.bm-set {
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bm-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.bm-radio,
+.bm-set {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.bm-radio input,
+.bm-set input {
+  margin-top: 4px;
+}
+.bm-harness-choice {
+  display: grid;
+  gap: 6px;
+}
+.bm-required {
+  color: var(--secondary);
+  font-weight: 700;
+}
+.bm-subhead {
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--muted);
+}
+.bm-sets {
+  display: grid;
+  gap: 6px;
+}
+.bm-set-name {
+  font-weight: 600;
+}
+/* A set lists the tasks it holds. */
+.bm-set-members {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.bm-task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 4px 16px;
+  max-height: 220px;
+  overflow: auto;
+}
+.bm-task-check {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.bm-task-check input {
+  margin-top: 3px;
+}
+.bm-task-check code {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.bm-task-check.via-set {
+  cursor: default;
+}
+.bm-fields-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  gap: 12px 18px;
+  align-items: start;
+}
+.bm-form input[type='checkbox'],
+.bm-form input[type='radio'] {
+  flex: none;
+  margin: 0;
+}
+.bm-form .field input:not([type='checkbox']):not([type='radio']),
+.bm-form .field select {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+.bm-form .field.invalid > input,
+.bm-form .field.invalid > select {
+  border-color: var(--error-text);
+}
+.bm-form .field-note {
+  font-weight: 400;
+}
+.bm-preview {
+  display: grid;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--hairline);
+}
+.bm-preview p {
+  margin: 0;
+}
+.bm-preview-warn {
+  color: var(--warn);
+}
+/* Start, the spend it allows and the errors still to fix stay in view at the bottom of
+   the scrolling page. A sticky box stops at its scroll container's padding, so the start page's
+   container has none at the bottom; the footer brings its own. */
+.run-scroll.bm-start-scroll {
+  padding-bottom: 0;
+}
+.bm-form-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 10px 0 14px;
+  border-top: 1px solid var(--hairline);
+  background: var(--canvas);
+}
+.bm-form-footer .bm-spend {
+  flex: 1 1 260px;
+}
+.bm-form-footer .button.primary {
+  margin-left: auto;
+}
+.bm-error-summary {
+  flex-basis: 100%;
+  margin: 0;
+}
+.bm-error-summary .text-button {
+  color: inherit;
+  text-decoration: underline;
+}
+.bm-spend {
+  font-size: 13.5px;
+  margin: 0;
+}
+.bm-running-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 640px) {
+  .bm-compare-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Phone width: a narrower sticky task column leaves room for the seeds between it and Mean. */
+  .bm-batch-matrix th.bm-task {
+    width: 110px;
+    max-width: 110px;
+  }
+  .bm-batch-matrix .bm-mean-col {
+    min-width: 56px;
+  }
+  .bm-batch-matrix .bm-agg-range {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+  }
+}

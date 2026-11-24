@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "task_not_found",
+    "message": "This attempt has no task file."
+  },
+  "status": 404
+}

@@ -1,0 +1,231 @@
+{
+ "name": "lane-mixed",
+ "runId": "01a1ee86-e3e0-7035-8035-000000000035",
+ "where": "local",
+ "tags": [
+  "stock",
+  "lane:mixed",
+  "harness:codex",
+  "failure:setup"
+ ],
+ "stock": true,
+ "stored": {
+  "admitted": {
+   "title": "lane mixed",
+   "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+     "kind": "seq",
+     "name": "run",
+     "children": [
+      {
+       "kind": "loop",
+       "name": "change_loop",
+       "maxIterations": 1,
+       "body": {
+        "kind": "seq",
+        "name": "iteration",
+        "children": [
+         {
+          "kind": "step",
+          "name": "code",
+          "worker": "builtin.agent.worker@1",
+          "instructions": "Implement the task.",
+          "attempts": 2,
+          "timeoutMs": 45000
+         },
+         {
+          "kind": "par",
+          "name": "reviews",
+          "children": [
+           {
+            "kind": "verifier",
+            "name": "acceptance",
+            "worker": "builtin.agent.reviewer@1",
+            "attempts": 1
+           },
+           {
+            "kind": "verifier",
+            "name": "code_review",
+            "worker": "builtin.agent.reviewer@1",
+            "attempts": 1
+           }
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "kind": "fail",
+       "name": "change_attempts_exhausted",
+       "reason": "change_attempts_exhausted"
+      }
+     ]
+    }
+   },
+   "initialInput": {
+    "task": "Add slugify() to textkit."
+   },
+   "runtime": {
+    "harness": "claude",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+     "code": {
+      "kind": "agent",
+      "model": "gpt-5.1-codex-does-not-exist",
+      "lane": {
+       "harness": "codex",
+       "provider": "openai"
+      },
+      "connections": {
+       "openai": [
+        "OPENAI_API_KEY"
+       ]
+      }
+     },
+     "acceptance": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "code_review": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     }
+    }
+   },
+   "source": {
+    "repository": "example/textkit",
+    "branch": "main",
+    "revision": "0000000000000000000000000000000000000000"
+   }
+  },
+  "snapshot": {
+   "runId": "01a1ee86-e3e0-7035-8035-000000000035",
+   "title": "lane mixed",
+   "phase": "finished",
+   "cursor": "v2:8",
+   "terminal": {
+    "status": "failed",
+    "reason": "code_failed"
+   },
+   "forceStopRequested": false
+  }
+ },
+ "events": [
+  {
+   "seq": 1,
+   "body": {
+    "kind": "safe_log",
+    "execution": null,
+    "timestamp": 1795003181000,
+    "stream": "system",
+    "line": "Preparing execution environment"
+   }
+  },
+  {
+   "seq": 2,
+   "body": {
+    "kind": "run_started"
+   }
+  },
+  {
+   "seq": 3,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee86-e3e0-7035-8035-000000000035",
+     "node": "code",
+     "nodeInstance": 1,
+     "execution": 1
+    },
+    "occurrence": {
+     "node": "code",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    }
+   }
+  },
+  {
+   "seq": 4,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003182000,
+    "stream": "output",
+    "line": "Working."
+   }
+  },
+  {
+   "seq": 5,
+   "body": {
+    "kind": "token_usage_observed",
+    "execution": 1,
+    "usage": {
+     "inputTokens": 1200,
+     "outputTokens": 800,
+     "cacheReadInputTokens": 40000,
+     "cacheCreationInputTokens": 3000
+    }
+   }
+  },
+  {
+   "seq": 6,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003183000,
+    "stream": "error",
+    "line": "Node code failed: crash after 2.1s: node execution failed: Codex provider failure: unknown model gpt-5.1-codex-does-not-exist"
+   }
+  },
+  {
+   "seq": 7,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee86-e3e0-7035-8035-000000000035",
+      "node": "code",
+      "nodeInstance": 1,
+      "execution": 1
+     },
+     "outcome": {
+      "status": "error",
+      "code": "crash",
+      "reason": null
+     }
+    }
+   }
+  },
+  {
+   "seq": 8,
+   "body": {
+    "kind": "terminal",
+    "result": {
+     "status": "failed",
+     "reason": "code_failed"
+    }
+   }
+  }
+ ],
+ "recovery": {
+  "workspace": "/work/lane-mixed/repo"
+ },
+ "controllerPid": null,
+ "checkpoints": true,
+ "sessions": {}
+}

@@ -1,0 +1,2419 @@
+{
+  "table": [
+    [
+      {
+        "input": null,
+        "name": ""
+      },
+      {
+        "detail": "",
+        "verb": "tool"
+      }
+    ],
+    [
+      {
+        "input": {
+          "command": "npm test\nsecond line"
+        },
+        "name": "Bash"
+      },
+      {
+        "detail": "npm test",
+        "verb": "Bash"
+      }
+    ],
+    [
+      {
+        "input": {
+          "description": "run the tests"
+        },
+        "name": "Bash"
+      },
+      {
+        "detail": "run the tests",
+        "verb": "Bash"
+      }
+    ],
+    [
+      {
+        "input": {
+          "command": "  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  "
+        },
+        "name": "Bash"
+      },
+      {
+        "detail": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…",
+        "verb": "Bash"
+      }
+    ],
+    [
+      {
+        "input": {
+          "path": "src/a.ts"
+        },
+        "name": "Read"
+      },
+      {
+        "detail": "src/a.ts",
+        "verb": "Read"
+      }
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/src/a.ts",
+          "new_string": "a\nB\nc\nd",
+          "old_string": "a\nb\nc"
+        },
+        "name": "Edit"
+      },
+      {
+        "detail": "/w/src/a.ts",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/a",
+          "new_string": "same",
+          "old_string": "same"
+        },
+        "name": "Edit"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/a",
+          "new_string": "new",
+          "old_string": ""
+        },
+        "name": "Edit"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/a",
+          "new_string": "x",
+          "old_string": 1
+        },
+        "name": "Edit"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "edits": [
+            {
+              "new_string": "b",
+              "old_string": "a"
+            },
+            {
+              "new_string": "only new"
+            },
+            "junk"
+          ],
+          "file_path": "/w/a"
+        },
+        "name": "MultiEdit"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "content": "line 1\nline 2\n",
+          "file_path": "/w/new.ts"
+        },
+        "name": "Write"
+      },
+      {
+        "detail": "/w/new.ts",
+        "verb": "Write"
+      }
+    ],
+    [
+      {
+        "input": {
+          "path": "/w/p"
+        },
+        "name": "Write"
+      },
+      {
+        "detail": "/w/p",
+        "verb": "Write"
+      }
+    ],
+    [
+      {
+        "input": {
+          "notebook_path": "/w/n.ipynb"
+        },
+        "name": "NotebookEdit"
+      },
+      {
+        "detail": "/w/n.ipynb",
+        "verb": "Edit notebook"
+      }
+    ],
+    [
+      {
+        "input": {
+          "pattern": "**/*.ts"
+        },
+        "name": "Glob"
+      },
+      {
+        "detail": "**/*.ts",
+        "verb": "Find files"
+      }
+    ],
+    [
+      {
+        "input": {
+          "path": "src",
+          "pattern": "TODO"
+        },
+        "name": "Grep"
+      },
+      {
+        "detail": "TODO  in  src",
+        "verb": "Search"
+      }
+    ],
+    [
+      {
+        "input": {
+          "path": "src"
+        },
+        "name": "Grep"
+      },
+      {
+        "detail": "src",
+        "verb": "Search"
+      }
+    ],
+    [
+      {
+        "input": {
+          "url": "https://example.com"
+        },
+        "name": "WebFetch"
+      },
+      {
+        "detail": "https://example.com",
+        "verb": "Fetch"
+      }
+    ],
+    [
+      {
+        "input": {
+          "query": "elk layout"
+        },
+        "name": "WebSearch"
+      },
+      {
+        "detail": "elk layout",
+        "verb": "Web search"
+      }
+    ],
+    [
+      {
+        "input": {
+          "prompt": "first\nsecond"
+        },
+        "name": "Task"
+      },
+      {
+        "detail": "first",
+        "verb": "Sub-agent"
+      }
+    ],
+    [
+      {
+        "input": {
+          "description": "explore"
+        },
+        "name": "Agent"
+      },
+      {
+        "detail": "explore",
+        "verb": "Sub-agent"
+      }
+    ],
+    [
+      {
+        "input": {
+          "todos": [
+            1,
+            2,
+            3
+          ]
+        },
+        "name": "TodoWrite"
+      },
+      {
+        "detail": "3 items",
+        "verb": "Update todo list"
+      }
+    ],
+    [
+      {
+        "input": {
+          "todos": "x"
+        },
+        "name": "TodoWrite"
+      },
+      {
+        "detail": "",
+        "verb": "Update todo list"
+      }
+    ],
+    [
+      {
+        "input": {
+          "command": "ls"
+        },
+        "name": "bash"
+      },
+      {
+        "detail": "ls",
+        "verb": "Bash"
+      }
+    ],
+    [
+      {
+        "input": {
+          "shellId": "s1"
+        },
+        "name": "read_bash"
+      },
+      {
+        "detail": "s1",
+        "verb": "Read shell"
+      }
+    ],
+    [
+      {
+        "input": {
+          "input": "y\n",
+          "shellId": "s1"
+        },
+        "name": "write_bash"
+      },
+      {
+        "detail": "y",
+        "verb": "Write to shell"
+      }
+    ],
+    [
+      {
+        "input": {
+          "shellId": "s1"
+        },
+        "name": "write_bash"
+      },
+      {
+        "detail": "s1",
+        "verb": "Write to shell"
+      }
+    ],
+    [
+      {
+        "input": {
+          "shellId": "s1"
+        },
+        "name": "stop_bash"
+      },
+      {
+        "detail": "s1",
+        "verb": "Stop shell"
+      }
+    ],
+    [
+      {
+        "input": {
+          "path": "/w/a"
+        },
+        "name": "view"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Read"
+      }
+    ],
+    [
+      {
+        "input": {
+          "new_str": "x\nz",
+          "old_str": "x\ny",
+          "path": "/w/a"
+        },
+        "name": "edit"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "new_str": "y",
+          "old_str": "x",
+          "path": "/w/a"
+        },
+        "name": "str_replace"
+      },
+      {
+        "detail": "/w/a",
+        "verb": "Edit"
+      }
+    ],
+    [
+      {
+        "input": {
+          "file_text": "one\ntwo",
+          "path": "/w/b"
+        },
+        "name": "create"
+      },
+      {
+        "detail": "/w/b",
+        "verb": "Write"
+      }
+    ],
+    [
+      {
+        "input": {
+          "pattern": "p"
+        },
+        "name": "grep"
+      },
+      {
+        "detail": "p",
+        "verb": "Search"
+      }
+    ],
+    [
+      {
+        "input": {
+          "path": "d",
+          "pattern": "p"
+        },
+        "name": "rg"
+      },
+      {
+        "detail": "p  in  d",
+        "verb": "Search"
+      }
+    ],
+    [
+      {
+        "input": {
+          "pattern": "*"
+        },
+        "name": "glob"
+      },
+      {
+        "detail": "*",
+        "verb": "Find files"
+      }
+    ],
+    [
+      {
+        "input": {
+          "url": "https://example.com/x"
+        },
+        "name": "web_fetch"
+      },
+      {
+        "detail": "https://example.com/x",
+        "verb": "Fetch"
+      }
+    ],
+    [
+      {
+        "input": {
+          "description": "sub"
+        },
+        "name": "task"
+      },
+      {
+        "detail": "sub",
+        "verb": "Sub-agent"
+      }
+    ],
+    [
+      {
+        "input": {
+          "verdict": "accepted"
+        },
+        "name": "StructuredOutput"
+      },
+      {
+        "detail": "",
+        "verb": "StructuredOutput"
+      }
+    ],
+    [
+      {
+        "input": {
+          "query": "q",
+          "url": "u"
+        },
+        "name": "mcp__x__y"
+      },
+      {
+        "detail": "q",
+        "verb": "mcp__x__y"
+      }
+    ],
+    [
+      {
+        "input": "a raw string input\nwith two lines",
+        "name": "Custom"
+      },
+      {
+        "detail": "a raw string input",
+        "verb": "Custom"
+      }
+    ],
+    [
+      {
+        "input": [
+          1,
+          2
+        ],
+        "name": "Custom"
+      },
+      {
+        "detail": "",
+        "verb": "Custom"
+      }
+    ],
+    [
+      {
+        "input": {
+          "other": 1
+        },
+        "name": "Custom"
+      },
+      {
+        "detail": "",
+        "verb": "Custom"
+      }
+    ]
+  ],
+  "transcripts": {
+    "copilot-session/transcript-1@2": {
+      "detail": "git status",
+      "verb": "Bash"
+    },
+    "copilot-session/transcript-1@3": {
+      "detail": "/work/copilot-session/repo/missing.md",
+      "verb": "Read"
+    },
+    "copilot-session/transcript-1@4": {
+      "detail": "title",
+      "verb": "Search"
+    },
+    "delivery-failed/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "delivery-failed/transcript-1@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "delivery-failed/transcript-2@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "delivery-failed/transcript-3@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-api-hang/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-api-hang/transcript-1@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "diag-api-hang/transcript-1@4": {
+      "detail": "/work/diag-api-hang/repo/textkit/core.py",
+      "verb": "Read"
+    },
+    "diag-code-authentication-required/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-crash/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-input-required/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-malformed-result/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-other/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-policy-denied/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-refusal/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-code-timeout/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-context/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-credentials/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-disk/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-malformed-stream/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-missing-cli/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-model/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-network/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-permission/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-provider-down/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-provider-timeout/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-rate-limit/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-stream-cut/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "diag-usage-limit/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "force-stopped/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@1": {
+      "detail": "/work/chaos-transient",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@12": {
+      "detail": "/work/chaos-transient/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@14": {
+      "detail": "/work/chaos-transient/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@16": {
+      "detail": "{\"id\":\"toolu_01HMGEZa7TjLc7iksDJBdC9K\",\"input\":{\"file_path\":\"/work/chaos-transient/tests/test_core.py\",\"new_string\":\"import unittest\\n\\nfro…",
+      "verb": "tool"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@18": {
+      "detail": "cd /work/chaos-transient && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@20": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@4": {
+      "detail": "find /work/chaos-transient -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@7": {
+      "detail": "/work/chaos-transient/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@8": {
+      "detail": "/work/chaos-transient/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger@9": {
+      "detail": "/work/chaos-transient/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@10": {
+      "detail": "/work/chaos-transient/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@13": {
+      "detail": "/work/chaos-transient/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@15": {
+      "detail": "/work/chaos-transient/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@17": {
+      "detail": "/work/chaos-transient/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@19": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@2": {
+      "detail": "/work/chaos-transient",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@22": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@5": {
+      "detail": "find /work/chaos-transient -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@8": {
+      "detail": "/work/chaos-transient/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-transient/transcript-1@9": {
+      "detail": "/work/chaos-transient/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@1": {
+      "detail": "find /work/chaos-usage-limit -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@10": {
+      "detail": "{\"id\":\"toolu_01GoEeKzJvZBXSiZAFigeH37\",\"input\":{\"file_path\":\"/work/chaos-usage-limit/tests/test_core.py\",\"new_string\":\"import unittest\\n\\nf…",
+      "verb": "tool"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@2": {
+      "detail": "/work/chaos-usage-limit/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@3": {
+      "detail": "/work/chaos-usage-limit/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@4": {
+      "detail": "/work/chaos-usage-limit/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@6": {
+      "detail": "/work/chaos-usage-limit/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@8": {
+      "detail": "/work/chaos-usage-limit/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@11": {
+      "detail": "/work/chaos-usage-limit/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@2": {
+      "detail": "find /work/chaos-usage-limit -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@3": {
+      "detail": "/work/chaos-usage-limit/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@4": {
+      "detail": "/work/chaos-usage-limit/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@5": {
+      "detail": "/work/chaos-usage-limit/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@7": {
+      "detail": "/work/chaos-usage-limit/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1@9": {
+      "detail": "/work/chaos-usage-limit/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@1": {
+      "detail": "/work/controller-killed",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@10": {
+      "detail": "cd /work/controller-killed && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@11": {
+      "detail": "cd /work/controller-killed && ls -la",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@12": {
+      "detail": "cd /work/controller-killed && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@13": {
+      "detail": "cd /work/controller-killed && cat .gitignore 2>/dev/null || echo \"No .gitignore file found\"",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@14": {
+      "detail": "/work/controller-killed/.gitignore",
+      "verb": "Write"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@15": {
+      "detail": "cd /work/controller-killed && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@17": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@2": {
+      "detail": "find /work/controller-killed -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@3": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@4": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@5": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@7": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@8": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger@9": {
+      "detail": "{\"id\":\"toolu_01XkMQQFjxj8PU2jSUy5ABqt\",\"input\":{\"file_path\":\"/work/controller-killed/tests/test_core.py\",\"new_string\":\"import unittest\\n\\nf…",
+      "verb": "tool"
+    },
+    "fork-only/fork-controller-killed/transcript-1@10": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-controller-killed/transcript-1@11": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1@12": {
+      "detail": "ls -la",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1@13": {
+      "detail": "git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1@14": {
+      "detail": "cat .gitignore 2>/dev/null || echo \"No .gitignore file found\"",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1@15": {
+      "detail": "/work/controller-killed/.gitignore",
+      "verb": "Write"
+    },
+    "fork-only/fork-controller-killed/transcript-1@16": {
+      "detail": "git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1@19": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-controller-killed/transcript-1@2": {
+      "detail": "/work/controller-killed",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1@3": {
+      "detail": "find /work/controller-killed -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-1@4": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1@5": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1@6": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-1@8": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-controller-killed/transcript-1@9": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-controller-killed/transcript-2-ledger@1": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-2-ledger@2": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-2-ledger@3": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-2@2": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-2@3": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-2@4": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-2@6": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-2@9": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-controller-killed/transcript-3-ledger@1": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-3-ledger@2": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-3-ledger@3": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-3-ledger@5": {
+      "detail": "cd /work/controller-killed && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-3@2": {
+      "detail": "/work/controller-killed/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-3@3": {
+      "detail": "/work/controller-killed/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-3@4": {
+      "detail": "/work/controller-killed/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-controller-killed/transcript-3@6": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-controller-killed/transcript-3@9": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@1": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@11": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@12": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@14": {
+      "detail": "cd /work/force-stopped && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@16": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@17": {
+      "detail": "cd /work/force-stopped && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@19": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@2": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@20": {
+      "detail": "cd /work/force-stopped && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@21": {
+      "detail": "cd /work/force-stopped && cat .gitignore 2>/dev/null || echo \"No .gitignore found\"",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@23": {
+      "detail": "/work/force-stopped/.gitignore",
+      "verb": "Write"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@24": {
+      "detail": "cd /work/force-stopped && git reset && rm -rf tests/__pycache__ textkit/__pycache__ && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@26": {
+      "detail": "cd /work/force-stopped && git commit -m \"$(cat <<'EOF'",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@27": {
+      "detail": "cd /work/force-stopped && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@29": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@3": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@4": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@5": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@7": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger@9": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1@10": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1@12": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1@13": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1@15": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@17": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-force-stopped/transcript-1@18": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@2": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1@20": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1@21": {
+      "detail": "git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@22": {
+      "detail": "cat .gitignore 2>/dev/null || echo \"No .gitignore found\"",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@24": {
+      "detail": "/work/force-stopped/.gitignore",
+      "verb": "Write"
+    },
+    "fork-only/fork-force-stopped/transcript-1@25": {
+      "detail": "git reset && rm -rf tests/__pycache__ textkit/__pycache__ && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@27": {
+      "detail": "git commit -m \"$(cat <<'EOF'",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@28": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@3": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-force-stopped/transcript-1@31": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-force-stopped/transcript-1@4": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1@5": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1@6": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-force-stopped/transcript-1@8": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@1": {
+      "detail": "/work/happy-path",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@11": {
+      "detail": "cd /work/happy-path && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@13": {
+      "detail": "cd /work/happy-path && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@15": {
+      "detail": "cd /work/happy-path && git restore --staged tests/__pycache__ textkit/__pycache__ && rm -rf tests/__pycache__ textkit/__pycache__ && git st…",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@17": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@2": {
+      "detail": "find /work/happy-path -type f | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@3": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@4": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@5": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@7": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@8": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger@9": {
+      "detail": "{\"id\":\"toolu_01PKFZsfpMVhtUERjajnwVKD\",\"input\":{\"file_path\":\"/work/happy-path/tests/test_core.py\",\"new_string\":\"import unittest\\n\\nfrom tex…",
+      "verb": "tool"
+    },
+    "fork-only/fork-happy-path/transcript-1@10": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-happy-path/transcript-1@12": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1@14": {
+      "detail": "git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1@16": {
+      "detail": "git restore --staged tests/__pycache__ textkit/__pycache__ && rm -rf tests/__pycache__ textkit/__pycache__ && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1@19": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-happy-path/transcript-1@2": {
+      "detail": "/work/happy-path",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1@3": {
+      "detail": "find /work/happy-path -type f | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-1@4": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1@5": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1@6": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-1@8": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-happy-path/transcript-1@9": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-happy-path/transcript-2-ledger@0": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-2-ledger@1": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-2-ledger@2": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-2-ledger@3": {
+      "detail": "cd /work/happy-path && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-2-ledger@5": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-happy-path/transcript-2@1": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-2@2": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-2@3": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-2@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-2@7": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-happy-path/transcript-3-ledger@1": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-3-ledger@2": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-3-ledger@3": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-3-ledger@5": {
+      "detail": "cd /work/happy-path && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-3-ledger@7": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-happy-path/transcript-3@2": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-3@3": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-3@4": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-happy-path/transcript-3@6": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-happy-path/transcript-3@8": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-late-failure/transcript-1@1": {
+      "detail": "find /work/late-failure -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@10": {
+      "detail": "{\"id\":\"toolu_013FFKstGWLAGNYLVxb7nwgj\",\"input\":{\"file_path\":\"/work/late-failure/tests/test_core.py\",\"new_string\":\"import unittest\\n\\nfrom t…",
+      "verb": "tool"
+    },
+    "fork-only/fork-late-failure/transcript-1@12": {
+      "detail": "cd /work/late-failure && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@14": {
+      "detail": "cd /work/late-failure && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@15": {
+      "detail": "cd /work/late-failure && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@16": {
+      "detail": "cd /work/late-failure && ls -la | grep gitignore",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@17": {
+      "detail": "cd /work/late-failure && git reset HEAD tests/__pycache__/ textkit/__pycache__/ && rm -rf tests/__pycache__/ textkit/__pycache__/ && git st…",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@18": {
+      "detail": "cd /work/late-failure && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-1@2": {
+      "detail": "/work/late-failure/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-1@20": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-late-failure/transcript-1@3": {
+      "detail": "/work/late-failure/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-1@4": {
+      "detail": "/work/late-failure/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-1@6": {
+      "detail": "/work/late-failure/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-late-failure/transcript-1@8": {
+      "detail": "/work/late-failure/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-late-failure/transcript-2@0": {
+      "detail": "/work/late-failure/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-2@1": {
+      "detail": "/work/late-failure/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-2@2": {
+      "detail": "/work/late-failure/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-2@3": {
+      "detail": "cd /work/late-failure && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-late-failure/transcript-2@5": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-late-failure/transcript-3@0": {
+      "detail": "/work/late-failure/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-3@1": {
+      "detail": "/work/late-failure/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-3@2": {
+      "detail": "/work/late-failure/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-late-failure/transcript-3@3": {
+      "detail": "cd /work/late-failure && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@1": {
+      "detail": "/work/happy-path",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@11": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@13": {
+      "detail": "cd /work/happy-path && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@14": {
+      "detail": "cd /work/happy-path && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@15": {
+      "detail": "cd /work/happy-path && git add --all",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@17": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@2": {
+      "detail": "find /work/happy-path -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@3": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@4": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@5": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@7": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-replay/transcript-1-ledger@9": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-replay/transcript-1@10": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-replay/transcript-1@12": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-replay/transcript-1@14": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1@15": {
+      "detail": "git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1@16": {
+      "detail": "git add --all",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1@19": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-replay/transcript-1@2": {
+      "detail": "/work/happy-path",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1@3": {
+      "detail": "find /work/happy-path -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-1@4": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1@5": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1@6": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-1@8": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-replay/transcript-2-ledger@0": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-2-ledger@1": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-2-ledger@2": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-2-ledger@3": {
+      "detail": "cd /work/happy-path && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-2-ledger@4": {
+      "detail": "cd /work/happy-path && if [ -f .pre-commit-config.yaml ] || [ -f .pre-commit-hooks.yaml ] || [ -f setup.cfg ] || [ -f pyproject.toml ] || […",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-2-ledger@6": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-replay/transcript-2@1": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-2@2": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-2@3": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-2@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-2@5": {
+      "detail": "if [ -f .pre-commit-config.yaml ] || [ -f .pre-commit-hooks.yaml ] || [ -f setup.cfg ] || [ -f pyproject.toml ] || [ -f tox.ini ]; then ech…",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-2@8": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-replay/transcript-3-ledger@1": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-3-ledger@2": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-3-ledger@3": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-3-ledger@4": {
+      "detail": "cd /work/happy-path && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-3-ledger@6": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-replay/transcript-3@2": {
+      "detail": "/work/happy-path/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-3@3": {
+      "detail": "/work/happy-path/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-3@4": {
+      "detail": "/work/happy-path/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-replay/transcript-3@5": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-replay/transcript-3@8": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@1": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@10": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@2": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@3": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@4": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@5": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@7": {
+      "detail": "cd /work/force-stopped && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-1-ledger@8": {
+      "detail": "cd /work/force-stopped && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-1@12": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-1@2": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1@3": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-1@4": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1@5": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1@6": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-1@8": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-1@9": {
+      "detail": "git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@1": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@2": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@3": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@4": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@5": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@6": {
+      "detail": "cd /work/force-stopped && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-2-ledger@8": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-2@10": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-2@2": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2@3": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-2@4": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2@5": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2@6": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-2@7": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@1": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@2": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@3": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@4": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@5": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@6": {
+      "detail": "cd /work/force-stopped && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-3-ledger@8": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-3@10": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-resumed/transcript-3@2": {
+      "detail": "/work/force-stopped",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3@3": {
+      "detail": "find /work/force-stopped -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-resumed/transcript-3@4": {
+      "detail": "/work/force-stopped/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3@5": {
+      "detail": "/work/force-stopped/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3@6": {
+      "detail": "/work/force-stopped/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-resumed/transcript-3@7": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@1": {
+      "detail": "/work/reviewer-never-satisfied",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@11": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@12": {
+      "detail": "cd /work/reviewer-never-satisfied && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@13": {
+      "detail": "cd /work/reviewer-never-satisfied && ls -la",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@14": {
+      "detail": "cd /work/reviewer-never-satisfied && git reset HEAD 'tests/__pycache__' 'textkit/__pycache__' && rm -rf tests/__pycache__ textkit/__pycache…",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@16": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@18": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@2": {
+      "detail": "find /work/reviewer-never-satisfied -type f | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@3": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@4": {
+      "detail": "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@5": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@7": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@8": {
+      "detail": "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@9": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@1": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@2": {
+      "detail": "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@3": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@4": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@6": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@1": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@2": {
+      "detail": "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@3": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@5": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@7": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@1": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@10": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@2": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@4": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@6": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@8": {
+      "detail": "cd /work/reviewer-never-satisfied && git add --all && git status",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@1": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@2": {
+      "detail": "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@3": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@4": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@5": {
+      "detail": "cd /work/reviewer-never-satisfied && ls -la | grep -E \"\\.pre-commit|pyproject|setup|tox|requirements\"",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@6": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m py_compile textkit/core.py textkit/__init__.py tests/test_core.py",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@8": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@1": {
+      "detail": "/work/reviewer-never-satisfied/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@2": {
+      "detail": "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@3": {
+      "detail": "/work/reviewer-never-satisfied/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@5": {
+      "detail": "cd /work/reviewer-never-satisfied && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@7": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-steered/transcript-1-ledger@0": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-steered/transcript-1-ledger@1": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-steered/transcript-1-ledger@2": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-steered/transcript-1-ledger@4": {
+      "detail": "/work/steered/out.txt",
+      "verb": "Write"
+    },
+    "fork-only/fork-steered/transcript-1-ledger@5": {
+      "detail": "/work/steered/out.txt",
+      "verb": "Edit"
+    },
+    "fork-only/fork-steered/transcript-1-ledger@7": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-steered/transcript-1@1": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-steered/transcript-1@2": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-steered/transcript-1@3": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-steered/transcript-1@5": {
+      "detail": "/work/steered/out.txt",
+      "verb": "Write"
+    },
+    "fork-only/fork-steered/transcript-1@6": {
+      "detail": "/work/steered/out.txt",
+      "verb": "Edit"
+    },
+    "fork-only/fork-steered/transcript-1@9": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@1": {
+      "detail": "/work/worker-timeout",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@10": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@11": {
+      "detail": "cd /work/worker-timeout && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@13": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@14": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@15": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@16": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@17": {
+      "detail": "cd /work/worker-timeout && python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@19": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@2": {
+      "detail": "find /work/worker-timeout -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@20": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@3": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@4": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@5": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@7": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@8": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger@9": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@10": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@11": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@12": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@14": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@15": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@16": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@17": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@18": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@2": {
+      "detail": "/work/worker-timeout",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@20": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@21": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@3": {
+      "detail": "find /work/worker-timeout -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@4": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@5": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@6": {
+      "detail": "/work/worker-timeout/tests/test_core.py",
+      "verb": "Read"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@8": {
+      "detail": "/work/worker-timeout/textkit/core.py",
+      "verb": "Edit"
+    },
+    "fork-only/fork-worker-timeout/transcript-1@9": {
+      "detail": "/work/worker-timeout/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "fork-only/replay-parent/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "fork-only/replay-parent/transcript-1@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "fork-only/replay-parent/transcript-2@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "fork-only/replay-parent/transcript-3@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "graph-ended-other/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "graph-ended-other/transcript-1@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "graph-ended-other/transcript-2@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "graph-ended-other/transcript-3@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "map-parallel/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "map-parallel/transcript-2@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "map-parallel/transcript-3@1": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "resumed-original/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "resumed-original/transcript-1@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "resumed-successor/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "resumed-successor/transcript-1@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "resumed-successor/transcript-2@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "resumed-successor/transcript-3@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "runtime-failed-checkpoint/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "runtime-failed-permission/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "runtime-failed-storage/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "runtime-failed-unknown/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "runtime-lost/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "stalled-disk/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "stalled-live-usage/transcript-1-ledger@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "stalled-live-usage/transcript-1@3": {
+      "detail": "/work/stalled-live-usage/repo/textkit/core.py",
+      "verb": "Read"
+    },
+    "stalled-live-usage/transcript-1@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "stalled-live-usage/transcript-1@9": {
+      "detail": "title(",
+      "verb": "Search"
+    },
+    "stalled-then-closed/transcript-1-ledger@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "stalled-then-closed/transcript-1-ledger@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "stalled-then-closed/transcript-1@3": {
+      "detail": "/work/stalled-then-closed/repo/textkit/core.py",
+      "verb": "Read"
+    },
+    "stalled-then-closed/transcript-1@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "stalled-then-closed/transcript-1@9": {
+      "detail": "title(",
+      "verb": "Search"
+    },
+    "stalled/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-1-ledger@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-1-ledger@2": {
+      "detail": "python3 -m unittest -v  # step 1",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-1@3": {
+      "detail": "/work/succeeded/repo/textkit/core.py",
+      "verb": "Read"
+    },
+    "succeeded/transcript-1@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-1@9": {
+      "detail": "title(",
+      "verb": "Search"
+    },
+    "succeeded/transcript-2-ledger@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-2@3": {
+      "detail": "/work/succeeded/repo/textkit/core.py",
+      "verb": "Read"
+    },
+    "succeeded/transcript-2@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-2@9": {
+      "detail": "title(",
+      "verb": "Search"
+    },
+    "succeeded/transcript-3-ledger@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-3@3": {
+      "detail": "/work/succeeded/repo/textkit/core.py",
+      "verb": "Read"
+    },
+    "succeeded/transcript-3@4": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "succeeded/transcript-3@9": {
+      "detail": "title(",
+      "verb": "Search"
+    },
+    "tool-output-rate-limit/transcript-1@0": {
+      "detail": "echo \"HTTP 429 rate_limit_error: You have hit your usage limit. Rate limit exceeded, retry-after 60\"",
+      "verb": "Bash"
+    },
+    "voided/transcript-2@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "work-exhausted/transcript-1@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "work-exhausted/transcript-4@1": {
+      "detail": "python3 -m unittest -v  # step 0",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@10": {
+      "detail": "/work/normal/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@12": {
+      "detail": "",
+      "verb": "Edit"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@14": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@16": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@2": {
+      "detail": "find . -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@3": {
+      "detail": "/work/normal",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@4": {
+      "detail": "/work/normal/textkit/core.py",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@5": {
+      "detail": "/work/normal/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@6": {
+      "detail": "/work/normal/tests/test_core.py",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@8": {
+      "detail": "/work/normal/textkit/core.py",
+      "verb": "Edit"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@10": {
+      "detail": "/work/normal/textkit/__init__.py",
+      "verb": "Edit"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@12": {
+      "detail": "/work/normal/tests/test_core.py",
+      "verb": "Edit"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@14": {
+      "detail": "python3 -m unittest -v",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@16": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@2": {
+      "detail": "find . -type f -name \"*.py\" | head -20",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@3": {
+      "detail": "/work/normal",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@4": {
+      "detail": "/work/normal/textkit/core.py",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@5": {
+      "detail": "/work/normal/textkit/__init__.py",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@6": {
+      "detail": "/work/normal/tests/test_core.py",
+      "verb": "Read"
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1@8": {
+      "detail": "/work/normal/textkit/core.py",
+      "verb": "Edit"
+    },
+    "zeroshot-16/zeroshot16-steered/transcript-1@2": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-steered/transcript-1@3": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-steered/transcript-1@6": {
+      "detail": "sleep 20",
+      "verb": "Bash"
+    },
+    "zeroshot-16/zeroshot16-steered/transcript-1@8": {
+      "detail": "/work/steered/out.txt",
+      "verb": "Write"
+    },
+    "zeroshot-16/zeroshot16-steered/transcript-1@9": {
+      "detail": "",
+      "verb": "StructuredOutput"
+    }
+  }
+}

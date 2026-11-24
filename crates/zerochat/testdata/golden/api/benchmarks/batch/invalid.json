@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "batch_not_found",
+    "message": "No batch `../etc`."
+  },
+  "status": 404
+}

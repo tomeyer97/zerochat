@@ -1,0 +1,15 @@
+{
+  "": false,
+  "SYSTEM": false,
+  "auto": true,
+  "compaction": true,
+  "error": false,
+  "prompt": false,
+  "rate_limit": true,
+  "retry": true,
+  "steer": false,
+  "system": true,
+  "text": false,
+  "thinking": false,
+  "tool": false
+}

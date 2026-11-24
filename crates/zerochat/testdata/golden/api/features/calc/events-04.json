@@ -1,0 +1,40 @@
+{
+  "body": {
+    "events": [
+      {
+        "attempt": 1,
+        "detail": "launched detail",
+        "kind": "launched",
+        "runTarget": "local",
+        "run_id": "01a1ee82-5000-7030-8030-000000000030",
+        "slice": "04",
+        "ts": 1795000030000
+      },
+      {
+        "attempt": 1,
+        "detail": "interrupted detail",
+        "kind": "interrupted",
+        "runTarget": null,
+        "slice": "04",
+        "ts": 1795000120000
+      },
+      {
+        "attempt": 1,
+        "detail": "skipped detail",
+        "kind": "skipped",
+        "runTarget": null,
+        "slice": "04",
+        "ts": 1795000210000
+      },
+      {
+        "attempt": 1,
+        "detail": "something_newer detail",
+        "kind": "other",
+        "runTarget": null,
+        "slice": "04",
+        "ts": 1795000300000
+      }
+    ]
+  },
+  "status": 200
+}

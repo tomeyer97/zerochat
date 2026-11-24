@@ -1,0 +1,52 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 8.0,
+    "costUsd": 5.4918146,
+    "exitReason": "WSL crashed mid-run (round 1 review); container and runner died",
+    "failingTests": [],
+    "label": "haiku-prototype-plan",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 3.268662,
+        "node": "worker"
+      },
+      {
+        "calls": 1,
+        "costUsd": 1.4399783,
+        "node": "prototype"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4698631,
+        "node": "planner"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.183367,
+        "node": "reviewer"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.1299442,
+        "node": "bugfinder"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 5.1785034,
+    "runId": "20261103-135729-f246e7",
+    "score": null,
+    "seed": 0,
+    "state": "interrupted",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": null,
+    "zeroshotRunId": "01a1a17c-7322-72e2-8b16-56602bf5b25d"
+  },
+  "status": 200
+}

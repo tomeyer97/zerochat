@@ -1,0 +1,479 @@
+{
+  "backgroundAgents": [],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+  },
+  "costEstimated": false,
+  "costUsd": 0.0824,
+  "createdAt": 1795001980000,
+  "cursor": 24,
+  "endedAt": 1795001994200,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0412,
+      "diagnostic": null,
+      "durationMs": 8200,
+      "endSeq": 17,
+      "endedAt": 1795001989700,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795001985600,
+      "logLines": 5,
+      "mapIndices": [
+        0
+      ],
+      "model": "claude-haiku-4-5",
+      "node": "fix",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": {
+          "file": "a.py"
+        },
+        "status": "verified"
+      },
+      "output": {
+        "file": "a.py"
+      },
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795001981500,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 1,
+      "usage": {
+        "cacheCreationInputTokens": 3000,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 1200,
+        "outputTokens": 800
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0412,
+      "diagnostic": null,
+      "durationMs": 8200,
+      "endSeq": 18,
+      "endedAt": 1795001990200,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 2,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795001989200,
+      "logLines": 5,
+      "mapIndices": [
+        1
+      ],
+      "model": "claude-haiku-4-5",
+      "node": "fix",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": {
+          "file": "b.py"
+        },
+        "status": "verified"
+      },
+      "output": {
+        "file": "b.py"
+      },
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 4,
+      "startedAt": 1795001982000,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 1,
+      "usage": {
+        "cacheCreationInputTokens": 3000,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 1200,
+        "outputTokens": 800
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000002",
+        "commit": "0000000000000000000000000000000000000066",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000002"
+      }
+    },
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 3500,
+      "endSeq": 23,
+      "endedAt": 1795001994200,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 3,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795001993700,
+      "logLines": 3,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "summarize",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": {
+          "summary": "fixed 2 files"
+        },
+        "status": "verified"
+      },
+      "output": {
+        "summary": "fixed 2 files"
+      },
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 19,
+      "startedAt": 1795001990700,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 1,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000003",
+        "commit": "0000000000000000000000000000000000000067",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000003"
+      }
+    }
+  ],
+  "failure": null,
+  "features": {
+    "exactTimes": true,
+    "providerCost": true,
+    "toolCalls": true,
+    "workspaceSnapshots": true
+  },
+  "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "body": {
+            "attempts": 1,
+            "kind": "step",
+            "name": "fix",
+            "worker": "builtin.agent.worker@1"
+          },
+          "kind": "map",
+          "name": "per_file",
+          "over": "files"
+        },
+        {
+          "attempts": 1,
+          "kind": "step",
+          "name": "summarize",
+          "worker": "builtin.agent.worker@1"
+        }
+      ],
+      "kind": "seq",
+      "name": "run"
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "map",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "per_file",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "fix",
+      "parent": "per_file",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": "builtin.agent.worker@1"
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "summarize",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": "builtin.agent.worker@1"
+    }
+  ],
+  "initialInput": {
+    "task": "Add slugify() to textkit."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "fix",
+        "summarize"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795001993700,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": true,
+    "workspace": "<root>/work/map-parallel/repo"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 6000,
+    "cacheReadInputTokens": 80000,
+    "inputTokens": 2400,
+    "outputTokens": 1600
+  },
+  "nodes": {
+    "fix": {
+      "activeSince": null,
+      "costEstimated": false,
+      "costUsd": 0.0824,
+      "elapsedMs": 16400,
+      "executions": [
+        1,
+        2
+      ],
+      "rounds": 1,
+      "state": "succeeded",
+      "usage": {
+        "cacheCreationInputTokens": 6000,
+        "cacheReadInputTokens": 80000,
+        "inputTokens": 2400,
+        "outputTokens": 1600
+      }
+    },
+    "summarize": {
+      "activeSince": null,
+      "costEstimated": false,
+      "costUsd": null,
+      "elapsedMs": 3500,
+      "executions": [
+        3
+      ],
+      "rounds": 1,
+      "state": "succeeded",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1ee74-9460-7021-8021-000000000021",
+  "runLog": [
+    {
+      "at": 1795001981000,
+      "seq": 1,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795001981500,
+      "seq": 3,
+      "stream": "system",
+      "text": "fix started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795001982000,
+      "seq": 4,
+      "stream": "system",
+      "text": "fix started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795001989700,
+      "seq": 17,
+      "stream": "system",
+      "text": "fix finished"
+    },
+    {
+      "at": 1795001990200,
+      "seq": 18,
+      "stream": "system",
+      "text": "fix finished"
+    },
+    {
+      "at": 1795001990700,
+      "seq": 19,
+      "stream": "system",
+      "text": "summarize started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795001994200,
+      "seq": 23,
+      "stream": "system",
+      "text": "summarize finished"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+      "fix": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      },
+      "summarize": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic"
+  },
+  "source": {
+    "branch": "main",
+    "repository": "example/textkit",
+    "revision": "0000000000000000000000000000000000000000"
+  },
+  "startedAt": 1795001981000,
+  "status": "succeeded",
+  "target": "local",
+  "terminal": {
+    "output": null,
+    "status": "succeeded"
+  },
+  "title": "map parallel",
+  "usage": {
+    "cacheCreationInputTokens": 6000,
+    "cacheReadInputTokens": 80000,
+    "inputTokens": 2400,
+    "outputTokens": 1600
+  },
+  "usageLive": false,
+  "usagePending": false
+}

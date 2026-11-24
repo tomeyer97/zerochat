@@ -1,0 +1,10 @@
+{
+  "admitted": true,
+  "failed": false,
+  "running": true,
+  "stalled": false,
+  "stopped": false,
+  "stopping": true,
+  "succeeded": false,
+  "unknown": false
+}

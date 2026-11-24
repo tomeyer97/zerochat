@@ -1,0 +1,36 @@
+/* The stylesheet, one file per area. The import order is the cascade order: a later file wins
+   over an earlier one at equal specificity, so keep shared files first and add page rules to the
+   page's own file.
+
+     tokens            colours, fonts and layout widths (light and dark palettes)
+     base              element defaults and utilities (.muted, .small, .prewrap, .truncate)
+     components        shared widgets: buttons, pills and tones, badges, status dots, banners,
+                       errors, skeletons, toasts, the modal dialog, form fields, theme button
+     run               app shell and top nav, sidebar, home run table, run page, failure card,
+                       timeline, node panel, files, and the responsive layout of all of these
+     graph             the run graph (React Flow) and the replay dialog
+     chat              node chat, transcript items and the composer
+     markdown          agent text as Markdown (Markdown.tsx), in the chat and elsewhere
+     benchmarks        benchmark batches list, batch matrix and run score card
+     features          features list and feature page
+     slice-graph       the slice graph, slice panel and its forms
+     benchmarks-forms  benchmark compare, start a batch and sweeps
+     onboarding        first-run card, Zeroshot strip, glossary, first-visit hint, run table headers
+
+   Breakpoints (media queries cannot read custom properties, so they are literal everywhere):
+     1280px  narrower sidebar            1100px  narrower node panel
+     901px / 900px  wide / narrow layout: the run list becomes a drawer (keep them 1px apart)
+     640px   phone: top nav, benchmark and slice tables     600px  limits popover
+     480px   small phone */
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/components.css';
+@import './styles/run.css';
+@import './styles/graph.css';
+@import './styles/chat.css';
+@import './styles/markdown.css';
+@import './styles/benchmarks.css';
+@import './styles/features.css';
+@import './styles/slice-graph.css';
+@import './styles/benchmarks-forms.css';
+@import './styles/onboarding.css';

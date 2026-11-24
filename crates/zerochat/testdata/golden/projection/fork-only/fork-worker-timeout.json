@@ -1,0 +1,652 @@
+{
+  "backgroundAgents": [
+    {
+      "errors": 0,
+      "firstAt": 1795175291688,
+      "lastAt": 1795175302401,
+      "lastLine": "reported its result",
+      "lines": 6,
+      "name": "active_memory_graph",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175291550,
+      "lastAt": 1795175302721,
+      "lastLine": "reported its result",
+      "lines": 6,
+      "name": "active_memory_graph_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175291441,
+      "lastAt": 1795175309226,
+      "lastLine": "reported its result",
+      "lines": 16,
+      "name": "active_memory_repository",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175291227,
+      "lastAt": 1795175304376,
+      "lastLine": "reported its result",
+      "lines": 6,
+      "name": "active_memory_repository_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    }
+  ],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 104415,
+    "cacheReadInputTokens": 181826,
+    "inputTokens": 70,
+    "outputTokens": 4784
+  },
+  "costEstimated": true,
+  "costUsd": 0.0939043,
+  "createdAt": 1795175236022,
+  "cursor": 98,
+  "endedAt": 1795175286904,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "estimate",
+      "costUsd": 0.0939043,
+      "diagnostic": null,
+      "durationMs": 45193,
+      "endSeq": 46,
+      "endedAt": 1795175286904,
+      "error": {
+        "code": "timeout",
+        "reason": "declared_failure"
+      },
+      "errorLines": [
+        "Node worker failed: timeout after 45.1s"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Extend textkit with six new functions, one at a time. For EACH function: implement it in textkit/core.py, export it, add at least three unit tests, run `python3 -m unittest -v`, and then explain in one short paragraph what you did before starting the next function. Functions: 1) slugify(text) as a URL slug, 2) title_case(text) that keeps small words (a, an, the, of, and, or) lowercase except at the start, 3) truncate(text, n) that cuts at a word boundary and appends '…', 4) count_vowels(text), 5) is_palindrome(text) ignoring case and punctuation, 6) wrap(text, width) that wraps lines at word boundaries. Work carefully and verify every step with the tests."
+      },
+      "lastActivityAt": 1795175286904,
+      "logLines": 41,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "timeout",
+        "reason": "declared_failure",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": "dc419ffc-ffde-4335-84a4-9a228e63dd7b",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175241711,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 17,
+      "usage": {
+        "cacheCreationInputTokens": 15536,
+        "cacheReadInputTokens": 386203,
+        "inputTokens": 122,
+        "outputTokens": 4818
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "277ed4a0579f0239c83329fd1d8707f09feee664",
+        "commit": "d4831a68fcca222762db13ed710f5455110cfc8b",
+        "files": [
+          {
+            "path": "tests/__pycache__/__init__.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "path": "tests/__pycache__/test_core.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "additions": 11,
+            "deletions": 1,
+            "path": "tests/test_core.py",
+            "status": "modified"
+          },
+          {
+            "additions": 2,
+            "deletions": 2,
+            "path": "textkit/__init__.py",
+            "status": "modified"
+          },
+          {
+            "path": "textkit/__pycache__/__init__.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "path": "textkit/__pycache__/core.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "additions": 39,
+            "deletions": 0,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "277ed4a0579f0239c83329fd1d8707f09feee664"
+      }
+    }
+  ],
+  "failure": {
+    "actions": [
+      "replay"
+    ],
+    "at": 1795175286904,
+    "attempt": 1,
+    "cause": "timed out after 45s",
+    "class": "agent",
+    "closedAfterMs": 24881,
+    "closedByPostmortem": true,
+    "detail": "",
+    "execution": 1,
+    "exit": "worker_failed",
+    "feedback": [],
+    "fix": "Raise `timeoutMs` on `worker` in your graph (now 45s), or give it a smaller task; then start a new run.",
+    "fixCommand": null,
+    "intoRunMs": 50531,
+    "kept": [],
+    "lastErrors": [
+      "Node worker failed: timeout after 45.1s"
+    ],
+    "node": "worker",
+    "nodeKind": "step",
+    "primary": null,
+    "reason": "worker_failed",
+    "resetsAt": null,
+    "round": 1,
+    "title": "worker timed out after 45s"
+  },
+  "features": {
+    "exactTimes": true,
+    "providerCost": false,
+    "toolCalls": true,
+    "workspaceSnapshots": true
+  },
+  "graph": {
+    "bounds": {
+      "attemptsPerNode": {
+        "worker": 1
+      },
+      "maxNodeExecutions": 1,
+      "peakConcurrency": 1,
+      "termination": {
+        "kind": "acyclic",
+        "order": [
+          "run",
+          "worker",
+          "worker_result",
+          "worker_failed",
+          "done"
+        ]
+      }
+    },
+    "initialInput": {
+      "fields": {
+        "task": {
+          "required": true,
+          "type": {
+            "kind": "string"
+          }
+        }
+      },
+      "kind": "record"
+    },
+    "policy": {
+      "default": "deny",
+      "policy": "policy.native-v2@1"
+    },
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "attempts": 1,
+          "input": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          },
+          "inputBindings": [
+            {
+              "target": [
+                "task"
+              ],
+              "value": {
+                "path": [
+                  "task"
+                ],
+                "source": "state"
+              }
+            }
+          ],
+          "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+          "kind": "step",
+          "name": "worker",
+          "output": {
+            "kind": "null"
+          },
+          "timeoutMs": 45000,
+          "worker": "builtin.agent.worker@1",
+          "writeBindings": []
+        },
+        {
+          "branches": [
+            {
+              "node": {
+                "kind": "fail",
+                "name": "worker_failed",
+                "reason": "worker_failed"
+              },
+              "when": {
+                "kind": "in",
+                "labels": [
+                  "crash",
+                  "malformed",
+                  "refusal",
+                  "timeout"
+                ],
+                "value": {
+                  "field": null,
+                  "name": "worker",
+                  "source": "error"
+                }
+              }
+            }
+          ],
+          "kind": "choice",
+          "name": "worker_result",
+          "otherwise": {
+            "bindings": [],
+            "kind": "succeed",
+            "name": "done",
+            "output": {
+              "kind": "null"
+            }
+          },
+          "promotedStatePaths": [],
+          "state": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          }
+        }
+      ],
+      "kind": "seq",
+      "name": "run",
+      "promotedStatePaths": [],
+      "state": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      }
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "worker",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": 45000,
+      "worker": "builtin.agent.worker@1"
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "choice",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_result",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": "worker_failed",
+      "harness": "claude",
+      "instructions": null,
+      "kind": "fail",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_failed",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "succeed",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "done",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    }
+  ],
+  "initialInput": {
+    "task": "Extend textkit with six new functions, one at a time. For EACH function: implement it in textkit/core.py, export it, add at least three unit tests, run `python3 -m unittest -v`, and then explain in one short paragraph what you did before starting the next function. Functions: 1) slugify(text) as a URL slug, 2) title_case(text) that keeps small words (a, an, the, of, and, or) lowercase except at the start, 3) truncate(text, n) that cuts at a word boundary and appends '…', 4) count_vowels(text), 5) is_palindrome(text) ignoring case and punctuation, 6) wrap(text, width) that wraps lines at word boundaries. Work carefully and verify every step with the tests."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "worker"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795175311785,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": true,
+    "workspace": "<root>/work/worker-timeout"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 15536,
+    "cacheReadInputTokens": 386203,
+    "inputTokens": 122,
+    "outputTokens": 4818
+  },
+  "nodes": {
+    "worker": {
+      "activeSince": null,
+      "costEstimated": true,
+      "costUsd": 0.0939043,
+      "elapsedMs": 45193,
+      "executions": [
+        1
+      ],
+      "rounds": 1,
+      "state": "failed",
+      "usage": {
+        "cacheCreationInputTokens": 15536,
+        "cacheReadInputTokens": 386203,
+        "inputTokens": 122,
+        "outputTokens": 4818
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1f8c8-41b6-7b03-aa65-c28cfafd21cc",
+  "runLog": [
+    {
+      "at": 1795175236373,
+      "seq": 1,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795175241711,
+      "seq": 3,
+      "stream": "system",
+      "text": "worker started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795175286904,
+      "seq": 46,
+      "stream": "system",
+      "text": "worker failed: timed out"
+    },
+    {
+      "at": 1795175287073,
+      "seq": 48,
+      "stream": "system",
+      "text": "Active Memory postmortem started"
+    },
+    {
+      "at": 1795175287133,
+      "seq": 49,
+      "stream": "system",
+      "text": "Active Memory supplied manifest: known=false, snapshot_generation=0, supplied_revisions=0"
+    },
+    {
+      "at": 1795175287188,
+      "seq": 50,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance started"
+    },
+    {
+      "at": 1795175287188,
+      "seq": 51,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance started"
+    },
+    {
+      "at": 1795175287189,
+      "seq": 52,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph started"
+    },
+    {
+      "at": 1795175287189,
+      "seq": 53,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository started"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175300055,
+      "seq": 58,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175300375,
+      "seq": 61,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175302395,
+      "seq": 64,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175302714,
+      "seq": 66,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175302751,
+      "seq": 67,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "at": 1795175302999,
+      "seq": 72,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph completed"
+    },
+    {
+      "at": 1795175303265,
+      "seq": 74,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance completed"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175304370,
+      "seq": 75,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175304927,
+      "seq": 78,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance completed"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175306528,
+      "seq": 79,
+      "stream": "system",
+      "text": "I'll analyze the execution evidence for high-impact, costly, recurring repository lessons.\n\nReviewing the execution:\n- **Node**: worker\n- **Outcome**: Timeout after 45.1 seconds\n- **Progress**: Implemented and tested 2 functions (slugify, title_case) before timeout during truncate setup\n- **Failure references**: 1 (v2:46 - timeout)\n- **Tool observations**: 17 operations spanning ~37 seconds\n- **Minimum thresholds required**: Either 2+ failure references for the node, OR 3+ tool observations spanning 5+ minutes\n\n**Analysis**: This execution has insufficient evidence density:\n- Only 1 failure reference (needs 2+)\n- Tool observations span 37 seconds (needs 5 minutes minimum)\n- Single timeout event without pattern repetition across multiple failures\n\nThe timeout indicates the incremental approach (implement → export → test per function) with repeated file edits and test runs consumed the full 45-second budget before completing all six functions. However, without meeting the minimum impact thresholds (either 2+ failures or 5-minute exploration window), this does not qualify as a persistent, costly problem pattern warranting a repository lesson."
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175309216,
+      "seq": 91,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175309599,
+      "seq": 95,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository completed"
+    },
+    {
+      "at": 1795175309656,
+      "seq": 96,
+      "stream": "system",
+      "text": "Active Memory postmortem completed: 4 roles completed, 0 failed, 0 mutations published, cancelled=false"
+    },
+    {
+      "at": 1795175311785,
+      "seq": 97,
+      "stream": "error",
+      "text": "Run failed: worker_failed"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "nodes": {
+      "worker": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic",
+    "size": "medium"
+  },
+  "source": null,
+  "startedAt": 1795175236373,
+  "status": "failed",
+  "target": "local",
+  "terminal": {
+    "context": {
+      "incomplete": false,
+      "recorded": [
+        {
+          "cursor": "v2:45",
+          "execution": {
+            "execution": "nv2-4573791d93ddaa4c51f2f58e832b6007a823e081adb319ad4268b10abce1c9bc",
+            "node": "worker"
+          },
+          "message": "Node worker failed: timeout after 45.1s"
+        }
+      ]
+    },
+    "reason": "worker_failed",
+    "status": "failed"
+  },
+  "title": "worker-timeout [fork]",
+  "usage": {
+    "cacheCreationInputTokens": 119951,
+    "cacheReadInputTokens": 568029,
+    "inputTokens": 192,
+    "outputTokens": 9602
+  },
+  "usageLive": false,
+  "usagePending": false
+}

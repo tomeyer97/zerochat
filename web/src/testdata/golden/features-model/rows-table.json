@@ -1,0 +1,142 @@
+{
+  "done": {
+    "featureState": {
+      "label": "Done",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "done",
+        "tone": "muted"
+      }
+    ],
+    "progressText": "3 of 3 merged"
+  },
+  "done with skips": {
+    "featureState": {
+      "label": "Done",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "done, 1 skipped",
+        "tone": "muted"
+      }
+    ],
+    "progressText": "2 of 3 merged, 1 skipped"
+  },
+  "everything": {
+    "featureState": {
+      "label": "Unreadable",
+      "tone": "bad"
+    },
+    "nowParts": [
+      {
+        "text": "can't read the plan or state",
+        "tone": "bad"
+      },
+      {
+        "slice": "04",
+        "text": "paused after 2 failures in a row",
+        "tone": "warn"
+      },
+      {
+        "slice": "03",
+        "text": "03 waiting for your review",
+        "tone": "warn"
+      },
+      {
+        "slice": "04",
+        "text": "04 failed",
+        "tone": "bad"
+      },
+      {
+        "text": "disk low",
+        "tone": "warn"
+      },
+      {
+        "text": "running 05, 06",
+        "tone": "running"
+      }
+    ],
+    "progressText": "0 of 3 merged"
+  },
+  "idle": {
+    "featureState": {
+      "label": "Idle",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "idle",
+        "tone": "muted"
+      }
+    ],
+    "progressText": "0 of 3 merged"
+  },
+  "issue": {
+    "featureState": {
+      "label": "Unreadable",
+      "tone": "bad"
+    },
+    "nowParts": [
+      {
+        "text": "can't read the plan or state",
+        "tone": "bad"
+      }
+    ],
+    "progressText": "0 of 3 merged"
+  },
+  "not running": {
+    "featureState": {
+      "label": "Idle",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "not running",
+        "tone": "warn"
+      }
+    ],
+    "progressText": "0 of 3 merged"
+  },
+  "not started": {
+    "featureState": {
+      "label": "Not started",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "not started",
+        "tone": "muted"
+      }
+    ],
+    "progressText": "0 of 3 merged"
+  },
+  "stopped": {
+    "featureState": {
+      "label": "Stopped",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "stopped",
+        "tone": "muted"
+      }
+    ],
+    "progressText": "0 of 3 merged"
+  },
+  "zero total": {
+    "featureState": {
+      "label": "Stopped",
+      "tone": "muted"
+    },
+    "nowParts": [
+      {
+        "text": "stopped",
+        "tone": "muted"
+      }
+    ],
+    "progressText": "0 of 0 merged"
+  }
+}

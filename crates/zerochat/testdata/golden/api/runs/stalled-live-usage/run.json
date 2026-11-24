@@ -1,0 +1,433 @@
+{
+  "body": {
+    "backgroundAgents": [],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add square()",
+      "line": "Slice 05 of calc · attempt 1",
+      "parent": "calc",
+      "slice": "05",
+      "task": "calc 05: Add square()"
+    },
+    "costEstimated": true,
+    "costUsd": 0.016012,
+    "createdAt": 1795002760000,
+    "cursor": 9,
+    "endedAt": null,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": "estimate",
+        "costUsd": 0.016012,
+        "diagnostic": null,
+        "durationMs": 3800,
+        "endSeq": null,
+        "endedAt": 1795002765300,
+        "error": null,
+        "errorLines": [],
+        "harness": "claude",
+        "id": 1,
+        "input": {
+          "task": "Add slugify() to textkit."
+        },
+        "lastActivityAt": 1795002765300,
+        "logLines": 6,
+        "mapIndices": [],
+        "model": "claude-haiku-4-5",
+        "node": "code",
+        "nodeInstance": 1,
+        "outcome": null,
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "5e55ab1e-0000-4000-8000-00000000c1a0",
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795002761500,
+        "state": "interrupted",
+        "timesApproximate": false,
+        "toolCalls": 1,
+        "usage": {
+          "cacheCreationInputTokens": 4800,
+          "cacheReadInputTokens": 49000,
+          "inputTokens": 12,
+          "outputTokens": 300
+        },
+        "usageSource": "session_log",
+        "voidReason": null,
+        "workspaceEnd": null,
+        "workspaceStart": {
+          "commit": "0000000000000000000000000000000000000001"
+        }
+      }
+    ],
+    "failure": {
+      "actions": [
+        "resume"
+      ],
+      "at": 1795002765300,
+      "attempt": 1,
+      "cause": "controller lost",
+      "class": "orchestration",
+      "closedAfterMs": null,
+      "closedByPostmortem": false,
+      "detail": "",
+      "execution": 1,
+      "exit": null,
+      "feedback": [],
+      "fix": null,
+      "fixCommand": null,
+      "intoRunMs": 4300,
+      "kept": [],
+      "lastErrors": [],
+      "node": "code",
+      "nodeKind": "step",
+      "primary": "resume",
+      "reason": "controller_not_running",
+      "resetsAt": null,
+      "round": 1,
+      "title": "Controller lost"
+    },
+    "features": {
+      "exactTimes": true,
+      "providerCost": false,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "body": {
+              "children": [
+                {
+                  "attempts": 2,
+                  "instructions": "Implement the task.",
+                  "kind": "step",
+                  "name": "code",
+                  "timeoutMs": 45000,
+                  "worker": "builtin.agent.worker@1"
+                },
+                {
+                  "children": [
+                    {
+                      "attempts": 1,
+                      "kind": "verifier",
+                      "name": "acceptance",
+                      "worker": "builtin.agent.reviewer@1"
+                    },
+                    {
+                      "attempts": 1,
+                      "kind": "verifier",
+                      "name": "code_review",
+                      "worker": "builtin.agent.reviewer@1"
+                    }
+                  ],
+                  "kind": "par",
+                  "name": "reviews"
+                }
+              ],
+              "kind": "seq",
+              "name": "iteration"
+            },
+            "kind": "loop",
+            "maxIterations": 2,
+            "name": "change_loop"
+          },
+          {
+            "kind": "fail",
+            "name": "change_attempts_exhausted",
+            "reason": "change_attempts_exhausted"
+          }
+        ],
+        "kind": "seq",
+        "name": "run"
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "loop",
+        "loops": [],
+        "maxIterations": 2,
+        "model": null,
+        "name": "change_loop",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "iteration",
+        "parent": "change_loop",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 2,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Implement the task.",
+        "kind": "step",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "code",
+        "parent": "iteration",
+        "provider": "anthropic",
+        "timeoutMs": 45000,
+        "worker": "builtin.agent.worker@1"
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "par",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "reviews",
+        "parent": "iteration",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "verifier",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "acceptance",
+        "parent": "reviews",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.reviewer@1"
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "verifier",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "code_review",
+        "parent": "reviews",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.reviewer@1"
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "change_attempts_exhausted",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "change_attempts_exhausted",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      }
+    ],
+    "initialInput": {
+      "task": "Add slugify() to textkit."
+    },
+    "lanes": [
+      {
+        "harness": "claude",
+        "model": "claude-haiku-4-5",
+        "nodes": [
+          "code",
+          "acceptance",
+          "code_review"
+        ],
+        "provider": "anthropic"
+      }
+    ],
+    "lastActivityAt": 1795002765300,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/stalled-live-usage/repo"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 4800,
+      "cacheReadInputTokens": 49000,
+      "inputTokens": 12,
+      "outputTokens": 300
+    },
+    "nodes": {
+      "code": {
+        "activeSince": null,
+        "costEstimated": true,
+        "costUsd": 0.016012,
+        "elapsedMs": 3800,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "interrupted",
+        "usage": {
+          "cacheCreationInputTokens": 4800,
+          "cacheReadInputTokens": 49000,
+          "inputTokens": 12,
+          "outputTokens": 300
+        }
+      }
+    },
+    "phase": "running",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1ee80-7b40-702e-802e-00000000002e",
+    "runLog": [
+      {
+        "at": 1795002761000,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795002761500,
+        "seq": 3,
+        "stream": "system",
+        "text": "code started (claude-haiku-4-5)"
+      }
+    ],
+    "runtime": {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": {
+        "acceptance": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        },
+        "code": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        },
+        "code_review": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        },
+        "worker": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        }
+      },
+      "provider": "anthropic"
+    },
+    "source": {
+      "branch": "main",
+      "repository": "example/textkit",
+      "revision": "0000000000000000000000000000000000000000"
+    },
+    "startedAt": 1795002761000,
+    "status": "stalled",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": null,
+    "title": "stalled live usage",
+    "usage": {
+      "cacheCreationInputTokens": 4800,
+      "cacheReadInputTokens": 49000,
+      "inputTokens": 12,
+      "outputTokens": 300
+    },
+    "usageLive": true,
+    "usagePending": false
+  },
+  "status": 200
+}

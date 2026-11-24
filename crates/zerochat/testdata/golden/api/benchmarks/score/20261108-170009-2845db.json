@@ -1,0 +1,26 @@
+{
+  "body": {
+    "batchId": "20261108-170009-cace9c",
+    "capUsd": 6.0,
+    "costUsd": null,
+    "exitReason": null,
+    "failingTests": [],
+    "label": "r3-h2-noaccept",
+    "nodeCosts": [],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": null,
+    "runId": "20261108-170009-2845db",
+    "score": null,
+    "seed": 0,
+    "state": "running_agent",
+    "steps": [],
+    "task": "yaa110__nomino.f892499",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": null,
+    "zeroshotRunId": "01a1bbe3-7e13-7521-8fb6-72ee1220f37e"
+  },
+  "status": 200
+}

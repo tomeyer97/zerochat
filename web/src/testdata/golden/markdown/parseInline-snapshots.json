@@ -1,0 +1,1569 @@
+{
+  "attempts-exhausted/transcript-1:instructions": [
+    {
+      "t": "text",
+      "v": "Implement the task."
+    }
+  ],
+  "attempts-exhausted/transcript-1@0:error": [
+    {
+      "t": "text",
+      "v": "Node code failed: crash after 12.3s: node execution failed: provider failure: something odd"
+    }
+  ],
+  "calc/artifact-0": [
+    {
+      "t": "text",
+      "v": "farewell() lives in greet.py"
+    }
+  ],
+  "calc/artifact-1": [
+    {
+      "t": "text",
+      "v": "gate: missing NOTES.md"
+    }
+  ],
+  "calc/detail/01:spec": [
+    {
+      "t": "text",
+      "v": "# Add sub()"
+    }
+  ],
+  "calc/detail/02:spec": [
+    {
+      "t": "text",
+      "v": "# Add mul()"
+    }
+  ],
+  "calc/detail/03:spec": [
+    {
+      "t": "text",
+      "v": "# Friendlier greeting"
+    }
+  ],
+  "calc/detail/04:spec": [
+    {
+      "t": "text",
+      "v": "# Add farewell()"
+    }
+  ],
+  "calc/detail/05:spec": [
+    {
+      "t": "text",
+      "v": "# Add square()"
+    }
+  ],
+  "calc/detail/06:spec": [
+    {
+      "t": "text",
+      "v": "# Document the API"
+    }
+  ],
+  "calc/detail/07:spec": [
+    {
+      "t": "text",
+      "v": "# Drop the legacy alias"
+    }
+  ],
+  "calc/detail/08:spec": [
+    {
+      "t": "text",
+      "v": "# Add div()"
+    }
+  ],
+  "calc/detail/09:spec": [
+    {
+      "t": "text",
+      "v": "# Add pow()"
+    }
+  ],
+  "calc/detail/10:spec": [
+    {
+      "t": "text",
+      "v": "# Add mod()"
+    }
+  ],
+  "calc/detail/11:spec": [
+    {
+      "t": "text",
+      "v": "# Hand-finished tidy-up"
+    }
+  ],
+  "calc/detail/12:spec": [
+    {
+      "t": "text",
+      "v": "# Add neg()"
+    }
+  ],
+  "calc/detail/13:spec": [
+    {
+      "t": "text",
+      "v": "# Add abs()"
+    }
+  ],
+  "calc/task-01-1": [
+    {
+      "t": "text",
+      "v": "# Add sub()"
+    }
+  ],
+  "calc/task-04-1": [
+    {
+      "t": "text",
+      "v": "# Add farewell()"
+    }
+  ],
+  "calc/task-04-2": [
+    {
+      "t": "text",
+      "v": "# Add farewell()"
+    }
+  ],
+  "closing-postmortem/transcript-1@0:error": [
+    {
+      "t": "text",
+      "v": "Node code failed: crash after 2.0s: node execution failed: provider failure: API Error: 500 Internal Server Error"
+    }
+  ],
+  "codex-estimate/transcript-1:instructions": [
+    {
+      "t": "text",
+      "v": "Do the task."
+    }
+  ],
+  "codex-estimate/transcript-1@0:text": [
+    {
+      "t": "text",
+      "v": "Working."
+    }
+  ],
+  "copilot-session/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node: add slugify() to textkit."
+    }
+  ],
+  "copilot-session/transcript-1@10:text": [
+    {
+      "t": "text",
+      "v": "{\"response\":{\"ok\":true}}"
+    }
+  ],
+  "copilot-session/transcript-1@1:thinking": [
+    {
+      "t": "text",
+      "v": "Look around first."
+    }
+  ],
+  "copilot-session/transcript-1@5:compaction": [
+    {
+      "t": "text",
+      "v": "Context compacted: 142.6k → 57.2k tokens"
+    }
+  ],
+  "copilot-session/transcript-1@5:compaction.detail": [
+    {
+      "t": "text",
+      "v": "<overview>Added slugify</overview>"
+    }
+  ],
+  "copilot-session/transcript-1@6:auto": [
+    {
+      "t": "text",
+      "v": "Answer with the schema."
+    }
+  ],
+  "copilot-session/transcript-1@7:system": [
+    {
+      "t": "text",
+      "v": "Background command failed (exit 1): Run the tests"
+    }
+  ],
+  "copilot-session/transcript-1@8:system": [
+    {
+      "t": "text",
+      "v": "y"
+    }
+  ],
+  "copilot-session/transcript-1@9:error": [
+    {
+      "t": "text",
+      "v": "API Error: 503 Service Unavailable"
+    }
+  ],
+  "delivery-failed/transcript-1@0:thinking": [
+    {
+      "t": "text",
+      "v": "I'll look at textkit/core.py first."
+    }
+  ],
+  "delivery-failed/transcript-1@3:text": [
+    {
+      "t": "text",
+      "v": "Done: slugify() added with tests; all tests pass."
+    }
+  ],
+  "diag-api-hang/transcript-1@5:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: timeout after 120.0s"
+    }
+  ],
+  "diag-code-authentication-required/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "needs login"
+    }
+  ],
+  "diag-code-crash/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "process exited with status 1"
+    }
+  ],
+  "diag-code-input-required/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "waiting for input"
+    }
+  ],
+  "diag-code-malformed-result/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "result did not match the schema"
+    }
+  ],
+  "diag-code-other/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "something unexpected"
+    }
+  ],
+  "diag-code-policy-denied/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "tool blocked"
+    }
+  ],
+  "diag-code-refusal/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "I can't help with that."
+    }
+  ],
+  "diag-code-timeout/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: timeout after 45.4s: node execution failed"
+    }
+  ],
+  "diag-context/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "API Error: 400 prompt is too long: 210000 tokens > 200000 maximum"
+    }
+  ],
+  "diag-credentials/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"OAuth access token is invalid\"}}"
+    }
+  ],
+  "diag-disk/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "ENOSPC: no space left on device, write"
+    }
+  ],
+  "diag-malformed-stream/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "Unexpected end of stream: malformed API response"
+    }
+  ],
+  "diag-missing-cli/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "spawn claude: executable file not found in $PATH"
+    }
+  ],
+  "diag-model/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "API Error: 404 {\"type\":\"error\",\"error\":{\"type\":\"not_found_error\",\"message\":\"model: claude-haiku-9-9\"}} issue with the selected model (claude-haiku-9-9)"
+    }
+  ],
+  "diag-network/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "Error: read ECONNRESET"
+    }
+  ],
+  "diag-permission/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "API Error: 403 permission_error: There's an issue with the selected model (claude-opus-4-1-20250805). It may not exist or you may not have access to it."
+    }
+  ],
+  "diag-provider-down/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "API Error: 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"}}"
+    }
+  ],
+  "diag-provider-timeout/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "APIConnectionTimeoutError: Request timed out."
+    }
+  ],
+  "diag-rate-limit/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "API Error: 429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\"}}"
+    }
+  ],
+  "diag-stream-cut/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "StreamNoEventsError: stream ended unexpectedly"
+    }
+  ],
+  "diag-usage-limit/transcript-1@3:error": [
+    {
+      "t": "text",
+      "v": "Claude AI usage limit reached"
+    }
+  ],
+  "diag-usage-limit/transcript-1@4:error": [
+    {
+      "t": "text",
+      "v": "You've hit your limit · resets 9:30am (UTC)"
+    }
+  ],
+  "force-stopped/transcript-2@0:text": [
+    {
+      "t": "text",
+      "v": "Reading the diff."
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger:instructions": [
+    {
+      "t": "text",
+      "v": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks."
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger@0:retry": [
+    {
+      "t": "text",
+      "v": "retried 1 of 10 (authentication failed)"
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger@1:retry": [
+    {
+      "t": "text",
+      "v": "retried 2 of 10 (authentication failed)"
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger@2:text": [
+    {
+      "t": "text",
+      "v": "Failed to authenticate. API Error: 401 OAuth access token is invalid."
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger@3:error": [
+    {
+      "t": "text",
+      "v": "Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger@4:system": [
+    {
+      "t": "text",
+      "v": "Claude provider failed; continuing once"
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1-ledger@8:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: crash after 17.5s: node execution failed: Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "fork-only/fork-bad-credentials/transcript-1@4:auto": [
+    {
+      "t": "text",
+      "v": "Continue"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll help you implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function in the textkit project. Let me start by exploring the current structure."
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@10:retry": [
+    {
+      "t": "text",
+      "v": "retried 1 of 10 (server error)"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@11:text": [
+    {
+      "t": "text",
+      "v": "Now I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function. Let me add it to core.py:"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@13:text": [
+    {
+      "t": "text",
+      "v": "Now let me export it from the __init__.py:"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@15:text": [
+    {
+      "t": "text",
+      "v": "Now let me add unit tests:"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@17:text": [
+    {
+      "t": "text",
+      "v": "Now let me run the tests:"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@19:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass. The implementation is complete:"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@2:retry": [
+    {
+      "t": "text",
+      "v": "retried 1 of 10 (overloaded)"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@3:retry": [
+    {
+      "t": "text",
+      "v": "retried 2 of 10 (overloaded)"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@5:retry": [
+    {
+      "t": "text",
+      "v": "retried 1 of 10 (rate limit)"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1-ledger@6:retry": [
+    {
+      "t": "text",
+      "v": "retried 2 of 10 (rate limit)"
+    }
+  ],
+  "fork-only/fork-chaos-transient/transcript-1@21:auto": [
+    {
+      "t": "text",
+      "v": "You MUST call the StructuredOutput tool to complete this request. Call this tool now."
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll start by exploring the repository structure and then implement the requested "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function."
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@11:rate_limit": [
+    {
+      "t": "text",
+      "v": "5-hour limit hit"
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@12:rate_limit": [
+    {
+      "t": "text",
+      "v": "Claude usage or rate limit reached"
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@13:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: crash after 21.7s: node execution failed: Claude provider failure: You've hit your 5-hour limit · resets 12:58pm (UTC); provider process exited with status 1"
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@5:text": [
+    {
+      "t": "text",
+      "v": "Now I'll add the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function to "
+    },
+    {
+      "t": "code",
+      "v": "textkit/core.py"
+    },
+    {
+      "t": "text",
+      "v": ":"
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@7:text": [
+    {
+      "t": "text",
+      "v": "Now I'll update "
+    },
+    {
+      "t": "code",
+      "v": "textkit/__init__.py"
+    },
+    {
+      "t": "text",
+      "v": " to export the new function:"
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1-ledger@9:text": [
+    {
+      "t": "text",
+      "v": "Now I'll add unit tests for the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function:"
+    }
+  ],
+  "fork-only/fork-chaos-usage-limit/transcript-1@12:error": [
+    {
+      "t": "text",
+      "v": "You've hit your 5-hour limit · resets 12:58pm (UTC)"
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-1-ledger:instructions": [
+    {
+      "t": "text",
+      "v": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs "
+    },
+    {
+      "t": "code",
+      "v": "git add --all"
+    },
+    {
+      "t": "text",
+      "v": "; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function in the textkit package. Let me start by exploring the current structure."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-1-ledger@16:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass. The implementation is complete:"
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-1-ledger@6:text": [
+    {
+      "t": "text",
+      "v": "Now I'll add the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function to core.py:"
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-2-ledger:instructions": [
+    {
+      "t": "text",
+      "v": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-2-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll verify the changes by examining the modified files and running the test suite."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-2-ledger@4:error": [
+    {
+      "t": "text",
+      "v": "Node acceptance failed: crash: run runtime_lost"
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-2@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-2@5:text": [
+    {
+      "t": "text",
+      "v": "Now I'll run the test suite to verify the implementation works correctly."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-2@7:text": [
+    {
+      "t": "text",
+      "v": "Perfect! The implementation is complete and verified:"
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-3-ledger:instructions": [
+    {
+      "t": "text",
+      "v": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-3-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll review the changes to verify the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function implementation meets the requirements."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-3-ledger@4:text": [
+    {
+      "t": "text",
+      "v": "Now I'll run the tests to verify the implementation works correctly."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-3-ledger@6:error": [
+    {
+      "t": "text",
+      "v": "Node code failed: crash: run runtime_lost"
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-3@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "fork-only/fork-controller-killed/transcript-3@7:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass. Let me verify the implementation meets the requirements:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the requested "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function for the textkit package. Let me start by exploring the repository structure."
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@10:text": [
+    {
+      "t": "text",
+      "v": "Now I'll add tests for the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@13:text": [
+    {
+      "t": "text",
+      "v": "Now I'll run the tests:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@15:text": [
+    {
+      "t": "text",
+      "v": "I need to fix the test - the expected output should include the dash for the special characters. Let me update the test:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@18:text": [
+    {
+      "t": "text",
+      "v": "Excellent! All tests pass. Now I'll verify the implementation and commit the changes:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@22:text": [
+    {
+      "t": "text",
+      "v": "I'll create a "
+    },
+    {
+      "t": "code",
+      "v": ".gitignore"
+    },
+    {
+      "t": "text",
+      "v": " file to exclude Python cache files, then update the staging:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@25:text": [
+    {
+      "t": "text",
+      "v": "Perfect! Now I'll create the commit:"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@28:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@6:text": [
+    {
+      "t": "text",
+      "v": "Now I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function. First, I'll add it to "
+    },
+    {
+      "t": "code",
+      "v": "core.py"
+    },
+    {
+      "t": "text",
+      "v": ":"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-1-ledger@8:text": [
+    {
+      "t": "text",
+      "v": "Now I'll export it from "
+    },
+    {
+      "t": "code",
+      "v": "__init__.py"
+    },
+    {
+      "t": "text",
+      "v": ":"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-2@0:error": [
+    {
+      "t": "text",
+      "v": "Node acceptance failed: refusal after 0.1s"
+    }
+  ],
+  "fork-only/fork-force-stopped/transcript-3@0:error": [
+    {
+      "t": "text",
+      "v": "Node code failed: refusal: run force_stopped"
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function as requested. Let me start by examining the current repository structure."
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-1-ledger@10:text": [
+    {
+      "t": "text",
+      "v": "Now let me run the tests to verify everything passes."
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-1-ledger@12:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass. Now let me stage the changes."
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-1-ledger@14:text": [
+    {
+      "t": "text",
+      "v": "Let me remove the __pycache__ files from staging as they shouldn't be committed."
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-1-ledger@6:text": [
+    {
+      "t": "text",
+      "v": "Now I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function. Let me add it to core.py first."
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-2-ledger@4:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-3-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll review the changes made to implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function. Let me first examine the modified files to understand what was done."
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-3-ledger@4:text": [
+    {
+      "t": "text",
+      "v": "Now let me run the tests to verify they pass:"
+    }
+  ],
+  "fork-only/fork-happy-path/transcript-3-ledger@6:text": [
+    {
+      "t": "text",
+      "v": "Excellent! All tests pass. Let me verify the implementation meets all requirements:"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-1@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the requested "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function in the textkit package. Let me start by exploring the repository structure and then implementing the changes."
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-1@11:text": [
+    {
+      "t": "text",
+      "v": "Now I'll run the tests to verify everything works:"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-1@13:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass. Let me verify the implementation and stage the changes:"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-1@19:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-1@7:text": [
+    {
+      "t": "text",
+      "v": "Now I'll export the function from the package:"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-1@9:text": [
+    {
+      "t": "text",
+      "v": "Now I'll add unit tests for the slugify function:"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-2@4:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-3@4:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-late-failure/transcript-3@5:error": [
+    {
+      "t": "text",
+      "v": "Node code failed: timeout after 20.1s"
+    }
+  ],
+  "fork-only/fork-replay/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function in the textkit package. Let me start by exploring the repository structure."
+    }
+  ],
+  "fork-only/fork-replay/transcript-1-ledger@8:text": [
+    {
+      "t": "text",
+      "v": "Now I'll export it from __init__.py:"
+    }
+  ],
+  "fork-only/fork-replay/transcript-2-ledger@5:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-replay/transcript-3-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll verify the prepared shared checkout by examining the implementation and running the tests."
+    }
+  ],
+  "fork-only/fork-replay/transcript-3-ledger@5:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-resumed/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function for the textkit project. Let me start by exploring the current structure."
+    }
+  ],
+  "fork-only/fork-resumed/transcript-1-ledger@6:text": [
+    {
+      "t": "text",
+      "v": "Perfect! The implementation is already in place. Let me verify everything works by running the tests."
+    }
+  ],
+  "fork-only/fork-resumed/transcript-1-ledger@9:text": [
+    {
+      "t": "text",
+      "v": "Excellent! The "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function is fully implemented and all tests pass. Here's what was verified:"
+    }
+  ],
+  "fork-only/fork-resumed/transcript-2-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll verify the prepared shared checkout against the task requirements. Let me check the current state of the files and run the tests."
+    }
+  ],
+  "fork-only/fork-resumed/transcript-2-ledger@7:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-resumed/transcript-3-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll review the prepared checkout to verify the implementation meets the requirements. Let me start by examining the current state of the code."
+    }
+  ],
+  "fork-only/fork-resumed/transcript-3-ledger@7:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-1@0:text": [
+    {
+      "t": "text",
+      "v": "I'll implement the requested "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function in the textkit package. Let me start by exploring the current structure."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-1@15:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass and the implementation is complete. Let me verify the final state:"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-2:instructions": [
+    {
+      "t": "text",
+      "v": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-2@0:text": [
+    {
+      "t": "text",
+      "v": "I'll verify the change by examining the modified files and running the tests."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-2@5:text": [
+    {
+      "t": "text",
+      "v": "Based on my verification, the implementation is functionally correct and all tests pass. However, following the test policy to identify one concrete improvement:"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-3@0:text": [
+    {
+      "t": "text",
+      "v": "I'll review the changes made to implement the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function. Let me examine the modified files."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-3@4:text": [
+    {
+      "t": "text",
+      "v": "Now let me run the tests to verify the implementation works correctly."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-3@6:text": [
+    {
+      "t": "text",
+      "v": "## Review Complete"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-4@0:text": [
+    {
+      "t": "text",
+      "v": "I'll start by reviewing the current implementation and then enhance the docstring based on the feedback."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-4@3:text": [
+    {
+      "t": "text",
+      "v": "Now I'll enhance the docstring with comprehensive parameter, return type documentation, and examples showing edge cases:"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-4@5:text": [
+    {
+      "t": "text",
+      "v": "Now I'll run the tests to verify everything still passes:"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-4@7:text": [
+    {
+      "t": "text",
+      "v": "Perfect! All tests pass. Now I'll stage the changes:"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-5@0:text": [
+    {
+      "t": "text",
+      "v": "I'll verify the implementation of the "
+    },
+    {
+      "t": "code",
+      "v": "slugify"
+    },
+    {
+      "t": "text",
+      "v": " function by checking the code and running tests."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-5@7:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-6@0:text": [
+    {
+      "t": "text",
+      "v": "I'll review the changes in this workspace by examining the modified files against the task requirements."
+    }
+  ],
+  "fork-only/fork-reviewer-never-satisfied/transcript-6@6:text": [
+    {
+      "t": "text",
+      "v": "Verification complete. The implementation satisfies all requirements:"
+    }
+  ],
+  "fork-only/fork-steered/transcript-1-ledger@3:steer": [
+    {
+      "t": "text",
+      "v": "Change of plan: in step 4 write BANANA instead of APPLE."
+    }
+  ],
+  "fork-only/fork-steered/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "fork-only/fork-unknown-model/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+    }
+  ],
+  "fork-only/fork-unknown-model/transcript-1-ledger@1:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: crash after 4.8s: node execution failed: Claude provider failure: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.; provider process exited with status 1; stderr: [claude-code:unrecognized_model] {\"model\":\"claude-haiku-9-9-does-not-exist\",\"query_source\":\"sdk\"}"
+    }
+  ],
+  "fork-only/fork-worker-timeout/transcript-1-ledger@0:text": [
+    {
+      "t": "text",
+      "v": "I'll execute this task by implementing the six functions in textkit one at a time. Let me start by examining the current state of the project."
+    }
+  ],
+  "fork-only/fork-worker-timeout/transcript-1-ledger@12:text": [
+    {
+      "c": [
+        {
+          "t": "text",
+          "v": "Function 1 Complete:"
+        }
+      ],
+      "t": "strong"
+    },
+    {
+      "t": "text",
+      "v": " Implemented "
+    },
+    {
+      "t": "code",
+      "v": "slugify()"
+    },
+    {
+      "t": "text",
+      "v": " which converts text to URL-friendly slugs by lowercasing, normalizing unicode, removing special characters, and replacing spaces/hyphens with single hyphens. Added three test cases covering normal text, whitespace, and special characters. All tests pass."
+    }
+  ],
+  "fork-only/fork-worker-timeout/transcript-1-ledger@18:text": [
+    {
+      "c": [
+        {
+          "t": "text",
+          "v": "Function 2 Complete:"
+        }
+      ],
+      "t": "strong"
+    },
+    {
+      "t": "text",
+      "v": " Implemented "
+    },
+    {
+      "t": "code",
+      "v": "title_case()"
+    },
+    {
+      "t": "text",
+      "v": " which capitalizes words while keeping small words (a, an, the, of, and, or) lowercase except at the start of the title. Used word splitting and conditional capitalization based on word position and content. All tests pass including checking proper handling of small words."
+    }
+  ],
+  "fork-only/fork-worker-timeout/transcript-1-ledger@21:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: timeout after 45.1s"
+    }
+  ],
+  "fork-only/fork-worker-timeout/transcript-1-ledger@6:text": [
+    {
+      "t": "text",
+      "v": "Now I'll implement the six functions one at a time. Starting with function 1: "
+    },
+    {
+      "c": [
+        {
+          "t": "text",
+          "v": "slugify"
+        }
+      ],
+      "t": "strong"
+    },
+    {
+      "t": "text",
+      "v": "."
+    }
+  ],
+  "fork-only/fork-worker-timeout/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "fork-only/steered/transcript-1@0:text": [
+    {
+      "t": "text",
+      "v": "Running sleep 20."
+    }
+  ],
+  "fork-only/steered/transcript-1@1:steer": [
+    {
+      "t": "text",
+      "v": "Write BANANA instead of APPLE."
+    }
+  ],
+  "fork-only/steered/transcript-1@2:steer": [
+    {
+      "t": "text",
+      "v": "Also add a test."
+    }
+  ],
+  "fork-only/steered/transcript-1@3:steer": [
+    {
+      "t": "text",
+      "v": "Too late."
+    }
+  ],
+  "fork-only/steered/transcript-1@4:text": [
+    {
+      "t": "text",
+      "v": "Understood: writing BANANA."
+    }
+  ],
+  "lane-mixed/transcript-1@1:error": [
+    {
+      "t": "text",
+      "v": "Node code failed: crash after 2.1s: node execution failed: Codex provider failure: unknown model gpt-5.1-codex-does-not-exist"
+    }
+  ],
+  "lane-unknown-harness/transcript-1@1:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: crash after 3.0s: node execution failed: Hermes provider failure: API Error: 429 rate limit exceeded"
+    }
+  ],
+  "map-parallel/transcript-3@0:text": [
+    {
+      "t": "text",
+      "v": "```json"
+    }
+  ],
+  "paused/detail/01:spec": [
+    {
+      "t": "text",
+      "v": "# Retry me"
+    }
+  ],
+  "running-live/transcript-4@1:text": [
+    {
+      "t": "text",
+      "v": "doing work"
+    }
+  ],
+  "running-live/transcript-4@2:retry": [
+    {
+      "t": "text",
+      "v": "retried 2 of 10 (overloaded error)"
+    }
+  ],
+  "running-live/transcript-4@3:rate_limit": [
+    {
+      "t": "text",
+      "v": "5-hour limit: 85% used"
+    }
+  ],
+  "running-live/transcript-4@4:rate_limit": [
+    {
+      "t": "text",
+      "v": "7-day Opus limit hit"
+    }
+  ],
+  "running-live/transcript-5@0:retry": [
+    {
+      "t": "text",
+      "v": "retried 3 of 10 (a transient error)"
+    }
+  ],
+  "running-live/transcript-5@1:text": [
+    {
+      "t": "text",
+      "v": "usage limit reached for this hour"
+    }
+  ],
+  "running-stock/transcript-1@0:thinking": [
+    {
+      "t": "text",
+      "v": "Thinking about it"
+    }
+  ],
+  "running-stock/transcript-1@1:text": [
+    {
+      "t": "text",
+      "v": "Here is the plan."
+    }
+  ],
+  "running-stock/transcript-1@2:error": [
+    {
+      "t": "text",
+      "v": "Error: API Error: 503 Service Unavailable"
+    }
+  ],
+  "stalled-live-usage/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Add slugify() to textkit."
+    }
+  ],
+  "stalled-live-usage/transcript-1@10:system": [
+    {
+      "t": "text",
+      "v": "Conversation compacted"
+    }
+  ],
+  "stalled-live-usage/transcript-1@11:text": [
+    {
+      "t": "text",
+      "v": "Done: slugify() uses re.sub and the tests pass."
+    }
+  ],
+  "stalled-live-usage/transcript-1@12:error": [
+    {
+      "t": "text",
+      "v": "There's an issue with the selected model (claude-haiku-9-9)."
+    }
+  ],
+  "stalled-live-usage/transcript-1@1:thinking": [
+    {
+      "t": "text",
+      "v": "Look at textkit/core.py first."
+    }
+  ],
+  "stalled-live-usage/transcript-1@2:text": [
+    {
+      "t": "text",
+      "v": "I'll read the module."
+    }
+  ],
+  "stalled-live-usage/transcript-1@5:system": [
+    {
+      "t": "text",
+      "v": "[Request interrupted by user]"
+    }
+  ],
+  "stalled-live-usage/transcript-1@6:auto": [
+    {
+      "t": "text",
+      "v": "Continue: the structured result is still missing."
+    }
+  ],
+  "stalled-live-usage/transcript-1@7:error": [
+    {
+      "t": "text",
+      "v": "API Error: 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\"}}"
+    }
+  ],
+  "stalled-live-usage/transcript-1@8:prompt": [
+    {
+      "t": "text",
+      "v": "Search the repo for callers of title()."
+    }
+  ],
+  "succeeded-stock/transcript-1@0:thinking": [
+    {
+      "t": "text",
+      "v": "I'll look at textkit/core.py first.{\"id\": \"toolu_490100\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}{\"toolUseId\": \"toolu_490100\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}{\"id\": \"toolu_490101\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 1\"}}{\"toolUseId\": \"toolu_490101\", \"content\": \"Ran 4 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+    }
+  ],
+  "succeeded-stock/transcript-2@0:thinking": [
+    {
+      "t": "text",
+      "v": "I'll look at textkit/core.py first.{\"id\": \"toolu_490200\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}{\"toolUseId\": \"toolu_490200\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+    }
+  ],
+  "succeeded-stock/transcript-3@0:thinking": [
+    {
+      "t": "text",
+      "v": "I'll look at textkit/core.py first.{\"id\": \"toolu_490300\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}{\"toolUseId\": \"toolu_490300\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+    }
+  ],
+  "tool-output-rate-limit/transcript-1@1:text": [
+    {
+      "t": "text",
+      "v": "The client now handles 429 Too Many Requests and overloaded_error with a retry."
+    }
+  ],
+  "tool-output-rate-limit/transcript-1@2:retry": [
+    {
+      "t": "text",
+      "v": "retried 1 of 3 (rate limit (quoted by the agent))"
+    }
+  ],
+  "zeroshot-16/zeroshot16-normal/transcript-1-ledger@0:thinking": [
+    {
+      "t": "text",
+      "v": "Claude Code version: 2.1.322"
+    }
+  ],
+  "zeroshot-16/zeroshot16-normal/transcript-1-ledger@13:text": [
+    {
+      "t": "text",
+      "v": "Now let's run the tests to verify everything works:"
+    }
+  ],
+  "zeroshot-16/zeroshot16-normal/transcript-1-ledger@15:text": [
+    {
+      "t": "text",
+      "v": "Perfect! I've successfully completed the task:"
+    }
+  ],
+  "zeroshot-16/zeroshot16-normal/transcript-1-ledger@1:text": [
+    {
+      "t": "text",
+      "v": "I'll help you complete this task. Let me start by exploring the project structure to understand the current state."
+    }
+  ],
+  "zeroshot-16/zeroshot16-normal/transcript-1-ledger@9:text": [
+    {
+      "t": "text",
+      "v": "Now I'll update the exports in "
+    },
+    {
+      "t": "code",
+      "v": "textkit/__init__.py"
+    },
+    {
+      "t": "text",
+      "v": ":"
+    }
+  ],
+  "zeroshot-16/zeroshot16-normal/transcript-1@0:prompt": [
+    {
+      "t": "text",
+      "v": "Execute this graph node using the shared workspace."
+    }
+  ],
+  "zeroshot-16/zeroshot16-steered/transcript-1@1:text": [
+    {
+      "t": "text",
+      "v": "I'll execute the requested steps: run sleep three times, then write \"APPLE\" to out.txt."
+    }
+  ],
+  "zeroshot-16/zeroshot16-steered/transcript-1@4:steer": [
+    {
+      "t": "text",
+      "v": "Change of plan: in step 4 write BANANA instead of APPLE."
+    }
+  ],
+  "zeroshot-16/zeroshot16-steered/transcript-1@5:steer": [
+    {
+      "t": "text",
+      "v": "Also: skip step 3, it is not needed."
+    }
+  ],
+  "zeroshot-16/zeroshot16-steered/transcript-1@7:text": [
+    {
+      "t": "text",
+      "v": "Got your message! I've already completed step 3, but I'm adjusting step 4 to write BANANA instead."
+    }
+  ],
+  "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger@2:error": [
+    {
+      "t": "text",
+      "v": "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+    }
+  ]
+}

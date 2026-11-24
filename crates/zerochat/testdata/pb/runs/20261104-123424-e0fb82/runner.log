@@ -1,0 +1,13 @@
+12:34:25 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] start label='k8s-sc-sonnet5' version=b34fe3b702 model=per-node art=/data/pb/runs/20261104-123424-e0fb82
+12:34:26 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] sandbox up; launching zeroshot
+12:36:00 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] node start  worker (exec 1, attempt 1)
+13:04:35 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] node done   worker -> verified 
+13:05:13 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] node start  acceptance (exec 2, attempt 1)
+13:05:13 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] node start  code (exec 3, attempt 1)
+13:06:42 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] node done   code -> verifier accepted
+13:07:22 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] node done   acceptance -> verifier accepted
+13:08:04 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] agent finished: success — zeroshot succeeded
+13:08:08 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] running hidden tests (repo task eval)…
+13:10:00 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] score 0/20 (ok), regression 188/188
+13:10:00 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] score per step: worker#1 0.0%, final 0.0%
+13:10:00 [20261104-123424-e0fb82 k8s-job-backoff-limit-per-index s0] done: success

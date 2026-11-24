@@ -1,0 +1,323 @@
+{
+ "name": "diag-api-hang",
+ "runId": "01a1ee8a-8d60-7039-8039-000000000039",
+ "where": "local",
+ "tags": [
+  "diagnosis:api-hang",
+  "exec:failed",
+  "failure:provider"
+ ],
+ "stock": false,
+ "stored": {
+  "admitted": {
+   "title": "diag api hang",
+   "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+     "kind": "seq",
+     "name": "run",
+     "children": [
+      {
+       "kind": "step",
+       "name": "worker",
+       "worker": "builtin.agent.worker@1",
+       "instructions": "Do the task.",
+       "attempts": 1,
+       "timeoutMs": 120000
+      }
+     ]
+    }
+   },
+   "initialInput": {
+    "task": "Add slugify() to textkit."
+   },
+   "runtime": {
+    "harness": "claude",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+     "worker": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     }
+    }
+   },
+   "source": {
+    "repository": "example/textkit",
+    "branch": "main",
+    "revision": "0000000000000000000000000000000000000000"
+   }
+  },
+  "snapshot": {
+   "runId": "01a1ee8a-8d60-7039-8039-000000000039",
+   "title": "diag api hang",
+   "phase": "finished",
+   "cursor": "v2:18",
+   "terminal": {
+    "status": "failed",
+    "reason": "worker_failed",
+    "context": {
+     "recorded": [
+      {
+       "message": "Node worker failed: timeout after 120.0s"
+      }
+     ]
+    }
+   },
+   "forceStopRequested": false
+  }
+ },
+ "events": [
+  {
+   "seq": 1,
+   "body": {
+    "kind": "safe_log",
+    "execution": null,
+    "timestamp": 1795003421000,
+    "stream": "system",
+    "line": "Preparing execution environment"
+   }
+  },
+  {
+   "seq": 2,
+   "body": {
+    "kind": "run_started"
+   }
+  },
+  {
+   "seq": 3,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee8a-8d60-7039-8039-000000000039",
+     "node": "worker",
+     "nodeInstance": 1,
+     "execution": 1
+    },
+    "occurrence": {
+     "node": "worker",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    },
+    "at": 1795003421500,
+    "provider": {
+     "harness": "claude",
+     "model": "claude-haiku-4-5",
+     "effort": "medium"
+    },
+    "workspace": {
+     "commit": "0000000000000000000000000000000000000001"
+    }
+   }
+  },
+  {
+   "seq": 4,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003421700,
+    "stream": "system",
+    "line": "{\"harness\": \"claude\", \"sessionId\": \"5e550057-0000-4000-8000-00000000a4a6\"}",
+    "logKind": "session"
+   }
+  },
+  {
+   "seq": 5,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003422700,
+    "stream": "system",
+    "line": "I'll look at textkit/core.py first.",
+    "logKind": "thinking"
+   }
+  },
+  {
+   "seq": 6,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003423700,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_570100\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}",
+    "logKind": "tool_use"
+   }
+  },
+  {
+   "seq": 7,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003424700,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_570100\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}",
+    "logKind": "tool_result"
+   }
+  },
+  {
+   "seq": 8,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003425700,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_570101\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 1\"}}",
+    "logKind": "tool_use"
+   }
+  },
+  {
+   "seq": 9,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003426700,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_570101\", \"content\": \"Ran 4 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}",
+    "logKind": "tool_result"
+   }
+  },
+  {
+   "seq": 10,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003427000,
+    "stream": "output",
+    "line": "Done: slugify() added with tests; ",
+    "logKind": "text"
+   }
+  },
+  {
+   "seq": 11,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003427300,
+    "stream": "output",
+    "line": "all tests pass.",
+    "logKind": "text"
+   }
+  },
+  {
+   "seq": 12,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003429300,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_570199\", \"name\": \"Read\", \"input\": {\"file_path\": \"/work/diag-api-hang/repo/textkit/core.py\"}}",
+    "logKind": "tool_use"
+   }
+  },
+  {
+   "seq": 13,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003429350,
+    "stream": "system",
+    "line": "Claude rate limit: status=allowed, type=seven_day, resetsAt=2026-11-25T02:00:00Z",
+    "logKind": "rate_limit"
+   }
+  },
+  {
+   "seq": 14,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003429400,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_570199\", \"content\": \"1\\tdef count_words(text: str) -> int:\", \"isError\": false}",
+    "logKind": "tool_result"
+   }
+  },
+  {
+   "seq": 15,
+   "body": {
+    "kind": "token_usage_observed",
+    "execution": 1,
+    "usage": {
+     "inputTokens": 1200,
+     "outputTokens": 800,
+     "cacheReadInputTokens": 40000,
+     "cacheCreationInputTokens": 3000
+    },
+    "costUsd": "0.0412",
+    "model": "claude-haiku-4-5"
+   }
+  },
+  {
+   "seq": 16,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795003524400,
+    "stream": "error",
+    "line": "Node worker failed: timeout after 120.0s"
+   }
+  },
+  {
+   "seq": 17,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee8a-8d60-7039-8039-000000000039",
+      "node": "worker",
+      "nodeInstance": 1,
+      "execution": 1
+     },
+     "outcome": {
+      "status": "error",
+      "code": "timeout",
+      "reason": "declared_failure"
+     }
+    },
+    "at": 1795003524900,
+    "workspace": {
+     "commit": "0000000000000000000000000000000000000065",
+     "base": "0000000000000000000000000000000000000001",
+     "files": [
+      {
+       "path": "textkit/core.py",
+       "status": "modified",
+       "additions": 12,
+       "deletions": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "seq": 18,
+   "body": {
+    "kind": "terminal",
+    "result": {
+     "status": "failed",
+     "reason": "worker_failed",
+     "context": {
+      "recorded": [
+       {
+        "message": "Node worker failed: timeout after 120.0s"
+       }
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "recovery": {
+  "workspace": "/work/diag-api-hang/repo"
+ },
+ "controllerPid": null,
+ "checkpoints": true,
+ "sessions": {}
+}

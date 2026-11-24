@@ -1,0 +1,87 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 1500,
+      "endSeq": 5,
+      "endedAt": 1795002043000,
+      "error": {
+        "code": "timeout",
+        "reason": null
+      },
+      "errorLines": [
+        "Node worker failed: timeout after 45.4s: node execution failed"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795002042500,
+      "logLines": 1,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "timeout",
+        "reason": null,
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795002041500,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Do the task.",
+    "sourceNote": "Claude's session log could not be matched to this node (this Zeroshot does not record the session id).",
+    "transcript": {
+      "items": [
+        {
+          "at": 1795002042500,
+          "kind": "error",
+          "text": "Node worker failed: timeout after 45.4s: node execution failed"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

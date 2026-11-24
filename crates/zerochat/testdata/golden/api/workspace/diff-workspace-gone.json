@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "workspace_unavailable",
+    "message": "This run's workspace is not on this machine."
+  },
+  "status": 503
+}

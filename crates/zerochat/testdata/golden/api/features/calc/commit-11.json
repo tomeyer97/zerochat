@@ -1,0 +1,8 @@
+{
+  "body": {
+    "commit": "6ea2cf45e564a22af953adfdafe7f28f28530e66",
+    "diff": "diff --git a/calc/ops.py b/calc/ops.py\nindex b7666fb..0953fca 100644\n--- a/calc/ops.py\n+++ b/calc/ops.py\n@@ -8,3 +8,6 @@ def sub(a, b):\n \n def mul(a, b):\n     return a * b\n+\n+\n+# tidy",
+    "message": "Hand-finished tidy-up\n\nSlice: 11"
+  },
+  "status": 200
+}

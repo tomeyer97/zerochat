@@ -1,0 +1,614 @@
+{
+  "liveFilled": [
+    {
+      "detail": {
+        "cells": [
+          {
+            "attempts": 1,
+            "capMinutes": 60.0,
+            "capSteps": 24,
+            "capUsd": 6.0,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "liveNodes": [
+              "oracle"
+            ],
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "20261108-170009-cb5a35",
+            "score": null,
+            "seed": 0,
+            "startedAt": 1794153609783,
+            "state": "running_agent",
+            "task": "tomnomnom__gron.88a6234",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": "01a1bbe3-7e15-7852-b8d7-27fb6188c998"
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 1,
+            "startedAt": null,
+            "state": "queued",
+            "task": "tomnomnom__gron.88a6234",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 2,
+            "startedAt": null,
+            "state": "queued",
+            "task": "tomnomnom__gron.88a6234",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          },
+          {
+            "attempts": 1,
+            "capMinutes": 60.0,
+            "capSteps": 24,
+            "capUsd": 6.0,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "liveNodes": [
+              "repair"
+            ],
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "20261108-170009-2845db",
+            "score": null,
+            "seed": 0,
+            "startedAt": 1794153609783,
+            "state": "running_agent",
+            "task": "yaa110__nomino.f892499",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": "01a1bbe3-7e13-7521-8fb6-72ee1220f37e"
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 1,
+            "startedAt": null,
+            "state": "queued",
+            "task": "yaa110__nomino.f892499",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 2,
+            "startedAt": null,
+            "state": "queued",
+            "task": "yaa110__nomino.f892499",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          }
+        ],
+        "colAggregates": [
+          {
+            "key": "0",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          },
+          {
+            "key": "1",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          },
+          {
+            "key": "2",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          }
+        ],
+        "endedAt": null,
+        "harnessVersion": null,
+        "harnesses": [
+          {
+            "agentHarness": "claude",
+            "modelOverride": null,
+            "nodes": [
+              {
+                "effort": null,
+                "kind": "step",
+                "loopMax": null,
+                "loopName": null,
+                "model": "claude-haiku-4-5",
+                "name": "explore",
+                "parallel": null
+              },
+              {
+                "effort": null,
+                "kind": "step",
+                "loopMax": null,
+                "loopName": null,
+                "model": "claude-haiku-4-5",
+                "name": "build",
+                "parallel": null
+              },
+              {
+                "effort": null,
+                "kind": "verifier",
+                "loopMax": 8,
+                "loopName": "diff_loop",
+                "model": "claude-haiku-4-5",
+                "name": "oracle",
+                "parallel": null
+              },
+              {
+                "effort": null,
+                "kind": "step",
+                "loopMax": 8,
+                "loopName": "diff_loop",
+                "model": "claude-haiku-4-5",
+                "name": "repair",
+                "parallel": null
+              }
+            ],
+            "runs": 2,
+            "runtimeFile": null,
+            "runtimeMatches": false,
+            "source": "custom",
+            "variant": null
+          }
+        ],
+        "id": "20261108-170009-cace9c",
+        "label": "r3-h2-noaccept",
+        "limits": {
+          "maxCostUsd": 6.0,
+          "maxSteps": 24,
+          "maxWallMinutes": 60.0
+        },
+        "maxScore": null,
+        "meanScore": null,
+        "meanScoreFinished": null,
+        "minScore": null,
+        "models": [],
+        "parallel": 2,
+        "replays": [],
+        "retriedAttempts": 0,
+        "retriedCostUsd": null,
+        "rowAggregates": [
+          {
+            "key": "tomnomnom__gron.88a6234",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          },
+          {
+            "key": "yaa110__nomino.f892499",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          }
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "startLog": null,
+        "startedAt": 1794153609722,
+        "starting": false,
+        "status": "running",
+        "tasks": [
+          "tomnomnom__gron.88a6234",
+          "yaa110__nomino.f892499"
+        ],
+        "totalCostUsd": null,
+        "totalWallS": null,
+        "zeroshotVersion": null
+      },
+      "id": "20261108-170009-cace9c"
+    },
+    {
+      "detail": {
+        "cells": [
+          {
+            "attempts": 1,
+            "capMinutes": 60.0,
+            "capSteps": 24,
+            "capUsd": 6.0,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "liveNodes": [
+              "oracle"
+            ],
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "20261108-170007-915c3e",
+            "score": null,
+            "seed": 0,
+            "startedAt": 1794153607967,
+            "state": "running_agent",
+            "task": "tomnomnom__gron.88a6234",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": "01a1bbe3-76b4-7051-bc35-6513b8d18a1c"
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 1,
+            "startedAt": null,
+            "state": "queued",
+            "task": "tomnomnom__gron.88a6234",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 2,
+            "startedAt": null,
+            "state": "queued",
+            "task": "tomnomnom__gron.88a6234",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          },
+          {
+            "attempts": 1,
+            "capMinutes": 60.0,
+            "capSteps": 24,
+            "capUsd": 6.0,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "liveNodes": [
+              "repair"
+            ],
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "20261108-170007-024098",
+            "score": null,
+            "seed": 0,
+            "startedAt": 1794153607966,
+            "state": "running_agent",
+            "task": "yaa110__nomino.f892499",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": "01a1bbe3-76b4-7bc0-b82d-31116a963693"
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 1,
+            "startedAt": null,
+            "state": "queued",
+            "task": "yaa110__nomino.f892499",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          },
+          {
+            "attempts": 0,
+            "capMinutes": null,
+            "capSteps": null,
+            "capUsd": null,
+            "costUsd": null,
+            "cutShort": null,
+            "exitReason": null,
+            "overLimit": null,
+            "priorAttempts": [],
+            "regressionPassed": null,
+            "regressionTotal": null,
+            "runId": "",
+            "score": null,
+            "seed": 2,
+            "startedAt": null,
+            "state": "queued",
+            "task": "yaa110__nomino.f892499",
+            "testsPassed": null,
+            "testsTotal": null,
+            "wallS": null,
+            "zeroshotRunId": null
+          }
+        ],
+        "colAggregates": [
+          {
+            "key": "0",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          },
+          {
+            "key": "1",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          },
+          {
+            "key": "2",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          }
+        ],
+        "endedAt": null,
+        "harnessVersion": null,
+        "harnesses": [
+          {
+            "agentHarness": "claude",
+            "modelOverride": null,
+            "nodes": [
+              {
+                "effort": null,
+                "kind": "step",
+                "loopMax": null,
+                "loopName": null,
+                "model": "claude-haiku-4-5",
+                "name": "explore",
+                "parallel": null
+              },
+              {
+                "effort": null,
+                "kind": "step",
+                "loopMax": null,
+                "loopName": null,
+                "model": "claude-haiku-4-5",
+                "name": "build",
+                "parallel": null
+              },
+              {
+                "effort": null,
+                "kind": "verifier",
+                "loopMax": 8,
+                "loopName": "diff_loop",
+                "model": "claude-haiku-4-5",
+                "name": "oracle",
+                "parallel": null
+              },
+              {
+                "effort": null,
+                "kind": "step",
+                "loopMax": 8,
+                "loopName": "diff_loop",
+                "model": "claude-haiku-4-5",
+                "name": "repair",
+                "parallel": null
+              }
+            ],
+            "runs": 2,
+            "runtimeFile": null,
+            "runtimeMatches": false,
+            "source": "custom",
+            "variant": null
+          }
+        ],
+        "id": "20261108-170007-63721d",
+        "label": "r3-noaccept",
+        "limits": {
+          "maxCostUsd": 6.0,
+          "maxSteps": 24,
+          "maxWallMinutes": 60.0
+        },
+        "maxScore": null,
+        "meanScore": null,
+        "meanScoreFinished": null,
+        "minScore": null,
+        "models": [],
+        "parallel": 2,
+        "replays": [],
+        "retriedAttempts": 0,
+        "retriedCostUsd": null,
+        "rowAggregates": [
+          {
+            "key": "tomnomnom__gron.88a6234",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          },
+          {
+            "key": "yaa110__nomino.f892499",
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0
+          }
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "startLog": null,
+        "startedAt": 1794153607791,
+        "starting": false,
+        "status": "running",
+        "tasks": [
+          "tomnomnom__gron.88a6234",
+          "yaa110__nomino.f892499"
+        ],
+        "totalCostUsd": null,
+        "totalWallS": null,
+        "zeroshotVersion": null
+      },
+      "id": "20261108-170007-63721d"
+    }
+  ],
+  "pending": {
+    "cells": [],
+    "colAggregates": [],
+    "endedAt": null,
+    "harnessVersion": null,
+    "harnesses": [],
+    "id": "20991231-000000-abcdef",
+    "label": null,
+    "limits": null,
+    "maxScore": null,
+    "meanScore": null,
+    "meanScoreFinished": null,
+    "minScore": null,
+    "models": [],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [],
+    "seeds": [],
+    "startLog": null,
+    "startedAt": 1795003580000,
+    "starting": false,
+    "status": "failed_to_start",
+    "tasks": [],
+    "totalCostUsd": null,
+    "totalWallS": null,
+    "zeroshotVersion": null
+  },
+  "stateRoots": [
+    {
+      "pbRun": "20261103-134223-3b1d24",
+      "stateRoot": "<root>/pb/runs/20261103-134223-3b1d24/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261103-160205-fb058c",
+      "stateRoot": "<root>/pb/runs/20261103-160205-fb058c/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261103-161534-59f5da",
+      "stateRoot": "<root>/pb/runs/20261103-161534-59f5da/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261103-161534-90ca94",
+      "stateRoot": "<root>/pb/runs/20261103-161534-90ca94/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261108-170007-024098",
+      "stateRoot": "<root>/pb/runs/20261108-170007-024098/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261108-170007-915c3e",
+      "stateRoot": "<root>/pb/runs/20261108-170007-915c3e/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261108-170009-2845db",
+      "stateRoot": "<root>/pb/runs/20261108-170009-2845db/agent/zeroshot-state"
+    },
+    {
+      "pbRun": "20261108-170009-cb5a35",
+      "stateRoot": "<root>/pb/runs/20261108-170009-cb5a35/agent/zeroshot-state"
+    }
+  ],
+  "unknownPending": null
+}

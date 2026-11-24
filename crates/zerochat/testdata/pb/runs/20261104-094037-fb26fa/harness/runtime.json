@@ -1,0 +1,1 @@
+{"harness":"claude","provider":"anthropic","size":"medium","nodes":{"build":{"kind":"agent","model":"claude-sonnet-5","connections":{"anthropic":["CLAUDE_CODE_OAUTH_TOKEN"]}}}}

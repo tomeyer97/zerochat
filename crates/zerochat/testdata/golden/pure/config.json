@@ -1,0 +1,115 @@
+[
+  {
+    "case": "empty",
+    "issue": null,
+    "pbCommand": null,
+    "pbRoot": null,
+    "sources": [],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "pb-only",
+    "issue": null,
+    "pbCommand": "uv run --project /data/pb pb",
+    "pbRoot": "/data/pb",
+    "sources": [
+      {
+        "actionsAllowed": false,
+        "id": "pb",
+        "kind": "observe",
+        "name": "pb",
+        "roots": []
+      }
+    ],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "pb-command",
+    "issue": null,
+    "pbCommand": "uv run --project /x pb",
+    "pbRoot": "/data/pb",
+    "sources": [
+      {
+        "actionsAllowed": false,
+        "id": "pb",
+        "kind": "observe",
+        "name": "pb",
+        "roots": []
+      }
+    ],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "sources",
+    "issue": "source `local`: invalid name; source `ci`: duplicate name, ignored",
+    "pbCommand": null,
+    "pbRoot": null,
+    "sources": [
+      {
+        "actionsAllowed": false,
+        "id": "ci",
+        "kind": "observe",
+        "name": "ci",
+        "roots": [
+          "/mnt/ci"
+        ]
+      }
+    ],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "pb-and-pb-source",
+    "issue": "`pb_root` is set but a source named `pb` is already configured; keeping the explicit one",
+    "pbCommand": "uv run --project /data/pb pb",
+    "pbRoot": "/data/pb",
+    "sources": [
+      {
+        "actionsAllowed": true,
+        "id": "pb",
+        "kind": "observe",
+        "name": "pb",
+        "roots": [
+          "/z"
+        ]
+      }
+    ],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "zsf",
+    "issue": null,
+    "pbCommand": null,
+    "pbRoot": null,
+    "sources": [],
+    "zsfBin": "/usr/bin/zsf",
+    "zsfStateDir": "/srv/zsf"
+  },
+  {
+    "case": "invalid",
+    "issue": "<root>/config-cases/invalid/config.toml is not valid: TOML parse error at line 1, column 12\n  |\n1 | pb_root = [\n  |            ^\nunclosed array, expected `]`\n",
+    "pbCommand": null,
+    "pbRoot": null,
+    "sources": [],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "unknown-field",
+    "issue": null,
+    "pbCommand": null,
+    "pbRoot": null,
+    "sources": [],
+    "zsfBin": null,
+    "zsfStateDir": null
+  },
+  {
+    "case": "missing",
+    "issue": null,
+    "sources": 0
+  }
+]

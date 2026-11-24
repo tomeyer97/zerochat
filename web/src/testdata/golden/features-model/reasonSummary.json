@@ -1,0 +1,266 @@
+{
+  "table": [
+    {
+      "full": "",
+      "headline": ""
+    },
+    {
+      "full": "",
+      "headline": ""
+    },
+    {
+      "full": "stopped",
+      "headline": "Stopped"
+    },
+    {
+      "full": "conflict: in src/a.ts",
+      "headline": "Conflict: in src/a.ts"
+    },
+    {
+      "full": "infrastructure: launch failed: the launch exited (1) without printing a run id: zeroshot: connect: (connection refused)",
+      "headline": "Launch failed: (connection refused)"
+    },
+    {
+      "full": "agent: timed out: after 45m",
+      "headline": "Agent: after 45m"
+    },
+    {
+      "full": "gate failed: tests / ---- / 3 passed, 1 failed",
+      "headline": "Gate failed: 3 passed, 1 failed"
+    },
+    {
+      "full": "gate failed:",
+      "headline": "Gate failed:"
+    },
+    {
+      "full": ": : :",
+      "headline": ": : :"
+    },
+    {
+      "full": "a: b",
+      "headline": "A: b"
+    }
+  ],
+  "texts": {
+    "calc/02:autoNote0": {
+      "full": "The previous attempt's work conflicted with 01; it is re-applied on the new tip.",
+      "headline": "The previous attempt's work conflicted with 01; it is re-applied on the new tip."
+    },
+    "calc/04#1:reason": {
+      "full": "gate failed",
+      "headline": "Gate failed"
+    },
+    "calc/04#2:reason": {
+      "full": "gate failed",
+      "headline": "Gate failed"
+    },
+    "calc/04:note0": {
+      "full": "Keep farewell() next to greet().",
+      "headline": "Keep farewell() next to greet()."
+    },
+    "calc/04:reason": {
+      "full": "gate failed: ./test.sh exited 1",
+      "headline": "Gate failed: ./test.sh exited 1"
+    },
+    "calc/07:reason": {
+      "full": "not needed any more",
+      "headline": "Not needed any more"
+    },
+    "calc/08#1:reason": {
+      "full": "controller lost",
+      "headline": "Controller lost"
+    },
+    "calc/08:reason": {
+      "full": "controller lost",
+      "headline": "Controller lost"
+    },
+    "calc/12:reason": {
+      "full": "not accepted after 2 rounds",
+      "headline": "Not accepted after 2 rounds"
+    },
+    "calc/13#1:reason": {
+      "full": "zeroshot run: exit 2",
+      "headline": "Zeroshot run: exit 2"
+    },
+    "calc/14#1:reason": {
+      "full": "changes requested: Name it max2(); no sorting.",
+      "headline": "Changes requested: Name it max2(); no sorting."
+    },
+    "calc/14#2:reason": {
+      "full": "FAIL: test_max2_equal",
+      "headline": "FAIL: test_max2_equal"
+    },
+    "calc/14:autoNote0": {
+      "full": "The merge gate failed on attempt 2: fix what it reports, build and test, and commit. The end of its output:\n\n```text\nFAIL: test_max2_equal\n```",
+      "headline": "The merge gate failed on attempt 2: test_max2_equal\n```"
+    },
+    "calc/14:note0": {
+      "full": "Name it max2(); no sorting.",
+      "headline": "Name it max2(); no sorting."
+    },
+    "calc/artifact-0": {
+      "full": "farewell() lives in greet.py",
+      "headline": "Farewell() lives in greet.py"
+    },
+    "calc/artifact-1": {
+      "full": "gate: missing NOTES.md",
+      "headline": "Gate: missing NOTES.md"
+    },
+    "calc/events#0": {
+      "full": "initialized detail",
+      "headline": "Initialized detail"
+    },
+    "calc/events#1": {
+      "full": "daemon_started detail",
+      "headline": "Daemon_started detail"
+    },
+    "calc/events#10": {
+      "full": "run_stopped detail",
+      "headline": "Run_stopped detail"
+    },
+    "calc/events#11": {
+      "full": "infra_failure detail",
+      "headline": "Infra_failure detail"
+    },
+    "calc/events#12": {
+      "full": "interrupted detail",
+      "headline": "Interrupted detail"
+    },
+    "calc/events#13": {
+      "full": "resumed detail",
+      "headline": "Resumed detail"
+    },
+    "calc/events#14": {
+      "full": "resume_failed detail",
+      "headline": "Resume_failed detail"
+    },
+    "calc/events#15": {
+      "full": "paused detail",
+      "headline": "Paused detail"
+    },
+    "calc/events#16": {
+      "full": "unpaused detail",
+      "headline": "Unpaused detail"
+    },
+    "calc/events#17": {
+      "full": "checkpoint_waiting detail",
+      "headline": "Checkpoint_waiting detail"
+    },
+    "calc/events#18": {
+      "full": "approved detail",
+      "headline": "Approved detail"
+    },
+    "calc/events#19": {
+      "full": "retried detail",
+      "headline": "Retried detail"
+    },
+    "calc/events#2": {
+      "full": "started detail",
+      "headline": "Started detail"
+    },
+    "calc/events#20": {
+      "full": "accepted detail",
+      "headline": "Accepted detail"
+    },
+    "calc/events#21": {
+      "full": "skipped detail",
+      "headline": "Skipped detail"
+    },
+    "calc/events#22": {
+      "full": "edited detail",
+      "headline": "Edited detail"
+    },
+    "calc/events#23": {
+      "full": "waiting detail",
+      "headline": "Waiting detail"
+    },
+    "calc/events#24": {
+      "full": "done detail",
+      "headline": "Done detail"
+    },
+    "calc/events#25": {
+      "full": "integration_failed detail",
+      "headline": "Integration_failed detail"
+    },
+    "calc/events#26": {
+      "full": "hook_failed detail",
+      "headline": "Hook_failed detail"
+    },
+    "calc/events#27": {
+      "full": "request_rejected detail",
+      "headline": "Request_rejected detail"
+    },
+    "calc/events#28": {
+      "full": "stopped detail",
+      "headline": "Stopped detail"
+    },
+    "calc/events#29": {
+      "full": "daemon_stopped detail",
+      "headline": "Daemon_stopped detail"
+    },
+    "calc/events#3": {
+      "full": "launched detail",
+      "headline": "Launched detail"
+    },
+    "calc/events#30": {
+      "full": "something_newer detail",
+      "headline": "Something_newer detail"
+    },
+    "calc/events#4": {
+      "full": "launch_failed detail",
+      "headline": "Launch_failed detail"
+    },
+    "calc/events#5": {
+      "full": "run_finished detail",
+      "headline": "Run_finished detail"
+    },
+    "calc/events#6": {
+      "full": "gate_failed detail",
+      "headline": "Gate_failed detail"
+    },
+    "calc/events#7": {
+      "full": "merged detail",
+      "headline": "Merged detail"
+    },
+    "calc/events#8": {
+      "full": "conflict detail",
+      "headline": "Conflict detail"
+    },
+    "calc/events#9": {
+      "full": "quality_failed detail",
+      "headline": "Quality_failed detail"
+    },
+    "calc/events-04#0": {
+      "full": "launched detail",
+      "headline": "Launched detail"
+    },
+    "calc/events-04#1": {
+      "full": "interrupted detail",
+      "headline": "Interrupted detail"
+    },
+    "calc/events-04#2": {
+      "full": "skipped detail",
+      "headline": "Skipped detail"
+    },
+    "calc/events-04#3": {
+      "full": "something_newer detail",
+      "headline": "Something_newer detail"
+    },
+    "calc/task-01-1": {
+      "full": "# Add sub()\n\nImplement sub() in calc/.",
+      "headline": "# Add sub()\n\nImplement sub() in calc/."
+    },
+    "calc/task-04-1": {
+      "full": "# Add farewell()\n\nImplement farewell() in calc/.",
+      "headline": "# Add farewell()\n\nImplement farewell() in calc/."
+    },
+    "calc/task-04-2": {
+      "full": "# Add farewell()\n\nImplement farewell() in calc/.\n\n## Notes from the developer\n\nKeep farewell() next to greet().",
+      "headline": "# Add farewell()\n\nImplement farewell() in calc/.\n\n## Notes from the developer\n\nKeep farewell() next to greet()."
+    },
+    "paused/01:reason": {
+      "full": "provider unavailable",
+      "headline": "Provider unavailable"
+    }
+  }
+}

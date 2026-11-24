@@ -1,0 +1,109 @@
+{
+  "diffs": {
+    "calc/changes-diff": [
+      {
+        "path": "calc/greet.py",
+        "text": [
+          0,
+          202
+        ]
+      },
+      {
+        "path": "calc/ops.py",
+        "text": [
+          202,
+          446
+        ]
+      }
+    ],
+    "calc/commit-01": [
+      {
+        "path": "calc/ops.py",
+        "text": [
+          0,
+          192
+        ]
+      }
+    ],
+    "calc/commit-02": [
+      {
+        "path": "calc/ops.py",
+        "text": [
+          0,
+          209
+        ]
+      }
+    ],
+    "calc/commit-03": [
+      {
+        "path": "calc/greet.py",
+        "text": [
+          0,
+          201
+        ]
+      }
+    ],
+    "calc/commit-11": [
+      {
+        "path": "calc/ops.py",
+        "text": [
+          0,
+          183
+        ]
+      }
+    ],
+    "calc/task-04-2": [
+      {
+        "path": "",
+        "text": [
+          0,
+          165
+        ]
+      }
+    ],
+    "calc/worktree-04": [
+      {
+        "path": "calc/greet.py",
+        "text": [
+          0,
+          230
+        ]
+      }
+    ]
+  },
+  "table": [
+    [],
+    [
+      {
+        "path": "",
+        "text": "no diff header\n"
+      }
+    ],
+    [
+      {
+        "path": "",
+        "text": "commit abc\n\n"
+      },
+      {
+        "path": "x",
+        "text": "diff --git a/x b/x\n+1\n"
+      },
+      {
+        "path": "old name → new name",
+        "text": "diff --git a/old name b/new name\nrename\n"
+      }
+    ],
+    [
+      {
+        "path": "a → b",
+        "text": "diff --git a/a b/b\n"
+      }
+    ],
+    [
+      {
+        "path": "",
+        "text": "diff --git broken header\n"
+      }
+    ]
+  ]
+}

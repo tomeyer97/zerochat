@@ -1,0 +1,60 @@
+[
+  [
+    "Claude rate limit: status=allowed, type=five_hour, resetsAt=2026-11-18T13:00:00Z",
+    {
+      "level": "info",
+      "resetsAt": 1795006800000,
+      "text": "5-hour limit OK",
+      "window": "5-hour"
+    }
+  ],
+  [
+    "Claude rate limit: status=allowed_warning, type=seven_day, utilization=33%, resetsAt=2026-11-20T00:00:00Z",
+    {
+      "level": "info",
+      "resetsAt": 1795132800000,
+      "text": "7-day limit: 33% used",
+      "window": "7-day"
+    }
+  ],
+  [
+    "Claude rate limit: status=allowed_warning, type=seven_day, utilization=79.95%, resetsAt=2026-11-20T00:00:00Z",
+    {
+      "level": "info",
+      "resetsAt": 1795132800000,
+      "text": "7-day limit: 80% used",
+      "window": "7-day"
+    }
+  ],
+  [
+    "Claude rate limit: status=allowed_warning, type=seven_day_opus, utilization=80%",
+    {
+      "level": "warning",
+      "resetsAt": null,
+      "text": "7-day Opus limit: 80% used",
+      "window": "7-day Opus"
+    }
+  ],
+  [
+    "Claude rate limit: status=allowed_warning, type=five_hour",
+    {
+      "level": "warning",
+      "resetsAt": null,
+      "text": "5-hour limit: almost used",
+      "window": "5-hour"
+    }
+  ],
+  [
+    "Claude rate limit: status=rejected, type=overage_daily, resetsAt=garbage",
+    {
+      "level": "critical",
+      "resetsAt": null,
+      "text": "overage daily limit hit",
+      "window": "overage daily"
+    }
+  ],
+  [
+    "Not a rate limit line",
+    null
+  ]
+]

@@ -1,0 +1,18 @@
+# Normalize line endings to LF in the repository and in checkouts.
+* text=auto eol=lf
+
+*.png binary
+*.sqlite binary
+*.sqlite3 binary
+
+# Written by `make types`.
+web/src/generated/** linguist-generated
+
+# Machine-written goldens and recorded fixtures (collapsed in diffs, left out of language stats).
+crates/zerochat/testdata/golden/** linguist-generated
+crates/zerochat/testdata/ledgers/** linguist-generated
+crates/zerochat/testdata/recorded/*/** linguist-generated
+crates/zsf/testdata/golden/** linguist-generated
+web/src/testdata/golden/** linguist-generated
+web/src/testdata/*.json linguist-generated
+web/src/fixtures/*.json linguist-generated

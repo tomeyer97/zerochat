@@ -1,0 +1,641 @@
+{
+  "overview": {
+    "local/01a1ee57-4860-7001-8001-000000000001": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "local/01a1ee58-32c0-7002-8002-000000000002": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee5a-0780-7004-8004-000000000004": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee5a-f1e0-7005-8005-000000000005": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee5b-dc40-7006-8006-000000000006": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee5c-c6a0-7007-8007-000000000007": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee5d-b100-7008-8008-000000000008": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee5e-9b60-7009-8009-000000000009": {
+      "explain": "The work was done, but delivering it (push, pull request) failed.",
+      "label": "Delivery"
+    },
+    "local/01a1ee5f-85c0-700a-800a-00000000000a": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee60-7020-700b-800b-00000000000b": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee61-5a80-700c-800c-00000000000c": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee62-44e0-700d-800d-00000000000d": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee63-2f40-700e-800e-00000000000e": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee64-19a0-700f-800f-00000000000f": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee65-0400-7010-8010-000000000010": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee65-ee60-7011-8011-000000000011": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee66-d8c0-7012-8012-000000000012": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee67-c320-7013-8013-000000000013": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee68-ad80-7014-8014-000000000014": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee69-97e0-7015-8015-000000000015": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee6a-8240-7016-8016-000000000016": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee6b-6ca0-7017-8017-000000000017": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee6c-5700-7018-8018-000000000018": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee6d-4160-7019-8019-000000000019": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee6e-2bc0-701a-801a-00000000001a": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee6f-1620-701b-801b-00000000001b": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee70-0080-701c-801c-00000000001c": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee70-eae0-701d-801d-00000000001d": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee71-d540-701e-801e-00000000001e": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee72-bfa0-701f-801f-00000000001f": {
+      "explain": "The run was force-stopped.",
+      "label": "Stopped"
+    },
+    "local/01a1ee73-aa00-7020-8020-000000000020": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "local/01a1ee74-9460-7021-8021-000000000021": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee75-7ec0-7022-8022-000000000022": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1ee76-6920-7023-8023-000000000023": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee77-5380-7024-8024-000000000024": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee7a-12a0-7027-8027-000000000027": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee7a-fd00-7028-8028-000000000028": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee7b-e760-7029-8029-000000000029": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee7c-d1c0-702a-802a-00000000002a": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee7d-bc20-702b-802b-00000000002b": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee7e-a680-702c-802c-00000000002c": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee7f-90e0-702d-802d-00000000002d": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee80-7b40-702e-802e-00000000002e": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee81-65a0-702f-802f-00000000002f": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee82-5000-7030-8030-000000000030": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee83-3a60-7031-8031-000000000031": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee85-0f20-7033-8033-000000000033": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1ee85-f980-7034-8034-000000000034": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "local/01a1ee86-e3e0-7035-8035-000000000035": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1ee87-ce40-7036-8036-000000000036": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1ee88-b8a0-7037-8037-000000000037": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1ee8a-8d60-7039-8039-000000000039": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1f8c8-1df7-7b31-88f8-ac9d8c697132": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1f8c8-2984-7640-bc40-aaa51b13aa24": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1f8c8-35a0-7901-8589-14c1616b4d4b": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "local/01a1f8c8-41b6-7b03-aa65-c28cfafd21cc": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1f8c8-4d9d-7582-9215-0d66fcc62df3": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1f8c8-5959-77e2-a8d3-8df517fadfac": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "local/01a1f8c8-6464-7813-b706-150bb34c6dda": {
+      "explain": "The run was force-stopped.",
+      "label": "Stopped"
+    },
+    "local/01a1f8c8-7006-7622-a318-e09c8f847921": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "local/01a1f8c8-7bb2-7fc3-a632-427dfefb25c8": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1f8c8-877b-7910-9808-f9cd2944c1d7": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1f8c8-93b8-7b81-97ea-4b8a2800bbe3": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "local/01a1f8c8-9f9b-7031-9660-08629cad0028": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1f8c8-acbc-7ed0-b0bf-40743f8ad243": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1f8c8-b7c6-73a3-b319-e26678e524d0": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "local/01a1f8c9-67d5-7060-a1f3-cb773d228ece": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "local/01a1f8c9-b7e1-7b90-872a-0ec8e68d28d1": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "observe/01a1ee59-1d20-7003-8003-000000000003": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "observe/01a1ee84-24c0-7032-8032-000000000032": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "observe/01a1ee87-3200-7025-8025-000000000025": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "observe/01a1ee8b-c5e0-7026-8026-000000000026": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "observe/01a1ee8c-6220-7038-8038-000000000038": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "pb/01a1a16e-a13c-7142-b60b-3fb02b32d760": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "pb/01a1a1ee-890c-7f32-b250-1f1a312860b8": {
+      "explain": "The run was force-stopped.",
+      "label": "Stopped"
+    },
+    "pb/01a1a1fa-e283-74e1-a669-f408dafd5eae": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "pb/01a1a1fa-e284-7e63-9916-531abf514b30": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "pb/01a1bbe3-76b4-7051-bc35-6513b8d18a1c": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "pb/01a1bbe3-76b4-7bc0-b82d-31116a963693": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "pb/01a1bbe3-7e13-7521-8fb6-72ee1220f37e": {
+      "explain": "",
+      "label": "Failure"
+    },
+    "pb/01a1bbe3-7e15-7852-b8d7-27fb6188c998": {
+      "explain": "",
+      "label": "Failure"
+    }
+  },
+  "runs": {
+    "admitted-only": null,
+    "attempts-exhausted": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "checkout-unavailable": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "closing-postmortem": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "codex-estimate": null,
+    "copilot-session": null,
+    "delivery-failed": {
+      "explain": "The work was done, but delivering it (push, pull request) failed.",
+      "label": "Delivery"
+    },
+    "diag-api-hang": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "diag-code-authentication-required": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-code-crash": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-code-input-required": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-code-malformed-result": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-code-other": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-code-policy-denied": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-code-refusal": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-code-timeout": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-context": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-credentials": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-disk": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-malformed-stream": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "diag-missing-cli": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-model": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-network": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "diag-permission": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "diag-provider-down": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "diag-provider-timeout": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "diag-rate-limit": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "diag-stream-cut": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "diag-usage-limit": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "force-stopped": {
+      "explain": "The run was force-stopped.",
+      "label": "Stopped"
+    },
+    "fork-only/fork-bad-credentials": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "fork-only/fork-chaos-transient": null,
+    "fork-only/fork-chaos-usage-limit": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "fork-only/fork-controller-killed": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "fork-only/fork-force-stopped": {
+      "explain": "The run was force-stopped.",
+      "label": "Stopped"
+    },
+    "fork-only/fork-happy-path": null,
+    "fork-only/fork-late-failure": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "fork-only/fork-replay": null,
+    "fork-only/fork-resumed": null,
+    "fork-only/fork-reviewer-never-satisfied": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "fork-only/fork-steered": null,
+    "fork-only/fork-unknown-model": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "fork-only/fork-worker-timeout": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "fork-only/replay-child": null,
+    "fork-only/replay-parent": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "fork-only/steered": null,
+    "graph-ended-other": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "lane-mixed": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    },
+    "lane-unknown-harness": {
+      "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+      "label": "Provider",
+      "tone": "warn"
+    },
+    "map-parallel": null,
+    "no-checkpoints": {
+      "explain": "An agent failed, not the code or its provider.",
+      "label": "Agent"
+    },
+    "resumed-original": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "resumed-successor": null,
+    "running-live": null,
+    "running-stock": null,
+    "runtime-failed-checkpoint": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "runtime-failed-permission": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "runtime-failed-storage": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "runtime-failed-unknown": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "runtime-lost": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "stalled": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "stalled-disk": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "stalled-live-usage": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "stalled-then-closed": {
+      "explain": "Zeroshot itself failed, not the code or the agents.",
+      "label": "Orchestration"
+    },
+    "succeeded": null,
+    "succeeded-stock": null,
+    "tool-output-rate-limit": null,
+    "unknown-phase": null,
+    "voided": null,
+    "work-exhausted": {
+      "explain": "The agents did the work, but a reviewer did not accept it.",
+      "label": "Work"
+    },
+    "zeroshot-16/zeroshot16-normal": null,
+    "zeroshot-16/zeroshot16-steered": null,
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+      "label": "Setup"
+    }
+  },
+  "table": [
+    [
+      "",
+      {
+        "explain": "",
+        "label": "Failure"
+      }
+    ],
+    [
+      "work",
+      {
+        "explain": "The agents did the work, but a reviewer did not accept it.",
+        "label": "Work"
+      }
+    ],
+    [
+      "agent",
+      {
+        "explain": "An agent failed, not the code or its provider.",
+        "label": "Agent"
+      }
+    ],
+    [
+      "setup",
+      {
+        "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+        "label": "Setup"
+      }
+    ],
+    [
+      "orchestration",
+      {
+        "explain": "Zeroshot itself failed, not the code or the agents.",
+        "label": "Orchestration"
+      }
+    ],
+    [
+      "delivery",
+      {
+        "explain": "The work was done, but delivering it (push, pull request) failed.",
+        "label": "Delivery"
+      }
+    ],
+    [
+      "stopped",
+      {
+        "explain": "The run was force-stopped.",
+        "label": "Stopped"
+      }
+    ],
+    [
+      "novel",
+      {
+        "explain": "",
+        "label": "novel"
+      }
+    ],
+    [
+      "toString",
+      "<function>"
+    ]
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "body": {
+    "backgroundAgents": [],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": null,
+    "costEstimated": false,
+    "costUsd": null,
+    "createdAt": 1795000480000,
+    "cursor": 7,
+    "endedAt": 1795000483200,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": null,
+        "costUsd": null,
+        "diagnostic": null,
+        "durationMs": 1700,
+        "endSeq": 6,
+        "endedAt": 1795000483200,
+        "error": null,
+        "errorLines": [],
+        "harness": "copilot",
+        "id": 1,
+        "input": {
+          "task": "Add slugify() to textkit."
+        },
+        "lastActivityAt": 1795000482700,
+        "logLines": 2,
+        "mapIndices": [],
+        "model": "gpt-5",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "artifacts": [],
+          "output": null,
+          "status": "verified"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "c0b1107-session-0001",
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795000481500,
+        "state": "succeeded",
+        "timesApproximate": false,
+        "toolCalls": 0,
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "0000000000000000000000000000000000000001",
+          "commit": "0000000000000000000000000000000000000065",
+          "files": [
+            {
+              "additions": 12,
+              "deletions": 1,
+              "path": "textkit/core.py",
+              "status": "modified"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "0000000000000000000000000000000000000001"
+        }
+      }
+    ],
+    "failure": null,
+    "features": {
+      "exactTimes": true,
+      "providerCost": false,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "attempts": 1,
+            "instructions": "Do the task.",
+            "kind": "step",
+            "name": "worker",
+            "timeoutMs": 45000,
+            "worker": "builtin.agent.worker@1"
+          }
+        ],
+        "kind": "seq",
+        "name": "run"
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "copilot",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "github",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "copilot",
+        "instructions": "Do the task.",
+        "kind": "step",
+        "loops": [],
+        "maxIterations": null,
+        "model": "gpt-5",
+        "name": "worker",
+        "parent": "run",
+        "provider": "github",
+        "timeoutMs": 45000,
+        "worker": "builtin.agent.worker@1"
+      }
+    ],
+    "initialInput": {
+      "task": "Add slugify() to textkit."
+    },
+    "lanes": [
+      {
+        "harness": "copilot",
+        "model": "gpt-5",
+        "nodes": [
+          "worker"
+        ],
+        "provider": "github"
+      }
+    ],
+    "lastActivityAt": 1795000482700,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/copilot-session/repo"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "nodes": {
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": null,
+        "elapsedMs": 1700,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "succeeded",
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1ee5d-b100-7008-8008-000000000008",
+    "runLog": [
+      {
+        "at": 1795000481000,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795000481500,
+        "seq": 3,
+        "stream": "system",
+        "text": "worker started (gpt-5)"
+      },
+      {
+        "at": 1795000483200,
+        "seq": 6,
+        "stream": "system",
+        "text": "worker finished"
+      }
+    ],
+    "runtime": {
+      "harness": "copilot",
+      "model": "gpt-5",
+      "nodes": {
+        "worker": {
+          "connections": {
+            "openai": [
+              "OPENAI_API_KEY"
+            ]
+          },
+          "kind": "agent",
+          "model": "gpt-5"
+        }
+      },
+      "provider": "github"
+    },
+    "source": {
+      "branch": "main",
+      "repository": "example/textkit",
+      "revision": "0000000000000000000000000000000000000000"
+    },
+    "startedAt": 1795000481000,
+    "status": "succeeded",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "output": null,
+      "status": "succeeded"
+    },
+    "title": "copilot session",
+    "usage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

@@ -1,0 +1,558 @@
+{
+  "submission": {
+    "title": "pb-20261108-170007-915c3e",
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "initialInput": {
+        "kind": "record",
+        "fields": {
+          "task": {
+            "type": {
+              "kind": "string"
+            },
+            "required": true
+          }
+        }
+      },
+      "policy": {
+        "policy": "policy.native-v2@1",
+        "default": "deny"
+      },
+      "root": {
+        "kind": "seq",
+        "name": "run",
+        "state": {
+          "kind": "record",
+          "fields": {
+            "ledger": {
+              "type": {
+                "kind": "string"
+              },
+              "required": true
+            },
+            "task": {
+              "type": {
+                "kind": "string"
+              },
+              "required": true
+            }
+          }
+        },
+        "children": [
+          {
+            "kind": "step",
+            "name": "explore",
+            "worker": "builtin.agent.software-worker@1",
+            "instructions": "You are the EXPLORER. Do NOT implement the program. Build a VERIFIED behaviour specification of the reference program that a separate engineer will implement from. They will only have your spec, the docs and the reference.\nA pristine, execute-only copy of the reference program is at /opt/pb/reference/executable. It survives rebuilds (./compile.sh overwrites ./executable), so always compare against that path.\n1. Read every bundled documentation file. Capture the reference's own help output. Inventory every mode, flag (short and long), input source and output format.\n2. Probe the reference systematically along every dimension below, for every mode. Use scripts so each tool call covers many inputs.\nBEHAVIOUR DIMENSIONS (consider every one for every mode and feature):\n1. Inputs: stdin; file arguments (one, several, missing, unreadable, `-`); network sources if documented (there is no internet: serve fixture files with `python3 -m http.server` on 127.0.0.1); every other argument form.\n2. Outputs: exact stdout bytes, stderr, exit code; behaviour on empty input.\n3. Flags: every flag listed by the program's help, in short AND long form, alone and in meaningful combinations; precedence when flags conflict.\n4. Mode composition: feed each mode's OUTPUT into every other mode (round trips, chaining). Some modes only make sense on another mode's output; probing them with ordinary input is misleading.\n5. Error paths: malformed, truncated, wrong-type and boundary inputs for EVERY mode; exact…[fixture: 2435 more characters cut]",
+            "input": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "output": {
+              "kind": "null"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "source": "state",
+                  "path": [
+                    "task"
+                  ]
+                }
+              }
+            ],
+            "writeBindings": [],
+            "attempts": 1
+          },
+          {
+            "kind": "choice",
+            "name": "explore_result",
+            "state": {
+              "kind": "record",
+              "fields": {
+                "ledger": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                },
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "branches": [
+              {
+                "when": {
+                  "kind": "in",
+                  "value": {
+                    "name": "explore",
+                    "source": "error",
+                    "field": null
+                  },
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ]
+                },
+                "node": {
+                  "kind": "fail",
+                  "name": "explore_failed",
+                  "reason": "explore_failed"
+                }
+              }
+            ],
+            "otherwise": {
+              "kind": "seq",
+              "name": "implement",
+              "state": {
+                "kind": "record",
+                "fields": {
+                  "ledger": {
+                    "type": {
+                      "kind": "string"
+                    },
+                    "required": true
+                  },
+                  "task": {
+                    "type": {
+                      "kind": "string"
+                    },
+                    "required": true
+                  }
+                }
+              },
+              "children": [
+                {
+                  "kind": "step",
+                  "name": "build",
+                  "worker": "builtin.agent.software-worker@1",
+                  "instructions": "Implement the program FROM SCRATCH following spec/SPEC.md, and make `spec/run_cases.sh ./executable` pass 100%.\nA pristine, execute-only copy of the reference program is at /opt/pb/reference/executable. It survives rebuilds (./compile.sh overwrites ./executable), so always compare against that path.\n- Follow the task's build contract (./compile.sh producing ./executable), keep build artifacts out of git, and commit.\n- Structure the code around the spec's modes and rules. Implement the GENERAL rules; never special-case individual case inputs.\n- Run spec/run_cases.sh often. If you believe a case is wrong, re-run it against the reference: the reference is always right; re-capture with spec/capture.sh, never edit expected output by hand.\n- Cover every dimension in the spec, including error paths and exit codes, environment, invocation name, terminal vs pipe, and large inputs.",
+                  "input": {
+                    "kind": "record",
+                    "fields": {
+                      "task": {
+                        "type": {
+                          "kind": "string"
+                        },
+                        "required": true
+                      }
+                    }
+                  },
+                  "output": {
+                    "kind": "null"
+                  },
+                  "inputBindings": [
+                    {
+                      "target": [
+                        "task"
+                      ],
+                      "value": {
+                        "source": "state",
+                        "path": [
+                          "task"
+                        ]
+                      }
+                    }
+                  ],
+                  "writeBindings": [],
+                  "attempts": 1
+                },
+                {
+                  "kind": "choice",
+                  "name": "build_result",
+                  "state": {
+                    "kind": "record",
+                    "fields": {
+                      "ledger": {
+                        "type": {
+                          "kind": "string"
+                        },
+                        "required": true
+                      },
+                      "task": {
+                        "type": {
+                          "kind": "string"
+                        },
+                        "required": true
+                      }
+                    }
+                  },
+                  "branches": [
+                    {
+                      "when": {
+                        "kind": "in",
+                        "value": {
+                          "name": "build",
+                          "source": "error",
+                          "field": null
+                        },
+                        "labels": [
+                          "crash",
+                          "malformed",
+                          "refusal",
+                          "timeout"
+                        ]
+                      },
+                      "node": {
+                        "kind": "fail",
+                        "name": "build_failed",
+                        "reason": "build_failed"
+                      }
+                    }
+                  ],
+                  "otherwise": {
+                    "kind": "seq",
+                    "name": "diff_loop_outer",
+                    "state": {
+                      "kind": "record",
+                      "fields": {
+                        "ledger": {
+                          "type": {
+                            "kind": "string"
+                          },
+                          "required": true
+                        },
+                        "task": {
+                          "type": {
+                            "kind": "string"
+                          },
+                          "required": true
+                        }
+                      }
+                    },
+                    "children": [
+                      {
+                        "kind": "loop",
+                        "name": "diff_loop",
+                        "state": {
+                          "kind": "record",
+                          "fields": {
+                            "ledger": {
+                              "type": {
+                                "kind": "string"
+                              },
+                              "required": true
+                            },
+                            "task": {
+                              "type": {
+                                "kind": "string"
+                              },
+                              "required": true
+                            }
+                          }
+                        },
+                        "body": {
+                          "kind": "seq",
+                          "name": "diff_loop_round",
+                          "state": {
+                            "kind": "record",
+                            "fields": {
+                              "ledger": {
+                                "type": {
+                                  "kind": "string"
+                                },
+                                "required": true
+                              },
+                              "task": {
+                                "type": {
+                                  "kind": "string"
+                                },
+                                "required": true
+                              }
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "verifier",
+                              "name": "oracle",
+                              "worker": "builtin.agent.acceptance-verifier@1",
+                              "input": {
+                                "kind": "record",
+                                "fields": {
+                                  "ledger": {
+                                    "type": {
+                                      "kind": "string"
+                                    },
+                                    "required": true
+                                  },
+                                  "task": {
+                                    "type": {
+                                      "kind": "string"
+                                    },
+                                    "required": true
+                                  }
+                                }
+                              },
+                              "output": {
+                                "kind": "null"
+                              },
+                              "inputBindings": [
+                                {
+                                  "target": [
+                                    "task"
+                                  ],
+                                  "value": {
+                                    "source": "state",
+                                    "path": [
+                                      "task"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "target": [
+                                    "ledger"
+                                  ],
+                                  "value": {
+                                    "source": "state",
+                                    "path": [
+                                      "ledger"
+                                    ]
+                                  }
+                                }
+                              ],
+                              "writeBindings": [
+                                {
+                                  "value": {
+                                    "node": "oracle",
+                                    "channel": "diagnostic",
+                                    "path": [
+                                      "message"
+                                    ]
+                                  },
+                                  "target": [
+                                    "ledger"
+                                  ]
+                                }
+                              ],
+                              "attempts": 2,
+                              "signals": {
+                                "verdict": [
+                                  "accepted",
+                                  "rejected"
+                                ]
+                              },
+                              "diagnostic": {
+                                "kind": "record",
+                                "fields": {
+                                  "message": {
+                                    "type": {
+                                      "kind": "string"
+                                    },
+                                    "required": true
+                                  }
+                                }
+                              },
+                              "instructions": "You are the ORACLE GATE. You report only measured differences from the reference; no opinions, no code review.\nOther reviewers run at the same time, so never build or write inside /workspace. Build a private copy: `rm -rf /tmp/oracle-build && mkdir /tmp/oracle-build && tar -C /workspace --exclude=./executable -cf - . | tar -C /tmp/oracle-build -xf - && (cd /tmp/oracle-build && ./compile.sh)`, then set `IMPL=/tmp/oracle-build/executable` and `REF=/opt/pb/reference/executable` and test with those.\nA pristine, execute-only copy of the reference program is at /opt/pb/reference/executable. It survives rebuilds (./compile.sh overwrites ./executable), so always compare against that path.\n1. Run `spec/run_cases.sh $IMPL` and record the pass count and every failing case.\n2. Pick the 2 behaviour dimensions with the fewest cases in spec/cases (ignore ones the previous `ledger` lists as PROBED):\nBEHAVIOUR DIMENSIONS (consider every one for every mode and feature):\n1. Inputs: stdin; file arguments (one, several, missing, unreadable, `-`); network sources if documented (there is no internet: serve fixture files with `python3 -m http.server` on 127.0.0.1); every other argument form.\n2. Outputs: exact stdout bytes, stderr, exit code; behaviour on empty input.\n3. Flags: every flag listed by the program's help, in short AND long form, alone and in meaningful combinations; precedence when flags conflict.\n4. Mode composition: feed each mode's OUTPUT into every other mode (round trips, chaining).…[fixture: 1905 more characters cut]"
+                            },
+                            {
+                              "kind": "choice",
+                              "name": "oracle_result",
+                              "state": {
+                                "kind": "record",
+                                "fields": {
+                                  "ledger": {
+                                    "type": {
+                                      "kind": "string"
+                                    },
+                                    "required": true
+                                  },
+                                  "task": {
+                                    "type": {
+                                      "kind": "string"
+                                    },
+                                    "required": true
+                                  }
+                                }
+                              },
+                              "branches": [
+                                {
+                                  "when": {
+                                    "kind": "in",
+                                    "value": {
+                                      "name": "oracle",
+                                      "source": "error",
+                                      "field": null
+                                    },
+                                    "labels": [
+                                      "crash",
+                                      "malformed",
+                                      "refusal",
+                                      "timeout"
+                                    ]
+                                  },
+                                  "node": {
+                                    "kind": "fail",
+                                    "name": "oracle_failed",
+                                    "reason": "oracle_failed"
+                                  }
+                                }
+                              ],
+                              "otherwise": {
+                                "kind": "step",
+                                "name": "repair",
+                                "worker": "builtin.agent.review-repair@1",
+                                "instructions": "Fix the FAILING RULES in the `ledger`, most failing cases first.\nA pristine, execute-only copy of the reference program is at /opt/pb/reference/executable. It survives rebuilds (./compile.sh overwrites ./executable), so always compare against that path.\n1. Add every NEW FAILING CASE from the ledger to spec/cases and capture its expected output with spec/capture.sh.\n2. For each rule, confirm it on the reference with a few variants, then implement the general rule (never special-case one input).\n3. Rebuild with ./compile.sh; `spec/run_cases.sh ./executable` must not lose any previously passing case. Commit.",
+                                "input": {
+                                  "kind": "record",
+                                  "fields": {
+                                    "ledger": {
+                                      "type": {
+                                        "kind": "string"
+                                      },
+                                      "required": true
+                                    },
+                                    "task": {
+                                      "type": {
+                                        "kind": "string"
+                                      },
+                                      "required": true
+                                    }
+                                  }
+                                },
+                                "output": {
+                                  "kind": "null"
+                                },
+                                "inputBindings": [
+                                  {
+                                    "target": [
+                                      "task"
+                                    ],
+                                    "value": {
+                                      "source": "state",
+                                      "path": [
+                                        "task"
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "target": [
+                                      "ledger"
+                                    ],
+                                    "value": {
+                                      "source": "state",
+                                      "path": [
+                                        "ledger"
+                                      ]
+                                    }
+                                  }
+                                ],
+                                "writeBindings": [],
+                                "attempts": 1
+                              },
+                              "promotedStatePaths": []
+                            }
+                          ],
+                          "promotedStatePaths": [
+                            [
+                              "ledger"
+                            ]
+                          ]
+                        },
+                        "maxIterations": 8,
+                        "promotedStatePaths": [
+                          [
+                            "ledger"
+                          ]
+                        ]
+                      },
+                      {
+                        "kind": "succeed",
+                        "name": "diff_loop_exhausted",
+                        "output": {
+                          "kind": "null"
+                        },
+                        "bindings": []
+                      }
+                    ],
+                    "promotedStatePaths": []
+                  },
+                  "promotedStatePaths": []
+                }
+              ],
+              "promotedStatePaths": []
+            },
+            "promotedStatePaths": []
+          }
+        ],
+        "promotedStatePaths": []
+      }
+    },
+    "initialInput": {
+      "task": "<!-- From mini-swe-agent programbench.yaml (system + instance templates), minus the mini-swe-agent command-loop section. The workspace is the current directory (/workspace). -->\n\nYou are a helpful assistant that can interact with a computer.\n\nYour task is to recreate a program from scratch based only on its observable behavior and bundled documentation.\nYou are given a reference executable and its documentation.\nTreat the reference executable as a specification you can query through its normal user interface.\n\nYour submission must be an independent implementation.\nUsing the original source code, wrapping the reference executable, or installing an existing implementation does not satisfy the task and will receive no credit.\nIt will be detected by an automated judge, marked as a disqualification, and scored as a failure.\n\n<RULES>\n## What is NOT allowed\n\n### 1. Using an existing implementation\n\nThe only source of truth about what the executable does is the executable itself and its\nbundled documentation. You must not search the internet, package registries, or any external\nsource for information about this project's source code. Even if you recognize what the\nexecutable is, you must reimplement it from behavioral observation alone.\n\nThis includes but is not limited to:\n- Cloning or browsing the original GitHub repository, its forks, or mirrors\n- Downloading the project from package registries: `cargo install <project>`, `go get github.com/<org>/<project>`, `pip install <project>…[fixture: 4243 more characters cut]"
+    },
+    "runtime": {
+      "harness": "claude",
+      "provider": "anthropic",
+      "size": "medium",
+      "nodes": {
+        "build": {
+          "kind": "agent",
+          "model": "claude-haiku-4-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        },
+        "explore": {
+          "kind": "agent",
+          "model": "claude-haiku-4-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        },
+        "oracle": {
+          "kind": "agent",
+          "model": "claude-haiku-4-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        },
+        "repair": {
+          "kind": "agent",
+          "model": "claude-haiku-4-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        }
+      }
+    },
+    "source": {
+      "repository": "programbench/20261108-170007-915c3e",
+      "branch": "master",
+      "revision": "967db6a68f78dc4e942730cfa9acacea6358cfcb",
+      "remote": {
+        "url": "https://github.com/programbench/20261108-170007-915c3e.git",
+        "forge": {
+          "provider": "source.github",
+          "repository": "programbench/20261108-170007-915c3e"
+        }
+      }
+    },
+    "submissionKey": "cli-7d378f832949f096d9c366767a66037d"
+  },
+  "workspace": "/workspace",
+  "deliveryRunId": "01a1bbe3-76b4-7051-bc35-6513b8d18a1c"
+}

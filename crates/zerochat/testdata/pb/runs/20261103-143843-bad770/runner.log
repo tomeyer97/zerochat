@@ -1,0 +1,15 @@
+14:38:43 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] start label='haiku-prototype-plan' version=6b6223a1c8 model=per-node art=/data/pb/runs/20261103-143843-bad770
+14:38:44 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+14:38:50 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node start  prototype (exec 1, attempt 1)
+14:42:20 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node done   prototype -> verified 
+14:42:21 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node start  planner (exec 2, attempt 1)
+14:45:25 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node done   planner -> verified 
+14:45:25 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node start  worker (exec 3, attempt 1)
+14:52:46 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node done   worker -> verified 
+14:52:46 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node start  reviewer (exec 4, attempt 1)
+14:52:46 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node start  bugfinder (exec 5, attempt 1)
+14:54:42 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node done   reviewer -> verifier rejected
+14:55:26 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node done   bugfinder -> verifier rejected
+14:55:28 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node start  triage (exec 6, attempt 1)
+14:56:28 [20261103-143843-bad770 tomnomnom__gron.88a6234 s0] node done   triage -> verifier rejected
+14:56:28 [20261103-143843-bad770 tomn…[fixture: 1567 more characters cut]

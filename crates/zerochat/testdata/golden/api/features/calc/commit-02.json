@@ -1,0 +1,8 @@
+{
+  "body": {
+    "commit": "776e54aa0121d293a119fa25b704fa006aaa7f8e",
+    "diff": "diff --git a/calc/ops.py b/calc/ops.py\nindex 4c2d043..b7666fb 100644\n--- a/calc/ops.py\n+++ b/calc/ops.py\n@@ -4,3 +4,7 @@ def add(a, b):\n \n def sub(a, b):\n     return a - b\n+\n+\n+def mul(a, b):\n+    return a * b",
+    "message": "Add mul()\n\nSlice: 02"
+  },
+  "status": 200
+}

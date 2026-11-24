@@ -1,0 +1,154 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 45.0,
+        "capSteps": 24,
+        "capUsd": 8.0,
+        "costUsd": 0.6023117,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261104-101645-9b2f84",
+        "score": 0.620535714,
+        "seed": 0,
+        "startedAt": 1793783805464,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 139,
+        "testsTotal": 224,
+        "wallS": 240.225838184,
+        "zeroshotRunId": "01a1a5d8-ba67-7d81-bd8a-f1e5d39287c3"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 45.0,
+        "capSteps": 24,
+        "capUsd": 8.0,
+        "costUsd": 0.5685896,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261104-103417-96c7d8",
+        "score": 0.625,
+        "seed": 1,
+        "startedAt": 1793784857614,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 140,
+        "testsTotal": 224,
+        "wallS": 249.422466516,
+        "zeroshotRunId": "01a1a5e8-c91b-7073-b3e9-fdbd462600af"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.620535714,
+        "mean": 0.620535714,
+        "min": 0.620535714,
+        "n": 1
+      },
+      {
+        "key": "1",
+        "max": 0.625,
+        "mean": 0.625,
+        "min": 0.625,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793785024902,
+    "harnessVersion": "116217a0",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 2,
+        "runtimeFile": null,
+        "runtimeMatches": false,
+        "source": "custom",
+        "variant": null
+      }
+    ],
+    "id": "label:sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+    "label": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+    "limits": {
+      "maxCostUsd": 8.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 45.0
+    },
+    "maxScore": 0.625,
+    "meanScore": 0.622767857,
+    "meanScoreFinished": null,
+    "minScore": 0.620535714,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [
+      {
+        "base": "build#1 (snapshot)",
+        "models": [
+          "claude-haiku-4-5"
+        ],
+        "node": "repair#1",
+        "recordedModel": "claude-haiku-4-5",
+        "recordedScore": 0.607142857,
+        "runs": 2,
+        "sourceBatch": "label:clone-v1",
+        "sourceLabel": "clone-v1",
+        "sourceRun": "20261103-151748-ef96e3",
+        "sourceScore": 0.616071429,
+        "sourceTask": "tomnomnom__gron.88a6234",
+        "sourceZeroshotRunId": "01a1a1c5-fa55-7dd0-be80-efd5703a4356",
+        "sweepId": "sw-20261104-101121-14c2",
+        "sweepLabel": "sweep-triage-repair",
+        "through": null
+      }
+    ],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.625,
+        "mean": 0.622767857,
+        "min": 0.620535714,
+        "n": 2
+      }
+    ],
+    "seeds": [
+      0,
+      1
+    ],
+    "startLog": null,
+    "startedAt": 1793783805464,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 1.1709013,
+    "totalWallS": 489.648304701,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

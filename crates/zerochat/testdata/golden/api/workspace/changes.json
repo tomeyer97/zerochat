@@ -1,0 +1,35 @@
+{
+  "body": {
+    "base": "source",
+    "files": [
+      {
+        "additions": 3,
+        "binary": false,
+        "deletions": 0,
+        "path": "tests/test_core.py",
+        "status": "A"
+      },
+      {
+        "additions": 7,
+        "binary": false,
+        "deletions": 0,
+        "path": "textkit/core.py",
+        "status": "M"
+      },
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 0,
+        "path": "NOTES.md",
+        "status": "A",
+        "untracked": true
+      }
+    ],
+    "from": "118a4951ec2a91d523353d1694fc2efe57f5c8cb",
+    "head": "619bc037bb85bf9d79049c3f3568a84fe689413c",
+    "note": "The workspace as it is now; later edits show up too.",
+    "to": null,
+    "workspace": "<root>/work/succeeded/repo"
+  },
+  "status": 200
+}

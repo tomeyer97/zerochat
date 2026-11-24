@@ -1,0 +1,571 @@
+{
+  "backgroundAgents": [
+    {
+      "errors": 0,
+      "firstAt": 1795175307053,
+      "lastAt": 1795175321166,
+      "lastLine": "reported its result",
+      "lines": 7,
+      "name": "active_memory_graph",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175301773,
+      "lastAt": 1795175312229,
+      "lastLine": "reported its result",
+      "lines": 6,
+      "name": "active_memory_graph_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175301845,
+      "lastAt": 1795175318765,
+      "lastLine": "reported its result",
+      "lines": 7,
+      "name": "active_memory_repository",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175306605,
+      "lastAt": 1795175320036,
+      "lastLine": "reported its result",
+      "lines": 5,
+      "name": "active_memory_repository_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    }
+  ],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 52174,
+    "cacheReadInputTokens": 184866,
+    "inputTokens": 80,
+    "outputTokens": 5007
+  },
+  "costEstimated": false,
+  "costUsd": 0.0362573,
+  "createdAt": 1795175250866,
+  "cursor": 63,
+  "endedAt": 1795175298620,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0362573,
+      "diagnostic": null,
+      "durationMs": 39816,
+      "endSeq": 21,
+      "endedAt": 1795175298620,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+      },
+      "lastActivityAt": 1795175298119,
+      "logLines": 16,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": "3ccc6901-9bba-417e-996e-f641e472866f",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175258804,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 6,
+      "usage": {
+        "cacheCreationInputTokens": 9649,
+        "cacheReadInputTokens": 108603,
+        "inputTokens": 44,
+        "outputTokens": 1211
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "41b3c42c6ab1669fee5c160fc0a0822b97b0685d",
+        "commit": "5f1afbafdca3c13beda35b88cd79a736fc2768b5",
+        "files": [
+          {
+            "additions": 1,
+            "deletions": 0,
+            "path": "out.txt",
+            "status": "added"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "41b3c42c6ab1669fee5c160fc0a0822b97b0685d"
+      }
+    }
+  ],
+  "failure": null,
+  "features": {
+    "exactTimes": true,
+    "providerCost": true,
+    "toolCalls": true,
+    "workspaceSnapshots": true
+  },
+  "graph": {
+    "bounds": {
+      "attemptsPerNode": {
+        "worker": 1
+      },
+      "maxNodeExecutions": 1,
+      "peakConcurrency": 1,
+      "termination": {
+        "kind": "acyclic",
+        "order": [
+          "run",
+          "worker",
+          "worker_result",
+          "worker_failed",
+          "done"
+        ]
+      }
+    },
+    "initialInput": {
+      "fields": {
+        "task": {
+          "required": true,
+          "type": {
+            "kind": "string"
+          }
+        }
+      },
+      "kind": "record"
+    },
+    "policy": {
+      "default": "deny",
+      "policy": "policy.native-v2@1"
+    },
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "attempts": 1,
+          "input": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          },
+          "inputBindings": [
+            {
+              "target": [
+                "task"
+              ],
+              "value": {
+                "path": [
+                  "task"
+                ],
+                "source": "state"
+              }
+            }
+          ],
+          "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+          "kind": "step",
+          "name": "worker",
+          "output": {
+            "kind": "null"
+          },
+          "worker": "builtin.agent.worker@1",
+          "writeBindings": []
+        },
+        {
+          "branches": [
+            {
+              "node": {
+                "kind": "fail",
+                "name": "worker_failed",
+                "reason": "worker_failed"
+              },
+              "when": {
+                "kind": "in",
+                "labels": [
+                  "crash",
+                  "malformed",
+                  "refusal",
+                  "timeout"
+                ],
+                "value": {
+                  "field": null,
+                  "name": "worker",
+                  "source": "error"
+                }
+              }
+            }
+          ],
+          "kind": "choice",
+          "name": "worker_result",
+          "otherwise": {
+            "bindings": [],
+            "kind": "succeed",
+            "name": "done",
+            "output": {
+              "kind": "null"
+            }
+          },
+          "promotedStatePaths": [],
+          "state": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          }
+        }
+      ],
+      "kind": "seq",
+      "name": "run",
+      "promotedStatePaths": [],
+      "state": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      }
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "worker",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": "builtin.agent.worker@1"
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "choice",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_result",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": "worker_failed",
+      "harness": "claude",
+      "instructions": null,
+      "kind": "fail",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_failed",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "succeed",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "done",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    }
+  ],
+  "initialInput": {
+    "task": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "worker"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795175321712,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": false,
+    "workspace": "<root>/work/steered"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 9649,
+    "cacheReadInputTokens": 108603,
+    "inputTokens": 44,
+    "outputTokens": 1211
+  },
+  "nodes": {
+    "worker": {
+      "activeSince": null,
+      "costEstimated": false,
+      "costUsd": 0.0362573,
+      "elapsedMs": 39816,
+      "executions": [
+        1
+      ],
+      "rounds": 1,
+      "state": "succeeded",
+      "usage": {
+        "cacheCreationInputTokens": 9649,
+        "cacheReadInputTokens": 108603,
+        "inputTokens": 44,
+        "outputTokens": 1211
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1f8c8-7bb2-7fc3-a632-427dfefb25c8",
+  "runLog": [
+    {
+      "at": 1795175251137,
+      "seq": 1,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795175258804,
+      "seq": 3,
+      "stream": "system",
+      "text": "worker started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795175298620,
+      "seq": 21,
+      "stream": "system",
+      "text": "worker finished"
+    },
+    {
+      "at": 1795175298782,
+      "seq": 23,
+      "stream": "system",
+      "text": "Active Memory postmortem started"
+    },
+    {
+      "at": 1795175298832,
+      "seq": 24,
+      "stream": "system",
+      "text": "Active Memory supplied manifest: known=true, snapshot_generation=0, supplied_revisions=0"
+    },
+    {
+      "at": 1795175298883,
+      "seq": 25,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance started"
+    },
+    {
+      "at": 1795175298884,
+      "seq": 26,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance started"
+    },
+    {
+      "at": 1795175298884,
+      "seq": 27,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph started"
+    },
+    {
+      "at": 1795175298884,
+      "seq": 28,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository started"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175309282,
+      "seq": 33,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175312222,
+      "seq": 36,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175312855,
+      "seq": 39,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance completed"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175316050,
+      "seq": 40,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"diagnostic\": null,\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {}\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175317237,
+      "seq": 44,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175318049,
+      "seq": 48,
+      "stream": "system",
+      "text": "{\"response\": {\"output\": {\"decisions\": []}, \"signals\": {}, \"diagnostic\": null}}"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175318757,
+      "seq": 50,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175319111,
+      "seq": 53,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository completed"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175320030,
+      "seq": 54,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175320545,
+      "seq": 57,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance completed"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175321160,
+      "seq": 58,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175321673,
+      "seq": 61,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph completed"
+    },
+    {
+      "at": 1795175321712,
+      "seq": 62,
+      "stream": "system",
+      "text": "Active Memory postmortem completed: 4 roles completed, 0 failed, 0 mutations published, cancelled=false"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "nodes": {
+      "worker": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic",
+    "size": "medium"
+  },
+  "source": null,
+  "startedAt": 1795175251137,
+  "status": "succeeded",
+  "target": "local",
+  "terminal": {
+    "output": null,
+    "status": "succeeded"
+  },
+  "title": "steered [fork]",
+  "usage": {
+    "cacheCreationInputTokens": 61823,
+    "cacheReadInputTokens": 293469,
+    "inputTokens": 124,
+    "outputTokens": 6218
+  },
+  "usageLive": false,
+  "usagePending": false
+}

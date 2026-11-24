@@ -1,0 +1,1489 @@
+{
+  "table": [
+    {
+      "instructions": null,
+      "otherFields": null,
+      "raw": "<undefined>",
+      "textFields": []
+    },
+    {
+      "instructions": null,
+      "otherFields": null,
+      "raw": null,
+      "textFields": []
+    },
+    {
+      "instructions": null,
+      "otherFields": null,
+      "raw": "a string input",
+      "textFields": []
+    },
+    {
+      "instructions": "Do it.",
+      "otherFields": null,
+      "raw": [
+        1,
+        2
+      ],
+      "textFields": []
+    },
+    {
+      "instructions": "Do it.",
+      "otherFields": {
+        "exactly60": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "n": 5,
+        "nested": {
+          "a": 1
+        },
+        "short": "x"
+      },
+      "raw": {
+        "exactly60": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "long": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+        "multi": "a\nb",
+        "n": 5,
+        "nested": {
+          "a": 1
+        },
+        "short": "x"
+      },
+      "textFields": [
+        {
+          "name": "long",
+          "text": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+        },
+        {
+          "name": "multi",
+          "text": "a\nb"
+        }
+      ]
+    }
+  ],
+  "transcripts": {
+    "attempts-exhausted/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"attempts-exhausted/transcript-1\"]>",
+      "textFields": []
+    },
+    "attempts-exhausted/transcript-2": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"attempts-exhausted/transcript-2\"]>",
+      "textFields": []
+    },
+    "closing-postmortem/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"closing-postmortem/transcript-1\"]>",
+      "textFields": []
+    },
+    "codex-estimate/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"codex-estimate/transcript-1\"]>",
+      "textFields": []
+    },
+    "copilot-session/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"copilot-session/transcript-1\"]>",
+      "textFields": []
+    },
+    "copilot-session/transcript-1-ledger": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"copilot-session/transcript-1-ledger\"]>",
+      "textFields": []
+    },
+    "delivery-failed/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"delivery-failed/transcript-1\"]>",
+      "textFields": []
+    },
+    "delivery-failed/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"delivery-failed/transcript-2\"]>",
+      "textFields": []
+    },
+    "delivery-failed/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"delivery-failed/transcript-3\"]>",
+      "textFields": []
+    },
+    "diag-api-hang/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-api-hang/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-authentication-required/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-authentication-required/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-crash/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-crash/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-input-required/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-input-required/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-malformed-result/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-malformed-result/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-other/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-other/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-policy-denied/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-policy-denied/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-refusal/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-refusal/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-code-timeout/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-code-timeout/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-context/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-context/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-credentials/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-credentials/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-disk/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-disk/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-malformed-stream/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-malformed-stream/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-missing-cli/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-missing-cli/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-model/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-model/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-network/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-network/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-permission/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-permission/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-provider-down/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-provider-down/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-provider-timeout/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-provider-timeout/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-rate-limit/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-rate-limit/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-stream-cut/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-stream-cut/transcript-1\"]>",
+      "textFields": []
+    },
+    "diag-usage-limit/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"diag-usage-limit/transcript-1\"]>",
+      "textFields": []
+    },
+    "force-stopped/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"force-stopped/transcript-1\"]>",
+      "textFields": []
+    },
+    "force-stopped/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"force-stopped/transcript-2\"]>",
+      "textFields": []
+    },
+    "force-stopped/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"force-stopped/transcript-3\"]>",
+      "textFields": []
+    },
+    "fork-only/fork-bad-credentials/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-bad-credentials/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-bad-credentials/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-bad-credentials/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-chaos-transient/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-chaos-transient/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-chaos-transient/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-chaos-transient/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-chaos-usage-limit/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-chaos-usage-limit/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-controller-killed/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-controller-killed/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-controller-killed/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-controller-killed/transcript-1-ledger": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-controller-killed/transcript-1-ledger\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-controller-killed/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-controller-killed/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-controller-killed/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-controller-killed/transcript-2-ledger": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-controller-killed/transcript-2-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-controller-killed/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-controller-killed/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-controller-killed/transcript-3-ledger": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-controller-killed/transcript-3-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-force-stopped/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-force-stopped/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-force-stopped/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-force-stopped/transcript-1-ledger": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-force-stopped/transcript-1-ledger\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-force-stopped/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-force-stopped/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-force-stopped/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-force-stopped/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-force-stopped/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-happy-path/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-happy-path/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-happy-path/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-happy-path/transcript-1-ledger": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-happy-path/transcript-1-ledger\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-happy-path/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-happy-path/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-happy-path/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-happy-path/transcript-2-ledger": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-happy-path/transcript-2-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-happy-path/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-happy-path/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-happy-path/transcript-3-ledger": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-happy-path/transcript-3-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-late-failure/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-late-failure/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-late-failure/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-late-failure/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-late-failure/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-late-failure/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-late-failure/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-replay/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-replay/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-replay/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-replay/transcript-1-ledger": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-replay/transcript-1-ledger\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-replay/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-replay/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-replay/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-replay/transcript-2-ledger": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-replay/transcript-2-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-replay/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-replay/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-replay/transcript-3-ledger": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-replay/transcript-3-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-resumed/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-resumed/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-resumed/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-resumed/transcript-1-ledger": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-resumed/transcript-1-ledger\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-resumed/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-resumed/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-resumed/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-resumed/transcript-2-ledger": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-resumed/transcript-2-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-resumed/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-resumed/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-resumed/transcript-3-ledger": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-resumed/transcript-3-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "acceptanceFeedback": "",
+        "codeFeedback": "",
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-1\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.\n\nTEST POLICY (this run checks how failures are reported): whatever the change looks like, return verdict `rejected` and explain in the diagnostic one concrete thing you would still want improved.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-2\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-3\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": {
+      "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+      "otherFields": {
+        "deliveryFeedback": "",
+        "phase": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-4\"].phase>"
+      },
+      "raw": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-4\"]>",
+      "textFields": [
+        {
+          "name": "acceptanceFeedback",
+          "text": "The docstring for `slugify()` is minimal and lacks examples. Add a more descriptive docstring with parameter and return type documentation, plus example inputs/outputs showing how edge cases like empty strings, multiple consecutive separators, and leading/trailing hyphens are handled. This would improve API clarity and maintainability."
+        },
+        {
+          "name": "codeFeedback",
+          "text": "Implementation is correct. The slugify function properly lowercases, replaces non-alphanumeric runs with single dashes, and strips edge dashes. Function is properly exported. All 3 unit tests pass, with comprehensive test coverage including edge cases."
+        },
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": {
+      "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.\n\nTEST POLICY (this run checks how failures are reported): whatever the change looks like, return verdict `rejected` and explain in the diagnostic one concrete thing you would still want improved.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-5\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": {
+      "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+      "otherFields": {
+        "deliveryFeedback": ""
+      },
+      "raw": "<ref:input[\"fork-only/fork-reviewer-never-satisfied/transcript-6\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-steered/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-steered/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+        }
+      ]
+    },
+    "fork-only/fork-steered/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-steered/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+        }
+      ]
+    },
+    "fork-only/fork-unknown-model/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-unknown-model/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-unknown-model/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-unknown-model/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "fork-only/fork-worker-timeout/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-worker-timeout/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Extend textkit with six new functions, one at a time. For EACH function: implement it in textkit/core.py, export it, add at least three unit tests, run `python3 -m unittest -v`, and then explain in one short paragraph what you did before starting the next function. Functions: 1) slugify(text) as a URL slug, 2) title_case(text) that keeps small words (a, an, the, of, and, or) lowercase except at the start, 3) truncate(text, n) that cuts at a word boundary and appends '…', 4) count_vowels(text), 5) is_palindrome(text) ignoring case and punctuation, 6) wrap(text, width) that wraps lines at word boundaries. Work carefully and verify every step with the tests."
+        }
+      ]
+    },
+    "fork-only/fork-worker-timeout/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"fork-only/fork-worker-timeout/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Extend textkit with six new functions, one at a time. For EACH function: implement it in textkit/core.py, export it, add at least three unit tests, run `python3 -m unittest -v`, and then explain in one short paragraph what you did before starting the next function. Functions: 1) slugify(text) as a URL slug, 2) title_case(text) that keeps small words (a, an, the, of, and, or) lowercase except at the start, 3) truncate(text, n) that cuts at a word boundary and appends '…', 4) count_vowels(text), 5) is_palindrome(text) ignoring case and punctuation, 6) wrap(text, width) that wraps lines at word boundaries. Work carefully and verify every step with the tests."
+        }
+      ]
+    },
+    "fork-only/replay-child/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/replay-child/transcript-1\"]>",
+      "textFields": []
+    },
+    "fork-only/replay-child/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/replay-child/transcript-2\"]>",
+      "textFields": []
+    },
+    "fork-only/replay-child/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/replay-child/transcript-3\"]>",
+      "textFields": []
+    },
+    "fork-only/replay-parent/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/replay-parent/transcript-1\"]>",
+      "textFields": []
+    },
+    "fork-only/replay-parent/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/replay-parent/transcript-2\"]>",
+      "textFields": []
+    },
+    "fork-only/replay-parent/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/replay-parent/transcript-3\"]>",
+      "textFields": []
+    },
+    "fork-only/steered/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"fork-only/steered/transcript-1\"]>",
+      "textFields": []
+    },
+    "graph-ended-other/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"graph-ended-other/transcript-1\"]>",
+      "textFields": []
+    },
+    "graph-ended-other/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"graph-ended-other/transcript-2\"]>",
+      "textFields": []
+    },
+    "graph-ended-other/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"graph-ended-other/transcript-3\"]>",
+      "textFields": []
+    },
+    "lane-mixed/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"lane-mixed/transcript-1\"]>",
+      "textFields": []
+    },
+    "lane-unknown-harness/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"lane-unknown-harness/transcript-1\"]>",
+      "textFields": []
+    },
+    "map-parallel/transcript-1": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"map-parallel/transcript-1\"]>",
+      "textFields": []
+    },
+    "map-parallel/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"map-parallel/transcript-2\"]>",
+      "textFields": []
+    },
+    "map-parallel/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"map-parallel/transcript-3\"]>",
+      "textFields": []
+    },
+    "no-checkpoints/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"no-checkpoints/transcript-1\"]>",
+      "textFields": []
+    },
+    "resumed-original/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"resumed-original/transcript-1\"]>",
+      "textFields": []
+    },
+    "resumed-successor/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"resumed-successor/transcript-1\"]>",
+      "textFields": []
+    },
+    "resumed-successor/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"resumed-successor/transcript-2\"]>",
+      "textFields": []
+    },
+    "resumed-successor/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"resumed-successor/transcript-3\"]>",
+      "textFields": []
+    },
+    "running-live/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"running-live/transcript-1\"]>",
+      "textFields": []
+    },
+    "running-live/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"running-live/transcript-2\"]>",
+      "textFields": []
+    },
+    "running-live/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"running-live/transcript-3\"]>",
+      "textFields": []
+    },
+    "running-live/transcript-4": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"running-live/transcript-4\"]>",
+      "textFields": []
+    },
+    "running-live/transcript-5": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"running-live/transcript-5\"]>",
+      "textFields": []
+    },
+    "running-stock/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"running-stock/transcript-1\"]>",
+      "textFields": []
+    },
+    "runtime-failed-checkpoint/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"runtime-failed-checkpoint/transcript-1\"]>",
+      "textFields": []
+    },
+    "runtime-failed-permission/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"runtime-failed-permission/transcript-1\"]>",
+      "textFields": []
+    },
+    "runtime-failed-storage/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"runtime-failed-storage/transcript-1\"]>",
+      "textFields": []
+    },
+    "runtime-failed-unknown/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"runtime-failed-unknown/transcript-1\"]>",
+      "textFields": []
+    },
+    "runtime-lost/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"runtime-lost/transcript-1\"]>",
+      "textFields": []
+    },
+    "stalled-disk/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"stalled-disk/transcript-1\"]>",
+      "textFields": []
+    },
+    "stalled-live-usage/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"stalled-live-usage/transcript-1\"]>",
+      "textFields": []
+    },
+    "stalled-live-usage/transcript-1-ledger": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"stalled-live-usage/transcript-1-ledger\"]>",
+      "textFields": []
+    },
+    "stalled-then-closed/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"stalled-then-closed/transcript-1\"]>",
+      "textFields": []
+    },
+    "stalled-then-closed/transcript-1-ledger": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"stalled-then-closed/transcript-1-ledger\"]>",
+      "textFields": []
+    },
+    "stalled/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"stalled/transcript-1\"]>",
+      "textFields": []
+    },
+    "succeeded-stock/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded-stock/transcript-1\"]>",
+      "textFields": []
+    },
+    "succeeded-stock/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded-stock/transcript-2\"]>",
+      "textFields": []
+    },
+    "succeeded-stock/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded-stock/transcript-3\"]>",
+      "textFields": []
+    },
+    "succeeded/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded/transcript-1\"]>",
+      "textFields": []
+    },
+    "succeeded/transcript-1-ledger": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded/transcript-1-ledger\"]>",
+      "textFields": []
+    },
+    "succeeded/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded/transcript-2\"]>",
+      "textFields": []
+    },
+    "succeeded/transcript-2-ledger": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded/transcript-2-ledger\"]>",
+      "textFields": []
+    },
+    "succeeded/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded/transcript-3\"]>",
+      "textFields": []
+    },
+    "succeeded/transcript-3-ledger": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"succeeded/transcript-3-ledger\"]>",
+      "textFields": []
+    },
+    "tool-output-rate-limit/transcript-1": {
+      "instructions": "Do the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"tool-output-rate-limit/transcript-1\"]>",
+      "textFields": []
+    },
+    "voided/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"voided/transcript-1\"]>",
+      "textFields": []
+    },
+    "voided/transcript-2": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"voided/transcript-2\"]>",
+      "textFields": []
+    },
+    "work-exhausted/transcript-1": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"work-exhausted/transcript-1\"]>",
+      "textFields": []
+    },
+    "work-exhausted/transcript-2": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"work-exhausted/transcript-2\"]>",
+      "textFields": []
+    },
+    "work-exhausted/transcript-3": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"work-exhausted/transcript-3\"]>",
+      "textFields": []
+    },
+    "work-exhausted/transcript-4": {
+      "instructions": "Implement the task.",
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"work-exhausted/transcript-4\"]>",
+      "textFields": []
+    },
+    "work-exhausted/transcript-5": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"work-exhausted/transcript-5\"]>",
+      "textFields": []
+    },
+    "work-exhausted/transcript-6": {
+      "instructions": null,
+      "otherFields": {
+        "task": "Add slugify() to textkit."
+      },
+      "raw": "<ref:input[\"work-exhausted/transcript-6\"]>",
+      "textFields": []
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"zeroshot-16/zeroshot16-normal/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"zeroshot-16/zeroshot16-normal/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "zeroshot-16/zeroshot16-steered/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"zeroshot-16/zeroshot16-steered/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+        }
+      ]
+    },
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"zeroshot-16/zeroshot16-unknown-model/transcript-1\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    },
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": {
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "otherFields": null,
+      "raw": "<ref:input[\"zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger\"]>",
+      "textFields": [
+        {
+          "name": "task",
+          "text": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "path_required",
+    "message": "Which file?"
+  },
+  "status": 400
+}

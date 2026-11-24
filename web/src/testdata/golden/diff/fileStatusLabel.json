@@ -1,0 +1,15 @@
+{
+  "fileStatusLabel": {
+    "A": "added",
+    "C": "copied",
+    "D": "deleted",
+    "M": "modified",
+    "R": "renamed",
+    "T": "type changed",
+    "U": "unmerged"
+  },
+  "snapshots": {
+    "A": "added",
+    "M": "modified"
+  }
+}

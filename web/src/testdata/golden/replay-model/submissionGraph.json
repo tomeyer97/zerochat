@@ -1,0 +1,333 @@
+{
+  "extra": {
+    "profile": 3,
+    "root": 1
+  },
+  "null": null,
+  "runs": {
+    "admitted-only": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"admitted-only\"].graph.root>"
+    },
+    "attempts-exhausted": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"attempts-exhausted\"].graph.root>"
+    },
+    "checkout-unavailable": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"checkout-unavailable\"].graph.root>"
+    },
+    "closing-postmortem": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"closing-postmortem\"].graph.root>"
+    },
+    "codex-estimate": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"codex-estimate\"].graph.root>"
+    },
+    "copilot-session": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"copilot-session\"].graph.root>"
+    },
+    "delivery-failed": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"delivery-failed\"].graph.root>"
+    },
+    "diag-api-hang": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-api-hang\"].graph.root>"
+    },
+    "diag-code-authentication-required": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-authentication-required\"].graph.root>"
+    },
+    "diag-code-crash": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-crash\"].graph.root>"
+    },
+    "diag-code-input-required": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-input-required\"].graph.root>"
+    },
+    "diag-code-malformed-result": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-malformed-result\"].graph.root>"
+    },
+    "diag-code-other": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-other\"].graph.root>"
+    },
+    "diag-code-policy-denied": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-policy-denied\"].graph.root>"
+    },
+    "diag-code-refusal": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-refusal\"].graph.root>"
+    },
+    "diag-code-timeout": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-code-timeout\"].graph.root>"
+    },
+    "diag-context": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-context\"].graph.root>"
+    },
+    "diag-credentials": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-credentials\"].graph.root>"
+    },
+    "diag-disk": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-disk\"].graph.root>"
+    },
+    "diag-malformed-stream": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-malformed-stream\"].graph.root>"
+    },
+    "diag-missing-cli": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-missing-cli\"].graph.root>"
+    },
+    "diag-model": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-model\"].graph.root>"
+    },
+    "diag-network": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-network\"].graph.root>"
+    },
+    "diag-permission": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-permission\"].graph.root>"
+    },
+    "diag-provider-down": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-provider-down\"].graph.root>"
+    },
+    "diag-provider-timeout": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-provider-timeout\"].graph.root>"
+    },
+    "diag-rate-limit": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-rate-limit\"].graph.root>"
+    },
+    "diag-stream-cut": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-stream-cut\"].graph.root>"
+    },
+    "diag-usage-limit": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"diag-usage-limit\"].graph.root>"
+    },
+    "force-stopped": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"force-stopped\"].graph.root>"
+    },
+    "fork-only/fork-bad-credentials": {
+      "initialInput": "<ref:runs[\"fork-only/fork-bad-credentials\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-bad-credentials\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-bad-credentials\"].graph.root>"
+    },
+    "fork-only/fork-chaos-transient": {
+      "initialInput": "<ref:runs[\"fork-only/fork-chaos-transient\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-chaos-transient\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-chaos-transient\"].graph.root>"
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "initialInput": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graph.root>"
+    },
+    "fork-only/fork-controller-killed": {
+      "initialInput": "<ref:runs[\"fork-only/fork-controller-killed\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-controller-killed\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-controller-killed\"].graph.root>"
+    },
+    "fork-only/fork-force-stopped": {
+      "initialInput": "<ref:runs[\"fork-only/fork-force-stopped\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-force-stopped\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-force-stopped\"].graph.root>"
+    },
+    "fork-only/fork-happy-path": {
+      "initialInput": "<ref:runs[\"fork-only/fork-happy-path\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-happy-path\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-happy-path\"].graph.root>"
+    },
+    "fork-only/fork-late-failure": {
+      "initialInput": "<ref:runs[\"fork-only/fork-late-failure\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-late-failure\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-late-failure\"].graph.root>"
+    },
+    "fork-only/fork-replay": {
+      "initialInput": "<ref:runs[\"fork-only/fork-replay\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-replay\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-replay\"].graph.root>"
+    },
+    "fork-only/fork-resumed": {
+      "initialInput": "<ref:runs[\"fork-only/fork-resumed\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-resumed\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-resumed\"].graph.root>"
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "initialInput": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graph.root>"
+    },
+    "fork-only/fork-steered": {
+      "initialInput": "<ref:runs[\"fork-only/fork-steered\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-steered\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-steered\"].graph.root>"
+    },
+    "fork-only/fork-unknown-model": {
+      "initialInput": "<ref:runs[\"fork-only/fork-unknown-model\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-unknown-model\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-unknown-model\"].graph.root>"
+    },
+    "fork-only/fork-worker-timeout": {
+      "initialInput": "<ref:runs[\"fork-only/fork-worker-timeout\"].graph.initialInput>",
+      "policy": "<ref:runs[\"fork-only/fork-worker-timeout\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/fork-worker-timeout\"].graph.root>"
+    },
+    "fork-only/replay-child": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/replay-child\"].graph.root>"
+    },
+    "fork-only/replay-parent": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/replay-parent\"].graph.root>"
+    },
+    "fork-only/steered": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"fork-only/steered\"].graph.root>"
+    },
+    "graph-ended-other": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"graph-ended-other\"].graph.root>"
+    },
+    "lane-mixed": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"lane-mixed\"].graph.root>"
+    },
+    "lane-unknown-harness": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"lane-unknown-harness\"].graph.root>"
+    },
+    "map-parallel": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"map-parallel\"].graph.root>"
+    },
+    "no-checkpoints": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"no-checkpoints\"].graph.root>"
+    },
+    "resumed-original": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"resumed-original\"].graph.root>"
+    },
+    "resumed-successor": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"resumed-successor\"].graph.root>"
+    },
+    "running-live": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"running-live\"].graph.root>"
+    },
+    "running-stock": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"running-stock\"].graph.root>"
+    },
+    "runtime-failed-checkpoint": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"runtime-failed-checkpoint\"].graph.root>"
+    },
+    "runtime-failed-permission": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"runtime-failed-permission\"].graph.root>"
+    },
+    "runtime-failed-storage": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"runtime-failed-storage\"].graph.root>"
+    },
+    "runtime-failed-unknown": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"runtime-failed-unknown\"].graph.root>"
+    },
+    "runtime-lost": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"runtime-lost\"].graph.root>"
+    },
+    "stalled": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs.stalled.graph.root>"
+    },
+    "stalled-disk": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"stalled-disk\"].graph.root>"
+    },
+    "stalled-live-usage": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"stalled-live-usage\"].graph.root>"
+    },
+    "stalled-then-closed": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"stalled-then-closed\"].graph.root>"
+    },
+    "succeeded": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs.succeeded.graph.root>"
+    },
+    "succeeded-stock": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"succeeded-stock\"].graph.root>"
+    },
+    "tool-output-rate-limit": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"tool-output-rate-limit\"].graph.root>"
+    },
+    "unknown-phase": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"unknown-phase\"].graph.root>"
+    },
+    "voided": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs.voided.graph.root>"
+    },
+    "work-exhausted": {
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"work-exhausted\"].graph.root>"
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "initialInput": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graph.initialInput>",
+      "policy": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graph.root>"
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "initialInput": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graph.initialInput>",
+      "policy": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graph.root>"
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "initialInput": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graph.initialInput>",
+      "policy": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graph.policy>",
+      "profile": "openengine.graph.full/v1",
+      "root": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graph.root>"
+    }
+  }
+}

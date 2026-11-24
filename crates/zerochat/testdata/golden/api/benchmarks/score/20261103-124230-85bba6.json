@@ -1,0 +1,76 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 2.0,
+    "costUsd": 2.0027185,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "sc-template-haiku",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.6503241,
+        "node": "worker"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.5556468,
+        "node": "review_repair"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.4243717,
+        "node": "acceptance"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.3723759,
+        "node": "code"
+      }
+    ],
+    "overLimit": "budget",
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 1.6735307,
+    "runId": "20261103-124230-85bba6",
+    "score": 0.669642857,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "worker#1",
+        "score": 0.482142857,
+        "seq": 0,
+        "testsPassed": 108,
+        "testsTotal": 224
+      },
+      {
+        "node": "review_repair#1",
+        "score": 0.669642857,
+        "seq": 1,
+        "testsPassed": 150,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.669642857,
+        "seq": 2,
+        "testsPassed": 150,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 150,
+    "testsTotal": 224,
+    "wallS": 988.537200451,
+    "zeroshotRunId": "01a1a137-cdf4-7990-9437-1e3dba6aad32"
+  },
+  "status": 200
+}

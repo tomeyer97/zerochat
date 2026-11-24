@@ -1,0 +1,32 @@
+{
+  "batches": {
+    "20261107-222316-71f62e": false,
+    "20261107-222316-910b7d": false,
+    "20261108-142204-d474ae": false,
+    "20261108-152720-fb0664": false,
+    "20261108-170007-63721d": true,
+    "20261108-170009-cace9c": true,
+    "label:clone-v1": false,
+    "label:clone-v1-sonnet-build": false,
+    "label:ctrlc-test": false,
+    "label:haiku-adversarial": false,
+    "label:haiku-prototype-plan": false,
+    "label:k8s-sc-sonnet5": false,
+    "label:replay-build-haiku": false,
+    "label:replay-build-sonnet": false,
+    "label:replay-sonnet-explore-haiku-build": false,
+    "label:sc-template-haiku": false,
+    "label:smoke-haiku": false,
+    "label:sweep:sweep-triage-repair:repair#1:claude-haiku-4-5": false,
+    "label:sweep:sweep-triage-repair:repair#1:claude-sonnet-5": false,
+    "label:sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5": false,
+    "label:sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5": false,
+    "label:ticket-v1": false
+  },
+  "table": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

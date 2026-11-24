@@ -1,0 +1,31 @@
+# Editor defaults; `make fmt` (rustfmt, Biome) is the authority for Rust and the web UI.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.rs]
+indent_size = 4
+
+[*.py]
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Recorded and golden data: compared byte for byte, never touched by an editor.
+[{**/testdata/**,web/src/generated/**,web/src/fixtures/*.json}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset

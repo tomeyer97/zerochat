@@ -1,0 +1,535 @@
+{
+  "made": [
+    [
+      {
+        "kind": "home"
+      },
+      "#/"
+    ],
+    [
+      {
+        "kind": "unknown",
+        "path": "a/b c"
+      },
+      "#/a/b c"
+    ],
+    [
+      {
+        "kind": "run",
+        "run": "r 1",
+        "target": "a/b"
+      },
+      "#/run/a%2Fb/r%201"
+    ],
+    [
+      {
+        "files": true,
+        "kind": "run",
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/files"
+    ],
+    [
+      {
+        "files": true,
+        "kind": "run",
+        "node": "n",
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/node/n"
+    ],
+    [
+      {
+        "kind": "run",
+        "node": "n#1",
+        "round": 0,
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/node/n%231/round/0"
+    ],
+    [
+      {
+        "attempt": 1,
+        "kind": "run",
+        "node": "n",
+        "round": 2,
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/node/n/round/2"
+    ],
+    [
+      {
+        "attempt": 2,
+        "execution": 9,
+        "kind": "run",
+        "node": "n",
+        "round": 2,
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/node/n/round/2/attempt/2"
+    ],
+    [
+      {
+        "attempt": 2,
+        "kind": "run",
+        "node": "n",
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/node/n"
+    ],
+    [
+      {
+        "execution": 0,
+        "kind": "run",
+        "node": "n",
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r/node/n/exec/0"
+    ],
+    [
+      {
+        "execution": 3,
+        "kind": "run",
+        "node": "",
+        "run": "r",
+        "target": "t"
+      },
+      "#/run/t/r"
+    ],
+    [
+      {
+        "id": "label:x/y",
+        "kind": "benchmarksBatch"
+      },
+      "#/benchmarks/batch/label%3Ax%2Fy"
+    ],
+    [
+      {
+        "kind": "feature",
+        "name": "f",
+        "slice": ""
+      },
+      "#/features/f"
+    ],
+    [
+      {
+        "kind": "feature",
+        "name": "f?",
+        "slice": "0 1"
+      },
+      "#/features/f%3F/slice/0%201"
+    ],
+    [
+      {
+        "kind": "benchmarksCompare"
+      },
+      "#/benchmarks/compare"
+    ],
+    [
+      {
+        "b": "only b",
+        "kind": "benchmarksCompare"
+      },
+      "#/benchmarks/compare?b=only+b"
+    ],
+    [
+      {
+        "ids": [],
+        "kind": "benchmarksSweepReport"
+      },
+      "#/benchmarks/sweep-report"
+    ],
+    [
+      {
+        "budget": "0",
+        "ids": [
+          "a",
+          "b,c"
+        ],
+        "kind": "benchmarksSweepReport",
+        "label": "l&m",
+        "task": ""
+      },
+      "#/benchmarks/sweep-report?ids=a%2Cb%2Cc&label=l%26m&budget=0"
+    ]
+  ],
+  "roundTrip": [
+    [
+      "",
+      "#/",
+      true
+    ],
+    [
+      "#",
+      "#/",
+      true
+    ],
+    [
+      "#/",
+      "#/",
+      true
+    ],
+    [
+      "/",
+      "#/",
+      true
+    ],
+    [
+      "#//",
+      "#/",
+      true
+    ],
+    [
+      "#/?utm_source=x",
+      "#/",
+      true
+    ],
+    [
+      "#/run",
+      "#/",
+      true
+    ],
+    [
+      "#/run/local",
+      "#/run/local",
+      true
+    ],
+    [
+      "#/run/local/r1",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "#/run/local/r1/",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "run/local/r1",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "#run/local/r1",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "#/run/local/r1?x=1",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "#/run/local/r1/files",
+      "#/run/local/r1/files",
+      true
+    ],
+    [
+      "#/run/local/r1/files/extra",
+      "#/run/local/r1/files",
+      true
+    ],
+    [
+      "#/run/local/r1/node",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/2",
+      "#/run/local/r1/node/worker/round/2",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/2/attempt/3",
+      "#/run/local/r1/node/worker/round/2/attempt/3",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/2/attempt/1",
+      "#/run/local/r1/node/worker/round/2",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/0/attempt/0",
+      "#/run/local/r1/node/worker/round/0",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/x/attempt/3",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/-1",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/1.5",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/2/attempt",
+      "#/run/local/r1/node/worker/round/2",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/exec/7",
+      "#/run/local/r1/node/worker/exec/7",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/exec/",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/exec/abc",
+      "#/run/local/r1/node/worker",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/5",
+      "#/run/local/r1/node/worker/exec/5",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/05",
+      "#/run/local/r1/node/worker/exec/5",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/1e3",
+      "#/run/local/r1/node/worker/exec/1000",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/0x10",
+      "#/run/local/r1/node/worker/exec/16",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/ 5",
+      "#/run/local/r1/node/worker/exec/5",
+      true
+    ],
+    [
+      "#/run/local/r1/node/worker/round/2/../3",
+      "#/run/local/r1/node/worker/round/2",
+      true
+    ],
+    [
+      "#/run/a%2Fb/r%20id/node/n%23x",
+      "#/run/a%2Fb/r%20id/node/n%23x",
+      true
+    ],
+    [
+      "#/run/a%2/r1",
+      "#/run/a%252/r1",
+      true
+    ],
+    [
+      "#/run/%E0%A4%A/r1/node/%ZZ",
+      "#/run/%25E0%25A4%25A/r1/node/%25ZZ",
+      true
+    ],
+    [
+      "#/run/local/r1/other/thing",
+      "#/run/local/r1",
+      true
+    ],
+    [
+      "#/run//r1",
+      "#/run//r1",
+      true
+    ],
+    [
+      "#/run/local//node/x",
+      "#/run/local/node",
+      true
+    ],
+    [
+      "#/benchmarks",
+      "#/benchmarks",
+      true
+    ],
+    [
+      "#/benchmarks/",
+      "#/benchmarks",
+      true
+    ],
+    [
+      "#/benchmarks/batch",
+      "#/benchmarks/batch",
+      true
+    ],
+    [
+      "#/benchmarks/batch/20261108-142204-d474ae",
+      "#/benchmarks/batch/20261108-142204-d474ae",
+      true
+    ],
+    [
+      "#/benchmarks/batch/label%3Asmoke-haiku",
+      "#/benchmarks/batch/label%3Asmoke-haiku",
+      true
+    ],
+    [
+      "#/benchmarks/batch/a/b",
+      "#/benchmarks/batch/a",
+      true
+    ],
+    [
+      "#/benchmarks/compare",
+      "#/benchmarks/compare",
+      true
+    ],
+    [
+      "#/benchmarks/compare?a=x&b=y",
+      "#/benchmarks/compare?a=x&b=y",
+      true
+    ],
+    [
+      "#/benchmarks/compare?a=&b=y",
+      "#/benchmarks/compare?b=y",
+      true
+    ],
+    [
+      "#/benchmarks/compare?b=y&a=x&a=z",
+      "#/benchmarks/compare?a=x&b=y",
+      true
+    ],
+    [
+      "#/benchmarks/compare/extra?a=x",
+      "#/benchmarks/compare/extra",
+      true
+    ],
+    [
+      "#/benchmarks/compare?a=x?b=y",
+      "#/benchmarks/compare?a=x",
+      true
+    ],
+    [
+      "#/benchmarks/start",
+      "#/benchmarks/start",
+      true
+    ],
+    [
+      "#/benchmarks/start?x=1",
+      "#/benchmarks/start",
+      true
+    ],
+    [
+      "#/benchmarks/start/now",
+      "#/benchmarks/start/now",
+      true
+    ],
+    [
+      "#/benchmarks/sweeps",
+      "#/benchmarks/sweeps",
+      true
+    ],
+    [
+      "#/benchmarks/sweeps/1",
+      "#/benchmarks/sweeps/1",
+      true
+    ],
+    [
+      "#/benchmarks/sweep-report",
+      "#/benchmarks/sweep-report",
+      true
+    ],
+    [
+      "#/benchmarks/sweep-report?ids=a,b,%20c,,&label=L&task=t&budget=2.5",
+      "#/benchmarks/sweep-report?ids=a%2Cb%2Cc&label=L&task=t&budget=2.5",
+      true
+    ],
+    [
+      "#/benchmarks/sweep-report?ids=",
+      "#/benchmarks/sweep-report",
+      true
+    ],
+    [
+      "#/benchmarks/sweep-report?label=%E2%9C%93",
+      "#/benchmarks/sweep-report?label=%E2%9C%93",
+      true
+    ],
+    [
+      "#/benchmarks/unknown",
+      "#/benchmarks/unknown",
+      true
+    ],
+    [
+      "#/features",
+      "#/features",
+      true
+    ],
+    [
+      "#/features/",
+      "#/features",
+      true
+    ],
+    [
+      "#/features/calc",
+      "#/features/calc",
+      true
+    ],
+    [
+      "#/features/calc/slice/04",
+      "#/features/calc/slice/04",
+      true
+    ],
+    [
+      "#/features/calc/slice",
+      "#/features/calc/slice",
+      true
+    ],
+    [
+      "#/features/calc/other/04",
+      "#/features/calc/other/04",
+      true
+    ],
+    [
+      "#/features/calc/slice/04/x",
+      "#/features/calc/slice/04/x",
+      true
+    ],
+    [
+      "#/features/a%20b/slice/c%2Fd",
+      "#/features/a%20b/slice/c%2Fd",
+      true
+    ],
+    [
+      "#/nope",
+      "#/nope",
+      true
+    ],
+    [
+      "#/nope/deeper?q=1",
+      "#/nope/deeper",
+      true
+    ],
+    [
+      "#/RUN/local/r1",
+      "#/RUN/local/r1",
+      true
+    ]
+  ]
+}

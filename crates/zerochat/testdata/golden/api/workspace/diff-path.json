@@ -1,0 +1,6 @@
+{
+  "body": {
+    "diff": "diff --git a/textkit/core.py b/textkit/core.py\nindex 96218d0..cf8b4b9 100644\n--- a/textkit/core.py\n+++ b/textkit/core.py\n@@ -1,2 +1,9 @@\n+import re\n+\n+\n def title(text):\n     return text.title()\n+\n+\n+def slugify(text):\n+    return re.sub(r\"[^a-z0-9]+\", \"-\", text.lower()).strip(\"-\")\n"
+  },
+  "status": 200
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795175237184,
+          "kind": "text",
+          "text": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+        },
+        {
+          "at": 1795175237872,
+          "kind": "error",
+          "text": "Node worker failed: crash after 4.8s: node execution failed: Claude provider failure: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.; provider process exited with status 1; stderr: [claude-code:unrecognized_model] {\"model\":\"claude-haiku-9-9-does-not-exist\",\"query_source\":\"sdk\"}"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  }
+]

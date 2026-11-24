@@ -1,0 +1,3228 @@
+{
+  "default": {
+    "attempts-exhausted/transcript-1": [
+      "item-0 = 0"
+    ],
+    "attempts-exhausted/transcript-2": [
+      "item-0 = 0"
+    ],
+    "closing-postmortem/transcript-1": [
+      "item-0 = 0"
+    ],
+    "codex-estimate/transcript-1": [
+      "item-0 = 0"
+    ],
+    "copilot-session/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "copilot-session/transcript-1-ledger": [
+      "item-0 = 0"
+    ],
+    "delivery-failed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "delivery-failed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "delivery-failed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "diag-api-hang/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "diag-code-authentication-required/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-crash/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-input-required/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-malformed-result/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-other/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-policy-denied/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-refusal/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-context/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-credentials/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-disk/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-malformed-stream/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-missing-cli/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-network/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-permission/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-provider-down/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-provider-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-rate-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-stream-cut/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-usage-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "force-stopped/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "force-stopped/transcript-2": [
+      "item-0 = 0"
+    ],
+    "force-stopped/transcript-3": [],
+    "fork-only/fork-bad-credentials/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-bad-credentials/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21",
+      "item-22 = 22"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13"
+    ],
+    "fork-only/fork-controller-killed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10,11,12,13,14,15,16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19"
+    ],
+    "fork-only/fork-controller-killed/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9,10,11,12,13,14,15",
+      "item-16 = 16",
+      "item-17 = 17"
+    ],
+    "fork-only/fork-controller-killed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "fork-only/fork-controller-killed/transcript-2-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4"
+    ],
+    "fork-only/fork-controller-killed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "fork-only/fork-controller-killed/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-force-stopped/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "tools-20 = 20,21,22",
+      "item-23 = 23",
+      "item-24 = 24",
+      "item-25 = 25",
+      "item-26 = 26",
+      "item-27 = 27",
+      "item-28 = 28",
+      "item-29 = 29",
+      "item-30 = 30",
+      "item-31 = 31"
+    ],
+    "fork-only/fork-force-stopped/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "tools-19 = 19,20,21",
+      "item-22 = 22",
+      "item-23 = 23",
+      "item-24 = 24",
+      "item-25 = 25",
+      "item-26 = 26",
+      "item-27 = 27",
+      "item-28 = 28",
+      "item-29 = 29"
+    ],
+    "fork-only/fork-force-stopped/transcript-2": [
+      "item-0 = 0"
+    ],
+    "fork-only/fork-force-stopped/transcript-3": [
+      "item-0 = 0"
+    ],
+    "fork-only/fork-happy-path/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19"
+    ],
+    "fork-only/fork-happy-path/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17"
+    ],
+    "fork-only/fork-happy-path/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-happy-path/transcript-2-ledger": [
+      "tools-0 = 0,1,2,3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-happy-path/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-happy-path/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-late-failure/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14,15,16,17,18",
+      "item-19 = 19",
+      "item-20 = 20"
+    ],
+    "fork-only/fork-late-failure/transcript-2": [
+      "tools-0 = 0,1,2,3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-late-failure/transcript-3": [
+      "tools-0 = 0,1,2,3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-replay/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14,15,16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19"
+    ],
+    "fork-only/fork-replay/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "tools-13 = 13,14,15",
+      "item-16 = 16",
+      "item-17 = 17"
+    ],
+    "fork-only/fork-replay/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-replay/transcript-2-ledger": [
+      "tools-0 = 0,1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-replay/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-replay/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-resumed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "fork-only/fork-resumed/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6,7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-2-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-resumed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6,7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9",
+      "item-10 = 10",
+      "tools-11 = 11,12,13,14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-steered/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "fork-only/fork-steered/transcript-1-ledger": [
+      "tools-0 = 0,1,2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-unknown-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "fork-only/fork-unknown-model/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10,11,12",
+      "item-13 = 13",
+      "tools-14 = 14,15,16,17,18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9,10,11",
+      "item-12 = 12",
+      "tools-13 = 13,14,15,16,17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21"
+    ],
+    "fork-only/replay-child/transcript-1": [],
+    "fork-only/replay-child/transcript-2": [],
+    "fork-only/replay-child/transcript-3": [],
+    "fork-only/replay-parent/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "fork-only/replay-parent/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "fork-only/replay-parent/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "fork-only/steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "graph-ended-other/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "graph-ended-other/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "graph-ended-other/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "lane-mixed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "lane-unknown-harness/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "map-parallel/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "map-parallel/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "map-parallel/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "no-checkpoints/transcript-1": [
+      "item-0 = 0"
+    ],
+    "resumed-original/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "resumed-successor/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "resumed-successor/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "resumed-successor/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "running-live/transcript-1": [],
+    "running-live/transcript-2": [],
+    "running-live/transcript-3": [],
+    "running-live/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "running-live/transcript-5": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "running-stock/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "runtime-failed-checkpoint/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-permission/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-storage/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-unknown/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-lost/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-disk/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-live-usage/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "stalled-live-usage/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-then-closed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "stalled-then-closed/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "stalled/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "succeeded-stock/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded-stock/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded-stock/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "succeeded/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-2-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "succeeded/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-3-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "tool-output-rate-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "voided/transcript-1": [],
+    "voided/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-2": [],
+    "work-exhausted/transcript-3": [],
+    "work-exhausted/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-5": [],
+    "work-exhausted/transcript-6": [],
+    "zeroshot-16/zeroshot16-normal/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16"
+    ],
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16"
+    ],
+    "zeroshot-16/zeroshot16-steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ]
+  },
+  "minGroup1": {
+    "attempts-exhausted/transcript-1": [
+      "item-0 = 0"
+    ],
+    "attempts-exhausted/transcript-2": [
+      "item-0 = 0"
+    ],
+    "closing-postmortem/transcript-1": [
+      "item-0 = 0"
+    ],
+    "codex-estimate/transcript-1": [
+      "item-0 = 0"
+    ],
+    "copilot-session/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "copilot-session/transcript-1-ledger": [
+      "item-0 = 0"
+    ],
+    "delivery-failed/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3"
+    ],
+    "delivery-failed/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "delivery-failed/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "diag-api-hang/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3",
+      "tools-4 = 4",
+      "item-5 = 5"
+    ],
+    "diag-code-authentication-required/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-crash/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-input-required/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-malformed-result/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-other/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-policy-denied/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-refusal/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-timeout/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-context/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-credentials/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-disk/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-malformed-stream/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-missing-cli/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-model/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-network/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-permission/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-provider-down/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-provider-timeout/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-rate-limit/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-stream-cut/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-usage-limit/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "force-stopped/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "force-stopped/transcript-2": [
+      "item-0 = 0"
+    ],
+    "force-stopped/transcript-3": [],
+    "fork-only/fork-bad-credentials/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-bad-credentials/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "tools-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "tools-13 = 13",
+      "item-14 = 14",
+      "tools-15 = 15",
+      "item-16 = 16",
+      "tools-17 = 17",
+      "item-18 = 18",
+      "tools-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21",
+      "tools-22 = 22"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "tools-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14",
+      "item-15 = 15",
+      "tools-16 = 16",
+      "item-17 = 17",
+      "tools-18 = 18",
+      "item-19 = 19",
+      "tools-20 = 20"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "tools-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13"
+    ],
+    "fork-only/fork-controller-killed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10,11,12,13,14,15,16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "tools-19 = 19"
+    ],
+    "fork-only/fork-controller-killed/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9,10,11,12,13,14,15",
+      "item-16 = 16",
+      "tools-17 = 17"
+    ],
+    "fork-only/fork-controller-killed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9"
+    ],
+    "fork-only/fork-controller-killed/transcript-2-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4"
+    ],
+    "fork-only/fork-controller-killed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9"
+    ],
+    "fork-only/fork-controller-killed/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-force-stopped/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12,13",
+      "item-14 = 14",
+      "tools-15 = 15",
+      "item-16 = 16",
+      "tools-17 = 17,18",
+      "item-19 = 19",
+      "tools-20 = 20,21,22",
+      "item-23 = 23",
+      "tools-24 = 24,25",
+      "item-26 = 26",
+      "tools-27 = 27,28",
+      "item-29 = 29",
+      "item-30 = 30",
+      "tools-31 = 31"
+    ],
+    "fork-only/fork-force-stopped/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "tools-11 = 11,12",
+      "item-13 = 13",
+      "tools-14 = 14",
+      "item-15 = 15",
+      "tools-16 = 16,17",
+      "item-18 = 18",
+      "tools-19 = 19,20,21",
+      "item-22 = 22",
+      "tools-23 = 23,24",
+      "item-25 = 25",
+      "tools-26 = 26,27",
+      "item-28 = 28",
+      "tools-29 = 29"
+    ],
+    "fork-only/fork-force-stopped/transcript-2": [
+      "item-0 = 0"
+    ],
+    "fork-only/fork-force-stopped/transcript-3": [
+      "item-0 = 0"
+    ],
+    "fork-only/fork-happy-path/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10",
+      "item-11 = 11",
+      "tools-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14",
+      "item-15 = 15",
+      "tools-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "tools-19 = 19"
+    ],
+    "fork-only/fork-happy-path/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9",
+      "item-10 = 10",
+      "tools-11 = 11",
+      "item-12 = 12",
+      "tools-13 = 13",
+      "item-14 = 14",
+      "tools-15 = 15",
+      "item-16 = 16",
+      "tools-17 = 17"
+    ],
+    "fork-only/fork-happy-path/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "tools-7 = 7"
+    ],
+    "fork-only/fork-happy-path/transcript-2-ledger": [
+      "tools-0 = 0,1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5"
+    ],
+    "fork-only/fork-happy-path/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8"
+    ],
+    "fork-only/fork-happy-path/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5",
+      "item-6 = 6",
+      "tools-7 = 7"
+    ],
+    "fork-only/fork-late-failure/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14,15,16,17,18",
+      "item-19 = 19",
+      "tools-20 = 20"
+    ],
+    "fork-only/fork-late-failure/transcript-2": [
+      "tools-0 = 0,1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5"
+    ],
+    "fork-only/fork-late-failure/transcript-3": [
+      "tools-0 = 0,1,2,3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-replay/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14,15,16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "tools-19 = 19"
+    ],
+    "fork-only/fork-replay/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "tools-11 = 11",
+      "item-12 = 12",
+      "tools-13 = 13,14,15",
+      "item-16 = 16",
+      "tools-17 = 17"
+    ],
+    "fork-only/fork-replay/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8"
+    ],
+    "fork-only/fork-replay/transcript-2-ledger": [
+      "tools-0 = 0,1,2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6"
+    ],
+    "fork-only/fork-replay/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8"
+    ],
+    "fork-only/fork-replay/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6"
+    ],
+    "fork-only/fork-resumed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12"
+    ],
+    "fork-only/fork-resumed/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8",
+      "item-9 = 9",
+      "tools-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6,7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-2-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8"
+    ],
+    "fork-only/fork-resumed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6,7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9",
+      "item-10 = 10",
+      "tools-11 = 11,12,13,14",
+      "item-15 = 15",
+      "tools-16 = 16",
+      "item-17 = 17",
+      "tools-18 = 18"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4",
+      "item-5 = 5",
+      "tools-6 = 6"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5",
+      "item-6 = 6",
+      "tools-7 = 7"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3",
+      "tools-4 = 4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5",
+      "item-6 = 6",
+      "tools-7 = 7"
+    ],
+    "fork-only/fork-steered/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3",
+      "item-4 = 4",
+      "tools-5 = 5,6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9"
+    ],
+    "fork-only/fork-steered/transcript-1-ledger": [
+      "tools-0 = 0,1,2",
+      "item-3 = 3",
+      "tools-4 = 4,5",
+      "item-6 = 6",
+      "tools-7 = 7"
+    ],
+    "fork-only/fork-unknown-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "fork-only/fork-unknown-model/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8,9,10,11,12",
+      "item-13 = 13",
+      "tools-14 = 14,15,16,17,18",
+      "item-19 = 19",
+      "tools-20 = 20,21"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2,3,4,5",
+      "item-6 = 6",
+      "tools-7 = 7,8,9,10,11",
+      "item-12 = 12",
+      "tools-13 = 13,14,15,16,17",
+      "item-18 = 18",
+      "tools-19 = 19,20",
+      "item-21 = 21"
+    ],
+    "fork-only/replay-child/transcript-1": [],
+    "fork-only/replay-child/transcript-2": [],
+    "fork-only/replay-child/transcript-3": [],
+    "fork-only/replay-parent/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3"
+    ],
+    "fork-only/replay-parent/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "fork-only/replay-parent/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "fork-only/steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "graph-ended-other/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3"
+    ],
+    "graph-ended-other/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "graph-ended-other/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "lane-mixed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "lane-unknown-harness/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "map-parallel/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "map-parallel/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "map-parallel/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1"
+    ],
+    "no-checkpoints/transcript-1": [
+      "item-0 = 0"
+    ],
+    "resumed-original/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3"
+    ],
+    "resumed-successor/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3"
+    ],
+    "resumed-successor/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "resumed-successor/transcript-3": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "running-live/transcript-1": [],
+    "running-live/transcript-2": [],
+    "running-live/transcript-3": [],
+    "running-live/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "running-live/transcript-5": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "running-stock/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "runtime-failed-checkpoint/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-permission/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-storage/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-unknown/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-lost/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-disk/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-live-usage/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "tools-3 = 3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "stalled-live-usage/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-then-closed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "tools-3 = 3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "stalled-then-closed/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "stalled/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "succeeded-stock/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded-stock/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded-stock/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "tools-3 = 3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-1-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1,2",
+      "item-3 = 3"
+    ],
+    "succeeded/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "tools-3 = 3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-2-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "succeeded/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "tools-3 = 3,4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "tools-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-3-ledger": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "tool-output-rate-limit/transcript-1": [
+      "tools-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "voided/transcript-1": [],
+    "voided/transcript-2": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-1": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-2": [],
+    "work-exhausted/transcript-3": [],
+    "work-exhausted/transcript-4": [
+      "item-0 = 0",
+      "tools-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-5": [],
+    "work-exhausted/transcript-6": [],
+    "zeroshot-16/zeroshot16-normal/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14",
+      "item-15 = 15",
+      "tools-16 = 16"
+    ],
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3,4,5,6",
+      "item-7 = 7",
+      "tools-8 = 8",
+      "item-9 = 9",
+      "tools-10 = 10",
+      "item-11 = 11",
+      "tools-12 = 12",
+      "item-13 = 13",
+      "tools-14 = 14",
+      "item-15 = 15",
+      "tools-16 = 16"
+    ],
+    "zeroshot-16/zeroshot16-steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "tools-2 = 2,3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "tools-6 = 6",
+      "item-7 = 7",
+      "tools-8 = 8,9"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ]
+  },
+  "minGroup10": {
+    "attempts-exhausted/transcript-1": [
+      "item-0 = 0"
+    ],
+    "attempts-exhausted/transcript-2": [
+      "item-0 = 0"
+    ],
+    "closing-postmortem/transcript-1": [
+      "item-0 = 0"
+    ],
+    "codex-estimate/transcript-1": [
+      "item-0 = 0"
+    ],
+    "copilot-session/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "copilot-session/transcript-1-ledger": [
+      "item-0 = 0"
+    ],
+    "delivery-failed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "delivery-failed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "delivery-failed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "diag-api-hang/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "diag-code-authentication-required/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-crash/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-input-required/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-malformed-result/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-other/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-policy-denied/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-refusal/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-code-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-context/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-credentials/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-disk/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-malformed-stream/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-missing-cli/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-network/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-permission/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-provider-down/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-provider-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-rate-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-stream-cut/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "diag-usage-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "force-stopped/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "force-stopped/transcript-2": [
+      "item-0 = 0"
+    ],
+    "force-stopped/transcript-3": [],
+    "fork-only/fork-bad-credentials/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-bad-credentials/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21",
+      "item-22 = 22"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13"
+    ],
+    "fork-only/fork-controller-killed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19"
+    ],
+    "fork-only/fork-controller-killed/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17"
+    ],
+    "fork-only/fork-controller-killed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "fork-only/fork-controller-killed/transcript-2-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "fork-only/fork-controller-killed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "fork-only/fork-controller-killed/transcript-3-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-force-stopped/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21",
+      "item-22 = 22",
+      "item-23 = 23",
+      "item-24 = 24",
+      "item-25 = 25",
+      "item-26 = 26",
+      "item-27 = 27",
+      "item-28 = 28",
+      "item-29 = 29",
+      "item-30 = 30",
+      "item-31 = 31"
+    ],
+    "fork-only/fork-force-stopped/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21",
+      "item-22 = 22",
+      "item-23 = 23",
+      "item-24 = 24",
+      "item-25 = 25",
+      "item-26 = 26",
+      "item-27 = 27",
+      "item-28 = 28",
+      "item-29 = 29"
+    ],
+    "fork-only/fork-force-stopped/transcript-2": [
+      "item-0 = 0"
+    ],
+    "fork-only/fork-force-stopped/transcript-3": [
+      "item-0 = 0"
+    ],
+    "fork-only/fork-happy-path/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19"
+    ],
+    "fork-only/fork-happy-path/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17"
+    ],
+    "fork-only/fork-happy-path/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-happy-path/transcript-2-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-happy-path/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-happy-path/transcript-3-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-late-failure/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20"
+    ],
+    "fork-only/fork-late-failure/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-late-failure/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5"
+    ],
+    "fork-only/fork-replay/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19"
+    ],
+    "fork-only/fork-replay/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17"
+    ],
+    "fork-only/fork-replay/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-replay/transcript-2-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-replay/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-replay/transcript-3-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-resumed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "fork-only/fork-resumed/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-2-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-resumed/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-resumed/transcript-3-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "fork-only/fork-steered/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7"
+    ],
+    "fork-only/fork-unknown-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "fork-only/fork-unknown-model/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16",
+      "item-17 = 17",
+      "item-18 = 18",
+      "item-19 = 19",
+      "item-20 = 20",
+      "item-21 = 21"
+    ],
+    "fork-only/replay-child/transcript-1": [],
+    "fork-only/replay-child/transcript-2": [],
+    "fork-only/replay-child/transcript-3": [],
+    "fork-only/replay-parent/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "fork-only/replay-parent/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "fork-only/replay-parent/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "fork-only/steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "graph-ended-other/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "graph-ended-other/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "graph-ended-other/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "lane-mixed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "lane-unknown-harness/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "map-parallel/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "map-parallel/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "map-parallel/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "no-checkpoints/transcript-1": [
+      "item-0 = 0"
+    ],
+    "resumed-original/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "resumed-successor/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "resumed-successor/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "resumed-successor/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "running-live/transcript-1": [],
+    "running-live/transcript-2": [],
+    "running-live/transcript-3": [],
+    "running-live/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "running-live/transcript-5": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "running-stock/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "runtime-failed-checkpoint/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-permission/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-storage/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-failed-unknown/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "runtime-lost/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-disk/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-live-usage/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "stalled-live-usage/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "stalled-then-closed/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "stalled-then-closed/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4"
+    ],
+    "stalled/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "succeeded-stock/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded-stock/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded-stock/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "succeeded/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "succeeded/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-2-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "succeeded/transcript-3": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12"
+    ],
+    "succeeded/transcript-3-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "tool-output-rate-limit/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3"
+    ],
+    "voided/transcript-1": [],
+    "voided/transcript-2": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-2": [],
+    "work-exhausted/transcript-3": [],
+    "work-exhausted/transcript-4": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ],
+    "work-exhausted/transcript-5": [],
+    "work-exhausted/transcript-6": [],
+    "zeroshot-16/zeroshot16-normal/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16"
+    ],
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9",
+      "item-10 = 10",
+      "item-11 = 11",
+      "item-12 = 12",
+      "item-13 = 13",
+      "item-14 = 14",
+      "item-15 = 15",
+      "item-16 = 16"
+    ],
+    "zeroshot-16/zeroshot16-steered/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2",
+      "item-3 = 3",
+      "item-4 = 4",
+      "item-5 = 5",
+      "item-6 = 6",
+      "item-7 = 7",
+      "item-8 = 8",
+      "item-9 = 9"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": [
+      "item-0 = 0",
+      "item-1 = 1"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": [
+      "item-0 = 0",
+      "item-1 = 1",
+      "item-2 = 2"
+    ]
+  }
+}

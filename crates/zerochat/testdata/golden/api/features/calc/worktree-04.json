@@ -1,0 +1,7 @@
+{
+  "body": {
+    "diff": "diff --git a/calc/greet.py b/calc/greet.py\nindex 2e86510..c1790f1 100644\n--- a/calc/greet.py\n+++ b/calc/greet.py\n@@ -1,2 +1,6 @@\n def greet(name):\n     return f'Hello, {name}!'\n+\n+\n+def farewell(name):\n+    return f'Bye, {name}!'\n",
+    "fork": "6ea2cf45e564a22af953adfdafe7f28f28530e66"
+  },
+  "status": 200
+}

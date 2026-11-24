@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "pb_not_configured",
+    "message": "Benchmarks needs pb (ProgramBench runner), which is not configured here: set `pb_root` in zerochat's config.toml."
+  },
+  "status": 404
+}

@@ -1,0 +1,467 @@
+{
+  "body": {
+    "backgroundAgents": [],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": null,
+    "costEstimated": false,
+    "costUsd": null,
+    "createdAt": 1795175266246,
+    "cursor": 13,
+    "endedAt": 1795175275019,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": null,
+        "costUsd": null,
+        "diagnostic": null,
+        "durationMs": 4610,
+        "endSeq": 9,
+        "endedAt": 1795175274969,
+        "error": {
+          "code": "refusal",
+          "reason": "model_unavailable"
+        },
+        "errorLines": [
+          "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+        ],
+        "harness": "claude",
+        "id": 1,
+        "input": {
+          "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        },
+        "lastActivityAt": 1795175274969,
+        "logLines": 3,
+        "mapIndices": [],
+        "model": "claude-haiku-9-9-does-not-exist",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "code": "refusal",
+          "reason": "model_unavailable",
+          "status": "error"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": null,
+        "signals": null,
+        "startSeq": 4,
+        "startedAt": 1795175270359,
+        "state": "failed",
+        "timesApproximate": false,
+        "toolCalls": 0,
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": null,
+        "workspaceStart": null
+      }
+    ],
+    "failure": {
+      "actions": [
+        "replay"
+      ],
+      "at": 1795175274969,
+      "attempt": 1,
+      "cause": "unknown model",
+      "class": "setup",
+      "closedAfterMs": null,
+      "closedByPostmortem": false,
+      "detail": "",
+      "execution": 1,
+      "exit": "worker_failed",
+      "feedback": [],
+      "fix": "Set a model Anthropic knows for `worker` in your runtime file, then start a new run.",
+      "fixCommand": null,
+      "intoRunMs": 8100,
+      "kept": [],
+      "lastErrors": [
+        "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      ],
+      "node": "worker",
+      "nodeKind": "step",
+      "primary": null,
+      "reason": "worker_failed",
+      "resetsAt": null,
+      "round": 1,
+      "title": "Unknown model claude-haiku-9-9-does-not-exist"
+    },
+    "features": {
+      "exactTimes": true,
+      "providerCost": false,
+      "toolCalls": false,
+      "workspaceSnapshots": false
+    },
+    "graph": {
+      "bounds": {
+        "attemptsPerNode": {
+          "worker": 1
+        },
+        "maxNodeExecutions": 1,
+        "peakConcurrency": 1,
+        "termination": {
+          "kind": "acyclic",
+          "order": [
+            "run",
+            "worker",
+            "worker_result",
+            "worker_failed",
+            "done"
+          ]
+        }
+      },
+      "initialInput": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      },
+      "policy": {
+        "default": "deny",
+        "policy": "policy.native-v2@1"
+      },
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "attempts": 1,
+            "input": {
+              "fields": {
+                "task": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                }
+              },
+              "kind": "record"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "path": [
+                    "task"
+                  ],
+                  "source": "state"
+                }
+              }
+            ],
+            "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+            "kind": "step",
+            "name": "worker",
+            "output": {
+              "kind": "null"
+            },
+            "worker": "builtin.agent.worker@1",
+            "writeBindings": []
+          },
+          {
+            "branches": [
+              {
+                "node": {
+                  "kind": "fail",
+                  "name": "worker_failed",
+                  "reason": "worker_failed"
+                },
+                "when": {
+                  "kind": "in",
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ],
+                  "value": {
+                    "field": null,
+                    "name": "worker",
+                    "source": "error"
+                  }
+                }
+              }
+            ],
+            "kind": "choice",
+            "name": "worker_result",
+            "otherwise": {
+              "bindings": [],
+              "kind": "succeed",
+              "name": "done",
+              "output": {
+                "kind": "null"
+              }
+            },
+            "promotedStatePaths": [],
+            "state": {
+              "fields": {
+                "task": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                }
+              },
+              "kind": "record"
+            }
+          }
+        ],
+        "kind": "seq",
+        "name": "run",
+        "promotedStatePaths": [],
+        "state": {
+          "fields": {
+            "task": {
+              "required": true,
+              "type": {
+                "kind": "string"
+              }
+            }
+          },
+          "kind": "record"
+        }
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+        "kind": "step",
+        "loops": [],
+        "maxIterations": null,
+        "model": "claude-haiku-9-9-does-not-exist",
+        "name": "worker",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.worker@1"
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "choice",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "worker_result",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "worker_failed",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "worker_failed",
+        "parent": "worker_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "succeed",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "done",
+        "parent": "worker_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      }
+    ],
+    "initialInput": {
+      "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+    },
+    "lanes": [
+      {
+        "harness": "claude",
+        "model": "claude-haiku-9-9-does-not-exist",
+        "nodes": [
+          "worker"
+        ],
+        "provider": "anthropic"
+      }
+    ],
+    "lastActivityAt": 1795175275066,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/unknown-model"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "nodes": {
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": null,
+        "elapsedMs": 4610,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "failed",
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1f8c8-b7c6-73a3-b319-e26678e524d0",
+    "runLog": [
+      {
+        "at": 1795175266869,
+        "seq": 1,
+        "stream": "system",
+        "text": "Zeroshot version: 16.1.0"
+      },
+      {
+        "at": 1795175266928,
+        "seq": 2,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795175270359,
+        "seq": 4,
+        "stream": "system",
+        "text": "worker started (claude-haiku-9-9-does-not-exist)"
+      },
+      {
+        "at": 1795175274969,
+        "seq": 9,
+        "stream": "system",
+        "text": "worker failed: refused"
+      },
+      {
+        "at": 1795175275019,
+        "seq": 10,
+        "stream": "error",
+        "text": "Run failed: worker_failed"
+      },
+      {
+        "at": 1795175275066,
+        "seq": 12,
+        "stream": "error",
+        "text": "Active Memory postmortem skipped: source node worker ended with model_unavailable"
+      }
+    ],
+    "runtime": {
+      "harness": "claude",
+      "maxConcurrency": 64,
+      "nodes": {
+        "worker": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-9-9-does-not-exist"
+        }
+      },
+      "provider": "anthropic",
+      "size": "host"
+    },
+    "source": null,
+    "startedAt": 1795175266869,
+    "status": "failed",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "context": {
+        "incomplete": false,
+        "recorded": [
+          {
+            "cursor": "v2:8",
+            "execution": {
+              "execution": "nv2-ba44200ead7ffce6a649c20d39aa671166dd64744458b4d5659d774175789b40",
+              "node": "worker"
+            },
+            "message": "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+          }
+        ]
+      },
+      "reason": "worker_failed",
+      "status": "failed"
+    },
+    "title": "unknown-model [zeroshot16]",
+    "usage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

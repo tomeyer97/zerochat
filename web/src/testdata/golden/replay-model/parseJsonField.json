@@ -1,0 +1,720 @@
+{
+  "runs": {
+    "admitted-only": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "attempts-exhausted": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "checkout-unavailable": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "closing-postmortem": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "codex-estimate": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "copilot-session": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "delivery-failed": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-api-hang": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-authentication-required": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-crash": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-input-required": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-malformed-result": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-other": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-policy-denied": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-refusal": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-code-timeout": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-context": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-credentials": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-disk": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-malformed-stream": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-missing-cli": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-model": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-network": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-permission": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-provider-down": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-provider-timeout": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-rate-limit": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-stream-cut": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "diag-usage-limit": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "force-stopped": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-bad-credentials": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-chaos-transient": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-controller-killed": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-force-stopped": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-happy-path": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-late-failure": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-replay": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-resumed": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-steered": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-unknown-model": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/fork-worker-timeout": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/replay-child": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/replay-parent": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "fork-only/steered": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "graph-ended-other": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "lane-mixed": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "lane-unknown-harness": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "map-parallel": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "no-checkpoints": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "resumed-original": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "resumed-successor": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "running-live": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "running-stock": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "runtime-failed-checkpoint": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "runtime-failed-permission": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "runtime-failed-storage": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "runtime-failed-unknown": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "runtime-lost": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "stalled": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "stalled-disk": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "stalled-live-usage": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "stalled-then-closed": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "succeeded": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "succeeded-stock": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "tool-output-rate-limit": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "unknown-phase": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "voided": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "work-exhausted": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "inputChanged": {
+        "value": {
+          "changed": true
+        }
+      },
+      "inputUnchanged": {},
+      "runtimeUnchanged": {}
+    }
+  },
+  "table": [
+    [
+      "",
+      {}
+    ],
+    [
+      "   ",
+      {}
+    ],
+    [
+      "{\"a\":1}",
+      {}
+    ],
+    [
+      "{ \"a\" : 1 }",
+      {}
+    ],
+    [
+      "{\"b\":1,\"a\":2}",
+      {
+        "value": {
+          "a": 2,
+          "b": 1
+        }
+      }
+    ],
+    [
+      "[1,2]",
+      {}
+    ],
+    [
+      "null",
+      {}
+    ],
+    [
+      "null",
+      {
+        "value": null
+      }
+    ],
+    [
+      "{bad",
+      {
+        "error": "Runtime is not valid JSON: Expected property name or '}' in JSON at position 1 (line 1 column 2)"
+      }
+    ],
+    [
+      "{\"a\":1",
+      {
+        "error": "Runtime is not valid JSON: Expected ',' or '}' after property value in JSON at position 6 (line 1 column 7)"
+      }
+    ],
+    [
+      "1 2",
+      {
+        "error": "Runtime is not valid JSON: Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)"
+      }
+    ]
+  ]
+}

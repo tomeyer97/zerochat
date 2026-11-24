@@ -1,0 +1,64 @@
+{
+  "choice no branches": {
+    "edges": [],
+    "items": []
+  },
+  "empty object": {
+    "edges": [],
+    "items": []
+  },
+  "empty seq": {
+    "edges": [],
+    "items": []
+  },
+  "lone step": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "only",
+        "info": "<undefined>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "lone succeed": {
+    "edges": [],
+    "items": []
+  },
+  "loop with nothing": {
+    "edges": [],
+    "items": []
+  },
+  "no graph": {
+    "edges": [],
+    "items": []
+  },
+  "par one branch": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "a",
+        "info": "<undefined>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "root not a node": {
+    "edges": [],
+    "items": []
+  }
+}

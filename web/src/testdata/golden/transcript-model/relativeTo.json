@@ -1,0 +1,471 @@
+{
+  "table": [
+    [
+      "/w/x/src/a.ts",
+      "/w/x",
+      "src/a.ts"
+    ],
+    [
+      "/w/x",
+      "/w/x",
+      "."
+    ],
+    [
+      "/w/x/",
+      "/w/x",
+      "."
+    ],
+    [
+      "/w/xy/a.ts",
+      "/w/x",
+      "y/a.ts"
+    ],
+    [
+      "src/a.ts",
+      "/w/x",
+      "src/a.ts"
+    ],
+    [
+      "/w/x/a",
+      null,
+      "/w/x/a"
+    ],
+    [
+      "/w/x/a",
+      "",
+      "/w/x/a"
+    ]
+  ],
+  "transcripts": {
+    "attempts-exhausted/transcript-1": [],
+    "attempts-exhausted/transcript-2": [],
+    "closing-postmortem/transcript-1": [],
+    "codex-estimate/transcript-1": [],
+    "copilot-session/transcript-1": [
+      "/work/copilot-session/repo/missing.md"
+    ],
+    "copilot-session/transcript-1-ledger": [],
+    "delivery-failed/transcript-1": [],
+    "delivery-failed/transcript-2": [],
+    "delivery-failed/transcript-3": [],
+    "diag-api-hang/transcript-1": [
+      "/work/diag-api-hang/repo/textkit/core.py"
+    ],
+    "diag-code-authentication-required/transcript-1": [],
+    "diag-code-crash/transcript-1": [],
+    "diag-code-input-required/transcript-1": [],
+    "diag-code-malformed-result/transcript-1": [],
+    "diag-code-other/transcript-1": [],
+    "diag-code-policy-denied/transcript-1": [],
+    "diag-code-refusal/transcript-1": [],
+    "diag-code-timeout/transcript-1": [],
+    "diag-context/transcript-1": [],
+    "diag-credentials/transcript-1": [],
+    "diag-disk/transcript-1": [],
+    "diag-malformed-stream/transcript-1": [],
+    "diag-missing-cli/transcript-1": [],
+    "diag-model/transcript-1": [],
+    "diag-network/transcript-1": [],
+    "diag-permission/transcript-1": [],
+    "diag-provider-down/transcript-1": [],
+    "diag-provider-timeout/transcript-1": [],
+    "diag-rate-limit/transcript-1": [],
+    "diag-stream-cut/transcript-1": [],
+    "diag-usage-limit/transcript-1": [],
+    "force-stopped/transcript-1": [],
+    "force-stopped/transcript-2": [],
+    "force-stopped/transcript-3": [],
+    "fork-only/fork-bad-credentials/transcript-1": [],
+    "fork-only/fork-bad-credentials/transcript-1-ledger": [],
+    "fork-only/fork-chaos-transient/transcript-1": [
+      "/work/chaos-transient",
+      "/work/chaos-transient/textkit/core.py",
+      "/work/chaos-transient/textkit/__init__.py",
+      "/work/chaos-transient/tests/test_core.py",
+      "/work/chaos-transient/textkit/core.py",
+      "/work/chaos-transient/textkit/__init__.py",
+      "/work/chaos-transient/tests/test_core.py"
+    ],
+    "fork-only/fork-chaos-transient/transcript-1-ledger": [
+      "/work/chaos-transient",
+      "/work/chaos-transient/textkit/core.py",
+      "/work/chaos-transient/textkit/__init__.py",
+      "/work/chaos-transient/tests/test_core.py",
+      "/work/chaos-transient/textkit/core.py",
+      "/work/chaos-transient/textkit/__init__.py"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py",
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py",
+      "textkit/core.py",
+      "textkit/__init__.py"
+    ],
+    "fork-only/fork-controller-killed/transcript-1": [
+      "/work/controller-killed",
+      "/work/controller-killed/textkit/core.py",
+      "/work/controller-killed/textkit/__init__.py",
+      "/work/controller-killed/tests/test_core.py",
+      "/work/controller-killed/textkit/core.py",
+      "/work/controller-killed/textkit/__init__.py",
+      "/work/controller-killed/tests/test_core.py",
+      "/work/controller-killed/.gitignore"
+    ],
+    "fork-only/fork-controller-killed/transcript-1-ledger": [
+      "/work/controller-killed",
+      "/work/controller-killed/textkit/core.py",
+      "/work/controller-killed/textkit/__init__.py",
+      "/work/controller-killed/tests/test_core.py",
+      "/work/controller-killed/textkit/core.py",
+      "/work/controller-killed/textkit/__init__.py",
+      "/work/controller-killed/.gitignore"
+    ],
+    "fork-only/fork-controller-killed/transcript-2": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-controller-killed/transcript-2-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-controller-killed/transcript-3": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-controller-killed/transcript-3-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-force-stopped/transcript-1": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/.gitignore"
+    ],
+    "fork-only/fork-force-stopped/transcript-1-ledger": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/tests/test_core.py",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/.gitignore"
+    ],
+    "fork-only/fork-force-stopped/transcript-2": [],
+    "fork-only/fork-force-stopped/transcript-3": [],
+    "fork-only/fork-happy-path/transcript-1": [
+      "/work/happy-path",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py"
+    ],
+    "fork-only/fork-happy-path/transcript-1-ledger": [
+      "/work/happy-path",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py"
+    ],
+    "fork-only/fork-happy-path/transcript-2": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-happy-path/transcript-2-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-happy-path/transcript-3": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-happy-path/transcript-3-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-late-failure/transcript-1": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py",
+      "textkit/core.py",
+      "textkit/__init__.py"
+    ],
+    "fork-only/fork-late-failure/transcript-2": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-late-failure/transcript-3": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-replay/transcript-1": [
+      "/work/happy-path",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py"
+    ],
+    "fork-only/fork-replay/transcript-1-ledger": [
+      "/work/happy-path",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py",
+      "/work/happy-path/textkit/core.py",
+      "/work/happy-path/textkit/__init__.py",
+      "/work/happy-path/tests/test_core.py"
+    ],
+    "fork-only/fork-replay/transcript-2": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-replay/transcript-2-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-replay/transcript-3": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-replay/transcript-3-ledger": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-resumed/transcript-1": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py"
+    ],
+    "fork-only/fork-resumed/transcript-1-ledger": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py"
+    ],
+    "fork-only/fork-resumed/transcript-2": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py"
+    ],
+    "fork-only/fork-resumed/transcript-2-ledger": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py"
+    ],
+    "fork-only/fork-resumed/transcript-3": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py"
+    ],
+    "fork-only/fork-resumed/transcript-3-ledger": [
+      "/work/force-stopped",
+      "/work/force-stopped/textkit/core.py",
+      "/work/force-stopped/textkit/__init__.py",
+      "/work/force-stopped/tests/test_core.py"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": [
+      "/work/reviewer-never-satisfied",
+      "/work/reviewer-never-satisfied/textkit/core.py",
+      "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "/work/reviewer-never-satisfied/tests/test_core.py",
+      "/work/reviewer-never-satisfied/textkit/core.py",
+      "/work/reviewer-never-satisfied/textkit/__init__.py",
+      "/work/reviewer-never-satisfied/tests/test_core.py"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": [
+      "textkit/core.py",
+      "tests/test_core.py",
+      "textkit/core.py"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": [
+      "textkit/core.py",
+      "textkit/__init__.py",
+      "tests/test_core.py"
+    ],
+    "fork-only/fork-steered/transcript-1": [
+      "out.txt",
+      "out.txt"
+    ],
+    "fork-only/fork-steered/transcript-1-ledger": [
+      "out.txt",
+      "out.txt"
+    ],
+    "fork-only/fork-unknown-model/transcript-1": [],
+    "fork-only/fork-unknown-model/transcript-1-ledger": [],
+    "fork-only/fork-worker-timeout/transcript-1": [
+      "/work/worker-timeout",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py"
+    ],
+    "fork-only/fork-worker-timeout/transcript-1-ledger": [
+      "/work/worker-timeout",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/tests/test_core.py",
+      "/work/worker-timeout/textkit/core.py",
+      "/work/worker-timeout/textkit/__init__.py"
+    ],
+    "fork-only/replay-child/transcript-1": [],
+    "fork-only/replay-child/transcript-2": [],
+    "fork-only/replay-child/transcript-3": [],
+    "fork-only/replay-parent/transcript-1": [],
+    "fork-only/replay-parent/transcript-2": [],
+    "fork-only/replay-parent/transcript-3": [],
+    "fork-only/steered/transcript-1": [],
+    "graph-ended-other/transcript-1": [],
+    "graph-ended-other/transcript-2": [],
+    "graph-ended-other/transcript-3": [],
+    "lane-mixed/transcript-1": [],
+    "lane-unknown-harness/transcript-1": [],
+    "map-parallel/transcript-1": [],
+    "map-parallel/transcript-2": [],
+    "map-parallel/transcript-3": [],
+    "no-checkpoints/transcript-1": [],
+    "resumed-original/transcript-1": [],
+    "resumed-successor/transcript-1": [],
+    "resumed-successor/transcript-2": [],
+    "resumed-successor/transcript-3": [],
+    "running-live/transcript-1": [],
+    "running-live/transcript-2": [],
+    "running-live/transcript-3": [],
+    "running-live/transcript-4": [],
+    "running-live/transcript-5": [],
+    "running-stock/transcript-1": [],
+    "runtime-failed-checkpoint/transcript-1": [],
+    "runtime-failed-permission/transcript-1": [],
+    "runtime-failed-storage/transcript-1": [],
+    "runtime-failed-unknown/transcript-1": [],
+    "runtime-lost/transcript-1": [],
+    "stalled-disk/transcript-1": [],
+    "stalled-live-usage/transcript-1": [
+      "/work/stalled-live-usage/repo/textkit/core.py"
+    ],
+    "stalled-live-usage/transcript-1-ledger": [],
+    "stalled-then-closed/transcript-1": [
+      "/work/stalled-then-closed/repo/textkit/core.py"
+    ],
+    "stalled-then-closed/transcript-1-ledger": [],
+    "stalled/transcript-1": [],
+    "succeeded-stock/transcript-1": [],
+    "succeeded-stock/transcript-2": [],
+    "succeeded-stock/transcript-3": [],
+    "succeeded/transcript-1": [
+      "/work/succeeded/repo/textkit/core.py"
+    ],
+    "succeeded/transcript-1-ledger": [],
+    "succeeded/transcript-2": [
+      "/work/succeeded/repo/textkit/core.py"
+    ],
+    "succeeded/transcript-2-ledger": [],
+    "succeeded/transcript-3": [
+      "/work/succeeded/repo/textkit/core.py"
+    ],
+    "succeeded/transcript-3-ledger": [],
+    "tool-output-rate-limit/transcript-1": [],
+    "voided/transcript-1": [],
+    "voided/transcript-2": [],
+    "work-exhausted/transcript-1": [],
+    "work-exhausted/transcript-2": [],
+    "work-exhausted/transcript-3": [],
+    "work-exhausted/transcript-4": [],
+    "work-exhausted/transcript-5": [],
+    "work-exhausted/transcript-6": [],
+    "zeroshot-16/zeroshot16-normal/transcript-1": [
+      "/work/normal",
+      "/work/normal/textkit/core.py",
+      "/work/normal/textkit/__init__.py",
+      "/work/normal/tests/test_core.py",
+      "/work/normal/textkit/core.py",
+      "/work/normal/textkit/__init__.py",
+      "/work/normal/tests/test_core.py"
+    ],
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": [
+      "/work/normal",
+      "/work/normal/textkit/core.py",
+      "/work/normal/textkit/__init__.py",
+      "/work/normal/tests/test_core.py",
+      "/work/normal/textkit/core.py",
+      "/work/normal/textkit/__init__.py"
+    ],
+    "zeroshot-16/zeroshot16-steered/transcript-1": [
+      "/work/steered/out.txt"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": [],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": []
+  }
+}

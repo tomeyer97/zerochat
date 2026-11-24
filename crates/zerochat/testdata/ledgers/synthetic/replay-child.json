@@ -1,0 +1,344 @@
+{
+ "name": "replay-child",
+ "runId": "01a1ee76-6920-7023-8023-000000000023",
+ "where": "local",
+ "tags": [
+  "fork-only",
+  "replay",
+  "reused",
+  "prior_execution"
+ ],
+ "stock": false,
+ "stored": {
+  "admitted": {
+   "title": "replay child",
+   "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+     "kind": "seq",
+     "name": "run",
+     "children": [
+      {
+       "kind": "loop",
+       "name": "change_loop",
+       "maxIterations": 2,
+       "body": {
+        "kind": "seq",
+        "name": "iteration",
+        "children": [
+         {
+          "kind": "step",
+          "name": "code",
+          "worker": "builtin.agent.worker@1",
+          "instructions": "Implement the task.",
+          "attempts": 2,
+          "timeoutMs": 45000
+         },
+         {
+          "kind": "par",
+          "name": "reviews",
+          "children": [
+           {
+            "kind": "verifier",
+            "name": "acceptance",
+            "worker": "builtin.agent.reviewer@1",
+            "attempts": 1
+           },
+           {
+            "kind": "verifier",
+            "name": "code_review",
+            "worker": "builtin.agent.reviewer@1",
+            "attempts": 1
+           }
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "kind": "fail",
+       "name": "change_attempts_exhausted",
+       "reason": "change_attempts_exhausted"
+      }
+     ]
+    }
+   },
+   "initialInput": {
+    "task": "Add slugify() to textkit."
+   },
+   "runtime": {
+    "harness": "claude",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+     "code": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "acceptance": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "code_review": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "worker": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     }
+    }
+   },
+   "source": {
+    "repository": "example/textkit",
+    "branch": "main",
+    "revision": "0000000000000000000000000000000000000000"
+   },
+   "replayOf": {
+    "runId": "01a1ee57-4860-7001-8001-000000000001",
+    "fromCheckpoint": "ckpt-0002",
+    "changed": [
+     "runtime"
+    ]
+   }
+  },
+  "snapshot": {
+   "runId": "01a1ee76-6920-7023-8023-000000000023",
+   "title": "replay child",
+   "phase": "finished",
+   "cursor": "v2:9",
+   "terminal": {
+    "status": "succeeded",
+    "output": null
+   },
+   "forceStopRequested": false
+  }
+ },
+ "events": [
+  {
+   "seq": 1,
+   "body": {
+    "kind": "safe_log",
+    "execution": null,
+    "timestamp": 1795002101000,
+    "stream": "system",
+    "line": "Preparing execution environment"
+   }
+  },
+  {
+   "seq": 2,
+   "body": {
+    "kind": "run_started"
+   }
+  },
+  {
+   "seq": 3,
+   "body": {
+    "kind": "prior_execution",
+    "execution": {
+     "execution": 1,
+     "node_instance": 1,
+     "attempt": 1,
+     "occurrence": {
+      "node": "code",
+      "mapIndices": []
+     },
+     "input": {
+      "task": "Add slugify() to textkit."
+     },
+     "state": {
+      "Settled": {
+       "outcome": {
+        "status": "verified",
+        "output": null,
+        "artifacts": []
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "seq": 4,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee76-6920-7023-8023-000000000023",
+     "node": "acceptance",
+     "nodeInstance": 1,
+     "execution": 2
+    },
+    "occurrence": {
+     "node": "acceptance",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    },
+    "at": 1795002101500,
+    "provider": {
+     "harness": "claude",
+     "model": "claude-haiku-4-5",
+     "effort": "medium"
+    },
+    "workspace": {
+     "commit": "0000000000000000000000000000000000000002"
+    }
+   }
+  },
+  {
+   "seq": 5,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee76-6920-7023-8023-000000000023",
+     "node": "code_review",
+     "nodeInstance": 1,
+     "execution": 3
+    },
+    "occurrence": {
+     "node": "code_review",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    },
+    "at": 1795002102000,
+    "provider": {
+     "harness": "claude",
+     "model": "claude-haiku-4-5",
+     "effort": "medium"
+    },
+    "workspace": {
+     "commit": "0000000000000000000000000000000000000003"
+    }
+   }
+  },
+  {
+   "seq": 6,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee76-6920-7023-8023-000000000023",
+      "node": "acceptance",
+      "nodeInstance": 1,
+      "execution": 2
+     },
+     "outcome": {
+      "status": "verifier",
+      "output": null,
+      "signals": {
+       "verdict": "accepted"
+      },
+      "diagnostic": null,
+      "artifacts": []
+     }
+    },
+    "at": 1795002102500,
+    "workspace": {
+     "commit": "0000000000000000000000000000000000000066",
+     "base": "0000000000000000000000000000000000000002",
+     "files": [
+      {
+       "path": "textkit/core.py",
+       "status": "modified",
+       "additions": 12,
+       "deletions": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "seq": 7,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee76-6920-7023-8023-000000000023",
+      "node": "code_review",
+      "nodeInstance": 1,
+      "execution": 3
+     },
+     "outcome": {
+      "status": "verifier",
+      "output": null,
+      "signals": {
+       "verdict": "approved"
+      },
+      "diagnostic": null,
+      "artifacts": []
+     }
+    },
+    "at": 1795002103000,
+    "workspace": {
+     "commit": "0000000000000000000000000000000000000067",
+     "base": "0000000000000000000000000000000000000003",
+     "files": [
+      {
+       "path": "textkit/core.py",
+       "status": "modified",
+       "additions": 12,
+       "deletions": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "seq": 8,
+   "body": {
+    "kind": "token_usage_observed",
+    "execution": 2,
+    "usage": {
+     "inputTokens": 1200,
+     "outputTokens": 800,
+     "cacheReadInputTokens": 40000,
+     "cacheCreationInputTokens": 3000
+    },
+    "costUsd": "0.01",
+    "model": "claude-haiku-4-5"
+   }
+  },
+  {
+   "seq": 9,
+   "body": {
+    "kind": "terminal",
+    "result": {
+     "status": "succeeded",
+     "output": null
+    }
+   }
+  }
+ ],
+ "recovery": {
+  "workspace": "/work/replay-child/repo",
+  "resumedFrom": "01a1ee57-4860-7001-8001-000000000001"
+ },
+ "controllerPid": null,
+ "checkpoints": true,
+ "sessions": {}
+}

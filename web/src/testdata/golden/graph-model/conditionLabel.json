@@ -1,0 +1,840 @@
+{
+  "graphs": {
+    "fork-only/fork-bad-credentials#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-chaos-transient#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-chaos-usage-limit#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-controller-killed#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-controller-killed#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-controller-killed#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-force-stopped#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-force-stopped#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-force-stopped#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-happy-path#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-happy-path#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-happy-path#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-late-failure#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-late-failure#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-late-failure#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-replay#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-replay#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-replay#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-resumed#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-resumed#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-resumed#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-reviewer-never-satisfied#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-reviewer-never-satisfied#1@review_result": [
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      },
+      {
+        "label": "acceptance or code errored",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "fork-only/fork-reviewer-never-satisfied#2@review_result": [
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      },
+      {
+        "label": "acceptance and code accepted",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "fork-only/fork-steered#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-unknown-model#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "fork-only/fork-worker-timeout#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "zeroshot-16/zeroshot16-normal#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "zeroshot-16/zeroshot16-steered#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ],
+    "zeroshot-16/zeroshot16-unknown-model#0@worker_result": [
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      },
+      {
+        "label": "worker errored",
+        "title": "when worker errored"
+      }
+    ]
+  },
+  "table": [
+    [
+      "<undefined>",
+      {
+        "a,b": {
+          "label": "if",
+          "title": "<undefined>"
+        },
+        "a,b,c,review,w": {
+          "label": "if",
+          "title": "<undefined>"
+        },
+        "none": {
+          "label": "if",
+          "title": "<undefined>"
+        }
+      }
+    ],
+    [
+      null,
+      {
+        "a,b": {
+          "label": "if",
+          "title": "null"
+        },
+        "a,b,c,review,w": {
+          "label": "if",
+          "title": "null"
+        },
+        "none": {
+          "label": "if",
+          "title": "null"
+        }
+      }
+    ],
+    [
+      "text",
+      {
+        "a,b": {
+          "label": "if",
+          "title": "\"text\""
+        },
+        "a,b,c,review,w": {
+          "label": "if",
+          "title": "\"text\""
+        },
+        "none": {
+          "label": "if",
+          "title": "\"text\""
+        }
+      }
+    ],
+    [
+      {},
+      {
+        "a,b": {
+          "label": "if",
+          "title": "when {}"
+        },
+        "a,b,c,review,w": {
+          "label": "if",
+          "title": "when {}"
+        },
+        "none": {
+          "label": "if",
+          "title": "when {}"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "accepted"
+        ],
+        "value": {
+          "name": "review"
+        }
+      },
+      {
+        "a,b": {
+          "label": "review accepted",
+          "title": "when review accepted"
+        },
+        "a,b,c,review,w": {
+          "label": "accepted",
+          "title": "when review accepted"
+        },
+        "none": {
+          "label": "review accepted",
+          "title": "when review accepted"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "accepted"
+        ],
+        "value": {
+          "field": "verdict",
+          "name": "review"
+        }
+      },
+      {
+        "a,b": {
+          "label": "review accepted",
+          "title": "when review accepted"
+        },
+        "a,b,c,review,w": {
+          "label": "accepted",
+          "title": "when review accepted"
+        },
+        "none": {
+          "label": "review accepted",
+          "title": "when review accepted"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "high",
+          "very_high"
+        ],
+        "value": {
+          "field": "risk_level",
+          "name": "triage"
+        }
+      },
+      {
+        "a,b": {
+          "label": "triage risk level: high or very high",
+          "title": "when triage risk level: high or very high"
+        },
+        "a,b,c,review,w": {
+          "label": "triage risk level: high or very high",
+          "title": "when triage risk level: high or very high"
+        },
+        "none": {
+          "label": "triage risk level: high or very high",
+          "title": "when triage risk level: high or very high"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "crash",
+          "malformed",
+          "refusal",
+          "timeout"
+        ],
+        "value": {
+          "name": "w",
+          "source": "error"
+        }
+      },
+      {
+        "a,b": {
+          "label": "w errored",
+          "title": "when w errored"
+        },
+        "a,b,c,review,w": {
+          "label": "errored",
+          "title": "when w errored"
+        },
+        "none": {
+          "label": "w errored",
+          "title": "when w errored"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "timeout",
+          "odd_label"
+        ],
+        "value": {
+          "name": "w",
+          "source": "error"
+        }
+      },
+      {
+        "a,b": {
+          "label": "w timed out or odd label",
+          "title": "when w timed out or odd label"
+        },
+        "a,b,c,review,w": {
+          "label": "timed out or odd label",
+          "title": "when w timed out or odd label"
+        },
+        "none": {
+          "label": "w timed out or odd label",
+          "title": "when w timed out or odd label"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [],
+        "value": {
+          "name": "w"
+        }
+      },
+      {
+        "a,b": {
+          "label": "w ",
+          "title": "when w "
+        },
+        "a,b,c,review,w": {
+          "label": "",
+          "title": "when w "
+        },
+        "none": {
+          "label": "w ",
+          "title": "when w "
+        }
+      }
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "ok"
+        ]
+      },
+      {
+        "a,b": {
+          "label": "in",
+          "title": "when ? ok"
+        },
+        "a,b,c,review,w": {
+          "label": "in",
+          "title": "when ? ok"
+        },
+        "none": {
+          "label": "in",
+          "title": "when ? ok"
+        }
+      }
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "a"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "b"
+            }
+          }
+        ],
+        "kind": "all"
+      },
+      {
+        "a,b": {
+          "label": "both accepted",
+          "title": "when all of: a accepted; b accepted"
+        },
+        "a,b,c,review,w": {
+          "label": "both accepted",
+          "title": "when all of: a accepted; b accepted"
+        },
+        "none": {
+          "label": "a and b accepted",
+          "title": "when all of: a accepted; b accepted"
+        }
+      }
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "a"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "b"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "c"
+            }
+          }
+        ],
+        "kind": "any"
+      },
+      {
+        "a,b": {
+          "label": "any of 3 rejected",
+          "title": "when any of: a rejected; b rejected; c rejected"
+        },
+        "a,b,c,review,w": {
+          "label": "any rejected",
+          "title": "when any of: a rejected; b rejected; c rejected"
+        },
+        "none": {
+          "label": "any of 3 rejected",
+          "title": "when any of: a rejected; b rejected; c rejected"
+        }
+      }
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "a"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "b"
+            }
+          }
+        ],
+        "kind": "all"
+      },
+      {
+        "a,b": {
+          "label": "all of 2 conditions",
+          "title": "when all of: a accepted; b rejected"
+        },
+        "a,b,c,review,w": {
+          "label": "all of 2 conditions",
+          "title": "when all of: a accepted; b rejected"
+        },
+        "none": {
+          "label": "all of 2 conditions",
+          "title": "when all of: a accepted; b rejected"
+        }
+      }
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "a"
+            }
+          }
+        ],
+        "kind": "all"
+      },
+      {
+        "a,b": {
+          "label": "accepted",
+          "title": "when all of: a accepted"
+        },
+        "a,b,c,review,w": {
+          "label": "accepted",
+          "title": "when all of: a accepted"
+        },
+        "none": {
+          "label": "a accepted",
+          "title": "when all of: a accepted"
+        }
+      }
+    ],
+    [
+      {
+        "guards": [],
+        "kind": "all"
+      },
+      {
+        "a,b": {
+          "label": "all of 0 conditions",
+          "title": "when all of: "
+        },
+        "a,b,c,review,w": {
+          "label": "all of 0 conditions",
+          "title": "when all of: "
+        },
+        "none": {
+          "label": "all of 0 conditions",
+          "title": "when all of: "
+        }
+      }
+    ],
+    [
+      {
+        "guard": {
+          "kind": "in",
+          "labels": [
+            "accepted"
+          ],
+          "value": {
+            "name": "a"
+          }
+        },
+        "kind": "not"
+      },
+      {
+        "a,b": {
+          "label": "not accepted",
+          "title": "when not (a accepted)"
+        },
+        "a,b,c,review,w": {
+          "label": "not accepted",
+          "title": "when not (a accepted)"
+        },
+        "none": {
+          "label": "not a accepted",
+          "title": "when not (a accepted)"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "not"
+      },
+      {
+        "a,b": {
+          "label": "not",
+          "title": "when {\"kind\":\"not\"}"
+        },
+        "a,b,c,review,w": {
+          "label": "not",
+          "title": "when {\"kind\":\"not\"}"
+        },
+        "none": {
+          "label": "not",
+          "title": "when {\"kind\":\"not\"}"
+        }
+      }
+    ],
+    [
+      {
+        "guards": [
+          {
+            "guard": {
+              "kind": "in",
+              "labels": [
+                "x"
+              ],
+              "value": {
+                "name": "a"
+              }
+            },
+            "kind": "not"
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "y"
+            ],
+            "value": {
+              "name": "a"
+            }
+          }
+        ],
+        "kind": "any"
+      },
+      {
+        "a,b": {
+          "label": "any of 2 conditions",
+          "title": "when any of: not (a x); a y"
+        },
+        "a,b,c,review,w": {
+          "label": "any of 2 conditions",
+          "title": "when any of: not (a x); a y"
+        },
+        "none": {
+          "label": "any of 2 conditions",
+          "title": "when any of: not (a x); a y"
+        }
+      }
+    ],
+    [
+      {
+        "kind": "mystery",
+        "value": {
+          "name": "z"
+        }
+      },
+      {
+        "a,b": {
+          "label": "mystery",
+          "title": "when {\"kind\":\"mystery\",\"value\":{\"name\":\"z\"}}"
+        },
+        "a,b,c,review,w": {
+          "label": "mystery",
+          "title": "when {\"kind\":\"mystery\",\"value\":{\"name\":\"z\"}}"
+        },
+        "none": {
+          "label": "mystery",
+          "title": "when {\"kind\":\"mystery\",\"value\":{\"name\":\"z\"}}"
+        }
+      }
+    ]
+  ]
+}

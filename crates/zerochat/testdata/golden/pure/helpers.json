@@ -1,0 +1,112 @@
+{
+  "claudeProjectSlug": [
+    [
+      "/work/a b/c.d",
+      "-work-a-b-c-d"
+    ],
+    [
+      "/home/user/x_y",
+      "-home-user-x-y"
+    ]
+  ],
+  "isControllerOf": [
+    [
+      "zeroshot\u0000__zeroshot-run-controller\u0000--bootstrap\u0000/s/runs/RID/controller.bootstrap.json",
+      "RID",
+      true
+    ],
+    [
+      "zeroshot\u0000status\u0000RID",
+      "RID",
+      false
+    ],
+    [
+      "zeroshot\u0000__zeroshot-run-controller\u0000--bootstrap\u0000/s/runs/OTHER/x",
+      "RID",
+      false
+    ]
+  ],
+  "localRunIds": [
+    "01a1ee8c-6220-7038-8038-000000000038",
+    "01a1ee8b-c5e0-7026-8026-000000000026",
+    "01a1ee87-3200-7025-8025-000000000025",
+    "01a1ee84-24c0-7032-8032-000000000032",
+    "01a1ee59-1d20-7003-8003-000000000003"
+  ],
+  "parseIsoMillis": [
+    [
+      "2026-11-04T10:12:31.984Z",
+      1793787151984
+    ],
+    [
+      "2026-11-04T10:12:31Z",
+      1793787151000
+    ],
+    [
+      "2026-11-04T12:12:31.984+02:00",
+      1793787151984
+    ],
+    [
+      "2026-11-04",
+      null
+    ],
+    [
+      "garbage",
+      null
+    ],
+    [
+      "",
+      null
+    ]
+  ],
+  "steerBody": [
+    [
+      "Message from the user, sent while you were working. They read: x\nbody",
+      "body"
+    ],
+    [
+      "plain",
+      null
+    ],
+    [
+      "Message from the user, sent while you were working",
+      null
+    ]
+  ],
+  "uuidV7Millis": [
+    [
+      "01a1f8c8-2984-7640-bc40-aaa51b13aa24",
+      1795175229828
+    ],
+    [
+      "0",
+      null
+    ],
+    [
+      "",
+      null
+    ],
+    [
+      "zzzzzzzz-zzzz",
+      null
+    ],
+    [
+      "01a1f8c8",
+      null
+    ]
+  ],
+  "validRunId": [
+    [
+      "01a1f8c8-2984-7640-bc40-aaa51b13aa24",
+      true
+    ],
+    [
+      "-01a1f8c8-2984-7640-bc40-aaa51b13aa2",
+      false
+    ],
+    [
+      "x",
+      false
+    ]
+  ]
+}

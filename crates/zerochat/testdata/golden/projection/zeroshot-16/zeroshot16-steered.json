@@ -1,0 +1,672 @@
+{
+  "backgroundAgents": [
+    {
+      "errors": 0,
+      "firstAt": 1795175383842,
+      "lastAt": 1795175388161,
+      "lastLine": "{\"diagnostic\":null,\"signals\":{}}",
+      "lines": 14,
+      "name": "active_memory_graph",
+      "outcome": "failed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175362487,
+      "lastAt": 1795175365190,
+      "lastLine": "{\"diagnostic\":null,\"signals\":{}}",
+      "lines": 18,
+      "name": "active_memory_graph_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175378559,
+      "lastAt": 1795175390635,
+      "lastLine": "{\"diagnostic\":null,\"signals\":{}}",
+      "lines": 17,
+      "name": "active_memory_repository",
+      "outcome": "failed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175358380,
+      "lastAt": 1795175360556,
+      "lastLine": "{\"diagnostic\":null,\"signals\":{}}",
+      "lines": 16,
+      "name": "active_memory_repository_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    }
+  ],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 52252,
+    "cacheReadInputTokens": 87263,
+    "inputTokens": 48,
+    "outputTokens": 9293
+  },
+  "costEstimated": true,
+  "costUsd": 0.0344845,
+  "createdAt": 1795175263420,
+  "cursor": 107,
+  "endedAt": 1795175347302,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "estimate",
+      "costUsd": 0.0344845,
+      "diagnostic": null,
+      "durationMs": 78187,
+      "endSeq": 24,
+      "endedAt": 1795175347223,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+      },
+      "lastActivityAt": 1795175346717,
+      "logLines": 14,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 4,
+      "startedAt": 1795175269036,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 5,
+      "usage": {
+        "cacheCreationInputTokens": 9333,
+        "cacheReadInputTokens": 107365,
+        "inputTokens": 42,
+        "outputTokens": 1008
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": null
+    }
+  ],
+  "failure": null,
+  "features": {
+    "exactTimes": true,
+    "providerCost": false,
+    "toolCalls": true,
+    "workspaceSnapshots": false
+  },
+  "graph": {
+    "bounds": {
+      "attemptsPerNode": {
+        "worker": 1
+      },
+      "maxNodeExecutions": 1,
+      "peakConcurrency": 1,
+      "termination": {
+        "kind": "acyclic",
+        "order": [
+          "run",
+          "worker",
+          "worker_result",
+          "worker_failed",
+          "done"
+        ]
+      }
+    },
+    "initialInput": {
+      "fields": {
+        "task": {
+          "required": true,
+          "type": {
+            "kind": "string"
+          }
+        }
+      },
+      "kind": "record"
+    },
+    "policy": {
+      "default": "deny",
+      "policy": "policy.native-v2@1"
+    },
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "attempts": 1,
+          "input": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          },
+          "inputBindings": [
+            {
+              "target": [
+                "task"
+              ],
+              "value": {
+                "path": [
+                  "task"
+                ],
+                "source": "state"
+              }
+            }
+          ],
+          "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+          "kind": "step",
+          "name": "worker",
+          "output": {
+            "kind": "null"
+          },
+          "worker": "builtin.agent.worker@1",
+          "writeBindings": []
+        },
+        {
+          "branches": [
+            {
+              "node": {
+                "kind": "fail",
+                "name": "worker_failed",
+                "reason": "worker_failed"
+              },
+              "when": {
+                "kind": "in",
+                "labels": [
+                  "crash",
+                  "malformed",
+                  "refusal",
+                  "timeout"
+                ],
+                "value": {
+                  "field": null,
+                  "name": "worker",
+                  "source": "error"
+                }
+              }
+            }
+          ],
+          "kind": "choice",
+          "name": "worker_result",
+          "otherwise": {
+            "bindings": [],
+            "kind": "succeed",
+            "name": "done",
+            "output": {
+              "kind": "null"
+            }
+          },
+          "promotedStatePaths": [],
+          "state": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          }
+        }
+      ],
+      "kind": "seq",
+      "name": "run",
+      "promotedStatePaths": [],
+      "state": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      }
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "worker",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": "builtin.agent.worker@1"
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "choice",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_result",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": "worker_failed",
+      "harness": "claude",
+      "instructions": null,
+      "kind": "fail",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_failed",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "succeed",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "done",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    }
+  ],
+  "initialInput": {
+    "task": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "worker"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795175390885,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": false,
+    "workspace": "<root>/work/steered"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 9333,
+    "cacheReadInputTokens": 107365,
+    "inputTokens": 42,
+    "outputTokens": 1008
+  },
+  "nodes": {
+    "worker": {
+      "activeSince": null,
+      "costEstimated": true,
+      "costUsd": 0.0344845,
+      "elapsedMs": 78187,
+      "executions": [
+        1
+      ],
+      "rounds": 1,
+      "state": "succeeded",
+      "usage": {
+        "cacheCreationInputTokens": 9333,
+        "cacheReadInputTokens": 107365,
+        "inputTokens": 42,
+        "outputTokens": 1008
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1f8c8-acbc-7ed0-b0bf-40743f8ad243",
+  "runLog": [
+    {
+      "at": 1795175264093,
+      "seq": 1,
+      "stream": "system",
+      "text": "Zeroshot version: 16.1.0"
+    },
+    {
+      "at": 1795175264169,
+      "seq": 2,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795175269036,
+      "seq": 4,
+      "stream": "system",
+      "text": "worker started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795175302606,
+      "seq": 11,
+      "stream": "system",
+      "text": "Message to all agents: Change of plan: in step 4 write BANANA instead of APPLE."
+    },
+    {
+      "at": 1795175317805,
+      "seq": 12,
+      "stream": "system",
+      "text": "Message to all agents: Also: skip step 3, it is not needed."
+    },
+    {
+      "at": 1795175339951,
+      "seq": 16,
+      "stream": "system",
+      "text": "worker received the message"
+    },
+    {
+      "at": 1795175339951,
+      "seq": 17,
+      "stream": "system",
+      "text": "worker received the message"
+    },
+    {
+      "at": 1795175347223,
+      "seq": 24,
+      "stream": "system",
+      "text": "worker finished"
+    },
+    {
+      "at": 1795175347301,
+      "seq": 25,
+      "stream": "system",
+      "text": "Run succeeded; Active Memory postmortem is running"
+    },
+    {
+      "at": 1795175347353,
+      "seq": 27,
+      "stream": "system",
+      "text": "Active Memory postmortem started"
+    },
+    {
+      "at": 1795175347413,
+      "seq": 28,
+      "stream": "system",
+      "text": "Active Memory supplied manifest: known=true, snapshot_generation=0, supplied_revisions=0"
+    },
+    {
+      "at": 1795175347542,
+      "seq": 29,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance started"
+    },
+    {
+      "at": 1795175347544,
+      "seq": 30,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance started"
+    },
+    {
+      "at": 1795175347545,
+      "seq": 31,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph started"
+    },
+    {
+      "at": 1795175347545,
+      "seq": 32,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository started"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175358380,
+      "seq": 33,
+      "stream": "system",
+      "text": "I'm analyzing the graph execution as an Active Memory postmortem specialist.\n\n**Execution Summary:**\n- The worker node executed a task to run three `sleep 20` commands and write a word to `out.txt`\n- All three sleep commands completed successfully (v2:9, v2:13, v2:15)\n- The worker wrote \"BANANA\" to out.txt instead of the default \"APPLE\" (v2:19)\n- The output at v2:18 indicates the worker received an instruction to use \"BANANA\" instead\n\n**Evidence Analysis:**\n- `manifest_known`: true\n- `supplied_lessons`: {} (empty)\n- `supplied_manifest_total`: 0\n\nSince no lessons were supplied for maintenance, there are no decisions to make about keeping, adapting, retiring, or deferring existing lesson cards."
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175359959,
+      "seq": 45,
+      "stream": "system",
+      "text": "Claude tool call: StructuredOutput id=toolu_01UowtLDiLJx5K1DMg7tDaGQ status=unknown\n{\"response\":{\"diagnostic\":null,\"output\":{\"decisions\":[]},\"signals\":{}}}"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175359971,
+      "seq": 46,
+      "stream": "system",
+      "text": "Claude tool completed: StructuredOutput id=toolu_01UowtLDiLJx5K1DMg7tDaGQ status=unknown\nStructured output provided successfully"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175360556,
+      "seq": 49,
+      "stream": "system",
+      "text": "{\"diagnostic\":null,\"signals\":{}}"
+    },
+    {
+      "at": 1795175361401,
+      "seq": 50,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance completed"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175362487,
+      "seq": 51,
+      "stream": "system",
+      "text": "I'm reviewing this graph node execution as an Active Memory postmortem specialist. Let me analyze the evidence:\n\n**Execution Summary:**\n- Node: `worker` (agent)\n- Task: Execute three `sleep 20` commands, then write a word to `out.txt`\n- Authored instruction: Default word is APPLE unless overridden\n- Actual result: Worker wrote BANANA and output \"Got your message! I've already completed step 3, but I'm adjusting step 4 to write BANANA instead.\"\n\n**Key Observation:**\nThe initial task input contains no override message—only the default instruction to write APPLE. The worker claimed to receive an override but no such instruction appears in the execution records. Steps 1–3 (the sleep commands) executed correctly.\n\n**Lesson Assessment:**\n- `supplied_lessons`: empty (no lessons provided)\n- `supplied_manifest_total`: 0\n- `manifest_known`: true\n\nSince there are no supplied lessons in this maintenance batch, there are no existing lesson decisions to maintain, adapt, retire, or defer."
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175364606,
+      "seq": 65,
+      "stream": "system",
+      "text": "Claude tool call: StructuredOutput id=toolu_01T56Xo3amLiLBAiFHSs3K8t status=unknown\n{\"response\":{\"diagnostic\":null,\"output\":{\"decisions\":[]},\"signals\":{}}}"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175364623,
+      "seq": 66,
+      "stream": "system",
+      "text": "Claude tool completed: StructuredOutput id=toolu_01T56Xo3amLiLBAiFHSs3K8t status=unknown\nStructured output provided successfully"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175365190,
+      "seq": 69,
+      "stream": "system",
+      "text": "{\"diagnostic\":null,\"signals\":{}}"
+    },
+    {
+      "at": 1795175365275,
+      "seq": 70,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance completed"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175378559,
+      "seq": 71,
+      "stream": "system",
+      "text": "Looking at the evidence from this graph execution, I need to analyze the runtime records and identify high-impact, non-obvious lessons.\n\n**Key observation:** The task explicitly stated to write \"APPLE\" to out.txt \"unless the person running this run told you otherwise.\" However:\n1. The agent claimed to have received a message to change this (\"Got your message!\")\n2. The agent wrote \"BANANA\" instead\n3. No such message appears anywhere in the execution records or tool observations\n\nThis represents a discrepancy between the agent's claim about its instruction source and the recorded evidence. Let me verify the current state of the file and check if there are any other contextual details."
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175380601,
+      "seq": 77,
+      "stream": "system",
+      "text": "Claude tool call: Read id=toolu_01DTHu9HqDpvfPGXpTnAwjkb status=unknown\n{\"file_path\":\"/work/steered/out.txt\"}"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175380678,
+      "seq": 79,
+      "stream": "system",
+      "text": "Claude tool completed: Read id=toolu_01DTHu9HqDpvfPGXpTnAwjkb status=unknown\n1\tBANANA"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175383842,
+      "seq": 80,
+      "stream": "system",
+      "text": "Looking at the execution evidence, I need to identify high-impact, non-obvious lessons that would prevent recurring issues.\n\n**Key observation from the evidence:**\n\nThe task explicitly stated: \"write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise.\"\n\nThe agent's behavior:\n- Completed the three `sleep 20` commands as expected (v2:7–v2:15)\n- At v2:18, stated: \"Got your message! I've already completed step 3, but I'm adjusting step 4 to write BANANA instead.\"\n- Wrote \"BANANA\" to out.txt (v2:19–v2:20) instead of \"APPLE\"\n\n**The issue:** The agent claims to have received an override instruction (\"Got your message!\"), but no such instruction is visible in the execution logs. The only input was the original task. This creates a gap between claimed input and observable evidence.\n\n**Why this matters:** This is a material deviation from specified behavior triggered by an unverifiable condition, suggesting a systematic issue with how conditional instructions are handled when overrides are claimed but not documented in logs.\n\n**Impact:** High—it affects output correctness. Non-obvious—the deviation was justified by claiming external input, masking the core problem. Recurring—any future conditional instruction (\"do X unless told Y\") could exhibit the same pattern."
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175386134,
+      "seq": 89,
+      "stream": "system",
+      "text": "The file contains \"BANANA\" confirming the agent wrote the override value. Now I'll extract the lesson.\n\nThe evidence reveals a significant discrepancy: the worker node claimed to follow an instruction modification (\"Got your message!\") that is not visible anywhere in the execution records—not in the tool observations, records array, or any captured event. The base instruction explicitly said to write \"APPLE unless the person running this run told you otherwise,\" but neither the conditional trigger nor the override instruction appears in the documented execution trace.\n\nThis is a high-impact, non-obvious pattern worth documenting:\n- **High-impact**: Instruction assertions without evidence affect system reliability and debuggability\n- **Non-obvious**: Requires comparing agent output claims against recorded execution events\n- **Saves effort**: Future runs can implement safeguards to close the observability gap"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175387864,
+      "seq": 95,
+      "stream": "system",
+      "text": "Claude tool call: StructuredOutput id=toolu_016RfHJh2MaJdU9v6ZQCA41i status=unknown\n{\"response\":{\"diagnostic\":null,\"output\":{\"lessons\":[{\"costly_recurring_reason\":\"When agents apply alternate paths in conditional instructions while claiming external override input that is not visible in execution logs, it creates unverifiable divergence between expected and actual output.\",\"files\":[\"out.txt\"],\"folders\":[],\"identifiers\":[\"APPLE\",\"BANANA\"],\"keyword_groups\":[[\"conditional\",\"instructions\"],[\"override\",\"verification\"]],\"node_id\":\"worker\",\"recommendation\":\"For conditional instructions ('do X unless told Y'), require agents to explicitly state the override condition before applying it and ensure all override input is captured in verifiable logs.\",\"references\":[\"v2:18\",\"v2:19\",\"v2:20\"],\"repository_specific\":false,\"title\":\"Conditional instructions without documented overrides create behavioral divergence\"}]},\"signals\":{}}}"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175387881,
+      "seq": 96,
+      "stream": "system",
+      "text": "Claude tool completed: StructuredOutput id=toolu_016RfHJh2MaJdU9v6ZQCA41i status=unknown\nStructured output provided successfully"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175388161,
+      "seq": 99,
+      "stream": "system",
+      "text": "{\"diagnostic\":null,\"signals\":{}}"
+    },
+    {
+      "at": 1795175388365,
+      "seq": 100,
+      "stream": "error",
+      "text": "Active Memory active_memory_graph failed: findings rejected: cited references do not include observed main-run evidence for this node"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175390331,
+      "seq": 101,
+      "stream": "system",
+      "text": "Claude tool call: StructuredOutput id=toolu_015qbNkUEXuoFHjYoWAWL1W5 status=unknown\n{\"response\":{\"diagnostic\":null,\"output\":{\"lessons\":[{\"costly_recurring_reason\":\"Worker asserted following a message-based instruction override without that message, trigger, or decision appearing in execution records, creating a gap between claimed and documented instruction sources.\",\"files\":[\"out.txt\"],\"folders\":[],\"identifiers\":[\"BANANA\",\"APPLE\",\"out.txt\"],\"keyword_groups\":[[\"instruction\",\"override\",\"execution\"],[\"agent\",\"verification\",\"observability\"]],\"node_id\":\"worker\",\"recommendation\":\"For tasks with conditional instructions that agents may override, require explicit logging of instruction modifications and synchronous validation before the agent deviates from base instructions. Implement structured state tracking to prevent agent claims of instruction receipt without matching evidence in execution records.\",\"references\":[\"Initial task instruction: write APPLE unless told otherwise\",\"v2:18 — Agent output claiming message receipt\",\"v2:19 — Write tool observation of BANANA to out.txt\",\"tool_observations seq 4 — no prior message event recorded\"],\"repository_specific\":true,\"title\":\"Agent claimed instruction modification with no recorded evidence\"}]},\"signals\":{}}}"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175390340,
+      "seq": 102,
+      "stream": "system",
+      "text": "Claude tool completed: StructuredOutput id=toolu_015qbNkUEXuoFHjYoWAWL1W5 status=unknown\nStructured output provided successfully"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175390635,
+      "seq": 104,
+      "stream": "system",
+      "text": "{\"diagnostic\":null,\"signals\":{}}"
+    },
+    {
+      "at": 1795175390802,
+      "seq": 105,
+      "stream": "error",
+      "text": "Active Memory active_memory_repository failed: findings rejected: invalid evidence references"
+    },
+    {
+      "at": 1795175390885,
+      "seq": 106,
+      "stream": "error",
+      "text": "Active Memory postmortem completed: 2 roles completed, 2 failed, 0 mutations published, cancelled=false, timed_out=false"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "maxConcurrency": 64,
+    "nodes": {
+      "worker": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic",
+    "size": "host"
+  },
+  "source": null,
+  "startedAt": 1795175264093,
+  "status": "succeeded",
+  "target": "local",
+  "terminal": {
+    "output": null,
+    "status": "succeeded"
+  },
+  "title": "steered [zeroshot16]",
+  "usage": {
+    "cacheCreationInputTokens": 61585,
+    "cacheReadInputTokens": 194628,
+    "inputTokens": 90,
+    "outputTokens": 10301
+  },
+  "usageLive": false,
+  "usagePending": false
+}

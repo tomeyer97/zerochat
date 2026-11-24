@@ -1,0 +1,72 @@
+{
+  "body": {
+    "errors": [],
+    "info": {
+      "agentHarness": "claude",
+      "modelOverride": null,
+      "nodes": [
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": null,
+          "loopName": null,
+          "model": "claude-haiku-4-5",
+          "name": "explore",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": null,
+          "loopName": null,
+          "model": "claude-sonnet-5",
+          "name": "build",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "verifier",
+          "loopMax": 3,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "coverage",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "verifier",
+          "loopMax": 3,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "bugfinder",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "verifier",
+          "loopMax": 3,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "triage",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": 3,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "repair",
+          "parallel": null
+        }
+      ],
+      "runs": 0,
+      "runtimeFile": "runtime-sonnet-build.json",
+      "runtimeMatches": true,
+      "source": "variant",
+      "variant": "clone-v1"
+    },
+    "warnings": []
+  },
+  "status": 200
+}

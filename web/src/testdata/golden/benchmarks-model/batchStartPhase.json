@@ -1,0 +1,61 @@
+{
+  "batches": {
+    "20261107-222316-71f62e": null,
+    "20261107-222316-910b7d": null,
+    "20261108-142204-d474ae": null,
+    "20261108-152720-fb0664": null,
+    "20261108-170007-63721d": null,
+    "20261108-170009-cace9c": null,
+    "label_clone-v1": null,
+    "label_clone-v1-sonnet-build": null,
+    "label_ctrlc-test": null,
+    "label_haiku-adversarial": null,
+    "label_haiku-prototype-plan": null,
+    "label_k8s-sc-sonnet5": null,
+    "label_replay-build-haiku": null,
+    "label_replay-build-sonnet": null,
+    "label_replay-sonnet-explore-haiku-build": null,
+    "label_sc-template-haiku": null,
+    "label_smoke-haiku": null,
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5": null,
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5": null,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5": null,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5": null,
+    "label_ticket-v1": null
+  },
+  "missing": [
+    [
+      "started-here",
+      404,
+      "starting",
+      null,
+      "starting"
+    ],
+    [
+      "started-long-ago",
+      404,
+      null,
+      null,
+      null
+    ],
+    [
+      "started-now",
+      404,
+      "starting",
+      null,
+      "starting"
+    ],
+    [
+      "never",
+      404,
+      null,
+      null,
+      null
+    ]
+  ],
+  "table": [
+    "failed_to_start",
+    "starting",
+    null
+  ]
+}

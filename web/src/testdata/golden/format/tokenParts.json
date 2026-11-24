@@ -1,0 +1,1543 @@
+{
+  "executions": {
+    "attempts-exhausted#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "attempts-exhausted#2": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "closing-postmortem#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "codex-estimate#1": {
+      "cached": null,
+      "total": "93k tokens"
+    },
+    "copilot-session#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "delivery-failed#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "delivery-failed#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "delivery-failed#3": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "diag-api-hang#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "diag-code-authentication-required#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-crash#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-input-required#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-malformed-result#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-other#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-policy-denied#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-refusal#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-code-timeout#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-context#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-credentials#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-disk#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-malformed-stream#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-missing-cli#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-model#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-network#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-permission#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-provider-down#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-provider-timeout#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-rate-limit#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-stream-cut#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "diag-usage-limit#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "force-stopped#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "force-stopped#2": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "force-stopped#3": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/fork-bad-credentials#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/fork-chaos-transient#1": {
+      "cached": "206k cached",
+      "total": "223k tokens"
+    },
+    "fork-only/fork-chaos-usage-limit#1": {
+      "cached": "106k cached",
+      "total": "121k tokens"
+    },
+    "fork-only/fork-controller-killed#1": {
+      "cached": "353k cached",
+      "total": "371k tokens"
+    },
+    "fork-only/fork-controller-killed#2": {
+      "cached": "91k cached",
+      "total": "99k tokens"
+    },
+    "fork-only/fork-controller-killed#3": {
+      "cached": "87k cached",
+      "total": "99k tokens"
+    },
+    "fork-only/fork-force-stopped#1": {
+      "cached": "501k cached",
+      "total": "523k tokens"
+    },
+    "fork-only/fork-force-stopped#2": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/fork-force-stopped#3": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/fork-happy-path#1": {
+      "cached": "275k cached",
+      "total": "293k tokens"
+    },
+    "fork-only/fork-happy-path#2": {
+      "cached": "87k cached",
+      "total": "99k tokens"
+    },
+    "fork-only/fork-happy-path#3": {
+      "cached": "62k cached",
+      "total": "74k tokens"
+    },
+    "fork-only/fork-late-failure#1": {
+      "cached": "325k cached",
+      "total": "342k tokens"
+    },
+    "fork-only/fork-late-failure#2": {
+      "cached": "87k cached",
+      "total": "99k tokens"
+    },
+    "fork-only/fork-late-failure#3": {
+      "cached": "87k cached",
+      "total": "99k tokens"
+    },
+    "fork-only/fork-replay#1": {
+      "cached": "271k cached",
+      "total": "283k tokens"
+    },
+    "fork-only/fork-replay#2": {
+      "cached": "116k cached",
+      "total": "126k tokens"
+    },
+    "fork-only/fork-replay#3": {
+      "cached": "91k cached",
+      "total": "100k tokens"
+    },
+    "fork-only/fork-resumed#1": {
+      "cached": "164k cached",
+      "total": "173k tokens"
+    },
+    "fork-only/fork-resumed#2": {
+      "cached": "112k cached",
+      "total": "125k tokens"
+    },
+    "fork-only/fork-resumed#3": {
+      "cached": "140k cached",
+      "total": "149k tokens"
+    },
+    "fork-only/fork-reviewer-never-satisfied#1": {
+      "cached": "333k cached",
+      "total": "350k tokens"
+    },
+    "fork-only/fork-reviewer-never-satisfied#2": {
+      "cached": "91k cached",
+      "total": "99k tokens"
+    },
+    "fork-only/fork-reviewer-never-satisfied#3": {
+      "cached": "87k cached",
+      "total": "100k tokens"
+    },
+    "fork-only/fork-reviewer-never-satisfied#4": {
+      "cached": "166k cached",
+      "total": "174k tokens"
+    },
+    "fork-only/fork-reviewer-never-satisfied#5": {
+      "cached": "142k cached",
+      "total": "151k tokens"
+    },
+    "fork-only/fork-reviewer-never-satisfied#6": {
+      "cached": "92k cached",
+      "total": "101k tokens"
+    },
+    "fork-only/fork-steered#1": {
+      "cached": "109k cached",
+      "total": "120k tokens"
+    },
+    "fork-only/fork-unknown-model#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/fork-worker-timeout#1": {
+      "cached": "386k cached",
+      "total": "407k tokens"
+    },
+    "fork-only/replay-child#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/replay-child#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "fork-only/replay-child#3": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "fork-only/replay-parent#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "fork-only/replay-parent#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "fork-only/replay-parent#3": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "fork-only/steered#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "graph-ended-other#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "graph-ended-other#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "graph-ended-other#3": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "lane-mixed#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "lane-unknown-harness#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "map-parallel#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "map-parallel#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "map-parallel#3": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "no-checkpoints#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "resumed-original#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "resumed-successor#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "resumed-successor#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "resumed-successor#3": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "running-live#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "running-live#2": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "running-live#3": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "running-live#4": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "running-live#5": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "running-stock#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "runtime-failed-checkpoint#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "runtime-failed-permission#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "runtime-failed-storage#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "runtime-failed-unknown#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "runtime-lost#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "stalled#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "stalled-disk#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "stalled-live-usage#1": {
+      "cached": "49k cached",
+      "total": "54k tokens"
+    },
+    "stalled-then-closed#1": {
+      "cached": "49k cached",
+      "total": "54k tokens"
+    },
+    "succeeded#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "succeeded#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "succeeded#3": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "succeeded-stock#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "succeeded-stock#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "succeeded-stock#3": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "tool-output-rate-limit#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "voided#1": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "voided#2": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "work-exhausted#1": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "work-exhausted#2": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "work-exhausted#3": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "work-exhausted#4": {
+      "cached": "40k cached",
+      "total": "45k tokens"
+    },
+    "work-exhausted#5": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "work-exhausted#6": {
+      "cached": null,
+      "total": "0 tokens"
+    },
+    "zeroshot-16/zeroshot16-normal#1": {
+      "cached": "160k cached",
+      "total": "175k tokens"
+    },
+    "zeroshot-16/zeroshot16-steered#1": {
+      "cached": "107k cached",
+      "total": "118k tokens"
+    },
+    "zeroshot-16/zeroshot16-unknown-model#1": {
+      "cached": null,
+      "total": "0 tokens"
+    }
+  },
+  "runs": {
+    "admitted-only": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "attempts-exhausted": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "checkout-unavailable": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "closing-postmortem": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "3.5k tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "3.5k tokens"
+      }
+    },
+    "codex-estimate": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "93k tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "93k tokens"
+      }
+    },
+    "copilot-session": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "delivery-failed": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      },
+      "usage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      }
+    },
+    "diag-api-hang": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "diag-code-authentication-required": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-crash": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-input-required": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-malformed-result": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-other": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-policy-denied": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-refusal": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-code-timeout": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-context": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-credentials": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-disk": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-malformed-stream": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-missing-cli": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-model": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-network": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-permission": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-provider-down": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-provider-timeout": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-rate-limit": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-stream-cut": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "diag-usage-limit": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "force-stopped": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "fork-only/fork-bad-credentials": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "fork-only/fork-chaos-transient": {
+      "backgroundUsage": {
+        "cached": "197k cached",
+        "total": "288k tokens"
+      },
+      "nodeUsage": {
+        "cached": "206k cached",
+        "total": "223k tokens"
+      },
+      "usage": {
+        "cached": "403k cached",
+        "total": "511k tokens"
+      }
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "106k cached",
+        "total": "121k tokens"
+      },
+      "usage": {
+        "cached": "106k cached",
+        "total": "121k tokens"
+      }
+    },
+    "fork-only/fork-controller-killed": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "530k cached",
+        "total": "569k tokens"
+      },
+      "usage": {
+        "cached": "530k cached",
+        "total": "569k tokens"
+      }
+    },
+    "fork-only/fork-force-stopped": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "501k cached",
+        "total": "523k tokens"
+      },
+      "usage": {
+        "cached": "501k cached",
+        "total": "523k tokens"
+      }
+    },
+    "fork-only/fork-happy-path": {
+      "backgroundUsage": {
+        "cached": "273k cached",
+        "total": "435k tokens"
+      },
+      "nodeUsage": {
+        "cached": "424k cached",
+        "total": "465k tokens"
+      },
+      "usage": {
+        "cached": "697k cached",
+        "total": "900k tokens"
+      }
+    },
+    "fork-only/fork-late-failure": {
+      "backgroundUsage": {
+        "cached": "275k cached",
+        "total": "432k tokens"
+      },
+      "nodeUsage": {
+        "cached": "499k cached",
+        "total": "541k tokens"
+      },
+      "usage": {
+        "cached": "773k cached",
+        "total": "973k tokens"
+      }
+    },
+    "fork-only/fork-replay": {
+      "backgroundUsage": {
+        "cached": "287k cached",
+        "total": "428k tokens"
+      },
+      "nodeUsage": {
+        "cached": "478k cached",
+        "total": "508k tokens"
+      },
+      "usage": {
+        "cached": "765k cached",
+        "total": "935k tokens"
+      }
+    },
+    "fork-only/fork-resumed": {
+      "backgroundUsage": {
+        "cached": "325k cached",
+        "total": "477k tokens"
+      },
+      "nodeUsage": {
+        "cached": "416k cached",
+        "total": "447k tokens"
+      },
+      "usage": {
+        "cached": "741k cached",
+        "total": "924k tokens"
+      }
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "backgroundUsage": {
+        "cached": "506k cached",
+        "total": "674k tokens"
+      },
+      "nodeUsage": {
+        "cached": "911k cached",
+        "total": "976k tokens"
+      },
+      "usage": {
+        "cached": "1.4M cached",
+        "total": "1.7M tokens"
+      }
+    },
+    "fork-only/fork-steered": {
+      "backgroundUsage": {
+        "cached": "185k cached",
+        "total": "242k tokens"
+      },
+      "nodeUsage": {
+        "cached": "109k cached",
+        "total": "120k tokens"
+      },
+      "usage": {
+        "cached": "293k cached",
+        "total": "362k tokens"
+      }
+    },
+    "fork-only/fork-unknown-model": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "fork-only/fork-worker-timeout": {
+      "backgroundUsage": {
+        "cached": "182k cached",
+        "total": "291k tokens"
+      },
+      "nodeUsage": {
+        "cached": "386k cached",
+        "total": "407k tokens"
+      },
+      "usage": {
+        "cached": "568k cached",
+        "total": "698k tokens"
+      }
+    },
+    "fork-only/replay-child": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "fork-only/replay-parent": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      },
+      "usage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      }
+    },
+    "fork-only/steered": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "graph-ended-other": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      },
+      "usage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      }
+    },
+    "lane-mixed": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "lane-unknown-harness": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "map-parallel": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "80k cached",
+        "total": "90k tokens"
+      },
+      "usage": {
+        "cached": "80k cached",
+        "total": "90k tokens"
+      }
+    },
+    "no-checkpoints": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "resumed-original": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "resumed-successor": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      },
+      "usage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      }
+    },
+    "running-live": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "running-stock": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "runtime-failed-checkpoint": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "runtime-failed-permission": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "runtime-failed-storage": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "runtime-failed-unknown": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "runtime-lost": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "stalled": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "stalled-disk": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "stalled-live-usage": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "49k cached",
+        "total": "54k tokens"
+      },
+      "usage": {
+        "cached": "49k cached",
+        "total": "54k tokens"
+      }
+    },
+    "stalled-then-closed": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "49k cached",
+        "total": "54k tokens"
+      },
+      "usage": {
+        "cached": "49k cached",
+        "total": "54k tokens"
+      }
+    },
+    "succeeded": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "9.2k tokens"
+      },
+      "nodeUsage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      },
+      "usage": {
+        "cached": "120k cached",
+        "total": "144k tokens"
+      }
+    },
+    "succeeded-stock": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      },
+      "usage": {
+        "cached": "120k cached",
+        "total": "135k tokens"
+      }
+    },
+    "tool-output-rate-limit": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "unknown-phase": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    },
+    "voided": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      },
+      "usage": {
+        "cached": "40k cached",
+        "total": "45k tokens"
+      }
+    },
+    "work-exhausted": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": "80k cached",
+        "total": "90k tokens"
+      },
+      "usage": {
+        "cached": "80k cached",
+        "total": "90k tokens"
+      }
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "backgroundUsage": {
+        "cached": "130k cached",
+        "total": "207k tokens"
+      },
+      "nodeUsage": {
+        "cached": "160k cached",
+        "total": "175k tokens"
+      },
+      "usage": {
+        "cached": "290k cached",
+        "total": "382k tokens"
+      }
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "backgroundUsage": {
+        "cached": "87k cached",
+        "total": "149k tokens"
+      },
+      "nodeUsage": {
+        "cached": "107k cached",
+        "total": "118k tokens"
+      },
+      "usage": {
+        "cached": "195k cached",
+        "total": "267k tokens"
+      }
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "backgroundUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "nodeUsage": {
+        "cached": null,
+        "total": "0 tokens"
+      },
+      "usage": {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    }
+  },
+  "table": [
+    [
+      "null",
+      {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    ],
+    [
+      "undefined",
+      {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    ],
+    [
+      "{\"inputTokens\":0,\"outputTokens\":0,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0}",
+      {
+        "cached": null,
+        "total": "0 tokens"
+      }
+    ],
+    [
+      "{\"inputTokens\":10,\"outputTokens\":5,\"cacheReadInputTokens\":15,\"cacheCreationInputTokens\":0}",
+      {
+        "cached": "15 cached",
+        "total": "30 tokens"
+      }
+    ],
+    [
+      "{\"inputTokens\":0,\"outputTokens\":0,\"cacheReadInputTokens\":1000,\"cacheCreationInputTokens\":0}",
+      {
+        "cached": null,
+        "total": "1k tokens"
+      }
+    ],
+    [
+      "{\"inputTokens\":1234,\"outputTokens\":5678,\"cacheReadInputTokens\":330000,\"cacheCreationInputTokens\":2100}",
+      {
+        "cached": "330k cached",
+        "total": "339k tokens"
+      }
+    ],
+    [
+      "{\"inputTokens\":null,\"cacheReadInputTokens\":5,\"cacheCreationInputTokens\":0}",
+      {
+        "cached": null,
+        "total": "5 tokens"
+      }
+    ]
+  ]
+}

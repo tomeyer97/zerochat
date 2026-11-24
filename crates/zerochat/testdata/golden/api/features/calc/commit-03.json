@@ -1,0 +1,8 @@
+{
+  "body": {
+    "commit": "8a6041f648bd35d951351e13baa397ec836e0237",
+    "diff": "diff --git a/calc/greet.py b/calc/greet.py\nindex cc3a122..2e86510 100644\n--- a/calc/greet.py\n+++ b/calc/greet.py\n@@ -1,2 +1,2 @@\n def greet(name):\n-    return 'hi ' + name\n+    return f'Hello, {name}!'",
+    "message": "Friendlier greeting\n\nSlice: 03"
+  },
+  "status": 200
+}

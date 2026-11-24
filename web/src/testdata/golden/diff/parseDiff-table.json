@@ -1,0 +1,396 @@
+[
+  [
+    "",
+    []
+  ],
+  [
+    "\n",
+    []
+  ],
+  [
+    "not a diff at all",
+    []
+  ],
+  [
+    "diff --git a/x.ts b/x.ts\nindex 5d21c42..0d25a22 100644\n--- a/x.ts\n+++ b/x.ts\n@@ -1,3 +1,4 @@ function f() {\n ctx\n-old\n+new\n+added\n ctx2\n",
+    [
+      {
+        "additions": 2,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -1,3 +1,4 @@ function f() {"
+          },
+          {
+            "kind": "ctx",
+            "newNo": 1,
+            "oldNo": 1,
+            "text": "ctx"
+          },
+          {
+            "kind": "del",
+            "oldNo": 2,
+            "text": "old"
+          },
+          {
+            "kind": "add",
+            "newNo": 2,
+            "text": "new"
+          },
+          {
+            "kind": "add",
+            "newNo": 3,
+            "text": "added"
+          },
+          {
+            "kind": "ctx",
+            "newNo": 4,
+            "oldNo": 3,
+            "text": "ctx2"
+          }
+        ],
+        "newPath": "x.ts",
+        "oldPath": "x.ts"
+      }
+    ]
+  ],
+  [
+    "diff --git a/new.txt b/new.txt\nnew file mode 100644\n--- /dev/null\n+++ b/new.txt\n@@ -0,0 +1 @@\n+hello\n\\ No newline at end of file",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 0,
+        "lines": [
+          {
+            "kind": "meta",
+            "text": "new file mode 100644"
+          },
+          {
+            "kind": "hunk",
+            "text": "@@ -0,0 +1 @@"
+          },
+          {
+            "kind": "add",
+            "newNo": 1,
+            "text": "hello"
+          },
+          {
+            "kind": "note",
+            "text": "\\ No newline at end of file"
+          }
+        ],
+        "newPath": "new.txt",
+        "oldPath": "new.txt"
+      }
+    ]
+  ],
+  [
+    "diff --git a/gone.txt b/gone.txt\ndeleted file mode 100644\n--- a/gone.txt\n+++ /dev/null\n@@ -1 +0,0 @@\n-bye\n",
+    [
+      {
+        "additions": 0,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "meta",
+            "text": "deleted file mode 100644"
+          },
+          {
+            "kind": "hunk",
+            "text": "@@ -1 +0,0 @@"
+          },
+          {
+            "kind": "del",
+            "oldNo": 1,
+            "text": "bye"
+          }
+        ],
+        "newPath": "gone.txt",
+        "oldPath": "gone.txt"
+      }
+    ]
+  ],
+  [
+    "diff --git a/old name.txt b/new name.txt\nsimilarity index 90%\nrename from old name.txt\nrename to new name.txt\n",
+    [
+      {
+        "additions": 0,
+        "binary": false,
+        "deletions": 0,
+        "lines": [
+          {
+            "kind": "meta",
+            "text": "similarity index 90%"
+          },
+          {
+            "kind": "meta",
+            "text": "rename from old name.txt"
+          },
+          {
+            "kind": "meta",
+            "text": "rename to new name.txt"
+          }
+        ],
+        "newPath": "new name.txt",
+        "oldPath": "old name.txt"
+      }
+    ]
+  ],
+  [
+    "diff --git a/img.png b/img.png\nBinary files a/img.png and b/img.png differ\n",
+    [
+      {
+        "additions": 0,
+        "binary": true,
+        "deletions": 0,
+        "lines": [
+          {
+            "kind": "meta",
+            "text": "Binary files a/img.png and b/img.png differ"
+          }
+        ],
+        "newPath": "img.png",
+        "oldPath": "img.png"
+      }
+    ]
+  ],
+  [
+    "--- a/headless.txt\n+++ b/headless.txt\n@@ -1 +1 @@\n-a\n+b\n",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -1 +1 @@"
+          },
+          {
+            "kind": "del",
+            "oldNo": 1,
+            "text": "a"
+          },
+          {
+            "kind": "add",
+            "newNo": 1,
+            "text": "b"
+          }
+        ],
+        "newPath": "headless.txt",
+        "oldPath": "headless.txt"
+      }
+    ]
+  ],
+  [
+    "@@ -5,2 +7,2 @@\n x\n-y\n+z\n",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -5,2 +7,2 @@"
+          },
+          {
+            "kind": "ctx",
+            "newNo": 7,
+            "oldNo": 5,
+            "text": "x"
+          },
+          {
+            "kind": "del",
+            "oldNo": 6,
+            "text": "y"
+          },
+          {
+            "kind": "add",
+            "newNo": 8,
+            "text": "z"
+          }
+        ],
+        "newPath": "",
+        "oldPath": ""
+      }
+    ]
+  ],
+  [
+    "diff --git a/a b/a\n@@ -1,2 +1,2 @@\n a\n\n-b\n+c\n… [diff truncated: 400 more lines]\n",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -1,2 +1,2 @@"
+          },
+          {
+            "kind": "ctx",
+            "newNo": 1,
+            "oldNo": 1,
+            "text": "a"
+          },
+          {
+            "kind": "ctx",
+            "newNo": 2,
+            "oldNo": 2,
+            "text": ""
+          },
+          {
+            "kind": "del",
+            "oldNo": 3,
+            "text": "b"
+          },
+          {
+            "kind": "add",
+            "newNo": 3,
+            "text": "c"
+          },
+          {
+            "kind": "note",
+            "text": "… [diff truncated: 400 more lines]"
+          }
+        ],
+        "newPath": "a",
+        "oldPath": "a"
+      }
+    ]
+  ],
+  [
+    "diff --git a/a b/a\n--- a/a\n+++ b/a\n@@ -1 +1 @@\n---- a line that starts with dashes\n++++ and pluses\n",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -1 +1 @@"
+          },
+          {
+            "kind": "del",
+            "oldNo": 1,
+            "text": "--- a line that starts with dashes"
+          },
+          {
+            "kind": "add",
+            "newNo": 1,
+            "text": "+++ and pluses"
+          }
+        ],
+        "newPath": "a",
+        "oldPath": "a"
+      }
+    ]
+  ],
+  [
+    "diff --git a/a b/a\n@@ malformed hunk @@\n+x\n",
+    [
+      {
+        "additions": 0,
+        "binary": false,
+        "deletions": 0,
+        "lines": [
+          {
+            "kind": "meta",
+            "text": "@@ malformed hunk @@"
+          },
+          {
+            "kind": "meta",
+            "text": "+x"
+          }
+        ],
+        "newPath": "a",
+        "oldPath": "a"
+      }
+    ]
+  ],
+  [
+    "diff --git weird header\n--- a/p\n+++ b/q\n@@ -1 +1 @@\n-1\n+2",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -1 +1 @@"
+          },
+          {
+            "kind": "del",
+            "oldNo": 1,
+            "text": "1"
+          },
+          {
+            "kind": "add",
+            "newNo": 1,
+            "text": "2"
+          }
+        ],
+        "newPath": "q",
+        "oldPath": "p"
+      }
+    ]
+  ],
+  [
+    "diff --git a/one b/one\n--- a/one\n+++ b/one\n@@ -1 +1 @@\n-1\n+2\ndiff --git a/two b/two\n--- a/two\n+++ b/two\n@@ -10,0 +11,2 @@\n+3\n+4\n",
+    [
+      {
+        "additions": 1,
+        "binary": false,
+        "deletions": 1,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -1 +1 @@"
+          },
+          {
+            "kind": "del",
+            "oldNo": 1,
+            "text": "1"
+          },
+          {
+            "kind": "add",
+            "newNo": 1,
+            "text": "2"
+          }
+        ],
+        "newPath": "one",
+        "oldPath": "one"
+      },
+      {
+        "additions": 2,
+        "binary": false,
+        "deletions": 0,
+        "lines": [
+          {
+            "kind": "hunk",
+            "text": "@@ -10,0 +11,2 @@"
+          },
+          {
+            "kind": "add",
+            "newNo": 11,
+            "text": "3"
+          },
+          {
+            "kind": "add",
+            "newNo": 12,
+            "text": "4"
+          }
+        ],
+        "newPath": "two",
+        "oldPath": "two"
+      }
+    ]
+  ]
+]

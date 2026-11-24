@@ -1,0 +1,60 @@
+{
+  "rows": {
+    "detail/calc": null,
+    "detail/fresh": null,
+    "detail/paused": {
+      "slice": null,
+      "text": "Paused after 2 failures in a row"
+    },
+    "list/calc": null,
+    "list/fresh": null,
+    "list/paused": {
+      "slice": null,
+      "text": "Paused after 2 failures in a row"
+    }
+  },
+  "table": [
+    [
+      "",
+      {
+        "slice": null,
+        "text": "Paused: "
+      }
+    ],
+    [
+      "by you",
+      {
+        "slice": null,
+        "text": "Paused: by you"
+      }
+    ],
+    [
+      "1 infrastructure failure in a row",
+      {
+        "slice": null,
+        "text": "Paused after 1 failure in a row"
+      }
+    ],
+    [
+      "2 infrastructure failures in a row (last: 04: launch failed: boom)",
+      {
+        "slice": "04",
+        "text": "Paused after 2 failures in a row"
+      }
+    ],
+    [
+      "3 infrastructure failures in a row (last: 04 crashed)",
+      {
+        "slice": null,
+        "text": "Paused after 3 failures in a row"
+      }
+    ],
+    [
+      "x 2 infrastructure failures in a row",
+      {
+        "slice": null,
+        "text": "Paused: x 2 infrastructure failures in a row"
+      }
+    ]
+  ]
+}

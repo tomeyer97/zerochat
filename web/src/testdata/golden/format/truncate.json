@@ -1,0 +1,219 @@
+{
+  "runs": {
+    "admitted-only": "admitted only",
+    "attempts-exhausted": "attempts exhausted",
+    "checkout-unavailable": "checkout unavailable",
+    "closing-postmortem": "closing postmortem",
+    "codex-estimate": "codex estimate",
+    "copilot-session": "copilot session",
+    "delivery-failed": "delivery failed",
+    "diag-api-hang": "diag api hang",
+    "diag-code-authentication-required": "diag code authenticatio…",
+    "diag-code-crash": "diag code crash",
+    "diag-code-input-required": "diag code input required",
+    "diag-code-malformed-result": "diag code malformed res…",
+    "diag-code-other": "diag code other",
+    "diag-code-policy-denied": "diag code policy denied",
+    "diag-code-refusal": "diag code refusal",
+    "diag-code-timeout": "diag code timeout",
+    "diag-context": "diag context",
+    "diag-credentials": "diag credentials",
+    "diag-disk": "diag disk",
+    "diag-malformed-stream": "diag malformed stream",
+    "diag-missing-cli": "diag missing cli",
+    "diag-model": "diag model",
+    "diag-network": "diag network",
+    "diag-permission": "diag permission",
+    "diag-provider-down": "diag provider down",
+    "diag-provider-timeout": "diag provider timeout",
+    "diag-rate-limit": "diag rate limit",
+    "diag-stream-cut": "diag stream cut",
+    "diag-usage-limit": "diag usage limit",
+    "force-stopped": "force stopped",
+    "fork-only/fork-bad-credentials": "bad-credentials [fork]",
+    "fork-only/fork-chaos-transient": "chaos-transient [fork]",
+    "fork-only/fork-chaos-usage-limit": "chaos-usage-limit [fork]",
+    "fork-only/fork-controller-killed": "controller-killed [fork]",
+    "fork-only/fork-force-stopped": "force-stopped [fork]",
+    "fork-only/fork-happy-path": "happy-path [fork]",
+    "fork-only/fork-late-failure": "late-failure [fork]",
+    "fork-only/fork-replay": "happy-path replay [fork]",
+    "fork-only/fork-resumed": "force-stopped [fork]",
+    "fork-only/fork-reviewer-never-satisfied": "reviewer-never-satisfie…",
+    "fork-only/fork-steered": "steered [fork]",
+    "fork-only/fork-unknown-model": "unknown-model [fork]",
+    "fork-only/fork-worker-timeout": "worker-timeout [fork]",
+    "fork-only/replay-child": "replay child",
+    "fork-only/replay-parent": "replay parent",
+    "fork-only/steered": "steered",
+    "graph-ended-other": "graph ended other",
+    "lane-mixed": "lane mixed",
+    "lane-unknown-harness": "lane unknown harness",
+    "map-parallel": "map parallel",
+    "no-checkpoints": "no checkpoints",
+    "resumed-original": "resumed original",
+    "resumed-successor": "resumed successor",
+    "running-live": "running live",
+    "running-stock": "running stock",
+    "runtime-failed-checkpoint": "runtime failed checkpoi…",
+    "runtime-failed-permission": "runtime failed permissi…",
+    "runtime-failed-storage": "runtime failed storage",
+    "runtime-failed-unknown": "runtime failed unknown",
+    "runtime-lost": "runtime lost",
+    "stalled": "stalled",
+    "stalled-disk": "stalled disk",
+    "stalled-live-usage": "stalled live usage",
+    "stalled-then-closed": "stalled then closed",
+    "succeeded": "succeeded",
+    "succeeded-stock": "succeeded stock",
+    "tool-output-rate-limit": "tool output rate limit",
+    "unknown-phase": "unknown phase",
+    "voided": "voided",
+    "work-exhausted": "work exhausted",
+    "zeroshot-16/zeroshot16-normal": "normal [zeroshot16]",
+    "zeroshot-16/zeroshot16-steered": "steered [zeroshot16]",
+    "zeroshot-16/zeroshot16-unknown-model": "unknown-model [zeroshot…"
+  },
+  "table": [
+    [
+      "\"\" -1",
+      "…"
+    ],
+    [
+      "\"\" 0",
+      ""
+    ],
+    [
+      "\"\" 1",
+      ""
+    ],
+    [
+      "\"\" 2",
+      ""
+    ],
+    [
+      "\"\" 5",
+      ""
+    ],
+    [
+      "\"\" 6",
+      ""
+    ],
+    [
+      "\"\" 10",
+      ""
+    ],
+    [
+      "\"a\" -1",
+      "…"
+    ],
+    [
+      "\"a\" 0",
+      "…"
+    ],
+    [
+      "\"a\" 1",
+      "a"
+    ],
+    [
+      "\"a\" 2",
+      "a"
+    ],
+    [
+      "\"a\" 5",
+      "a"
+    ],
+    [
+      "\"a\" 6",
+      "a"
+    ],
+    [
+      "\"a\" 10",
+      "a"
+    ],
+    [
+      "\"abcdef\" -1",
+      "…"
+    ],
+    [
+      "\"abcdef\" 0",
+      "…"
+    ],
+    [
+      "\"abcdef\" 1",
+      "…"
+    ],
+    [
+      "\"abcdef\" 2",
+      "a…"
+    ],
+    [
+      "\"abcdef\" 5",
+      "abcd…"
+    ],
+    [
+      "\"abcdef\" 6",
+      "abcdef"
+    ],
+    [
+      "\"abcdef\" 10",
+      "abcdef"
+    ],
+    [
+      "\"abcdefghij\" -1",
+      "…"
+    ],
+    [
+      "\"abcdefghij\" 0",
+      "…"
+    ],
+    [
+      "\"abcdefghij\" 1",
+      "…"
+    ],
+    [
+      "\"abcdefghij\" 2",
+      "a…"
+    ],
+    [
+      "\"abcdefghij\" 5",
+      "abcd…"
+    ],
+    [
+      "\"abcdefghij\" 6",
+      "abcde…"
+    ],
+    [
+      "\"abcdefghij\" 10",
+      "abcdefghij"
+    ],
+    [
+      "\"é😀ü\" -1",
+      "…"
+    ],
+    [
+      "\"é😀ü\" 0",
+      "…"
+    ],
+    [
+      "\"é😀ü\" 1",
+      "…"
+    ],
+    [
+      "\"é😀ü\" 2",
+      "é…"
+    ],
+    [
+      "\"é😀ü\" 5",
+      "é😀ü"
+    ],
+    [
+      "\"é😀ü\" 6",
+      "é😀ü"
+    ],
+    [
+      "\"é😀ü\" 10",
+      "é😀ü"
+    ]
+  ]
+}

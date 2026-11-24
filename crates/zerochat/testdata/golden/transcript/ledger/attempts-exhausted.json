@@ -1,0 +1,34 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795000242500,
+          "kind": "error",
+          "text": "Node code failed: crash after 12.3s: node execution failed: provider failure: something odd"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  },
+  {
+    "execution": 2,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795000244500,
+          "kind": "error",
+          "text": "Node code failed: crash after 12.3s: node execution failed: provider failure: something odd"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  }
+]

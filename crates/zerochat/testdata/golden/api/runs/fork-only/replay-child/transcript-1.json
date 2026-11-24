@@ -1,0 +1,62 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": null,
+      "endSeq": 3,
+      "endedAt": null,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": null,
+      "logLines": 0,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "code",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": true,
+      "reusedFrom": "01a1ee57-4860-7001-8001-000000000001",
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": null,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": null
+    },
+    "instructions": "Implement the task.",
+    "sourceNote": "Claude's session log could not be matched to this node (this Zeroshot does not record the session id).",
+    "transcript": {
+      "items": [],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

@@ -1,0 +1,11 @@
+10:16:45 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] start label='sweep:sweep-triage-repair:repair#1:claude-haiku-4-5' version=116217a085 model=per-node art=/data/pb/runs/20261104-101645-9b2f84
+10:16:46 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] replay of 20261103-151748-ef96e3 repair#1: starting code = build#1 (snapshot)
+10:16:46 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+10:16:52 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] node start  repair (exec 1, attempt 1)
+10:19:20 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] node done   repair -> verified 
+10:19:36 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] agent finished: success — zeroshot succeeded
+10:19:37 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] running hidden tests (programbench eval)…
+10:20:42 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] score 139/224 (ok)
+10:20:45 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] own suite of submission.tar.gz: 49/49
+10:20:45 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] score per step: repair#1 62.1%, final 62.1%
+10:20:45 [20261104-101645-9b2f84 tomnomnom__gron.88a6234 s0] done: success

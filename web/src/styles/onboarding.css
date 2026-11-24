@@ -1,0 +1,212 @@
+/* Onboarding: the first-run card, the Zeroshot strip, the glossary, the first-visit hint, and
+   Home's visible column headers with the status legend. */
+
+/* ---------- first-run card (Home with no runs) ---------- */
+.onb-card {
+  max-width: 680px;
+  width: 100%;
+  margin: 12px auto 0;
+  padding: 18px 20px;
+  border: 1px dashed var(--card-border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--secondary);
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+.onb-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--ink);
+}
+.onb-checks {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 8px 14px;
+  font-size: 13px;
+  margin: 0;
+}
+.onb-checks > div {
+  display: contents;
+}
+.onb-checks dt {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 2px;
+}
+.onb-checks dd {
+  margin: 0;
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+.onb-path {
+  overflow-wrap: anywhere;
+}
+.onb-ok,
+.onb-bad {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+}
+.onb-ok svg {
+  color: var(--add-text);
+  flex-shrink: 0;
+}
+.onb-bad {
+  color: var(--error-text);
+}
+.onb-bad svg {
+  flex-shrink: 0;
+}
+.onb-command {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 100%;
+  min-width: 0;
+  background: var(--code-surface);
+  border-radius: 5px;
+  padding: 6px 6px 6px 10px;
+}
+@media (max-width: 480px) {
+  .onb-card {
+    padding: 14px;
+  }
+  .onb-checks {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .onb-checks dd {
+    margin-bottom: 8px;
+  }
+}
+/* Commands keep their lines (a wrapped command is hard to read); a long one scrolls. */
+.onb-command pre {
+  margin: 0;
+  min-width: 0;
+  overflow-x: auto;
+  white-space: pre;
+  word-break: normal;
+  padding-bottom: 2px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.onb-command code {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+/* ---------- Zeroshot strip (pages with runs, Zeroshot missing or too old) ---------- */
+.zeroshot-strip {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  padding: 3px 18px;
+  min-height: 26px;
+  font-size: 12.5px;
+  background: var(--warn-surface);
+  color: var(--warn);
+  border-bottom: 1px solid var(--warn-border);
+}
+.zeroshot-strip > svg {
+  flex-shrink: 0;
+}
+.zeroshot-strip details {
+  display: inline-flex;
+}
+.zeroshot-strip details[open] {
+  flex-basis: 100%;
+}
+.zeroshot-strip summary {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.zeroshot-strip details[open] summary {
+  margin-right: 8px;
+}
+.zeroshot-strip details code {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- glossary dialog ---------- */
+.glossary-setup {
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+.glossary {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 5px 14px;
+  font-size: 13px;
+  margin: 0;
+}
+.glossary > div {
+  display: contents;
+}
+.glossary dt {
+  font-weight: 600;
+  color: var(--ink);
+}
+.glossary dd {
+  margin: 0;
+  color: var(--secondary);
+}
+@media (max-width: 480px) {
+  .glossary {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .glossary dd {
+    margin-bottom: 6px;
+  }
+}
+
+/* ---------- first-visit hint ---------- */
+.first-visit-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 4px 4px 4px 12px;
+  border-radius: 6px;
+  background: var(--info-surface);
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+/* ---------- Home's run table: visible headers and the status legend ---------- */
+.run-table thead.run-table-head th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.run-table thead.run-table-head th.col-num {
+  text-align: right;
+}
+.status-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.status-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}

@@ -1,0 +1,11 @@
+16:02:05 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] start label='replay-build-haiku' version=bb95881efa model=per-node art=/data/pb/runs/20261103-160205-fb058c
+16:02:06 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] replay of 20261103-151748-ef96e3 build#1: starting code = explore#1 (snapshot)
+16:02:06 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+16:02:14 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] node start  build (exec 1, attempt 1)
+16:14:01 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] LIMIT: budget_exceeded after 715s, 1 steps
+16:14:01 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] force-stopping zeroshot run 01a1a1ee-890c-7f32-b250-1f1a312860b8
+16:14:02 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] node done   build -> error 
+16:14:02 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] agent finished: budget_exceeded — budget_exceeded after 715s, 1 steps
+16:14:03 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] running hidden tests (programbench eval)…
+16:15:22 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] score 118/224 (ok)
+16:15:22 [20261103-160205-fb058c tomnomnom__gron.88a6234 s0] done: budget_exceeded

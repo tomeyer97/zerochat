@@ -1,0 +1,80 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 1500,
+      "endSeq": 6,
+      "endedAt": 1795000423000,
+      "error": null,
+      "errorLines": [],
+      "harness": "codex",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795000422500,
+      "logLines": 1,
+      "mapIndices": [],
+      "model": "gpt-5-codex",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795000421500,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 50000,
+        "outputTokens": 3000
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Do the task.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795000422500,
+          "kind": "text",
+          "text": "Working."
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

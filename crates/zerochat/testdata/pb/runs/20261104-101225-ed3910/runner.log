@@ -1,0 +1,15 @@
+098dc s0] start label='clone-v1-sonnet-build' version=c4d472548d model=per-node art=/data/pb/runs/20261104-101225-ed3910
+10:12:25 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] pulling programbench/cheat_1776_cheat.b8098dc:task_cleanroom_v6 (first use, ~3 GB unpacked)…
+10:12:31 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] sandbox up; launching zeroshot
+10:12:37 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node start  explore (exec 1, attempt 1)
+10:14:55 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node done   explore -> verified 
+10:14:58 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node start  build (exec 2, attempt 1)
+10:46:55 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node done   build -> verified 
+10:47:01 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node start  coverage (exec 3, attempt 1)
+10:52:07 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node done   coverage -> verifier rejected
+10:52:11 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node start  bugfinder (exec 4, attempt 1)
+10:55:42 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node done   bugfinder -> verifier rejected
+10:55:46 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node start  triage (exec 5, attempt 1)
+10:59:35 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node done   triage -> verifier rejected
+10:59:39 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node start  repair (exec 6, attempt 1)
+11:06:46 [20261104-101225-ed3910 cheat__cheat.b8098dc s0] node done   rep…[fixture: 2570 more characters cut]

@@ -1,0 +1,108 @@
+{
+  "body": {
+    "batchId": "20261108-142204-d474ae",
+    "capUsd": 6.0,
+    "costUsd": 6.0021851,
+    "exitReason": "budget_exceeded after 2781s, 12 steps",
+    "failingTests": [
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+      "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+      "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+      "09547266f95c/eval.tests.test_argparse_validation.test_interleaved_flag_after_positionals_is_accepted",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+      "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+    ],
+    "label": "r2-hermetic",
+    "nodeCosts": [
+      {
+        "calls": 5,
+        "costUsd": 3.4608802,
+        "node": "repair"
+      },
+      {
+        "calls": 5,
+        "costUsd": 1.6779974,
+        "node": "oracle"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4560244,
+        "node": "explore"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4072831,
+        "node": "build"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 5.5061097,
+    "runId": "20261108-150036-3c2a78",
+    "score": 0.0,
+    "seed": 2,
+    "state": "over_budget",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 313
+      },
+      {
+        "node": "build#1",
+        "score": 0.373801917,
+        "seq": 1,
+        "testsPassed": 117,
+        "testsTotal": 313
+      },
+      {
+        "node": "repair#1",
+        "score": 0.373801917,
+        "seq": 2,
+        "testsPassed": 117,
+        "testsTotal": 313
+      },
+      {
+        "node": "repair#2",
+        "score": 0.361022364,
+        "seq": 3,
+        "testsPassed": 113,
+        "testsTotal": 313
+      },
+      {
+        "node": "repair#3",
+        "score": 0.469648562,
+        "seq": 4,
+        "testsPassed": 147,
+        "testsTotal": 313
+      },
+      {
+        "node": "repair#4",
+        "score": 0.469648562,
+        "seq": 5,
+        "testsPassed": 147,
+        "testsTotal": 313
+      },
+      {
+        "node": "final",
+        "score": 0.0,
+        "seq": 6,
+        "testsPassed": 0,
+        "testsTotal": 313
+      }
+    ],
+    "task": "yaa110__nomino.f892499",
+    "testsPassed": 0,
+    "testsTotal": 313,
+    "wallS": 3069.233799219,
+    "zeroshotRunId": "01a1bb76-0748-71e0-8942-70b40d062eb3"
+  },
+  "status": 200
+}

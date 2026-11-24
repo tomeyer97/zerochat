@@ -1,0 +1,582 @@
+{
+  "attempts-exhausted#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "attempts-exhausted#2": [
+    "round 1 of 2 · attempt 2 of 2",
+    "round 1",
+    "attempt 2 of 2"
+  ],
+  "closing-postmortem#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "codex-estimate#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "copilot-session#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "delivery-failed#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "delivery-failed#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "delivery-failed#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-api-hang#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-authentication-required#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-crash#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-input-required#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-malformed-result#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-other#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-policy-denied#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-refusal#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-code-timeout#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-context#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-credentials#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-disk#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-malformed-stream#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-missing-cli#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-model#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-network#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-permission#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-provider-down#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-provider-timeout#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-rate-limit#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-stream-cut#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "diag-usage-limit#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "force-stopped#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "force-stopped#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "force-stopped#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-bad-credentials#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-chaos-transient#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-chaos-usage-limit#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-controller-killed#1": [
+    "round 1 of 3",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-controller-killed#2": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-controller-killed#3": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-force-stopped#1": [
+    "round 1 of 3",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-force-stopped#2": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-force-stopped#3": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-happy-path#1": [
+    "round 1 of 3",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-happy-path#2": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-happy-path#3": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-late-failure#1": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-late-failure#2": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-late-failure#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-replay#1": [
+    "round 1 of 3",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-replay#2": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-replay#3": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-resumed#1": [
+    "round 1 of 3",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-resumed#2": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-resumed#3": [
+    "round 1 of 3 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-reviewer-never-satisfied#1": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-reviewer-never-satisfied#2": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-reviewer-never-satisfied#3": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-reviewer-never-satisfied#4": [
+    "round 2 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-reviewer-never-satisfied#5": [
+    "round 2 of 2 · attempt 1 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-reviewer-never-satisfied#6": [
+    "round 2 of 2 · attempt 1 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-steered#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-unknown-model#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/fork-worker-timeout#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/replay-child#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/replay-child#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/replay-child#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/replay-parent#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/replay-parent#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/replay-parent#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "fork-only/steered#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "graph-ended-other#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "graph-ended-other#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "graph-ended-other#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "lane-mixed#1": [
+    "round 1 of 1 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "lane-unknown-harness#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "map-parallel#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "map-parallel#2": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "map-parallel#3": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "no-checkpoints#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "resumed-original#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "resumed-successor#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "resumed-successor#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "resumed-successor#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "running-live#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "running-live#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "running-live#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "running-live#4": [
+    "round 2 of 2 · attempt 1 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "running-live#5": [
+    "round 2 of 2 · attempt 2 of 2",
+    "round 2",
+    "attempt 2 of 2"
+  ],
+  "running-stock#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "runtime-failed-checkpoint#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "runtime-failed-permission#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "runtime-failed-storage#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "runtime-failed-unknown#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "runtime-lost#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "stalled#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "stalled-disk#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "stalled-live-usage#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "stalled-then-closed#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "succeeded#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "succeeded#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "succeeded#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "succeeded-stock#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "succeeded-stock#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "succeeded-stock#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "tool-output-rate-limit#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "voided#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "voided#2": [
+    "round 2 of 2 · attempt 1 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "work-exhausted#1": [
+    "round 1 of 2 · attempt 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "work-exhausted#2": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "work-exhausted#3": [
+    "round 1 of 2",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "work-exhausted#4": [
+    "round 2 of 2 · attempt 1 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "work-exhausted#5": [
+    "round 2 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "work-exhausted#6": [
+    "round 2 of 2",
+    "round 2",
+    "attempt 1 of 2"
+  ],
+  "zeroshot-16/zeroshot16-normal#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "zeroshot-16/zeroshot16-steered#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ],
+  "zeroshot-16/zeroshot16-unknown-model#1": [
+    "",
+    "round 1",
+    "attempt 1 of 2"
+  ]
+}

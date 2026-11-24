@@ -1,0 +1,87 @@
+{
+  "body": {
+    "batchId": "20261108-142204-d474ae",
+    "capUsd": 6.0,
+    "costUsd": 6.0240695,
+    "exitReason": "budget_exceeded after 2259s, 6 steps",
+    "failingTests": [
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+      "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+      "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+      "09547266f95c/eval.tests.test_argparse_validation.test_interleaved_flag_after_positionals_is_accepted",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+      "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+    ],
+    "label": "r2-hermetic",
+    "nodeCosts": [
+      {
+        "calls": 2,
+        "costUsd": 2.8597815,
+        "node": "repair"
+      },
+      {
+        "calls": 1,
+        "costUsd": 1.977273,
+        "node": "build"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.6102825,
+        "node": "oracle"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.5767325,
+        "node": "explore"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 4.7575706,
+    "runId": "20261108-142204-d922d5",
+    "score": 0.0,
+    "seed": 0,
+    "state": "over_budget",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 313
+      },
+      {
+        "node": "build#1",
+        "score": 0.0,
+        "seq": 1,
+        "testsPassed": 0,
+        "testsTotal": 313
+      },
+      {
+        "node": "repair#1",
+        "score": 0.0,
+        "seq": 2,
+        "testsPassed": 0,
+        "testsTotal": 313
+      },
+      {
+        "node": "final",
+        "score": 0.0,
+        "seq": 3,
+        "testsPassed": 0,
+        "testsTotal": 313
+      }
+    ],
+    "task": "yaa110__nomino.f892499",
+    "testsPassed": 0,
+    "testsTotal": 313,
+    "wallS": 2311.217468262,
+    "zeroshotRunId": "01a1bb52-c46d-72e2-a295-74a45757c686"
+  },
+  "status": 200
+}

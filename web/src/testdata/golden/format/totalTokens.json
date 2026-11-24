@@ -1,0 +1,517 @@
+{
+  "executions": {
+    "attempts-exhausted#1": 0,
+    "attempts-exhausted#2": 0,
+    "closing-postmortem#1": 0,
+    "codex-estimate#1": 93000,
+    "copilot-session#1": 0,
+    "delivery-failed#1": 45000,
+    "delivery-failed#2": 45000,
+    "delivery-failed#3": 45000,
+    "diag-api-hang#1": 45000,
+    "diag-code-authentication-required#1": 0,
+    "diag-code-crash#1": 0,
+    "diag-code-input-required#1": 0,
+    "diag-code-malformed-result#1": 0,
+    "diag-code-other#1": 0,
+    "diag-code-policy-denied#1": 0,
+    "diag-code-refusal#1": 0,
+    "diag-code-timeout#1": 0,
+    "diag-context#1": 0,
+    "diag-credentials#1": 0,
+    "diag-disk#1": 0,
+    "diag-malformed-stream#1": 0,
+    "diag-missing-cli#1": 0,
+    "diag-model#1": 0,
+    "diag-network#1": 0,
+    "diag-permission#1": 0,
+    "diag-provider-down#1": 0,
+    "diag-provider-timeout#1": 0,
+    "diag-rate-limit#1": 0,
+    "diag-stream-cut#1": 0,
+    "diag-usage-limit#1": 0,
+    "force-stopped#1": 45000,
+    "force-stopped#2": 0,
+    "force-stopped#3": 0,
+    "fork-only/fork-bad-credentials#1": 0,
+    "fork-only/fork-chaos-transient#1": 222844,
+    "fork-only/fork-chaos-usage-limit#1": 120613,
+    "fork-only/fork-controller-killed#1": 371090,
+    "fork-only/fork-controller-killed#2": 98634,
+    "fork-only/fork-controller-killed#3": 99250,
+    "fork-only/fork-force-stopped#1": 522597,
+    "fork-only/fork-force-stopped#2": 0,
+    "fork-only/fork-force-stopped#3": 0,
+    "fork-only/fork-happy-path#1": 292784,
+    "fork-only/fork-happy-path#2": 98604,
+    "fork-only/fork-happy-path#3": 74070,
+    "fork-only/fork-late-failure#1": 342262,
+    "fork-only/fork-late-failure#2": 99415,
+    "fork-only/fork-late-failure#3": 99073,
+    "fork-only/fork-replay#1": 282589,
+    "fork-only/fork-replay#2": 125539,
+    "fork-only/fork-replay#3": 99683,
+    "fork-only/fork-resumed#1": 173272,
+    "fork-only/fork-resumed#2": 125057,
+    "fork-only/fork-resumed#3": 148940,
+    "fork-only/fork-reviewer-never-satisfied#1": 350400,
+    "fork-only/fork-reviewer-never-satisfied#2": 99293,
+    "fork-only/fork-reviewer-never-satisfied#3": 99693,
+    "fork-only/fork-reviewer-never-satisfied#4": 174421,
+    "fork-only/fork-reviewer-never-satisfied#5": 151467,
+    "fork-only/fork-reviewer-never-satisfied#6": 101057,
+    "fork-only/fork-steered#1": 119507,
+    "fork-only/fork-unknown-model#1": 0,
+    "fork-only/fork-worker-timeout#1": 406679,
+    "fork-only/replay-child#1": 0,
+    "fork-only/replay-child#2": 45000,
+    "fork-only/replay-child#3": 0,
+    "fork-only/replay-parent#1": 45000,
+    "fork-only/replay-parent#2": 45000,
+    "fork-only/replay-parent#3": 45000,
+    "fork-only/steered#1": 45000,
+    "graph-ended-other#1": 45000,
+    "graph-ended-other#2": 45000,
+    "graph-ended-other#3": 45000,
+    "lane-mixed#1": 45000,
+    "lane-unknown-harness#1": 45000,
+    "map-parallel#1": 45000,
+    "map-parallel#2": 45000,
+    "map-parallel#3": 0,
+    "no-checkpoints#1": 0,
+    "resumed-original#1": 0,
+    "resumed-successor#1": 45000,
+    "resumed-successor#2": 45000,
+    "resumed-successor#3": 45000,
+    "running-live#1": 45000,
+    "running-live#2": 0,
+    "running-live#3": 0,
+    "running-live#4": 0,
+    "running-live#5": 0,
+    "running-stock#1": 0,
+    "runtime-failed-checkpoint#1": 0,
+    "runtime-failed-permission#1": 0,
+    "runtime-failed-storage#1": 0,
+    "runtime-failed-unknown#1": 0,
+    "runtime-lost#1": 0,
+    "stalled#1": 0,
+    "stalled-disk#1": 0,
+    "stalled-live-usage#1": 54112,
+    "stalled-then-closed#1": 54112,
+    "succeeded#1": 45000,
+    "succeeded#2": 45000,
+    "succeeded#3": 45000,
+    "succeeded-stock#1": 45000,
+    "succeeded-stock#2": 45000,
+    "succeeded-stock#3": 45000,
+    "tool-output-rate-limit#1": 0,
+    "voided#1": 0,
+    "voided#2": 45000,
+    "work-exhausted#1": 45000,
+    "work-exhausted#2": 0,
+    "work-exhausted#3": 0,
+    "work-exhausted#4": 45000,
+    "work-exhausted#5": 0,
+    "work-exhausted#6": 0,
+    "zeroshot-16/zeroshot16-normal#1": 174744,
+    "zeroshot-16/zeroshot16-steered#1": 117748,
+    "zeroshot-16/zeroshot16-unknown-model#1": 0
+  },
+  "runs": {
+    "admitted-only": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "attempts-exhausted": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "checkout-unavailable": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "closing-postmortem": {
+      "backgroundUsage": 3510,
+      "nodeUsage": 0,
+      "usage": 3510
+    },
+    "codex-estimate": {
+      "backgroundUsage": 0,
+      "nodeUsage": 93000,
+      "usage": 93000
+    },
+    "copilot-session": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "delivery-failed": {
+      "backgroundUsage": 0,
+      "nodeUsage": 135000,
+      "usage": 135000
+    },
+    "diag-api-hang": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "diag-code-authentication-required": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-crash": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-input-required": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-malformed-result": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-other": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-policy-denied": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-refusal": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-code-timeout": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-context": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-credentials": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-disk": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-malformed-stream": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-missing-cli": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-model": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-network": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-permission": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-provider-down": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-provider-timeout": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-rate-limit": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-stream-cut": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "diag-usage-limit": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "force-stopped": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "fork-only/fork-bad-credentials": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "fork-only/fork-chaos-transient": {
+      "backgroundUsage": 287750,
+      "nodeUsage": 222844,
+      "usage": 510594
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "backgroundUsage": 0,
+      "nodeUsage": 120613,
+      "usage": 120613
+    },
+    "fork-only/fork-controller-killed": {
+      "backgroundUsage": 0,
+      "nodeUsage": 568974,
+      "usage": 568974
+    },
+    "fork-only/fork-force-stopped": {
+      "backgroundUsage": 0,
+      "nodeUsage": 522597,
+      "usage": 522597
+    },
+    "fork-only/fork-happy-path": {
+      "backgroundUsage": 434529,
+      "nodeUsage": 465458,
+      "usage": 899987
+    },
+    "fork-only/fork-late-failure": {
+      "backgroundUsage": 432064,
+      "nodeUsage": 540750,
+      "usage": 972814
+    },
+    "fork-only/fork-replay": {
+      "backgroundUsage": 427518,
+      "nodeUsage": 507811,
+      "usage": 935329
+    },
+    "fork-only/fork-resumed": {
+      "backgroundUsage": 476876,
+      "nodeUsage": 447269,
+      "usage": 924145
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "backgroundUsage": 674133,
+      "nodeUsage": 976331,
+      "usage": 1650464
+    },
+    "fork-only/fork-steered": {
+      "backgroundUsage": 242127,
+      "nodeUsage": 119507,
+      "usage": 361634
+    },
+    "fork-only/fork-unknown-model": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "fork-only/fork-worker-timeout": {
+      "backgroundUsage": 291095,
+      "nodeUsage": 406679,
+      "usage": 697774
+    },
+    "fork-only/replay-child": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "fork-only/replay-parent": {
+      "backgroundUsage": 0,
+      "nodeUsage": 135000,
+      "usage": 135000
+    },
+    "fork-only/steered": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "graph-ended-other": {
+      "backgroundUsage": 0,
+      "nodeUsage": 135000,
+      "usage": 135000
+    },
+    "lane-mixed": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "lane-unknown-harness": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "map-parallel": {
+      "backgroundUsage": 0,
+      "nodeUsage": 90000,
+      "usage": 90000
+    },
+    "no-checkpoints": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "resumed-original": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "resumed-successor": {
+      "backgroundUsage": 0,
+      "nodeUsage": 135000,
+      "usage": 135000
+    },
+    "running-live": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "running-stock": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "runtime-failed-checkpoint": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "runtime-failed-permission": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "runtime-failed-storage": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "runtime-failed-unknown": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "runtime-lost": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "stalled": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "stalled-disk": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "stalled-live-usage": {
+      "backgroundUsage": 0,
+      "nodeUsage": 54112,
+      "usage": 54112
+    },
+    "stalled-then-closed": {
+      "backgroundUsage": 0,
+      "nodeUsage": 54112,
+      "usage": 54112
+    },
+    "succeeded": {
+      "backgroundUsage": 9153,
+      "nodeUsage": 135000,
+      "usage": 144153
+    },
+    "succeeded-stock": {
+      "backgroundUsage": 0,
+      "nodeUsage": 135000,
+      "usage": 135000
+    },
+    "tool-output-rate-limit": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "unknown-phase": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    },
+    "voided": {
+      "backgroundUsage": 0,
+      "nodeUsage": 45000,
+      "usage": 45000
+    },
+    "work-exhausted": {
+      "backgroundUsage": 0,
+      "nodeUsage": 90000,
+      "usage": 90000
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "backgroundUsage": 207278,
+      "nodeUsage": 174744,
+      "usage": 382022
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "backgroundUsage": 148856,
+      "nodeUsage": 117748,
+      "usage": 266604
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "backgroundUsage": 0,
+      "nodeUsage": 0,
+      "usage": 0
+    }
+  },
+  "table": [
+    [
+      "null",
+      0
+    ],
+    [
+      "undefined",
+      0
+    ],
+    [
+      "{\"inputTokens\":0,\"outputTokens\":0,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0}",
+      0
+    ],
+    [
+      "{\"inputTokens\":10,\"outputTokens\":5,\"cacheReadInputTokens\":15,\"cacheCreationInputTokens\":0}",
+      30
+    ],
+    [
+      "{\"inputTokens\":0,\"outputTokens\":0,\"cacheReadInputTokens\":1000,\"cacheCreationInputTokens\":0}",
+      1000
+    ],
+    [
+      "{\"inputTokens\":1234,\"outputTokens\":5678,\"cacheReadInputTokens\":330000,\"cacheCreationInputTokens\":2100}",
+      339012
+    ],
+    [
+      "{\"inputTokens\":null,\"cacheReadInputTokens\":5,\"cacheCreationInputTokens\":0}",
+      5
+    ]
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "body": {
+    "backgroundAgents": [],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": null,
+    "costEstimated": false,
+    "costUsd": 0.0412,
+    "createdAt": 1795003420000,
+    "cursor": 18,
+    "endedAt": 1795003524900,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": "provider",
+        "costUsd": 0.0412,
+        "diagnostic": null,
+        "durationMs": 103400,
+        "endSeq": 17,
+        "endedAt": 1795003524900,
+        "error": {
+          "code": "timeout",
+          "reason": "declared_failure"
+        },
+        "errorLines": [
+          "Node worker failed: timeout after 120.0s"
+        ],
+        "harness": "claude",
+        "id": 1,
+        "input": {
+          "task": "Add slugify() to textkit."
+        },
+        "lastActivityAt": 1795003524400,
+        "logLines": 12,
+        "mapIndices": [],
+        "model": "claude-haiku-4-5",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "code": "timeout",
+          "reason": "declared_failure",
+          "status": "error"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "5e550057-0000-4000-8000-00000000a4a6",
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795003421500,
+        "state": "failed",
+        "timesApproximate": false,
+        "toolCalls": 3,
+        "usage": {
+          "cacheCreationInputTokens": 3000,
+          "cacheReadInputTokens": 40000,
+          "inputTokens": 1200,
+          "outputTokens": 800
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "0000000000000000000000000000000000000001",
+          "commit": "0000000000000000000000000000000000000065",
+          "files": [
+            {
+              "additions": 12,
+              "deletions": 1,
+              "path": "textkit/core.py",
+              "status": "modified"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "0000000000000000000000000000000000000001"
+        }
+      }
+    ],
+    "failure": {
+      "actions": [
+        "replay",
+        "resume"
+      ],
+      "at": 1795003524900,
+      "attempt": 1,
+      "cause": "provider not responding",
+      "class": "provider",
+      "closedAfterMs": null,
+      "closedByPostmortem": false,
+      "detail": "Its last model request had no answer for 1m 35s when the timeout hit. Usually temporary: resume.",
+      "execution": 1,
+      "exit": null,
+      "feedback": [],
+      "fix": null,
+      "fixCommand": null,
+      "intoRunMs": 103900,
+      "kept": [],
+      "lastErrors": [
+        "Node worker failed: timeout after 120.0s"
+      ],
+      "node": "worker",
+      "nodeKind": "step",
+      "primary": "resume",
+      "reason": "worker_failed",
+      "resetsAt": null,
+      "round": 1,
+      "title": "Anthropic stopped answering worker (timed out after 2m)"
+    },
+    "features": {
+      "exactTimes": true,
+      "providerCost": true,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "attempts": 1,
+            "instructions": "Do the task.",
+            "kind": "step",
+            "name": "worker",
+            "timeoutMs": 120000,
+            "worker": "builtin.agent.worker@1"
+          }
+        ],
+        "kind": "seq",
+        "name": "run"
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Do the task.",
+        "kind": "step",
+        "loops": [],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "worker",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": 120000,
+        "worker": "builtin.agent.worker@1"
+      }
+    ],
+    "initialInput": {
+      "task": "Add slugify() to textkit."
+    },
+    "lanes": [
+      {
+        "harness": "claude",
+        "model": "claude-haiku-4-5",
+        "nodes": [
+          "worker"
+        ],
+        "provider": "anthropic"
+      }
+    ],
+    "lastActivityAt": 1795003524400,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/diag-api-hang/repo"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 3000,
+      "cacheReadInputTokens": 40000,
+      "inputTokens": 1200,
+      "outputTokens": 800
+    },
+    "nodes": {
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": 0.0412,
+        "elapsedMs": 103400,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "failed",
+        "usage": {
+          "cacheCreationInputTokens": 3000,
+          "cacheReadInputTokens": 40000,
+          "inputTokens": 1200,
+          "outputTokens": 800
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1ee8a-8d60-7039-8039-000000000039",
+    "runLog": [
+      {
+        "at": 1795003421000,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795003421500,
+        "seq": 3,
+        "stream": "system",
+        "text": "worker started (claude-haiku-4-5)"
+      },
+      {
+        "at": 1795003524900,
+        "seq": 17,
+        "stream": "system",
+        "text": "worker failed: timed out"
+      }
+    ],
+    "runtime": {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": {
+        "worker": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        }
+      },
+      "provider": "anthropic"
+    },
+    "source": {
+      "branch": "main",
+      "repository": "example/textkit",
+      "revision": "0000000000000000000000000000000000000000"
+    },
+    "startedAt": 1795003421000,
+    "status": "failed",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "context": {
+        "recorded": [
+          {
+            "message": "Node worker failed: timeout after 120.0s"
+          }
+        ]
+      },
+      "reason": "worker_failed",
+      "status": "failed"
+    },
+    "title": "diag api hang",
+    "usage": {
+      "cacheCreationInputTokens": 3000,
+      "cacheReadInputTokens": 40000,
+      "inputTokens": 1200,
+      "outputTokens": 800
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

@@ -1,0 +1,55 @@
+{
+  "nodes": {
+    "acceptance": "acceptance",
+    "change_attempts_exhausted": "change attempts exhausted",
+    "change_iteration": "change iteration",
+    "change_loop": "change loop",
+    "code": "code",
+    "code_review": "code review",
+    "done": "done",
+    "fix": "fix",
+    "iteration": "iteration",
+    "parallel_reviews": "parallel reviews",
+    "per_file": "per file",
+    "review_failed": "review failed",
+    "review_result": "review result",
+    "review_retry": "review retry",
+    "review_retry_invalid": "review retry invalid",
+    "reviews": "reviews",
+    "run": "run",
+    "summarize": "summarize",
+    "worker": "worker",
+    "worker_failed": "worker failed",
+    "worker_result": "worker result"
+  },
+  "table": [
+    [
+      "",
+      ""
+    ],
+    [
+      "build#1",
+      "build"
+    ],
+    [
+      "a#b#2",
+      "a#b"
+    ],
+    [
+      "__x--y__",
+      "x y"
+    ],
+    [
+      " padded_ ",
+      "padded"
+    ],
+    [
+      "review#",
+      "review#"
+    ],
+    [
+      "x#12y",
+      "x#12y"
+    ]
+  ]
+}

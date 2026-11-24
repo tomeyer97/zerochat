@@ -1,0 +1,16 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795000362500,
+          "kind": "error",
+          "text": "Node code failed: crash after 2.0s: node execution failed: provider failure: API Error: 500 Internal Server Error"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  }
+]

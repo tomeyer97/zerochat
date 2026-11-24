@@ -1,0 +1,80 @@
+{
+  "detail/calc": [
+    {
+      "slice": "03",
+      "text": "03 waiting for your review",
+      "tone": "warn"
+    },
+    {
+      "slice": "14",
+      "text": "14 waiting for your review",
+      "tone": "warn"
+    },
+    {
+      "slice": "04",
+      "text": "04 failed",
+      "tone": "bad"
+    },
+    {
+      "slice": "12",
+      "text": "12 failed",
+      "tone": "bad"
+    },
+    {
+      "text": "running 05, 09, 10",
+      "tone": "running"
+    }
+  ],
+  "detail/fresh": [
+    {
+      "text": "not started",
+      "tone": "muted"
+    }
+  ],
+  "detail/paused": [
+    {
+      "slice": "<undefined>",
+      "text": "paused after 2 failures in a row",
+      "tone": "warn"
+    }
+  ],
+  "list/calc": [
+    {
+      "slice": "03",
+      "text": "03 waiting for your review",
+      "tone": "warn"
+    },
+    {
+      "slice": "14",
+      "text": "14 waiting for your review",
+      "tone": "warn"
+    },
+    {
+      "slice": "04",
+      "text": "04 failed",
+      "tone": "bad"
+    },
+    {
+      "slice": "12",
+      "text": "12 failed",
+      "tone": "bad"
+    },
+    {
+      "text": "running 05, 09, 10",
+      "tone": "running"
+    }
+  ],
+  "list/fresh": [
+    {
+      "text": "not started",
+      "tone": "muted"
+    }
+  ],
+  "list/paused": [
+    {
+      "slice": "<undefined>",
+      "text": "paused after 2 failures in a row",
+      "tone": "warn"
+    }
+  ]
+}

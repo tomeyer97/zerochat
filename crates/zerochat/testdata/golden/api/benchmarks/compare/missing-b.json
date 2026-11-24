@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "missing_batch",
+    "message": "Pick two batches to compare (?a=...&b=...)."
+  },
+  "status": 400
+}

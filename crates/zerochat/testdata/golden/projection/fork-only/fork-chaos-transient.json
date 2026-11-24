@@ -1,0 +1,599 @@
+{
+  "backgroundAgents": [
+    {
+      "errors": 0,
+      "firstAt": 1795175339345,
+      "lastAt": 1795175351428,
+      "lastLine": "reported its result",
+      "lines": 6,
+      "name": "active_memory_graph",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175334338,
+      "lastAt": 1795175343142,
+      "lastLine": "reported its result",
+      "lines": 7,
+      "name": "active_memory_graph_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175334526,
+      "lastAt": 1795175346377,
+      "lastLine": "reported its result",
+      "lines": 7,
+      "name": "active_memory_repository",
+      "outcome": "completed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175334675,
+      "lastAt": 1795175342271,
+      "lastLine": "reported its result",
+      "lines": 6,
+      "name": "active_memory_repository_maintenance",
+      "outcome": "completed",
+      "retries": 0
+    }
+  ],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 87017,
+    "cacheReadInputTokens": 197176,
+    "inputTokens": 80,
+    "outputTokens": 3477
+  },
+  "costEstimated": false,
+  "costUsd": 0.0622663,
+  "createdAt": 1795175253883,
+  "cursor": 88,
+  "endedAt": 1795175331861,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0622663,
+      "diagnostic": null,
+      "durationMs": 70874,
+      "endSeq": 45,
+      "endedAt": 1795175331861,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+      },
+      "lastActivityAt": 1795175331434,
+      "logLines": 40,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 5,
+      "reused": false,
+      "round": 1,
+      "sessionId": "10891155-10af-40cc-aa7e-1fdff36b5969",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175260987,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 10,
+      "usage": {
+        "cacheCreationInputTokens": 14111,
+        "cacheReadInputTokens": 205983,
+        "inputTokens": 76,
+        "outputTokens": 2674
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "04501f87e1b86e7f3d47710a980a401bfb1e7682",
+        "commit": "fea17ed3d6260da63babcc2f0c032872a9da1d03",
+        "files": [
+          {
+            "path": "tests/__pycache__/__init__.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "path": "tests/__pycache__/test_core.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "additions": 11,
+            "deletions": 1,
+            "path": "tests/test_core.py",
+            "status": "modified"
+          },
+          {
+            "additions": 2,
+            "deletions": 2,
+            "path": "textkit/__init__.py",
+            "status": "modified"
+          },
+          {
+            "path": "textkit/__pycache__/__init__.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "path": "textkit/__pycache__/core.cpython-312.pyc",
+            "status": "added"
+          },
+          {
+            "additions": 11,
+            "deletions": 0,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "04501f87e1b86e7f3d47710a980a401bfb1e7682"
+      }
+    }
+  ],
+  "failure": null,
+  "features": {
+    "exactTimes": true,
+    "providerCost": true,
+    "toolCalls": true,
+    "workspaceSnapshots": true
+  },
+  "graph": {
+    "bounds": {
+      "attemptsPerNode": {
+        "worker": 1
+      },
+      "maxNodeExecutions": 1,
+      "peakConcurrency": 1,
+      "termination": {
+        "kind": "acyclic",
+        "order": [
+          "run",
+          "worker",
+          "worker_result",
+          "worker_failed",
+          "done"
+        ]
+      }
+    },
+    "initialInput": {
+      "fields": {
+        "task": {
+          "required": true,
+          "type": {
+            "kind": "string"
+          }
+        }
+      },
+      "kind": "record"
+    },
+    "policy": {
+      "default": "deny",
+      "policy": "policy.native-v2@1"
+    },
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "attempts": 1,
+          "input": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          },
+          "inputBindings": [
+            {
+              "target": [
+                "task"
+              ],
+              "value": {
+                "path": [
+                  "task"
+                ],
+                "source": "state"
+              }
+            }
+          ],
+          "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+          "kind": "step",
+          "name": "worker",
+          "output": {
+            "kind": "null"
+          },
+          "worker": "builtin.agent.worker@1",
+          "writeBindings": []
+        },
+        {
+          "branches": [
+            {
+              "node": {
+                "kind": "fail",
+                "name": "worker_failed",
+                "reason": "worker_failed"
+              },
+              "when": {
+                "kind": "in",
+                "labels": [
+                  "crash",
+                  "malformed",
+                  "refusal",
+                  "timeout"
+                ],
+                "value": {
+                  "field": null,
+                  "name": "worker",
+                  "source": "error"
+                }
+              }
+            }
+          ],
+          "kind": "choice",
+          "name": "worker_result",
+          "otherwise": {
+            "bindings": [],
+            "kind": "succeed",
+            "name": "done",
+            "output": {
+              "kind": "null"
+            }
+          },
+          "promotedStatePaths": [],
+          "state": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          }
+        }
+      ],
+      "kind": "seq",
+      "name": "run",
+      "promotedStatePaths": [],
+      "state": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      }
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "worker",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": "builtin.agent.worker@1"
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "choice",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_result",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": "worker_failed",
+      "harness": "claude",
+      "instructions": null,
+      "kind": "fail",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_failed",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "succeed",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "done",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    }
+  ],
+  "initialInput": {
+    "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "worker"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795175352190,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": false,
+    "workspace": "<root>/work/chaos-transient"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 14111,
+    "cacheReadInputTokens": 205983,
+    "inputTokens": 76,
+    "outputTokens": 2674
+  },
+  "nodes": {
+    "worker": {
+      "activeSince": null,
+      "costEstimated": false,
+      "costUsd": 0.0622663,
+      "elapsedMs": 70874,
+      "executions": [
+        1
+      ],
+      "rounds": 1,
+      "state": "succeeded",
+      "usage": {
+        "cacheCreationInputTokens": 14111,
+        "cacheReadInputTokens": 205983,
+        "inputTokens": 76,
+        "outputTokens": 2674
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1f8c8-877b-7910-9808-f9cd2944c1d7",
+  "runLog": [
+    {
+      "at": 1795175254125,
+      "seq": 1,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795175260987,
+      "seq": 3,
+      "stream": "system",
+      "text": "worker started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795175331861,
+      "seq": 45,
+      "stream": "system",
+      "text": "worker finished"
+    },
+    {
+      "at": 1795175331970,
+      "seq": 47,
+      "stream": "system",
+      "text": "Active Memory postmortem started"
+    },
+    {
+      "at": 1795175332023,
+      "seq": 48,
+      "stream": "system",
+      "text": "Active Memory supplied manifest: known=true, snapshot_generation=0, supplied_revisions=0"
+    },
+    {
+      "at": 1795175332063,
+      "seq": 49,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance started"
+    },
+    {
+      "at": 1795175332064,
+      "seq": 50,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance started"
+    },
+    {
+      "at": 1795175332064,
+      "seq": 51,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph started"
+    },
+    {
+      "at": 1795175332064,
+      "seq": 52,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository started"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175340315,
+      "seq": 57,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175340968,
+      "seq": 60,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175342263,
+      "seq": 64,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175343132,
+      "seq": 67,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175343163,
+      "seq": 68,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance completed"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175343532,
+      "seq": 70,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+    },
+    {
+      "at": 1795175343798,
+      "seq": 74,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance completed"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175346369,
+      "seq": 76,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175346983,
+      "seq": 79,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository completed"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175349422,
+      "seq": 80,
+      "stream": "system",
+      "text": "```json\n{\n  \"response\": {\n    \"diagnostic\": null,\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {}\n  }\n}\n```"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175351410,
+      "seq": 83,
+      "stream": "system",
+      "text": "reported its result"
+    },
+    {
+      "at": 1795175352104,
+      "seq": 86,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph completed"
+    },
+    {
+      "at": 1795175352190,
+      "seq": 87,
+      "stream": "system",
+      "text": "Active Memory postmortem completed: 4 roles completed, 0 failed, 0 mutations published, cancelled=false"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "nodes": {
+      "worker": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic",
+    "size": "medium"
+  },
+  "source": null,
+  "startedAt": 1795175254125,
+  "status": "succeeded",
+  "target": "local",
+  "terminal": {
+    "output": null,
+    "status": "succeeded"
+  },
+  "title": "chaos-transient [fork]",
+  "usage": {
+    "cacheCreationInputTokens": 101128,
+    "cacheReadInputTokens": 403159,
+    "inputTokens": 156,
+    "outputTokens": 6151
+  },
+  "usageLive": false,
+  "usagePending": false
+}

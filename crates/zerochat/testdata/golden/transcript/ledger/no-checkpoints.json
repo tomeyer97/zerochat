@@ -1,0 +1,18 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795002042500,
+          "kind": "error",
+          "text": "Node worker failed: timeout after 45.4s: node execution failed"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  }
+]

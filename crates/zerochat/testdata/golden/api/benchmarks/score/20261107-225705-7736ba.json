@@ -1,0 +1,80 @@
+{
+  "body": {
+    "batchId": "20261107-222316-910b7d",
+    "capUsd": 6.0,
+    "costUsd": 2.5164502,
+    "exitReason": null,
+    "failingTests": [
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+      "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+      "09547266f95c/eval.tests.test_argparse_validation.test_empty_args_requires_mode",
+      "09547266f95c/eval.tests.test_argparse_validation.test_interleaved_flag_after_positionals_is_accepted",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_output_only_without_mode_is_rejected",
+      "09547266f95c/eval.tests.test_argparse_validation.test_positional_source_only_is_not_enough"
+    ],
+    "label": "r1-ctrl-diffloop",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.7850105,
+        "node": "explore"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.7184187,
+        "node": "build"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.530289,
+        "node": "oracle"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.482732,
+        "node": "postmortem"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 2.5164502,
+    "runId": "20261107-225705-7736ba",
+    "score": 0.405750799,
+    "seed": 1,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 313
+      },
+      {
+        "node": "build#1",
+        "score": 0.405750799,
+        "seq": 1,
+        "testsPassed": 127,
+        "testsTotal": 313
+      },
+      {
+        "node": "final",
+        "score": 0.405750799,
+        "seq": 2,
+        "testsPassed": 127,
+        "testsTotal": 313
+      }
+    ],
+    "task": "yaa110__nomino.f892499",
+    "testsPassed": 127,
+    "testsTotal": 313,
+    "wallS": 1192.316459179,
+    "zeroshotRunId": "01a1b803-e903-7742-ad98-a35a4d7ad8b9"
+  },
+  "status": 200
+}

@@ -1,0 +1,127 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 10.0,
+    "costUsd": 3.5436976,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "ticket-v1",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 1.2027516,
+        "node": "build"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4527651,
+        "node": "adversary"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4280876,
+        "node": "postmortem"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.3394236,
+        "node": "trace"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.3019335,
+        "node": "testfirst"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.2969059,
+        "node": "recon"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.2484881,
+        "node": "deliver"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.2161274,
+        "node": "intake"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.0297042,
+        "node": "triage"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.0275106,
+        "node": "quality"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 3.5436976,
+    "runId": "20261103-153020-39acd7",
+    "score": 0.584821429,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "intake#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "recon#1",
+        "score": 0.0,
+        "seq": 1,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "testfirst#1",
+        "score": 0.0,
+        "seq": 2,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "build#1",
+        "score": 0.584821429,
+        "seq": 3,
+        "testsPassed": 131,
+        "testsTotal": 224
+      },
+      {
+        "node": "deliver#1",
+        "score": 0.584821429,
+        "seq": 4,
+        "testsPassed": 131,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.584821429,
+        "seq": 5,
+        "testsPassed": 131,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 131,
+    "testsTotal": 224,
+    "wallS": 1500.702454805,
+    "zeroshotRunId": "01a1a1d1-773a-77a0-843c-1b5fe41dbc5b"
+  },
+  "status": 200
+}

@@ -1,0 +1,79 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 3000,
+      "endSeq": 7,
+      "endedAt": 1795003243000,
+      "error": {
+        "code": "crash",
+        "reason": null
+      },
+      "errorLines": [
+        "Node worker failed: crash after 3.0s: node execution failed: Hermes provider failure: API Error: 429 rate limit exceeded"
+      ],
+      "harness": "hermes",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795003243000,
+      "logLines": 2,
+      "mapIndices": [],
+      "model": "hermes-4-405b",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": null,
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795003240000,
+      "state": "failed",
+      "timesApproximate": true,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 3000,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 1200,
+        "outputTokens": 800
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": null
+    },
+    "instructions": "Do the task.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003242000,
+          "kind": "text",
+          "text": "Working."
+        },
+        {
+          "at": 1795003243000,
+          "kind": "error",
+          "text": "Node worker failed: crash after 3.0s: node execution failed: Hermes provider failure: API Error: 429 rate limit exceeded"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

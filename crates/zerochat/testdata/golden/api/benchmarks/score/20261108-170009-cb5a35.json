@@ -1,0 +1,26 @@
+{
+  "body": {
+    "batchId": "20261108-170009-cace9c",
+    "capUsd": 6.0,
+    "costUsd": null,
+    "exitReason": null,
+    "failingTests": [],
+    "label": "r3-h2-noaccept",
+    "nodeCosts": [],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": null,
+    "runId": "20261108-170009-cb5a35",
+    "score": null,
+    "seed": 0,
+    "state": "running_agent",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": null,
+    "zeroshotRunId": "01a1bbe3-7e15-7852-b8d7-27fb6188c998"
+  },
+  "status": 200
+}

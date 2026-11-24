@@ -1,0 +1,100 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0412,
+      "diagnostic": null,
+      "durationMs": 5500,
+      "endSeq": 10,
+      "endedAt": 1795002827000,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795002826500,
+      "logLines": 5,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795002821500,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 3000,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 1200,
+        "outputTokens": 800
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Do the task.",
+    "sourceNote": "Claude's session log could not be matched to this node (this Zeroshot does not record the session id).",
+    "transcript": {
+      "items": [
+        {
+          "at": 1795002822500,
+          "kind": "text",
+          "text": "Running sleep 20."
+        },
+        {
+          "at": 1795002823500,
+          "kind": "steer",
+          "text": "Write BANANA instead of APPLE."
+        },
+        {
+          "at": 1795002824500,
+          "kind": "steer",
+          "text": "Also add a test.\n\n[queued]"
+        },
+        {
+          "at": 1795002825500,
+          "kind": "steer",
+          "text": "Too late.\n\n[undelivered]"
+        },
+        {
+          "at": 1795002826500,
+          "kind": "text",
+          "text": "Understood: writing BANANA."
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

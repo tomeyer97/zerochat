@@ -1,0 +1,98 @@
+[
+ {
+  "family": "fork",
+  "scenario": "happy-path",
+  "runId": "01a1f8c8-2984-7640-bc40-aaa51b13aa24",
+  "what": "software-change, 3 rounds: worker adds slugify, parallel reviewers accept; succeeded. Recorded with ZEROSHOT_KEEP_CHECKPOINTS=1 (2 checkpoints kept)."
+ },
+ {
+  "family": "fork",
+  "scenario": "reviewer-never-satisfied",
+  "runId": "01a1f8c8-35a0-7901-8589-14c1616b4d4b",
+  "what": "acceptance reviewer told to always reject; 2 rounds; failed change_attempts_exhausted. Ledger only (session logs dropped for size)."
+ },
+ {
+  "family": "fork",
+  "scenario": "worker-timeout",
+  "runId": "01a1f8c8-41b6-7b03-aa65-c28cfafd21cc",
+  "what": "single-worker, long task, 45 s node timeout; failed worker_failed (timeout after 45.1s)."
+ },
+ {
+  "family": "fork",
+  "scenario": "bad-credentials",
+  "runId": "01a1f8c8-4d9d-7582-9215-0d66fcc62df3",
+  "what": "single-worker with an invalid OAuth token; Claude 401 'OAuth access token is invalid', 4 retry safe_logs, then failed worker_failed (crash)."
+ },
+ {
+  "family": "fork",
+  "scenario": "unknown-model",
+  "runId": "01a1f8c8-1df7-7b31-88f8-ac9d8c697132",
+  "what": "exact runtime plan with worker model claude-haiku-9-9-does-not-exist; failed worker_failed (crash, provider says the model may not exist)."
+ },
+ {
+  "family": "fork",
+  "scenario": "late-failure",
+  "runId": "01a1f8c8-5959-77e2-a8d3-8df517fadfac",
+  "what": "software-change: worker finishes, the code reviewer hits its 20 s timeout (1 attempt); failed review_failed. Ledger only (session logs dropped for size)."
+ },
+ {
+  "family": "fork",
+  "scenario": "force-stopped",
+  "runId": "01a1f8c8-6464-7813-b706-150bb34c6dda",
+  "what": "software-change, small task, force-stopped 60 s in during the worker; failed force_stopped. Predecessor of the resumed run (workspace-recovery successorRunId)."
+ },
+ {
+  "family": "fork",
+  "scenario": "controller-killed",
+  "runId": "01a1f8c8-7006-7622-a318-e09c8f847921",
+  "what": "software-change, small task, controller SIGKILLed 60 s in and left dead; the next `status` reported failed runtime_lost; workspace recoverable."
+ },
+ {
+  "family": "fork",
+  "scenario": "steered",
+  "runId": "01a1f8c8-7bb2-7fc3-a632-427dfefb25c8",
+  "what": "single-worker doing three `sleep 20` steps then writing APPLE; first `zerochat steer` (write BANANA) delivered mid-turn and obeyed (out.txt=BANANA), second rejected execution_not_active; ledger has a safe_log logKind steer; succeeded."
+ },
+ {
+  "family": "fork",
+  "scenario": "chaos-transient",
+  "runId": "01a1f8c8-877b-7910-9808-f9cd2944c1d7",
+  "what": "single-worker via faults.py: requests 2-3 overloaded 529, 5-6 rate_limit 429, 8 server_error 500 (5 injected); Claude retried, ledger has retry and rate_limit safe_logs; succeeded."
+ },
+ {
+  "family": "fork",
+  "scenario": "chaos-usage-limit",
+  "runId": "01a1f8c8-93b8-7b81-97ea-4b8a2800bbe3",
+  "what": "single-worker via faults.py: subscription usage-limit 429 from 15 s for 60 s; Claude does not retry it: failed worker_failed (\"You've hit your 5-hour limit\"); 3 rate_limit safe_logs."
+ },
+ {
+  "family": "fork",
+  "scenario": "resumed",
+  "runId": "01a1f8c9-67d5-7060-a1f3-cb773d228ece",
+  "what": "`zeroshot resume` of the force-stopped run (resumedFrom it); restarts the graph in the retained workspace; succeeded."
+ },
+ {
+  "family": "fork",
+  "scenario": "replay",
+  "runId": "01a1f8c9-b7e1-7b90-872a-0ec8e68d28d1",
+  "what": "`zeroshot zerochat replay --from-checkpoint` of happy-path at its first checkpoint (after worker), title changed; replayOf in workspace-recovery; succeeded. Shares happy-path's workspace and session-log folder."
+ },
+ {
+  "family": "zeroshot16",
+  "scenario": "normal",
+  "runId": "01a1f8c8-9f9b-7031-9660-08629cad0028",
+  "what": "official 16.1, single-worker small task; succeeded."
+ },
+ {
+  "family": "zeroshot16",
+  "scenario": "steered",
+  "runId": "01a1f8c8-acbc-7ed0-b0bf-40743f8ad243",
+  "what": "official 16.1, single-worker with three `sleep 20` steps; two `zeroshot steer RUN TEXT` (standing) sent; ledger has 4 vector and 2 steer_receipt events with recorded_at_ms; agent wrote BANANA; succeeded."
+ },
+ {
+  "family": "zeroshot16",
+  "scenario": "unknown-model",
+  "runId": "01a1f8c8-b7c6-73a3-b319-e26678e524d0",
+  "what": "official 16.1, uniform runtime with model claude-haiku-9-9-does-not-exist; failed worker_failed (refusal: model unavailable)."
+ }
+]

@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "message_too_long",
+    "message": "Messages are limited to 256 KiB."
+  },
+  "status": 400
+}

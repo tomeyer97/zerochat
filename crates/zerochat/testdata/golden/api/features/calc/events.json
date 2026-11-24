@@ -1,0 +1,251 @@
+{
+  "body": {
+    "events": [
+      {
+        "detail": "initialized detail",
+        "kind": "initialized",
+        "runTarget": null,
+        "ts": 1795000000000
+      },
+      {
+        "detail": "daemon_started detail",
+        "kind": "daemon_started",
+        "runTarget": null,
+        "ts": 1795000010000
+      },
+      {
+        "detail": "started detail",
+        "kind": "started",
+        "runTarget": null,
+        "ts": 1795000020000
+      },
+      {
+        "attempt": 1,
+        "detail": "launched detail",
+        "kind": "launched",
+        "runTarget": "local",
+        "run_id": "01a1ee82-5000-7030-8030-000000000030",
+        "slice": "04",
+        "ts": 1795000030000
+      },
+      {
+        "attempt": 1,
+        "detail": "launch_failed detail",
+        "kind": "launch_failed",
+        "runTarget": null,
+        "slice": "05",
+        "ts": 1795000040000
+      },
+      {
+        "attempt": 1,
+        "detail": "run_finished detail",
+        "kind": "run_finished",
+        "runTarget": "local",
+        "run_id": "01a1ee82-5000-7030-8030-000000000030",
+        "slice": "07",
+        "ts": 1795000050000
+      },
+      {
+        "attempt": 1,
+        "detail": "gate_failed detail",
+        "kind": "gate_failed",
+        "runTarget": null,
+        "slice": "08",
+        "ts": 1795000060000
+      },
+      {
+        "attempt": 1,
+        "detail": "merged detail",
+        "kind": "merged",
+        "runTarget": null,
+        "slice": "11",
+        "ts": 1795000070000
+      },
+      {
+        "attempt": 1,
+        "detail": "conflict detail",
+        "kind": "conflict",
+        "runTarget": null,
+        "slice": "12",
+        "ts": 1795000080000
+      },
+      {
+        "attempt": 1,
+        "detail": "quality_failed detail",
+        "kind": "quality_failed",
+        "runTarget": null,
+        "slice": "01",
+        "ts": 1795000090000
+      },
+      {
+        "attempt": 1,
+        "detail": "run_stopped detail",
+        "kind": "run_stopped",
+        "runTarget": null,
+        "slice": "02",
+        "ts": 1795000100000
+      },
+      {
+        "attempt": 1,
+        "detail": "infra_failure detail",
+        "kind": "infra_failure",
+        "runTarget": null,
+        "slice": "03",
+        "ts": 1795000110000
+      },
+      {
+        "attempt": 1,
+        "detail": "interrupted detail",
+        "kind": "interrupted",
+        "runTarget": null,
+        "slice": "04",
+        "ts": 1795000120000
+      },
+      {
+        "attempt": 1,
+        "detail": "resumed detail",
+        "kind": "resumed",
+        "runTarget": null,
+        "slice": "05",
+        "ts": 1795000130000
+      },
+      {
+        "attempt": 1,
+        "detail": "resume_failed detail",
+        "kind": "resume_failed",
+        "runTarget": null,
+        "slice": "07",
+        "ts": 1795000140000
+      },
+      {
+        "attempt": 1,
+        "detail": "paused detail",
+        "kind": "paused",
+        "runTarget": null,
+        "slice": "08",
+        "ts": 1795000150000
+      },
+      {
+        "attempt": 1,
+        "detail": "unpaused detail",
+        "kind": "unpaused",
+        "runTarget": null,
+        "slice": "11",
+        "ts": 1795000160000
+      },
+      {
+        "attempt": 1,
+        "detail": "checkpoint_waiting detail",
+        "kind": "checkpoint_waiting",
+        "runTarget": null,
+        "slice": "12",
+        "ts": 1795000170000
+      },
+      {
+        "attempt": 1,
+        "detail": "approved detail",
+        "kind": "approved",
+        "runTarget": null,
+        "slice": "01",
+        "ts": 1795000180000
+      },
+      {
+        "attempt": 1,
+        "detail": "retried detail",
+        "kind": "retried",
+        "runTarget": null,
+        "slice": "02",
+        "ts": 1795000190000
+      },
+      {
+        "attempt": 1,
+        "detail": "accepted detail",
+        "kind": "accepted",
+        "runTarget": null,
+        "slice": "03",
+        "ts": 1795000200000
+      },
+      {
+        "attempt": 1,
+        "detail": "skipped detail",
+        "kind": "skipped",
+        "runTarget": null,
+        "slice": "04",
+        "ts": 1795000210000
+      },
+      {
+        "attempt": 1,
+        "detail": "edited detail",
+        "kind": "edited",
+        "runTarget": null,
+        "slice": "05",
+        "ts": 1795000220000
+      },
+      {
+        "attempt": 1,
+        "detail": "waiting detail",
+        "kind": "waiting",
+        "runTarget": null,
+        "slice": "07",
+        "ts": 1795000230000
+      },
+      {
+        "attempt": 1,
+        "detail": "done detail",
+        "kind": "done",
+        "runTarget": null,
+        "slice": "08",
+        "ts": 1795000240000
+      },
+      {
+        "attempt": 1,
+        "detail": "integration_failed detail",
+        "kind": "integration_failed",
+        "runTarget": null,
+        "slice": "11",
+        "ts": 1795000250000
+      },
+      {
+        "attempt": 1,
+        "detail": "hook_failed detail",
+        "kind": "hook_failed",
+        "runTarget": null,
+        "slice": "12",
+        "ts": 1795000260000
+      },
+      {
+        "attempt": 1,
+        "detail": "request_rejected detail",
+        "kind": "request_rejected",
+        "runTarget": null,
+        "slice": "01",
+        "ts": 1795000270000
+      },
+      {
+        "attempt": 1,
+        "detail": "stopped detail",
+        "kind": "stopped",
+        "runTarget": null,
+        "slice": "02",
+        "ts": 1795000280000
+      },
+      {
+        "attempt": 1,
+        "detail": "daemon_stopped detail",
+        "kind": "daemon_stopped",
+        "runTarget": null,
+        "slice": "03",
+        "ts": 1795000290000
+      },
+      {
+        "attempt": 1,
+        "detail": "something_newer detail",
+        "kind": "other",
+        "runTarget": null,
+        "slice": "04",
+        "ts": 1795000300000
+      }
+    ]
+  },
+  "status": 200
+}

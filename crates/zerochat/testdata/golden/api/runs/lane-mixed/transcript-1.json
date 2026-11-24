@@ -1,0 +1,79 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 2100,
+      "endSeq": 7,
+      "endedAt": 1795003183000,
+      "error": {
+        "code": "crash",
+        "reason": null
+      },
+      "errorLines": [
+        "Node code failed: crash after 2.1s: node execution failed: Codex provider failure: unknown model gpt-5.1-codex-does-not-exist"
+      ],
+      "harness": "codex",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795003183000,
+      "logLines": 2,
+      "mapIndices": [],
+      "model": "gpt-5.1-codex-does-not-exist",
+      "node": "code",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": null,
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795003180900,
+      "state": "failed",
+      "timesApproximate": true,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 3000,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 1200,
+        "outputTokens": 800
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": null
+    },
+    "instructions": "Implement the task.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003182000,
+          "kind": "text",
+          "text": "Working."
+        },
+        {
+          "at": 1795003183000,
+          "kind": "error",
+          "text": "Node code failed: crash after 2.1s: node execution failed: Codex provider failure: unknown model gpt-5.1-codex-does-not-exist"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

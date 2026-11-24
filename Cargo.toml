@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = ["crates/zerochat", "crates/zsf"]
+
+[workspace.package]
+# One version for zerochat, zsf and the npm packages (npm/build.js reads it from here).
+version = "0.1.0"
+edition = "2024"
+# The oldest Rust that builds it; rust-toolchain.toml pins this release.
+rust-version = "1.90"
+license = "MIT"
+# The public home: npm/build.js and dist copy it into every package and release URL.
+repository = "https://github.com/tomeyer97/zerochat"
+homepage = "https://github.com/tomeyer97/zerochat"
+# Not on crates.io: zerochat ships as GitHub Release archives and npm packages (release.yml), so
+# `cargo publish` refuses. dist still builds both crates (`[package.metadata.dist] dist = true`).
+publish = false
+
+[workspace.dependencies]
+# Process and disk facts on macOS and Windows (Linux reads /proc directly; the tests check both agree).
+sysinfo = { version = "0.38", default-features = false, features = ["system", "disk"] }
+
+# The profile dist builds release archives with (dist-workspace.toml).
+[profile.dist]
+inherits = "release"
+lto = "thin"

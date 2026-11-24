@@ -1,0 +1,119 @@
+{
+  "all": {
+    "copilotCredits": 2.5,
+    "items": [
+      {
+        "at": 1795000484300,
+        "kind": "prompt",
+        "text": "Execute this graph node: add slugify() to textkit."
+      },
+      {
+        "at": 1795000485700,
+        "kind": "thinking",
+        "text": "Look around first."
+      },
+      {
+        "at": 1795000485700,
+        "kind": "tool",
+        "tool": {
+          "id": "t1",
+          "input": {
+            "command": "git status"
+          },
+          "name": "bash",
+          "permission": {
+            "kind": "shell",
+            "result": "approved"
+          },
+          "result": {
+            "at": 1795000489200,
+            "content": "On branch main",
+            "exitCode": 0,
+            "isError": false
+          }
+        }
+      },
+      {
+        "at": 1795000489900,
+        "kind": "tool",
+        "tool": {
+          "id": "t2",
+          "input": {
+            "path": "/work/copilot-session/repo/missing.md"
+          },
+          "name": "view",
+          "permission": {
+            "kind": "read",
+            "result": "denied-by-rules"
+          },
+          "result": {
+            "at": 1795000492000,
+            "content": "Path does not exist",
+            "isError": true
+          }
+        }
+      },
+      {
+        "at": 1795000493400,
+        "kind": "tool",
+        "tool": {
+          "id": "t4",
+          "input": {
+            "pattern": "title"
+          },
+          "name": "grep",
+          "result": {
+            "at": 1795000494100,
+            "content": "textkit/core.py:1",
+            "isError": false
+          }
+        }
+      },
+      {
+        "at": 1795000496200,
+        "detail": "<overview>Added slugify</overview>",
+        "kind": "compaction",
+        "text": "Context compacted: 142.6k → 57.2k tokens"
+      },
+      {
+        "at": 1795000496900,
+        "kind": "steer",
+        "text": "Use re.sub."
+      },
+      {
+        "at": 1795000497600,
+        "kind": "auto",
+        "text": "Answer with the schema."
+      },
+      {
+        "at": 1795000498300,
+        "kind": "system",
+        "text": "Background command failed (exit 1): Run the tests"
+      },
+      {
+        "at": 1795000499000,
+        "kind": "system",
+        "text": "y"
+      },
+      {
+        "at": 1795000499700,
+        "kind": "error",
+        "text": "API Error: 503 Service Unavailable"
+      },
+      {
+        "at": 1795000501100,
+        "kind": "text",
+        "text": "{\"response\":{\"ok\":true}}"
+      }
+    ],
+    "limitations": [],
+    "source": "native",
+    "sourcePath": "<root>/home/.copilot/session-state/c0b1107-session-0001/events.jsonl"
+  },
+  "since": {
+    "items": [],
+    "limitations": [],
+    "source": "native",
+    "sourcePath": "<root>/home/.copilot/session-state/c0b1107-session-0001/events.jsonl"
+  }
+}

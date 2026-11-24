@@ -1,0 +1,156 @@
+{
+  "events": [
+    {
+      "kind": "initialized",
+      "ts": 0
+    }
+  ],
+  "report": {
+    "active": false,
+    "base": "main",
+    "branch": "feature/x",
+    "dir": "<root>/state/feat",
+    "max_parallel": 1,
+    "merged": 0,
+    "name": "feat",
+    "repo": "<root>/repo",
+    "slices": [
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [],
+        "id": "01",
+        "status": "pending",
+        "title": "Slice 01"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [],
+        "id": "02",
+        "status": "pending",
+        "title": "Slice 02"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": true,
+        "deps": [],
+        "id": "03",
+        "status": "pending",
+        "title": "Slice 03"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [
+          "03"
+        ],
+        "id": "04",
+        "status": "pending",
+        "title": "Slice 04",
+        "waits_for": [
+          "03"
+        ]
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [],
+        "id": "05",
+        "status": "pending",
+        "title": "Slice 05"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [],
+        "id": "06",
+        "status": "pending",
+        "title": "Slice 06"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [],
+        "id": "07",
+        "status": "pending",
+        "title": "Slice 07"
+      }
+    ],
+    "total": 7
+  },
+  "state": {
+    "active": false,
+    "consecutive_infra": 0,
+    "slices": {
+      "01": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "02": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "03": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "04": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "05": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "06": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "07": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      }
+    },
+    "updated_ms": 0,
+    "version": 1
+  },
+  "status": [
+    "feat: 0 of 7 merged, branch feature/x, daemon not running, inactive",
+    "  01  pending              Slice 01  ready",
+    "  02  pending              Slice 02  ready",
+    "  03* pending              Slice 03  ready",
+    "  04  pending              Slice 04  waits for 03",
+    "  05  pending              Slice 05  ready",
+    "  06  pending              Slice 06  ready",
+    "  07  pending              Slice 07  ready"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "accepted": "✓",
+  "failed": "✗",
+  "idle": "○",
+  "interrupted": "■",
+  "other": "○",
+  "rejected": "✗",
+  "running": "●",
+  "succeeded": "✓",
+  "voided": "–"
+}

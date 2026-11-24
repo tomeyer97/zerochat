@@ -1,0 +1,63 @@
+{
+  "body": {
+    "aId": "20261107-222316-910b7d",
+    "aLabel": "r1-ctrl-diffloop",
+    "aRunCount": 6,
+    "bId": "label:k8s-sc-sonnet5",
+    "bLabel": "k8s-sc-sonnet5",
+    "bRunCount": 1,
+    "nodes": [],
+    "tasks": [
+      {
+        "a": null,
+        "b": {
+          "maxScore": 1.0,
+          "meanCostUsd": 6.1985388,
+          "meanScore": 1.0,
+          "meanTimeS": 2135.186195374,
+          "minScore": 1.0,
+          "n": 1
+        },
+        "deltaCostUsd": null,
+        "deltaScore": null,
+        "deltaTimeS": null,
+        "noise": "n_a",
+        "task": "k8s-job-backoff-limit-per-index"
+      },
+      {
+        "a": {
+          "maxScore": 0.683035714,
+          "meanCostUsd": 6.016988267,
+          "meanScore": 0.65922619,
+          "meanTimeS": 2340.771495422,
+          "minScore": 0.620535714,
+          "n": 3
+        },
+        "b": null,
+        "deltaCostUsd": null,
+        "deltaScore": null,
+        "deltaTimeS": null,
+        "noise": "n_a",
+        "task": "tomnomnom__gron.88a6234"
+      },
+      {
+        "a": {
+          "maxScore": 0.670926518,
+          "meanCostUsd": 4.8410523,
+          "meanScore": 0.528221512,
+          "meanTimeS": 2038.677238782,
+          "minScore": 0.405750799,
+          "n": 3
+        },
+        "b": null,
+        "deltaCostUsd": null,
+        "deltaScore": null,
+        "deltaTimeS": null,
+        "noise": "n_a",
+        "task": "yaa110__nomino.f892499"
+      }
+    ],
+    "totals": null
+  },
+  "status": 200
+}

@@ -1,0 +1,374 @@
+{
+  "attempts": {
+    "calc/01": [
+      {
+        "label": "merged",
+        "tone": "ok"
+      }
+    ],
+    "calc/02": [
+      {
+        "label": "conflict",
+        "tone": "muted"
+      },
+      {
+        "label": "merged",
+        "tone": "ok"
+      }
+    ],
+    "calc/03": [
+      {
+        "label": "merged",
+        "tone": "ok"
+      }
+    ],
+    "calc/04": [
+      {
+        "label": "gate failed",
+        "tone": "muted"
+      },
+      {
+        "label": "gate failed",
+        "tone": "bad"
+      }
+    ],
+    "calc/05": [
+      {
+        "label": "running",
+        "tone": "running"
+      }
+    ],
+    "calc/06": [],
+    "calc/07": [],
+    "calc/08": [
+      {
+        "label": "run failed",
+        "tone": "bad"
+      }
+    ],
+    "calc/09": [
+      {
+        "label": "run failed",
+        "tone": "muted"
+      }
+    ],
+    "calc/10": [
+      {
+        "label": "running",
+        "tone": "running"
+      }
+    ],
+    "calc/11": [
+      {
+        "label": "stopped",
+        "tone": "muted"
+      }
+    ],
+    "calc/12": [
+      {
+        "label": "review rounds ran out",
+        "tone": "bad"
+      }
+    ],
+    "calc/13": [
+      {
+        "label": "launch failed",
+        "tone": "muted"
+      }
+    ],
+    "calc/14": [
+      {
+        "label": "changes requested",
+        "tone": "muted"
+      },
+      {
+        "label": "gate failed",
+        "tone": "muted"
+      },
+      {
+        "label": "—",
+        "tone": "muted"
+      }
+    ],
+    "fresh/01": [],
+    "fresh/02": [],
+    "paused/01": [
+      {
+        "label": "run failed",
+        "tone": "muted"
+      },
+      {
+        "label": "run failed",
+        "tone": "bad"
+      }
+    ]
+  },
+  "table": [
+    [
+      null,
+      {
+        "label": "—",
+        "tone": "muted"
+      },
+      {
+        "label": "running",
+        "tone": "running"
+      },
+      {
+        "label": "—",
+        "tone": "muted"
+      },
+      {
+        "label": "—",
+        "tone": "muted"
+      }
+    ],
+    [
+      "",
+      {
+        "label": "—",
+        "tone": "muted"
+      },
+      {
+        "label": "running",
+        "tone": "running"
+      },
+      {
+        "label": "—",
+        "tone": "muted"
+      },
+      {
+        "label": "—",
+        "tone": "muted"
+      }
+    ],
+    [
+      "abandoned",
+      {
+        "label": "stopped",
+        "tone": "muted"
+      },
+      {
+        "label": "stopped",
+        "tone": "muted"
+      },
+      {
+        "label": "stopped",
+        "tone": "muted"
+      },
+      {
+        "label": "replaced by #3",
+        "tone": "muted"
+      }
+    ],
+    [
+      "merged",
+      {
+        "label": "merged",
+        "tone": "ok"
+      },
+      {
+        "label": "merged",
+        "tone": "ok"
+      },
+      {
+        "label": "merged",
+        "tone": "ok"
+      },
+      {
+        "label": "merged",
+        "tone": "ok"
+      }
+    ],
+    [
+      "gate_failed",
+      {
+        "label": "gate failed",
+        "tone": "muted"
+      },
+      {
+        "label": "gate failed",
+        "tone": "muted"
+      },
+      {
+        "label": "gate failed",
+        "tone": "bad"
+      },
+      {
+        "label": "gate failed",
+        "tone": "muted"
+      }
+    ],
+    [
+      "empty",
+      {
+        "label": "no changes",
+        "tone": "muted"
+      },
+      {
+        "label": "no changes",
+        "tone": "muted"
+      },
+      {
+        "label": "no changes",
+        "tone": "bad"
+      },
+      {
+        "label": "no changes",
+        "tone": "muted"
+      }
+    ],
+    [
+      "conflict",
+      {
+        "label": "conflict",
+        "tone": "muted"
+      },
+      {
+        "label": "conflict",
+        "tone": "muted"
+      },
+      {
+        "label": "conflict",
+        "tone": "bad"
+      },
+      {
+        "label": "conflict",
+        "tone": "muted"
+      }
+    ],
+    [
+      "quality_failed",
+      {
+        "label": "review rounds ran out",
+        "tone": "muted"
+      },
+      {
+        "label": "review rounds ran out",
+        "tone": "muted"
+      },
+      {
+        "label": "review rounds ran out",
+        "tone": "bad"
+      },
+      {
+        "label": "review rounds ran out",
+        "tone": "muted"
+      }
+    ],
+    [
+      "stopped",
+      {
+        "label": "stopped",
+        "tone": "muted"
+      },
+      {
+        "label": "stopped",
+        "tone": "muted"
+      },
+      {
+        "label": "stopped",
+        "tone": "muted"
+      },
+      {
+        "label": "stopped",
+        "tone": "muted"
+      }
+    ],
+    [
+      "infra_failed",
+      {
+        "label": "run failed",
+        "tone": "muted"
+      },
+      {
+        "label": "run failed",
+        "tone": "muted"
+      },
+      {
+        "label": "run failed",
+        "tone": "bad"
+      },
+      {
+        "label": "run failed",
+        "tone": "muted"
+      }
+    ],
+    [
+      "launch_failed",
+      {
+        "label": "launch failed",
+        "tone": "muted"
+      },
+      {
+        "label": "launch failed",
+        "tone": "muted"
+      },
+      {
+        "label": "launch failed",
+        "tone": "bad"
+      },
+      {
+        "label": "launch failed",
+        "tone": "muted"
+      }
+    ],
+    [
+      "integration_failed",
+      {
+        "label": "merge failed",
+        "tone": "muted"
+      },
+      {
+        "label": "merge failed",
+        "tone": "muted"
+      },
+      {
+        "label": "merge failed",
+        "tone": "bad"
+      },
+      {
+        "label": "merge failed",
+        "tone": "muted"
+      }
+    ],
+    [
+      "skipped",
+      {
+        "label": "skipped",
+        "tone": "muted"
+      },
+      {
+        "label": "skipped",
+        "tone": "muted"
+      },
+      {
+        "label": "skipped",
+        "tone": "muted"
+      },
+      {
+        "label": "skipped",
+        "tone": "muted"
+      }
+    ],
+    [
+      "brand_new_result",
+      {
+        "label": "brand new result",
+        "tone": "muted"
+      },
+      {
+        "label": "brand new result",
+        "tone": "muted"
+      },
+      {
+        "label": "brand new result",
+        "tone": "bad"
+      },
+      {
+        "label": "brand new result",
+        "tone": "muted"
+      }
+    ]
+  ]
+}

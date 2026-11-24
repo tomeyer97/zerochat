@@ -1,0 +1,123 @@
+{
+  "cells": {
+    "20261107-222316-71f62e/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 58%, var(--muted))",
+    "20261107-222316-71f62e/yaa110__nomino.f892499#0": "color-mix(in srgb, var(--accent-text) 52%, var(--muted))",
+    "20261107-222316-910b7d/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 62%, var(--muted))",
+    "20261107-222316-910b7d/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 66%, var(--muted))",
+    "20261107-222316-910b7d/tomnomnom__gron.88a6234#2": "color-mix(in srgb, var(--accent-text) 66%, var(--muted))",
+    "20261107-222316-910b7d/yaa110__nomino.f892499#0": "color-mix(in srgb, var(--accent-text) 53%, var(--muted))",
+    "20261107-222316-910b7d/yaa110__nomino.f892499#1": "color-mix(in srgb, var(--accent-text) 45%, var(--muted))",
+    "20261107-222316-910b7d/yaa110__nomino.f892499#2": "color-mix(in srgb, var(--accent-text) 65%, var(--muted))",
+    "20261108-142204-d474ae/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 50%, var(--muted))",
+    "20261108-142204-d474ae/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 67%, var(--muted))",
+    "20261108-142204-d474ae/tomnomnom__gron.88a6234#2": "color-mix(in srgb, var(--accent-text) 66%, var(--muted))",
+    "20261108-142204-d474ae/yaa110__nomino.f892499#0": "color-mix(in srgb, var(--accent-text) 15%, var(--muted))",
+    "20261108-142204-d474ae/yaa110__nomino.f892499#1": "color-mix(in srgb, var(--accent-text) 61%, var(--muted))",
+    "20261108-142204-d474ae/yaa110__nomino.f892499#2": "color-mix(in srgb, var(--accent-text) 15%, var(--muted))",
+    "20261108-152720-fb0664/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 74%, var(--muted))",
+    "20261108-152720-fb0664/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 47%, var(--muted))",
+    "20261108-152720-fb0664/tomnomnom__gron.88a6234#2": "color-mix(in srgb, var(--accent-text) 55%, var(--muted))",
+    "20261108-152720-fb0664/yaa110__nomino.f892499#0": "color-mix(in srgb, var(--accent-text) 69%, var(--muted))",
+    "20261108-152720-fb0664/yaa110__nomino.f892499#1": "color-mix(in srgb, var(--accent-text) 57%, var(--muted))",
+    "20261108-152720-fb0664/yaa110__nomino.f892499#2": "color-mix(in srgb, var(--accent-text) 66%, var(--muted))",
+    "20261108-170007-63721d/tomnomnom__gron.88a6234#0": null,
+    "20261108-170007-63721d/tomnomnom__gron.88a6234#1": null,
+    "20261108-170007-63721d/tomnomnom__gron.88a6234#2": null,
+    "20261108-170007-63721d/yaa110__nomino.f892499#0": null,
+    "20261108-170007-63721d/yaa110__nomino.f892499#1": null,
+    "20261108-170007-63721d/yaa110__nomino.f892499#2": null,
+    "20261108-170009-cace9c/tomnomnom__gron.88a6234#0": null,
+    "20261108-170009-cace9c/tomnomnom__gron.88a6234#1": null,
+    "20261108-170009-cace9c/tomnomnom__gron.88a6234#2": null,
+    "20261108-170009-cace9c/yaa110__nomino.f892499#0": null,
+    "20261108-170009-cace9c/yaa110__nomino.f892499#1": null,
+    "20261108-170009-cace9c/yaa110__nomino.f892499#2": null,
+    "label_clone-v1-sonnet-build/cheat__cheat.b8098dc#0": "color-mix(in srgb, var(--accent-text) 57%, var(--muted))",
+    "label_clone-v1-sonnet-build/mibk__dupl.1bf052b#0": "color-mix(in srgb, var(--accent-text) 79%, var(--muted))",
+    "label_clone-v1-sonnet-build/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 82%, var(--muted))",
+    "label_clone-v1/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 61%, var(--muted))",
+    "label_ctrlc-test/tomnomnom__gron.88a6234#0": null,
+    "label_haiku-adversarial/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 66%, var(--muted))",
+    "label_haiku-prototype-plan/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 59%, var(--muted))",
+    "label_k8s-sc-sonnet5/k8s-job-backoff-limit-per-index#0": "color-mix(in srgb, var(--accent-text) 90%, var(--muted))",
+    "label_replay-build-haiku/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 55%, var(--muted))",
+    "label_replay-build-haiku/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 50%, var(--muted))",
+    "label_replay-build-sonnet/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 81%, var(--muted))",
+    "label_replay-build-sonnet/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 76%, var(--muted))",
+    "label_replay-sonnet-explore-haiku-build/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 59%, var(--muted))",
+    "label_replay-sonnet-explore-haiku-build/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 78%, var(--muted))",
+    "label_sc-template-haiku/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 65%, var(--muted))",
+    "label_smoke-haiku/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 56%, var(--muted))",
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 62%, var(--muted))",
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 62%, var(--muted))",
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 62%, var(--muted))",
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 61%, var(--muted))",
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 61%, var(--muted))",
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 59%, var(--muted))",
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 61%, var(--muted))",
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#1": "color-mix(in srgb, var(--accent-text) 61%, var(--muted))",
+    "label_ticket-v1/tomnomnom__gron.88a6234#0": "color-mix(in srgb, var(--accent-text) 59%, var(--muted))"
+  },
+  "table": [
+    [
+      "-1.234",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "-0.5",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "-0.0001",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "0",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "0.0001",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "0.004",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "0.005",
+      "color-mix(in srgb, var(--accent-text) 15%, var(--muted))"
+    ],
+    [
+      "0.5",
+      "color-mix(in srgb, var(--accent-text) 53%, var(--muted))"
+    ],
+    [
+      "0.715",
+      "color-mix(in srgb, var(--accent-text) 69%, var(--muted))"
+    ],
+    [
+      "1",
+      "color-mix(in srgb, var(--accent-text) 90%, var(--muted))"
+    ],
+    [
+      "1.5",
+      "color-mix(in srgb, var(--accent-text) 90%, var(--muted))"
+    ],
+    [
+      "59.9",
+      "color-mix(in srgb, var(--accent-text) 90%, var(--muted))"
+    ],
+    [
+      "3600",
+      "color-mix(in srgb, var(--accent-text) 90%, var(--muted))"
+    ],
+    [
+      "12345.678",
+      "color-mix(in srgb, var(--accent-text) 90%, var(--muted))"
+    ],
+    [
+      "null",
+      "color-mix(in srgb, var(--accent-text) NaN%, var(--muted))"
+    ]
+  ]
+}

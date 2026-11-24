@@ -1,0 +1,149 @@
+{
+  "body": {
+    "aId": "20261107-222316-71f62e",
+    "aLabel": "r1-screen-spec2",
+    "aRunCount": 2,
+    "bId": "20261107-222316-910b7d",
+    "bLabel": "r1-ctrl-diffloop",
+    "bRunCount": 6,
+    "nodes": [
+      {
+        "a": {
+          "execs": 2,
+          "meanCostUsd": 2.18909595,
+          "meanTimeS": 664.74577117
+        },
+        "b": {
+          "execs": 6,
+          "meanCostUsd": 1.883887117,
+          "meanTimeS": 581.609394471
+        },
+        "deltaMeanCostUsd": -0.305208833,
+        "deltaMeanTimeS": -83.136376699,
+        "node": "build"
+      },
+      {
+        "a": {
+          "execs": 2,
+          "meanCostUsd": 0.7376218,
+          "meanTimeS": 299.921643257
+        },
+        "b": {
+          "execs": 6,
+          "meanCostUsd": 0.689170117,
+          "meanTimeS": 305.24023358
+        },
+        "deltaMeanCostUsd": -0.048451683,
+        "deltaMeanTimeS": 5.318590323,
+        "node": "explore"
+      },
+      {
+        "a": {
+          "execs": 4,
+          "meanCostUsd": 0.324937725,
+          "meanTimeS": 178.065054059
+        },
+        "b": {
+          "execs": 11,
+          "meanCostUsd": 0.383973545,
+          "meanTimeS": 193.901135987
+        },
+        "deltaMeanCostUsd": 0.05903582,
+        "deltaMeanTimeS": 15.836081927,
+        "node": "oracle"
+      },
+      {
+        "a": null,
+        "b": {
+          "execs": 1,
+          "meanCostUsd": 0.482732,
+          "meanTimeS": 19.252480745
+        },
+        "deltaMeanCostUsd": null,
+        "deltaMeanTimeS": null,
+        "node": "postmortem"
+      },
+      {
+        "a": {
+          "execs": 4,
+          "meanCostUsd": 0.88680635,
+          "meanTimeS": 290.323271871
+        },
+        "b": {
+          "execs": 10,
+          "meanCostUsd": 1.24293373,
+          "meanTimeS": 416.080004621
+        },
+        "deltaMeanCostUsd": 0.35612738,
+        "deltaMeanTimeS": 125.75673275,
+        "node": "repair"
+      },
+      {
+        "a": {
+          "execs": 2,
+          "meanCostUsd": 0.6538095,
+          "meanTimeS": 272.289178371
+        },
+        "b": null,
+        "deltaMeanCostUsd": null,
+        "deltaMeanTimeS": null,
+        "node": "spec_extend"
+      }
+    ],
+    "tasks": [
+      {
+        "a": {
+          "maxScore": 0.575892857,
+          "meanCostUsd": 6.0031999,
+          "meanScore": 0.575892857,
+          "meanTimeS": 2135.60679841,
+          "minScore": 0.575892857,
+          "n": 1
+        },
+        "b": {
+          "maxScore": 0.683035714,
+          "meanCostUsd": 6.016988267,
+          "meanScore": 0.65922619,
+          "meanTimeS": 2340.771495422,
+          "minScore": 0.620535714,
+          "n": 3
+        },
+        "deltaCostUsd": 0.013788367,
+        "deltaScore": 0.083333333,
+        "deltaTimeS": 205.164697011,
+        "noise": "needs_seeds",
+        "task": "tomnomnom__gron.88a6234"
+      },
+      {
+        "a": {
+          "maxScore": 0.498402556,
+          "meanCostUsd": 6.0048309,
+          "meanScore": 0.498402556,
+          "meanTimeS": 2626.196182489,
+          "minScore": 0.498402556,
+          "n": 1
+        },
+        "b": {
+          "maxScore": 0.670926518,
+          "meanCostUsd": 4.8410523,
+          "meanScore": 0.528221512,
+          "meanTimeS": 2038.677238782,
+          "minScore": 0.405750799,
+          "n": 3
+        },
+        "deltaCostUsd": -1.1637786,
+        "deltaScore": 0.029818956,
+        "deltaTimeS": -587.518943707,
+        "noise": "needs_seeds",
+        "task": "yaa110__nomino.f892499"
+      }
+    ],
+    "totals": {
+      "deltaCostUsd": -0.574995117,
+      "deltaScore": 0.056576145,
+      "deltaTimeS": -191.177123348,
+      "tasks": 2
+    }
+  },
+  "status": 200
+}

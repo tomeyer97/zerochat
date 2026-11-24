@@ -1,0 +1,14 @@
+{
+  "list": [
+    "<ref:list[0]>",
+    "<ref:list[2]>",
+    "<ref:list[1]>"
+  ],
+  "table": [
+    "d",
+    "c",
+    "e",
+    "a",
+    "b"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "batches": {
+    "20261107-222316-71f62e": {
+      "compact": "2 tasks × 1 seed · 2/2 done · score 0.54 (0.50–0.58) · $12.01 · started Nov 7, 9:23 PM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness 4259fe20 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.54 (0.50–0.58)"
+    },
+    "20261107-222316-910b7d": {
+      "compact": "2 tasks × 3 seeds · 6/6 done · score 0.59 (0.41–0.68) · $32.57 · started Nov 7, 9:23 PM",
+      "doneTitle": "6 of 6 cells (task × seed) done",
+      "identity": "harness 4a251ead · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.59 (0.41–0.68)"
+    },
+    "20261108-142204-d474ae": {
+      "compact": "2 tasks × 3 seeds · 6/6 done · score 0.41 (0.00–0.69) · $34.72 · started Nov 8, 1:22 PM",
+      "doneTitle": "6 of 6 cells (task × seed) done",
+      "identity": "harness bb5e174c · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.41 (0.00–0.69)"
+    },
+    "20261108-152720-fb0664": {
+      "compact": "2 tasks × 3 seeds · 6/6 done · score 0.62 (0.43–0.78) · $31.80 · started Nov 8, 2:27 PM",
+      "doneTitle": "6 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.62 (0.43–0.78)"
+    },
+    "20261108-170007-63721d": {
+      "compact": "2 tasks × 3 seeds · 0/6 done · no score (nothing scored yet) · no cost recorded · started Nov 8, 4:00 PM",
+      "doneTitle": "0 of 6 cells (task × seed) done",
+      "identity": "",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "nothing scored yet",
+      "score": "—"
+    },
+    "20261108-170009-cace9c": {
+      "compact": "2 tasks × 3 seeds · 0/6 done · no score (nothing scored yet) · no cost recorded · started Nov 8, 4:00 PM",
+      "doneTitle": "0 of 6 cells (task × seed) done",
+      "identity": "",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "nothing scored yet",
+      "score": "—"
+    },
+    "label:clone-v1": {
+      "compact": "1 task × 1 seed · 1/1 done · score 0.62 · $5.40 · started Nov 3, 2:17 PM",
+      "doneTitle": "1 of 1 cells (task × seed) done",
+      "identity": "harness baf3dc98 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.62"
+    },
+    "label:clone-v1-sonnet-build": {
+      "compact": "3 tasks × 1 seed · 3/3 done · score 0.77 (0.57–0.89) · $36.32 · started Nov 4, 9:12 AM",
+      "doneTitle": "3 of 3 cells (task × seed) done",
+      "identity": "harness c4d47254 · claude-haiku-4-5, claude-sonnet-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.77 (0.57–0.89)"
+    },
+    "label:ctrlc-test": {
+      "compact": "1 task × 1 seed · 1/1 done · no score (stopped before a run was scored) · $0.06 · started Nov 3, 11:19 AM",
+      "doneTitle": "1 of 1 cells (task × seed) done",
+      "identity": "harness c2d7bd80 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": "stopped before a run was scored",
+      "score": "—"
+    },
+    "label:haiku-adversarial": {
+      "compact": "1 task × 1 seed · 1/1 done +3 retried · score 0.67 · $5.99 · started Nov 3, 12:25 PM",
+      "doneTitle": "1 of 1 cells (task × seed) done; +3 retried attempts, $2.68, not counted as cells",
+      "identity": "harness 5779cfc7 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.67"
+    },
+    "label:haiku-prototype-plan": {
+      "compact": "1 task × 1 seed · 1/1 done +1 retried · score 0.59 · $10.68 · started Nov 3, 12:57 PM",
+      "doneTitle": "1 of 1 cells (task × seed) done; +1 retried attempt, $5.49, not counted as cells",
+      "identity": "harness 6b6223a1 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.59"
+    },
+    "label:k8s-sc-sonnet5": {
+      "compact": "1 task × 1 seed · 1/1 done · score 1.00 · $6.20 · started Nov 4, 11:34 AM",
+      "doneTitle": "1 of 1 cells (task × seed) done",
+      "identity": "harness b34fe3b7 · claude-sonnet-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "1.00"
+    },
+    "label:replay-build-haiku": {
+      "compact": "1 task × 2 seeds · 2/2 done · score 0.50 (0.47–0.53) · $3.63 · started Nov 3, 3:02 PM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness bb95881e · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.50 (0.47–0.53)"
+    },
+    "label:replay-build-sonnet": {
+      "compact": "1 task × 2 seeds · 2/2 done +2 retried · score 0.85 (0.82–0.88) · $11.10 · started Nov 3, 3:15 PM",
+      "doneTitle": "2 of 2 cells (task × seed) done; +2 retried attempts, not counted as cells",
+      "identity": "harness 998df48b · claude-sonnet-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.85 (0.82–0.88)"
+    },
+    "label:replay-sonnet-explore-haiku-build": {
+      "compact": "1 task × 2 seeds · 2/2 done · score 0.71 (0.58–0.84) · $11.94 · started Nov 4, 10:45 AM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness a1b5109d · claude-haiku-4-5, claude-sonnet-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.71 (0.58–0.84)"
+    },
+    "label:sc-template-haiku": {
+      "compact": "1 task × 1 seed · 1/1 done · score 0.67 · $2.00 · started Nov 3, 11:42 AM",
+      "doneTitle": "1 of 1 cells (task × seed) done",
+      "identity": "harness c6993f2f · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.67"
+    },
+    "label:smoke-haiku": {
+      "compact": "1 task × 1 seed · 1/1 done · score 0.55 · $1.83 · started Nov 3, 11:06 AM",
+      "doneTitle": "1 of 1 cells (task × seed) done",
+      "identity": "harness c2d7bd80 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.55"
+    },
+    "label:sweep:sweep-triage-repair:repair#1:claude-haiku-4-5": {
+      "compact": "1 task × 2 seeds · 2/2 done · score 0.62 · $1.17 · started Nov 4, 9:16 AM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness 116217a0 · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.62"
+    },
+    "label:sweep:sweep-triage-repair:repair#1:claude-sonnet-5": {
+      "compact": "1 task × 2 seeds · 2/2 done · score 0.62 (0.62–0.63) · $4.99 · started Nov 4, 9:19 AM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness 77af6eb4 · claude-sonnet-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.62 (0.62–0.63)"
+    },
+    "label:sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5": {
+      "compact": "1 task × 2 seeds · 2/2 done · score 0.60 (0.59–0.62) · $2.41 · started Nov 4, 9:11 AM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness c583f11c · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.60 (0.59–0.62)"
+    },
+    "label:sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5": {
+      "compact": "1 task × 2 seeds · 2/2 done · score 0.61 · $3.34 · started Nov 4, 9:11 AM",
+      "doneTitle": "2 of 2 cells (task × seed) done",
+      "identity": "harness c31d9634 · claude-haiku-4-5, claude-sonnet-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.61"
+    },
+    "label:ticket-v1": {
+      "compact": "1 task × 1 seed · 1/1 done · score 0.58 · $3.54 · started Nov 3, 2:30 PM",
+      "doneTitle": "1 of 1 cells (task × seed) done",
+      "identity": "harness a6d4d43b · claude-haiku-4-5",
+      "noCost": null,
+      "noScore": null,
+      "score": "0.58"
+    }
+  },
+  "oneTaskOneSeed": {
+    "compact": "1 task × 1 seed · 6/6 done +2 retried · score 0.62 (0.43–0.78) · $31.80 · started Nov 8, 2:27 PM",
+    "doneTitle": "6 of 6 cells (task × seed) done; +2 retried attempts, not counted as cells",
+    "identity": "harness 67bbbf59 · claude-haiku-4-5",
+    "noCost": null,
+    "noScore": null,
+    "score": "0.62 (0.43–0.78)"
+  },
+  "unscored": {
+    "crashed": {
+      "compact": "2 tasks × 3 seeds · 1/6 done · no score (crashed before a run was scored) · no cost recorded · started Nov 8, 2:27 PM",
+      "doneTitle": "1 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "crashed before a run was scored",
+      "score": "—"
+    },
+    "done": {
+      "compact": "2 tasks × 3 seeds · 1/6 done · no score (no run was scored) · no cost recorded · started Nov 8, 2:27 PM",
+      "doneTitle": "1 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "no run was scored",
+      "score": "—"
+    },
+    "failed_to_start": {
+      "compact": "2 tasks × 3 seeds · 1/6 done · no score (never started) · no cost recorded · started Nov 8, 2:27 PM",
+      "doneTitle": "1 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "never started",
+      "score": "—"
+    },
+    "running": {
+      "compact": "2 tasks × 3 seeds · 0/6 done · no score (nothing scored yet) · no cost recorded · started Nov 8, 2:27 PM",
+      "doneTitle": "0 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "nothing scored yet",
+      "score": "—"
+    },
+    "starting": {
+      "compact": "2 tasks × 3 seeds · 1/6 done · no score (nothing scored yet) · no cost recorded · started Nov 8, 2:27 PM",
+      "doneTitle": "1 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "nothing scored yet",
+      "score": "—"
+    },
+    "stopped": {
+      "compact": "2 tasks × 3 seeds · 1/6 done · no score (stopped before a run was scored) · no cost recorded · started Nov 8, 2:27 PM",
+      "doneTitle": "1 of 6 cells (task × seed) done",
+      "identity": "harness 67bbbf59 · claude-haiku-4-5",
+      "noCost": "pb recorded no cost for its runs",
+      "noScore": "stopped before a run was scored",
+      "score": "—"
+    }
+  }
+}

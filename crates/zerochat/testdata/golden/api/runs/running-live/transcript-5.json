@@ -1,0 +1,70 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 2,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 32500,
+      "endSeq": null,
+      "endedAt": null,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 5,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795003569500,
+      "logLines": 2,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "code",
+      "nodeInstance": 1,
+      "outcome": null,
+      "output": null,
+      "retries": 1,
+      "reused": false,
+      "round": 2,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 18,
+      "startedAt": 1795003567500,
+      "state": "running",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "pending",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000005"
+      }
+    },
+    "instructions": "Implement the task.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003568500,
+          "kind": "retry",
+          "text": "retried 3 of 10 (a transient error)"
+        },
+        {
+          "at": 1795003569500,
+          "kind": "text",
+          "text": "usage limit reached for this hour"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

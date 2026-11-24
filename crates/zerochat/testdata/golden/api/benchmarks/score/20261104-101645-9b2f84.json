@@ -1,0 +1,59 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 8.0,
+    "costUsd": 0.6023117,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.4355489,
+        "node": "repair"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.1667628,
+        "node": "postmortem"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 0.6023117,
+    "runId": "20261104-101645-9b2f84",
+    "score": 0.620535714,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "repair#1",
+        "score": 0.620535714,
+        "seq": 0,
+        "testsPassed": 139,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.620535714,
+        "seq": 1,
+        "testsPassed": 139,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 139,
+    "testsTotal": 224,
+    "wallS": 240.225838184,
+    "zeroshotRunId": "01a1a5d8-ba67-7d81-bd8a-f1e5d39287c3"
+  },
+  "status": 200
+}

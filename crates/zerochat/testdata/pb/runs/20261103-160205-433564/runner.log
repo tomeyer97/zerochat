@@ -1,0 +1,11 @@
+16:02:05 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] start label='replay-build-haiku' version=bb95881efa model=per-node art=/data/pb/runs/20261103-160205-433564
+16:02:06 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] replay of 20261103-151748-ef96e3 build#1: starting code = explore#1 (snapshot)
+16:02:06 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] sandbox up; launching zeroshot
+16:02:14 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] node start  build (exec 1, attempt 1)
+16:09:13 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] node done   build -> verified 
+16:09:35 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] agent finished: success — zeroshot succeeded
+16:09:36 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] running hidden tests (programbench eval)…
+16:10:58 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] score 106/224 (ok)
+16:11:03 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] own suite of submission.tar.gz: 45/45
+16:11:03 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] score per step: build#1 47.3%, final 47.3%
+16:11:03 [20261103-160205-433564 tomnomnom__gron.88a6234 s1] done: success

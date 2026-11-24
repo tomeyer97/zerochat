@@ -1,0 +1,32 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 1.0,
+    "costUsd": 0.0620568,
+    "exitReason": "interrupted after 50s, 1 steps",
+    "failingTests": [],
+    "label": "ctrlc-test",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.0620568,
+        "node": "worker"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 0.0,
+    "runId": "20261103-121900-29af42",
+    "score": null,
+    "seed": 0,
+    "state": "interrupted",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": 51.811130285,
+    "zeroshotRunId": "01a1a122-480f-7012-a453-09a724ea9236"
+  },
+  "status": 200
+}

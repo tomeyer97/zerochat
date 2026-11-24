@@ -1,0 +1,42 @@
+[
+  {
+    "checkpointId": "01a1f8c8-4c1a-7bf0-a761-4c3d6e4298fa",
+    "sequence": 1,
+    "node": "worker",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1795175238682
+  },
+  {
+    "checkpointId": "01a1f8c8-e36f-7ba2-96a3-8a932d62bcc3",
+    "sequence": 2,
+    "node": "parallel_reviews",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1795175277423
+  },
+  {
+    "checkpointId": "01a1f8c9-5360-7122-ac51-16747a462ca0",
+    "sequence": 3,
+    "node": "worker",
+    "mapIndices": [],
+    "loopIterations": [
+      2
+    ],
+    "createdAt": 1795175306080
+  },
+  {
+    "checkpointId": "01a1f8c9-af33-7141-b24e-8ab02af9c2c7",
+    "sequence": 4,
+    "node": "parallel_reviews",
+    "mapIndices": [],
+    "loopIterations": [
+      2
+    ],
+    "createdAt": 1795175329587
+  }
+]

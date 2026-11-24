@@ -1,0 +1,6 @@
+13:43:12 [20261103-134312-42aa68 tomnomnom__gron.88a6234 s0] start label='haiku-adversarial' version=5779cfc784 model=per-node art=/data/pb/runs/20261103-134312-42aa68
+13:43:13 [20261103-134312-42aa68 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+13:43:17 [20261103-134312-42aa68 tomnomnom__gron.88a6234 s0] agent finished: success — zeroshot failed (runtime_failed)
+13:43:18 [20261103-134312-42aa68 tomnomnom__gron.88a6234 s0] running hidden tests (programbench eval)…
+13:43:20 [20261103-134312-42aa68 tomnomnom__gron.88a6234 s0] score 0/224 (compile_failed)
+13:43:20 [20261103-134312-42aa68 tomnomnom__gron.88a6234 s0] done: success

@@ -1,0 +1,47 @@
+{
+  "admitted": {
+    "explain": "Zeroshot accepted the run and is preparing it.",
+    "label": "Starting",
+    "tone": "running"
+  },
+  "failed": {
+    "explain": "The graph ended without succeeding.",
+    "label": "Failed",
+    "tone": "bad"
+  },
+  "running": {
+    "explain": "Agents are working on this run right now.",
+    "label": "Running",
+    "tone": "running"
+  },
+  "stalled": {
+    "explain": "The run says it is running, but its controller process is gone.",
+    "label": "Stalled",
+    "tone": "warn"
+  },
+  "stopped": {
+    "explain": "The run was force-stopped.",
+    "label": "Stopped",
+    "tone": "neutral"
+  },
+  "stopping": {
+    "explain": "A stop was requested; Zeroshot is winding the run down.",
+    "label": "Stopping",
+    "tone": "neutral"
+  },
+  "succeeded": {
+    "explain": "The graph reached a succeed exit.",
+    "label": "Succeeded",
+    "tone": "ok"
+  },
+  "suspended": {
+    "explain": "Paused at a checkpoint: it continues when it is resumed or its question is answered.",
+    "label": "Suspended",
+    "tone": "neutral"
+  },
+  "unknown": {
+    "explain": "zerochat could not tell what state this run is in.",
+    "label": "Unknown",
+    "tone": "muted"
+  }
+}

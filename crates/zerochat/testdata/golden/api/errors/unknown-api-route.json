@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "not_found",
+    "message": "No such API route."
+  },
+  "status": 404
+}

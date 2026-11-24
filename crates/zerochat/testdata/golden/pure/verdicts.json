@@ -1,0 +1,54 @@
+[
+  {
+    "accepted": true,
+    "signals": {
+      "verdict": "accepted"
+    }
+  },
+  {
+    "accepted": false,
+    "signals": {
+      "verdict": "rejected"
+    }
+  },
+  {
+    "accepted": false,
+    "signals": {
+      "a": "approved",
+      "b": "changes_requested"
+    }
+  },
+  {
+    "accepted": true,
+    "signals": {
+      "a": "pass",
+      "b": "ok"
+    }
+  },
+  {
+    "accepted": null,
+    "signals": {
+      "verdict": "maybe"
+    }
+  },
+  {
+    "accepted": null,
+    "signals": {}
+  },
+  {
+    "accepted": null,
+    "signals": "not an object"
+  },
+  {
+    "accepted": false,
+    "signals": {
+      "verdict": "CI_FAILED"
+    }
+  },
+  {
+    "accepted": null,
+    "signals": {
+      "x": 1
+    }
+  }
+]

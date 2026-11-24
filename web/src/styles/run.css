@@ -1,0 +1,1585 @@
+/* ---------- app shell ---------- */
+.app {
+  height: 100dvh;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+.app-header {
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 18px;
+  border-bottom: 1px solid var(--hairline);
+  background: var(--surface);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-size: 23px;
+  letter-spacing: -0.6px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand svg {
+  color: var(--muted);
+}
+.brand-rule {
+  height: 22px;
+  border-left: 1px solid var(--hairline);
+}
+.header-spacer {
+  flex: 1;
+}
+/* Which Zeroshot and which runs folder: quiet, and the first thing to go when space runs out. */
+.setup-line {
+  min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: var(--muted);
+}
+/* Top nav: Runs · Features · Benchmarks, each shown only when configured. */
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+}
+.top-nav a {
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 4px 1px;
+  border-bottom: 2px solid transparent;
+}
+.top-nav a.on {
+  color: var(--ink);
+  font-weight: 600;
+  border-bottom-color: var(--accent);
+}
+.top-nav span {
+  color: var(--hairline);
+}
+.app-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+.main {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  outline: none;
+}
+.fatal {
+  max-width: 640px;
+  margin: 80px auto;
+  display: grid;
+  gap: 12px;
+  padding: 0 20px;
+}
+.fatal-details summary {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.fatal-details pre {
+  margin-top: 6px;
+  background: var(--code-surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 9px 11px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- sidebar ---------- */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  border-right: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--canvas);
+}
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 10px 8px;
+  position: relative;
+}
+.sidebar-search .search-icon {
+  position: absolute;
+  left: 19px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.sidebar-search input {
+  padding-left: 28px;
+  font-size: 13px;
+  background: var(--surface);
+}
+.sidebar-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 0 8px 16px;
+}
+.target {
+  margin-top: 6px;
+}
+.target-heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 7px 6px;
+  border-radius: 4px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: left;
+}
+.target-heading:hover {
+  background: var(--subtle-hover);
+}
+.target-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.target-count {
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+.live-count {
+  color: var(--accent-text);
+}
+.target-badge {
+  font-size: 10px;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 0 6px;
+  border-radius: 8px;
+  border: 1px solid var(--hairline);
+  font-weight: 500;
+}
+.target-badge.unreachable {
+  color: var(--error-text);
+  border-color: var(--error-border);
+  background: var(--error-surface);
+}
+.target-badge.unsupported {
+  color: var(--muted);
+}
+.target-error {
+  font-size: 12px;
+  padding: 4px 8px 8px 26px;
+  color: var(--muted);
+  word-break: break-word;
+}
+.target-error.unreachable {
+  color: var(--error-text);
+}
+.sidebar-empty {
+  font-size: 12.5px;
+  color: var(--muted);
+  padding: 4px 8px 8px 26px;
+}
+.run-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.run-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 6px 8px 6px 10px;
+  border-radius: 5px;
+  color: var(--ink);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+}
+.run-item .status-dot {
+  margin-top: 5px;
+}
+.run-item:hover {
+  background: var(--subtle-hover);
+}
+.run-item.active {
+  background: var(--active);
+}
+.run-item-text {
+  min-width: 0;
+  display: grid;
+}
+.run-title {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.run-meta {
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.run-meta .tone-text-running,
+.run-meta .tone-text-ok,
+.run-meta .tone-text-neutral,
+.run-meta .tone-text-muted {
+  color: var(--muted);
+}
+.show-more {
+  margin-left: 26px;
+}
+
+/* ---------- home: one run table ---------- */
+.home {
+  height: 100%;
+  overflow: auto;
+  padding: 20px 28px 40px;
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+.home-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chip {
+  padding: 3px 11px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 13px;
+  color: var(--secondary);
+}
+.chip.on {
+  border-color: var(--control-border);
+  color: var(--ink);
+  background: var(--active);
+  font-weight: 600;
+}
+.chip-count {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  margin-left: 2px;
+}
+.home-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  flex: 0 1 300px;
+}
+.home-search input {
+  font-size: 13px;
+}
+.run-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  font-size: 13.5px;
+  table-layout: fixed;
+}
+.run-table th {
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+/* Home: the column labels are self-evident; the header row keeps the widths and screen readers. */
+.run-table thead.quiet-head th {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.run-table td {
+  padding: 7px 10px;
+  border-top: 1px solid var(--hairline);
+  vertical-align: top;
+}
+.run-table tbody tr:first-child td {
+  border-top: none;
+}
+.run-table tbody tr:hover {
+  background: var(--surface-hover);
+}
+.run-table .col-status {
+  width: 30px;
+  padding-right: 0;
+}
+.run-table .col-status .status-dot {
+  margin-top: 5px;
+}
+.run-table .col-time {
+  width: 112px;
+  white-space: nowrap;
+}
+.run-table .col-num {
+  width: 92px;
+  text-align: right;
+  white-space: nowrap;
+}
+.run-table .col-target {
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.col-run {
+  display: grid;
+  min-width: 0;
+}
+.run-link {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.run-link:hover {
+  text-decoration: underline;
+}
+.run-cause {
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Hidden while the table has its own time columns; shown under 900px, where they fold into the row. */
+.run-row-when {
+  display: none;
+}
+.target-problems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+
+/* ---------- run page ---------- */
+.run-page {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+.run-scroll {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  padding: 18px 24px 40px;
+}
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.run-header {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.run-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* At most two lines, then an ellipsis. */
+.run-title-text {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 0 1 auto;
+}
+.run-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.run-title-row .pill {
+  flex-shrink: 0;
+}
+/* A configured source's run (such as pb's benchmark runs): no actions, and a hover note saying why. */
+.observe-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: help;
+}
+.run-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 0;
+  font-size: 14px;
+  color: var(--secondary);
+  font-variant-numeric: tabular-nums;
+}
+/* Items are separated by a '·' after each one but the last. A trailing separator, not a leading
+   one: wrapped onto a new line, an item never starts with a stray '·' — the dot stays on the end
+   of the previous line instead. An item hidden on a phone takes its separator with it. */
+.run-meta-line > :not(:last-child)::after {
+  content: '·';
+  margin: 0 8px;
+  color: var(--muted);
+}
+/* The one exception, "limited data": <details> lays its ::after out below the popover when open,
+   so its separator sits on the summary instead. */
+.run-meta-line > .limited::after {
+  content: none;
+}
+.run-meta-line > .limited:not(:last-child) > summary::after {
+  content: '·';
+  margin: 0 6px 0 8px;
+  color: var(--muted);
+}
+.run-meta-line .stale {
+  color: var(--muted);
+  font-style: italic;
+}
+.run-meta-line .copy-button {
+  opacity: 0.55;
+}
+.run-meta-line .copy-button:hover,
+.run-meta-line .copy-button:focus-visible {
+  opacity: 1;
+}
+.limited {
+  position: relative;
+  font-size: 12.5px;
+}
+.limited summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  list-style: none;
+}
+.limited summary::-webkit-details-marker {
+  display: none;
+}
+.limited .popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 30;
+  width: min(360px, 80vw);
+  padding: 10px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 6px 22px var(--shadow-popover);
+  color: var(--secondary);
+  display: grid;
+  gap: 6px;
+}
+@media (max-width: 600px) {
+  .limited .popover {
+    left: auto;
+    right: 0;
+    width: min(320px, calc(100vw - 32px));
+  }
+}
+.limited .popover ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.lineage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 16px;
+  font-size: 12px;
+  color: var(--secondary);
+}
+.run-context-line {
+  margin: 0;
+  font-size: 12px;
+}
+.id-tail {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+/* ---------- failure card: red only for a failed run ---------- */
+/* No coloured edge: its position at the top of the page already says this is the
+   failure; the header pill and the failed node in the graph are where red belongs. */
+.failure-card {
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 14px 18px 14px;
+  margin: 12px 0;
+  display: grid;
+  gap: 9px;
+}
+.failure-card.compact {
+  border-left: 1px solid var(--hairline);
+  padding: 8px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+}
+.failure-card.compact .failure-raw {
+  flex-basis: 100%;
+}
+.failure-class {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+/* A provider fault is not the run's own: its class line takes the class's tone (failure-class.ts). */
+.failure-class.tone-text-warn {
+  color: var(--warn);
+}
+.failure-title {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.failure-detail {
+  color: var(--secondary);
+  max-width: 900px;
+}
+.failure-fix {
+  max-width: 900px;
+}
+.fix-command {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+.fix-command code {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.failure-when {
+  font-size: 14px;
+  color: var(--secondary);
+}
+.feedback {
+  display: grid;
+  gap: 8px;
+}
+.feedback-item {
+  border-left: 3px solid var(--hairline);
+  padding: 2px 0 2px 12px;
+}
+.feedback-head {
+  font-size: 12px;
+  color: var(--secondary);
+  margin-bottom: 2px;
+}
+.feedback-earlier summary,
+.failure-raw summary {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.feedback-earlier .feedback-item {
+  margin-top: 8px;
+}
+/* Feedback is clamped only once it is unusually long (over ~120 words); a normal paragraph is
+   shown in full, and "Show all" expands this one in place. The masks fade the cut text out:
+   #000 there is the opaque part of an alpha mask, not a colour. */
+.clamped.closed .markdown {
+  max-height: 15em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent);
+  mask-image: linear-gradient(to bottom, #000 60%, transparent);
+}
+/* Failure card while a node panel is open: the panel has the feedback in full. */
+.feedback.one-line .clamped .markdown {
+  max-height: 1.6em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+  mask-image: linear-gradient(to right, #000 85%, transparent);
+}
+.feedback.one-line .clamped .markdown > * + * {
+  display: none;
+}
+.feedback.one-line .feedback-earlier {
+  display: none;
+}
+.failure-raw pre,
+.error-lines {
+  margin-top: 6px;
+  background: var(--code-surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 9px 11px;
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.tool-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.failure-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* An action that would rerun the same settings: behind the fix, quiet. */
+.failure-actions .text-button.demoted {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+}
+
+/* ---------- limits close to running out (live runs only) ---------- */
+.pressures {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  gap: 4px 20px;
+  flex-wrap: wrap;
+}
+.pressure {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 6px;
+  font-size: 14px;
+  max-width: 100%;
+}
+.pressure-node {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.pressure-node:hover {
+  text-decoration: underline;
+}
+.pressure-item.level-warning {
+  color: var(--warn);
+}
+.pressure-item.level-critical {
+  color: var(--error-text);
+}
+
+/* ---------- timeline ---------- */
+.timeline {
+  margin: 18px 0;
+}
+.timeline-filter {
+  width: 220px;
+  padding: 4px 8px;
+  font-size: 12.5px;
+  background: var(--surface);
+}
+.approx-note {
+  margin: -2px 0 6px;
+}
+.timeline-table {
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  background: var(--surface);
+  overflow: auto;
+  max-height: 520px;
+}
+.tl-row {
+  display: grid;
+  gap: 8px;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 12.5px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--hairline);
+}
+.tl-row:last-child {
+  border-bottom: 0;
+}
+a.tl-row:hover {
+  background: var(--surface-hover);
+}
+.tl-row.selected {
+  background: var(--selected);
+  box-shadow: inset 3px 0 0 var(--accent-text);
+}
+.tl-head > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tl-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface);
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.tl-node {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 550;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tl-verdict {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--secondary);
+  font-size: 12px;
+}
+.tl-bar-cell {
+  position: relative;
+  height: 12px;
+  background: var(--canvas);
+  border-radius: 3px;
+}
+.tl-bar {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 2px;
+  background: var(--muted);
+  min-width: 2px;
+}
+.tl-bar.state-failed,
+.tl-bar.culprit.state-failed {
+  background: var(--error-text);
+}
+.tl-bar.state-rejected.culprit {
+  background: var(--warn);
+}
+.tl-bar.state-running {
+  background: var(--accent-text);
+}
+
+/* the run's Log: run-level lines and background agents (also the feature page's sections) */
+.run-logs {
+  margin: 18px 0;
+}
+.log-body {
+  display: grid;
+  gap: 8px;
+}
+.log-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.log-filters .chip {
+  font-size: 12px;
+  padding: 2px 9px;
+}
+.log-lines {
+  list-style: none;
+  margin: 0;
+  max-height: 320px;
+  overflow: auto;
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  background: var(--surface);
+  padding: 8px 10px;
+}
+.log-line {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--secondary);
+}
+.log-line time {
+  color: var(--muted);
+}
+.log-line span {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.log-line.stream-error span {
+  color: var(--error-text);
+}
+/* Inside a Log section (the run's, and the feature page's) a line is a row instead: time, agent,
+   text. These win over the grid above by specificity, wherever they sit. */
+.run-logs .log-line {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+}
+.run-logs .log-line time {
+  flex: 0 0 56px;
+  text-align: right;
+}
+.run-logs .log-agent {
+  flex: 0 0 auto;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.run-logs .log-text {
+  flex: 1;
+  min-width: 0;
+}
+.section-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* ---------- node panel ---------- */
+.node-panel {
+  width: var(--panel-w);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-left: 1px solid var(--hairline);
+  background: var(--surface);
+  box-shadow: -6px 0 24px var(--shadow-panel);
+  z-index: 10;
+}
+/* The panel takes its own column and the run column reflows (never content clipped under an
+   overlay); the divider resizes it and the header button hides the run list. Under 900px the panel
+   covers the page (see the narrow-screen rules). */
+
+.panel-header {
+  padding: 12px 16px 0;
+  border-bottom: 1px solid var(--hairline);
+  display: grid;
+  gap: 8px;
+}
+.panel-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.panel-close {
+  margin-left: auto;
+}
+.panel-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 12.5px;
+  color: var(--secondary);
+  overflow-wrap: anywhere;
+}
+.panel-facts span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.panel-pressures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.round-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-height: 92px;
+  overflow-y: auto;
+  padding-bottom: 2px;
+}
+.round-tab {
+  flex-shrink: 0;
+  padding: 3px 9px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  font-size: 12px;
+  background: var(--canvas);
+  white-space: nowrap;
+}
+.round-tab:hover {
+  border-color: var(--border-hover);
+}
+.round-tab[aria-selected='true'] {
+  border-color: var(--ink);
+  color: var(--ink);
+  font-weight: 600;
+}
+.round-tab .round-mark {
+  color: var(--muted);
+}
+.round-tab.state-failed .round-mark {
+  color: var(--error-text);
+}
+.round-tab.state-running .round-mark {
+  color: var(--accent-text);
+}
+.tabs {
+  display: flex;
+  gap: 2px;
+  margin-top: 2px;
+}
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  font-size: 13px;
+  color: var(--secondary);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.tab:hover {
+  color: var(--ink);
+}
+.tab[aria-selected='true'] {
+  color: var(--ink);
+  border-bottom-color: var(--accent-text);
+  font-weight: 600;
+}
+.panel-body {
+  /* A containing block for its absolutely positioned content (.visually-hidden): else that
+     content escapes this scroll container's clip and lengthens the page. */
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background: var(--canvas);
+}
+.panel-body.tab-chat {
+  overflow: hidden;
+}
+/* Panel content shrinks to the panel; wide content (paths, diffs) truncates or wraps inside. */
+.panel-body > * {
+  min-width: 0;
+}
+/* The chat tabpanel passes the panel's height down, so the chat scrolls and the composer stays put. */
+.tabpanel-fill {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.tabpanel-fill[hidden] {
+  display: none;
+}
+.panel-pad {
+  padding: 14px 16px 30px;
+}
+
+/* ---------- files ---------- */
+.files {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  overflow: hidden;
+  justify-self: start;
+  background: var(--surface);
+}
+.segmented button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  font-size: 12.5px;
+  color: var(--secondary);
+}
+.segmented button + button {
+  border-left: 1px solid var(--hairline);
+}
+.segmented button[aria-selected='true'] {
+  background: var(--selected);
+  color: var(--ink);
+  font-weight: 600;
+}
+.range-line {
+  font-size: 12.5px;
+  color: var(--secondary);
+}
+.changed-files {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  background: var(--surface);
+}
+.changed-files > li + li {
+  border-top: 1px solid var(--hairline);
+}
+.changed-file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 10px;
+  text-align: left;
+  font-size: 12.5px;
+}
+.changed-file:hover,
+.changed-file.active {
+  background: var(--surface-hover);
+}
+.file-status {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.file-path {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  direction: rtl;
+  text-align: left;
+}
+.file-counts {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  font-size: 11.5px;
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
+.diff {
+  /* Its own containing block, as .panel-body is: the hidden "added:"/"removed:" labels of its
+     lines stay inside this scroll container instead of lengthening the page (DECISIONS D8). */
+  position: relative;
+  border-top: 1px solid var(--hairline);
+  overflow-x: auto;
+  background: var(--surface);
+}
+.diff-empty {
+  padding: 8px 12px;
+}
+.diff-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+.diff-table td {
+  padding: 0 6px;
+  vertical-align: top;
+}
+.diff-table .ln {
+  width: 1%;
+  min-width: 38px;
+  text-align: right;
+  color: var(--muted);
+  user-select: none;
+  border-right: 1px solid var(--hairline);
+  white-space: nowrap;
+}
+.dl-sign {
+  width: 12px;
+  user-select: none;
+  color: var(--muted);
+}
+.dl-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+/* As in GitHub/VS Code: only the gutter mark is coloured; the code itself keeps its
+   normal colour on a low-alpha row tint, so an added/removed line still reads as code. */
+.dl-add {
+  background: var(--add-bg);
+}
+.dl-add .dl-sign {
+  color: var(--add-text);
+}
+.dl-del {
+  background: var(--del-bg);
+}
+.dl-del .dl-sign {
+  color: var(--del-text);
+}
+.dl-hunk td {
+  background: var(--info-surface);
+  color: var(--muted);
+  padding: 2px 6px;
+}
+.dl-meta td,
+.dl-note td {
+  color: var(--muted);
+}
+.browser {
+  display: grid;
+  gap: 8px;
+}
+.browser-split {
+  display: grid;
+  gap: 10px;
+}
+.browser-tree {
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  background: var(--surface);
+  padding: 4px 0;
+}
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tree-file,
+.tree-dir {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-align: left;
+  white-space: nowrap;
+}
+.tree-file:hover,
+.tree-dir:hover {
+  background: var(--surface-hover);
+}
+.tree-file.active {
+  background: var(--selected);
+  color: var(--accent-text);
+}
+.file-content {
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  background: var(--surface);
+  overflow: auto;
+  max-height: 640px;
+}
+.file-content-head {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+.files-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.files-bar .muted {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  cursor: help;
+}
+/* Change marks of a live refresh: colour only, no movement (fine with reduced motion too). */
+.changed-files > li.mark-added {
+  animation: mark-added 1.5s ease-out;
+}
+@keyframes mark-added {
+  from {
+    background: var(--add-bg);
+  }
+}
+.file-counts.mark-changed {
+  border-radius: 3px;
+  animation: mark-changed 1.5s ease-out;
+}
+@keyframes mark-changed {
+  from {
+    background: var(--info-surface);
+  }
+}
+/* A file no longer listed: drawn in place a moment, struck through and fading, not clickable. */
+.changed-files > li.mark-removed {
+  pointer-events: none;
+  animation: mark-removed 1.2s ease-in forwards;
+}
+.mark-removed .file-path {
+  text-decoration: line-through;
+}
+@keyframes mark-removed {
+  from {
+    background: var(--del-bg);
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+.files-updating {
+  margin-left: auto;
+}
+.changed-file:disabled {
+  cursor: default;
+  color: inherit;
+  opacity: 1;
+}
+.chevron-space {
+  width: 13px;
+  flex-shrink: 0;
+}
+
+/* ---------- node panel: io and details ---------- */
+.io {
+  display: grid;
+  gap: 14px;
+}
+.io-block {
+  display: grid;
+  gap: 5px;
+}
+.io-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.io-head h3,
+.details h3 {
+  font-size: 13px;
+  font-weight: 650;
+}
+.details {
+  display: grid;
+  gap: 18px;
+}
+.details section {
+  display: grid;
+  gap: 8px;
+}
+.kv {
+  display: grid;
+  grid-template-columns: minmax(130px, max-content) 1fr;
+  gap: 4px 14px;
+  margin: 0;
+  font-size: 12.5px;
+}
+.kv dt {
+  color: var(--muted);
+}
+.kv dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.instructions {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.55;
+  max-height: 480px;
+  overflow: auto;
+}
+.kv-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.info-tip {
+  display: inline-flex;
+  color: var(--muted);
+  cursor: help;
+}
+.io-raw summary {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+/* ---------- resizable panel, collapsible run list ---------- */
+.panel-resizer {
+  width: 7px;
+  margin: 0 -4px 0 -3px;
+  flex-shrink: 0;
+  cursor: col-resize;
+  z-index: 11;
+  position: relative;
+  touch-action: none;
+}
+.panel-resizer::after {
+  content: '';
+  position: absolute;
+  inset: 0 3px;
+  background: transparent;
+  transition: background 0.1s;
+}
+.panel-resizer:hover::after,
+.panel-resizer:focus-visible::after,
+body.resizing .panel-resizer::after {
+  background: var(--accent-text);
+}
+.panel-resizer:focus-visible {
+  outline: none;
+}
+body.resizing {
+  cursor: col-resize;
+  user-select: none;
+}
+/* An open panel leaves the run column at least 320px. */
+.node-panel,
+.files-panel {
+  max-width: calc(100% - 320px);
+}
+.list-toggle {
+  display: grid;
+}
+
+/* ---------- responsive: one block per breakpoint, widest first (the list: styles.css) ---------- */
+@media (max-width: 1280px) {
+  :root {
+    --sidebar-w: 248px;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --panel-w: min(560px, 62vw);
+  }
+  .run-scroll {
+    padding: 14px 16px 32px;
+  }
+}
+/* Narrow screens (900px and below): the run list becomes a drawer. */
+.drawer-toggle,
+.drawer-backdrop {
+  display: none;
+}
+/* 901px and 900px are the same breakpoint seen from both sides: keep them one pixel apart. */
+@media (min-width: 901px) {
+  .app.list-hidden .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .drawer-toggle {
+    display: grid;
+  }
+  .app.on-run .sidebar {
+    position: fixed;
+    top: 52px;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: min(320px, 86vw);
+    transform: translateX(-102%);
+    transition: transform 0.15s ease;
+    box-shadow: 6px 0 24px var(--shadow-panel);
+  }
+  .app.drawer-open .sidebar {
+    transform: none;
+  }
+  .app.drawer-open .drawer-backdrop {
+    display: block;
+    position: fixed;
+    inset: 52px 0 0 0;
+    z-index: 45;
+    background: var(--backdrop);
+    border: 0;
+  }
+  .node-panel {
+    position: absolute;
+    inset: 0;
+    width: auto;
+  }
+  .run-title-row {
+    flex-wrap: wrap;
+  }
+  .run-actions {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .home {
+    padding: 14px 16px 32px;
+  }
+  /* Every cost cell is also a .col-num (that rule gives it its width); .col-cost only names it. */
+  .run-table .col-time,
+  .run-table .col-cost,
+  .run-table .col-target {
+    display: none;
+  }
+  /* Start time and duration fold into the row, so equal titles still differ. */
+  .run-row-when {
+    display: inline;
+  }
+  .run-table .col-num {
+    display: none;
+  }
+  .timeline-table {
+    overflow-x: auto;
+  }
+  .list-toggle,
+  .panel-resizer {
+    display: none;
+  }
+  .node-panel,
+  .files-panel {
+    max-width: none;
+  }
+}
+/* Runs · Features · Benchmarks next to the brand and theme control do not fit at 375px. */
+@media (max-width: 640px) {
+  .app-header {
+    gap: 10px;
+    padding: 0 12px;
+  }
+  .top-nav {
+    gap: 6px;
+  }
+  .app-header:has(.top-nav) .brand span {
+    display: none;
+  }
+  .setup-line {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .run-scroll {
+    padding: 12px 12px 28px;
+  }
+  .run-title-text {
+    font-size: 20px;
+  }
+  .tabs .tab {
+    padding-left: 8px;
+    padding-right: 8px;
+    white-space: nowrap;
+  }
+  /* Keep the essentials on one line: the sidebar already has the start time, the cache
+     split and the copy-id icon are not worth the width here. */
+  .run-meta-line .meta-started,
+  .run-meta-line .meta-cached,
+  .run-meta-line > .copy-button {
+    display: none;
+  }
+  /* Executions as one line each instead of a 760px-wide grid in a phone-width box:
+     wrap instead of scroll, and drop tokens and the timeline bar (cost and the state icon are
+     worth the width; a tap already opens the node for the rejection text). */
+  .tl-head {
+    display: none;
+  }
+  .tl-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 8px;
+    min-width: 0;
+  }
+  .tl-tokens,
+  .tl-bar-cell,
+  .tl-bar-head {
+    display: none;
+  }
+  .tl-node {
+    white-space: normal;
+  }
+  .tl-verdict {
+    flex-basis: 100%;
+    white-space: normal;
+  }
+  .home-bar {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .home-bar .chips {
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+  .home-bar .chip {
+    padding: 3px 8px;
+    white-space: nowrap;
+  }
+  .home-search {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "DEFAULT_MAX_CONCURRENT_RUNS": 4,
+  "START_FIELD_LABEL": {
+    "harness": "Harness",
+    "label": "Label",
+    "maxCost": "Max cost",
+    "maxMinutes": "Max minutes",
+    "maxSteps": "Max steps",
+    "parallel": "Parallel",
+    "seeds": "Seeds",
+    "tasks": "Tasks"
+  },
+  "START_PATIENCE_MS": 180000
+}

@@ -1,0 +1,10 @@
+{
+  "body": {
+    "errors": [
+      "graph: File not found: harness/nope.json."
+    ],
+    "info": null,
+    "warnings": []
+  },
+  "status": 200
+}

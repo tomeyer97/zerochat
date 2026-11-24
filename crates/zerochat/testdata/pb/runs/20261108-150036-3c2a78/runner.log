@@ -1,0 +1,16 @@
+33 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  repair (exec 4, attempt 1)
+15:13:40 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   repair -> verified 
+15:13:47 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  oracle (exec 5, attempt 1)
+15:17:08 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   oracle -> verifier rejected
+15:17:14 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  repair (exec 6, attempt 1)
+15:23:00 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   repair -> verified 
+15:23:06 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  oracle (exec 7, attempt 1)
+15:26:47 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   oracle -> verifier rejected
+15:26:53 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  repair (exec 8, attempt 1)
+15:32:10 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   repair -> verified 
+15:32:17 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  oracle (exec 9, attempt 1)
+15:35:27 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   oracle -> verifier rejected
+15:35:35 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  repair (exec 10, attempt 1)
+15:40:55 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node done   repair -> verified 
+15:41:01 [20261108-150036-3c2a78 yaa110__nomino.f892499 s2] node start  oracle (exec 11, attempt 1)
+15:42:59 [20261108-150036-3c2a78 yaa110__nom…[fixture: 2596 more characters cut]

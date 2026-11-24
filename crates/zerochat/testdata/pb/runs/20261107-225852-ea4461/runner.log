@@ -1,0 +1,15 @@
+22:58:52 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] start label='r1-screen-spec2' version=4259fe2017 model=per-node art=/data/pb/runs/20261107-225852-ea4461
+22:58:52 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] sandbox up; launching zeroshot
+22:58:58 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  explore (exec 1, attempt 1)
+23:04:36 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node done   explore -> verified 
+23:04:40 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  spec_extend (exec 2, attempt 1)
+23:09:32 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node done   spec_extend -> verified 
+23:09:38 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  build (exec 3, attempt 1)
+23:22:19 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node done   build -> verified 
+23:22:28 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  oracle (exec 4, attempt 1)
+23:26:13 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node done   oracle -> verifier rejected
+23:26:21 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  repair (exec 5, attempt 1)
+23:35:22 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node done   repair -> verified 
+23:35:29 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  oracle (exec 6, attempt 1)
+23:37:54 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node done   oracle -> verifier rejected
+23:38:02 [20261107-225852-ea4461 yaa110__nomino.f892499 s0] node start  …[fixture: 1605 more characters cut]

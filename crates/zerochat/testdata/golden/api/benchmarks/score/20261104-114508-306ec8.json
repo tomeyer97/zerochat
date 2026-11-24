@@ -1,0 +1,57 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 8.0,
+    "costUsd": 5.0800205,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "replay-sonnet-explore-haiku-build",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 4.1314748,
+        "node": "explore"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.9485457,
+        "node": "build"
+      }
+    ],
+    "overLimit": "timeout",
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 4.1314748,
+    "runId": "20261104-114508-306ec8",
+    "score": 0.839285714,
+    "seed": 1,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.839285714,
+        "seq": 1,
+        "testsPassed": 188,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 188,
+    "testsTotal": 224,
+    "wallS": 2898.492398262,
+    "zeroshotRunId": "01a1a629-a70f-74a3-bc9a-2db2784b763d"
+  },
+  "status": 200
+}

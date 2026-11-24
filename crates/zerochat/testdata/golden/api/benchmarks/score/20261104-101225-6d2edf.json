@@ -1,0 +1,89 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 15.0,
+    "costUsd": 12.5032648,
+    "exitReason": null,
+    "failingTests": [
+      "3f23146e627b/eval.tests.test_core_outputs.test_plumbing_output_exact_relative",
+      "3f23146e627b/eval.tests.test_core_outputs.test_text_output_single_group_and_summary"
+    ],
+    "label": "clone-v1-sonnet-build",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 10.2034538,
+        "node": "build"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.6885976,
+        "node": "repair"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.6489229,
+        "node": "coverage"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.3959595,
+        "node": "explore"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.3581028,
+        "node": "bugfinder"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.2082282,
+        "node": "triage"
+      }
+    ],
+    "overLimit": "timeout",
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 12.3764089,
+    "runId": "20261104-101225-6d2edf",
+    "score": 0.852546917,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 373
+      },
+      {
+        "node": "build#1",
+        "score": 0.852546917,
+        "seq": 1,
+        "testsPassed": 318,
+        "testsTotal": 373
+      },
+      {
+        "node": "repair#1",
+        "score": 0.852546917,
+        "seq": 2,
+        "testsPassed": 318,
+        "testsTotal": 373
+      },
+      {
+        "node": "final",
+        "score": 0.852546917,
+        "seq": 3,
+        "testsPassed": 318,
+        "testsTotal": 373
+      }
+    ],
+    "task": "mibk__dupl.1bf052b",
+    "testsPassed": 318,
+    "testsTotal": 373,
+    "wallS": 4624.187468767,
+    "zeroshotRunId": "01a1a5d4-d097-73d1-a30d-88d56f034760"
+  },
+  "status": 200
+}

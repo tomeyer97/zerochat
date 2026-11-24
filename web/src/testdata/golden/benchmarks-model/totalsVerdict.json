@@ -1,0 +1,222 @@
+{
+  "compares": {
+    "0": {
+      "compared": 0,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "—",
+      "up": 0,
+      "verdict": "n_a",
+      "within": 0
+    },
+    "1": {
+      "compared": 0,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "—",
+      "up": 0,
+      "verdict": "n_a",
+      "within": 0
+    },
+    "2": {
+      "compared": 2,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "within noise on both tasks",
+      "up": 0,
+      "verdict": "within_noise",
+      "within": 2
+    },
+    "3": {
+      "compared": 2,
+      "down": 0,
+      "needsSeeds": 2,
+      "text": "both tasks need 2 seeds",
+      "up": 0,
+      "verdict": "needs_seeds",
+      "within": 0
+    },
+    "4": {
+      "compared": 2,
+      "down": 0,
+      "needsSeeds": 2,
+      "text": "both tasks need 2 seeds",
+      "up": 0,
+      "verdict": "needs_seeds",
+      "within": 0
+    },
+    "5": {
+      "compared": 0,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "—",
+      "up": 0,
+      "verdict": "n_a",
+      "within": 0
+    },
+    "same": {
+      "compared": 0,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "—",
+      "up": 0,
+      "verdict": "n_a",
+      "within": 0
+    }
+  },
+  "table": {
+    "all need seeds": {
+      "compared": 3,
+      "down": 0,
+      "needsSeeds": 3,
+      "text": "all 3 tasks need 2 seeds",
+      "up": 0,
+      "verdict": "needs_seeds",
+      "within": 0
+    },
+    "all within": {
+      "compared": 2,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "within noise on both tasks",
+      "up": 0,
+      "verdict": "within_noise",
+      "within": 2
+    },
+    "beyond, zero delta": {
+      "compared": 1,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "",
+      "up": 0,
+      "verdict": "within_noise",
+      "within": 0
+    },
+    "both up": {
+      "compared": 2,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "beyond seed spread on both tasks (B ahead)",
+      "up": 2,
+      "verdict": "beyond_spread",
+      "within": 0
+    },
+    "none": {
+      "compared": 0,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "—",
+      "up": 0,
+      "verdict": "n_a",
+      "within": 0
+    },
+    "odd verdict": {
+      "compared": 1,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "",
+      "up": 0,
+      "verdict": "within_noise",
+      "within": 0
+    },
+    "one down": {
+      "compared": 1,
+      "down": 1,
+      "needsSeeds": 0,
+      "text": "beyond seed spread (B behind)",
+      "up": 0,
+      "verdict": "beyond_spread",
+      "within": 0
+    },
+    "one needs seeds": {
+      "compared": 1,
+      "down": 0,
+      "needsSeeds": 1,
+      "text": "needs 2 seeds",
+      "up": 0,
+      "verdict": "needs_seeds",
+      "within": 0
+    },
+    "one of three up": {
+      "compared": 3,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "1 of 3 beyond spread (B ahead), 2 within noise",
+      "up": 1,
+      "verdict": "mixed",
+      "within": 2
+    },
+    "one up": {
+      "compared": 1,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "beyond seed spread (B ahead)",
+      "up": 1,
+      "verdict": "beyond_spread",
+      "within": 0
+    },
+    "one within": {
+      "compared": 1,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "within noise",
+      "up": 0,
+      "verdict": "within_noise",
+      "within": 1
+    },
+    "only n/a": {
+      "compared": 0,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "—",
+      "up": 0,
+      "verdict": "n_a",
+      "within": 0
+    },
+    "three up": {
+      "compared": 3,
+      "down": 0,
+      "needsSeeds": 0,
+      "text": "beyond seed spread on all 3 tasks (B ahead)",
+      "up": 3,
+      "verdict": "beyond_spread",
+      "within": 0
+    },
+    "two need seeds of three": {
+      "compared": 3,
+      "down": 0,
+      "needsSeeds": 2,
+      "text": "1 within noise, 2 need 2 seeds",
+      "up": 0,
+      "verdict": "needs_seeds",
+      "within": 1
+    },
+    "up and down": {
+      "compared": 2,
+      "down": 1,
+      "needsSeeds": 0,
+      "text": "beyond seed spread on both tasks (B ahead on 1, behind on 1)",
+      "up": 1,
+      "verdict": "mixed",
+      "within": 0
+    },
+    "up, within, needs": {
+      "compared": 3,
+      "down": 0,
+      "needsSeeds": 1,
+      "text": "1 of 3 beyond spread (B ahead), 1 within noise, 1 needs 2 seeds",
+      "up": 1,
+      "verdict": "mixed",
+      "within": 1
+    },
+    "within and needs": {
+      "compared": 2,
+      "down": 0,
+      "needsSeeds": 1,
+      "text": "1 within noise, 1 needs 2 seeds",
+      "up": 0,
+      "verdict": "needs_seeds",
+      "within": 1
+    }
+  }
+}

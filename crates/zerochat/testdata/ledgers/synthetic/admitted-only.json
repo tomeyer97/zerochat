@@ -1,0 +1,69 @@
+{
+ "name": "admitted-only",
+ "runId": "01a1ee59-1d20-7003-8003-000000000003",
+ "where": "observe",
+ "tags": [
+  "status:admitted",
+  "no-events"
+ ],
+ "stock": false,
+ "stored": {
+  "admitted": {
+   "title": "admitted only",
+   "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+     "kind": "seq",
+     "name": "run",
+     "children": [
+      {
+       "kind": "step",
+       "name": "worker",
+       "worker": "builtin.agent.worker@1",
+       "instructions": "Do the task.",
+       "attempts": 1,
+       "timeoutMs": 45000
+      }
+     ]
+    }
+   },
+   "initialInput": {
+    "task": "Add slugify() to textkit."
+   },
+   "runtime": {
+    "harness": "claude",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+     "worker": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     }
+    }
+   },
+   "source": {
+    "repository": "example/textkit",
+    "branch": "main",
+    "revision": "0000000000000000000000000000000000000000"
+   }
+  },
+  "snapshot": {
+   "runId": "01a1ee59-1d20-7003-8003-000000000003",
+   "title": "admitted only",
+   "phase": "admitted",
+   "cursor": "v2:0",
+   "terminal": null,
+   "forceStopRequested": false
+  }
+ },
+ "events": [],
+ "recovery": null,
+ "controllerPid": null,
+ "checkpoints": true,
+ "sessions": {}
+}

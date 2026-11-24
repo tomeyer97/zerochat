@@ -1,0 +1,45 @@
+{
+  "body": {
+    "errors": [],
+    "info": {
+      "agentHarness": "claude",
+      "modelOverride": "claude-sonnet-4-5",
+      "nodes": [
+        {
+          "effort": "high",
+          "kind": "step",
+          "loopMax": null,
+          "loopName": null,
+          "model": "claude-sonnet-4-5",
+          "name": "worker",
+          "parallel": null
+        },
+        {
+          "effort": "medium",
+          "kind": "verifier",
+          "loopMax": 4,
+          "loopName": "review_loop",
+          "model": "claude-sonnet-4-5",
+          "name": "reviewer",
+          "parallel": null
+        },
+        {
+          "effort": "high",
+          "kind": "step",
+          "loopMax": 4,
+          "loopName": "review_loop",
+          "model": "claude-sonnet-4-5",
+          "name": "repair",
+          "parallel": null
+        }
+      ],
+      "runs": 0,
+      "runtimeFile": null,
+      "runtimeMatches": true,
+      "source": "default",
+      "variant": null
+    },
+    "warnings": []
+  },
+  "status": 200
+}

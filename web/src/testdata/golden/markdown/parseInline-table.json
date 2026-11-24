@@ -1,0 +1,384 @@
+[
+  [
+    "",
+    []
+  ],
+  [
+    "plain",
+    [
+      {
+        "t": "text",
+        "v": "plain"
+      }
+    ]
+  ],
+  [
+    "`code` and ``double `tick` code`` and `unclosed",
+    [
+      {
+        "t": "code",
+        "v": "code"
+      },
+      {
+        "t": "text",
+        "v": " and "
+      },
+      {
+        "t": "code",
+        "v": "double `tick` code"
+      },
+      {
+        "t": "text",
+        "v": " and `unclosed"
+      }
+    ]
+  ],
+  [
+    "` padded `",
+    [
+      {
+        "t": "code",
+        "v": "padded"
+      }
+    ]
+  ],
+  [
+    "**bold** __bold__ *em* _em_",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "bold"
+          }
+        ],
+        "t": "strong"
+      },
+      {
+        "t": "text",
+        "v": " __bold__ "
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "em"
+          }
+        ],
+        "t": "em"
+      },
+      {
+        "t": "text",
+        "v": " "
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "em"
+          }
+        ],
+        "t": "em"
+      }
+    ]
+  ],
+  [
+    "**unclosed bold",
+    [
+      {
+        "t": "text",
+        "v": "**unclosed bold"
+      }
+    ]
+  ],
+  [
+    "*unclosed em",
+    [
+      {
+        "t": "text",
+        "v": "*unclosed em"
+      }
+    ]
+  ],
+  [
+    "* not em*",
+    [
+      {
+        "t": "text",
+        "v": "* not em*"
+      }
+    ]
+  ],
+  [
+    "*em *",
+    [
+      {
+        "t": "text",
+        "v": "*em *"
+      }
+    ]
+  ],
+  [
+    "__init__.py and pkg/__main__ and snake__case and __x__.y",
+    [
+      {
+        "t": "text",
+        "v": "__init__.py and pkg/__main__ and snake__case and __x__.y"
+      }
+    ]
+  ],
+  [
+    "a__b__c and __b__c",
+    [
+      {
+        "t": "text",
+        "v": "a__b__c and __b__c"
+      }
+    ]
+  ],
+  [
+    "snake_case_name and _leading and trailing_",
+    [
+      {
+        "t": "text",
+        "v": "snake_case_name and "
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "leading and trailing"
+          }
+        ],
+        "t": "em"
+      }
+    ]
+  ],
+  [
+    "_em_word and word_em_",
+    [
+      {
+        "t": "text",
+        "v": "_em_word and word_em_"
+      }
+    ]
+  ],
+  [
+    "***bold em***",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "*bold em"
+          }
+        ],
+        "t": "strong"
+      },
+      {
+        "t": "text",
+        "v": "*"
+      }
+    ]
+  ],
+  [
+    "**bold with *em* inside**",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "bold with "
+          },
+          {
+            "c": [
+              {
+                "t": "text",
+                "v": "em"
+              }
+            ],
+            "t": "em"
+          },
+          {
+            "t": "text",
+            "v": " inside"
+          }
+        ],
+        "t": "strong"
+      }
+    ]
+  ],
+  [
+    "[link](https://example.com) [mail](mailto:a@b.c) [js](javascript:alert(1)) [rel](/path)",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "link"
+          }
+        ],
+        "href": "https://example.com",
+        "t": "link"
+      },
+      {
+        "t": "text",
+        "v": " "
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "mail"
+          }
+        ],
+        "href": "mailto:a@b.c",
+        "t": "link"
+      },
+      {
+        "t": "text",
+        "v": " [js](javascript:alert(1)) [rel](/path)"
+      }
+    ]
+  ],
+  [
+    "[no close](https://x",
+    [
+      {
+        "t": "text",
+        "v": "[no close](https://x"
+      }
+    ]
+  ],
+  [
+    "[outer [inner](https://a)](https://b)",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "outer [inner"
+          }
+        ],
+        "href": "https://a",
+        "t": "link"
+      },
+      {
+        "t": "text",
+        "v": "](https://b)"
+      }
+    ]
+  ],
+  [
+    "[text](https://example.com/a_(b))",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "text"
+          }
+        ],
+        "href": "https://example.com/a_(b",
+        "t": "link"
+      },
+      {
+        "t": "text",
+        "v": ")"
+      }
+    ]
+  ],
+  [
+    "[](https://empty.text)",
+    [
+      {
+        "c": [],
+        "href": "https://empty.text",
+        "t": "link"
+      }
+    ]
+  ],
+  [
+    "[**bold link**](HTTPS://EXAMPLE.COM)",
+    [
+      {
+        "c": [
+          {
+            "c": [
+              {
+                "t": "text",
+                "v": "bold link"
+              }
+            ],
+            "t": "strong"
+          }
+        ],
+        "href": "HTTPS://EXAMPLE.COM",
+        "t": "link"
+      }
+    ]
+  ],
+  [
+    "\\*escaped\\* \\_x\\_ \\\\ \\a \\[not link\\](https://x)",
+    [
+      {
+        "t": "text",
+        "v": "*escaped* _x_ \\ \\a [not link](https://x)"
+      }
+    ]
+  ],
+  [
+    "trailing backslash \\",
+    [
+      {
+        "t": "text",
+        "v": "trailing backslash \\"
+      }
+    ]
+  ],
+  [
+    "___",
+    [
+      {
+        "t": "text",
+        "v": "___"
+      }
+    ]
+  ],
+  [
+    "____ four",
+    [
+      {
+        "t": "text",
+        "v": "____ four"
+      }
+    ]
+  ],
+  [
+    "_ spaced _",
+    [
+      {
+        "t": "text",
+        "v": "_ spaced _"
+      }
+    ]
+  ],
+  [
+    "emoji 😀 **bold 😀**",
+    [
+      {
+        "t": "text",
+        "v": "emoji 😀 "
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "bold 😀"
+          }
+        ],
+        "t": "strong"
+      }
+    ]
+  ]
+]

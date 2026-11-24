@@ -1,0 +1,440 @@
+{
+  "admitted-only": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "attempts-exhausted": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "checkout-unavailable": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "closing-postmortem": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "codex-estimate": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "copilot-session": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "delivery-failed": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-api-hang": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-authentication-required": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-crash": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-input-required": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-malformed-result": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-other": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-policy-denied": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-refusal": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-code-timeout": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-context": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-credentials": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-disk": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-malformed-stream": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-missing-cli": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-model": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-network": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-permission": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-provider-down": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-provider-timeout": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-rate-limit": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-stream-cut": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "diag-usage-limit": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "force-stopped": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-bad-credentials": {
+    "graphFails": "worker_failed",
+    "graphFailsAllGuards": "worker_failed",
+    "model": "worker_failed",
+    "modelAllGuards": "worker_failed"
+  },
+  "fork-only/fork-chaos-transient": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-chaos-usage-limit": {
+    "graphFails": "worker_failed",
+    "graphFailsAllGuards": "worker_failed",
+    "model": "worker_failed",
+    "modelAllGuards": "worker_failed"
+  },
+  "fork-only/fork-controller-killed": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-force-stopped": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-happy-path": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-late-failure": {
+    "graphFails": "review_failed",
+    "graphFailsAllGuards": "review_failed",
+    "model": "review_failed",
+    "modelAllGuards": "review_failed"
+  },
+  "fork-only/fork-replay": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-resumed": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-reviewer-never-satisfied": {
+    "graphFails": "change_attempts_exhausted",
+    "graphFailsAllGuards": "change_attempts_exhausted",
+    "model": "change_attempts_exhausted",
+    "modelAllGuards": "change_attempts_exhausted"
+  },
+  "fork-only/fork-steered": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/fork-unknown-model": {
+    "graphFails": "worker_failed",
+    "graphFailsAllGuards": "worker_failed",
+    "model": "worker_failed",
+    "modelAllGuards": "worker_failed"
+  },
+  "fork-only/fork-worker-timeout": {
+    "graphFails": "worker_failed",
+    "graphFailsAllGuards": "worker_failed",
+    "model": "worker_failed",
+    "modelAllGuards": "worker_failed"
+  },
+  "fork-only/replay-child": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "fork-only/replay-parent": {
+    "graphFails": "change_attempts_exhausted",
+    "graphFailsAllGuards": "change_attempts_exhausted",
+    "model": "change_attempts_exhausted",
+    "modelAllGuards": "change_attempts_exhausted"
+  },
+  "fork-only/steered": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "graph-ended-other": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "lane-mixed": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "lane-unknown-harness": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "map-parallel": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "no-checkpoints": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "resumed-original": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "resumed-successor": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "running-live": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "running-stock": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "runtime-failed-checkpoint": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "runtime-failed-permission": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "runtime-failed-storage": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "runtime-failed-unknown": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "runtime-lost": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "stalled": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "stalled-disk": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "stalled-live-usage": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "stalled-then-closed": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "succeeded": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "succeeded-stock": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "tool-output-rate-limit": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "unknown-phase": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "voided": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "work-exhausted": {
+    "graphFails": "change_attempts_exhausted",
+    "graphFailsAllGuards": "change_attempts_exhausted",
+    "model": "change_attempts_exhausted",
+    "modelAllGuards": "change_attempts_exhausted"
+  },
+  "zeroshot-16/zeroshot16-normal": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "zeroshot-16/zeroshot16-steered": {
+    "graphFails": null,
+    "graphFailsAllGuards": null,
+    "model": null,
+    "modelAllGuards": null
+  },
+  "zeroshot-16/zeroshot16-unknown-model": {
+    "graphFails": "worker_failed",
+    "graphFailsAllGuards": "worker_failed",
+    "model": "worker_failed",
+    "modelAllGuards": "worker_failed"
+  }
+}

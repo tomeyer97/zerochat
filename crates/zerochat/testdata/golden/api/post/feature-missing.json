@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "not_found",
+    "message": "No feature `missing`."
+  },
+  "status": 404
+}

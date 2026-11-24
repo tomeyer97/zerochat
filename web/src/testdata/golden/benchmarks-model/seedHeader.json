@@ -1,0 +1,314 @@
+{
+  "batches": {
+    "20261107-222316-71f62e": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "20261107-222316-910b7d": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      },
+      {
+        "text": "seed 1",
+        "title": "seed 1"
+      },
+      {
+        "text": "seed 2",
+        "title": "seed 2"
+      }
+    ],
+    "20261108-142204-d474ae": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      },
+      {
+        "text": "seed 1",
+        "title": "seed 1"
+      },
+      {
+        "text": "seed 2",
+        "title": "seed 2"
+      }
+    ],
+    "20261108-152720-fb0664": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      },
+      {
+        "text": "seed 1",
+        "title": "seed 1"
+      },
+      {
+        "text": "seed 2",
+        "title": "seed 2"
+      }
+    ],
+    "20261108-170007-63721d": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      },
+      {
+        "text": "seed 1",
+        "title": "seed 1"
+      },
+      {
+        "text": "seed 2",
+        "title": "seed 2"
+      }
+    ],
+    "20261108-170009-cace9c": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      },
+      {
+        "text": "seed 1",
+        "title": "seed 1"
+      },
+      {
+        "text": "seed 2",
+        "title": "seed 2"
+      }
+    ],
+    "label_clone-v1": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_clone-v1-sonnet-build": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_ctrlc-test": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_haiku-adversarial": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_haiku-prototype-plan": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_k8s-sc-sonnet5": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_replay-build-haiku": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_replay-build-sonnet": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_replay-sonnet-explore-haiku-build": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_sc-template-haiku": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_smoke-haiku": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5": [
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      },
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    "label_ticket-v1": [
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ]
+  },
+  "table": [
+    [
+      0,
+      false,
+      false,
+      {
+        "text": "seed 0",
+        "title": "seed 0"
+      }
+    ],
+    [
+      0,
+      false,
+      true,
+      {
+        "text": "0",
+        "title": "seed 0"
+      }
+    ],
+    [
+      0,
+      true,
+      false,
+      {
+        "text": "replay 1",
+        "title": "replay 1 (pb seed 0)"
+      }
+    ],
+    [
+      0,
+      true,
+      true,
+      {
+        "text": "1",
+        "title": "replay 1 (pb seed 0)"
+      }
+    ],
+    [
+      1,
+      false,
+      false,
+      {
+        "text": "seed 1",
+        "title": "seed 1"
+      }
+    ],
+    [
+      1,
+      false,
+      true,
+      {
+        "text": "1",
+        "title": "seed 1"
+      }
+    ],
+    [
+      1,
+      true,
+      false,
+      {
+        "text": "replay 2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    [
+      1,
+      true,
+      true,
+      {
+        "text": "2",
+        "title": "replay 2 (pb seed 1)"
+      }
+    ],
+    [
+      9,
+      false,
+      false,
+      {
+        "text": "seed 9",
+        "title": "seed 9"
+      }
+    ],
+    [
+      9,
+      false,
+      true,
+      {
+        "text": "9",
+        "title": "seed 9"
+      }
+    ],
+    [
+      9,
+      true,
+      false,
+      {
+        "text": "replay 10",
+        "title": "replay 10 (pb seed 9)"
+      }
+    ],
+    [
+      9,
+      true,
+      true,
+      {
+        "text": "10",
+        "title": "replay 10 (pb seed 9)"
+      }
+    ]
+  ]
+}

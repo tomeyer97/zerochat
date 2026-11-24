@@ -1,0 +1,507 @@
+{
+ "name": "succeeded-stock",
+ "runId": "01a1ee83-3a60-7031-8031-000000000031",
+ "where": "local",
+ "tags": [
+  "stock",
+  "times:approximate",
+  "cost:estimate"
+ ],
+ "stock": true,
+ "stored": {
+  "admitted": {
+   "title": "succeeded stock",
+   "graph": {
+    "profile": "openengine.graph.full/v1",
+    "root": {
+     "kind": "seq",
+     "name": "run",
+     "children": [
+      {
+       "kind": "loop",
+       "name": "change_loop",
+       "maxIterations": 2,
+       "body": {
+        "kind": "seq",
+        "name": "iteration",
+        "children": [
+         {
+          "kind": "step",
+          "name": "code",
+          "worker": "builtin.agent.worker@1",
+          "instructions": "Implement the task.",
+          "attempts": 2,
+          "timeoutMs": 45000
+         },
+         {
+          "kind": "par",
+          "name": "reviews",
+          "children": [
+           {
+            "kind": "verifier",
+            "name": "acceptance",
+            "worker": "builtin.agent.reviewer@1",
+            "attempts": 1
+           },
+           {
+            "kind": "verifier",
+            "name": "code_review",
+            "worker": "builtin.agent.reviewer@1",
+            "attempts": 1
+           }
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "kind": "fail",
+       "name": "change_attempts_exhausted",
+       "reason": "change_attempts_exhausted"
+      }
+     ]
+    }
+   },
+   "initialInput": {
+    "task": "Add slugify() to textkit."
+   },
+   "runtime": {
+    "harness": "claude",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5",
+    "nodes": {
+     "code": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "acceptance": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "code_review": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     },
+     "worker": {
+      "kind": "agent",
+      "model": "claude-haiku-4-5",
+      "connections": {
+       "anthropic": [
+        "CLAUDE_CODE_OAUTH_TOKEN"
+       ]
+      }
+     }
+    }
+   },
+   "source": {
+    "repository": "example/textkit",
+    "branch": "main",
+    "revision": "0000000000000000000000000000000000000000"
+   }
+  },
+  "snapshot": {
+   "runId": "01a1ee83-3a60-7031-8031-000000000031",
+   "title": "succeeded stock",
+   "phase": "finished",
+   "cursor": "v2:30",
+   "terminal": {
+    "status": "succeeded",
+    "output": null
+   },
+   "forceStopRequested": false
+  }
+ },
+ "events": [
+  {
+   "seq": 1,
+   "body": {
+    "kind": "safe_log",
+    "execution": null,
+    "timestamp": 1795002941000,
+    "stream": "system",
+    "line": "Preparing execution environment"
+   }
+  },
+  {
+   "seq": 2,
+   "body": {
+    "kind": "run_started"
+   }
+  },
+  {
+   "seq": 3,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee83-3a60-7031-8031-000000000031",
+     "node": "code",
+     "nodeInstance": 1,
+     "execution": 1
+    },
+    "occurrence": {
+     "node": "code",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    }
+   }
+  },
+  {
+   "seq": 4,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002942000,
+    "stream": "system",
+    "line": "Claude rate limit: status=allowed, type=five_hour, resetsAt=2026-11-18T13:00:00Z"
+   }
+  },
+  {
+   "seq": 5,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002943000,
+    "stream": "system",
+    "line": "I'll look at textkit/core.py first."
+   }
+  },
+  {
+   "seq": 6,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002944000,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_490100\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}"
+   }
+  },
+  {
+   "seq": 7,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002945000,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_490100\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+   }
+  },
+  {
+   "seq": 8,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002946000,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_490101\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 1\"}}"
+   }
+  },
+  {
+   "seq": 9,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002947000,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_490101\", \"content\": \"Ran 4 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+   }
+  },
+  {
+   "seq": 10,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002947300,
+    "stream": "output",
+    "line": "Done: slugify() added with tests; "
+   }
+  },
+  {
+   "seq": 11,
+   "body": {
+    "kind": "safe_log",
+    "execution": 1,
+    "timestamp": 1795002947600,
+    "stream": "output",
+    "line": "all tests pass."
+   }
+  },
+  {
+   "seq": 12,
+   "body": {
+    "kind": "token_usage_observed",
+    "execution": 1,
+    "usage": {
+     "inputTokens": 1200,
+     "outputTokens": 800,
+     "cacheReadInputTokens": 40000,
+     "cacheCreationInputTokens": 3000
+    }
+   }
+  },
+  {
+   "seq": 13,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee83-3a60-7031-8031-000000000031",
+      "node": "code",
+      "nodeInstance": 1,
+      "execution": 1
+     },
+     "outcome": {
+      "status": "verified",
+      "output": null,
+      "artifacts": []
+     }
+    }
+   }
+  },
+  {
+   "seq": 14,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee83-3a60-7031-8031-000000000031",
+     "node": "acceptance",
+     "nodeInstance": 1,
+     "execution": 2
+    },
+    "occurrence": {
+     "node": "acceptance",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    }
+   }
+  },
+  {
+   "seq": 15,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1ee83-3a60-7031-8031-000000000031",
+     "node": "code_review",
+     "nodeInstance": 1,
+     "execution": 3
+    },
+    "occurrence": {
+     "node": "code_review",
+     "mapIndices": []
+    },
+    "attempt": 1,
+    "input": {
+     "task": "Add slugify() to textkit."
+    }
+   }
+  },
+  {
+   "seq": 16,
+   "body": {
+    "kind": "safe_log",
+    "execution": 2,
+    "timestamp": 1795002948600,
+    "stream": "system",
+    "line": "I'll look at textkit/core.py first."
+   }
+  },
+  {
+   "seq": 17,
+   "body": {
+    "kind": "safe_log",
+    "execution": 2,
+    "timestamp": 1795002949600,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_490200\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}"
+   }
+  },
+  {
+   "seq": 18,
+   "body": {
+    "kind": "safe_log",
+    "execution": 2,
+    "timestamp": 1795002950600,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_490200\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+   }
+  },
+  {
+   "seq": 19,
+   "body": {
+    "kind": "safe_log",
+    "execution": 2,
+    "timestamp": 1795002950900,
+    "stream": "output",
+    "line": "Done: slugify() added with tests; "
+   }
+  },
+  {
+   "seq": 20,
+   "body": {
+    "kind": "safe_log",
+    "execution": 2,
+    "timestamp": 1795002951200,
+    "stream": "output",
+    "line": "all tests pass."
+   }
+  },
+  {
+   "seq": 21,
+   "body": {
+    "kind": "token_usage_observed",
+    "execution": 2,
+    "usage": {
+     "inputTokens": 1200,
+     "outputTokens": 800,
+     "cacheReadInputTokens": 40000,
+     "cacheCreationInputTokens": 3000
+    }
+   }
+  },
+  {
+   "seq": 22,
+   "body": {
+    "kind": "safe_log",
+    "execution": 3,
+    "timestamp": 1795002952200,
+    "stream": "system",
+    "line": "I'll look at textkit/core.py first."
+   }
+  },
+  {
+   "seq": 23,
+   "body": {
+    "kind": "safe_log",
+    "execution": 3,
+    "timestamp": 1795002953200,
+    "stream": "system",
+    "line": "{\"id\": \"toolu_490300\", \"name\": \"Bash\", \"input\": {\"command\": \"python3 -m unittest -v  # step 0\"}}"
+   }
+  },
+  {
+   "seq": 24,
+   "body": {
+    "kind": "safe_log",
+    "execution": 3,
+    "timestamp": 1795002954200,
+    "stream": "system",
+    "line": "{\"toolUseId\": \"toolu_490300\", \"content\": \"Ran 3 tests\\n\\nOK\", \"isError\": false, \"exitCode\": 0}"
+   }
+  },
+  {
+   "seq": 25,
+   "body": {
+    "kind": "safe_log",
+    "execution": 3,
+    "timestamp": 1795002954500,
+    "stream": "output",
+    "line": "Done: slugify() added with tests; "
+   }
+  },
+  {
+   "seq": 26,
+   "body": {
+    "kind": "safe_log",
+    "execution": 3,
+    "timestamp": 1795002954800,
+    "stream": "output",
+    "line": "all tests pass."
+   }
+  },
+  {
+   "seq": 27,
+   "body": {
+    "kind": "token_usage_observed",
+    "execution": 3,
+    "usage": {
+     "inputTokens": 1200,
+     "outputTokens": 800,
+     "cacheReadInputTokens": 40000,
+     "cacheCreationInputTokens": 3000
+    }
+   }
+  },
+  {
+   "seq": 28,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee83-3a60-7031-8031-000000000031",
+      "node": "acceptance",
+      "nodeInstance": 1,
+      "execution": 2
+     },
+     "outcome": {
+      "status": "verifier",
+      "output": null,
+      "signals": {
+       "verdict": "accepted"
+      },
+      "diagnostic": null,
+      "artifacts": []
+     }
+    }
+   }
+  },
+  {
+   "seq": 29,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1ee83-3a60-7031-8031-000000000031",
+      "node": "code_review",
+      "nodeInstance": 1,
+      "execution": 3
+     },
+     "outcome": {
+      "status": "verifier",
+      "output": null,
+      "signals": {
+       "verdict": "approved"
+      },
+      "diagnostic": null,
+      "artifacts": []
+     }
+    }
+   }
+  },
+  {
+   "seq": 30,
+   "body": {
+    "kind": "terminal",
+    "result": {
+     "status": "succeeded",
+     "output": null
+    }
+   }
+  }
+ ],
+ "recovery": {
+  "workspace": "/work/succeeded-stock/repo"
+ },
+ "controllerPid": null,
+ "checkpoints": true,
+ "sessions": {}
+}

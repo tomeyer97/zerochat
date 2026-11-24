@@ -1,0 +1,145 @@
+{
+  "submission": {
+    "title": "steered [zeroshot16]",
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "initialInput": {
+        "kind": "record",
+        "fields": {
+          "task": {
+            "type": {
+              "kind": "string"
+            },
+            "required": true
+          }
+        }
+      },
+      "policy": {
+        "policy": "policy.native-v2@1",
+        "default": "deny"
+      },
+      "root": {
+        "kind": "seq",
+        "name": "run",
+        "state": {
+          "kind": "record",
+          "fields": {
+            "task": {
+              "type": {
+                "kind": "string"
+              },
+              "required": true
+            }
+          }
+        },
+        "children": [
+          {
+            "kind": "step",
+            "name": "worker",
+            "worker": "builtin.agent.worker@1",
+            "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+            "input": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "output": {
+              "kind": "null"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "source": "state",
+                  "path": [
+                    "task"
+                  ]
+                }
+              }
+            ],
+            "writeBindings": [],
+            "attempts": 1
+          },
+          {
+            "kind": "choice",
+            "name": "worker_result",
+            "state": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "branches": [
+              {
+                "when": {
+                  "kind": "in",
+                  "value": {
+                    "name": "worker",
+                    "source": "error",
+                    "field": null
+                  },
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ]
+                },
+                "node": {
+                  "kind": "fail",
+                  "name": "worker_failed",
+                  "reason": "worker_failed"
+                }
+              }
+            ],
+            "otherwise": {
+              "kind": "succeed",
+              "name": "done",
+              "output": {
+                "kind": "null"
+              },
+              "bindings": []
+            },
+            "promotedStatePaths": []
+          }
+        ],
+        "promotedStatePaths": []
+      }
+    },
+    "initialInput": {
+      "task": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+    },
+    "runtime": {
+      "harness": "claude",
+      "provider": "anthropic",
+      "nodes": {
+        "worker": {
+          "kind": "agent",
+          "model": "claude-haiku-4-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        }
+      }
+    },
+    "submissionKey": "cli-627d3bad662151aa03ab7557aa694712"
+  },
+  "workspace": "/work/steered",
+  "requestDigest": "31a9ca8260fd6871cbef5936cb76ccfcd221cd847260576aca32664435bfb48f",
+  "deliveryRunId": "01a1f8c8-acbc-7ed0-b0bf-40743f8ad243"
+}

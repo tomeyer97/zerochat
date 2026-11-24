@@ -1,0 +1,28 @@
+{
+  "empty": [],
+  "thinking first": [
+    "item-0 = 0",
+    "tools-1 = 1,2,3"
+  ],
+  "thinking inside": [
+    "tools-0 = 0,1,2,3,4",
+    "item-5 = 5"
+  ],
+  "thinking trailing short": [
+    "item-0 = 0",
+    "item-1 = 1"
+  ],
+  "three tools": [
+    "tools-0 = 0,1,2"
+  ],
+  "tool without call": [
+    "item-0 = 0",
+    "item-1 = 1",
+    "item-2 = 2",
+    "item-3 = 3"
+  ],
+  "two tools": [
+    "item-0 = 0",
+    "item-1 = 1"
+  ]
+}

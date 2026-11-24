@@ -1,0 +1,107 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 15.0,
+    "costUsd": 12.0446397,
+    "exitReason": null,
+    "failingTests": [
+      "06dabfabaea7/tests.test_basic.test_invalid_flag",
+      "06dabfabaea7/tests.test_clone_installer.test_clone_creates_personal_work_dirs",
+      "06dabfabaea7/tests.test_clone_installer.test_clone_network_timeout_handling",
+      "06dabfabaea7/tests.test_clone_installer.test_clone_to_existing_cloned_dir_fails",
+      "06dabfabaea7/tests.test_clone_installer.test_installer_clone_no",
+      "06dabfabaea7/tests.test_clone_installer.test_installer_clone_yes",
+      "06dabfabaea7/tests.test_clone_installer.test_installer_creates_all_expected_dirs",
+      "06dabfabaea7/tests.test_clone_installer.test_installer_decline_create_config"
+    ],
+    "label": "clone-v1-sonnet-build",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 7.2192906,
+        "node": "build"
+      },
+      {
+        "calls": 2,
+        "costUsd": 1.8518553,
+        "node": "repair"
+      },
+      {
+        "calls": 3,
+        "costUsd": 0.9752492,
+        "node": "coverage"
+      },
+      {
+        "calls": 3,
+        "costUsd": 0.9339592,
+        "node": "bugfinder"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4430334,
+        "node": "postmortem"
+      },
+      {
+        "calls": 3,
+        "costUsd": 0.3709948,
+        "node": "triage"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.2502572,
+        "node": "explore"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 12.0446397,
+    "runId": "20261104-101225-ed3910",
+    "score": 0.565656566,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 297
+      },
+      {
+        "node": "build#1",
+        "score": 0.538720539,
+        "seq": 1,
+        "testsPassed": 160,
+        "testsTotal": 297
+      },
+      {
+        "node": "repair#1",
+        "score": 0.545454545,
+        "seq": 2,
+        "testsPassed": 162,
+        "testsTotal": 297
+      },
+      {
+        "node": "repair#2",
+        "score": 0.565656566,
+        "seq": 3,
+        "testsPassed": 168,
+        "testsTotal": 297
+      },
+      {
+        "node": "final",
+        "score": 0.565656566,
+        "seq": 4,
+        "testsPassed": 168,
+        "testsTotal": 297
+      }
+    ],
+    "task": "cheat__cheat.b8098dc",
+    "testsPassed": 168,
+    "testsTotal": 297,
+    "wallS": 4592.550220013,
+    "zeroshotRunId": "01a1a5d4-d723-7900-a7ba-ffb67e6331eb"
+  },
+  "status": 200
+}

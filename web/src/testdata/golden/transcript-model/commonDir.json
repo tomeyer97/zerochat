@@ -1,0 +1,208 @@
+{
+  "table": [
+    [
+      [],
+      null
+    ],
+    [
+      [
+        "/a/b/c.ts"
+      ],
+      null
+    ],
+    [
+      [
+        "/a/b/c.ts",
+        "rel/x.ts"
+      ],
+      null
+    ],
+    [
+      [
+        "/a/b/c.ts",
+        "/a/b/d.ts"
+      ],
+      "/a/b"
+    ],
+    [
+      [
+        "/a/b/c/d.ts",
+        "/a/b/c/e/f.ts"
+      ],
+      "/a/b/c"
+    ],
+    [
+      [
+        "/a/b",
+        "/a/b"
+      ],
+      null
+    ],
+    [
+      [
+        "/a/b/c",
+        "/a/b/c/d"
+      ],
+      "/a/b"
+    ],
+    [
+      [
+        "/w/x/src/a.ts",
+        "/w/xy/b.ts"
+      ],
+      null
+    ],
+    [
+      [
+        "/a/x.ts",
+        "/b/y.ts"
+      ],
+      null
+    ]
+  ],
+  "transcripts": {
+    "attempts-exhausted/transcript-1": null,
+    "attempts-exhausted/transcript-2": null,
+    "closing-postmortem/transcript-1": null,
+    "codex-estimate/transcript-1": null,
+    "copilot-session/transcript-1": null,
+    "copilot-session/transcript-1-ledger": null,
+    "delivery-failed/transcript-1": null,
+    "delivery-failed/transcript-2": null,
+    "delivery-failed/transcript-3": null,
+    "diag-api-hang/transcript-1": null,
+    "diag-code-authentication-required/transcript-1": null,
+    "diag-code-crash/transcript-1": null,
+    "diag-code-input-required/transcript-1": null,
+    "diag-code-malformed-result/transcript-1": null,
+    "diag-code-other/transcript-1": null,
+    "diag-code-policy-denied/transcript-1": null,
+    "diag-code-refusal/transcript-1": null,
+    "diag-code-timeout/transcript-1": null,
+    "diag-context/transcript-1": null,
+    "diag-credentials/transcript-1": null,
+    "diag-disk/transcript-1": null,
+    "diag-malformed-stream/transcript-1": null,
+    "diag-missing-cli/transcript-1": null,
+    "diag-model/transcript-1": null,
+    "diag-network/transcript-1": null,
+    "diag-permission/transcript-1": null,
+    "diag-provider-down/transcript-1": null,
+    "diag-provider-timeout/transcript-1": null,
+    "diag-rate-limit/transcript-1": null,
+    "diag-stream-cut/transcript-1": null,
+    "diag-usage-limit/transcript-1": null,
+    "force-stopped/transcript-1": null,
+    "force-stopped/transcript-2": null,
+    "force-stopped/transcript-3": null,
+    "fork-only/fork-bad-credentials/transcript-1": null,
+    "fork-only/fork-bad-credentials/transcript-1-ledger": null,
+    "fork-only/fork-chaos-transient/transcript-1": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1": "/work/chaos-usage-limit",
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": "/work/chaos-usage-limit",
+    "fork-only/fork-controller-killed/transcript-1": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger": null,
+    "fork-only/fork-controller-killed/transcript-2": "/work/controller-killed",
+    "fork-only/fork-controller-killed/transcript-2-ledger": "/work/controller-killed",
+    "fork-only/fork-controller-killed/transcript-3": "/work/controller-killed",
+    "fork-only/fork-controller-killed/transcript-3-ledger": "/work/controller-killed",
+    "fork-only/fork-force-stopped/transcript-1": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger": null,
+    "fork-only/fork-force-stopped/transcript-2": null,
+    "fork-only/fork-force-stopped/transcript-3": null,
+    "fork-only/fork-happy-path/transcript-1": null,
+    "fork-only/fork-happy-path/transcript-1-ledger": null,
+    "fork-only/fork-happy-path/transcript-2": "/work/happy-path",
+    "fork-only/fork-happy-path/transcript-2-ledger": "/work/happy-path",
+    "fork-only/fork-happy-path/transcript-3": "/work/happy-path",
+    "fork-only/fork-happy-path/transcript-3-ledger": "/work/happy-path",
+    "fork-only/fork-late-failure/transcript-1": "/work/late-failure",
+    "fork-only/fork-late-failure/transcript-2": "/work/late-failure",
+    "fork-only/fork-late-failure/transcript-3": "/work/late-failure",
+    "fork-only/fork-replay/transcript-1": null,
+    "fork-only/fork-replay/transcript-1-ledger": null,
+    "fork-only/fork-replay/transcript-2": "/work/happy-path",
+    "fork-only/fork-replay/transcript-2-ledger": "/work/happy-path",
+    "fork-only/fork-replay/transcript-3": "/work/happy-path",
+    "fork-only/fork-replay/transcript-3-ledger": "/work/happy-path",
+    "fork-only/fork-resumed/transcript-1": null,
+    "fork-only/fork-resumed/transcript-1-ledger": null,
+    "fork-only/fork-resumed/transcript-2": null,
+    "fork-only/fork-resumed/transcript-2-ledger": null,
+    "fork-only/fork-resumed/transcript-3": null,
+    "fork-only/fork-resumed/transcript-3-ledger": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": "/work/reviewer-never-satisfied",
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": "/work/reviewer-never-satisfied",
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": "/work/reviewer-never-satisfied",
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": "/work/reviewer-never-satisfied",
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": "/work/reviewer-never-satisfied",
+    "fork-only/fork-steered/transcript-1": "/work/steered",
+    "fork-only/fork-steered/transcript-1-ledger": "/work/steered",
+    "fork-only/fork-unknown-model/transcript-1": null,
+    "fork-only/fork-unknown-model/transcript-1-ledger": null,
+    "fork-only/fork-worker-timeout/transcript-1": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger": null,
+    "fork-only/replay-child/transcript-1": null,
+    "fork-only/replay-child/transcript-2": null,
+    "fork-only/replay-child/transcript-3": null,
+    "fork-only/replay-parent/transcript-1": null,
+    "fork-only/replay-parent/transcript-2": null,
+    "fork-only/replay-parent/transcript-3": null,
+    "fork-only/steered/transcript-1": null,
+    "graph-ended-other/transcript-1": null,
+    "graph-ended-other/transcript-2": null,
+    "graph-ended-other/transcript-3": null,
+    "lane-mixed/transcript-1": null,
+    "lane-unknown-harness/transcript-1": null,
+    "map-parallel/transcript-1": null,
+    "map-parallel/transcript-2": null,
+    "map-parallel/transcript-3": null,
+    "no-checkpoints/transcript-1": null,
+    "resumed-original/transcript-1": null,
+    "resumed-successor/transcript-1": null,
+    "resumed-successor/transcript-2": null,
+    "resumed-successor/transcript-3": null,
+    "running-live/transcript-1": null,
+    "running-live/transcript-2": null,
+    "running-live/transcript-3": null,
+    "running-live/transcript-4": null,
+    "running-live/transcript-5": null,
+    "running-stock/transcript-1": null,
+    "runtime-failed-checkpoint/transcript-1": null,
+    "runtime-failed-permission/transcript-1": null,
+    "runtime-failed-storage/transcript-1": null,
+    "runtime-failed-unknown/transcript-1": null,
+    "runtime-lost/transcript-1": null,
+    "stalled-disk/transcript-1": null,
+    "stalled-live-usage/transcript-1": null,
+    "stalled-live-usage/transcript-1-ledger": null,
+    "stalled-then-closed/transcript-1": null,
+    "stalled-then-closed/transcript-1-ledger": null,
+    "stalled/transcript-1": null,
+    "succeeded-stock/transcript-1": null,
+    "succeeded-stock/transcript-2": null,
+    "succeeded-stock/transcript-3": null,
+    "succeeded/transcript-1": null,
+    "succeeded/transcript-1-ledger": null,
+    "succeeded/transcript-2": null,
+    "succeeded/transcript-2-ledger": null,
+    "succeeded/transcript-3": null,
+    "succeeded/transcript-3-ledger": null,
+    "tool-output-rate-limit/transcript-1": null,
+    "voided/transcript-1": null,
+    "voided/transcript-2": null,
+    "work-exhausted/transcript-1": null,
+    "work-exhausted/transcript-2": null,
+    "work-exhausted/transcript-3": null,
+    "work-exhausted/transcript-4": null,
+    "work-exhausted/transcript-5": null,
+    "work-exhausted/transcript-6": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": null,
+    "zeroshot-16/zeroshot16-steered/transcript-1": null,
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": null,
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": null
+  }
+}

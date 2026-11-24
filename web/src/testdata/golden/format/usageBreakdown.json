@@ -1,0 +1,517 @@
+{
+  "executions": {
+    "attempts-exhausted#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "attempts-exhausted#2": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "closing-postmortem#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "codex-estimate#1": "Input: 50,000\nOutput: 3,000\nCache read: 40,000\nCache write: 0\nTotal: 93,000",
+    "copilot-session#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "delivery-failed#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "delivery-failed#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "delivery-failed#3": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "diag-api-hang#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "diag-code-authentication-required#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-crash#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-input-required#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-malformed-result#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-other#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-policy-denied#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-refusal#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-code-timeout#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-context#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-credentials#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-disk#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-malformed-stream#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-missing-cli#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-model#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-network#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-permission#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-provider-down#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-provider-timeout#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-rate-limit#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-stream-cut#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "diag-usage-limit#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "force-stopped#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "force-stopped#2": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "force-stopped#3": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/fork-bad-credentials#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/fork-chaos-transient#1": "Input: 76\nOutput: 2,674\nCache read: 205,983\nCache write: 14,111\nTotal: 222,844",
+    "fork-only/fork-chaos-usage-limit#1": "Input: 42\nOutput: 2,092\nCache read: 105,884\nCache write: 12,595\nTotal: 120,613",
+    "fork-only/fork-controller-killed#1": "Input: 116\nOutput: 4,051\nCache read: 352,608\nCache write: 14,315\nTotal: 371,090",
+    "fork-only/fork-controller-killed#2": "Input: 36\nOutput: 1,588\nCache read: 90,766\nCache write: 6,244\nTotal: 98,634",
+    "fork-only/fork-controller-killed#3": "Input: 36\nOutput: 1,742\nCache read: 86,861\nCache write: 10,611\nTotal: 99,250",
+    "fork-only/fork-force-stopped#1": "Input: 156\nOutput: 4,934\nCache read: 501,374\nCache write: 16,133\nTotal: 522,597",
+    "fork-only/fork-force-stopped#2": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/fork-force-stopped#3": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/fork-happy-path#1": "Input: 92\nOutput: 3,256\nCache read: 275,394\nCache write: 14,042\nTotal: 292,784",
+    "fork-only/fork-happy-path#2": "Input: 36\nOutput: 1,567\nCache read: 86,682\nCache write: 10,319\nTotal: 98,604",
+    "fork-only/fork-happy-path#3": "Input: 26\nOutput: 1,932\nCache read: 62,030\nCache write: 10,082\nTotal: 74,070",
+    "fork-only/fork-late-failure#1": "Input: 108\nOutput: 3,533\nCache read: 324,981\nCache write: 13,640\nTotal: 342,262",
+    "fork-only/fork-late-failure#2": "Input: 36\nOutput: 1,994\nCache read: 86,800\nCache write: 10,585\nTotal: 99,415",
+    "fork-only/fork-late-failure#3": "Input: 36\nOutput: 1,568\nCache read: 86,892\nCache write: 10,577\nTotal: 99,073",
+    "fork-only/fork-replay#1": "Input: 92\nOutput: 2,919\nCache read: 270,988\nCache write: 8,590\nTotal: 282,589",
+    "fork-only/fork-replay#2": "Input: 44\nOutput: 2,247\nCache read: 116,380\nCache write: 6,868\nTotal: 125,539",
+    "fork-only/fork-replay#3": "Input: 36\nOutput: 1,932\nCache read: 91,118\nCache write: 6,597\nTotal: 99,683",
+    "fork-only/fork-resumed#1": "Input: 60\nOutput: 1,979\nCache read: 164,118\nCache write: 7,115\nTotal: 173,272",
+    "fork-only/fork-resumed#2": "Input: 44\nOutput: 2,014\nCache read: 111,901\nCache write: 11,098\nTotal: 125,057",
+    "fork-only/fork-resumed#3": "Input: 52\nOutput: 1,953\nCache read: 139,944\nCache write: 6,991\nTotal: 148,940",
+    "fork-only/fork-reviewer-never-satisfied#1": "Input: 108\nOutput: 3,164\nCache read: 332,637\nCache write: 14,491\nTotal: 350,400",
+    "fork-only/fork-reviewer-never-satisfied#2": "Input: 36\nOutput: 1,797\nCache read: 90,962\nCache write: 6,498\nTotal: 99,293",
+    "fork-only/fork-reviewer-never-satisfied#3": "Input: 36\nOutput: 1,922\nCache read: 87,002\nCache write: 10,733\nTotal: 99,693",
+    "fork-only/fork-reviewer-never-satisfied#4": "Input: 60\nOutput: 1,782\nCache read: 165,585\nCache write: 6,994\nTotal: 174,421",
+    "fork-only/fork-reviewer-never-satisfied#5": "Input: 52\nOutput: 1,923\nCache read: 142,423\nCache write: 7,069\nTotal: 151,467",
+    "fork-only/fork-reviewer-never-satisfied#6": "Input: 36\nOutput: 2,016\nCache read: 91,955\nCache write: 7,050\nTotal: 101,057",
+    "fork-only/fork-steered#1": "Input: 44\nOutput: 1,211\nCache read: 108,603\nCache write: 9,649\nTotal: 119,507",
+    "fork-only/fork-unknown-model#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/fork-worker-timeout#1": "Input: 122\nOutput: 4,818\nCache read: 386,203\nCache write: 15,536\nTotal: 406,679",
+    "fork-only/replay-child#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/replay-child#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "fork-only/replay-child#3": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "fork-only/replay-parent#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "fork-only/replay-parent#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "fork-only/replay-parent#3": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "fork-only/steered#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "graph-ended-other#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "graph-ended-other#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "graph-ended-other#3": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "lane-mixed#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "lane-unknown-harness#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "map-parallel#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "map-parallel#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "map-parallel#3": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "no-checkpoints#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "resumed-original#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "resumed-successor#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "resumed-successor#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "resumed-successor#3": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "running-live#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "running-live#2": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "running-live#3": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "running-live#4": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "running-live#5": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "running-stock#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "runtime-failed-checkpoint#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "runtime-failed-permission#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "runtime-failed-storage#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "runtime-failed-unknown#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "runtime-lost#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "stalled#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "stalled-disk#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "stalled-live-usage#1": "Input: 12\nOutput: 300\nCache read: 49,000\nCache write: 4,800\nTotal: 54,112",
+    "stalled-then-closed#1": "Input: 12\nOutput: 300\nCache read: 49,000\nCache write: 4,800\nTotal: 54,112",
+    "succeeded#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "succeeded#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "succeeded#3": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "succeeded-stock#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "succeeded-stock#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "succeeded-stock#3": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "tool-output-rate-limit#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "voided#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "voided#2": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "work-exhausted#1": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "work-exhausted#2": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "work-exhausted#3": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "work-exhausted#4": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+    "work-exhausted#5": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "work-exhausted#6": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+    "zeroshot-16/zeroshot16-normal#1": "Input: 58\nOutput: 2,681\nCache read: 160,489\nCache write: 11,516\nTotal: 174,744",
+    "zeroshot-16/zeroshot16-steered#1": "Input: 42\nOutput: 1,008\nCache read: 107,365\nCache write: 9,333\nTotal: 117,748",
+    "zeroshot-16/zeroshot16-unknown-model#1": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+  },
+  "runs": {
+    "admitted-only": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "attempts-exhausted": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "checkout-unavailable": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "closing-postmortem": {
+      "backgroundUsage": "Input: 10\nOutput: 500\nCache read: 1,000\nCache write: 2,000\nTotal: 3,510",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 10\nOutput: 500\nCache read: 1,000\nCache write: 2,000\nTotal: 3,510"
+    },
+    "codex-estimate": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 50,000\nOutput: 3,000\nCache read: 40,000\nCache write: 0\nTotal: 93,000",
+      "usage": "Input: 50,000\nOutput: 3,000\nCache read: 40,000\nCache write: 0\nTotal: 93,000"
+    },
+    "copilot-session": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "delivery-failed": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000",
+      "usage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000"
+    },
+    "diag-api-hang": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "diag-code-authentication-required": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-crash": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-input-required": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-malformed-result": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-other": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-policy-denied": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-refusal": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-code-timeout": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-context": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-credentials": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-disk": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-malformed-stream": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-missing-cli": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-model": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-network": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-permission": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-provider-down": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-provider-timeout": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-rate-limit": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-stream-cut": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "diag-usage-limit": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "force-stopped": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "fork-only/fork-bad-credentials": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "fork-only/fork-chaos-transient": {
+      "backgroundUsage": "Input: 80\nOutput: 3,477\nCache read: 197,176\nCache write: 87,017\nTotal: 287,750",
+      "nodeUsage": "Input: 76\nOutput: 2,674\nCache read: 205,983\nCache write: 14,111\nTotal: 222,844",
+      "usage": "Input: 156\nOutput: 6,151\nCache read: 403,159\nCache write: 101,128\nTotal: 510,594"
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 42\nOutput: 2,092\nCache read: 105,884\nCache write: 12,595\nTotal: 120,613",
+      "usage": "Input: 42\nOutput: 2,092\nCache read: 105,884\nCache write: 12,595\nTotal: 120,613"
+    },
+    "fork-only/fork-controller-killed": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 188\nOutput: 7,381\nCache read: 530,235\nCache write: 31,170\nTotal: 568,974",
+      "usage": "Input: 188\nOutput: 7,381\nCache read: 530,235\nCache write: 31,170\nTotal: 568,974"
+    },
+    "fork-only/fork-force-stopped": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 156\nOutput: 4,934\nCache read: 501,374\nCache write: 16,133\nTotal: 522,597",
+      "usage": "Input: 156\nOutput: 4,934\nCache read: 501,374\nCache write: 16,133\nTotal: 522,597"
+    },
+    "fork-only/fork-happy-path": {
+      "backgroundUsage": "Input: 80\nOutput: 4,763\nCache read: 272,868\nCache write: 156,818\nTotal: 434,529",
+      "nodeUsage": "Input: 154\nOutput: 6,755\nCache read: 424,106\nCache write: 34,443\nTotal: 465,458",
+      "usage": "Input: 234\nOutput: 11,518\nCache read: 696,974\nCache write: 191,261\nTotal: 899,987"
+    },
+    "fork-only/fork-late-failure": {
+      "backgroundUsage": "Input: 80\nOutput: 5,871\nCache read: 274,792\nCache write: 151,321\nTotal: 432,064",
+      "nodeUsage": "Input: 180\nOutput: 7,095\nCache read: 498,673\nCache write: 34,802\nTotal: 540,750",
+      "usage": "Input: 260\nOutput: 12,966\nCache read: 773,465\nCache write: 186,123\nTotal: 972,814"
+    },
+    "fork-only/fork-replay": {
+      "backgroundUsage": "Input: 80\nOutput: 4,094\nCache read: 286,548\nCache write: 136,796\nTotal: 427,518",
+      "nodeUsage": "Input: 172\nOutput: 7,098\nCache read: 478,486\nCache write: 22,055\nTotal: 507,811",
+      "usage": "Input: 252\nOutput: 11,192\nCache read: 765,034\nCache write: 158,851\nTotal: 935,329"
+    },
+    "fork-only/fork-resumed": {
+      "backgroundUsage": "Input: 88\nOutput: 4,097\nCache read: 325,043\nCache write: 147,648\nTotal: 476,876",
+      "nodeUsage": "Input: 156\nOutput: 5,946\nCache read: 415,963\nCache write: 25,204\nTotal: 447,269",
+      "usage": "Input: 244\nOutput: 10,043\nCache read: 741,006\nCache write: 172,852\nTotal: 924,145"
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "backgroundUsage": "Input: 110\nOutput: 7,201\nCache read: 505,953\nCache write: 160,869\nTotal: 674,133",
+      "nodeUsage": "Input: 328\nOutput: 12,604\nCache read: 910,564\nCache write: 52,835\nTotal: 976,331",
+      "usage": "Input: 438\nOutput: 19,805\nCache read: 1,416,517\nCache write: 213,704\nTotal: 1,650,464"
+    },
+    "fork-only/fork-steered": {
+      "backgroundUsage": "Input: 80\nOutput: 5,007\nCache read: 184,866\nCache write: 52,174\nTotal: 242,127",
+      "nodeUsage": "Input: 44\nOutput: 1,211\nCache read: 108,603\nCache write: 9,649\nTotal: 119,507",
+      "usage": "Input: 124\nOutput: 6,218\nCache read: 293,469\nCache write: 61,823\nTotal: 361,634"
+    },
+    "fork-only/fork-unknown-model": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "fork-only/fork-worker-timeout": {
+      "backgroundUsage": "Input: 70\nOutput: 4,784\nCache read: 181,826\nCache write: 104,415\nTotal: 291,095",
+      "nodeUsage": "Input: 122\nOutput: 4,818\nCache read: 386,203\nCache write: 15,536\nTotal: 406,679",
+      "usage": "Input: 192\nOutput: 9,602\nCache read: 568,029\nCache write: 119,951\nTotal: 697,774"
+    },
+    "fork-only/replay-child": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "fork-only/replay-parent": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000",
+      "usage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000"
+    },
+    "fork-only/steered": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "graph-ended-other": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000",
+      "usage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000"
+    },
+    "lane-mixed": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "lane-unknown-harness": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "map-parallel": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 2,400\nOutput: 1,600\nCache read: 80,000\nCache write: 6,000\nTotal: 90,000",
+      "usage": "Input: 2,400\nOutput: 1,600\nCache read: 80,000\nCache write: 6,000\nTotal: 90,000"
+    },
+    "no-checkpoints": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "resumed-original": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "resumed-successor": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000",
+      "usage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000"
+    },
+    "running-live": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "running-stock": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "runtime-failed-checkpoint": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "runtime-failed-permission": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "runtime-failed-storage": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "runtime-failed-unknown": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "runtime-lost": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "stalled": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "stalled-disk": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "stalled-live-usage": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 12\nOutput: 300\nCache read: 49,000\nCache write: 4,800\nTotal: 54,112",
+      "usage": "Input: 12\nOutput: 300\nCache read: 49,000\nCache write: 4,800\nTotal: 54,112"
+    },
+    "stalled-then-closed": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 12\nOutput: 300\nCache read: 49,000\nCache write: 4,800\nTotal: 54,112",
+      "usage": "Input: 12\nOutput: 300\nCache read: 49,000\nCache write: 4,800\nTotal: 54,112"
+    },
+    "succeeded": {
+      "backgroundUsage": "Input: 3\nOutput: 150\nCache read: 0\nCache write: 9,000\nTotal: 9,153",
+      "nodeUsage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000",
+      "usage": "Input: 3,603\nOutput: 2,550\nCache read: 120,000\nCache write: 18,000\nTotal: 144,153"
+    },
+    "succeeded-stock": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000",
+      "usage": "Input: 3,600\nOutput: 2,400\nCache read: 120,000\nCache write: 9,000\nTotal: 135,000"
+    },
+    "tool-output-rate-limit": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "unknown-phase": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    },
+    "voided": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000",
+      "usage": "Input: 1,200\nOutput: 800\nCache read: 40,000\nCache write: 3,000\nTotal: 45,000"
+    },
+    "work-exhausted": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 2,400\nOutput: 1,600\nCache read: 80,000\nCache write: 6,000\nTotal: 90,000",
+      "usage": "Input: 2,400\nOutput: 1,600\nCache read: 80,000\nCache write: 6,000\nTotal: 90,000"
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "backgroundUsage": "Input: 58\nOutput: 5,826\nCache read: 129,763\nCache write: 71,631\nTotal: 207,278",
+      "nodeUsage": "Input: 58\nOutput: 2,681\nCache read: 160,489\nCache write: 11,516\nTotal: 174,744",
+      "usage": "Input: 116\nOutput: 8,507\nCache read: 290,252\nCache write: 83,147\nTotal: 382,022"
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "backgroundUsage": "Input: 48\nOutput: 9,293\nCache read: 87,263\nCache write: 52,252\nTotal: 148,856",
+      "nodeUsage": "Input: 42\nOutput: 1,008\nCache read: 107,365\nCache write: 9,333\nTotal: 117,748",
+      "usage": "Input: 90\nOutput: 10,301\nCache read: 194,628\nCache write: 61,585\nTotal: 266,604"
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "backgroundUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "nodeUsage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0",
+      "usage": "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    }
+  },
+  "table": [
+    [
+      "null",
+      "No token usage recorded."
+    ],
+    [
+      "undefined",
+      "No token usage recorded."
+    ],
+    [
+      "{\"inputTokens\":0,\"outputTokens\":0,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0}",
+      "Input: 0\nOutput: 0\nCache read: 0\nCache write: 0\nTotal: 0"
+    ],
+    [
+      "{\"inputTokens\":10,\"outputTokens\":5,\"cacheReadInputTokens\":15,\"cacheCreationInputTokens\":0}",
+      "Input: 10\nOutput: 5\nCache read: 15\nCache write: 0\nTotal: 30"
+    ],
+    [
+      "{\"inputTokens\":0,\"outputTokens\":0,\"cacheReadInputTokens\":1000,\"cacheCreationInputTokens\":0}",
+      "Input: 0\nOutput: 0\nCache read: 1,000\nCache write: 0\nTotal: 1,000"
+    ],
+    [
+      "{\"inputTokens\":1234,\"outputTokens\":5678,\"cacheReadInputTokens\":330000,\"cacheCreationInputTokens\":2100}",
+      "Input: 1,234\nOutput: 5,678\nCache read: 330,000\nCache write: 2,100\nTotal: 339,012"
+    ],
+    [
+      "{\"inputTokens\":null,\"cacheReadInputTokens\":5,\"cacheCreationInputTokens\":0}",
+      "Input: 0\nOutput: 0\nCache read: 5\nCache write: 0\nTotal: 5"
+    ]
+  ]
+}

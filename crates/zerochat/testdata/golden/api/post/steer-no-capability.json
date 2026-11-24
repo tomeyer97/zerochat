@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "steer_unsupported",
+    "message": "This Zeroshot cannot send messages to running agents: that needs Zeroshot 16.1 or later (`zeroshot steer`)."
+  },
+  "status": 503
+}

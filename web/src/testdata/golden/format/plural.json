@@ -1,0 +1,119 @@
+{
+  "runs": {
+    "admitted-only": "0 executions",
+    "attempts-exhausted": "2 executions",
+    "checkout-unavailable": "0 executions",
+    "closing-postmortem": "1 execution",
+    "codex-estimate": "1 execution",
+    "copilot-session": "1 execution",
+    "delivery-failed": "3 executions",
+    "diag-api-hang": "1 execution",
+    "diag-code-authentication-required": "1 execution",
+    "diag-code-crash": "1 execution",
+    "diag-code-input-required": "1 execution",
+    "diag-code-malformed-result": "1 execution",
+    "diag-code-other": "1 execution",
+    "diag-code-policy-denied": "1 execution",
+    "diag-code-refusal": "1 execution",
+    "diag-code-timeout": "1 execution",
+    "diag-context": "1 execution",
+    "diag-credentials": "1 execution",
+    "diag-disk": "1 execution",
+    "diag-malformed-stream": "1 execution",
+    "diag-missing-cli": "1 execution",
+    "diag-model": "1 execution",
+    "diag-network": "1 execution",
+    "diag-permission": "1 execution",
+    "diag-provider-down": "1 execution",
+    "diag-provider-timeout": "1 execution",
+    "diag-rate-limit": "1 execution",
+    "diag-stream-cut": "1 execution",
+    "diag-usage-limit": "1 execution",
+    "force-stopped": "3 executions",
+    "fork-only/fork-bad-credentials": "1 execution",
+    "fork-only/fork-chaos-transient": "1 execution",
+    "fork-only/fork-chaos-usage-limit": "1 execution",
+    "fork-only/fork-controller-killed": "3 executions",
+    "fork-only/fork-force-stopped": "3 executions",
+    "fork-only/fork-happy-path": "3 executions",
+    "fork-only/fork-late-failure": "3 executions",
+    "fork-only/fork-replay": "3 executions",
+    "fork-only/fork-resumed": "3 executions",
+    "fork-only/fork-reviewer-never-satisfied": "6 executions",
+    "fork-only/fork-steered": "1 execution",
+    "fork-only/fork-unknown-model": "1 execution",
+    "fork-only/fork-worker-timeout": "1 execution",
+    "fork-only/replay-child": "3 executions",
+    "fork-only/replay-parent": "3 executions",
+    "fork-only/steered": "1 execution",
+    "graph-ended-other": "3 executions",
+    "lane-mixed": "1 execution",
+    "lane-unknown-harness": "1 execution",
+    "map-parallel": "3 executions",
+    "no-checkpoints": "1 execution",
+    "resumed-original": "1 execution",
+    "resumed-successor": "3 executions",
+    "running-live": "5 executions",
+    "running-stock": "1 execution",
+    "runtime-failed-checkpoint": "1 execution",
+    "runtime-failed-permission": "1 execution",
+    "runtime-failed-storage": "1 execution",
+    "runtime-failed-unknown": "1 execution",
+    "runtime-lost": "1 execution",
+    "stalled": "1 execution",
+    "stalled-disk": "1 execution",
+    "stalled-live-usage": "1 execution",
+    "stalled-then-closed": "1 execution",
+    "succeeded": "3 executions",
+    "succeeded-stock": "3 executions",
+    "tool-output-rate-limit": "1 execution",
+    "unknown-phase": "0 executions",
+    "voided": "2 executions",
+    "work-exhausted": "6 executions",
+    "zeroshot-16/zeroshot16-normal": "1 execution",
+    "zeroshot-16/zeroshot16-steered": "1 execution",
+    "zeroshot-16/zeroshot16-unknown-model": "1 execution"
+  },
+  "table": [
+    [
+      "0 file",
+      "0 files"
+    ],
+    [
+      "0 batch/batches",
+      "0 batches"
+    ],
+    [
+      "1 file",
+      "1 file"
+    ],
+    [
+      "1 batch/batches",
+      "1 batch"
+    ],
+    [
+      "2 file",
+      "2 files"
+    ],
+    [
+      "2 batch/batches",
+      "2 batches"
+    ],
+    [
+      "-1 file",
+      "-1 files"
+    ],
+    [
+      "-1 batch/batches",
+      "-1 batches"
+    ],
+    [
+      "1.5 file",
+      "1.5 files"
+    ],
+    [
+      "1.5 batch/batches",
+      "1.5 batches"
+    ]
+  ]
+}

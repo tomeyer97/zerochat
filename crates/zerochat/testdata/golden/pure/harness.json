@@ -1,0 +1,189 @@
+{
+  "defaults": [
+    "harness/graph.json",
+    "harness/runtime.json"
+  ],
+  "files": {
+    "graphs": [
+      "harness/graph.json",
+      "harness/variants/clone-v1/graph.json",
+      "harness/variants/haiku-adversarial/graph.json",
+      "harness/variants/haiku-prototype-plan/graph.json",
+      "harness/variants/software-change/graph.json",
+      "harness/variants/ticket-v1/graph.json"
+    ],
+    "runtimes": [
+      "harness/runtime.json",
+      "harness/variants/clone-v1/runtime-sonnet-build.json",
+      "harness/variants/clone-v1/runtime.json",
+      "harness/variants/haiku-adversarial/runtime.json",
+      "harness/variants/haiku-prototype-plan/runtime.json",
+      "harness/variants/software-change/runtime.json",
+      "harness/variants/ticket-v1/runtime.json"
+    ]
+  },
+  "previews": [
+    {
+      "graph": "harness/graph.json",
+      "model": null,
+      "preview": {
+        "errors": [],
+        "info": {
+          "agentHarness": "claude",
+          "modelOverride": null,
+          "nodes": [
+            {
+              "effort": "high",
+              "kind": "step",
+              "loopMax": null,
+              "loopName": null,
+              "model": "claude-sonnet-5",
+              "name": "worker",
+              "parallel": null
+            },
+            {
+              "effort": "medium",
+              "kind": "verifier",
+              "loopMax": 4,
+              "loopName": "review_loop",
+              "model": "claude-sonnet-5",
+              "name": "reviewer",
+              "parallel": null
+            },
+            {
+              "effort": "high",
+              "kind": "step",
+              "loopMax": 4,
+              "loopName": "review_loop",
+              "model": "claude-sonnet-5",
+              "name": "repair",
+              "parallel": null
+            }
+          ],
+          "runs": 0,
+          "runtimeFile": null,
+          "runtimeMatches": true,
+          "source": "default",
+          "variant": null
+        },
+        "warnings": []
+      },
+      "runtime": "harness/runtime.json"
+    },
+    {
+      "graph": "harness/graph.json",
+      "model": "claude-sonnet-4-5",
+      "preview": {
+        "errors": [],
+        "info": {
+          "agentHarness": "claude",
+          "modelOverride": "claude-sonnet-4-5",
+          "nodes": [
+            {
+              "effort": "high",
+              "kind": "step",
+              "loopMax": null,
+              "loopName": null,
+              "model": "claude-sonnet-4-5",
+              "name": "worker",
+              "parallel": null
+            },
+            {
+              "effort": "medium",
+              "kind": "verifier",
+              "loopMax": 4,
+              "loopName": "review_loop",
+              "model": "claude-sonnet-4-5",
+              "name": "reviewer",
+              "parallel": null
+            },
+            {
+              "effort": "high",
+              "kind": "step",
+              "loopMax": 4,
+              "loopName": "review_loop",
+              "model": "claude-sonnet-4-5",
+              "name": "repair",
+              "parallel": null
+            }
+          ],
+          "runs": 0,
+          "runtimeFile": null,
+          "runtimeMatches": true,
+          "source": "default",
+          "variant": null
+        },
+        "warnings": []
+      },
+      "runtime": "harness/runtime.json"
+    },
+    {
+      "graph": "harness/nope.json",
+      "model": null,
+      "preview": {
+        "errors": [
+          "graph: File not found: harness/nope.json."
+        ],
+        "info": null,
+        "warnings": []
+      },
+      "runtime": "harness/runtime.json"
+    },
+    {
+      "graph": "/etc/passwd",
+      "model": null,
+      "preview": {
+        "errors": [
+          "graph: /etc/passwd is outside the pb project."
+        ],
+        "info": null,
+        "warnings": []
+      },
+      "runtime": "harness/runtime.json"
+    },
+    {
+      "graph": "../outside.json",
+      "model": null,
+      "preview": {
+        "errors": [
+          "graph: ../outside.json: use a path inside the pb project, without `..`."
+        ],
+        "info": null,
+        "warnings": []
+      },
+      "runtime": "harness/runtime.json"
+    }
+  ],
+  "resolve": [
+    [
+      "harness/graph.json",
+      {
+        "Ok": "<root>/pb/harness/graph.json"
+      }
+    ],
+    [
+      "../x",
+      {
+        "Err": "../x: use a path inside the pb project, without `..`."
+      }
+    ],
+    [
+      "/abs",
+      {
+        "Err": "File not found: /abs."
+      }
+    ],
+    [
+      "",
+      {
+        "Err": "No file chosen."
+      }
+    ],
+    [
+      "harness/../harness/graph.json",
+      {
+        "Err": "harness/../harness/graph.json: use a path inside the pb project, without `..`."
+      }
+    ]
+  ]
+}

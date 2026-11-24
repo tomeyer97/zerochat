@@ -1,0 +1,115 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0,
+      "diagnostic": null,
+      "durationMs": 17588,
+      "endSeq": 17,
+      "endedAt": 1795175261873,
+      "error": {
+        "code": "crash",
+        "reason": "declared_failure"
+      },
+      "errorLines": [
+        "Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1",
+        "Node worker failed: crash after 17.5s: node execution failed: Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+      },
+      "lastActivityAt": 1795175261873,
+      "logLines": 11,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": "declared_failure",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 4,
+      "reused": false,
+      "round": 1,
+      "sessionId": "08f4c5cc-3c38-4876-94c6-13d418507e0d",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175244285,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "c7d6cc9d6e29b09aa34e6ce713d14e37fbb38554",
+        "commit": "c7d6cc9d6e29b09aa34e6ce713d14e37fbb38554",
+        "files": []
+      },
+      "workspaceStart": {
+        "commit": "c7d6cc9d6e29b09aa34e6ce713d14e37fbb38554"
+      }
+    },
+    "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795175251943,
+          "kind": "prompt",
+          "text": "Execute this graph node using the shared workspace.\nAuthored instructions:\nComplete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.\nRuntime-owned workspace setup guidance:\nBefore returning, follow repository setup and install manifest/lockfile dependencies in the checkout; do not use an ad hoc unpinned list. Wait for setup to finish and check exit status. Leave ignored dependencies there. Put standalone tools under an executable user path: use `$ZEROSHOT_TOOLS/bin` when provided (shared by all nodes), otherwise `$HOME/.local/bin`. Do not install tools in `/tmp` (possibly `noexec`).\nInput JSON:\n{\"task\":\"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"}\nRuntime-owned response contract:\n{\"kind\":\"worker\",\"output\":{\"kind\":\"null\"}}\nThe response contract describes the required type; never return the contract itself. Return only JSON with no Markdown or commentary. The provider response must be exactly an object with one field named response. For a worker, response contains the output value; an output contract of {\"kind\":\"null\"} requires the literal null inside {\"response\":null}. For a verifier, response contains exactly an object with ou…[fixture: 80 more characters cut]"
+        },
+        {
+          "at": 1795175252181,
+          "kind": "retry",
+          "text": "retried 1 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175252983,
+          "kind": "retry",
+          "text": "retried 2 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175254126,
+          "kind": "error",
+          "text": "Failed to authenticate. API Error: 401 OAuth access token is invalid."
+        },
+        {
+          "at": 1795175258453,
+          "kind": "auto",
+          "text": "Continue"
+        },
+        {
+          "at": 1795175258852,
+          "kind": "retry",
+          "text": "retried 1 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175259555,
+          "kind": "retry",
+          "text": "retried 2 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175260754,
+          "kind": "error",
+          "text": "Failed to authenticate. API Error: 401 OAuth access token is invalid."
+        }
+      ],
+      "limitations": [],
+      "source": "native",
+      "sourcePath": "<root>/home/.claude/projects/<root-slug>-work-bad-credentials/08f4c5cc-3c38-4876-94c6-13d418507e0d.jsonl"
+    }
+  },
+  "status": 200
+}

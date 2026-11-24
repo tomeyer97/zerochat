@@ -1,0 +1,887 @@
+[
+  {
+    "context": {
+      "costUsd": 1.82763,
+      "kind": "benchmark",
+      "label": "smoke-haiku",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.55",
+      "score": 0.549107143,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-120654-160a0e",
+    "zeroshotRun": "01a1a117-3433-7660-97fe-bba97c25f34d"
+  },
+  {
+    "context": {
+      "costUsd": 0.0620568,
+      "kind": "benchmark",
+      "label": "ctrlc-test",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · interrupted",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-121900-29af42",
+    "zeroshotRun": "01a1a122-480f-7012-a453-09a724ea9236"
+  },
+  {
+    "context": {
+      "costUsd": 2.0027185,
+      "kind": "benchmark",
+      "label": "sc-template-haiku",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.67",
+      "score": 0.669642857,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-124230-85bba6",
+    "zeroshotRun": "01a1a137-cdf4-7990-9437-1e3dba6aad32"
+  },
+  {
+    "context": {
+      "costUsd": 2.6765396,
+      "kind": "benchmark",
+      "label": "haiku-adversarial",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · interrupted",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-132546-0e4fe3",
+    "zeroshotRun": "01a1a15f-67c2-7d80-82cf-e32f49ef7fe9"
+  },
+  {
+    "context": {
+      "costUsd": 0.0,
+      "kind": "benchmark",
+      "label": "haiku-adversarial",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · crashed",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-134223-3b1d24",
+    "zeroshotRun": "01a1a16e-a13c-7142-b60b-3fb02b32d760"
+  },
+  {
+    "context": {
+      "costUsd": 0.0,
+      "kind": "benchmark",
+      "label": "haiku-adversarial",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · crashed",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-134312-42aa68",
+    "zeroshotRun": "01a1a16f-60eb-7ec3-9f78-bd21fc2d5db8"
+  },
+  {
+    "context": {
+      "costUsd": 3.3099203,
+      "kind": "benchmark",
+      "label": "haiku-adversarial",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.67",
+      "score": 0.674107143,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-135046-54abe6",
+    "zeroshotRun": "01a1a176-4ee7-7201-8bcd-ac26099f913f"
+  },
+  {
+    "context": {
+      "costUsd": 5.4918146,
+      "kind": "benchmark",
+      "label": "haiku-prototype-plan",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · interrupted",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-135729-f246e7",
+    "zeroshotRun": "01a1a17c-7322-72e2-8b16-56602bf5b25d"
+  },
+  {
+    "context": {
+      "costUsd": 5.184118,
+      "kind": "benchmark",
+      "label": "haiku-prototype-plan",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.59",
+      "score": 0.589285714,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-143843-bad770",
+    "zeroshotRun": "01a1a1a2-340a-7792-b5b7-ff6ea97ad009"
+  },
+  {
+    "context": {
+      "costUsd": 5.3990452,
+      "kind": "benchmark",
+      "label": "clone-v1",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.62",
+      "score": 0.616071429,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-151748-ef96e3",
+    "zeroshotRun": "01a1a1c5-fa55-7dd0-be80-efd5703a4356"
+  },
+  {
+    "context": {
+      "costUsd": 3.5436976,
+      "kind": "benchmark",
+      "label": "ticket-v1",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.58",
+      "score": 0.584821429,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-153020-39acd7",
+    "zeroshotRun": "01a1a1d1-773a-77a0-843c-1b5fe41dbc5b"
+  },
+  {
+    "context": {
+      "costUsd": 1.6228733,
+      "kind": "benchmark",
+      "label": "replay-build-haiku",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.47",
+      "score": 0.473214286,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-160205-433564",
+    "zeroshotRun": "01a1a1ee-890c-7ea1-85ff-b8e1c35494aa"
+  },
+  {
+    "context": {
+      "costUsd": 2.0072363,
+      "kind": "benchmark",
+      "label": "replay-build-haiku",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.53",
+      "score": 0.526785714,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261103-160205-fb058c",
+    "zeroshotRun": "01a1a1ee-890c-7f32-b250-1f1a312860b8"
+  },
+  {
+    "context": {
+      "costUsd": 5.263022,
+      "kind": "benchmark",
+      "label": "replay-build-sonnet",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.82",
+      "score": 0.816964286,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-094037-b61618",
+    "zeroshotRun": "01a1a5b7-a50e-7123-bf2e-c8b6b6baf64f"
+  },
+  {
+    "context": {
+      "costUsd": 5.8355968,
+      "kind": "benchmark",
+      "label": "replay-build-sonnet",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.88",
+      "score": 0.883928571,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-094037-fb26fa",
+    "zeroshotRun": "01a1a5b7-a50e-7733-b254-b6c04e9480b2"
+  },
+  {
+    "context": {
+      "costUsd": 0.9023805,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.62",
+      "score": 0.616071429,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-101121-1ed48b",
+    "zeroshotRun": "01a1a5d3-caa8-7f20-b76a-5c3cd022e1d0"
+  },
+  {
+    "context": {
+      "costUsd": 2.2508616,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.61",
+      "score": 0.611607143,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-101121-60f4f8",
+    "zeroshotRun": "01a1a5d3-caa8-73d0-a01c-586d33e411bf"
+  },
+  {
+    "context": {
+      "costUsd": 12.5032648,
+      "kind": "benchmark",
+      "label": "clone-v1-sonnet-build",
+      "line": "mibk__dupl.1bf052b · seed 0 · score 0.85",
+      "score": 0.852546917,
+      "seed": 0,
+      "task": "mibk__dupl.1bf052b"
+    },
+    "pbRun": "20261104-101225-6d2edf",
+    "zeroshotRun": "01a1a5d4-d097-73d1-a30d-88d56f034760"
+  },
+  {
+    "context": {
+      "costUsd": 11.775106,
+      "kind": "benchmark",
+      "label": "clone-v1-sonnet-build",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.89",
+      "score": 0.888392857,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-101225-e8c831",
+    "zeroshotRun": "01a1a5d4-c1c2-7e60-b2d1-64f7f105b487"
+  },
+  {
+    "context": {
+      "costUsd": 12.0446397,
+      "kind": "benchmark",
+      "label": "clone-v1-sonnet-build",
+      "line": "cheat__cheat.b8098dc · seed 0 · score 0.57",
+      "score": 0.565656566,
+      "seed": 0,
+      "task": "cheat__cheat.b8098dc"
+    },
+    "pbRun": "20261104-101225-ed3910",
+    "zeroshotRun": "01a1a5d4-d723-7900-a7ba-ffb67e6331eb"
+  },
+  {
+    "context": {
+      "costUsd": 0.6023117,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.62",
+      "score": 0.620535714,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-101645-9b2f84",
+    "zeroshotRun": "01a1a5d8-ba67-7d81-bd8a-f1e5d39287c3"
+  },
+  {
+    "context": {
+      "costUsd": 2.2438134,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:repair#1:claude-sonnet-5",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.63",
+      "score": 0.629464286,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-101900-42baf5",
+    "zeroshotRun": "01a1a5da-ca64-70e1-b4af-5d03b93e0bec"
+  },
+  {
+    "context": {
+      "costUsd": 1.508038,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.59",
+      "score": 0.589285714,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-102045-d3e151",
+    "zeroshotRun": "01a1a5dc-64ab-7260-a8f1-2b600fdc5ca7"
+  },
+  {
+    "context": {
+      "costUsd": 1.0845128,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.62",
+      "score": 0.616071429,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-102957-4a619f",
+    "zeroshotRun": "01a1a5e4-cf79-7712-8905-1a288ab34ac5"
+  },
+  {
+    "context": {
+      "costUsd": 0.5685896,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.62",
+      "score": 0.625,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-103417-96c7d8",
+    "zeroshotRun": "01a1a5e8-c91b-7073-b3e9-fdbd462600af"
+  },
+  {
+    "context": {
+      "costUsd": 2.7494042,
+      "kind": "benchmark",
+      "label": "sweep:sweep-triage-repair:repair#1:claude-sonnet-5",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.62",
+      "score": 0.616071429,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-103735-2a5194",
+    "zeroshotRun": "01a1a5eb-d0d6-7cc2-87af-1150a2b1b9b4"
+  },
+  {
+    "context": {
+      "costUsd": 5.0800205,
+      "kind": "benchmark",
+      "label": "replay-sonnet-explore-haiku-build",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.84",
+      "score": 0.839285714,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-114508-306ec8",
+    "zeroshotRun": "01a1a629-a70f-74a3-bc9a-2db2784b763d"
+  },
+  {
+    "context": {
+      "costUsd": 6.8636835,
+      "kind": "benchmark",
+      "label": "replay-sonnet-explore-haiku-build",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.58",
+      "score": 0.580357143,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261104-114508-de4351",
+    "zeroshotRun": "01a1a629-a70e-7320-861e-9d1aa51c8125"
+  },
+  {
+    "context": {
+      "costUsd": 6.1985388,
+      "kind": "benchmark",
+      "label": "k8s-sc-sonnet5",
+      "line": "k8s-job-backoff-limit-per-index · seed 0 · score 1.00",
+      "score": 1.0,
+      "seed": 0,
+      "task": "k8s-job-backoff-limit-per-index"
+    },
+    "pbRun": "20261104-123424-e0fb82",
+    "zeroshotRun": "01a1a656-c536-7252-b6ec-4768f1a2d2c4"
+  },
+  {
+    "context": {
+      "costUsd": 6.0463509,
+      "kind": "benchmark",
+      "label": "r1-ctrl-diffloop",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.62",
+      "parent": "20261107-222316-910b7d",
+      "score": 0.620535714,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261107-222316-3f1483",
+    "zeroshotRun": "01a1b7e4-f2ba-73f0-9272-88dcb84e5ae4"
+  },
+  {
+    "context": {
+      "costUsd": 6.0066345,
+      "kind": "benchmark",
+      "label": "r1-ctrl-diffloop",
+      "line": "yaa110__nomino.f892499 · seed 0 · score 0.51",
+      "parent": "20261107-222316-910b7d",
+      "score": 0.50798722,
+      "seed": 0,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261107-222316-61fcd1",
+    "zeroshotRun": "01a1b7e5-1993-7ba0-ae62-9d406615e1b9"
+  },
+  {
+    "context": {
+      "costUsd": 6.0031999,
+      "kind": "benchmark",
+      "label": "r1-screen-spec2",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.58",
+      "parent": "20261107-222316-71f62e",
+      "score": 0.575892857,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261107-222316-9e1324",
+    "zeroshotRun": "01a1b7e4-f2b9-77c0-b2b7-c21eed50894e"
+  },
+  {
+    "context": {
+      "costUsd": 6.0030317,
+      "kind": "benchmark",
+      "label": "r1-ctrl-diffloop",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.67",
+      "parent": "20261107-222316-910b7d",
+      "score": 0.674107143,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261107-222316-ce9b61",
+    "zeroshotRun": "01a1b7e4-f2b9-74e1-8b6f-2fbc9b8d3dc3"
+  },
+  {
+    "context": {
+      "costUsd": 2.5164502,
+      "kind": "benchmark",
+      "label": "r1-ctrl-diffloop",
+      "line": "yaa110__nomino.f892499 · seed 1 · score 0.41",
+      "parent": "20261107-222316-910b7d",
+      "score": 0.405750799,
+      "seed": 1,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261107-225705-7736ba",
+    "zeroshotRun": "01a1b803-e903-7742-ad98-a35a4d7ad8b9"
+  },
+  {
+    "context": {
+      "costUsd": 6.0048309,
+      "kind": "benchmark",
+      "label": "r1-screen-spec2",
+      "line": "yaa110__nomino.f892499 · seed 0 · score 0.50",
+      "parent": "20261107-222316-71f62e",
+      "score": 0.498402556,
+      "seed": 0,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261107-225852-ea4461",
+    "zeroshotRun": "01a1b805-88e8-7d53-8785-5b539d9cdfb7"
+  },
+  {
+    "context": {
+      "costUsd": 6.0015822,
+      "kind": "benchmark",
+      "label": "r1-ctrl-diffloop",
+      "line": "tomnomnom__gron.88a6234 · seed 2 · score 0.68",
+      "parent": "20261107-222316-910b7d",
+      "score": 0.683035714,
+      "seed": 2,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261107-230336-6afddb",
+    "zeroshotRun": "01a1b809-df0d-7433-a28a-91b5e1a62ff1"
+  },
+  {
+    "context": {
+      "costUsd": 6.0000722,
+      "kind": "benchmark",
+      "label": "r1-ctrl-diffloop",
+      "line": "yaa110__nomino.f892499 · seed 2 · score 0.67",
+      "parent": "20261107-222316-910b7d",
+      "score": 0.670926518,
+      "seed": 2,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261107-230639-bac86d",
+    "zeroshotRun": "01a1b80c-a96f-79d3-b86c-f45227349ca3"
+  },
+  {
+    "context": {
+      "costUsd": 3.6747709,
+      "kind": "benchmark",
+      "label": "r2-hermetic",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.47",
+      "parent": "20261108-142204-d474ae",
+      "score": 0.473214286,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-142204-037a6e",
+    "zeroshotRun": "01a1bb52-c40b-7e20-b626-01b446109434"
+  },
+  {
+    "context": {
+      "costUsd": 6.0065802,
+      "kind": "benchmark",
+      "label": "r2-hermetic",
+      "line": "yaa110__nomino.f892499 · seed 1 · score 0.62",
+      "parent": "20261108-142204-d474ae",
+      "score": 0.616613419,
+      "seed": 1,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-142204-c03693",
+    "zeroshotRun": "01a1bb52-c414-7863-aca4-39b2bdda9ef2"
+  },
+  {
+    "context": {
+      "costUsd": 6.0240695,
+      "kind": "benchmark",
+      "label": "r2-hermetic",
+      "line": "yaa110__nomino.f892499 · seed 0 · score 0.00",
+      "parent": "20261108-142204-d474ae",
+      "score": 0.0,
+      "seed": 0,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-142204-d922d5",
+    "zeroshotRun": "01a1bb52-c46d-72e2-a295-74a45757c686"
+  },
+  {
+    "context": {
+      "costUsd": 6.1082366,
+      "kind": "benchmark",
+      "label": "r2-hermetic",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.69",
+      "parent": "20261108-142204-d474ae",
+      "score": 0.6875,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-142204-e54403",
+    "zeroshotRun": "01a1bb52-c40d-70f2-8cb2-7e4bae7d0be5"
+  },
+  {
+    "context": {
+      "costUsd": 6.901997,
+      "kind": "benchmark",
+      "label": "r2-hermetic",
+      "line": "tomnomnom__gron.88a6234 · seed 2 · score 0.68",
+      "parent": "20261108-142204-d474ae",
+      "score": 0.678571429,
+      "seed": 2,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-145719-8916de",
+    "zeroshotRun": "01a1bb73-07c0-7b01-ba7a-712bb2b59478"
+  },
+  {
+    "context": {
+      "costUsd": 6.0021851,
+      "kind": "benchmark",
+      "label": "r2-hermetic",
+      "line": "yaa110__nomino.f892499 · seed 2 · score 0.00",
+      "parent": "20261108-142204-d474ae",
+      "score": 0.0,
+      "seed": 2,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-150036-3c2a78",
+    "zeroshotRun": "01a1bb76-0748-71e0-8942-70b40d062eb3"
+  },
+  {
+    "context": {
+      "costUsd": 6.01273765,
+      "kind": "benchmark",
+      "label": "r2-hermetic2",
+      "line": "yaa110__nomino.f892499 · seed 0 · score 0.72",
+      "parent": "20261108-152720-fb0664",
+      "score": 0.722044728,
+      "seed": 0,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-152720-2cd1bc",
+    "zeroshotRun": "01a1bb8e-8377-7510-a477-6af227234ff8"
+  },
+  {
+    "context": {
+      "costUsd": 6.0542834,
+      "kind": "benchmark",
+      "label": "r2-hermetic2",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.78",
+      "parent": "20261108-152720-fb0664",
+      "score": 0.78125,
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-152720-47b18a",
+    "zeroshotRun": "01a1bb8e-8377-7e71-b506-53e82f281c70"
+  },
+  {
+    "context": {
+      "costUsd": 5.4082912,
+      "kind": "benchmark",
+      "label": "r2-hermetic2",
+      "line": "yaa110__nomino.f892499 · seed 1 · score 0.57",
+      "parent": "20261108-152720-fb0664",
+      "score": 0.565495208,
+      "seed": 1,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-152720-e63bea",
+    "zeroshotRun": "01a1bba4-e3b8-7ed3-939d-7622ee69dd55"
+  },
+  {
+    "context": {
+      "costUsd": 1.7417891,
+      "kind": "benchmark",
+      "label": "r2-hermetic2",
+      "line": "tomnomnom__gron.88a6234 · seed 1 · score 0.43",
+      "parent": "20261108-152720-fb0664",
+      "score": 0.428571429,
+      "seed": 1,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-152720-f53c72",
+    "zeroshotRun": "01a1bb9b-7cca-7503-b544-989eba2d064d"
+  },
+  {
+    "context": {
+      "costUsd": 6.5821604,
+      "kind": "benchmark",
+      "label": "r2-hermetic2",
+      "line": "tomnomnom__gron.88a6234 · seed 2 · score 0.53",
+      "parent": "20261108-152720-fb0664",
+      "score": 0.526785714,
+      "seed": 2,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-155351-2efb37",
+    "zeroshotRun": "01a1bba6-c893-7613-ba8e-1d9408ee0cc1"
+  },
+  {
+    "context": {
+      "costUsd": 6.0043453,
+      "kind": "benchmark",
+      "label": "r2-hermetic2",
+      "line": "yaa110__nomino.f892499 · seed 2 · score 0.67",
+      "parent": "20261108-152720-fb0664",
+      "score": 0.674121406,
+      "seed": 2,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-160627-c0d812",
+    "zeroshotRun": "01a1bbb2-51bc-7c52-b82d-d7d8150c5e6f"
+  },
+  {
+    "context": {
+      "kind": "benchmark",
+      "label": "r3-noaccept",
+      "line": "yaa110__nomino.f892499 · seed 0 · running",
+      "parent": "20261108-170007-63721d",
+      "seed": 0,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-170007-024098",
+    "zeroshotRun": "01a1bbe3-76b4-7bc0-b82d-31116a963693"
+  },
+  {
+    "context": {
+      "kind": "benchmark",
+      "label": "r3-noaccept",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · running",
+      "parent": "20261108-170007-63721d",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-170007-915c3e",
+    "zeroshotRun": "01a1bbe3-76b4-7051-bc35-6513b8d18a1c"
+  },
+  {
+    "context": {
+      "kind": "benchmark",
+      "label": "r3-h2-noaccept",
+      "line": "yaa110__nomino.f892499 · seed 0 · running",
+      "parent": "20261108-170009-cace9c",
+      "seed": 0,
+      "task": "yaa110__nomino.f892499"
+    },
+    "pbRun": "20261108-170009-2845db",
+    "zeroshotRun": "01a1bbe3-7e13-7521-8fb6-72ee1220f37e"
+  },
+  {
+    "context": {
+      "kind": "benchmark",
+      "label": "r3-h2-noaccept",
+      "line": "tomnomnom__gron.88a6234 · seed 0 · running",
+      "parent": "20261108-170009-cace9c",
+      "seed": 0,
+      "task": "tomnomnom__gron.88a6234"
+    },
+    "pbRun": "20261108-170009-cb5a35",
+    "zeroshotRun": "01a1bbe3-7e15-7852-b8d7-27fb6188c998"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add mod()",
+      "line": "Slice 10 of calc · attempt 1",
+      "parent": "calc",
+      "slice": "10",
+      "task": "calc 10: Add mod()"
+    },
+    "scenario": "codex-estimate"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add mul()",
+      "line": "Slice 02 of calc · attempt 1 of 2 · conflict, re-run as attempt 2",
+      "parent": "calc",
+      "slice": "02",
+      "task": "calc 02: Add mul() · #1 conflict"
+    },
+    "scenario": "delivery-failed"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "paused",
+      "kind": "slice",
+      "label": "Retry me",
+      "line": "Slice 01 of paused · attempt 1 of 2 · infrastructure failure, retried automatically as attempt 2",
+      "parent": "paused",
+      "slice": "01",
+      "task": "paused 01: Retry me · #1 infrastructure failure"
+    },
+    "scenario": "diag-provider-down"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Hand-finished tidy-up",
+      "line": "Slice 11 of calc · attempt 1 · merged without the gate (6ea2cf4)",
+      "parent": "calc",
+      "slice": "11",
+      "task": "calc 11: Hand-finished tidy-up"
+    },
+    "scenario": "force-stopped"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add farewell()",
+      "line": "Slice 04 of calc · attempt 1 of 2 · gate failed, not merged, retried as attempt 2",
+      "parent": "calc",
+      "slice": "04",
+      "task": "calc 04: Add farewell() · #1 gate failed"
+    },
+    "scenario": "graph-ended-other"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Friendlier greeting",
+      "line": "Slice 03 of calc · attempt 1 · merged (8a6041f)",
+      "parent": "calc",
+      "slice": "03",
+      "task": "calc 03: Friendlier greeting"
+    },
+    "scenario": "map-parallel"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add div()",
+      "line": "Slice 08 of calc · attempt 1 · controller lost, resumed in a later run",
+      "parent": "calc",
+      "slice": "08",
+      "task": "calc 08: Add div() · #1 controller lost"
+    },
+    "scenario": "resumed-original"
+  },
+  {
+    "context": {
+      "attempt": 2,
+      "feature": "paused",
+      "kind": "slice",
+      "label": "Retry me",
+      "line": "Slice 01 of paused · attempt 2 of 2 · infrastructure failure",
+      "parent": "paused",
+      "slice": "01",
+      "task": "paused 01: Retry me · #2 infrastructure failure"
+    },
+    "scenario": "runtime-lost"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add div()",
+      "line": "Slice 08 of calc · attempt 1 · infrastructure failure",
+      "parent": "calc",
+      "slice": "08",
+      "task": "calc 08: Add div() · #1 infrastructure failure"
+    },
+    "scenario": "stalled"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add square()",
+      "line": "Slice 05 of calc · attempt 1",
+      "parent": "calc",
+      "slice": "05",
+      "task": "calc 05: Add square()"
+    },
+    "scenario": "stalled-live-usage"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add sub()",
+      "line": "Slice 01 of calc · attempt 1 · merged (b0b1aea)",
+      "parent": "calc",
+      "slice": "01",
+      "task": "calc 01: Add sub()"
+    },
+    "scenario": "succeeded"
+  },
+  {
+    "context": {
+      "attempt": 2,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add mul()",
+      "line": "Slice 02 of calc · attempt 2 of 2 · merged (776e54a)",
+      "parent": "calc",
+      "slice": "02",
+      "task": "calc 02: Add mul() · #2 merged"
+    },
+    "scenario": "succeeded-stock"
+  },
+  {
+    "context": {
+      "attempt": 2,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add farewell()",
+      "line": "Slice 04 of calc · attempt 2 of 2 · gate failed, not merged",
+      "parent": "calc",
+      "slice": "04",
+      "task": "calc 04: Add farewell() · #2 gate failed"
+    },
+    "scenario": "voided"
+  },
+  {
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add neg()",
+      "line": "Slice 12 of calc · attempt 1 · review rounds ran out",
+      "parent": "calc",
+      "slice": "12",
+      "task": "calc 12: Add neg() · #1 review rounds ran out"
+    },
+    "scenario": "work-exhausted"
+  },
+  {
+    "unknown": null
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "slices": {
+    "calc/01": false,
+    "calc/02": false,
+    "calc/03": false,
+    "calc/04": false,
+    "calc/05": true,
+    "calc/06": false,
+    "calc/07": false,
+    "calc/08": false,
+    "calc/09": true,
+    "calc/10": true,
+    "calc/11": false,
+    "calc/12": false,
+    "calc/13": false,
+    "calc/14": false,
+    "fresh/01": false,
+    "fresh/02": false,
+    "paused/01": false
+  },
+  "table": {
+    "failed": false,
+    "integrating": true,
+    "interrupted": false,
+    "launching": true,
+    "merged": false,
+    "novel": false,
+    "pending": false,
+    "running": true,
+    "skipped": false,
+    "waiting_for_approval": false
+  }
+}

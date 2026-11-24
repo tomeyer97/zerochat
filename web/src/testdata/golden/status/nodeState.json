@@ -1,0 +1,432 @@
+{
+  "executions": {
+    "attempts-exhausted#1": "failed",
+    "attempts-exhausted#2": "failed",
+    "closing-postmortem#1": "failed",
+    "codex-estimate#1": "succeeded",
+    "copilot-session#1": "succeeded",
+    "delivery-failed#1": "succeeded",
+    "delivery-failed#2": "accepted",
+    "delivery-failed#3": "accepted",
+    "diag-api-hang#1": "failed",
+    "diag-code-authentication-required#1": "failed",
+    "diag-code-crash#1": "failed",
+    "diag-code-input-required#1": "failed",
+    "diag-code-malformed-result#1": "failed",
+    "diag-code-other#1": "failed",
+    "diag-code-policy-denied#1": "failed",
+    "diag-code-refusal#1": "failed",
+    "diag-code-timeout#1": "failed",
+    "diag-context#1": "failed",
+    "diag-credentials#1": "failed",
+    "diag-disk#1": "failed",
+    "diag-malformed-stream#1": "failed",
+    "diag-missing-cli#1": "failed",
+    "diag-model#1": "failed",
+    "diag-network#1": "failed",
+    "diag-permission#1": "failed",
+    "diag-provider-down#1": "failed",
+    "diag-provider-timeout#1": "failed",
+    "diag-rate-limit#1": "failed",
+    "diag-stream-cut#1": "failed",
+    "diag-usage-limit#1": "failed",
+    "force-stopped#1": "succeeded",
+    "force-stopped#2": "interrupted",
+    "force-stopped#3": "interrupted",
+    "fork-only/fork-bad-credentials#1": "failed",
+    "fork-only/fork-chaos-transient#1": "succeeded",
+    "fork-only/fork-chaos-usage-limit#1": "failed",
+    "fork-only/fork-controller-killed#1": "succeeded",
+    "fork-only/fork-controller-killed#2": "interrupted",
+    "fork-only/fork-controller-killed#3": "interrupted",
+    "fork-only/fork-force-stopped#1": "succeeded",
+    "fork-only/fork-force-stopped#2": "interrupted",
+    "fork-only/fork-force-stopped#3": "interrupted",
+    "fork-only/fork-happy-path#1": "succeeded",
+    "fork-only/fork-happy-path#2": "accepted",
+    "fork-only/fork-happy-path#3": "accepted",
+    "fork-only/fork-late-failure#1": "succeeded",
+    "fork-only/fork-late-failure#2": "accepted",
+    "fork-only/fork-late-failure#3": "failed",
+    "fork-only/fork-replay#1": "succeeded",
+    "fork-only/fork-replay#2": "accepted",
+    "fork-only/fork-replay#3": "accepted",
+    "fork-only/fork-resumed#1": "succeeded",
+    "fork-only/fork-resumed#2": "accepted",
+    "fork-only/fork-resumed#3": "accepted",
+    "fork-only/fork-reviewer-never-satisfied#1": "succeeded",
+    "fork-only/fork-reviewer-never-satisfied#2": "rejected",
+    "fork-only/fork-reviewer-never-satisfied#3": "accepted",
+    "fork-only/fork-reviewer-never-satisfied#4": "succeeded",
+    "fork-only/fork-reviewer-never-satisfied#5": "rejected",
+    "fork-only/fork-reviewer-never-satisfied#6": "accepted",
+    "fork-only/fork-steered#1": "succeeded",
+    "fork-only/fork-unknown-model#1": "failed",
+    "fork-only/fork-worker-timeout#1": "failed",
+    "fork-only/replay-child#1": "succeeded",
+    "fork-only/replay-child#2": "accepted",
+    "fork-only/replay-child#3": "accepted",
+    "fork-only/replay-parent#1": "succeeded",
+    "fork-only/replay-parent#2": "rejected",
+    "fork-only/replay-parent#3": "accepted",
+    "fork-only/steered#1": "succeeded",
+    "graph-ended-other#1": "succeeded",
+    "graph-ended-other#2": "accepted",
+    "graph-ended-other#3": "accepted",
+    "lane-mixed#1": "failed",
+    "lane-unknown-harness#1": "failed",
+    "map-parallel#1": "succeeded",
+    "map-parallel#2": "succeeded",
+    "map-parallel#3": "succeeded",
+    "no-checkpoints#1": "failed",
+    "resumed-original#1": "interrupted",
+    "resumed-successor#1": "succeeded",
+    "resumed-successor#2": "accepted",
+    "resumed-successor#3": "accepted",
+    "running-live#1": "succeeded",
+    "running-live#2": "rejected",
+    "running-live#3": "accepted",
+    "running-live#4": "failed",
+    "running-live#5": "running",
+    "running-stock#1": "running",
+    "runtime-failed-checkpoint#1": "interrupted",
+    "runtime-failed-permission#1": "interrupted",
+    "runtime-failed-storage#1": "interrupted",
+    "runtime-failed-unknown#1": "interrupted",
+    "runtime-lost#1": "interrupted",
+    "stalled#1": "interrupted",
+    "stalled-disk#1": "interrupted",
+    "stalled-live-usage#1": "interrupted",
+    "stalled-then-closed#1": "interrupted",
+    "succeeded#1": "succeeded",
+    "succeeded#2": "accepted",
+    "succeeded#3": "accepted",
+    "succeeded-stock#1": "succeeded",
+    "succeeded-stock#2": "accepted",
+    "succeeded-stock#3": "accepted",
+    "tool-output-rate-limit#1": "running",
+    "voided#1": "voided",
+    "voided#2": "succeeded",
+    "work-exhausted#1": "succeeded",
+    "work-exhausted#2": "rejected",
+    "work-exhausted#3": "accepted",
+    "work-exhausted#4": "succeeded",
+    "work-exhausted#5": "rejected",
+    "work-exhausted#6": "accepted",
+    "zeroshot-16/zeroshot16-normal#1": "succeeded",
+    "zeroshot-16/zeroshot16-steered#1": "succeeded",
+    "zeroshot-16/zeroshot16-unknown-model#1": "failed"
+  },
+  "nodes": {
+    "admitted-only": {},
+    "attempts-exhausted": {
+      "code": "failed"
+    },
+    "checkout-unavailable": {},
+    "closing-postmortem": {
+      "code": "failed"
+    },
+    "codex-estimate": {
+      "worker": "succeeded"
+    },
+    "copilot-session": {
+      "worker": "succeeded"
+    },
+    "delivery-failed": {
+      "acceptance": "accepted",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "diag-api-hang": {
+      "worker": "failed"
+    },
+    "diag-code-authentication-required": {
+      "worker": "failed"
+    },
+    "diag-code-crash": {
+      "worker": "failed"
+    },
+    "diag-code-input-required": {
+      "worker": "failed"
+    },
+    "diag-code-malformed-result": {
+      "worker": "failed"
+    },
+    "diag-code-other": {
+      "worker": "failed"
+    },
+    "diag-code-policy-denied": {
+      "worker": "failed"
+    },
+    "diag-code-refusal": {
+      "worker": "failed"
+    },
+    "diag-code-timeout": {
+      "worker": "failed"
+    },
+    "diag-context": {
+      "worker": "failed"
+    },
+    "diag-credentials": {
+      "worker": "failed"
+    },
+    "diag-disk": {
+      "worker": "failed"
+    },
+    "diag-malformed-stream": {
+      "worker": "failed"
+    },
+    "diag-missing-cli": {
+      "worker": "failed"
+    },
+    "diag-model": {
+      "worker": "failed"
+    },
+    "diag-network": {
+      "worker": "failed"
+    },
+    "diag-permission": {
+      "worker": "failed"
+    },
+    "diag-provider-down": {
+      "worker": "failed"
+    },
+    "diag-provider-timeout": {
+      "worker": "failed"
+    },
+    "diag-rate-limit": {
+      "worker": "failed"
+    },
+    "diag-stream-cut": {
+      "worker": "failed"
+    },
+    "diag-usage-limit": {
+      "worker": "failed"
+    },
+    "force-stopped": {
+      "acceptance": "interrupted",
+      "code": "succeeded",
+      "code_review": "interrupted"
+    },
+    "fork-only/fork-bad-credentials": {
+      "worker": "failed"
+    },
+    "fork-only/fork-chaos-transient": {
+      "worker": "succeeded"
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "worker": "failed"
+    },
+    "fork-only/fork-controller-killed": {
+      "acceptance": "interrupted",
+      "code": "interrupted",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-force-stopped": {
+      "acceptance": "interrupted",
+      "code": "interrupted",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-happy-path": {
+      "acceptance": "accepted",
+      "code": "accepted",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-late-failure": {
+      "acceptance": "accepted",
+      "code": "failed",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-replay": {
+      "acceptance": "accepted",
+      "code": "accepted",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-resumed": {
+      "acceptance": "accepted",
+      "code": "accepted",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "acceptance": "rejected",
+      "code": "accepted",
+      "worker": "succeeded"
+    },
+    "fork-only/fork-steered": {
+      "worker": "succeeded"
+    },
+    "fork-only/fork-unknown-model": {
+      "worker": "failed"
+    },
+    "fork-only/fork-worker-timeout": {
+      "worker": "failed"
+    },
+    "fork-only/replay-child": {
+      "acceptance": "accepted",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "fork-only/replay-parent": {
+      "acceptance": "rejected",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "fork-only/steered": {
+      "worker": "succeeded"
+    },
+    "graph-ended-other": {
+      "acceptance": "accepted",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "lane-mixed": {
+      "code": "failed"
+    },
+    "lane-unknown-harness": {
+      "worker": "failed"
+    },
+    "map-parallel": {
+      "fix": "succeeded",
+      "summarize": "succeeded"
+    },
+    "no-checkpoints": {
+      "worker": "failed"
+    },
+    "resumed-original": {
+      "code": "interrupted"
+    },
+    "resumed-successor": {
+      "acceptance": "accepted",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "running-live": {
+      "acceptance": "rejected",
+      "code": "running",
+      "code_review": "accepted"
+    },
+    "running-stock": {
+      "worker": "running"
+    },
+    "runtime-failed-checkpoint": {
+      "code": "interrupted"
+    },
+    "runtime-failed-permission": {
+      "code": "interrupted"
+    },
+    "runtime-failed-storage": {
+      "code": "interrupted"
+    },
+    "runtime-failed-unknown": {
+      "code": "interrupted"
+    },
+    "runtime-lost": {
+      "code": "interrupted"
+    },
+    "stalled": {
+      "code": "interrupted"
+    },
+    "stalled-disk": {
+      "code": "interrupted"
+    },
+    "stalled-live-usage": {
+      "code": "interrupted"
+    },
+    "stalled-then-closed": {
+      "code": "interrupted"
+    },
+    "succeeded": {
+      "acceptance": "accepted",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "succeeded-stock": {
+      "acceptance": "accepted",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "tool-output-rate-limit": {
+      "worker": "running"
+    },
+    "unknown-phase": {},
+    "voided": {
+      "code": "succeeded"
+    },
+    "work-exhausted": {
+      "acceptance": "rejected",
+      "code": "succeeded",
+      "code_review": "accepted"
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "worker": "succeeded"
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "worker": "succeeded"
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "worker": "failed"
+    }
+  },
+  "table": [
+    [
+      "null",
+      "idle"
+    ],
+    [
+      "undefined",
+      "idle"
+    ],
+    [
+      "",
+      "idle"
+    ],
+    [
+      "idle",
+      "idle"
+    ],
+    [
+      "running",
+      "running"
+    ],
+    [
+      "succeeded",
+      "succeeded"
+    ],
+    [
+      "accepted",
+      "accepted"
+    ],
+    [
+      "rejected",
+      "rejected"
+    ],
+    [
+      "failed",
+      "failed"
+    ],
+    [
+      "interrupted",
+      "interrupted"
+    ],
+    [
+      "voided",
+      "voided"
+    ],
+    [
+      "pending",
+      "idle"
+    ],
+    [
+      "constructor",
+      "constructor"
+    ],
+    [
+      "toString",
+      "toString"
+    ],
+    [
+      "__proto__",
+      "__proto__"
+    ]
+  ]
+}

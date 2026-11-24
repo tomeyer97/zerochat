@@ -1,0 +1,152 @@
+{
+  "calc/01": {
+    "card": {
+      "icon": "done",
+      "text": "merged b0b1aea"
+    },
+    "pill": "merged",
+    "row": null
+  },
+  "calc/02": {
+    "card": {
+      "icon": "done",
+      "text": "merged"
+    },
+    "pill": "merged",
+    "row": null
+  },
+  "calc/03": {
+    "card": {
+      "icon": "approval",
+      "text": "needs your approval"
+    },
+    "pill": "needs your approval",
+    "row": null
+  },
+  "calc/04": {
+    "card": {
+      "icon": "failed",
+      "text": "gate failed"
+    },
+    "pill": "failed",
+    "row": null
+  },
+  "calc/05": {
+    "card": {
+      "icon": "running",
+      "text": "running",
+      "timer": "45m 00s"
+    },
+    "pill": "running",
+    "row": null
+  },
+  "calc/06": {
+    "card": {
+      "icon": null,
+      "text": "waits for 04, 05"
+    },
+    "pill": "pending",
+    "row": null
+  },
+  "calc/07": {
+    "card": {
+      "icon": "skipped",
+      "text": "skipped"
+    },
+    "pill": "skipped",
+    "row": null
+  },
+  "calc/08": {
+    "card": {
+      "icon": "interrupted",
+      "text": "interrupted"
+    },
+    "pill": "interrupted",
+    "row": null
+  },
+  "calc/09": {
+    "card": {
+      "icon": "running",
+      "text": "starting",
+      "timer": "5s"
+    },
+    "pill": "starting",
+    "row": null
+  },
+  "calc/10": {
+    "card": {
+      "icon": "running",
+      "text": "checks before merge (build + tests)",
+      "timer": "· 59m 10s",
+      "wraps": true
+    },
+    "pill": "checks before merge (build + tests) · 59m 10s",
+    "row": "checks before merge"
+  },
+  "calc/11": {
+    "card": {
+      "icon": "done",
+      "text": "merged 6ea2cf4 without gate"
+    },
+    "pill": "merged",
+    "row": null
+  },
+  "calc/12": {
+    "card": {
+      "icon": "failed",
+      "text": "review rounds ran out"
+    },
+    "pill": "failed",
+    "row": null
+  },
+  "calc/13": {
+    "card": {
+      "icon": null,
+      "text": "waits for 12"
+    },
+    "pill": "pending",
+    "row": null
+  },
+  "calc/14": {
+    "card": {
+      "icon": "approval",
+      "text": "waiting for your review"
+    },
+    "pill": "waiting for your review",
+    "row": null
+  },
+  "fresh/01": {
+    "card": {
+      "icon": null,
+      "text": "waits for Start"
+    },
+    "pill": "pending",
+    "row": null
+  },
+  "fresh/02": {
+    "card": {
+      "icon": null,
+      "text": "waits for 01"
+    },
+    "pill": "pending",
+    "row": null
+  },
+  "paused/01": {
+    "card": {
+      "icon": "interrupted",
+      "text": "interrupted"
+    },
+    "pill": "interrupted",
+    "row": null
+  },
+  "synthetic/gate": {
+    "card": {
+      "icon": "running",
+      "text": "checks before merge (build + tests)",
+      "timer": "· 2m 05s",
+      "wraps": true
+    },
+    "pill": "checks before merge (build + tests) · 2m 05s",
+    "row": "checks before merge"
+  }
+}

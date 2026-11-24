@@ -1,0 +1,130 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 25.0,
+        "capSteps": 12,
+        "capUsd": 2.0,
+        "costUsd": 2.0027185,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-124230-85bba6",
+        "score": 0.669642857,
+        "seed": 0,
+        "startedAt": 1793706150820,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 150,
+        "testsTotal": 224,
+        "wallS": 988.537200451,
+        "zeroshotRunId": "01a1a137-cdf4-7990-9437-1e3dba6aad32"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.669642857,
+        "mean": 0.669642857,
+        "min": 0.669642857,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793707002395,
+    "harnessVersion": "c6993f2f",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": "claude-haiku-4-5",
+        "nodes": [
+          {
+            "effort": "high",
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "worker",
+            "parallel": null
+          },
+          {
+            "effort": "medium",
+            "kind": "verifier",
+            "loopMax": 10,
+            "loopName": "change_loop",
+            "model": "claude-haiku-4-5",
+            "name": "acceptance",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": "medium",
+            "kind": "verifier",
+            "loopMax": 10,
+            "loopName": "change_loop",
+            "model": "claude-haiku-4-5",
+            "name": "code",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": "high",
+            "kind": "step",
+            "loopMax": 10,
+            "loopName": "change_loop",
+            "model": "claude-haiku-4-5",
+            "name": "review_repair",
+            "parallel": null
+          }
+        ],
+        "runs": 1,
+        "runtimeFile": null,
+        "runtimeMatches": true,
+        "source": "variant",
+        "variant": "software-change"
+      }
+    ],
+    "id": "label:sc-template-haiku",
+    "label": "sc-template-haiku",
+    "limits": {
+      "maxCostUsd": 2.0,
+      "maxSteps": 12,
+      "maxWallMinutes": 25.0
+    },
+    "maxScore": 0.669642857,
+    "meanScore": 0.669642857,
+    "meanScoreFinished": null,
+    "minScore": 0.669642857,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.669642857,
+        "mean": 0.669642857,
+        "min": 0.669642857,
+        "n": 1
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1793706150820,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 2.0027185,
+    "totalWallS": 988.537200451,
+    "zeroshotVersion": "zeroshot 10.6.0"
+  },
+  "status": 200
+}

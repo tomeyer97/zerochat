@@ -1,0 +1,15 @@
+13:25:46 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] start label='haiku-adversarial' version=e815e73a4b model=per-node art=/data/pb/runs/20261103-132546-0e4fe3
+13:25:46 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+13:25:48 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  worker (exec 1, attempt 1)
+13:29:18 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node done   worker -> verified 
+13:29:18 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  reviewer (exec 2, attempt 1)
+13:29:18 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  bugfinder (exec 3, attempt 1)
+13:31:07 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node done   bugfinder -> verifier rejected
+13:32:29 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node done   reviewer -> verifier rejected
+13:32:29 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  triage (exec 4, attempt 1)
+13:33:19 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node done   triage -> verifier rejected
+13:33:19 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  repair (exec 5, attempt 1)
+13:38:18 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node done   repair -> verified 
+13:38:18 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  reviewer (exec 6, attempt 1)
+13:38:18 [20261103-132546-0e4fe3 tomnomnom__gron.88a6234 s0] node start  bugfinder (exec 7, attempt 1)
+13:39:30 [20261103-132546-0e4fe3 tom…[fixture: 990 more characters cut]

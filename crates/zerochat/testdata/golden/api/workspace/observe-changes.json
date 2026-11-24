@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "not_supported",
+    "message": "zerochat shows files only for runs whose workspace is on this machine."
+  },
+  "status": 503
+}

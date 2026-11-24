@@ -1,0 +1,119 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0412,
+      "diagnostic": null,
+      "durationMs": 7300,
+      "endSeq": 14,
+      "endedAt": 1795000068800,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795000068300,
+      "logLines": 9,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "code",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": "5e550001-0000-4000-8000-000000000001",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795000061500,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 2,
+      "usage": {
+        "cacheCreationInputTokens": 3000,
+        "cacheReadInputTokens": 40000,
+        "inputTokens": 1200,
+        "outputTokens": 800
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Implement the task.",
+    "sourceNote": "Claude's session log for this node is not on this machine.",
+    "transcript": {
+      "items": [
+        {
+          "at": 1795000063700,
+          "kind": "thinking",
+          "text": "I'll look at textkit/core.py first."
+        },
+        {
+          "at": 1795000064700,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_010100",
+            "input": {
+              "command": "python3 -m unittest -v  # step 0"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795000065700,
+              "content": "Ran 3 tests\n\nOK",
+              "exitCode": 0,
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795000066700,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_010101",
+            "input": {
+              "command": "python3 -m unittest -v  # step 1"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795000067700,
+              "content": "Ran 4 tests\n\nOK",
+              "exitCode": 0,
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795000068000,
+          "kind": "text",
+          "text": "Done: slugify() added with tests; all tests pass."
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

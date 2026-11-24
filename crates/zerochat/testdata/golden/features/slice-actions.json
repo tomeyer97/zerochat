@@ -1,0 +1,3486 @@
+[
+  {
+    "actions": [
+      "skip",
+      "edit"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip",
+      "edit"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip",
+      "edit"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip",
+      "edit"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": false,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "pending",
+    "job": true,
+    "status": "pending",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": false,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "launching",
+    "job": true,
+    "status": "launching",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": false,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "running",
+    "job": true,
+    "status": "running",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": false,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "integrating",
+    "job": true,
+    "status": "integrating",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": false,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_review",
+    "job": true,
+    "status": "waiting_for_review",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "approve"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "waiting_for_approval",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "merged",
+    "job": false,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "merged",
+    "job": true,
+    "status": "merged",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": false,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "failed",
+    "job": true,
+    "status": "failed",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [
+      "retry",
+      "accept",
+      "skip"
+    ],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": false,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "interrupted",
+    "job": true,
+    "status": "interrupted",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": false,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": false,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": false,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 0,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": false,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": false
+  },
+  {
+    "actions": [],
+    "approved": true,
+    "attempts": 1,
+    "checkpoint": true,
+    "display": "skipped",
+    "job": true,
+    "status": "skipped",
+    "worktree": true,
+    "worktreeChanged": true
+  }
+]

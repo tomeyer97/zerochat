@@ -1,0 +1,231 @@
+{
+  "admitted-only": [
+    "tool calls",
+    "file changes per node"
+  ],
+  "attempts-exhausted": [
+    "messages to running agents"
+  ],
+  "checkout-unavailable": [
+    "file changes per node",
+    "messages to running agents"
+  ],
+  "closing-postmortem": [
+    "messages to running agents"
+  ],
+  "codex-estimate": [
+    "messages to running agents"
+  ],
+  "copilot-session": [
+    "messages to running agents"
+  ],
+  "delivery-failed": [
+    "messages to running agents"
+  ],
+  "diag-api-hang": [
+    "messages to running agents"
+  ],
+  "diag-code-authentication-required": [
+    "messages to running agents"
+  ],
+  "diag-code-crash": [
+    "messages to running agents"
+  ],
+  "diag-code-input-required": [
+    "messages to running agents"
+  ],
+  "diag-code-malformed-result": [
+    "messages to running agents"
+  ],
+  "diag-code-other": [
+    "messages to running agents"
+  ],
+  "diag-code-policy-denied": [
+    "messages to running agents"
+  ],
+  "diag-code-refusal": [
+    "messages to running agents"
+  ],
+  "diag-code-timeout": [
+    "messages to running agents"
+  ],
+  "diag-context": [
+    "messages to running agents"
+  ],
+  "diag-credentials": [
+    "messages to running agents"
+  ],
+  "diag-disk": [
+    "messages to running agents"
+  ],
+  "diag-malformed-stream": [
+    "messages to running agents"
+  ],
+  "diag-missing-cli": [
+    "messages to running agents"
+  ],
+  "diag-model": [
+    "messages to running agents"
+  ],
+  "diag-network": [
+    "messages to running agents"
+  ],
+  "diag-permission": [
+    "messages to running agents"
+  ],
+  "diag-provider-down": [
+    "messages to running agents"
+  ],
+  "diag-provider-timeout": [
+    "messages to running agents"
+  ],
+  "diag-rate-limit": [
+    "messages to running agents"
+  ],
+  "diag-stream-cut": [
+    "messages to running agents"
+  ],
+  "diag-usage-limit": [
+    "messages to running agents"
+  ],
+  "force-stopped": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-bad-credentials": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-chaos-transient": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-chaos-usage-limit": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-controller-killed": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-force-stopped": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-happy-path": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-late-failure": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-replay": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-resumed": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-reviewer-never-satisfied": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-steered": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-unknown-model": [
+    "messages to running agents"
+  ],
+  "fork-only/fork-worker-timeout": [
+    "messages to running agents"
+  ],
+  "fork-only/replay-child": [
+    "messages to running agents"
+  ],
+  "fork-only/replay-parent": [
+    "messages to running agents"
+  ],
+  "fork-only/steered": [
+    "messages to running agents"
+  ],
+  "graph-ended-other": [
+    "messages to running agents"
+  ],
+  "lane-mixed": [
+    "exact node times (times marked ≈ are inferred from log lines)",
+    "file changes per node",
+    "messages to running agents"
+  ],
+  "lane-unknown-harness": [
+    "exact node times (times marked ≈ are inferred from log lines)",
+    "file changes per node",
+    "messages to running agents"
+  ],
+  "map-parallel": [
+    "messages to running agents"
+  ],
+  "no-checkpoints": [
+    "messages to running agents"
+  ],
+  "resumed-original": [
+    "messages to running agents"
+  ],
+  "resumed-successor": [
+    "messages to running agents"
+  ],
+  "running-live": [],
+  "running-stock": [
+    "exact node times (times marked ≈ are inferred from log lines)",
+    "tool calls",
+    "file changes per node"
+  ],
+  "runtime-failed-checkpoint": [
+    "messages to running agents"
+  ],
+  "runtime-failed-permission": [
+    "messages to running agents"
+  ],
+  "runtime-failed-storage": [
+    "messages to running agents"
+  ],
+  "runtime-failed-unknown": [
+    "messages to running agents"
+  ],
+  "runtime-lost": [
+    "messages to running agents"
+  ],
+  "stalled": [
+    "messages to running agents"
+  ],
+  "stalled-disk": [
+    "messages to running agents"
+  ],
+  "stalled-live-usage": [
+    "messages to running agents"
+  ],
+  "stalled-then-closed": [
+    "messages to running agents"
+  ],
+  "succeeded": [
+    "messages to running agents"
+  ],
+  "succeeded-stock": [
+    "exact node times (times marked ≈ are inferred from log lines)",
+    "file changes per node",
+    "messages to running agents"
+  ],
+  "tool-output-rate-limit": [],
+  "unknown-phase": [
+    "tool calls",
+    "file changes per node"
+  ],
+  "voided": [
+    "messages to running agents"
+  ],
+  "work-exhausted": [
+    "messages to running agents"
+  ],
+  "zeroshot-16/zeroshot16-normal": [
+    "file changes per node",
+    "messages to running agents"
+  ],
+  "zeroshot-16/zeroshot16-steered": [
+    "file changes per node",
+    "messages to running agents"
+  ],
+  "zeroshot-16/zeroshot16-unknown-model": [
+    "file changes per node",
+    "messages to running agents"
+  ]
+}

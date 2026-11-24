@@ -1,0 +1,6 @@
+16:15:34 [20261103-161534-59f5da tomnomnom__gron.88a6234 s1] start label='replay-build-sonnet' version=998df48b06 model=claude-sonnet-5 art=/data/pb/runs/20261103-161534-59f5da
+16:15:35 [20261103-161534-59f5da tomnomnom__gron.88a6234 s1] replay of 20261103-151748-ef96e3 build#1: starting code = explore#1 (snapshot)
+16:15:36 [20261103-161534-59f5da tomnomnom__gron.88a6234 s1] sandbox up; launching zeroshot
+16:15:44 [20261103-161534-59f5da tomnomnom__gron.88a6234 s1] node start  build (exec 1, attempt 1)
+17:33:18 [20261103-161534-59f5da tomnomnom__gron.88a6234 s1] LIMIT: timeout after 4663s, 1 steps
+17:33:18 [20261103-161534-59f5da tomnomnom__gron.88a6234 s1] force-stopping zeroshot run 01a1a1fa-e284-7e63-9916-531abf514b30

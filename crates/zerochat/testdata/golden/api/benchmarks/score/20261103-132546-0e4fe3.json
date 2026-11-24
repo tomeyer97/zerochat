@@ -1,0 +1,52 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 5.0,
+    "costUsd": 2.6765396,
+    "exitReason": "interrupted after 985s, 9 steps",
+    "failingTests": [],
+    "label": "haiku-adversarial",
+    "nodeCosts": [
+      {
+        "calls": 2,
+        "costUsd": 0.9583362,
+        "node": "repair"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.6304033,
+        "node": "reviewer"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.5905109,
+        "node": "worker"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.3347691,
+        "node": "bugfinder"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.1625201,
+        "node": "triage"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 2.4940042,
+    "runId": "20261103-132546-0e4fe3",
+    "score": null,
+    "seed": 0,
+    "state": "interrupted",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": 986.509586096,
+    "zeroshotRunId": "01a1a15f-67c2-7d80-82cf-e32f49ef7fe9"
+  },
+  "status": 200
+}

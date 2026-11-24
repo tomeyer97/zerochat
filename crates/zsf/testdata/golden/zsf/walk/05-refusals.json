@@ -1,0 +1,56 @@
+[
+  {
+    "action": {
+      "action": "approve",
+      "slice": "01"
+    },
+    "result": {
+      "Err": "01 is not a checkpoint"
+    }
+  },
+  {
+    "action": {
+      "action": "retry",
+      "fresh": false,
+      "slice": "01"
+    },
+    "result": {
+      "Err": "01 is merged; only a stopped slice or one waiting for review can be retried"
+    }
+  },
+  {
+    "action": {
+      "action": "skip",
+      "slice": "99"
+    },
+    "result": {
+      "Err": "no slice 99 in the plan"
+    }
+  },
+  {
+    "action": {
+      "action": "accept",
+      "slice": "05"
+    },
+    "result": {
+      "Err": "05 is merged; accept takes a stopped slice whose worktree you finished"
+    }
+  },
+  {
+    "action": {
+      "action": "unpause"
+    },
+    "result": {
+      "Err": "feat is not paused"
+    }
+  },
+  {
+    "action": {
+      "action": "set_max_parallel",
+      "max_parallel": 0
+    },
+    "result": {
+      "Err": "max parallel must be at least 1"
+    }
+  }
+]

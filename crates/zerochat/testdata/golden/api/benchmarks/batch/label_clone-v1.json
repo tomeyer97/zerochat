@@ -1,0 +1,148 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 75.0,
+        "capSteps": 24,
+        "capUsd": 8.0,
+        "costUsd": 5.3990452,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-151748-ef96e3",
+        "score": 0.616071429,
+        "seed": 0,
+        "startedAt": 1793715468103,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 138,
+        "testsTotal": 224,
+        "wallS": 2318.490293264,
+        "zeroshotRunId": "01a1a1c5-fa55-7dd0-be80-efd5703a4356"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.616071429,
+        "mean": 0.616071429,
+        "min": 0.616071429,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793717645037,
+    "harnessVersion": "baf3dc98",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "explore",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "build",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "coverage",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "bugfinder",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "triage",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 1,
+        "runtimeFile": null,
+        "runtimeMatches": true,
+        "source": "variant",
+        "variant": "clone-v1"
+      }
+    ],
+    "id": "label:clone-v1",
+    "label": "clone-v1",
+    "limits": {
+      "maxCostUsd": 8.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 75.0
+    },
+    "maxScore": 0.616071429,
+    "meanScore": 0.616071429,
+    "meanScoreFinished": null,
+    "minScore": 0.616071429,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.616071429,
+        "mean": 0.616071429,
+        "min": 0.616071429,
+        "n": 1
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1793715468103,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 5.3990452,
+    "totalWallS": 2318.490293264,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

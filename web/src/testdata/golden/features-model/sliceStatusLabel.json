@@ -1,0 +1,33 @@
+{
+  "slices": {
+    "calc/01": "merged",
+    "calc/02": "merged",
+    "calc/03": "needs your approval",
+    "calc/04": "failed",
+    "calc/05": "running",
+    "calc/06": "pending",
+    "calc/07": "skipped",
+    "calc/08": "interrupted",
+    "calc/09": "starting",
+    "calc/10": "checks before merge",
+    "calc/11": "merged",
+    "calc/12": "failed",
+    "calc/13": "pending",
+    "calc/14": "waiting for your review",
+    "fresh/01": "pending",
+    "fresh/02": "pending",
+    "paused/01": "interrupted"
+  },
+  "table": {
+    "failed": "failed",
+    "integrating": "checks before merge",
+    "interrupted": "interrupted",
+    "launching": "starting",
+    "merged": "merged",
+    "novel": "novel",
+    "pending": "pending",
+    "running": "running",
+    "skipped": "skipped",
+    "waiting_for_approval": "needs your approval"
+  }
+}

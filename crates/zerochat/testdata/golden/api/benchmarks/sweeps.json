@@ -1,0 +1,26 @@
+{
+  "body": {
+    "sweeps": [
+      {
+        "costUsd": 11.9099118,
+        "createdAt": 1793783481766,
+        "items": [
+          "triage#1:repair#1",
+          "repair#1"
+        ],
+        "label": "sweep-triage-repair",
+        "models": [
+          "claude-haiku-4-5",
+          "claude-sonnet-5"
+        ],
+        "n": 2,
+        "running": 0,
+        "runs": 8,
+        "sourceRun": "20261103-151748-ef96e3",
+        "sweepId": "sw-20261104-101121-14c2",
+        "taskId": "tomnomnom__gron.88a6234"
+      }
+    ]
+  },
+  "status": 200
+}

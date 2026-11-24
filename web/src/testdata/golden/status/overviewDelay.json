@@ -1,0 +1,8 @@
+{
+  "full hidden=false": 4000,
+  "full hidden=true": 15000,
+  "nav hidden=false": 30000,
+  "nav hidden=true": 60000,
+  "slow hidden=false": 5000,
+  "slow hidden=true": 15000
+}

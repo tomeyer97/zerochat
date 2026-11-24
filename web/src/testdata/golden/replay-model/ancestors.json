@@ -1,0 +1,1990 @@
+{
+  "runs": {
+    "admitted-only": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "attempts-exhausted": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "checkout-unavailable": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "closing-postmortem": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "codex-estimate": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "copilot-session": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "delivery-failed": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "diag-api-hang": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-authentication-required": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-crash": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-input-required": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-malformed-result": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-other": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-policy-denied": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-refusal": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-code-timeout": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-context": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-credentials": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-disk": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-malformed-stream": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-missing-cli": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-model": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-network": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-permission": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-provider-down": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-provider-timeout": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-rate-limit": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-stream-cut": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "diag-usage-limit": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "force-stopped": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "fork-only/fork-bad-credentials": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "fork-only/fork-chaos-transient": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "fork-only/fork-controller-killed": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-force-stopped": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-happy-path": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-late-failure": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-replay": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-resumed": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "acceptance": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_iteration": [
+        "change_loop",
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "parallel_reviews",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "done": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "parallel_reviews": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_failed": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_result": [
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry": [
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "review_retry_invalid": [
+        "review_retry",
+        "review_result",
+        "reviews",
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "reviews": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": [],
+      "worker": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "change_iteration",
+        "change_loop",
+        "run"
+      ],
+      "worker_result": [
+        "change_iteration",
+        "change_loop",
+        "run"
+      ]
+    },
+    "fork-only/fork-steered": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "fork-only/fork-unknown-model": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "fork-only/fork-worker-timeout": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "fork-only/replay-child": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "fork-only/replay-parent": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "fork-only/steered": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "graph-ended-other": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "lane-mixed": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "lane-unknown-harness": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "map-parallel": {
+      "fix": [
+        "per_file",
+        "run"
+      ],
+      "no_such_node": [],
+      "per_file": [
+        "run"
+      ],
+      "run": [],
+      "summarize": [
+        "run"
+      ]
+    },
+    "no-checkpoints": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "resumed-original": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "resumed-successor": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "running-live": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "running-stock": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "runtime-failed-checkpoint": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "runtime-failed-permission": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "runtime-failed-storage": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "runtime-failed-unknown": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "runtime-lost": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "stalled": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "stalled-disk": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "stalled-live-usage": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "stalled-then-closed": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "succeeded": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "succeeded-stock": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "tool-output-rate-limit": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "unknown-phase": {
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ]
+    },
+    "voided": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "work-exhausted": {
+      "acceptance": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "change_attempts_exhausted": [
+        "run"
+      ],
+      "change_loop": [
+        "run"
+      ],
+      "code": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "code_review": [
+        "reviews",
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "iteration": [
+        "change_loop",
+        "run"
+      ],
+      "no_such_node": [],
+      "reviews": [
+        "iteration",
+        "change_loop",
+        "run"
+      ],
+      "run": []
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "done": [
+        "worker_result",
+        "run"
+      ],
+      "no_such_node": [],
+      "run": [],
+      "worker": [
+        "run"
+      ],
+      "worker_failed": [
+        "worker_result",
+        "run"
+      ],
+      "worker_result": [
+        "run"
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "body": {
+    "batchId": "20261108-152720-fb0664",
+    "capUsd": 6.0,
+    "costUsd": 6.01273765,
+    "exitReason": null,
+    "failingTests": [
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_is_not_accepted_and_is_not_parsed_as_value",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_negative_rejected_in_equals_form",
+      "09547266f95c/eval.tests.test_argparse_validation.test_depth_type_validation_non_integer",
+      "09547266f95c/eval.tests.test_argparse_validation.test_double_dash_treats_dash_args_as_positionals",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_dir_errors",
+      "09547266f95c/eval.tests.test_argparse_validation.test_missing_value_for_regex_errors"
+    ],
+    "label": "r2-hermetic2",
+    "nodeCosts": [
+      {
+        "calls": 2,
+        "costUsd": 2.90238845,
+        "node": "repair"
+      },
+      {
+        "calls": 1,
+        "costUsd": 2.0462091,
+        "node": "build"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.6116144,
+        "node": "oracle"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4525257,
+        "node": "explore"
+      }
+    ],
+    "overLimit": "budget",
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 5.3104403,
+    "runId": "20261108-152720-2cd1bc",
+    "score": 0.722044728,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 313
+      },
+      {
+        "node": "build#1",
+        "score": 0.322683706,
+        "seq": 1,
+        "testsPassed": 101,
+        "testsTotal": 313
+      },
+      {
+        "node": "repair#1",
+        "score": 0.431309904,
+        "seq": 2,
+        "testsPassed": 135,
+        "testsTotal": 313
+      },
+      {
+        "node": "final",
+        "score": 0.722044728,
+        "seq": 3,
+        "testsPassed": 226,
+        "testsTotal": 313
+      }
+    ],
+    "task": "yaa110__nomino.f892499",
+    "testsPassed": 226,
+    "testsTotal": 313,
+    "wallS": 2346.423715115,
+    "zeroshotRunId": "01a1bb8e-8377-7510-a477-6af227234ff8"
+  },
+  "status": 200
+}

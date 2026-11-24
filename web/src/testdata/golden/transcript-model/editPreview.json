@@ -1,0 +1,892 @@
+{
+  "hugeEdit": {
+    "at600": [
+      "-o599",
+      "+n0"
+    ],
+    "first": [
+      "-o0",
+      "-o1"
+    ],
+    "last": [
+      "+n598",
+      "+n599"
+    ],
+    "lines": 1200
+  },
+  "table": [
+    [
+      {
+        "input": null,
+        "name": ""
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "command": "npm test\nsecond line"
+        },
+        "name": "Bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "description": "run the tests"
+        },
+        "name": "Bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "command": "  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  "
+        },
+        "name": "Bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "path": "src/a.ts"
+        },
+        "name": "Read"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/src/a.ts",
+          "new_string": "a\nB\nc\nd",
+          "old_string": "a\nb\nc"
+        },
+        "name": "Edit"
+      },
+      " a\n-b\n+B\n c\n+d"
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/a",
+          "new_string": "same",
+          "old_string": "same"
+        },
+        "name": "Edit"
+      },
+      " same"
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/a",
+          "new_string": "new",
+          "old_string": ""
+        },
+        "name": "Edit"
+      },
+      "-\n+new"
+    ],
+    [
+      {
+        "input": {
+          "file_path": "/w/a",
+          "new_string": "x",
+          "old_string": 1
+        },
+        "name": "Edit"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "edits": [
+            {
+              "new_string": "b",
+              "old_string": "a"
+            },
+            {
+              "new_string": "only new"
+            },
+            "junk"
+          ],
+          "file_path": "/w/a"
+        },
+        "name": "MultiEdit"
+      },
+      "-a\n+b\n@@\n-\n+only new\n@@\n "
+    ],
+    [
+      {
+        "input": {
+          "content": "line 1\nline 2\n",
+          "file_path": "/w/new.ts"
+        },
+        "name": "Write"
+      },
+      "+line 1\n+line 2\n+"
+    ],
+    [
+      {
+        "input": {
+          "path": "/w/p"
+        },
+        "name": "Write"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "notebook_path": "/w/n.ipynb"
+        },
+        "name": "NotebookEdit"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "pattern": "**/*.ts"
+        },
+        "name": "Glob"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "path": "src",
+          "pattern": "TODO"
+        },
+        "name": "Grep"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "path": "src"
+        },
+        "name": "Grep"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "url": "https://example.com"
+        },
+        "name": "WebFetch"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "query": "elk layout"
+        },
+        "name": "WebSearch"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "prompt": "first\nsecond"
+        },
+        "name": "Task"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "description": "explore"
+        },
+        "name": "Agent"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "todos": [
+            1,
+            2,
+            3
+          ]
+        },
+        "name": "TodoWrite"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "todos": "x"
+        },
+        "name": "TodoWrite"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "command": "ls"
+        },
+        "name": "bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "shellId": "s1"
+        },
+        "name": "read_bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "input": "y\n",
+          "shellId": "s1"
+        },
+        "name": "write_bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "shellId": "s1"
+        },
+        "name": "write_bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "shellId": "s1"
+        },
+        "name": "stop_bash"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "path": "/w/a"
+        },
+        "name": "view"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "new_str": "x\nz",
+          "old_str": "x\ny",
+          "path": "/w/a"
+        },
+        "name": "edit"
+      },
+      " x\n-y\n+z"
+    ],
+    [
+      {
+        "input": {
+          "new_str": "y",
+          "old_str": "x",
+          "path": "/w/a"
+        },
+        "name": "str_replace"
+      },
+      "-x\n+y"
+    ],
+    [
+      {
+        "input": {
+          "file_text": "one\ntwo",
+          "path": "/w/b"
+        },
+        "name": "create"
+      },
+      "+one\n+two"
+    ],
+    [
+      {
+        "input": {
+          "pattern": "p"
+        },
+        "name": "grep"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "path": "d",
+          "pattern": "p"
+        },
+        "name": "rg"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "pattern": "*"
+        },
+        "name": "glob"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "url": "https://example.com/x"
+        },
+        "name": "web_fetch"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "description": "sub"
+        },
+        "name": "task"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "verdict": "accepted"
+        },
+        "name": "StructuredOutput"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "query": "q",
+          "url": "u"
+        },
+        "name": "mcp__x__y"
+      },
+      null
+    ],
+    [
+      {
+        "input": "a raw string input\nwith two lines",
+        "name": "Custom"
+      },
+      null
+    ],
+    [
+      {
+        "input": [
+          1,
+          2
+        ],
+        "name": "Custom"
+      },
+      null
+    ],
+    [
+      {
+        "input": {
+          "other": 1
+        },
+        "name": "Custom"
+      },
+      null
+    ]
+  ],
+  "transcripts": {
+    "copilot-session/transcript-1@2": null,
+    "copilot-session/transcript-1@3": null,
+    "copilot-session/transcript-1@4": null,
+    "delivery-failed/transcript-1@1": null,
+    "delivery-failed/transcript-1@2": null,
+    "delivery-failed/transcript-2@1": null,
+    "delivery-failed/transcript-3@1": null,
+    "diag-api-hang/transcript-1@1": null,
+    "diag-api-hang/transcript-1@2": null,
+    "diag-api-hang/transcript-1@4": null,
+    "diag-code-authentication-required/transcript-1@1": null,
+    "diag-code-crash/transcript-1@1": null,
+    "diag-code-input-required/transcript-1@1": null,
+    "diag-code-malformed-result/transcript-1@1": null,
+    "diag-code-other/transcript-1@1": null,
+    "diag-code-policy-denied/transcript-1@1": null,
+    "diag-code-refusal/transcript-1@1": null,
+    "diag-code-timeout/transcript-1@1": null,
+    "diag-context/transcript-1@1": null,
+    "diag-credentials/transcript-1@1": null,
+    "diag-disk/transcript-1@1": null,
+    "diag-malformed-stream/transcript-1@1": null,
+    "diag-missing-cli/transcript-1@1": null,
+    "diag-model/transcript-1@1": null,
+    "diag-network/transcript-1@1": null,
+    "diag-permission/transcript-1@1": null,
+    "diag-provider-down/transcript-1@1": null,
+    "diag-provider-timeout/transcript-1@1": null,
+    "diag-rate-limit/transcript-1@1": null,
+    "diag-stream-cut/transcript-1@1": null,
+    "diag-usage-limit/transcript-1@1": null,
+    "force-stopped/transcript-1@1": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@1": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@12": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-chaos-transient/transcript-1-ledger@14": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-chaos-transient/transcript-1-ledger@16": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@18": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@20": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@4": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@7": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@8": null,
+    "fork-only/fork-chaos-transient/transcript-1-ledger@9": null,
+    "fork-only/fork-chaos-transient/transcript-1@10": null,
+    "fork-only/fork-chaos-transient/transcript-1@13": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-chaos-transient/transcript-1@15": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-chaos-transient/transcript-1@17": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n \n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello, World!\"), \"hello-world\")\n+        self.assertEqual(slugify(\"---hello---world---\"), \"hello-world\")\n+        self.assertEqual(slugify(\"hello\"), \"hello\")\n+        self.assertEqual(slugify(\"\"), \"\")\n+        self.assertEqual(slugify(\"123 456\"), \"123-456\")\n+        self.assertEqual(slugify(\"@#$%hello@#$%world@#$%\"), \"hello-world\")\n \n+\n if __name__ == \"__main__\":\n     unittest.main()",
+    "fork-only/fork-chaos-transient/transcript-1@19": null,
+    "fork-only/fork-chaos-transient/transcript-1@2": null,
+    "fork-only/fork-chaos-transient/transcript-1@22": null,
+    "fork-only/fork-chaos-transient/transcript-1@5": null,
+    "fork-only/fork-chaos-transient/transcript-1@8": null,
+    "fork-only/fork-chaos-transient/transcript-1@9": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@1": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@10": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@2": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@3": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@4": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@6": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug by lowercasing, replacing non-alphanumeric runs with hyphens.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r\"[^a-z0-9]+\", \"-\", text)\n+    text = text.strip(\"-\")\n+    return text",
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger@8": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-chaos-usage-limit/transcript-1@11": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n \n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello, World!\"), \"hello-world\")\n+        self.assertEqual(slugify(\"  Hello World  \"), \"hello-world\")\n+        self.assertEqual(slugify(\"hello-world\"), \"hello-world\")\n+        self.assertEqual(slugify(\"123 ABC\"), \"123-abc\")\n+        self.assertEqual(slugify(\"---\"), \"\")\n+        self.assertEqual(slugify(\"\"), \"\")\n \n+\n if __name__ == \"__main__\":\n     unittest.main()",
+    "fork-only/fork-chaos-usage-limit/transcript-1@2": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1@3": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1@4": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1@5": null,
+    "fork-only/fork-chaos-usage-limit/transcript-1@7": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug by lowercasing, replacing non-alphanumeric runs with hyphens.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r\"[^a-z0-9]+\", \"-\", text)\n+    text = text.strip(\"-\")\n+    return text",
+    "fork-only/fork-chaos-usage-limit/transcript-1@9": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-controller-killed/transcript-1-ledger@1": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@10": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@11": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@12": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@13": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@14": "+__pycache__/\n+*.py[cod]\n+*.egg-info/\n+.pytest_cache/\n+.coverage\n+dist/\n+build/\n+",
+    "fork-only/fork-controller-killed/transcript-1-ledger@15": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@17": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@2": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@3": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@4": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@5": null,
+    "fork-only/fork-controller-killed/transcript-1-ledger@7": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\n+    \n+    Lowercases the text, replaces runs of non-alphanumeric characters with\n+    a single dash, and strips leading and trailing dashes.\n+    \"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-controller-killed/transcript-1-ledger@8": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-controller-killed/transcript-1-ledger@9": null,
+    "fork-only/fork-controller-killed/transcript-1@10": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n \n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"hello world\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello-World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"-Hello World-\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello!!!World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"123 ABC xyz\"), \"123-abc-xyz\")\n+        self.assertEqual(slugify(\"\"), \"\")\n+        self.assertEqual(slugify(\"---\"), \"\")\n+        self.assertEqual(slugify(\"   \"), \"\")\n \n+\n if __name__ == \"__main__\":\n     unittest.main()",
+    "fork-only/fork-controller-killed/transcript-1@11": null,
+    "fork-only/fork-controller-killed/transcript-1@12": null,
+    "fork-only/fork-controller-killed/transcript-1@13": null,
+    "fork-only/fork-controller-killed/transcript-1@14": null,
+    "fork-only/fork-controller-killed/transcript-1@15": "+__pycache__/\n+*.py[cod]\n+*.egg-info/\n+.pytest_cache/\n+.coverage\n+dist/\n+build/\n+",
+    "fork-only/fork-controller-killed/transcript-1@16": null,
+    "fork-only/fork-controller-killed/transcript-1@19": null,
+    "fork-only/fork-controller-killed/transcript-1@2": null,
+    "fork-only/fork-controller-killed/transcript-1@3": null,
+    "fork-only/fork-controller-killed/transcript-1@4": null,
+    "fork-only/fork-controller-killed/transcript-1@5": null,
+    "fork-only/fork-controller-killed/transcript-1@6": null,
+    "fork-only/fork-controller-killed/transcript-1@8": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\n+\n+    Lowercases the text, replaces runs of non-alphanumeric characters with\n+    a single dash, and strips leading and trailing dashes.\n+    \"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-controller-killed/transcript-1@9": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-controller-killed/transcript-2-ledger@1": null,
+    "fork-only/fork-controller-killed/transcript-2-ledger@2": null,
+    "fork-only/fork-controller-killed/transcript-2-ledger@3": null,
+    "fork-only/fork-controller-killed/transcript-2@2": null,
+    "fork-only/fork-controller-killed/transcript-2@3": null,
+    "fork-only/fork-controller-killed/transcript-2@4": null,
+    "fork-only/fork-controller-killed/transcript-2@6": null,
+    "fork-only/fork-controller-killed/transcript-2@9": null,
+    "fork-only/fork-controller-killed/transcript-3-ledger@1": null,
+    "fork-only/fork-controller-killed/transcript-3-ledger@2": null,
+    "fork-only/fork-controller-killed/transcript-3-ledger@3": null,
+    "fork-only/fork-controller-killed/transcript-3-ledger@5": null,
+    "fork-only/fork-controller-killed/transcript-3@2": null,
+    "fork-only/fork-controller-killed/transcript-3@3": null,
+    "fork-only/fork-controller-killed/transcript-3@4": null,
+    "fork-only/fork-controller-killed/transcript-3@6": null,
+    "fork-only/fork-controller-killed/transcript-3@9": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@1": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@11": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify",
+    "fork-only/fork-force-stopped/transcript-1-ledger@12": "     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n \n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"  Leading and trailing  \"), \"leading-and-trailing\")\n+        self.assertEqual(slugify(\"Multiple---Dashes\"), \"multiple-dashes\")\n+        self.assertEqual(slugify(\"Special!@#$%Characters\"), \"specialcharacters\")\n+        self.assertEqual(slugify(\"123 Numbers 456\"), \"123-numbers-456\")\n+        self.assertEqual(slugify(\"\"), \"\")\n \n+\n if __name__ == \"__main__\":\n     unittest.main()",
+    "fork-only/fork-force-stopped/transcript-1-ledger@14": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@16": "     def test_slugify(self):\n         self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n         self.assertEqual(slugify(\"  Leading and trailing  \"), \"leading-and-trailing\")\n         self.assertEqual(slugify(\"Multiple---Dashes\"), \"multiple-dashes\")\n-        self.assertEqual(slugify(\"Special!@#$%Characters\"), \"specialcharacters\")\n+        self.assertEqual(slugify(\"Special!@#$%Characters\"), \"special-characters\")\n         self.assertEqual(slugify(\"123 Numbers 456\"), \"123-numbers-456\")\n         self.assertEqual(slugify(\"\"), \"\")",
+    "fork-only/fork-force-stopped/transcript-1-ledger@17": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@19": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@2": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@20": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@21": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@23": "+__pycache__/\n+*.pyc\n+*.pyo\n+*.pyd\n+.Python\n+*.egg-info/\n+.pytest_cache/\n+",
+    "fork-only/fork-force-stopped/transcript-1-ledger@24": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@26": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@27": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@29": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@3": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@4": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@5": null,
+    "fork-only/fork-force-stopped/transcript-1-ledger@7": " def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\n+    \n+    Lowercases the text, replaces runs of non-alphanumeric characters with\n+    a single hyphen, and strips leading and trailing hyphens.\n+    \"\"\"\n+    import re\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-force-stopped/transcript-1-ledger@9": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-force-stopped/transcript-1@10": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-force-stopped/transcript-1@12": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify",
+    "fork-only/fork-force-stopped/transcript-1@13": "     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n \n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"  Leading and trailing  \"), \"leading-and-trailing\")\n+        self.assertEqual(slugify(\"Multiple---Dashes\"), \"multiple-dashes\")\n+        self.assertEqual(slugify(\"Special!@#$%Characters\"), \"specialcharacters\")\n+        self.assertEqual(slugify(\"123 Numbers 456\"), \"123-numbers-456\")\n+        self.assertEqual(slugify(\"\"), \"\")\n \n+\n if __name__ == \"__main__\":\n     unittest.main()",
+    "fork-only/fork-force-stopped/transcript-1@15": null,
+    "fork-only/fork-force-stopped/transcript-1@17": "     def test_slugify(self):\n         self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n         self.assertEqual(slugify(\"  Leading and trailing  \"), \"leading-and-trailing\")\n         self.assertEqual(slugify(\"Multiple---Dashes\"), \"multiple-dashes\")\n-        self.assertEqual(slugify(\"Special!@#$%Characters\"), \"specialcharacters\")\n+        self.assertEqual(slugify(\"Special!@#$%Characters\"), \"special-characters\")\n         self.assertEqual(slugify(\"123 Numbers 456\"), \"123-numbers-456\")\n         self.assertEqual(slugify(\"\"), \"\")",
+    "fork-only/fork-force-stopped/transcript-1@18": null,
+    "fork-only/fork-force-stopped/transcript-1@2": null,
+    "fork-only/fork-force-stopped/transcript-1@20": null,
+    "fork-only/fork-force-stopped/transcript-1@21": null,
+    "fork-only/fork-force-stopped/transcript-1@22": null,
+    "fork-only/fork-force-stopped/transcript-1@24": "+__pycache__/\n+*.pyc\n+*.pyo\n+*.pyd\n+.Python\n+*.egg-info/\n+.pytest_cache/\n+",
+    "fork-only/fork-force-stopped/transcript-1@25": null,
+    "fork-only/fork-force-stopped/transcript-1@27": null,
+    "fork-only/fork-force-stopped/transcript-1@28": null,
+    "fork-only/fork-force-stopped/transcript-1@3": null,
+    "fork-only/fork-force-stopped/transcript-1@31": null,
+    "fork-only/fork-force-stopped/transcript-1@4": null,
+    "fork-only/fork-force-stopped/transcript-1@5": null,
+    "fork-only/fork-force-stopped/transcript-1@6": null,
+    "fork-only/fork-force-stopped/transcript-1@8": " def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\n+\n+    Lowercases the text, replaces runs of non-alphanumeric characters with\n+    a single hyphen, and strips leading and trailing hyphens.\n+    \"\"\"\n+    import re\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-happy-path/transcript-1-ledger@1": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@11": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@13": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@15": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@17": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@2": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@3": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@4": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@5": null,
+    "fork-only/fork-happy-path/transcript-1-ledger@7": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug: lowercase, replace non-alphanumeric runs with '-', strip leading/trailing '-'.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-happy-path/transcript-1-ledger@8": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-happy-path/transcript-1-ledger@9": null,
+    "fork-only/fork-happy-path/transcript-1@10": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n \n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"hello-world\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"hello@world#test\"), \"hello-world-test\")\n+        self.assertEqual(slugify(\"---hello---\"), \"hello\")\n+        self.assertEqual(slugify(\"hello\"), \"hello\")\n+        self.assertEqual(slugify(\"123ABC\"), \"123abc\")\n+        self.assertEqual(slugify(\"\"), \"\")\n+        self.assertEqual(slugify(\"!!!\"), \"\")\n+        self.assertEqual(slugify(\"  hello  world  \"), \"hello-world\")\n \n+\n if __name__ == \"__main__\":\n     unittest.main()",
+    "fork-only/fork-happy-path/transcript-1@12": null,
+    "fork-only/fork-happy-path/transcript-1@14": null,
+    "fork-only/fork-happy-path/transcript-1@16": null,
+    "fork-only/fork-happy-path/transcript-1@19": null,
+    "fork-only/fork-happy-path/transcript-1@2": null,
+    "fork-only/fork-happy-path/transcript-1@3": null,
+    "fork-only/fork-happy-path/transcript-1@4": null,
+    "fork-only/fork-happy-path/transcript-1@5": null,
+    "fork-only/fork-happy-path/transcript-1@6": null,
+    "fork-only/fork-happy-path/transcript-1@8": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug: lowercase, replace non-alphanumeric runs with '-', strip leading/trailing '-'.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-happy-path/transcript-1@9": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-happy-path/transcript-2-ledger@0": null,
+    "fork-only/fork-happy-path/transcript-2-ledger@1": null,
+    "fork-only/fork-happy-path/transcript-2-ledger@2": null,
+    "fork-only/fork-happy-path/transcript-2-ledger@3": null,
+    "fork-only/fork-happy-path/transcript-2-ledger@5": null,
+    "fork-only/fork-happy-path/transcript-2@1": null,
+    "fork-only/fork-happy-path/transcript-2@2": null,
+    "fork-only/fork-happy-path/transcript-2@3": null,
+    "fork-only/fork-happy-path/transcript-2@4": null,
+    "fork-only/fork-happy-path/transcript-2@7": null,
+    "fork-only/fork-happy-path/transcript-3-ledger@1": null,
+    "fork-only/fork-happy-path/transcript-3-ledger@2": null,
+    "fork-only/fork-happy-path/transcript-3-ledger@3": null,
+    "fork-only/fork-happy-path/transcript-3-ledger@5": null,
+    "fork-only/fork-happy-path/transcript-3-ledger@7": null,
+    "fork-only/fork-happy-path/transcript-3@2": null,
+    "fork-only/fork-happy-path/transcript-3@3": null,
+    "fork-only/fork-happy-path/transcript-3@4": null,
+    "fork-only/fork-happy-path/transcript-3@6": null,
+    "fork-only/fork-happy-path/transcript-3@8": null,
+    "fork-only/fork-late-failure/transcript-1@1": null,
+    "fork-only/fork-late-failure/transcript-1@10": null,
+    "fork-only/fork-late-failure/transcript-1@12": null,
+    "fork-only/fork-late-failure/transcript-1@14": null,
+    "fork-only/fork-late-failure/transcript-1@15": null,
+    "fork-only/fork-late-failure/transcript-1@16": null,
+    "fork-only/fork-late-failure/transcript-1@17": null,
+    "fork-only/fork-late-failure/transcript-1@18": null,
+    "fork-only/fork-late-failure/transcript-1@2": null,
+    "fork-only/fork-late-failure/transcript-1@20": null,
+    "fork-only/fork-late-failure/transcript-1@3": null,
+    "fork-only/fork-late-failure/transcript-1@4": null,
+    "fork-only/fork-late-failure/transcript-1@6": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-late-failure/transcript-1@8": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-late-failure/transcript-2@0": null,
+    "fork-only/fork-late-failure/transcript-2@1": null,
+    "fork-only/fork-late-failure/transcript-2@2": null,
+    "fork-only/fork-late-failure/transcript-2@3": null,
+    "fork-only/fork-late-failure/transcript-2@5": null,
+    "fork-only/fork-late-failure/transcript-3@0": null,
+    "fork-only/fork-late-failure/transcript-3@1": null,
+    "fork-only/fork-late-failure/transcript-3@2": null,
+    "fork-only/fork-late-failure/transcript-3@3": null,
+    "fork-only/fork-replay/transcript-1-ledger@1": null,
+    "fork-only/fork-replay/transcript-1-ledger@11": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n+\n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"---hello---world---\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World!\"), \"hello-world\")\n+        self.assertEqual(slugify(\"123 ABC xyz\"), \"123-abc-xyz\")\n+        self.assertEqual(slugify(\"\"), \"\")\n+        self.assertEqual(slugify(\"---\"), \"\")",
+    "fork-only/fork-replay/transcript-1-ledger@13": null,
+    "fork-only/fork-replay/transcript-1-ledger@14": null,
+    "fork-only/fork-replay/transcript-1-ledger@15": null,
+    "fork-only/fork-replay/transcript-1-ledger@17": null,
+    "fork-only/fork-replay/transcript-1-ledger@2": null,
+    "fork-only/fork-replay/transcript-1-ledger@3": null,
+    "fork-only/fork-replay/transcript-1-ledger@4": null,
+    "fork-only/fork-replay/transcript-1-ledger@5": null,
+    "fork-only/fork-replay/transcript-1-ledger@7": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug: lowercase, replace non-alphanumeric runs with '-', strip '-' edges.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-replay/transcript-1-ledger@9": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-replay/transcript-1@10": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-replay/transcript-1@12": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n+\n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"---hello---world---\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World!\"), \"hello-world\")\n+        self.assertEqual(slugify(\"123 ABC xyz\"), \"123-abc-xyz\")\n+        self.assertEqual(slugify(\"\"), \"\")\n+        self.assertEqual(slugify(\"---\"), \"\")",
+    "fork-only/fork-replay/transcript-1@14": null,
+    "fork-only/fork-replay/transcript-1@15": null,
+    "fork-only/fork-replay/transcript-1@16": null,
+    "fork-only/fork-replay/transcript-1@19": null,
+    "fork-only/fork-replay/transcript-1@2": null,
+    "fork-only/fork-replay/transcript-1@3": null,
+    "fork-only/fork-replay/transcript-1@4": null,
+    "fork-only/fork-replay/transcript-1@5": null,
+    "fork-only/fork-replay/transcript-1@6": null,
+    "fork-only/fork-replay/transcript-1@8": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug: lowercase, replace non-alphanumeric runs with '-', strip '-' edges.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-replay/transcript-2-ledger@0": null,
+    "fork-only/fork-replay/transcript-2-ledger@1": null,
+    "fork-only/fork-replay/transcript-2-ledger@2": null,
+    "fork-only/fork-replay/transcript-2-ledger@3": null,
+    "fork-only/fork-replay/transcript-2-ledger@4": null,
+    "fork-only/fork-replay/transcript-2-ledger@6": null,
+    "fork-only/fork-replay/transcript-2@1": null,
+    "fork-only/fork-replay/transcript-2@2": null,
+    "fork-only/fork-replay/transcript-2@3": null,
+    "fork-only/fork-replay/transcript-2@4": null,
+    "fork-only/fork-replay/transcript-2@5": null,
+    "fork-only/fork-replay/transcript-2@8": null,
+    "fork-only/fork-replay/transcript-3-ledger@1": null,
+    "fork-only/fork-replay/transcript-3-ledger@2": null,
+    "fork-only/fork-replay/transcript-3-ledger@3": null,
+    "fork-only/fork-replay/transcript-3-ledger@4": null,
+    "fork-only/fork-replay/transcript-3-ledger@6": null,
+    "fork-only/fork-replay/transcript-3@2": null,
+    "fork-only/fork-replay/transcript-3@3": null,
+    "fork-only/fork-replay/transcript-3@4": null,
+    "fork-only/fork-replay/transcript-3@5": null,
+    "fork-only/fork-replay/transcript-3@8": null,
+    "fork-only/fork-resumed/transcript-1-ledger@1": null,
+    "fork-only/fork-resumed/transcript-1-ledger@10": null,
+    "fork-only/fork-resumed/transcript-1-ledger@2": null,
+    "fork-only/fork-resumed/transcript-1-ledger@3": null,
+    "fork-only/fork-resumed/transcript-1-ledger@4": null,
+    "fork-only/fork-resumed/transcript-1-ledger@5": null,
+    "fork-only/fork-resumed/transcript-1-ledger@7": null,
+    "fork-only/fork-resumed/transcript-1-ledger@8": null,
+    "fork-only/fork-resumed/transcript-1@12": null,
+    "fork-only/fork-resumed/transcript-1@2": null,
+    "fork-only/fork-resumed/transcript-1@3": null,
+    "fork-only/fork-resumed/transcript-1@4": null,
+    "fork-only/fork-resumed/transcript-1@5": null,
+    "fork-only/fork-resumed/transcript-1@6": null,
+    "fork-only/fork-resumed/transcript-1@8": null,
+    "fork-only/fork-resumed/transcript-1@9": null,
+    "fork-only/fork-resumed/transcript-2-ledger@1": null,
+    "fork-only/fork-resumed/transcript-2-ledger@2": null,
+    "fork-only/fork-resumed/transcript-2-ledger@3": null,
+    "fork-only/fork-resumed/transcript-2-ledger@4": null,
+    "fork-only/fork-resumed/transcript-2-ledger@5": null,
+    "fork-only/fork-resumed/transcript-2-ledger@6": null,
+    "fork-only/fork-resumed/transcript-2-ledger@8": null,
+    "fork-only/fork-resumed/transcript-2@10": null,
+    "fork-only/fork-resumed/transcript-2@2": null,
+    "fork-only/fork-resumed/transcript-2@3": null,
+    "fork-only/fork-resumed/transcript-2@4": null,
+    "fork-only/fork-resumed/transcript-2@5": null,
+    "fork-only/fork-resumed/transcript-2@6": null,
+    "fork-only/fork-resumed/transcript-2@7": null,
+    "fork-only/fork-resumed/transcript-3-ledger@1": null,
+    "fork-only/fork-resumed/transcript-3-ledger@2": null,
+    "fork-only/fork-resumed/transcript-3-ledger@3": null,
+    "fork-only/fork-resumed/transcript-3-ledger@4": null,
+    "fork-only/fork-resumed/transcript-3-ledger@5": null,
+    "fork-only/fork-resumed/transcript-3-ledger@6": null,
+    "fork-only/fork-resumed/transcript-3-ledger@8": null,
+    "fork-only/fork-resumed/transcript-3@10": null,
+    "fork-only/fork-resumed/transcript-3@2": null,
+    "fork-only/fork-resumed/transcript-3@3": null,
+    "fork-only/fork-resumed/transcript-3@4": null,
+    "fork-only/fork-resumed/transcript-3@5": null,
+    "fork-only/fork-resumed/transcript-3@6": null,
+    "fork-only/fork-resumed/transcript-3@7": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@11": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@12": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@13": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@14": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@16": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@18": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@2": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@3": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@4": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@5": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@7": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@8": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-reviewer-never-satisfied/transcript-1@9": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n+\n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"hello-world\"), \"hello-world\")\n+        self.assertEqual(slugify(\"---hello---world---\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello, World!\"), \"hello-world\")\n+        self.assertEqual(slugify(\"123 ABC\"), \"123-abc\")\n+        self.assertEqual(slugify(\"\"), \"\")",
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@2": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@3": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@4": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-2@6": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@2": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@3": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@5": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-3@7": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@10": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@2": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@4": " def slugify(text: str) -> str:\n-    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    \"\"\"Convert text to a URL-friendly slug.\n+    \n+    Lowercases the input, replaces runs of non-alphanumeric characters\n+    with single dashes, and strips leading/trailing dashes.\n+    \n+    Args:\n+        text: The text to convert to a slug.\n+        \n+    Returns:\n+        A URL-friendly slug string containing only lowercase letters,\n+        digits, and dashes.\n+        \n+    Examples:\n+        >>> slugify(\"Hello World\")\n+        'hello-world'\n+        >>> slugify(\"Hello  World\")  # Multiple spaces become single dash\n+        'hello-world'\n+        >>> slugify(\"---hello---world---\")  # Leading/trailing dashes removed\n+        'hello-world'\n+        >>> slugify(\"Hello, World!\")  # Punctuation replaced with dash\n+        'hello-world'\n+        >>> slugify(\"Hello_World\")  # Underscores treated as separators\n+        'hello-world'\n+        >>> slugify(\"\")  # Empty string returns empty\n+        ''\n+    \"\"\"\n     text = text.lower()\n     text = re.sub(r'[^a-z0-9]+', '-', text)\n     text = text.strip('-')\n     return text",
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@6": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-4@8": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@2": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@3": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@4": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@5": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@6": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-5@8": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@1": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@2": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@3": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@5": null,
+    "fork-only/fork-reviewer-never-satisfied/transcript-6@7": null,
+    "fork-only/fork-steered/transcript-1-ledger@0": null,
+    "fork-only/fork-steered/transcript-1-ledger@1": null,
+    "fork-only/fork-steered/transcript-1-ledger@2": null,
+    "fork-only/fork-steered/transcript-1-ledger@4": "+APPLE",
+    "fork-only/fork-steered/transcript-1-ledger@5": "-APPLE\n+BANANA",
+    "fork-only/fork-steered/transcript-1-ledger@7": null,
+    "fork-only/fork-steered/transcript-1@1": null,
+    "fork-only/fork-steered/transcript-1@2": null,
+    "fork-only/fork-steered/transcript-1@3": null,
+    "fork-only/fork-steered/transcript-1@5": "+APPLE",
+    "fork-only/fork-steered/transcript-1@6": "-APPLE\n+BANANA",
+    "fork-only/fork-steered/transcript-1@9": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@1": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@10": " class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n+\n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"  Spaces  \"), \"spaces\")\n+        self.assertEqual(slugify(\"Special@#$%Characters\"), \"specialcharacters\")",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@11": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@13": " def slugify(text: str) -> str:\n     \"\"\"Convert text to a URL-friendly slug.\"\"\"\n     text = text.lower().strip()\n     text = unicodedata.normalize('NFKD', text)\n     text = re.sub(r'[^\\w\\s-]', '', text)\n     text = re.sub(r'[-\\s]+', '-', text)\n     return text.strip('-')\n+\n+\n+def title_case(text: str) -> str:\n+    \"\"\"Convert text to title case, keeping small words lowercase except at start.\"\"\"\n+    small_words = {'a', 'an', 'the', 'of', 'and', 'or'}\n+    words = text.split()\n+    if not words:\n+        return text\n+    result = []\n+    for i, word in enumerate(words):\n+        if i == 0 or word.lower() not in small_words:\n+            result.append(word.capitalize())\n+        else:\n+            result.append(word.lower())\n+    return ' '.join(result)",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@14": "-from .core import count_words, reverse_words, slugify\n+from .core import count_words, reverse_words, slugify, title_case\n \n-__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\", \"title_case\"]",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@15": "-from textkit import count_words, reverse_words, slugify\n+from textkit import count_words, reverse_words, slugify, title_case",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@16": "     def test_slugify(self):\n         self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n         self.assertEqual(slugify(\"  Spaces  \"), \"spaces\")\n         self.assertEqual(slugify(\"Special@#$%Characters\"), \"specialcharacters\")\n+\n+    def test_title_case(self):\n+        self.assertEqual(title_case(\"hello world\"), \"Hello World\")\n+        self.assertEqual(title_case(\"the quick and the dead\"), \"The Quick and the Dead\")\n+        self.assertEqual(title_case(\"a tale of two cities\"), \"A Tale of Two Cities\")",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@17": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@19": " def title_case(text: str) -> str:\n     \"\"\"Convert text to title case, keeping small words lowercase except at start.\"\"\"\n     small_words = {'a', 'an', 'the', 'of', 'and', 'or'}\n     words = text.split()\n     if not words:\n         return text\n     result = []\n     for i, word in enumerate(words):\n         if i == 0 or word.lower() not in small_words:\n             result.append(word.capitalize())\n         else:\n             result.append(word.lower())\n     return ' '.join(result)\n+\n+\n+def truncate(text: str, n: int) -> str:\n+    \"\"\"Truncate text to n characters at word boundary, appending '…'.\"\"\"\n+    if len(text) <= n:\n+        return text\n+    truncated = text[:n].rstrip()\n+    last_space = truncated.rfind(' ')\n+    if last_space > 0:\n+        truncated = truncated[:last_space]\n+    return truncated + '…'",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@2": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@20": "-from .core import count_words, reverse_words, slugify, title_case\n+from .core import count_words, reverse_words, slugify, title_case, truncate\n \n-__all__ = [\"count_words\", \"reverse_words\", \"slugify\", \"title_case\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\", \"title_case\", \"truncate\"]",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@3": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@4": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@5": null,
+    "fork-only/fork-worker-timeout/transcript-1-ledger@7": "+import re\n+import unicodedata\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    text = text.lower().strip()\n+    text = unicodedata.normalize('NFKD', text)\n+    text = re.sub(r'[^\\w\\s-]', '', text)\n+    text = re.sub(r'[-\\s]+', '-', text)\n+    return text.strip('-')",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@8": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/fork-worker-timeout/transcript-1-ledger@9": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify",
+    "fork-only/fork-worker-timeout/transcript-1@10": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify",
+    "fork-only/fork-worker-timeout/transcript-1@11": " class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n+\n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"  Spaces  \"), \"spaces\")\n+        self.assertEqual(slugify(\"Special@#$%Characters\"), \"specialcharacters\")",
+    "fork-only/fork-worker-timeout/transcript-1@12": null,
+    "fork-only/fork-worker-timeout/transcript-1@14": " def slugify(text: str) -> str:\n     \"\"\"Convert text to a URL-friendly slug.\"\"\"\n     text = text.lower().strip()\n     text = unicodedata.normalize('NFKD', text)\n     text = re.sub(r'[^\\w\\s-]', '', text)\n     text = re.sub(r'[-\\s]+', '-', text)\n     return text.strip('-')\n+\n+\n+def title_case(text: str) -> str:\n+    \"\"\"Convert text to title case, keeping small words lowercase except at start.\"\"\"\n+    small_words = {'a', 'an', 'the', 'of', 'and', 'or'}\n+    words = text.split()\n+    if not words:\n+        return text\n+    result = []\n+    for i, word in enumerate(words):\n+        if i == 0 or word.lower() not in small_words:\n+            result.append(word.capitalize())\n+        else:\n+            result.append(word.lower())\n+    return ' '.join(result)",
+    "fork-only/fork-worker-timeout/transcript-1@15": "-from .core import count_words, reverse_words, slugify\n+from .core import count_words, reverse_words, slugify, title_case\n \n-__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\", \"title_case\"]",
+    "fork-only/fork-worker-timeout/transcript-1@16": "-from textkit import count_words, reverse_words, slugify\n+from textkit import count_words, reverse_words, slugify, title_case",
+    "fork-only/fork-worker-timeout/transcript-1@17": "     def test_slugify(self):\n         self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n         self.assertEqual(slugify(\"  Spaces  \"), \"spaces\")\n         self.assertEqual(slugify(\"Special@#$%Characters\"), \"specialcharacters\")\n+\n+    def test_title_case(self):\n+        self.assertEqual(title_case(\"hello world\"), \"Hello World\")\n+        self.assertEqual(title_case(\"the quick and the dead\"), \"The Quick and the Dead\")\n+        self.assertEqual(title_case(\"a tale of two cities\"), \"A Tale of Two Cities\")",
+    "fork-only/fork-worker-timeout/transcript-1@18": null,
+    "fork-only/fork-worker-timeout/transcript-1@2": null,
+    "fork-only/fork-worker-timeout/transcript-1@20": " def title_case(text: str) -> str:\n     \"\"\"Convert text to title case, keeping small words lowercase except at start.\"\"\"\n     small_words = {'a', 'an', 'the', 'of', 'and', 'or'}\n     words = text.split()\n     if not words:\n         return text\n     result = []\n     for i, word in enumerate(words):\n         if i == 0 or word.lower() not in small_words:\n             result.append(word.capitalize())\n         else:\n             result.append(word.lower())\n     return ' '.join(result)\n+\n+\n+def truncate(text: str, n: int) -> str:\n+    \"\"\"Truncate text to n characters at word boundary, appending '…'.\"\"\"\n+    if len(text) <= n:\n+        return text\n+    truncated = text[:n].rstrip()\n+    last_space = truncated.rfind(' ')\n+    if last_space > 0:\n+        truncated = truncated[:last_space]\n+    return truncated + '…'",
+    "fork-only/fork-worker-timeout/transcript-1@21": "-from .core import count_words, reverse_words, slugify, title_case\n+from .core import count_words, reverse_words, slugify, title_case, truncate\n \n-__all__ = [\"count_words\", \"reverse_words\", \"slugify\", \"title_case\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\", \"title_case\", \"truncate\"]",
+    "fork-only/fork-worker-timeout/transcript-1@3": null,
+    "fork-only/fork-worker-timeout/transcript-1@4": null,
+    "fork-only/fork-worker-timeout/transcript-1@5": null,
+    "fork-only/fork-worker-timeout/transcript-1@6": null,
+    "fork-only/fork-worker-timeout/transcript-1@8": "+import re\n+import unicodedata\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a URL-friendly slug.\"\"\"\n+    text = text.lower().strip()\n+    text = unicodedata.normalize('NFKD', text)\n+    text = re.sub(r'[^\\w\\s-]', '', text)\n+    text = re.sub(r'[-\\s]+', '-', text)\n+    return text.strip('-')",
+    "fork-only/fork-worker-timeout/transcript-1@9": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "fork-only/replay-parent/transcript-1@1": null,
+    "fork-only/replay-parent/transcript-1@2": null,
+    "fork-only/replay-parent/transcript-2@1": null,
+    "fork-only/replay-parent/transcript-3@1": null,
+    "graph-ended-other/transcript-1@1": null,
+    "graph-ended-other/transcript-1@2": null,
+    "graph-ended-other/transcript-2@1": null,
+    "graph-ended-other/transcript-3@1": null,
+    "map-parallel/transcript-1@1": null,
+    "map-parallel/transcript-2@1": null,
+    "map-parallel/transcript-3@1": null,
+    "resumed-original/transcript-1@1": null,
+    "resumed-original/transcript-1@2": null,
+    "resumed-successor/transcript-1@1": null,
+    "resumed-successor/transcript-1@2": null,
+    "resumed-successor/transcript-2@1": null,
+    "resumed-successor/transcript-3@1": null,
+    "runtime-failed-checkpoint/transcript-1@1": null,
+    "runtime-failed-permission/transcript-1@1": null,
+    "runtime-failed-storage/transcript-1@1": null,
+    "runtime-failed-unknown/transcript-1@1": null,
+    "runtime-lost/transcript-1@1": null,
+    "stalled-disk/transcript-1@1": null,
+    "stalled-live-usage/transcript-1-ledger@1": null,
+    "stalled-live-usage/transcript-1@3": null,
+    "stalled-live-usage/transcript-1@4": null,
+    "stalled-live-usage/transcript-1@9": null,
+    "stalled-then-closed/transcript-1-ledger@1": null,
+    "stalled-then-closed/transcript-1-ledger@2": null,
+    "stalled-then-closed/transcript-1@3": null,
+    "stalled-then-closed/transcript-1@4": null,
+    "stalled-then-closed/transcript-1@9": null,
+    "stalled/transcript-1@1": null,
+    "succeeded/transcript-1-ledger@1": null,
+    "succeeded/transcript-1-ledger@2": null,
+    "succeeded/transcript-1@3": null,
+    "succeeded/transcript-1@4": null,
+    "succeeded/transcript-1@9": null,
+    "succeeded/transcript-2-ledger@1": null,
+    "succeeded/transcript-2@3": null,
+    "succeeded/transcript-2@4": null,
+    "succeeded/transcript-2@9": null,
+    "succeeded/transcript-3-ledger@1": null,
+    "succeeded/transcript-3@3": null,
+    "succeeded/transcript-3@4": null,
+    "succeeded/transcript-3@9": null,
+    "tool-output-rate-limit/transcript-1@0": null,
+    "voided/transcript-2@1": null,
+    "work-exhausted/transcript-1@1": null,
+    "work-exhausted/transcript-4@1": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@10": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@12": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@14": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@16": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@2": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@3": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@4": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@5": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@6": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger@8": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug: lowercase, replace non-alphanumeric runs with single dash, strip leading/trailing dashes.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "zeroshot-16/zeroshot16-normal/transcript-1@10": " \"\"\"Small text utilities.\"\"\"\n \n-from .core import count_words, reverse_words\n+from .core import count_words, reverse_words, slugify\n \n-__all__ = [\"count_words\", \"reverse_words\"]\n+__all__ = [\"count_words\", \"reverse_words\", \"slugify\"]",
+    "zeroshot-16/zeroshot16-normal/transcript-1@12": " import unittest\n \n-from textkit import count_words, reverse_words\n+from textkit import count_words, reverse_words, slugify\n \n \n class CoreTest(unittest.TestCase):\n     def test_count_words(self):\n         self.assertEqual(count_words(\"a b  c\"), 3)\n         self.assertEqual(count_words(\"\"), 0)\n \n     def test_reverse_words(self):\n         self.assertEqual(reverse_words(\"one two three\"), \"three two one\")\n+\n+    def test_slugify(self):\n+        self.assertEqual(slugify(\"Hello World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello  World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello_World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello-World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"  Hello World  \"), \"hello-world\")\n+        self.assertEqual(slugify(\"Hello@#$%World\"), \"hello-world\")\n+        self.assertEqual(slugify(\"123-ABC-def\"), \"123-abc-def\")\n+        self.assertEqual(slugify(\"---\"), \"\")\n+        self.assertEqual(slugify(\"a\"), \"a\")\n+        self.assertEqual(slugify(\"\"), \"\")",
+    "zeroshot-16/zeroshot16-normal/transcript-1@14": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@16": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@2": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@3": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@4": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@5": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@6": null,
+    "zeroshot-16/zeroshot16-normal/transcript-1@8": "+import re\n+\n+\n def count_words(text: str) -> int:\n     \"\"\"Number of whitespace-separated words in text.\"\"\"\n     return len(text.split())\n \n \n def reverse_words(text: str) -> str:\n     \"\"\"The words of text in reverse order, joined by single spaces.\"\"\"\n     return \" \".join(reversed(text.split()))\n+\n+\n+def slugify(text: str) -> str:\n+    \"\"\"Convert text to a slug: lowercase, replace non-alphanumeric runs with single dash, strip leading/trailing dashes.\"\"\"\n+    text = text.lower()\n+    text = re.sub(r'[^a-z0-9]+', '-', text)\n+    text = text.strip('-')\n+    return text",
+    "zeroshot-16/zeroshot16-steered/transcript-1@2": null,
+    "zeroshot-16/zeroshot16-steered/transcript-1@3": null,
+    "zeroshot-16/zeroshot16-steered/transcript-1@6": null,
+    "zeroshot-16/zeroshot16-steered/transcript-1@8": "+BANANA",
+    "zeroshot-16/zeroshot16-steered/transcript-1@9": null
+  }
+}

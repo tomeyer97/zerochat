@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The browser bar takes the page background: the canvas token of the dark and light palettes
+         (web/src/styles/tokens.css). The first meta whose media matches wins, so dark comes first. -->
+    <meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#faf7f1" />
+    <!-- An empty data: URL as the icon: zerochat ships no favicon, and this stops the browser
+         from requesting /favicon.ico on every load. -->
+    <link rel="icon" href="data:," />
+    <title>zerochat</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

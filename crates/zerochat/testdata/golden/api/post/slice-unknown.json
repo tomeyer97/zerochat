@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "not_found",
+    "message": "No slice `99` in calc."
+  },
+  "status": 404
+}

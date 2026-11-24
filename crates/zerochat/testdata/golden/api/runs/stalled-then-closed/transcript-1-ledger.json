@@ -1,0 +1,129 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "estimate",
+      "costUsd": 0.016012,
+      "diagnostic": null,
+      "durationMs": 5600,
+      "endSeq": 12,
+      "endedAt": 1795003307100,
+      "error": {
+        "code": "crash",
+        "reason": "declared_failure"
+      },
+      "errorLines": [
+        "Node code failed: crash: run runtime_lost"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795003307100,
+      "logLines": 8,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "code",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": "declared_failure",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795003301500,
+      "state": "interrupted",
+      "timesApproximate": false,
+      "toolCalls": 2,
+      "usage": {
+        "cacheCreationInputTokens": 4800,
+        "cacheReadInputTokens": 49000,
+        "inputTokens": 12,
+        "outputTokens": 300
+      },
+      "usageSource": "session_log",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Implement the task.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003302500,
+          "kind": "thinking",
+          "text": "I'll look at textkit/core.py first."
+        },
+        {
+          "at": 1795003303500,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_550100",
+            "input": {
+              "command": "python3 -m unittest -v  # step 0"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795003304500,
+              "content": "Ran 3 tests\n\nOK",
+              "exitCode": 0,
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795003305500,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_550101",
+            "input": {
+              "command": "python3 -m unittest -v  # step 1"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795003306500,
+              "content": "Ran 4 tests\n\nOK",
+              "exitCode": 0,
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795003306800,
+          "kind": "text",
+          "text": "Done: slugify() added with tests; all tests pass."
+        },
+        {
+          "at": 1795003471500,
+          "kind": "error",
+          "text": "Node code failed: crash: run runtime_lost"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

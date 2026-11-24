@@ -1,0 +1,179 @@
+{
+  "harnesses": {
+    "batch/20261107-222316-71f62e#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/20261107-222316-910b7d#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/20261108-142204-d474ae#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/20261108-152720-fb0664#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/20261108-170007-63721d#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/20261108-170009-cace9c#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_clone-v1#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_clone-v1-sonnet-build#0": [
+      "haiku-4-5",
+      "sonnet-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_ctrlc-test#0": [
+      "haiku-4-5 · high",
+      "haiku-4-5 · medium",
+      "haiku-4-5 · high"
+    ],
+    "batch/label_haiku-adversarial#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_haiku-adversarial#1": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_haiku-prototype-plan#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_k8s-sc-sonnet5#0": [
+      "sonnet-5 · high",
+      "sonnet-5 · medium",
+      "sonnet-5 · medium",
+      "sonnet-5 · high"
+    ],
+    "batch/label_replay-build-haiku#0": [
+      "haiku-4-5"
+    ],
+    "batch/label_replay-build-sonnet#0": [
+      "sonnet-5"
+    ],
+    "batch/label_replay-sonnet-explore-haiku-build#0": [
+      "sonnet-5",
+      "haiku-4-5"
+    ],
+    "batch/label_sc-template-haiku#0": [
+      "haiku-4-5 · high",
+      "haiku-4-5 · medium",
+      "haiku-4-5 · medium",
+      "haiku-4-5 · high"
+    ],
+    "batch/label_smoke-haiku#0": [
+      "haiku-4-5 · high",
+      "haiku-4-5 · medium",
+      "haiku-4-5 · high"
+    ],
+    "batch/label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5#0": [
+      "haiku-4-5"
+    ],
+    "batch/label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5#0": [
+      "sonnet-5"
+    ],
+    "batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5#0": [
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5#0": [
+      "sonnet-5",
+      "haiku-4-5"
+    ],
+    "batch/label_ticket-v1#0": [
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "preview/0": [
+      "sonnet-5 · high",
+      "sonnet-5 · medium",
+      "sonnet-5 · high"
+    ],
+    "preview/1": [
+      "haiku-4-5",
+      "sonnet-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "preview/2": [
+      "no model",
+      "no model",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "preview/3": [
+      "no model",
+      "no model",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5",
+      "haiku-4-5"
+    ],
+    "preview/model-override": [
+      "sonnet-4-5 · high",
+      "sonnet-4-5 · medium",
+      "sonnet-4-5 · high"
+    ]
+  },
+  "table": [
+    "no model",
+    "no model · high",
+    "sonnet-5",
+    "sonnet-5 · high",
+    "gpt-claude-x"
+  ]
+}

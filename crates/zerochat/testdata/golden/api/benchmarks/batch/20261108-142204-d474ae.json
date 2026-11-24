@@ -1,0 +1,269 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 60.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 3.6747709,
+        "cutShort": "timeout",
+        "exitReason": null,
+        "overLimit": "timeout",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261108-142204-037a6e",
+        "score": 0.473214286,
+        "seed": 0,
+        "startedAt": 1794144124802,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 106,
+        "testsTotal": 224,
+        "wallS": 3773.089498997,
+        "zeroshotRunId": "01a1bb52-c40b-7e20-b626-01b446109434"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 60.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.1082366,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261108-142204-e54403",
+        "score": 0.6875,
+        "seed": 1,
+        "startedAt": 1794144124800,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 154,
+        "testsTotal": 224,
+        "wallS": 2114.612761736,
+        "zeroshotRunId": "01a1bb52-c40d-70f2-8cb2-7e4bae7d0be5"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 60.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.901997,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261108-145719-8916de",
+        "score": 0.678571429,
+        "seed": 2,
+        "startedAt": 1794146239416,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 152,
+        "testsTotal": 224,
+        "wallS": 2651.514712095,
+        "zeroshotRunId": "01a1bb73-07c0-7b01-ba7a-712bb2b59478"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 60.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.0240695,
+        "cutShort": null,
+        "exitReason": "budget_exceeded after 2259s, 6 steps",
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261108-142204-d922d5",
+        "score": 0.0,
+        "seed": 0,
+        "startedAt": 1794144124802,
+        "state": "over_budget",
+        "task": "yaa110__nomino.f892499",
+        "testsPassed": 0,
+        "testsTotal": 313,
+        "wallS": 2311.217468262,
+        "zeroshotRunId": "01a1bb52-c46d-72e2-a295-74a45757c686"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 60.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.0065802,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261108-142204-c03693",
+        "score": 0.616613419,
+        "seed": 1,
+        "startedAt": 1794144124802,
+        "state": "scored",
+        "task": "yaa110__nomino.f892499",
+        "testsPassed": 193,
+        "testsTotal": 313,
+        "wallS": 2377.452301264,
+        "zeroshotRunId": "01a1bb52-c414-7863-aca4-39b2bdda9ef2"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 60.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.0021851,
+        "cutShort": null,
+        "exitReason": "budget_exceeded after 2781s, 12 steps",
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261108-150036-3c2a78",
+        "score": 0.0,
+        "seed": 2,
+        "startedAt": 1794146436021,
+        "state": "over_budget",
+        "task": "yaa110__nomino.f892499",
+        "testsPassed": 0,
+        "testsTotal": 313,
+        "wallS": 3069.233799219,
+        "zeroshotRunId": "01a1bb76-0748-71e0-8942-70b40d062eb3"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.473214286,
+        "mean": 0.236607143,
+        "min": 0.0,
+        "n": 2
+      },
+      {
+        "key": "1",
+        "max": 0.6875,
+        "mean": 0.652056709,
+        "min": 0.616613419,
+        "n": 2
+      },
+      {
+        "key": "2",
+        "max": 0.678571429,
+        "mean": 0.339285714,
+        "min": 0.0,
+        "n": 2
+      }
+    ],
+    "endedAt": 1794149505259,
+    "harnessVersion": "bb5e174c",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "explore",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "build",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 8,
+            "loopName": "diff_loop",
+            "model": "claude-haiku-4-5",
+            "name": "oracle",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 8,
+            "loopName": "diff_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 6,
+        "runtimeFile": null,
+        "runtimeMatches": false,
+        "source": "custom",
+        "variant": null
+      }
+    ],
+    "id": "20261108-142204-d474ae",
+    "label": "r2-hermetic",
+    "limits": {
+      "maxCostUsd": 6.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 60.0
+    },
+    "maxScore": 0.6875,
+    "meanScore": 0.409316522,
+    "meanScoreFinished": 0.0,
+    "minScore": 0.0,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": 4,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.6875,
+        "mean": 0.613095238,
+        "min": 0.473214286,
+        "n": 3
+      },
+      {
+        "key": "yaa110__nomino.f892499",
+        "max": 0.616613419,
+        "mean": 0.205537806,
+        "min": 0.0,
+        "n": 3
+      }
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "startLog": null,
+    "startedAt": 1794144124738,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234",
+      "yaa110__nomino.f892499"
+    ],
+    "totalCostUsd": 34.7178393,
+    "totalWallS": 16297.120541573,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

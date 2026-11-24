@@ -1,0 +1,23 @@
+{
+  "name": "zerochat",
+  "version": "0.0.0-dev",
+  "description": "A local web UI for Zeroshot runs: history, failure explanations, steering, replay and Features (zsf)",
+  "license": "MIT",
+  "keywords": ["zeroshot", "agents", "ui"],
+  "bin": {
+    "zerochat": "bin/zerochat.js",
+    "zsf": "bin/zsf.js"
+  },
+  "files": ["bin", "lib", "packages.json"],
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "peerDependencies": {
+    "@the-open-engine-company/zeroshot": ">=16.1"
+  },
+  "peerDependenciesMeta": {
+    "@the-open-engine-company/zeroshot": {
+      "optional": true
+    }
+  }
+}

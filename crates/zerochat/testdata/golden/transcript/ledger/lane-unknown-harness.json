@@ -1,0 +1,23 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003242000,
+          "kind": "text",
+          "text": "Working."
+        },
+        {
+          "at": 1795003243000,
+          "kind": "error",
+          "text": "Node worker failed: crash after 3.0s: node execution failed: Hermes provider failure: API Error: 429 rate limit exceeded"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  }
+]

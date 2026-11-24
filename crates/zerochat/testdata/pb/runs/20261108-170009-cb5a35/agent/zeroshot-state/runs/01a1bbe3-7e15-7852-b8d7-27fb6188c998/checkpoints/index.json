@@ -1,0 +1,168 @@
+[
+  {
+    "checkpointId": "01a1bbe3-8fec-74b2-b351-8d105cdb0951",
+    "sequence": 1,
+    "node": "explore",
+    "mapIndices": [],
+    "loopIterations": [],
+    "createdAt": 1794153615340
+  },
+  {
+    "checkpointId": "01a1bbe7-bdd2-76e3-87d0-6e4afd0a4b83",
+    "sequence": 2,
+    "node": "build",
+    "mapIndices": [],
+    "loopIterations": [],
+    "createdAt": 1794153889234
+  },
+  {
+    "checkpointId": "01a1bbf2-0bb1-7b21-a471-a4c585a68e82",
+    "sequence": 3,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1794154564529
+  },
+  {
+    "checkpointId": "01a1bbf4-63d7-7950-8349-f1f966a04507",
+    "sequence": 4,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1794154718167
+  },
+  {
+    "checkpointId": "01a1bbfa-80f5-7842-b0a2-6cc5bb7a9073",
+    "sequence": 5,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      2
+    ],
+    "createdAt": 1794155118837
+  },
+  {
+    "checkpointId": "01a1bbfd-c6de-7281-befa-3ccb9ec526be",
+    "sequence": 6,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      2
+    ],
+    "createdAt": 1794155333342
+  },
+  {
+    "checkpointId": "01a1bbfe-4e7b-7b70-8a0d-0ffb878bce0e",
+    "sequence": 7,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      3
+    ],
+    "createdAt": 1794155368059
+  },
+  {
+    "checkpointId": "01a1bc00-ae79-7661-8b8c-d89ca8da330d",
+    "sequence": 8,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      3
+    ],
+    "createdAt": 1794155523705
+  },
+  {
+    "checkpointId": "01a1bc06-8777-7d03-909d-0c145cf7ed7d",
+    "sequence": 9,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      4
+    ],
+    "createdAt": 1794155906935
+  },
+  {
+    "checkpointId": "01a1bc08-480f-7540-8794-e925db8aa945",
+    "sequence": 10,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      4
+    ],
+    "createdAt": 1794156021775
+  },
+  {
+    "checkpointId": "01a1bc09-f6b5-7220-9622-cd1aeae28006",
+    "sequence": 11,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      5
+    ],
+    "createdAt": 1794156132021
+  },
+  {
+    "checkpointId": "01a1bc0a-d279-7650-8d5d-2c6ea6e876df",
+    "sequence": 12,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      5
+    ],
+    "createdAt": 1794156188281
+  },
+  {
+    "checkpointId": "01a1bc0b-1ce4-7773-8103-d4bb64502d5e",
+    "sequence": 13,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      6
+    ],
+    "createdAt": 1794156207332
+  },
+  {
+    "checkpointId": "01a1bc0c-a40d-71a3-9e52-9cdd7920c939",
+    "sequence": 14,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      6
+    ],
+    "createdAt": 1794156307469
+  },
+  {
+    "checkpointId": "01a1bc0d-1297-7f10-9e59-96d297ab712c",
+    "sequence": 15,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      7
+    ],
+    "createdAt": 1794156335767
+  },
+  {
+    "checkpointId": "01a1bc0d-88b6-7f61-82a9-712631e82cd7",
+    "sequence": 16,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      7
+    ],
+    "createdAt": 1794156366006
+  },
+  {
+    "checkpointId": "01a1bc0d-c8af-7153-9391-4aa5385e99f8",
+    "sequence": 17,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      8
+    ],
+    "createdAt": 1794156382383
+  }
+]

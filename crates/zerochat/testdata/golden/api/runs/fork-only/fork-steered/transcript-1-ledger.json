@@ -1,0 +1,187 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0362573,
+      "diagnostic": null,
+      "durationMs": 39816,
+      "endSeq": 21,
+      "endedAt": 1795175298620,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else."
+      },
+      "lastActivityAt": 1795175298119,
+      "logLines": 16,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "output": null,
+        "status": "verified"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": "3ccc6901-9bba-417e-996e-f641e472866f",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175258804,
+      "state": "succeeded",
+      "timesApproximate": false,
+      "toolCalls": 6,
+      "usage": {
+        "cacheCreationInputTokens": 9649,
+        "cacheReadInputTokens": 108603,
+        "inputTokens": 44,
+        "outputTokens": 1211
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "41b3c42c6ab1669fee5c160fc0a0822b97b0685d",
+        "commit": "5f1afbafdca3c13beda35b88cd79a736fc2768b5",
+        "files": [
+          {
+            "additions": 1,
+            "deletions": 0,
+            "path": "out.txt",
+            "status": "added"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "41b3c42c6ab1669fee5c160fc0a0822b97b0685d"
+      }
+    },
+    "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795175267482,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_01GiW7ingvKqWATb6WEfC1up",
+            "input": {
+              "command": "sleep 20",
+              "description": "Run first sleep command"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795175289557,
+              "content": "(Bash completed with no output)",
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795175267697,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_01ASN14gBHwnP2aV9CRFJEkK",
+            "input": {
+              "command": "sleep 20",
+              "description": "Run second sleep command"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795175289530,
+              "content": "(Bash completed with no output)",
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795175267941,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_01Nsxq8Br4tD6a6Jq9PmFsmT",
+            "input": {
+              "command": "sleep 20",
+              "description": "Run third sleep command"
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795175289571,
+              "content": "(Bash completed with no output)",
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795175291292,
+          "kind": "steer",
+          "text": "Change of plan: in step 4 write BANANA instead of APPLE."
+        },
+        {
+          "at": 1795175291815,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_01DJQqwJ5T6kagqZC87nuqUk",
+            "input": {
+              "content": "APPLE",
+              "file_path": "/work/steered/out.txt"
+            },
+            "name": "Write",
+            "result": {
+              "at": 1795175291899,
+              "content": "File created successfully at: /work/steered/out.txt (file state is current in your context — no need to Read it back)",
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795175294626,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_011YFpj5i5Y4mpmUPDScACMH",
+            "input": {
+              "file_path": "/work/steered/out.txt",
+              "new_string": "BANANA",
+              "old_string": "APPLE"
+            },
+            "name": "Edit",
+            "result": {
+              "at": 1795175294674,
+              "content": "The file /work/steered/out.txt has been updated successfully. (file state is current in your context — no need to Read it back)",
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795175296542,
+          "kind": "text",
+          "text": "```json\n{\"response\":null}\n```"
+        },
+        {
+          "at": 1795175298107,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_01WYLes9ovVTEiTmu3x4aSTQ",
+            "input": {
+              "response": null
+            },
+            "name": "StructuredOutput",
+            "result": {
+              "at": 1795175298119,
+              "content": "Structured output provided successfully",
+              "isError": false
+            }
+          }
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

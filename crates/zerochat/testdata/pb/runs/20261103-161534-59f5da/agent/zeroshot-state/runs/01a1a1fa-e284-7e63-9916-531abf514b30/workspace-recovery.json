@@ -1,0 +1,157 @@
+{
+  "submission": {
+    "title": "pb-20261103-161534-59f5da",
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "initialInput": {
+        "kind": "record",
+        "fields": {
+          "task": {
+            "type": {
+              "kind": "string"
+            },
+            "required": true
+          }
+        }
+      },
+      "policy": {
+        "policy": "policy.native-v2@1",
+        "default": "deny"
+      },
+      "root": {
+        "kind": "seq",
+        "name": "replay",
+        "state": {
+          "kind": "record",
+          "fields": {
+            "task": {
+              "type": {
+                "kind": "string"
+              },
+              "required": true
+            }
+          }
+        },
+        "children": [
+          {
+            "kind": "step",
+            "name": "build",
+            "worker": "builtin.agent.software-worker@1",
+            "instructions": "Implement the program FROM SCRATCH following spec/SPEC.md, and make `spec/run_cases.sh ./executable` pass 100%.\nA pristine, execute-only copy of the reference program is at /opt/pb/reference/executable. It survives rebuilds (./compile.sh overwrites ./executable), so always compare against that path.\n- Follow the task's build contract (./compile.sh producing ./executable), keep build artifacts out of git, and commit.\n- Structure the code around the spec's modes and rules. Implement the GENERAL rules; never special-case individual case inputs.\n- Run spec/run_cases.sh often. If you believe a case is wrong, re-run it against the reference: the reference is always right; re-capture with spec/capture.sh, never edit expected output by hand.\n- Cover every dimension in the spec, including error paths and exit codes, environment, invocation name, terminal vs pipe, and large inputs.",
+            "input": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "output": {
+              "kind": "null"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "source": "state",
+                  "path": [
+                    "task"
+                  ]
+                }
+              }
+            ],
+            "writeBindings": [],
+            "attempts": 1
+          },
+          {
+            "kind": "choice",
+            "name": "replay_result",
+            "state": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "branches": [
+              {
+                "when": {
+                  "kind": "in",
+                  "value": {
+                    "name": "build",
+                    "source": "error",
+                    "field": null
+                  },
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ]
+                },
+                "node": {
+                  "kind": "fail",
+                  "name": "replay_failed",
+                  "reason": "build_failed"
+                }
+              }
+            ],
+            "otherwise": {
+              "kind": "succeed",
+              "name": "replay_done",
+              "output": {
+                "kind": "null"
+              },
+              "bindings": []
+            },
+            "promotedStatePaths": []
+          }
+        ],
+        "promotedStatePaths": []
+      }
+    },
+    "initialInput": {
+      "task": "<!-- From mini-swe-agent programbench.yaml (system + instance templates), minus the mini-swe-agent command-loop section. The workspace is the current directory (/workspace). -->\n\nYou are a helpful assistant that can interact with a computer.\n\nYour task is to recreate a program from scratch based only on its observable behavior and bundled documentation.\nYou are given a reference executable and its documentation.\nTreat the reference executable as a specification you can query through its normal user interface.\n\nYour submission must be an independent implementation.\nUsing the original source code, wrapping the reference executable, or installing an existing implementation does not satisfy the task and will receive no credit.\nIt will be detected by an automated judge, marked as a disqualification, and scored as a failure.\n\n<RULES>\n## What is NOT allowed\n\n### 1. Using an existing implementation\n\nThe only source of truth about what the executable does is the executable itself and its\nbundled documentation. You must not search the internet, package registries, or any external\nsource for information about this project's source code. Even if you recognize what the\nexecutable is, you must reimplement it from behavioral observation alone.\n\nThis includes but is not limited to:\n- Cloning or browsing the original GitHub repository, its forks, or mirrors\n- Downloading the project from package registries: `cargo install <project>`, `go get github.com/<org>/<project>`, `pip install <project>…[fixture: 4243 more characters cut]"
+    },
+    "runtime": {
+      "harness": "claude",
+      "provider": "anthropic",
+      "size": "medium",
+      "nodes": {
+        "build": {
+          "kind": "agent",
+          "model": "claude-sonnet-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        }
+      }
+    },
+    "source": {
+      "repository": "programbench/20261103-161534-59f5da",
+      "branch": "master",
+      "revision": "37a33263e82f62ef2852f9f5b4474ad8b681352c",
+      "remote": {
+        "url": "https://github.com/programbench/20261103-161534-59f5da.git",
+        "forge": {
+          "provider": "source.github",
+          "repository": "programbench/20261103-161534-59f5da"
+        }
+      }
+    },
+    "submissionKey": "cli-8c0be1ff7c2d4e1e6d6e2b706cfe2297"
+  },
+  "workspace": "/workspace",
+  "deliveryRunId": "01a1a1fa-e284-7e63-9916-531abf514b30"
+}

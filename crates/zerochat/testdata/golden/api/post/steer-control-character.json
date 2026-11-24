@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "invalid_message",
+    "message": "Messages cannot contain control characters (tabs and line breaks are fine)."
+  },
+  "status": 400
+}

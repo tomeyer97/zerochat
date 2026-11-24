@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "refused",
+    "message": "Can't approve 01: it is merged now."
+  },
+  "status": 409
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "cut": "(input cut by Zeroshot)",
+    "denied": null,
+    "detail": "cd /w && python3 - <<'EOF' …",
+    "exit": null,
+    "foldInput": true,
+    "input": "{\n  \"command\": \"cd /w && python3 - <<'EOF'\\nprint(\\\"xx\",\n  \"description\": \"Rewrite the file\"\n}",
+    "permission": null,
+    "resultTool": false,
+    "status": "ok",
+    "title": "cd /w && python3 - <<'EOF'\nRewrite the file\nZeroshot cut this input in its log.\nJan 1, 1970, 12:00:00 AM",
+    "verb": "Bash"
+  },
+  {
+    "cut": "(input cut by Zeroshot)",
+    "denied": null,
+    "detail": "src/a.ts …",
+    "exit": null,
+    "foldInput": true,
+    "input": "{\n  \"file_path\": \"/w/src/a.ts\"\n}",
+    "permission": null,
+    "resultTool": false,
+    "status": "error",
+    "title": "/w/src/a.ts\nZeroshot cut this input in its log.\nJan 1, 1970, 12:00:00 AM",
+    "verb": "Edit"
+  },
+  {
+    "cut": "(input cut by Zeroshot)",
+    "denied": null,
+    "detail": "README.md …",
+    "exit": null,
+    "foldInput": true,
+    "input": "{\n  \"file_path\": \"/w/README.md\"\n}",
+    "permission": null,
+    "resultTool": false,
+    "status": "ok",
+    "title": "/w/README.md\nZeroshot cut this input in its log.\nJan 1, 1970, 12:00:00 AM",
+    "verb": "Read"
+  },
+  {
+    "cut": null,
+    "denied": null,
+    "detail": "ls",
+    "exit": null,
+    "foldInput": true,
+    "input": "{\n  \"command\": \"ls\"\n}",
+    "permission": null,
+    "resultTool": false,
+    "status": "none",
+    "title": "ls\nJan 1, 1970, 12:00:00 AM",
+    "verb": "Bash"
+  }
+]

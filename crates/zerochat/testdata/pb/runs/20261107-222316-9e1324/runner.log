@@ -1,0 +1,15 @@
+22:23:16 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] start label='r1-screen-spec2' version=4259fe2017 model=per-node art=/data/pb/runs/20261107-222316-9e1324
+22:23:17 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+22:23:23 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node start  explore (exec 1, attempt 1)
+22:27:44 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node done   explore -> verified 
+22:27:48 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node start  spec_extend (exec 2, attempt 1)
+22:32:01 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node done   spec_extend -> verified 
+22:32:07 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node start  build (exec 3, attempt 1)
+22:41:36 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node done   build -> verified 
+22:41:42 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node start  oracle (exec 4, attempt 1)
+22:44:23 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node done   oracle -> verifier rejected
+22:44:31 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node start  repair (exec 5, attempt 1)
+22:53:45 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node done   repair -> verified 
+22:53:53 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node start  oracle (exec 6, attempt 1)
+22:56:52 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s0] node done   oracle -> verifier rejected
+22:56:54 [20261107-222316-9e1324 tomnomnom__gron.88a6234 s…[fixture: 1650 more characters cut]

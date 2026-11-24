@@ -1,0 +1,17 @@
+{
+  "overview": [
+    "<ref:overview.targets[0]>",
+    "<ref:overview.targets[1]>",
+    "<ref:overview.targets[2]>"
+  ],
+  "overviewNav": [
+    "<ref:overviewNav.targets[0]>",
+    "<ref:overviewNav.targets[1]>",
+    "<ref:overviewNav.targets[2]>"
+  ],
+  "reversed": [
+    "<ref:overview.targets[0]>",
+    "<ref:overview.targets[2]>",
+    "<ref:overview.targets[1]>"
+  ]
+}

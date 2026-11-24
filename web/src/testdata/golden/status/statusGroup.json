@@ -1,0 +1,10 @@
+{
+  "admitted": "running",
+  "failed": "failed",
+  "running": "running",
+  "stalled": "failed",
+  "stopped": "stopped",
+  "stopping": "running",
+  "succeeded": "succeeded",
+  "unknown": null
+}

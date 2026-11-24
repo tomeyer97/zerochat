@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "refused",
+    "message": "Can't retry 03: it is waiting for approval now."
+  },
+  "status": 409
+}

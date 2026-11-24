@@ -1,0 +1,84 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 4610,
+      "endSeq": 9,
+      "endedAt": 1795175274969,
+      "error": {
+        "code": "refusal",
+        "reason": "model_unavailable"
+      },
+      "errorLines": [
+        "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+      },
+      "lastActivityAt": 1795175274969,
+      "logLines": 3,
+      "mapIndices": [],
+      "model": "claude-haiku-9-9-does-not-exist",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "refusal",
+        "reason": "model_unavailable",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 4,
+      "startedAt": 1795175270359,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": null
+    },
+    "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795175270431,
+          "kind": "thinking",
+          "text": "Claude Code version: 2.1.322"
+        },
+        {
+          "at": 1795175274214,
+          "kind": "error",
+          "text": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+        },
+        {
+          "at": 1795175274969,
+          "kind": "error",
+          "text": "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

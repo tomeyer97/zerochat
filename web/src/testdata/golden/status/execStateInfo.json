@@ -1,0 +1,42 @@
+{
+  "accepted": {
+    "explain": "The verifier accepted the work.",
+    "label": "Accepted",
+    "tone": "ok"
+  },
+  "failed": {
+    "explain": "The node errored (the agent or its provider failed).",
+    "label": "Failed",
+    "tone": "bad"
+  },
+  "idle": {
+    "explain": "This node has not run (yet).",
+    "label": "Not started",
+    "tone": "muted"
+  },
+  "interrupted": {
+    "explain": "The node was still running when the run stopped (force stop, crash or lost runtime).",
+    "label": "Interrupted",
+    "tone": "neutral"
+  },
+  "rejected": {
+    "explain": "The verifier rejected the work and gave feedback.",
+    "label": "Rejected",
+    "tone": "warn"
+  },
+  "running": {
+    "explain": "The agent is working right now.",
+    "label": "Running",
+    "tone": "running"
+  },
+  "succeeded": {
+    "explain": "The node finished and returned a result.",
+    "label": "Succeeded",
+    "tone": "ok"
+  },
+  "voided": {
+    "explain": "Zeroshot discarded this execution (for example after a restart).",
+    "label": "Voided",
+    "tone": "muted"
+  }
+}

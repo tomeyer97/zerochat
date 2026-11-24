@@ -1,0 +1,231 @@
+{
+  "runs": {
+    "admitted-only": "0",
+    "attempts-exhausted": "0",
+    "checkout-unavailable": "0",
+    "closing-postmortem": "3.5k",
+    "codex-estimate": "93k",
+    "copilot-session": "0",
+    "delivery-failed": "135k",
+    "diag-api-hang": "45k",
+    "diag-code-authentication-required": "0",
+    "diag-code-crash": "0",
+    "diag-code-input-required": "0",
+    "diag-code-malformed-result": "0",
+    "diag-code-other": "0",
+    "diag-code-policy-denied": "0",
+    "diag-code-refusal": "0",
+    "diag-code-timeout": "0",
+    "diag-context": "0",
+    "diag-credentials": "0",
+    "diag-disk": "0",
+    "diag-malformed-stream": "0",
+    "diag-missing-cli": "0",
+    "diag-model": "0",
+    "diag-network": "0",
+    "diag-permission": "0",
+    "diag-provider-down": "0",
+    "diag-provider-timeout": "0",
+    "diag-rate-limit": "0",
+    "diag-stream-cut": "0",
+    "diag-usage-limit": "0",
+    "force-stopped": "45k",
+    "fork-only/fork-bad-credentials": "0",
+    "fork-only/fork-chaos-transient": "511k",
+    "fork-only/fork-chaos-usage-limit": "121k",
+    "fork-only/fork-controller-killed": "569k",
+    "fork-only/fork-force-stopped": "523k",
+    "fork-only/fork-happy-path": "900k",
+    "fork-only/fork-late-failure": "973k",
+    "fork-only/fork-replay": "935k",
+    "fork-only/fork-resumed": "924k",
+    "fork-only/fork-reviewer-never-satisfied": "1.7M",
+    "fork-only/fork-steered": "362k",
+    "fork-only/fork-unknown-model": "0",
+    "fork-only/fork-worker-timeout": "698k",
+    "fork-only/replay-child": "45k",
+    "fork-only/replay-parent": "135k",
+    "fork-only/steered": "45k",
+    "graph-ended-other": "135k",
+    "lane-mixed": "45k",
+    "lane-unknown-harness": "45k",
+    "map-parallel": "90k",
+    "no-checkpoints": "0",
+    "resumed-original": "0",
+    "resumed-successor": "135k",
+    "running-live": "45k",
+    "running-stock": "0",
+    "runtime-failed-checkpoint": "0",
+    "runtime-failed-permission": "0",
+    "runtime-failed-storage": "0",
+    "runtime-failed-unknown": "0",
+    "runtime-lost": "0",
+    "stalled": "0",
+    "stalled-disk": "0",
+    "stalled-live-usage": "54k",
+    "stalled-then-closed": "54k",
+    "succeeded": "144k",
+    "succeeded-stock": "135k",
+    "tool-output-rate-limit": "0",
+    "unknown-phase": "0",
+    "voided": "45k",
+    "work-exhausted": "90k",
+    "zeroshot-16/zeroshot16-normal": "382k",
+    "zeroshot-16/zeroshot16-steered": "267k",
+    "zeroshot-16/zeroshot16-unknown-model": "0"
+  },
+  "table": [
+    [
+      "null",
+      "—"
+    ],
+    [
+      "undefined",
+      "—"
+    ],
+    [
+      "NaN",
+      "—"
+    ],
+    [
+      "Infinity",
+      "—"
+    ],
+    [
+      "-Infinity",
+      "—"
+    ],
+    [
+      "-1500",
+      "-1.5k"
+    ],
+    [
+      "-0.4",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0.004",
+      "0"
+    ],
+    [
+      "0.005",
+      "0"
+    ],
+    [
+      "0.01",
+      "0"
+    ],
+    [
+      "0.499",
+      "0"
+    ],
+    [
+      "0.5",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "9.95",
+      "10"
+    ],
+    [
+      "42",
+      "42"
+    ],
+    [
+      "999",
+      "999"
+    ],
+    [
+      "999.5",
+      "1000"
+    ],
+    [
+      "1000",
+      "1k"
+    ],
+    [
+      "1049",
+      "1k"
+    ],
+    [
+      "1050",
+      "1.1k"
+    ],
+    [
+      "9949",
+      "9.9k"
+    ],
+    [
+      "9950",
+      "9.9k"
+    ],
+    [
+      "59999",
+      "60k"
+    ],
+    [
+      "60000",
+      "60k"
+    ],
+    [
+      "61000",
+      "61k"
+    ],
+    [
+      "999499",
+      "999k"
+    ],
+    [
+      "999500",
+      "1000k"
+    ],
+    [
+      "1000000",
+      "1M"
+    ],
+    [
+      "3599999",
+      "3.6M"
+    ],
+    [
+      "3600000",
+      "3.6M"
+    ],
+    [
+      "9999999",
+      "10M"
+    ],
+    [
+      "86399999",
+      "86M"
+    ],
+    [
+      "172799999",
+      "173M"
+    ],
+    [
+      "172800000",
+      "173M"
+    ],
+    [
+      "1000000000",
+      "1B"
+    ],
+    [
+      "1500000000",
+      "1.5B"
+    ],
+    [
+      "1000000000000",
+      "1000B"
+    ]
+  ]
+}

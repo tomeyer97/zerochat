@@ -1,0 +1,220 @@
+# CI for every pull request and every push to main.
+# Required checks: fmt, clippy, test-linux, web, goldens. test-macos and audit run but do not block a merge.
+# Every action is pinned by full commit SHA (the version is in the comment); no secrets; read-only token.
+
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# A new push to a pull request cancels its older runs; runs on main always finish.
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_INCREMENTAL: 0
+  RUST_BACKTRACE: 1
+  # Node: the oldest version web/package.json's engines allow (the same as .nvmrc).
+  NODE_VERSION: 22.22.2
+  # Rust, until rust-toolchain.toml pins it (then the file wins, see "Install Rust").
+  RUST_VERSION: 1.90.0
+
+jobs:
+  fmt:
+    name: fmt
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: |
+          if [ -f rust-toolchain.toml ]; then rustup toolchain install
+          else rustup toolchain install "$RUST_VERSION" --profile minimal --component rustfmt,clippy && rustup default "$RUST_VERSION"
+          fi
+          rustc --version
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm --prefix web ci
+      - run: cargo fmt --all --check
+      - run: npm --prefix web run lint
+
+  clippy:
+    name: clippy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: |
+          if [ -f rust-toolchain.toml ]; then rustup toolchain install
+          else rustup toolchain install "$RUST_VERSION" --profile minimal --component rustfmt,clippy && rustup default "$RUST_VERSION"
+          fi
+          rustc --version
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+
+  test-linux:
+    name: test-linux
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: |
+          if [ -f rust-toolchain.toml ]; then rustup toolchain install
+          else rustup toolchain install "$RUST_VERSION" --profile minimal --component rustfmt,clippy && rustup default "$RUST_VERSION"
+          fi
+          rustc --version
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      # zsf's tests and goldens need a TMPDIR whose path has no symlink in it.
+      - name: Resolve TMPDIR
+        run: echo "TMPDIR=$(cd "$RUNNER_TEMP" && pwd -P)" >> "$GITHUB_ENV"
+      # The server embeds web/dist at compile time, so the web UI is built first.
+      - run: npm --prefix web ci
+      - run: npm --prefix web run build
+      - name: Cargo.lock is up to date
+        run: cargo fetch --locked
+      - run: cargo test --workspace
+      - run: node --test npm/test/*.test.js
+
+  test-macos:
+    name: test-macos
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: |
+          if [ -f rust-toolchain.toml ]; then rustup toolchain install
+          else rustup toolchain install "$RUST_VERSION" --profile minimal --component rustfmt,clippy && rustup default "$RUST_VERSION"
+          fi
+          rustc --version
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      # macOS's default TMPDIR (/var/folders/...) is behind the /var -> /private/var symlink.
+      - name: Resolve TMPDIR
+        run: echo "TMPDIR=$(cd "$RUNNER_TEMP" && pwd -P)" >> "$GITHUB_ENV"
+      - run: npm --prefix web ci
+      - run: npm --prefix web run build
+      - name: Cargo.lock is up to date
+        run: cargo fetch --locked
+      - run: cargo test --workspace
+      - run: node --test npm/test/*.test.js
+
+  web:
+    name: web
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm --prefix web ci
+      - run: npm --prefix web run typecheck
+      - run: npm --prefix web test
+      - run: npm --prefix web run build
+
+  goldens:
+    name: goldens
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        run: |
+          if [ -f rust-toolchain.toml ]; then rustup toolchain install
+          else rustup toolchain install "$RUST_VERSION" --profile minimal --component rustfmt,clippy && rustup default "$RUST_VERSION"
+          fi
+          rustc --version
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Resolve TMPDIR
+        run: echo "TMPDIR=$(cd "$RUNNER_TEMP" && pwd -P)" >> "$GITHUB_ENV"
+      # Rust goldens (zerochat + zsf) and the web goldens; tests/GOLDENS.md.
+      - run: make goldens
+
+  audit:
+    name: audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CARGO_DENY_VERSION: 0.22.0
+      # sha256 of cargo-deny-0.22.0-x86_64-unknown-linux-musl.tar.gz (the release's .sha256 file).
+      CARGO_DENY_SHA256: 98c56e6a408bfa5c3c60744b6015aaa6aa08f743fdeb88386d06fca035bb1786
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # cargo-deny reads the dependency graph with `cargo metadata`.
+      - name: Install Rust
+        run: |
+          if [ -f rust-toolchain.toml ]; then rustup toolchain install
+          else rustup toolchain install "$RUST_VERSION" --profile minimal --component rustfmt,clippy && rustup default "$RUST_VERSION"
+          fi
+          rustc --version
+      - name: Install cargo-deny (pinned release, checksum checked)
+        run: |
+          name="cargo-deny-${CARGO_DENY_VERSION}-x86_64-unknown-linux-musl"
+          cd "$RUNNER_TEMP"
+          curl --proto '=https' --tlsv1.2 -fsSL -o "$name.tar.gz" \
+            "https://github.com/EmbarkStudios/cargo-deny/releases/download/${CARGO_DENY_VERSION}/$name.tar.gz"
+          echo "$CARGO_DENY_SHA256  $name.tar.gz" | sha256sum --check --strict
+          tar -xzf "$name.tar.gz"
+          mkdir -p "$RUNNER_TEMP/bin"
+          mv "$name/cargo-deny" "$RUNNER_TEMP/bin/"
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+      # Advisories (RustSec), licences, bans and sources, as configured in deny.toml.
+      - run: cargo deny check advisories licenses bans sources
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      # Known vulnerabilities in the web UI's production dependencies (what ships in web/dist).
+      - run: npm --prefix web audit --omit=dev --audit-level=high

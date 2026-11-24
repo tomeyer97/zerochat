@@ -1,0 +1,26 @@
+[
+  [
+    "nothing",
+    ""
+  ],
+  [
+    "one set",
+    "dev"
+  ],
+  [
+    "two sets",
+    "dev,holdout"
+  ],
+  [
+    "sets and ids",
+    "dev,holdout,cheat__cheat.b8098dc,unknown-task,cheat__cheat.b8098dc"
+  ],
+  [
+    "unknown set name",
+    "no-such-set"
+  ],
+  [
+    "every set",
+    "dev,holdout,k8s,smoke,r1-screen-spec2,r1-ctrl-diffloop,r2-hermetic,r2-hermetic2,r3-noaccept,r3-h2-noaccept,clone-v1-sonnet-build,clone-v1,ctrlc-test,haiku-adversarial,haiku-prototype-plan,k8s-sc-sonnet5,replay-build-haiku,replay-build-sonnet,replay-sonnet-explore-haiku-build,sc-template-haiku,smoke-haiku,sweep:sweep-triage-repair:repair#1:claude-haiku-4-5,sweep:sweep-triage-repair:repair#1:claude-sonnet-5,sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5,sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5,ticket-v1,cheat__cheat.b8098dc,k8s-job-backoff-limit-per-index,mibk__dupl.1bf052b,tomnomnom__gron.88a6234,yaa110__nomino.f892499"
+  ]
+]

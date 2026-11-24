@@ -1,0 +1,5 @@
+17:00:09 [20261108-170009-2845db yaa110__nomino.f892499 s0] start label='r3-h2-noaccept' version=1cbce021e7 model=per-node art=/data/pb/runs/20261108-170009-2845db
+17:00:10 [20261108-170009-2845db yaa110__nomino.f892499 s0] sandbox up; launching zeroshot
+17:00:16 [20261108-170009-2845db yaa110__nomino.f892499 s0] node start  explore (exec 1, attempt 1)
+17:06:08 [20261108-170009-2845db yaa110__nomino.f892499 s0] node done   explore -> verified 
+17:06:14 [20261108-170009-2845db yaa110__nomino.f892499 s0] node start  build (exec 2, attempt 1)

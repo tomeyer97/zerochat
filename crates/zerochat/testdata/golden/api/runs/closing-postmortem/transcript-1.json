@@ -1,0 +1,85 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 1500,
+      "endSeq": 5,
+      "endedAt": 1795000363000,
+      "error": {
+        "code": "crash",
+        "reason": "provider_failure"
+      },
+      "errorLines": [
+        "Node code failed: crash after 2.0s: node execution failed: provider failure: API Error: 500 Internal Server Error"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795000362500,
+      "logLines": 1,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "code",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": "provider_failure",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795000361500,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000001",
+        "commit": "0000000000000000000000000000000000000065",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Implement the task.",
+    "sourceNote": "Claude's session log could not be matched to this node (this Zeroshot does not record the session id).",
+    "transcript": {
+      "items": [
+        {
+          "at": 1795000362500,
+          "kind": "error",
+          "text": "Node code failed: crash after 2.0s: node execution failed: provider failure: API Error: 500 Internal Server Error"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

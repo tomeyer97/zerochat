@@ -1,0 +1,12 @@
+{
+  "body": {
+    "commit": null,
+    "paths": [
+      "NOTES.md",
+      "README.md",
+      "tests/test_core.py",
+      "textkit/core.py"
+    ]
+  },
+  "status": 200
+}

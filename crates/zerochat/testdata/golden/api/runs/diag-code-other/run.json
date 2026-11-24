@@ -1,0 +1,294 @@
+{
+  "body": {
+    "backgroundAgents": [],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": null,
+    "costEstimated": false,
+    "costUsd": null,
+    "createdAt": 1795000840000,
+    "cursor": 11,
+    "endedAt": 1795000846600,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": null,
+        "costUsd": null,
+        "diagnostic": null,
+        "durationMs": 5100,
+        "endSeq": 10,
+        "endedAt": 1795000846600,
+        "error": {
+          "code": "weird_code",
+          "reason": null
+        },
+        "errorLines": [
+          "something unexpected"
+        ],
+        "harness": "claude",
+        "id": 1,
+        "input": {
+          "task": "Add slugify() to textkit."
+        },
+        "lastActivityAt": 1795000846100,
+        "logLines": 6,
+        "mapIndices": [],
+        "model": "claude-haiku-4-5",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "code": "weird_code",
+          "reason": null,
+          "status": "error"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": null,
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795000841500,
+        "state": "failed",
+        "timesApproximate": false,
+        "toolCalls": 1,
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "0000000000000000000000000000000000000001",
+          "commit": "0000000000000000000000000000000000000065",
+          "files": [
+            {
+              "additions": 12,
+              "deletions": 1,
+              "path": "textkit/core.py",
+              "status": "modified"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "0000000000000000000000000000000000000001"
+        }
+      }
+    ],
+    "failure": {
+      "actions": [
+        "replay",
+        "resume"
+      ],
+      "at": 1795000846600,
+      "attempt": 1,
+      "cause": "failed (weird_code)",
+      "class": "agent",
+      "closedAfterMs": null,
+      "closedByPostmortem": false,
+      "detail": "",
+      "execution": 1,
+      "exit": null,
+      "feedback": [],
+      "fix": null,
+      "fixCommand": null,
+      "intoRunMs": 5600,
+      "kept": [],
+      "lastErrors": [
+        "something unexpected"
+      ],
+      "node": "worker",
+      "nodeKind": "step",
+      "primary": null,
+      "reason": "worker_failed",
+      "resetsAt": null,
+      "round": 1,
+      "title": "worker failed (weird_code)"
+    },
+    "features": {
+      "exactTimes": true,
+      "providerCost": false,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "attempts": 1,
+            "instructions": "Do the task.",
+            "kind": "step",
+            "name": "worker",
+            "timeoutMs": 45000,
+            "worker": "builtin.agent.worker@1"
+          }
+        ],
+        "kind": "seq",
+        "name": "run"
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Do the task.",
+        "kind": "step",
+        "loops": [],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "worker",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": 45000,
+        "worker": "builtin.agent.worker@1"
+      }
+    ],
+    "initialInput": {
+      "task": "Add slugify() to textkit."
+    },
+    "lanes": [
+      {
+        "harness": "claude",
+        "model": "claude-haiku-4-5",
+        "nodes": [
+          "worker"
+        ],
+        "provider": "anthropic"
+      }
+    ],
+    "lastActivityAt": 1795000846100,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/diag-code-other/repo"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "nodes": {
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": null,
+        "elapsedMs": 5100,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "failed",
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1ee63-2f40-700e-800e-00000000000e",
+    "runLog": [
+      {
+        "at": 1795000841000,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795000841500,
+        "seq": 3,
+        "stream": "system",
+        "text": "worker started (claude-haiku-4-5)"
+      },
+      {
+        "at": 1795000846600,
+        "seq": 10,
+        "stream": "system",
+        "text": "worker failed: weird code"
+      }
+    ],
+    "runtime": {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": {
+        "worker": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        }
+      },
+      "provider": "anthropic"
+    },
+    "source": {
+      "branch": "main",
+      "repository": "example/textkit",
+      "revision": "0000000000000000000000000000000000000000"
+    },
+    "startedAt": 1795000841000,
+    "status": "failed",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "context": {
+        "recorded": [
+          {
+            "message": "Node worker failed: weird_code after 3.0s: node execution failed: provider failure: something unexpected; provider process exited with status 1"
+          }
+        ]
+      },
+      "reason": "worker_failed",
+      "status": "failed"
+    },
+    "title": "diag code other",
+    "usage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

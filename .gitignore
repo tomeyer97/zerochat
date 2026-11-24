@@ -1,0 +1,6 @@
+/target
+web/node_modules
+web/dist
+.zeroshot-e2e/
+__pycache__/
+.claude/

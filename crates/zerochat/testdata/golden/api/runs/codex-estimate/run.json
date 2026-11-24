@@ -1,0 +1,262 @@
+{
+  "body": {
+    "backgroundAgents": [],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": {
+      "attempt": 1,
+      "feature": "calc",
+      "kind": "slice",
+      "label": "Add mod()",
+      "line": "Slice 10 of calc · attempt 1",
+      "parent": "calc",
+      "slice": "10",
+      "task": "calc 10: Add mod()"
+    },
+    "costEstimated": false,
+    "costUsd": null,
+    "createdAt": 1795000420000,
+    "cursor": 7,
+    "endedAt": 1795000423000,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": null,
+        "costUsd": null,
+        "diagnostic": null,
+        "durationMs": 1500,
+        "endSeq": 6,
+        "endedAt": 1795000423000,
+        "error": null,
+        "errorLines": [],
+        "harness": "codex",
+        "id": 1,
+        "input": {
+          "task": "Add slugify() to textkit."
+        },
+        "lastActivityAt": 1795000422500,
+        "logLines": 1,
+        "mapIndices": [],
+        "model": "gpt-5-codex",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "artifacts": [],
+          "output": null,
+          "status": "verified"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": null,
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795000421500,
+        "state": "succeeded",
+        "timesApproximate": false,
+        "toolCalls": 0,
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 40000,
+          "inputTokens": 50000,
+          "outputTokens": 3000
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "0000000000000000000000000000000000000001",
+          "commit": "0000000000000000000000000000000000000065",
+          "files": [
+            {
+              "additions": 12,
+              "deletions": 1,
+              "path": "textkit/core.py",
+              "status": "modified"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "0000000000000000000000000000000000000001"
+        }
+      }
+    ],
+    "failure": null,
+    "features": {
+      "exactTimes": true,
+      "providerCost": false,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "attempts": 1,
+            "instructions": "Do the task.",
+            "kind": "step",
+            "name": "worker",
+            "timeoutMs": 45000,
+            "worker": "builtin.agent.worker@1"
+          }
+        ],
+        "kind": "seq",
+        "name": "run"
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "codex",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "openai",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "codex",
+        "instructions": "Do the task.",
+        "kind": "step",
+        "loops": [],
+        "maxIterations": null,
+        "model": "gpt-5-codex",
+        "name": "worker",
+        "parent": "run",
+        "provider": "openai",
+        "timeoutMs": 45000,
+        "worker": "builtin.agent.worker@1"
+      }
+    ],
+    "initialInput": {
+      "task": "Add slugify() to textkit."
+    },
+    "lanes": [
+      {
+        "harness": "codex",
+        "model": "gpt-5-codex",
+        "nodes": [
+          "worker"
+        ],
+        "provider": "openai"
+      }
+    ],
+    "lastActivityAt": 1795000422500,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/codex-estimate/repo"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 40000,
+      "inputTokens": 50000,
+      "outputTokens": 3000
+    },
+    "nodes": {
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": null,
+        "elapsedMs": 1500,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "succeeded",
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 40000,
+          "inputTokens": 50000,
+          "outputTokens": 3000
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1ee5c-c6a0-7007-8007-000000000007",
+    "runLog": [
+      {
+        "at": 1795000421000,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795000421500,
+        "seq": 3,
+        "stream": "system",
+        "text": "worker started (gpt-5-codex)"
+      },
+      {
+        "at": 1795000423000,
+        "seq": 6,
+        "stream": "system",
+        "text": "worker finished"
+      }
+    ],
+    "runtime": {
+      "harness": "codex",
+      "model": "gpt-5-codex",
+      "nodes": {
+        "worker": {
+          "connections": {
+            "openai": [
+              "OPENAI_API_KEY"
+            ]
+          },
+          "kind": "agent",
+          "model": "gpt-5-codex"
+        }
+      },
+      "provider": "openai"
+    },
+    "source": {
+      "branch": "main",
+      "repository": "example/textkit",
+      "revision": "0000000000000000000000000000000000000000"
+    },
+    "startedAt": 1795000421000,
+    "status": "succeeded",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "output": null,
+      "status": "succeeded"
+    },
+    "title": "codex estimate",
+    "usage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 40000,
+      "inputTokens": 50000,
+      "outputTokens": 3000
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

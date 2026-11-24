@@ -1,0 +1,135 @@
+{
+  "runs": {
+    "admitted-only": "01a1ee59",
+    "attempts-exhausted": "01a1ee5a",
+    "checkout-unavailable": "01a1ee5a",
+    "closing-postmortem": "01a1ee5b",
+    "codex-estimate": "01a1ee5c",
+    "copilot-session": "01a1ee5d",
+    "delivery-failed": "01a1ee5e",
+    "diag-api-hang": "01a1ee8a",
+    "diag-code-authentication-required": "01a1ee5f",
+    "diag-code-crash": "01a1ee60",
+    "diag-code-input-required": "01a1ee61",
+    "diag-code-malformed-result": "01a1ee62",
+    "diag-code-other": "01a1ee63",
+    "diag-code-policy-denied": "01a1ee64",
+    "diag-code-refusal": "01a1ee65",
+    "diag-code-timeout": "01a1ee65",
+    "diag-context": "01a1ee66",
+    "diag-credentials": "01a1ee67",
+    "diag-disk": "01a1ee68",
+    "diag-malformed-stream": "01a1ee69",
+    "diag-missing-cli": "01a1ee6a",
+    "diag-model": "01a1ee6b",
+    "diag-network": "01a1ee6c",
+    "diag-permission": "01a1ee6d",
+    "diag-provider-down": "01a1ee6e",
+    "diag-provider-timeout": "01a1ee6f",
+    "diag-rate-limit": "01a1ee70",
+    "diag-stream-cut": "01a1ee70",
+    "diag-usage-limit": "01a1ee71",
+    "force-stopped": "01a1ee72",
+    "fork-only/fork-bad-credentials": "01a1f8c8",
+    "fork-only/fork-chaos-transient": "01a1f8c8",
+    "fork-only/fork-chaos-usage-limit": "01a1f8c8",
+    "fork-only/fork-controller-killed": "01a1f8c8",
+    "fork-only/fork-force-stopped": "01a1f8c8",
+    "fork-only/fork-happy-path": "01a1f8c8",
+    "fork-only/fork-late-failure": "01a1f8c8",
+    "fork-only/fork-replay": "01a1f8c9",
+    "fork-only/fork-resumed": "01a1f8c9",
+    "fork-only/fork-reviewer-never-satisfied": "01a1f8c8",
+    "fork-only/fork-steered": "01a1f8c8",
+    "fork-only/fork-unknown-model": "01a1f8c8",
+    "fork-only/fork-worker-timeout": "01a1f8c8",
+    "fork-only/replay-child": "01a1ee76",
+    "fork-only/replay-parent": "01a1ee57",
+    "fork-only/steered": "01a1ee81",
+    "graph-ended-other": "01a1ee73",
+    "lane-mixed": "01a1ee86",
+    "lane-unknown-harness": "01a1ee87",
+    "map-parallel": "01a1ee74",
+    "no-checkpoints": "01a1ee75",
+    "resumed-original": "01a1ee58",
+    "resumed-successor": "01a1ee77",
+    "running-live": "01a1ee87",
+    "running-stock": "01a1ee8b",
+    "runtime-failed-checkpoint": "01a1ee7a",
+    "runtime-failed-permission": "01a1ee7a",
+    "runtime-failed-storage": "01a1ee7b",
+    "runtime-failed-unknown": "01a1ee7c",
+    "runtime-lost": "01a1ee7d",
+    "stalled": "01a1ee7e",
+    "stalled-disk": "01a1ee7f",
+    "stalled-live-usage": "01a1ee80",
+    "stalled-then-closed": "01a1ee88",
+    "succeeded": "01a1ee82",
+    "succeeded-stock": "01a1ee83",
+    "tool-output-rate-limit": "01a1ee8c",
+    "unknown-phase": "01a1ee84",
+    "voided": "01a1ee85",
+    "work-exhausted": "01a1ee85",
+    "zeroshot-16/zeroshot16-normal": "01a1f8c8",
+    "zeroshot-16/zeroshot16-steered": "01a1f8c8",
+    "zeroshot-16/zeroshot16-unknown-model": "01a1f8c8"
+  },
+  "table": [
+    [
+      "null",
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    [
+      "undefined",
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    [
+      "\"\"",
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    [
+      "\"abc\"",
+      [
+        "abc",
+        "abc",
+        ""
+      ]
+    ],
+    [
+      "\"12345678\"",
+      [
+        "12345678",
+        "1234",
+        ""
+      ]
+    ],
+    [
+      "\"123456789\"",
+      [
+        "12345678",
+        "1234",
+        ""
+      ]
+    ],
+    [
+      "\"0190c3a2-7b1e-7c00-8000-00000000abcd\"",
+      [
+        "0190c3a2",
+        "0190",
+        ""
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "runs": {
+    "admitted-only": "Nov 18, 11:09:40 AM",
+    "attempts-exhausted": "Nov 18, 11:10:40 AM",
+    "checkout-unavailable": "Nov 18, 11:11:40 AM",
+    "closing-postmortem": "Nov 18, 11:12:40 AM",
+    "codex-estimate": "Nov 18, 11:13:40 AM",
+    "copilot-session": "Nov 18, 11:14:40 AM",
+    "delivery-failed": "Nov 18, 11:15:40 AM",
+    "diag-api-hang": "Nov 18, 12:03:40 PM",
+    "diag-code-authentication-required": "Nov 18, 11:16:40 AM",
+    "diag-code-crash": "Nov 18, 11:17:40 AM",
+    "diag-code-input-required": "Nov 18, 11:18:40 AM",
+    "diag-code-malformed-result": "Nov 18, 11:19:40 AM",
+    "diag-code-other": "Nov 18, 11:20:40 AM",
+    "diag-code-policy-denied": "Nov 18, 11:21:40 AM",
+    "diag-code-refusal": "Nov 18, 11:22:40 AM",
+    "diag-code-timeout": "Nov 18, 11:23:40 AM",
+    "diag-context": "Nov 18, 11:24:40 AM",
+    "diag-credentials": "Nov 18, 11:25:40 AM",
+    "diag-disk": "Nov 18, 11:26:40 AM",
+    "diag-malformed-stream": "Nov 18, 11:27:40 AM",
+    "diag-missing-cli": "Nov 18, 11:28:40 AM",
+    "diag-model": "Nov 18, 11:29:40 AM",
+    "diag-network": "Nov 18, 11:30:40 AM",
+    "diag-permission": "Nov 18, 11:31:40 AM",
+    "diag-provider-down": "Nov 18, 11:32:40 AM",
+    "diag-provider-timeout": "Nov 18, 11:33:40 AM",
+    "diag-rate-limit": "Nov 18, 11:34:40 AM",
+    "diag-stream-cut": "Nov 18, 11:35:40 AM",
+    "diag-usage-limit": "Nov 18, 11:36:40 AM",
+    "force-stopped": "Nov 18, 11:37:40 AM",
+    "fork-only/fork-bad-credentials": "Nov 20, 11:47:19 AM",
+    "fork-only/fork-chaos-transient": "Nov 20, 11:47:33 AM",
+    "fork-only/fork-chaos-usage-limit": "Nov 20, 11:47:37 AM",
+    "fork-only/fork-controller-killed": "Nov 20, 11:47:27 AM",
+    "fork-only/fork-force-stopped": "Nov 20, 11:47:24 AM",
+    "fork-only/fork-happy-path": "Nov 20, 11:47:09 AM",
+    "fork-only/fork-late-failure": "Nov 20, 11:47:22 AM",
+    "fork-only/fork-replay": "Nov 20, 11:48:51 AM",
+    "fork-only/fork-resumed": "Nov 20, 11:48:31 AM",
+    "fork-only/fork-reviewer-never-satisfied": "Nov 20, 11:47:12 AM",
+    "fork-only/fork-steered": "Nov 20, 11:47:30 AM",
+    "fork-only/fork-unknown-model": "Nov 20, 11:47:06 AM",
+    "fork-only/fork-worker-timeout": "Nov 20, 11:47:16 AM",
+    "fork-only/replay-child": "Nov 18, 11:41:40 AM",
+    "fork-only/replay-parent": "Nov 18, 11:07:40 AM",
+    "fork-only/steered": "Nov 18, 11:53:40 AM",
+    "graph-ended-other": "Nov 18, 11:38:40 AM",
+    "lane-mixed": "Nov 18, 11:59:40 AM",
+    "lane-unknown-harness": "Nov 18, 12:00:40 PM",
+    "map-parallel": "Nov 18, 11:39:40 AM",
+    "no-checkpoints": "Nov 18, 11:40:40 AM",
+    "resumed-original": "Nov 18, 11:08:40 AM",
+    "resumed-successor": "Nov 18, 11:42:40 AM",
+    "running-live": "Nov 18, 12:00:00 PM",
+    "running-stock": "Nov 18, 12:05:00 PM",
+    "runtime-failed-checkpoint": "Nov 18, 11:45:40 AM",
+    "runtime-failed-permission": "Nov 18, 11:46:40 AM",
+    "runtime-failed-storage": "Nov 18, 11:47:40 AM",
+    "runtime-failed-unknown": "Nov 18, 11:48:40 AM",
+    "runtime-lost": "Nov 18, 11:49:40 AM",
+    "stalled": "Nov 18, 11:50:40 AM",
+    "stalled-disk": "Nov 18, 11:51:40 AM",
+    "stalled-live-usage": "Nov 18, 11:52:40 AM",
+    "stalled-then-closed": "Nov 18, 12:01:40 PM",
+    "succeeded": "Nov 18, 11:54:40 AM",
+    "succeeded-stock": "Nov 18, 11:55:40 AM",
+    "tool-output-rate-limit": "Nov 18, 12:05:40 PM",
+    "unknown-phase": "Nov 18, 11:56:40 AM",
+    "voided": "Nov 18, 11:57:40 AM",
+    "work-exhausted": "Nov 18, 11:58:40 AM",
+    "zeroshot-16/zeroshot16-normal": "Nov 20, 11:47:40 AM",
+    "zeroshot-16/zeroshot16-steered": "Nov 20, 11:47:43 AM",
+    "zeroshot-16/zeroshot16-unknown-model": "Nov 20, 11:47:46 AM"
+  },
+  "table": [
+    [
+      "null",
+      [
+        "—",
+        "—",
+        "—"
+      ]
+    ],
+    [
+      "undefined",
+      [
+        "—",
+        "—",
+        "—"
+      ]
+    ],
+    [
+      "0",
+      [
+        "Jan 1, 1970, 12:00:00 AM",
+        "Jan 1, 1970, 12:00:00 AM",
+        "Jan 1, 1970, 12:00:00 AM"
+      ]
+    ],
+    [
+      "1795003600000",
+      [
+        "Nov 18, 12:06:40 PM",
+        "Nov 18, 12:06:40 PM",
+        "Nov 18, 2026, 12:06:40 PM"
+      ]
+    ],
+    [
+      "1795003599999",
+      [
+        "Nov 18, 12:06:39 PM",
+        "Nov 18, 12:06:39 PM",
+        "Nov 18, 2026, 12:06:39 PM"
+      ]
+    ],
+    [
+      "1795003555001",
+      [
+        "Nov 18, 12:05:55 PM",
+        "Nov 18, 12:05:55 PM",
+        "Nov 18, 2026, 12:05:55 PM"
+      ]
+    ],
+    [
+      "1795003555000",
+      [
+        "Nov 18, 12:05:55 PM",
+        "Nov 18, 12:05:55 PM",
+        "Nov 18, 2026, 12:05:55 PM"
+      ]
+    ],
+    [
+      "1795003510001",
+      [
+        "Nov 18, 12:05:10 PM",
+        "Nov 18, 12:05:10 PM",
+        "Nov 18, 2026, 12:05:10 PM"
+      ]
+    ],
+    [
+      "1795000030000",
+      [
+        "Nov 18, 11:07:10 AM",
+        "Nov 18, 11:07:10 AM",
+        "Nov 18, 2026, 11:07:10 AM"
+      ]
+    ],
+    [
+      "1794917200000",
+      [
+        "Nov 17, 12:06:40 PM",
+        "Nov 17, 12:06:40 PM",
+        "Nov 17, 2026, 12:06:40 PM"
+      ]
+    ],
+    [
+      "1793880400000",
+      [
+        "Nov 5, 12:06:40 PM",
+        "Nov 5, 12:06:40 PM",
+        "Nov 5, 2026, 12:06:40 PM"
+      ]
+    ],
+    [
+      "1793794000000",
+      [
+        "Nov 4, 12:06:40 PM",
+        "Nov 4, 12:06:40 PM",
+        "Nov 4, 2026, 12:06:40 PM"
+      ]
+    ],
+    [
+      "1760443600000",
+      [
+        "Oct 14, 2025, 12:06:40 PM",
+        "Oct 14, 2025, 12:06:40 PM",
+        "Oct 14, 2025, 12:06:40 PM"
+      ]
+    ],
+    [
+      "1795007200000",
+      [
+        "Nov 18, 1:06:40 PM",
+        "Nov 18, 1:06:40 PM",
+        "Nov 18, 2026, 1:06:40 PM"
+      ]
+    ],
+    [
+      "1767225600000",
+      [
+        "Jan 1, 12:00:00 AM",
+        "Jan 1, 12:00:00 AM",
+        "Jan 1, 2026, 12:00:00 AM"
+      ]
+    ],
+    [
+      "1767225599000",
+      [
+        "Dec 31, 2025, 11:59:59 PM",
+        "Dec 31, 2025, 11:59:59 PM",
+        "Dec 31, 2025, 11:59:59 PM"
+      ]
+    ],
+    [
+      "1795132800000",
+      [
+        "Nov 20, 12:00:00 AM",
+        "Nov 20, 12:00:00 AM",
+        "Nov 20, 2026, 12:00:00 AM"
+      ]
+    ],
+    [
+      "1795219199000",
+      [
+        "Nov 20, 11:59:59 PM",
+        "Nov 20, 11:59:59 PM",
+        "Nov 20, 2026, 11:59:59 PM"
+      ]
+    ],
+    [
+      "1795089600000",
+      [
+        "Nov 19, 12:00:00 PM",
+        "Nov 19, 12:00:00 PM",
+        "Nov 19, 2026, 12:00:00 PM"
+      ]
+    ]
+  ]
+}

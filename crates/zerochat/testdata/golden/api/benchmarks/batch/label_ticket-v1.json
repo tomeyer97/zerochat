@@ -1,0 +1,184 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 90.0,
+        "capSteps": 24,
+        "capUsd": 10.0,
+        "costUsd": 3.5436976,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-153020-39acd7",
+        "score": 0.584821429,
+        "seed": 0,
+        "startedAt": 1793716220153,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 131,
+        "testsTotal": 224,
+        "wallS": 1500.702454805,
+        "zeroshotRunId": "01a1a1d1-773a-77a0-843c-1b5fe41dbc5b"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.584821429,
+        "mean": 0.584821429,
+        "min": 0.584821429,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793717579438,
+    "harnessVersion": "a6d4d43b",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "intake",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "recon",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "testfirst",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "build",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "trace",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "adversary",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "quality",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "triage",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "deliver",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 3,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 1,
+        "runtimeFile": null,
+        "runtimeMatches": true,
+        "source": "variant",
+        "variant": "ticket-v1"
+      }
+    ],
+    "id": "label:ticket-v1",
+    "label": "ticket-v1",
+    "limits": {
+      "maxCostUsd": 10.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 90.0
+    },
+    "maxScore": 0.584821429,
+    "meanScore": 0.584821429,
+    "meanScoreFinished": null,
+    "minScore": 0.584821429,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.584821429,
+        "mean": 0.584821429,
+        "min": 0.584821429,
+        "n": 1
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1793716220153,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 3.5436976,
+    "totalWallS": 1500.702454805,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

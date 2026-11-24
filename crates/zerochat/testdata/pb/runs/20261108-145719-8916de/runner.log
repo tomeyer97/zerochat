@@ -1,0 +1,15 @@
+14:57:19 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] start label='r2-hermetic' version=bb5e174caf model=per-node art=/data/pb/runs/20261108-145719-8916de
+14:57:20 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] sandbox up; launching zeroshot
+14:57:26 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start  explore (exec 1, attempt 1)
+15:02:23 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node done   explore -> verified 
+15:02:25 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start  build (exec 2, attempt 1)
+15:13:54 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node done   build -> verified 
+15:13:58 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start  oracle (exec 3, attempt 1)
+15:15:18 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node done   oracle -> verifier rejected
+15:15:22 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start  repair (exec 4, attempt 1)
+15:20:13 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node done   repair -> verified 
+15:20:17 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start  oracle (exec 5, attempt 1)
+15:24:59 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node done   oracle -> verifier rejected
+15:25:03 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start  repair (exec 6, attempt 1)
+15:27:02 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node done   repair -> verified 
+15:27:06 [20261108-145719-8916de tomnomnom__gron.88a6234 s2] node start …[fixture: 2002 more characters cut]

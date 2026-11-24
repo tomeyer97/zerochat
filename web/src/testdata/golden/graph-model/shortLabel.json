@@ -1,0 +1,55 @@
+{
+  "edges": [
+    [
+      "",
+      "",
+      ""
+    ],
+    [
+      "any errored",
+      "any errored",
+      "any error…"
+    ],
+    [
+      "both accepted",
+      "both accepted",
+      "both acce…"
+    ],
+    [
+      "errored",
+      "errored",
+      "errored"
+    ],
+    [
+      "otherwise",
+      "otherwise",
+      "otherwise"
+    ]
+  ],
+  "table": [
+    [
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "…",
+      "xxxxxxxxxxxxxxxxxxxxxxxxx…"
+    ],
+    [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxx…",
+      "…",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxx…"
+    ],
+    [
+      "é😀é😀é😀é😀é😀é😀é😀é😀é😀é😀",
+      "é😀é😀é😀é😀é😀é😀é😀é😀é…",
+      "…",
+      "é😀é😀é😀é😀é😀é😀é😀é😀é😀é\ud83d…"
+    ]
+  ]
+}

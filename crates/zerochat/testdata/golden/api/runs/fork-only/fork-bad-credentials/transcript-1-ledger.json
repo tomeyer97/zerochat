@@ -1,0 +1,119 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0,
+      "diagnostic": null,
+      "durationMs": 17588,
+      "endSeq": 17,
+      "endedAt": 1795175261873,
+      "error": {
+        "code": "crash",
+        "reason": "declared_failure"
+      },
+      "errorLines": [
+        "Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1",
+        "Node worker failed: crash after 17.5s: node execution failed: Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+      },
+      "lastActivityAt": 1795175261873,
+      "logLines": 11,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": "declared_failure",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 4,
+      "reused": false,
+      "round": 1,
+      "sessionId": "08f4c5cc-3c38-4876-94c6-13d418507e0d",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175244285,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "c7d6cc9d6e29b09aa34e6ce713d14e37fbb38554",
+        "commit": "c7d6cc9d6e29b09aa34e6ce713d14e37fbb38554",
+        "files": []
+      },
+      "workspaceStart": {
+        "commit": "c7d6cc9d6e29b09aa34e6ce713d14e37fbb38554"
+      }
+    },
+    "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795175252181,
+          "kind": "retry",
+          "text": "retried 1 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175252983,
+          "kind": "retry",
+          "text": "retried 2 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175254130,
+          "kind": "text",
+          "text": "Failed to authenticate. API Error: 401 OAuth access token is invalid."
+        },
+        {
+          "at": 1795175255152,
+          "kind": "error",
+          "text": "Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+        },
+        {
+          "at": 1795175255152,
+          "kind": "system",
+          "text": "Claude provider failed; continuing once"
+        },
+        {
+          "at": 1795175258852,
+          "kind": "retry",
+          "text": "retried 1 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175259555,
+          "kind": "retry",
+          "text": "retried 2 of 10 (authentication failed)"
+        },
+        {
+          "at": 1795175260758,
+          "kind": "text",
+          "text": "Failed to authenticate. API Error: 401 OAuth access token is invalid."
+        },
+        {
+          "at": 1795175261873,
+          "kind": "error",
+          "text": "Node worker failed: crash after 17.5s: node execution failed: Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

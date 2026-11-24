@@ -1,0 +1,9047 @@
+{
+  "admitted-only": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "attempts-exhausted": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 3,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "checkout-unavailable": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "closing-postmortem": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"closing-postmortem\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"closing-postmortem\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"closing-postmortem\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"closing-postmortem\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "codex-estimate": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"codex-estimate\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"codex-estimate\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"codex-estimate\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"codex-estimate\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "copilot-session": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"copilot-session\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"copilot-session\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"copilot-session\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"copilot-session\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "delivery-failed": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"delivery-failed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-api-hang": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-api-hang\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-api-hang\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-api-hang\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-api-hang\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-authentication-required": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-authentication-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-authentication-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-authentication-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-authentication-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-crash": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-crash\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-crash\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-crash\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-crash\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-input-required": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-input-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-input-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-input-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-input-required\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-malformed-result": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-malformed-result\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-malformed-result\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-malformed-result\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-malformed-result\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-other": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-policy-denied": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-policy-denied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-policy-denied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-policy-denied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-policy-denied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-refusal": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-refusal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-refusal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-refusal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-refusal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-code-timeout": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-code-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-context": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-context\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-context\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-context\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-context\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-credentials": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-disk": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-malformed-stream": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-malformed-stream\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-malformed-stream\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-malformed-stream\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-malformed-stream\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-missing-cli": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-missing-cli\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-missing-cli\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-missing-cli\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-missing-cli\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-model": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-network": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-network\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-network\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-network\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-network\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-permission": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-provider-down": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-down\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-down\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-down\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-down\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-provider-timeout": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-provider-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-rate-limit": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-stream-cut": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-stream-cut\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-stream-cut\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-stream-cut\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-stream-cut\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "diag-usage-limit": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"diag-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"diag-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "force-stopped": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-bad-credentials": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-bad-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-bad-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-bad-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-bad-credentials\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-chaos-transient": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-transient\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-transient\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-transient\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-transient\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-chaos-usage-limit": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-controller-killed": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-force-stopped": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-happy-path": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-happy-path\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-late-failure": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-late-failure\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-replay": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-replay\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-resumed": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-resumed\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-reviewer-never-satisfied": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 4,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1004,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 5,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1005,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 6,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1006,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-steered": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-unknown-model": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/fork-worker-timeout": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-worker-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-worker-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-worker-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/fork-worker-timeout\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/replay-child": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-child\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/replay-parent": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/replay-parent\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "fork-only/steered": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"fork-only/steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "graph-ended-other": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"graph-ended-other\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "lane-mixed": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"lane-mixed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"lane-mixed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"lane-mixed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"lane-mixed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "lane-unknown-harness": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"lane-unknown-harness\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"lane-unknown-harness\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"lane-unknown-harness\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"lane-unknown-harness\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "map-parallel": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "fix"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "fix"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "fix",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "fix",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "fix"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "fix"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "fix"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "fix"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "fix",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "fix",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "fix"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "fix"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "summarize"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "summarize",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "summarize",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "summarize",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "summarize"
+      },
+      {
+        "execution": "<ref:runs[\"map-parallel\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "summarize"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "no-checkpoints": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"no-checkpoints\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"no-checkpoints\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"no-checkpoints\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"no-checkpoints\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "resumed-original": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-original\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-original\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-original\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-original\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "resumed-successor": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"resumed-successor\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "running-live": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 4,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1004,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 3,
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 5,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"running-live\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1005,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "running-stock": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"running-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"running-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"running-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "runtime-failed-checkpoint": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-checkpoint\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-checkpoint\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-checkpoint\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-checkpoint\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "runtime-failed-permission": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-permission\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "runtime-failed-storage": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-storage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-storage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-storage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-storage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "runtime-failed-unknown": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-unknown\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-unknown\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-unknown\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-failed-unknown\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "runtime-lost": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-lost\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-lost\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"runtime-lost\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"runtime-lost\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "stalled": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.stalled.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.stalled.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.stalled.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.stalled.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "stalled-disk": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"stalled-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"stalled-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"stalled-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"stalled-disk\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "stalled-live-usage": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"stalled-live-usage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"stalled-live-usage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"stalled-live-usage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"stalled-live-usage\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "stalled-then-closed": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"stalled-then-closed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"stalled-then-closed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"stalled-then-closed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"stalled-then-closed\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "succeeded": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs.succeeded.executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "succeeded-stock": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"succeeded-stock\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "tool-output-rate-limit": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"tool-output-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"tool-output-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"tool-output-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"tool-output-rate-limit\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "unknown-phase": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "voided": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.voided.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.voided.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs.voided.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.voided.executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.voided.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs.voided.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs.voided.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs.voided.executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "work-exhausted": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 2,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[1]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1002,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 3,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[2]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1003,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 4,
+        "node": "code"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[3]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1004,
+        "node": "code"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "acceptance",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "acceptance",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "acceptance",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 5,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[4]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1005,
+        "node": "acceptance"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "code_review",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "code_review",
+        "round": 2
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "code_review",
+        "round": 2
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 6,
+        "node": "code_review"
+      },
+      {
+        "execution": "<ref:runs[\"work-exhausted\"].executions[5]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1006,
+        "node": "code_review"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "zeroshot-16/zeroshot16-normal": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "zeroshot-16/zeroshot16-steered": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ],
+  "zeroshot-16/zeroshot16-unknown-model": [
+    [
+      {},
+      {
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "no_such_node",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": "<undefined>",
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "attempt": 2,
+        "node": "worker",
+        "round": 1
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ],
+    [
+      {
+        "execution": 1,
+        "node": "worker"
+      },
+      {
+        "execution": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].executions[0]>",
+        "missing": false
+      }
+    ],
+    [
+      {
+        "execution": 1001,
+        "node": "worker"
+      },
+      {
+        "execution": "<undefined>",
+        "missing": true
+      }
+    ]
+  ]
+}

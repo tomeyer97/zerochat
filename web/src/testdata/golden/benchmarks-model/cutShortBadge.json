@@ -1,0 +1,348 @@
+{
+  "cells": {
+    "20261107-222316-71f62e/tomnomnom__gron.88a6234#0": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-71f62e/yaa110__nomino.f892499#0": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-910b7d/tomnomnom__gron.88a6234#0": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-910b7d/tomnomnom__gron.88a6234#1": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-910b7d/tomnomnom__gron.88a6234#2": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-910b7d/yaa110__nomino.f892499#0": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-910b7d/yaa110__nomino.f892499#1": null,
+    "20261107-222316-910b7d/yaa110__nomino.f892499#2": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-142204-d474ae/tomnomnom__gron.88a6234#0": {
+      "long": "stopped at the 60-minute wall-time limit, scored on the code it had; counted in the mean",
+      "short": "⏱ 60m"
+    },
+    "20261108-142204-d474ae/tomnomnom__gron.88a6234#1": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-142204-d474ae/tomnomnom__gron.88a6234#2": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-142204-d474ae/yaa110__nomino.f892499#0": null,
+    "20261108-142204-d474ae/yaa110__nomino.f892499#1": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-142204-d474ae/yaa110__nomino.f892499#2": null,
+    "20261108-152720-fb0664/tomnomnom__gron.88a6234#0": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-152720-fb0664/tomnomnom__gron.88a6234#1": null,
+    "20261108-152720-fb0664/tomnomnom__gron.88a6234#2": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-152720-fb0664/yaa110__nomino.f892499#0": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-152720-fb0664/yaa110__nomino.f892499#1": null,
+    "20261108-152720-fb0664/yaa110__nomino.f892499#2": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-170007-63721d/tomnomnom__gron.88a6234#0": null,
+    "20261108-170007-63721d/tomnomnom__gron.88a6234#1": null,
+    "20261108-170007-63721d/tomnomnom__gron.88a6234#2": null,
+    "20261108-170007-63721d/yaa110__nomino.f892499#0": null,
+    "20261108-170007-63721d/yaa110__nomino.f892499#1": null,
+    "20261108-170007-63721d/yaa110__nomino.f892499#2": null,
+    "20261108-170009-cace9c/tomnomnom__gron.88a6234#0": null,
+    "20261108-170009-cace9c/tomnomnom__gron.88a6234#1": null,
+    "20261108-170009-cace9c/tomnomnom__gron.88a6234#2": null,
+    "20261108-170009-cace9c/yaa110__nomino.f892499#0": null,
+    "20261108-170009-cace9c/yaa110__nomino.f892499#1": null,
+    "20261108-170009-cace9c/yaa110__nomino.f892499#2": null,
+    "label_clone-v1-sonnet-build/cheat__cheat.b8098dc#0": null,
+    "label_clone-v1-sonnet-build/mibk__dupl.1bf052b#0": {
+      "long": "stopped at the 75-minute wall-time limit, scored on the code it had; counted in the mean",
+      "short": "⏱ 75m"
+    },
+    "label_clone-v1-sonnet-build/tomnomnom__gron.88a6234#0": null,
+    "label_clone-v1/tomnomnom__gron.88a6234#0": null,
+    "label_ctrlc-test/tomnomnom__gron.88a6234#0": null,
+    "label_haiku-adversarial/tomnomnom__gron.88a6234#0": null,
+    "label_haiku-prototype-plan/tomnomnom__gron.88a6234#0": null,
+    "label_k8s-sc-sonnet5/k8s-job-backoff-limit-per-index#0": null,
+    "label_replay-build-haiku/tomnomnom__gron.88a6234#0": {
+      "long": "stopped at the $2.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$2 cap"
+    },
+    "label_replay-build-haiku/tomnomnom__gron.88a6234#1": null,
+    "label_replay-build-sonnet/tomnomnom__gron.88a6234#0": null,
+    "label_replay-build-sonnet/tomnomnom__gron.88a6234#1": null,
+    "label_replay-sonnet-explore-haiku-build/tomnomnom__gron.88a6234#0": null,
+    "label_replay-sonnet-explore-haiku-build/tomnomnom__gron.88a6234#1": {
+      "long": "stopped at the 45-minute wall-time limit, scored on the code it had; counted in the mean",
+      "short": "⏱ 45m"
+    },
+    "label_sc-template-haiku/tomnomnom__gron.88a6234#0": {
+      "long": "stopped at the $2.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$2 cap"
+    },
+    "label_smoke-haiku/tomnomnom__gron.88a6234#0": null,
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#0": null,
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#1": null,
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#0": null,
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#1": null,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#0": null,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5/tomnomnom__gron.88a6234#1": null,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#0": null,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5/tomnomnom__gron.88a6234#1": null,
+    "label_ticket-v1/tomnomnom__gron.88a6234#0": null
+  },
+  "scores": {
+    "20261103-120654-160a0e": null,
+    "20261103-121900-29af42": null,
+    "20261103-124230-85bba6": {
+      "long": "stopped at the $2.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$2 cap"
+    },
+    "20261103-132546-0e4fe3": null,
+    "20261103-134223-3b1d24": null,
+    "20261103-134312-42aa68": null,
+    "20261103-135046-54abe6": null,
+    "20261103-135729-f246e7": null,
+    "20261103-143843-bad770": null,
+    "20261103-151748-ef96e3": null,
+    "20261103-153020-39acd7": null,
+    "20261103-160205-433564": null,
+    "20261103-160205-fb058c": {
+      "long": "stopped at the $2.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$2 cap"
+    },
+    "20261103-161534-59f5da": null,
+    "20261103-161534-90ca94": null,
+    "20261104-094037-b61618": null,
+    "20261104-094037-fb26fa": null,
+    "20261104-101121-1ed48b": null,
+    "20261104-101121-60f4f8": null,
+    "20261104-101225-6d2edf": {
+      "long": "stopped at the wall-time limit, scored on the code it had; counted in the mean",
+      "short": "⏱ time"
+    },
+    "20261104-101225-e8c831": null,
+    "20261104-101225-ed3910": null,
+    "20261104-101645-9b2f84": null,
+    "20261104-101900-42baf5": null,
+    "20261104-102045-d3e151": null,
+    "20261104-102957-4a619f": null,
+    "20261104-103417-96c7d8": null,
+    "20261104-103735-2a5194": null,
+    "20261104-114508-306ec8": {
+      "long": "stopped at the wall-time limit, scored on the code it had; counted in the mean",
+      "short": "⏱ time"
+    },
+    "20261104-114508-de4351": null,
+    "20261104-123424-e0fb82": null,
+    "20261107-222316-3f1483": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-61fcd1": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-9e1324": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-222316-ce9b61": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-225705-7736ba": null,
+    "20261107-225852-ea4461": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-230336-6afddb": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261107-230639-bac86d": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-142204-037a6e": {
+      "long": "stopped at the wall-time limit, scored on the code it had; counted in the mean",
+      "short": "⏱ time"
+    },
+    "20261108-142204-c03693": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-142204-d922d5": null,
+    "20261108-142204-e54403": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-145719-8916de": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-150036-3c2a78": null,
+    "20261108-152720-2cd1bc": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-152720-47b18a": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-152720-e63bea": null,
+    "20261108-152720-f53c72": null,
+    "20261108-155351-2efb37": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-160627-c0d812": {
+      "long": "stopped at the $6.00 budget cap, scored on the code it had; counted in the mean",
+      "short": "$6 cap"
+    },
+    "20261108-170007-024098": null,
+    "20261108-170007-915c3e": null,
+    "20261108-170009-2845db": null,
+    "20261108-170009-cb5a35": null
+  },
+  "table": [
+    [
+      "blank",
+      null
+    ],
+    [
+      "queued",
+      null
+    ],
+    [
+      "not started",
+      null
+    ],
+    [
+      "running, nothing known",
+      null
+    ],
+    [
+      "running, live",
+      null
+    ],
+    [
+      "running, agent done",
+      null
+    ],
+    [
+      "failed with reason",
+      null
+    ],
+    [
+      "crashed",
+      null
+    ],
+    [
+      "timeout cap",
+      {
+        "long": "stopped at the 45-minute wall-time limit, scored on the code it had; counted in the mean",
+        "short": "⏱ 45m"
+      }
+    ],
+    [
+      "timeout fractional cap",
+      {
+        "long": "stopped at the 2.5-minute wall-time limit, scored on the code it had; counted in the mean",
+        "short": "⏱ 2.5m"
+      }
+    ],
+    [
+      "timeout no cap",
+      {
+        "long": "stopped at the wall-time limit, scored on the code it had; counted in the mean",
+        "short": "⏱ time"
+      }
+    ],
+    [
+      "budget cap",
+      {
+        "long": "stopped at the $1.50 budget cap, scored on the code it had; counted in the mean",
+        "short": "$1.5 cap"
+      }
+    ],
+    [
+      "budget no cap",
+      {
+        "long": "stopped at the budget cap, scored on the code it had; counted in the mean",
+        "short": "$ cap"
+      }
+    ],
+    [
+      "steps cap",
+      {
+        "long": "stopped at the 12-step limit, scored on the code it had; counted in the mean",
+        "short": "12 steps"
+      }
+    ],
+    [
+      "steps no cap",
+      {
+        "long": "stopped at the step limit, scored on the code it had; counted in the mean",
+        "short": "step cap"
+      }
+    ],
+    [
+      "interrupted",
+      {
+        "long": "interrupted (a Stop) before it finished, scored on the code it had; counted in the mean",
+        "short": "stopped"
+      }
+    ],
+    [
+      "crashed cut short",
+      {
+        "long": "the harness crashed before it finished, scored on the code it had; counted in the mean",
+        "short": "crashed"
+      }
+    ],
+    [
+      "odd cut short",
+      {
+        "long": "the harness crashed before it finished, scored on the code it had; counted in the mean",
+        "short": "crashed"
+      }
+    ],
+    [
+      "odd over limit",
+      null
+    ],
+    [
+      "full scored",
+      null
+    ],
+    [
+      "retried",
+      null
+    ]
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "body": {
+    "defaultGraph": "harness/graph.json",
+    "defaultMaxCostUsd": 6.0,
+    "defaultMaxSteps": 24,
+    "defaultMaxWallMinutes": 45.0,
+    "defaultRuntime": "harness/runtime.json",
+    "harnessFiles": {
+      "graphs": [
+        "harness/graph.json",
+        "harness/variants/clone-v1/graph.json",
+        "harness/variants/haiku-adversarial/graph.json",
+        "harness/variants/haiku-prototype-plan/graph.json",
+        "harness/variants/software-change/graph.json",
+        "harness/variants/ticket-v1/graph.json"
+      ],
+      "runtimes": [
+        "harness/runtime.json",
+        "harness/variants/clone-v1/runtime-sonnet-build.json",
+        "harness/variants/clone-v1/runtime.json",
+        "harness/variants/haiku-adversarial/runtime.json",
+        "harness/variants/haiku-prototype-plan/runtime.json",
+        "harness/variants/software-change/runtime.json",
+        "harness/variants/ticket-v1/runtime.json"
+      ]
+    },
+    "maxConcurrentRuns": 4,
+    "models": [
+      "claude-fable-5",
+      "claude-fable-5-1",
+      "claude-haiku-4-5",
+      "claude-opus-4",
+      "claude-opus-5",
+      "claude-opus-5-5",
+      "claude-sonnet-4",
+      "claude-sonnet-5"
+    ],
+    "repoTasks": [],
+    "taskSets": [
+      {
+        "name": "dev",
+        "tasks": [
+          "tomnomnom__gron.88a6234",
+          "yaa110__nomino.f892499"
+        ]
+      },
+      {
+        "name": "holdout",
+        "tasks": [
+          "cheat__cheat.b8098dc",
+          "mibk__dupl.1bf052b"
+        ]
+      },
+      {
+        "name": "k8s",
+        "tasks": [
+          "k8s-job-backoff-limit-per-index"
+        ]
+      },
+      {
+        "name": "smoke",
+        "tasks": [
+          "tomnomnom__gron.88a6234"
+        ]
+      }
+    ],
+    "tasks": [
+      "cheat__cheat.b8098dc",
+      "k8s-job-backoff-limit-per-index",
+      "mibk__dupl.1bf052b",
+      "tomnomnom__gron.88a6234",
+      "yaa110__nomino.f892499"
+    ],
+    "variants": [
+      "clone-v1",
+      "haiku-adversarial",
+      "haiku-prototype-plan",
+      "software-change",
+      "ticket-v1"
+    ]
+  },
+  "status": 200
+}

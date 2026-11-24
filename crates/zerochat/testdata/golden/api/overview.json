@@ -1,0 +1,2755 @@
+{
+  "body": {
+    "features": true,
+    "featuresNeedYou": 2,
+    "issue": null,
+    "now": 1795003600000,
+    "stateRoot": "<root>/state",
+    "targets": [
+      {
+        "capabilities": [],
+        "id": "local",
+        "kind": "local",
+        "name": "This machine",
+        "origin": null,
+        "runs": [
+          {
+            "createdAt": 1795175331809,
+            "phase": "finished",
+            "runId": "01a1f8c9-b7e1-7b90-872a-0ec8e68d28d1",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.1276206,
+              "durationMs": 67490,
+              "endedAt": 1795175401910,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": "01a1f8c8-2984-7640-bc40-aaa51b13aa24",
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175334420,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "happy-path replay [fork]"
+          },
+          {
+            "createdAt": 1795175311317,
+            "phase": "finished",
+            "runId": "01a1f8c9-67d5-7060-a1f3-cb773d228ece",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.1218903,
+              "durationMs": 57645,
+              "endedAt": 1795175369245,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": "01a1f8c8-6464-7813-b706-150bb34c6dda",
+              "startedAt": 1795175311600,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "force-stopped [fork]"
+          },
+          {
+            "createdAt": 1795175266246,
+            "phase": "finished",
+            "runId": "01a1f8c8-b7c6-73a3-b319-e26678e524d0",
+            "source": null,
+            "summary": {
+              "cause": "unknown model",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 8150,
+              "endedAt": 1795175275019,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175266869,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "incomplete": false,
+                "recorded": [
+                  {
+                    "cursor": "v2:8",
+                    "execution": {
+                      "execution": "nv2-ba44200ead7ffce6a649c20d39aa671166dd64744458b4d5659d774175789b40",
+                      "node": "worker"
+                    },
+                    "message": "Node worker failed: refusal after 4.6s: model unavailable: provider rejected model: model claude-haiku-9-9-does-not-exist: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "unknown-model [zeroshot16]"
+          },
+          {
+            "createdAt": 1795175263420,
+            "phase": "finished",
+            "runId": "01a1f8c8-acbc-7ed0-b0bf-40743f8ad243",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 0.0344845,
+              "durationMs": 83209,
+              "endedAt": 1795175347302,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175264093,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "steered [zeroshot16]"
+          },
+          {
+            "createdAt": 1795175260059,
+            "phase": "finished",
+            "runId": "01a1f8c8-9f9b-7031-9660-08629cad0028",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 0.0525439,
+              "durationMs": 32529,
+              "endedAt": 1795175293245,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175260716,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "normal [zeroshot16]"
+          },
+          {
+            "createdAt": 1795175257016,
+            "phase": "finished",
+            "runId": "01a1f8c8-93b8-7b81-97ea-4b8a2800bbe3",
+            "source": null,
+            "summary": {
+              "cause": "usage limit",
+              "costEstimated": false,
+              "costUsd": 0.0462804,
+              "durationMs": 28298,
+              "endedAt": 1795175285834,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175257536,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "incomplete": false,
+                "recorded": [
+                  {
+                    "cursor": "v2:27",
+                    "execution": {
+                      "execution": "nv2-3a375d41d847e3901972461ac4f3bb84737fae9b5917eae993d13321ca202fbf",
+                      "node": "worker"
+                    },
+                    "message": "Node worker failed: crash after 21.7s: node execution failed: Claude provider failure: You've hit your 5-hour limit · resets 12:58pm (UTC); provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "chaos-usage-limit [fork]"
+          },
+          {
+            "createdAt": 1795175253883,
+            "phase": "finished",
+            "runId": "01a1f8c8-877b-7910-9808-f9cd2944c1d7",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0622663,
+              "durationMs": 77736,
+              "endedAt": 1795175331861,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175254125,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "chaos-transient [fork]"
+          },
+          {
+            "createdAt": 1795175250866,
+            "phase": "finished",
+            "runId": "01a1f8c8-7bb2-7fc3-a632-427dfefb25c8",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0362573,
+              "durationMs": 47483,
+              "endedAt": 1795175298620,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175251137,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "steered [fork]"
+          },
+          {
+            "createdAt": 1795175247878,
+            "phase": "finished",
+            "runId": "01a1f8c8-7006-7622-a318-e09c8f847921",
+            "source": null,
+            "summary": {
+              "cause": "runtime lost",
+              "costEstimated": true,
+              "costUsd": 0.1524565,
+              "durationMs": 80044,
+              "endedAt": 1795175328224,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175248180,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "runtime_lost",
+              "status": "failed"
+            },
+            "title": "controller-killed [fork]"
+          },
+          {
+            "createdAt": 1795175244900,
+            "phase": "finished",
+            "runId": "01a1f8c8-6464-7813-b706-150bb34c6dda",
+            "source": null,
+            "summary": {
+              "cause": "stopped",
+              "costEstimated": false,
+              "costUsd": 0.1072294,
+              "durationMs": 60163,
+              "endedAt": 1795175305314,
+              "failureClass": "stopped",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": "01a1f8c9-67d5-7060-a1f3-cb773d228ece",
+              "resumedFrom": null,
+              "startedAt": 1795175245151,
+              "status": "stopped"
+            },
+            "terminal": {
+              "reason": "force_stopped",
+              "status": "failed"
+            },
+            "title": "force-stopped [fork]"
+          },
+          {
+            "createdAt": 1795175242073,
+            "phase": "finished",
+            "runId": "01a1f8c8-5959-77e2-a8d3-8df517fadfac",
+            "source": null,
+            "summary": {
+              "cause": "timed out after 20s",
+              "costEstimated": true,
+              "costUsd": 0.1551263,
+              "durationMs": 67956,
+              "endedAt": 1795175310492,
+              "failureClass": "agent",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175242536,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "incomplete": false,
+                "recorded": [
+                  {
+                    "cursor": "v2:81",
+                    "execution": {
+                      "execution": "nv2-02912d4def69ddbcc397fa192cc910cfc71b8793fade6f3fa325431a31b74bf0",
+                      "node": "code"
+                    },
+                    "message": "Node code failed: timeout after 20.1s"
+                  }
+                ]
+              },
+              "reason": "review_failed",
+              "status": "failed"
+            },
+            "title": "late-failure [fork]"
+          },
+          {
+            "createdAt": 1795175239069,
+            "phase": "finished",
+            "runId": "01a1f8c8-4d9d-7582-9215-0d66fcc62df3",
+            "source": null,
+            "summary": {
+              "cause": "credentials rejected",
+              "costEstimated": false,
+              "costUsd": 0.0,
+              "durationMs": 22420,
+              "endedAt": 1795175261873,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175239453,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "incomplete": false,
+                "recorded": [
+                  {
+                    "cursor": "v2:16",
+                    "execution": {
+                      "execution": "nv2-eca1d75d1524f12235d44834ec4cb8aacf85b40c20dad77bfd06da82be89fd9c",
+                      "node": "worker"
+                    },
+                    "message": "Node worker failed: crash after 17.5s: node execution failed: Claude provider failure: Failed to authenticate. API Error: 401 OAuth access token is invalid.; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "bad-credentials [fork]"
+          },
+          {
+            "createdAt": 1795175236022,
+            "phase": "finished",
+            "runId": "01a1f8c8-41b6-7b03-aa65-c28cfafd21cc",
+            "source": null,
+            "summary": {
+              "cause": "timed out after 45s",
+              "costEstimated": true,
+              "costUsd": 0.0939043,
+              "durationMs": 50531,
+              "endedAt": 1795175286904,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175236373,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "incomplete": false,
+                "recorded": [
+                  {
+                    "cursor": "v2:45",
+                    "execution": {
+                      "execution": "nv2-4573791d93ddaa4c51f2f58e832b6007a823e081adb319ad4268b10abce1c9bc",
+                      "node": "worker"
+                    },
+                    "message": "Node worker failed: timeout after 45.1s"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "worker-timeout [fork]"
+          },
+          {
+            "createdAt": 1795175232928,
+            "phase": "finished",
+            "runId": "01a1f8c8-35a0-7901-8589-14c1616b4d4b",
+            "source": null,
+            "summary": {
+              "cause": "not accepted after 2 rounds",
+              "costEstimated": false,
+              "costUsd": 0.2600744,
+              "durationMs": 124195,
+              "endedAt": 1795175357603,
+              "failureClass": "work",
+              "failureNode": "acceptance",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175233408,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "change_attempts_exhausted",
+              "status": "failed"
+            },
+            "title": "reviewer-never-satisfied [fork]"
+          },
+          {
+            "createdAt": 1795175229828,
+            "phase": "finished",
+            "runId": "01a1f8c8-2984-7640-bc40-aaa51b13aa24",
+            "source": null,
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.1452256,
+              "durationMs": 64971,
+              "endedAt": 1795175295050,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175230079,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "happy-path [fork]"
+          },
+          {
+            "createdAt": 1795175226871,
+            "phase": "finished",
+            "runId": "01a1f8c8-1df7-7b31-88f8-ac9d8c697132",
+            "source": null,
+            "summary": {
+              "cause": "unknown model",
+              "costEstimated": false,
+              "costUsd": 0.0,
+              "durationMs": 10760,
+              "endedAt": 1795175237872,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795175227112,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "incomplete": false,
+                "recorded": [
+                  {
+                    "cursor": "v2:7",
+                    "execution": {
+                      "execution": "nv2-3a2b27704de0e1f926f2e380314d260df35185bbe17f1e27bb3eddd776eccb1a",
+                      "node": "worker"
+                    },
+                    "message": "Node worker failed: crash after 4.8s: node execution failed: Claude provider failure: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.; provider process exited with status 1; stderr: [claude-code:unrecognized_model] {\"model\":\"claude-haiku-9-9-does-not-exist\",\"query_source\":\"sdk\"}"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "unknown-model [fork]"
+          },
+          {
+            "createdAt": 1795003420000,
+            "phase": "finished",
+            "runId": "01a1ee8a-8d60-7039-8039-000000000039",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "provider not responding",
+              "costEstimated": false,
+              "costUsd": 0.0412,
+              "durationMs": 103900,
+              "endedAt": 1795003524900,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003421000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: timeout after 120.0s"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag api hang"
+          },
+          {
+            "createdAt": 1795003300000,
+            "phase": "finished",
+            "runId": "01a1ee88-b8a0-7037-8037-000000000037",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "controller lost",
+              "costEstimated": true,
+              "costUsd": 0.016012,
+              "durationMs": 6100,
+              "endedAt": 1795003307100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": "01a1ee77-5380-7024-8024-000000000024",
+              "resumedFrom": null,
+              "startedAt": 1795003301000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "runtime_lost",
+              "status": "failed"
+            },
+            "title": "stalled then closed"
+          },
+          {
+            "createdAt": 1795003240000,
+            "phase": "finished",
+            "runId": "01a1ee87-ce40-7036-8036-000000000036",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "rate limited",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 2000,
+              "endedAt": 1795003243000,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003241000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "lane unknown harness"
+          },
+          {
+            "createdAt": 1795003180000,
+            "phase": "finished",
+            "runId": "01a1ee86-e3e0-7035-8035-000000000035",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "unknown model",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 2000,
+              "endedAt": 1795003183000,
+              "failureClass": "setup",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003181000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "code_failed",
+              "status": "failed"
+            },
+            "title": "lane mixed"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add neg()",
+              "line": "Slice 12 of calc · attempt 1 · review rounds ran out",
+              "parent": "calc",
+              "slice": "12",
+              "task": "calc 12: Add neg() · #1 review rounds ran out"
+            },
+            "createdAt": 1795003120000,
+            "phase": "finished",
+            "runId": "01a1ee85-f980-7034-8034-000000000034",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "not accepted after 2 rounds",
+              "costEstimated": false,
+              "costUsd": 0.0824,
+              "durationMs": 13200,
+              "endedAt": 1795003134200,
+              "failureClass": "work",
+              "failureNode": "acceptance",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003121000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "change_attempts_exhausted",
+              "status": "failed"
+            },
+            "title": "work exhausted"
+          },
+          {
+            "context": {
+              "attempt": 2,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add farewell()",
+              "line": "Slice 04 of calc · attempt 2 of 2 · gate failed, not merged",
+              "parent": "calc",
+              "slice": "04",
+              "task": "calc 04: Add farewell() · #2 gate failed"
+            },
+            "createdAt": 1795003060000,
+            "phase": "finished",
+            "runId": "01a1ee85-0f20-7033-8033-000000000033",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0412,
+              "durationMs": 5100,
+              "endedAt": 1795003066100,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003061000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "voided"
+          },
+          {
+            "context": {
+              "attempt": 2,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add mul()",
+              "line": "Slice 02 of calc · attempt 2 of 2 · merged (776e54a)",
+              "parent": "calc",
+              "slice": "02",
+              "task": "calc 02: Add mul() · #2 merged"
+            },
+            "createdAt": 1795002940000,
+            "phase": "finished",
+            "runId": "01a1ee83-3a60-7031-8031-000000000031",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 0.0456,
+              "durationMs": 13800,
+              "endedAt": 1795002954800,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002941000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "succeeded stock"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add sub()",
+              "line": "Slice 01 of calc · attempt 1 · merged (b0b1aea)",
+              "parent": "calc",
+              "slice": "01",
+              "task": "calc 01: Add sub()"
+            },
+            "createdAt": 1795002880000,
+            "phase": "finished",
+            "runId": "01a1ee82-5000-7030-8030-000000000030",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "118a4951ec2a91d523353d1694fc2efe57f5c8cb"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0815,
+              "durationMs": 17000,
+              "endedAt": 1795002898000,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002881000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "succeeded"
+          },
+          {
+            "createdAt": 1795002820000,
+            "phase": "finished",
+            "runId": "01a1ee81-65a0-702f-802f-00000000002f",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0412,
+              "durationMs": 6000,
+              "endedAt": 1795002827000,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002821000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "steered"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add square()",
+              "line": "Slice 05 of calc · attempt 1",
+              "parent": "calc",
+              "slice": "05",
+              "task": "calc 05: Add square()"
+            },
+            "createdAt": 1795002760000,
+            "phase": "running",
+            "runId": "01a1ee80-7b40-702e-802e-00000000002e",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "controller lost",
+              "costEstimated": true,
+              "costUsd": 0.016012,
+              "durationMs": 4300,
+              "endedAt": null,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002761000,
+              "status": "stalled"
+            },
+            "terminal": null,
+            "title": "stalled live usage"
+          },
+          {
+            "createdAt": 1795002700000,
+            "phase": "running",
+            "runId": "01a1ee7f-90e0-702d-802d-00000000002d",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "disk full",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5100,
+              "endedAt": null,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002701000,
+              "status": "stalled"
+            },
+            "terminal": null,
+            "title": "stalled disk"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add div()",
+              "line": "Slice 08 of calc · attempt 1 · infrastructure failure",
+              "parent": "calc",
+              "slice": "08",
+              "task": "calc 08: Add div() · #1 infrastructure failure"
+            },
+            "createdAt": 1795002640000,
+            "phase": "running",
+            "runId": "01a1ee7e-a680-702c-802c-00000000002c",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "controller lost",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 4100,
+              "endedAt": null,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002641000,
+              "status": "stalled"
+            },
+            "terminal": null,
+            "title": "stalled"
+          },
+          {
+            "context": {
+              "attempt": 2,
+              "feature": "paused",
+              "kind": "slice",
+              "label": "Retry me",
+              "line": "Slice 01 of paused · attempt 2 of 2 · infrastructure failure",
+              "parent": "paused",
+              "slice": "01",
+              "task": "paused 01: Retry me · #2 infrastructure failure"
+            },
+            "createdAt": 1795002580000,
+            "phase": "finished",
+            "runId": "01a1ee7d-bc20-702b-802b-00000000002b",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "runtime lost",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 4100,
+              "endedAt": 1795002585100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002581000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "runtime_lost",
+              "status": "failed"
+            },
+            "title": "runtime lost"
+          },
+          {
+            "createdAt": 1795002520000,
+            "phase": "finished",
+            "runId": "01a1ee7c-d1c0-702a-802a-00000000002a",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "runtime failed",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 4100,
+              "endedAt": 1795002525100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002521000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "primary": {
+                  "message": "Run failed: internal error"
+                }
+              },
+              "reason": "runtime_failed",
+              "status": "failed"
+            },
+            "title": "runtime failed unknown"
+          },
+          {
+            "createdAt": 1795002460000,
+            "phase": "finished",
+            "runId": "01a1ee7b-e760-7029-8029-000000000029",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "input too large",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 4100,
+              "endedAt": 1795002465100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002461000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "primary": {
+                  "message": "event payload exceeds the storage bound (1048576 bytes)"
+                }
+              },
+              "reason": "runtime_failed",
+              "status": "failed"
+            },
+            "title": "runtime failed storage"
+          },
+          {
+            "createdAt": 1795002400000,
+            "phase": "finished",
+            "runId": "01a1ee7a-fd00-7028-8028-000000000028",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "workspace not writable",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5100,
+              "endedAt": 1795002406100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002401000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "runtime_failed",
+              "status": "failed"
+            },
+            "title": "runtime failed permission"
+          },
+          {
+            "createdAt": 1795002340000,
+            "phase": "finished",
+            "runId": "01a1ee7a-12a0-7027-8027-000000000027",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "checkpoint failed",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 4100,
+              "endedAt": 1795002345100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002341000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "primary": {
+                  "message": "restic backup failed: repository is locked"
+                }
+              },
+              "reason": "runtime_unavailable",
+              "status": "failed"
+            },
+            "title": "runtime failed checkpoint"
+          },
+          {
+            "createdAt": 1795002160000,
+            "phase": "finished",
+            "runId": "01a1ee77-5380-7024-8024-000000000024",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0815,
+              "durationMs": 17000,
+              "endedAt": 1795002178000,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": "01a1ee58-32c0-7002-8002-000000000002",
+              "startedAt": 1795002161000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "resumed successor"
+          },
+          {
+            "createdAt": 1795002100000,
+            "phase": "finished",
+            "runId": "01a1ee76-6920-7023-8023-000000000023",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.01,
+              "durationMs": 2000,
+              "endedAt": 1795002103000,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": "01a1ee57-4860-7001-8001-000000000001",
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002101000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "replay child"
+          },
+          {
+            "createdAt": 1795002040000,
+            "phase": "finished",
+            "runId": "01a1ee75-7ec0-7022-8022-000000000022",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "timed out after 45s",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 2000,
+              "endedAt": 1795002043000,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795002041000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "no checkpoints"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Friendlier greeting",
+              "line": "Slice 03 of calc · attempt 1 · merged (8a6041f)",
+              "parent": "calc",
+              "slice": "03",
+              "task": "calc 03: Friendlier greeting"
+            },
+            "createdAt": 1795001980000,
+            "phase": "finished",
+            "runId": "01a1ee74-9460-7021-8021-000000000021",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0824,
+              "durationMs": 13200,
+              "endedAt": 1795001994200,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001981000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "map parallel"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add farewell()",
+              "line": "Slice 04 of calc · attempt 1 of 2 · gate failed, not merged, retried as attempt 2",
+              "parent": "calc",
+              "slice": "04",
+              "task": "calc 04: Add farewell() · #1 gate failed"
+            },
+            "createdAt": 1795001920000,
+            "phase": "finished",
+            "runId": "01a1ee73-aa00-7020-8020-000000000020",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "e2e blocked",
+              "costEstimated": false,
+              "costUsd": 0.0815,
+              "durationMs": 17000,
+              "endedAt": 1795001938000,
+              "failureClass": "work",
+              "failureNode": "code_review",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001921000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "e2e_blocked",
+              "status": "failed"
+            },
+            "title": "graph ended other"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Hand-finished tidy-up",
+              "line": "Slice 11 of calc · attempt 1 · merged without the gate (6ea2cf4)",
+              "parent": "calc",
+              "slice": "11",
+              "task": "calc 11: Hand-finished tidy-up"
+            },
+            "createdAt": 1795001860000,
+            "phase": "finished",
+            "runId": "01a1ee72-bfa0-701f-801f-00000000001f",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "stopped",
+              "costEstimated": false,
+              "costUsd": 0.0412,
+              "durationMs": 8100,
+              "endedAt": 1795001869100,
+              "failureClass": "stopped",
+              "failureNode": "code_review",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001861000,
+              "status": "stopped"
+            },
+            "terminal": {
+              "reason": "force_stopped",
+              "status": "failed"
+            },
+            "title": "force stopped"
+          },
+          {
+            "createdAt": 1795001800000,
+            "phase": "finished",
+            "runId": "01a1ee71-d540-701e-801e-00000000001e",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "usage limit",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 6600,
+              "endedAt": 1795001807600,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001801000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: You've hit your limit · resets 9:30am (UTC); provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag usage limit"
+          },
+          {
+            "createdAt": 1795001740000,
+            "phase": "finished",
+            "runId": "01a1ee70-eae0-701d-801d-00000000001d",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "response cut off",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001746600,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001741000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: StreamNoEventsError: stream ended unexpectedly; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag stream cut"
+          },
+          {
+            "createdAt": 1795001680000,
+            "phase": "finished",
+            "runId": "01a1ee70-0080-701c-801c-00000000001c",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "rate limited",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001686600,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001681000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: API Error: 429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\"}}; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag rate limit"
+          },
+          {
+            "createdAt": 1795001620000,
+            "phase": "finished",
+            "runId": "01a1ee6f-1620-701b-801b-00000000001b",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "provider not responding",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001626600,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001621000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: APIConnectionTimeoutError: Request timed out.; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag provider timeout"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "paused",
+              "kind": "slice",
+              "label": "Retry me",
+              "line": "Slice 01 of paused · attempt 1 of 2 · infrastructure failure, retried automatically as attempt 2",
+              "parent": "paused",
+              "slice": "01",
+              "task": "paused 01: Retry me · #1 infrastructure failure"
+            },
+            "createdAt": 1795001560000,
+            "phase": "finished",
+            "runId": "01a1ee6e-2bc0-701a-801a-00000000001a",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "provider unavailable",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001566600,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001561000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: API Error: 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"}}; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag provider down"
+          },
+          {
+            "createdAt": 1795001500000,
+            "phase": "finished",
+            "runId": "01a1ee6d-4160-7019-8019-000000000019",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "no access to model",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001506600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001501000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: API Error: 403 permission_error: There's an issue with the selected model (claude-opus-4-1-20250805). It may not exist or you may not have access to it.; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag permission"
+          },
+          {
+            "createdAt": 1795001440000,
+            "phase": "finished",
+            "runId": "01a1ee6c-5700-7018-8018-000000000018",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "network error",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001446600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001441000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: Error: read ECONNRESET; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag network"
+          },
+          {
+            "createdAt": 1795001380000,
+            "phase": "finished",
+            "runId": "01a1ee6b-6ca0-7017-8017-000000000017",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "unknown model",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001386600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001381000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: API Error: 404 {\"type\":\"error\",\"error\":{\"type\":\"not_found_error\",\"message\":\"model: claude-haiku-9-9\"}} issue with the selected model (claude-haiku-9-9); provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag model"
+          },
+          {
+            "createdAt": 1795001320000,
+            "phase": "finished",
+            "runId": "01a1ee6a-8240-7016-8016-000000000016",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "agent CLI missing",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001326600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001321000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: spawn claude: executable file not found in $PATH; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag missing cli"
+          },
+          {
+            "createdAt": 1795001260000,
+            "phase": "finished",
+            "runId": "01a1ee69-97e0-7015-8015-000000000015",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "malformed API response",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001266600,
+              "failureClass": "provider",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001261000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: Unexpected end of stream: malformed API response; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag malformed stream"
+          },
+          {
+            "createdAt": 1795001200000,
+            "phase": "finished",
+            "runId": "01a1ee68-ad80-7014-8014-000000000014",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "disk full",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001206600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001201000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: ENOSPC: no space left on device, write; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag disk"
+          },
+          {
+            "createdAt": 1795001140000,
+            "phase": "finished",
+            "runId": "01a1ee67-c320-7013-8013-000000000013",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "credentials rejected",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001146600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001141000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"OAuth access token is invalid\"}}; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag credentials"
+          },
+          {
+            "createdAt": 1795001080000,
+            "phase": "finished",
+            "runId": "01a1ee66-d8c0-7012-8012-000000000012",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "context window full",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001086600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001081000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: API Error: 400 prompt is too long: 210000 tokens > 200000 maximum; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag context"
+          },
+          {
+            "createdAt": 1795001020000,
+            "phase": "finished",
+            "runId": "01a1ee65-ee60-7011-8011-000000000011",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "timed out after 45s",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795001026600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795001021000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: timeout after 3.0s: node execution failed: provider failure: Node worker failed: timeout after 45.4s: node execution failed; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code timeout"
+          },
+          {
+            "createdAt": 1795000960000,
+            "phase": "finished",
+            "runId": "01a1ee65-0400-7010-8010-000000000010",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "refused",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000966600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000961000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: refusal after 3.0s: node execution failed: provider failure: I can't help with that.; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code refusal"
+          },
+          {
+            "createdAt": 1795000900000,
+            "phase": "finished",
+            "runId": "01a1ee64-19a0-700f-800f-00000000000f",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "blocked by policy",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000906600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000901000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: error after 3.0s: node execution failed: provider failure: tool blocked; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code policy denied"
+          },
+          {
+            "createdAt": 1795000840000,
+            "phase": "finished",
+            "runId": "01a1ee63-2f40-700e-800e-00000000000e",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "failed (weird_code)",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000846600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000841000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: weird_code after 3.0s: node execution failed: provider failure: something unexpected; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code other"
+          },
+          {
+            "createdAt": 1795000780000,
+            "phase": "finished",
+            "runId": "01a1ee62-44e0-700d-800d-00000000000d",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "malformed result",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000786600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000781000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: malformed after 3.0s: node execution failed: provider failure: result did not match the schema; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code malformed result"
+          },
+          {
+            "createdAt": 1795000720000,
+            "phase": "finished",
+            "runId": "01a1ee61-5a80-700c-800c-00000000000c",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "asked for input",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000726600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000721000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: error after 3.0s: node execution failed: provider failure: waiting for input; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code input required"
+          },
+          {
+            "createdAt": 1795000660000,
+            "phase": "finished",
+            "runId": "01a1ee60-7020-700b-800b-00000000000b",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "crashed",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000666600,
+              "failureClass": "agent",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000661000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: crash after 3.0s: node execution failed: provider failure: process exited with status 1; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code crash"
+          },
+          {
+            "createdAt": 1795000600000,
+            "phase": "finished",
+            "runId": "01a1ee5f-85c0-700a-800a-00000000000a",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "credentials rejected",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5600,
+              "endedAt": 1795000606600,
+              "failureClass": "setup",
+              "failureNode": "worker",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000601000,
+              "status": "failed"
+            },
+            "terminal": {
+              "context": {
+                "recorded": [
+                  {
+                    "message": "Node worker failed: error after 3.0s: node execution failed: provider failure: needs login; provider process exited with status 1"
+                  }
+                ]
+              },
+              "reason": "worker_failed",
+              "status": "failed"
+            },
+            "title": "diag code authentication required"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add mul()",
+              "line": "Slice 02 of calc · attempt 1 of 2 · conflict, re-run as attempt 2",
+              "parent": "calc",
+              "slice": "02",
+              "task": "calc 02: Add mul() · #1 conflict"
+            },
+            "createdAt": 1795000540000,
+            "phase": "finished",
+            "runId": "01a1ee5e-9b60-7009-8009-000000000009",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "delivery failed",
+              "costEstimated": false,
+              "costUsd": 0.0815,
+              "durationMs": 17000,
+              "endedAt": 1795000558000,
+              "failureClass": "delivery",
+              "failureNode": "code_review",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000541000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "delivery_failed",
+              "status": "failed"
+            },
+            "title": "delivery failed"
+          },
+          {
+            "createdAt": 1795000480000,
+            "phase": "finished",
+            "runId": "01a1ee5d-b100-7008-8008-000000000008",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 2200,
+              "endedAt": 1795000483200,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000481000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "copilot session"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add mod()",
+              "line": "Slice 10 of calc · attempt 1",
+              "parent": "calc",
+              "slice": "10",
+              "task": "calc 10: Add mod()"
+            },
+            "createdAt": 1795000420000,
+            "phase": "finished",
+            "runId": "01a1ee5c-c6a0-7007-8007-000000000007",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 2000,
+              "endedAt": 1795000423000,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000421000,
+              "status": "succeeded"
+            },
+            "terminal": {
+              "output": null,
+              "status": "succeeded"
+            },
+            "title": "codex estimate"
+          },
+          {
+            "createdAt": 1795000360000,
+            "phase": "running",
+            "runId": "01a1ee5b-dc40-7006-8006-000000000006",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "provider unavailable",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 2000,
+              "endedAt": 1795000363000,
+              "failureClass": "provider",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000361000,
+              "status": "failed"
+            },
+            "terminal": null,
+            "title": "closing postmortem"
+          },
+          {
+            "createdAt": 1795000300000,
+            "phase": "finished",
+            "runId": "01a1ee5a-f1e0-7005-8005-000000000005",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "checkout unavailable",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 1000,
+              "endedAt": 1795000302000,
+              "failureClass": "orchestration",
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000301000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "source_checkout_unavailable",
+              "status": "failed"
+            },
+            "title": "checkout unavailable"
+          },
+          {
+            "createdAt": 1795000240000,
+            "phase": "finished",
+            "runId": "01a1ee5a-0780-7004-8004-000000000004",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "failed every attempt",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 4000,
+              "endedAt": 1795000245000,
+              "failureClass": "agent",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000241000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "attempts_exhausted",
+              "status": "failed"
+            },
+            "title": "attempts exhausted"
+          },
+          {
+            "context": {
+              "attempt": 1,
+              "feature": "calc",
+              "kind": "slice",
+              "label": "Add div()",
+              "line": "Slice 08 of calc · attempt 1 · controller lost, resumed in a later run",
+              "parent": "calc",
+              "slice": "08",
+              "task": "calc 08: Add div() · #1 controller lost"
+            },
+            "createdAt": 1795000120000,
+            "phase": "finished",
+            "runId": "01a1ee58-32c0-7002-8002-000000000002",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "controller lost",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 6100,
+              "endedAt": 1795000127100,
+              "failureClass": "orchestration",
+              "failureNode": "code",
+              "replayOf": null,
+              "resumedAs": "01a1ee77-5380-7024-8024-000000000024",
+              "resumedFrom": null,
+              "startedAt": 1795000121000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "runtime_lost",
+              "status": "failed"
+            },
+            "title": "resumed original"
+          },
+          {
+            "createdAt": 1795000060000,
+            "phase": "finished",
+            "runId": "01a1ee57-4860-7001-8001-000000000001",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": "not accepted after 1 round",
+              "costEstimated": false,
+              "costUsd": 0.0815,
+              "durationMs": 17000,
+              "endedAt": 1795000078000,
+              "failureClass": "work",
+              "failureNode": "acceptance",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795000061000,
+              "status": "failed"
+            },
+            "terminal": {
+              "reason": "change_attempts_exhausted",
+              "status": "failed"
+            },
+            "title": "replay parent"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "capabilities": [],
+        "id": "observe",
+        "kind": "observe",
+        "name": "observe",
+        "origin": null,
+        "runs": [
+          {
+            "createdAt": 1795003540000,
+            "phase": "running",
+            "runId": "01a1ee8c-6220-7038-8038-000000000038",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5500,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003541000,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "tool output rate limit"
+          },
+          {
+            "createdAt": 1795003500000,
+            "phase": "running",
+            "runId": "01a1ee8b-c5e0-7026-8026-000000000026",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 5000,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003501000,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "running stock"
+          },
+          {
+            "createdAt": 1795003200000,
+            "phase": "running",
+            "runId": "01a1ee87-3200-7025-8025-000000000025",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": 0.0412,
+              "durationMs": 368500,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003201000,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "running live"
+          },
+          {
+            "createdAt": 1795003000000,
+            "phase": "",
+            "runId": "01a1ee84-24c0-7032-8032-000000000032",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 0,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1795003001000,
+              "status": "unknown"
+            },
+            "terminal": null,
+            "title": "unknown phase"
+          },
+          {
+            "createdAt": 1795000180000,
+            "phase": "admitted",
+            "runId": "01a1ee59-1d20-7003-8003-000000000003",
+            "source": {
+              "branch": "main",
+              "repository": "example/textkit",
+              "revision": "0000000000000000000000000000000000000000"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": null,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": null,
+              "status": "admitted"
+            },
+            "terminal": null,
+            "title": "admitted only"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "capabilities": [],
+        "id": "pb",
+        "kind": "observe",
+        "name": "pb",
+        "origin": null,
+        "runs": [
+          {
+            "context": {
+              "costUsd": 0.0,
+              "kind": "benchmark",
+              "label": "haiku-adversarial",
+              "line": "tomnomnom__gron.88a6234 · seed 0 · crashed",
+              "seed": 0,
+              "task": "tomnomnom__gron.88a6234"
+            },
+            "createdAt": 1793709744444,
+            "issue": "Zeroshot never started this run (its submission was refused); nothing ran.",
+            "phase": "unavailable",
+            "runId": "01a1a16e-a13c-7142-b60b-3fb02b32d760",
+            "source": null,
+            "terminal": null,
+            "title": ""
+          },
+          {
+            "context": {
+              "costUsd": 2.0072363,
+              "kind": "benchmark",
+              "label": "replay-build-haiku",
+              "line": "tomnomnom__gron.88a6234 · seed 0 · score 0.53",
+              "score": 0.526785714,
+              "seed": 0,
+              "task": "tomnomnom__gron.88a6234"
+            },
+            "createdAt": 1793718126860,
+            "phase": "finished",
+            "runId": "01a1a1ee-890c-7f32-b250-1f1a312860b8",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261103-160205-fb058c"
+                },
+                "url": "https://github.com/programbench/20261103-160205-fb058c.git"
+              },
+              "repository": "programbench/20261103-160205-fb058c",
+              "revision": "f8f9df78d9fae8e473d2d2a2f0d0827e8619fef5"
+            },
+            "summary": {
+              "cause": "stopped",
+              "costEstimated": false,
+              "costSource": "pb",
+              "costUsd": 2.0072363,
+              "durationMs": 714631,
+              "endedAt": 1793718841646,
+              "failureClass": "stopped",
+              "failureNode": "build",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1793718127015,
+              "status": "stopped",
+              "zeroshotCostEstimated": true,
+              "zeroshotCostUsd": 2.3622663
+            },
+            "terminal": {
+              "reason": "force_stopped",
+              "status": "failed"
+            },
+            "title": "pb-20261103-160205-fb058c"
+          },
+          {
+            "createdAt": 1793718936196,
+            "phase": "running",
+            "runId": "01a1a1fa-e284-7e63-9916-531abf514b30",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261103-161534-59f5da"
+                },
+                "url": "https://github.com/programbench/20261103-161534-59f5da.git"
+              },
+              "repository": "programbench/20261103-161534-59f5da",
+              "revision": "37a33263e82f62ef2852f9f5b4474ad8b681352c"
+            },
+            "summary": {
+              "cause": "controller lost",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 683323,
+              "endedAt": null,
+              "failureClass": "orchestration",
+              "failureNode": "build",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1793718936368,
+              "status": "stalled"
+            },
+            "terminal": null,
+            "title": "pb-20261103-161534-59f5da"
+          },
+          {
+            "createdAt": 1793718936195,
+            "phase": "running",
+            "runId": "01a1a1fa-e283-74e1-a669-f408dafd5eae",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261103-161534-90ca94"
+                },
+                "url": "https://github.com/programbench/20261103-161534-90ca94.git"
+              },
+              "repository": "programbench/20261103-161534-90ca94",
+              "revision": "37a33263e82f62ef2852f9f5b4474ad8b681352c"
+            },
+            "summary": {
+              "cause": "controller lost",
+              "costEstimated": false,
+              "costUsd": null,
+              "durationMs": 716482,
+              "endedAt": null,
+              "failureClass": "orchestration",
+              "failureNode": "build",
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1793718936364,
+              "status": "stalled"
+            },
+            "terminal": null,
+            "title": "pb-20261103-161534-90ca94"
+          },
+          {
+            "context": {
+              "kind": "benchmark",
+              "label": "r3-noaccept",
+              "line": "yaa110__nomino.f892499 · seed 0 · running",
+              "parent": "20261108-170007-63721d",
+              "seed": 0,
+              "task": "yaa110__nomino.f892499"
+            },
+            "createdAt": 1794153608884,
+            "phase": "running",
+            "runId": "01a1bbe3-76b4-7bc0-b82d-31116a963693",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261108-170007-024098"
+                },
+                "url": "https://github.com/programbench/20261108-170007-024098.git"
+              },
+              "repository": "programbench/20261108-170007-024098",
+              "revision": "a6cfcf49284ce611d2842083744ceacbee83c225"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 7.7922463,
+              "durationMs": 2587069,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1794153609097,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "pb-20261108-170007-024098"
+          },
+          {
+            "context": {
+              "kind": "benchmark",
+              "label": "r3-noaccept",
+              "line": "tomnomnom__gron.88a6234 · seed 0 · running",
+              "parent": "20261108-170007-63721d",
+              "seed": 0,
+              "task": "tomnomnom__gron.88a6234"
+            },
+            "createdAt": 1794153608884,
+            "phase": "running",
+            "runId": "01a1bbe3-76b4-7051-bc35-6513b8d18a1c",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261108-170007-915c3e"
+                },
+                "url": "https://github.com/programbench/20261108-170007-915c3e.git"
+              },
+              "repository": "programbench/20261108-170007-915c3e",
+              "revision": "967db6a68f78dc4e942730cfa9acacea6358cfcb"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 8.0122462,
+              "durationMs": 2778712,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1794153609093,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "pb-20261108-170007-915c3e"
+          },
+          {
+            "context": {
+              "kind": "benchmark",
+              "label": "r3-h2-noaccept",
+              "line": "yaa110__nomino.f892499 · seed 0 · running",
+              "parent": "20261108-170009-cace9c",
+              "seed": 0,
+              "task": "yaa110__nomino.f892499"
+            },
+            "createdAt": 1794153610771,
+            "phase": "running",
+            "runId": "01a1bbe3-7e13-7521-8fb6-72ee1220f37e",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261108-170009-2845db"
+                },
+                "url": "https://github.com/programbench/20261108-170009-2845db.git"
+              },
+              "repository": "programbench/20261108-170009-2845db",
+              "revision": "a6cfcf49284ce611d2842083744ceacbee83c225"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 6.8685555,
+              "durationMs": 2849418,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1794153610973,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "pb-20261108-170009-2845db"
+          },
+          {
+            "context": {
+              "kind": "benchmark",
+              "label": "r3-h2-noaccept",
+              "line": "tomnomnom__gron.88a6234 · seed 0 · running",
+              "parent": "20261108-170009-cace9c",
+              "seed": 0,
+              "task": "tomnomnom__gron.88a6234"
+            },
+            "createdAt": 1794153610773,
+            "phase": "running",
+            "runId": "01a1bbe3-7e15-7852-b8d7-27fb6188c998",
+            "source": {
+              "branch": "master",
+              "remote": {
+                "forge": {
+                  "provider": "source.github",
+                  "repository": "programbench/20261108-170009-cb5a35"
+                },
+                "url": "https://github.com/programbench/20261108-170009-cb5a35.git"
+              },
+              "repository": "programbench/20261108-170009-cb5a35",
+              "revision": "967db6a68f78dc4e942730cfa9acacea6358cfcb"
+            },
+            "summary": {
+              "cause": null,
+              "costEstimated": true,
+              "costUsd": 7.3082969,
+              "durationMs": 2785380,
+              "endedAt": null,
+              "failureClass": null,
+              "failureNode": null,
+              "replayOf": null,
+              "resumedAs": null,
+              "resumedFrom": null,
+              "startedAt": 1794153610977,
+              "status": "running"
+            },
+            "terminal": null,
+            "title": "pb-20261108-170009-cb5a35"
+          }
+        ],
+        "status": "ok"
+      }
+    ],
+    "view": "full",
+    "zeroshot": {
+      "program": "<root>/no-such-zeroshot",
+      "version": null
+    }
+  },
+  "status": 200
+}

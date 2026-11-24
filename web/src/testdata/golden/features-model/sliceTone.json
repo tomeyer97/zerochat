@@ -1,0 +1,33 @@
+{
+  "slices": {
+    "calc/01": "ok",
+    "calc/02": "ok",
+    "calc/03": "warn",
+    "calc/04": "bad",
+    "calc/05": "running",
+    "calc/06": "muted",
+    "calc/07": "muted",
+    "calc/08": "warn",
+    "calc/09": "running",
+    "calc/10": "running",
+    "calc/11": "ok",
+    "calc/12": "bad",
+    "calc/13": "muted",
+    "calc/14": "warn",
+    "fresh/01": "muted",
+    "fresh/02": "muted",
+    "paused/01": "warn"
+  },
+  "table": {
+    "failed": "bad",
+    "integrating": "running",
+    "interrupted": "warn",
+    "launching": "running",
+    "merged": "ok",
+    "novel": "muted",
+    "pending": "muted",
+    "running": "running",
+    "skipped": "muted",
+    "waiting_for_approval": "warn"
+  }
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "e": {
+      "detail": "weird",
+      "kind": "launched"
+    },
+    "eventText": {
+      "detail": "weird",
+      "what": "started"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "brand-new attempt #3",
+      "kind": "launched"
+    },
+    "eventText": {
+      "detail": "brand-new #3",
+      "what": "started"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "",
+      "kind": "merged"
+    },
+    "eventText": {
+      "detail": "",
+      "what": "merged"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "max parallel 3",
+      "kind": "edited"
+    },
+    "eventText": {
+      "detail": "3",
+      "what": "parallel limit"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "spec /abs/path/04.md and deps",
+      "kind": "edited",
+      "slice": "04"
+    },
+    "eventText": {
+      "detail": "spec and deps",
+      "what": "edited"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "<undefined>",
+      "kind": "waiting"
+    },
+    "eventText": {
+      "detail": "",
+      "what": "held"
+    },
+    "isNoiseEvent": true
+  },
+  {
+    "e": {
+      "detail": "nothing can start: all blocked",
+      "kind": "waiting"
+    },
+    "eventText": {
+      "detail": "nothing can start: all blocked",
+      "what": "held"
+    },
+    "isNoiseEvent": true
+  },
+  {
+    "e": {
+      "detail": "#2: launch failed: boom",
+      "kind": "infra_failure"
+    },
+    "eventText": {
+      "detail": "Launch failed: boom",
+      "what": "infrastructure failure"
+    },
+    "isNoiseEvent": true
+  },
+  {
+    "e": {
+      "detail": "#2: agent: crashed: segfault",
+      "kind": "infra_failure"
+    },
+    "eventText": {
+      "detail": "Agent: segfault",
+      "what": "infrastructure failure"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "succeeded",
+      "kind": "run_finished"
+    },
+    "eventText": {
+      "detail": "succeeded",
+      "what": "run ended"
+    },
+    "isNoiseEvent": true
+  },
+  {
+    "e": {
+      "detail": "runtime_lost: gone",
+      "kind": "interrupted"
+    },
+    "eventText": {
+      "detail": "its controller was lost",
+      "what": "run lost"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "review 0123456789abcdef, then: zsf approve calc 03",
+      "kind": "checkpoint_waiting"
+    },
+    "eventText": {
+      "detail": "0123456",
+      "what": "waiting for your review"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "every slice is merged into main or skipped",
+      "kind": "done"
+    },
+    "eventText": {
+      "detail": "merged into main",
+      "what": "done"
+    },
+    "isNoiseEvent": false
+  },
+  {
+    "e": {
+      "detail": "  padded  ",
+      "kind": "some_new_kind"
+    },
+    "eventText": {
+      "detail": "padded",
+      "what": "some new kind"
+    },
+    "isNoiseEvent": false
+  }
+]

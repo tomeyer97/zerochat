@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "empty_message",
+    "message": "Type a message first."
+  },
+  "status": 400
+}

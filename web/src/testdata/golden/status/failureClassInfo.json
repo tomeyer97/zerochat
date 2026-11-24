@@ -1,0 +1,31 @@
+{
+  "agent": {
+    "explain": "An agent failed, not the code or its provider.",
+    "label": "Agent"
+  },
+  "delivery": {
+    "explain": "The work was done, but delivering it (push, pull request) failed.",
+    "label": "Delivery"
+  },
+  "orchestration": {
+    "explain": "Zeroshot itself failed, not the code or the agents.",
+    "label": "Orchestration"
+  },
+  "provider": {
+    "explain": "The model provider's side: not answering, a broken stream, an outage, a usage or rate limit. Usually temporary.",
+    "label": "Provider",
+    "tone": "warn"
+  },
+  "setup": {
+    "explain": "The run is set up wrong (credentials, model, tools); retrying unchanged fails the same way.",
+    "label": "Setup"
+  },
+  "stopped": {
+    "explain": "The run was force-stopped.",
+    "label": "Stopped"
+  },
+  "work": {
+    "explain": "The agents did the work, but a reviewer did not accept it.",
+    "label": "Work"
+  }
+}

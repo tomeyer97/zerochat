@@ -1,0 +1,96 @@
+{
+  "body": {
+    "features": [
+      {
+        "active": false,
+        "approve": [
+          "03",
+          "14"
+        ],
+        "base": "main",
+        "branch": "calc",
+        "costEstimated": true,
+        "costUsd": 0.5373,
+        "createdAt": 1795000000000,
+        "daemonPid": null,
+        "failed": [
+          "04",
+          "12"
+        ],
+        "finishedAt": null,
+        "issue": null,
+        "merged": 4,
+        "name": "calc",
+        "needsYou": true,
+        "note": null,
+        "paused": null,
+        "pausedAt": null,
+        "repo": "<root>/work/calc/repo",
+        "running": [
+          "05",
+          "09",
+          "10"
+        ],
+        "skipped": 1,
+        "started": true,
+        "startedAt": 1795000000000,
+        "total": 14,
+        "updatedAt": 1795000300000
+      },
+      {
+        "active": false,
+        "approve": [],
+        "base": "main",
+        "branch": "fresh",
+        "costEstimated": false,
+        "costUsd": null,
+        "createdAt": null,
+        "daemonPid": null,
+        "failed": [],
+        "finishedAt": null,
+        "issue": null,
+        "merged": 0,
+        "name": "fresh",
+        "needsYou": false,
+        "note": null,
+        "paused": null,
+        "pausedAt": null,
+        "repo": "<root>/work/calc/repo",
+        "running": [],
+        "skipped": 0,
+        "started": false,
+        "startedAt": null,
+        "total": 2,
+        "updatedAt": null
+      },
+      {
+        "active": true,
+        "approve": [],
+        "base": "main",
+        "branch": "paused",
+        "costEstimated": false,
+        "costUsd": null,
+        "createdAt": null,
+        "daemonPid": null,
+        "failed": [],
+        "finishedAt": null,
+        "issue": null,
+        "merged": 0,
+        "name": "paused",
+        "needsYou": true,
+        "note": null,
+        "paused": "2 infrastructure failures in a row",
+        "pausedAt": null,
+        "repo": "<root>/work/calc/repo",
+        "running": [],
+        "skipped": 0,
+        "started": true,
+        "startedAt": 1795000000000,
+        "total": 1,
+        "updatedAt": null
+      }
+    ],
+    "now": 1795003600000
+  },
+  "status": 200
+}

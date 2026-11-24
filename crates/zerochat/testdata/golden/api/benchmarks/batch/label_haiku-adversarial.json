@@ -1,0 +1,220 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 4,
+        "capMinutes": 45.0,
+        "capSteps": 24,
+        "capUsd": 5.0,
+        "costUsd": 3.3099203,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [
+          {
+            "costUsd": 2.6765396,
+            "exitReason": "interrupted after 985s, 9 steps",
+            "runId": "20261103-132546-0e4fe3",
+            "state": "interrupted",
+            "wallS": 986.509586096,
+            "zeroshotRunId": "01a1a15f-67c2-7d80-82cf-e32f49ef7fe9"
+          },
+          {
+            "costUsd": 0.0,
+            "exitReason": "zeroshot exited 1 without a terminal event: {\"schema\":\"zeroshot.error/v1\",\"kind\":\"target\",\"code\":\"target.unavailable\",\"message\":\"local controller operation failed: controller exited before becoming ready: portable controller I/O failed: the bundled restic executable is unavailable; place restic beside zeroshot, on PATH, or name it with ZEROSHOT_RESTIC\",\"path\":null,\"node\":null,\"details\":{}}\n",
+            "runId": "20261103-134223-3b1d24",
+            "state": "crashed",
+            "wallS": 6.100586176,
+            "zeroshotRunId": "01a1a16e-a13c-7142-b60b-3fb02b32d760"
+          },
+          {
+            "costUsd": 0.0,
+            "exitReason": "zeroshot 11.0.0 runtime_failed: workspace checkpoint Permission denied (reference binary unreadable by restic)",
+            "runId": "20261103-134312-42aa68",
+            "state": "crashed",
+            "wallS": 8.114544153,
+            "zeroshotRunId": "01a1a16f-60eb-7ec3-9f78-bd21fc2d5db8"
+          }
+        ],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-135046-54abe6",
+        "score": 0.674107143,
+        "seed": 0,
+        "startedAt": 1793710246930,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 151,
+        "testsTotal": 224,
+        "wallS": 1320.871010542,
+        "zeroshotRunId": "01a1a176-4ee7-7201-8bcd-ac26099f913f"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.674107143,
+        "mean": 0.674107143,
+        "min": 0.674107143,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793711413989,
+    "harnessVersion": "5779cfc7",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "worker",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "reviewer",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "bugfinder",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "triage",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 3,
+        "runtimeFile": null,
+        "runtimeMatches": true,
+        "source": "variant",
+        "variant": "haiku-adversarial"
+      },
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "worker",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "reviewer",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "bugfinder",
+            "parallel": "parallel_reviews"
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "triage",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 1,
+        "runtimeFile": null,
+        "runtimeMatches": false,
+        "source": "custom",
+        "variant": null
+      }
+    ],
+    "id": "label:haiku-adversarial",
+    "label": "haiku-adversarial",
+    "limits": {
+      "maxCostUsd": 5.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 45.0
+    },
+    "maxScore": 0.674107143,
+    "meanScore": 0.674107143,
+    "meanScoreFinished": null,
+    "minScore": 0.674107143,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 3,
+    "retriedCostUsd": 2.6765396,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.674107143,
+        "mean": 0.674107143,
+        "min": 0.674107143,
+        "n": 1
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1793708746076,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 5.9864599,
+    "totalWallS": 2321.595726967,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

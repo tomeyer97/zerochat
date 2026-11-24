@@ -1,0 +1,5384 @@
+{
+  "noGraph": {
+    "graph": {},
+    "runtime": {
+      "nodes": {
+        "a": {
+          "model": "m"
+        }
+      }
+    }
+  },
+  "runs": {
+    "admitted-only": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "attempts-exhausted": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "checkout-unavailable": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "closing-postmortem": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "codex-estimate": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "copilot-session": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "delivery-failed": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-api-hang": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-authentication-required": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-crash": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-input-required": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-malformed-result": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-other": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-policy-denied": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-refusal": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-code-timeout": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-context": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-credentials": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-disk": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-malformed-stream": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-missing-cli": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-model": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-network": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-permission": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-provider-down": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-provider-timeout": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-rate-limit": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-stream-cut": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "diag-usage-limit": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "force-stopped": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-bad-credentials": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-chaos-transient": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-controller-killed": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-force-stopped": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-happy-path": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-late-failure": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-replay": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-resumed": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].otherwise.children[0].branches[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-2",
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-steered": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-unknown-model": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/fork-worker-timeout": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/replay-child": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/replay-parent": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "fork-only/steered": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "graph-ended-other": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "lane-mixed": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "lane-unknown-harness": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "map-parallel": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.instructions": "step 0",
+          "$.root.children[0].body.maxIterations": 2,
+          "$.root.children[0].body.timeoutMs": 30000,
+          "$.root.children[1].instructions": "step 1",
+          "$.root.children[1].maxIterations": 2,
+          "$.root.children[1].timeoutMs": 31000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.fix.model": "model-0",
+          "$.nodes.summarize.model": "model-1"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.fix.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].body.maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "no-checkpoints": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "resumed-original": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "resumed-successor": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "running-live": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "running-stock": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "runtime-failed-checkpoint": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "runtime-failed-permission": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "runtime-failed-storage": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "runtime-failed-unknown": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "runtime-lost": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "stalled": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "stalled-disk": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "stalled-live-usage": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "stalled-then-closed": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "succeeded": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "succeeded-stock": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "tool-output-rate-limit": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "unknown-phase": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "voided": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "work-exhausted": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "step 0",
+          "$.root.children[0].body.children[0].maxIterations": 2,
+          "$.root.children[0].body.children[0].timeoutMs": 30000,
+          "$.root.children[0].body.children[1].children[0].instructions": "step 1",
+          "$.root.children[0].body.children[1].children[0].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[0].timeoutMs": 31000,
+          "$.root.children[0].body.children[1].children[1].instructions": "step 2",
+          "$.root.children[0].body.children[1].children[1].maxIterations": 2,
+          "$.root.children[0].body.children[1].children[1].timeoutMs": 32000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.acceptance.model": "model-1",
+          "$.nodes.code.model": "model-0",
+          "$.nodes.code_review.model": "model-2"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].body.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.code.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].body.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "badTimeout": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "blankModel": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "everything": {
+        "graph": {
+          "$.root.children[0].instructions": "step 0",
+          "$.root.children[0].maxIterations": 2,
+          "$.root.children[0].timeoutMs": 30000
+        },
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "model-0"
+        }
+      },
+      "instructions": {
+        "graph": {
+          "$.root.children[0].instructions": "New instructions."
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "model": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.worker.model": "claude-sonnet-5"
+        }
+      },
+      "none": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "rounds": {
+        "graph": {
+          "$.root.children[0].maxIterations": 7
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "timeout": {
+        "graph": {
+          "$.root.children[0].timeoutMs": 90000
+        },
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unchanged": {
+        "graph": "<unchanged>",
+        "inputUntouched": true,
+        "runtime": "<unchanged>"
+      },
+      "unknownNode": {
+        "graph": {},
+        "inputUntouched": true,
+        "runtime": {
+          "$.nodes.no_such_node": {
+            "model": "m"
+          }
+        }
+      }
+    }
+  }
+}

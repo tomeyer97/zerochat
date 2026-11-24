@@ -1,0 +1,47 @@
+{
+  "body": {
+    "base": "main",
+    "branch": "calc",
+    "commits": [
+      {
+        "sha": "b0b1aea4a9a8f61b61a803322c911ceb8ce1c10b",
+        "slice": "01",
+        "subject": "Add sub()"
+      },
+      {
+        "sha": "776e54aa0121d293a119fa25b704fa006aaa7f8e",
+        "slice": "02",
+        "subject": "Add mul()"
+      },
+      {
+        "sha": "8a6041f648bd35d951351e13baa397ec836e0237",
+        "slice": "03",
+        "subject": "Friendlier greeting"
+      },
+      {
+        "sha": "6ea2cf45e564a22af953adfdafe7f28f28530e66",
+        "slice": "11",
+        "subject": "Hand-finished tidy-up"
+      }
+    ],
+    "diff": null,
+    "head": "6ea2cf45e564a22af953adfdafe7f28f28530e66",
+    "stat": {
+      "additions": 12,
+      "deletions": 1,
+      "files": [
+        {
+          "additions": 1,
+          "deletions": 1,
+          "path": "calc/greet.py"
+        },
+        {
+          "additions": 11,
+          "deletions": 0,
+          "path": "calc/ops.py"
+        }
+      ]
+    }
+  },
+  "status": 200
+}

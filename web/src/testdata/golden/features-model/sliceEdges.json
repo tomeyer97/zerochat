@@ -1,0 +1,93 @@
+{
+  "calc": [
+    {
+      "id": "03->04",
+      "source": "03",
+      "state": "approval",
+      "target": "04"
+    },
+    {
+      "id": "02->05",
+      "source": "02",
+      "state": "met",
+      "target": "05"
+    },
+    {
+      "id": "01->06",
+      "source": "01",
+      "state": "met",
+      "target": "06"
+    },
+    {
+      "id": "02->06",
+      "source": "02",
+      "state": "met",
+      "target": "06"
+    },
+    {
+      "id": "04->06",
+      "source": "04",
+      "state": "blocked",
+      "target": "06"
+    },
+    {
+      "id": "05->06",
+      "source": "05",
+      "state": "open",
+      "target": "06"
+    },
+    {
+      "id": "12->13",
+      "source": "12",
+      "state": "blocked",
+      "target": "13"
+    }
+  ],
+  "fresh": [
+    {
+      "id": "01->02",
+      "source": "01",
+      "state": "open",
+      "target": "02"
+    }
+  ],
+  "paused": [],
+  "table": [
+    {
+      "id": "a->b",
+      "source": "a",
+      "state": "met",
+      "target": "b"
+    },
+    {
+      "id": "b->c",
+      "source": "b",
+      "state": "blocked",
+      "target": "c"
+    },
+    {
+      "id": "a->c",
+      "source": "a",
+      "state": "met",
+      "target": "c"
+    },
+    {
+      "id": "a->c",
+      "source": "a",
+      "state": "met",
+      "target": "c"
+    },
+    {
+      "id": "c->d",
+      "source": "c",
+      "state": "open",
+      "target": "d"
+    },
+    {
+      "id": "e->d",
+      "source": "e",
+      "state": "approval",
+      "target": "d"
+    }
+  ]
+}

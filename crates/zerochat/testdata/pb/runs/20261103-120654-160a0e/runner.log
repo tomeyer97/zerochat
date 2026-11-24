@@ -1,0 +1,14 @@
+12:06:54 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] start label='smoke-haiku' version=c2d7bd80ac model=claude-haiku-4-5 art=/data/pb/runs/20261103-120654-160a0e
+12:06:54 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+12:06:56 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node start  worker (exec 1, attempt 1)
+12:12:21 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node done   worker -> verified 
+12:12:21 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node start  reviewer (exec 2, attempt 1)
+12:14:37 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node done   reviewer -> verifier rejected
+12:14:37 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node start  repair (exec 3, attempt 1)
+12:15:17 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node done   repair -> verified 
+12:15:17 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node start  reviewer (exec 4, attempt 1)
+12:17:29 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] node done   reviewer -> verifier accepted
+12:17:29 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] agent finished: success — zeroshot succeeded
+12:17:30 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] running hidden tests (programbench eval)…
+12:18:41 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] score 123/224 (ok)
+12:18:41 [20261103-120654-160a0e tomnomnom__gron.88a6234 s0] done: success

@@ -1,0 +1,115 @@
+{
+  "runs": {
+    "admitted-only": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "attempts-exhausted": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "checkout-unavailable": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "closing-postmortem": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "codex-estimate": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "copilot-session": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "delivery-failed": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-api-hang": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-authentication-required": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-crash": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-input-required": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-malformed-result": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-other": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-policy-denied": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-refusal": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-code-timeout": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-context": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-credentials": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-disk": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-malformed-stream": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-missing-cli": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-model": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-network": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-permission": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-provider-down": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-provider-timeout": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-rate-limit": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-stream-cut": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "diag-usage-limit": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "force-stopped": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "fork-only/fork-bad-credentials": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-chaos-transient": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-chaos-usage-limit": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-controller-killed": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-force-stopped": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-happy-path": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-late-failure": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-replay": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-resumed": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-reviewer-never-satisfied": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-steered": "{\n  \"task\": \"Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else.\"\n}",
+    "fork-only/fork-unknown-model": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "fork-only/fork-worker-timeout": "{\n  \"task\": \"Extend textkit with six new functions, one at a time. For EACH function: implement it in textkit/core.py, export it, add at least three unit tests, run `python3 -m unittest -v`, and then explain in one short paragraph what you did before starting the next function. Functions: 1) slugify(text) as a URL slug, 2) title_case(text) that keeps small words (a, an, the, of, and, or) lowercase except at the start, 3) truncate(text, n) that cuts at a word boundary and appends '…', 4) count_vowels(text), 5) is_palindrome(text) ignoring case and punctuation, 6) wrap(text, width) that wraps lines at word boundaries. Work carefully and verify every step with the tests.\"\n}",
+    "fork-only/replay-child": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "fork-only/replay-parent": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "fork-only/steered": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "graph-ended-other": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "lane-mixed": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "lane-unknown-harness": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "map-parallel": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "no-checkpoints": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "resumed-original": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "resumed-successor": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "running-live": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "running-stock": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "runtime-failed-checkpoint": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "runtime-failed-permission": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "runtime-failed-storage": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "runtime-failed-unknown": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "runtime-lost": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "stalled": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "stalled-disk": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "stalled-live-usage": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "stalled-then-closed": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "succeeded": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "succeeded-stock": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "tool-output-rate-limit": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "unknown-phase": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "voided": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "work-exhausted": "{\n  \"task\": \"Add slugify() to textkit.\"\n}",
+    "zeroshot-16/zeroshot16-normal": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}",
+    "zeroshot-16/zeroshot16-steered": "{\n  \"task\": \"Step 1: run the shell command `sleep 20` (one Bash call). Step 2: run `sleep 20` again (a second Bash call). Step 3: run `sleep 20` a third time. Step 4: write a single word into out.txt: the word is APPLE unless the person running this run told you otherwise. Do nothing else.\"\n}",
+    "zeroshot-16/zeroshot16-unknown-model": "{\n  \"task\": \"Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes.\"\n}"
+  },
+  "table": [
+    [
+      "undefined",
+      "undefined"
+    ],
+    [
+      "null",
+      "null"
+    ],
+    [
+      "function",
+      "()=>1"
+    ],
+    [
+      "symbol",
+      "Symbol(s)"
+    ],
+    [
+      "bigint",
+      "5"
+    ],
+    [
+      "cyclic",
+      "[object Object]"
+    ],
+    [
+      "nested",
+      "{\n  \"b\": [\n    1,\n    {\n      \"c\": \"x\"\n    }\n  ],\n  \"a\": null\n}"
+    ],
+    [
+      "string",
+      "\"text\\nline\""
+    ],
+    [
+      "NaN",
+      "null"
+    ]
+  ]
+}

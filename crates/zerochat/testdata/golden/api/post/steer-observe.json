@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "actions_refused",
+    "message": "This is an observe-only source; actions are refused (it would disturb the sandbox and accounting that produced it)."
+  },
+  "status": 503
+}

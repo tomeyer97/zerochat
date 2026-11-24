@@ -1,0 +1,66 @@
+{
+  "attempts": {
+    "calc/01": [
+      "first run"
+    ],
+    "calc/02": [
+      "first run",
+      "re-run after conflict"
+    ],
+    "calc/03": [
+      "first run"
+    ],
+    "calc/04": [
+      "first run",
+      "your retry"
+    ],
+    "calc/05": [
+      "first run"
+    ],
+    "calc/06": [],
+    "calc/07": [],
+    "calc/08": [
+      "first run"
+    ],
+    "calc/09": [
+      "first run"
+    ],
+    "calc/10": [
+      "first run"
+    ],
+    "calc/11": [
+      "first run"
+    ],
+    "calc/12": [
+      "first run"
+    ],
+    "calc/13": [
+      "first run"
+    ],
+    "calc/14": [
+      "first run",
+      "your retry",
+      "re-run after gate failed"
+    ],
+    "fresh/01": [],
+    "fresh/02": [],
+    "paused/01": [
+      "first run",
+      "automatic retry"
+    ]
+  },
+  "table": [
+    "first run",
+    "first run, from scratch",
+    "automatic retry",
+    "automatic retry, from scratch",
+    "re-run after conflict",
+    "re-run after conflict, from scratch",
+    "your retry",
+    "your retry, from scratch",
+    "some new kind",
+    "some new kind, from scratch",
+    "",
+    ", from scratch"
+  ]
+}

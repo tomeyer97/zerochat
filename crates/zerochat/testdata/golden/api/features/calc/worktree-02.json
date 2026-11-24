@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "worktree_not_found",
+    "message": "This slice has no worktree."
+  },
+  "status": 404
+}

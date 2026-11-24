@@ -1,0 +1,64 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 8.0,
+    "costUsd": 1.0845128,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.649408,
+        "node": "repair"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.2182698,
+        "node": "triage"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.216835,
+        "node": "postmortem"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 1.0845128,
+    "runId": "20261104-102957-4a619f",
+    "score": 0.616071429,
+    "seed": 1,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "repair#1",
+        "score": 0.616071429,
+        "seq": 0,
+        "testsPassed": 138,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.616071429,
+        "seq": 1,
+        "testsPassed": 138,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 138,
+    "testsTotal": 224,
+    "wallS": 458.449437618,
+    "zeroshotRunId": "01a1a5e4-cf79-7712-8905-1a288ab34ac5"
+  },
+  "status": 200
+}

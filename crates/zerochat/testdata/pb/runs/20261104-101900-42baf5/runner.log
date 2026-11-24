@@ -1,0 +1,11 @@
+10:19:00 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] start label='sweep:sweep-triage-repair:repair#1:claude-sonnet-5' version=77af6eb402 model=per-node art=/data/pb/runs/20261104-101900-42baf5
+10:19:01 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] replay of 20261103-151748-ef96e3 repair#1: starting code = build#1 (snapshot)
+10:19:01 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+10:19:09 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] node start  repair (exec 1, attempt 1)
+10:30:58 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] node done   repair -> verified 
+10:32:59 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] agent finished: success — zeroshot succeeded
+10:33:03 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] running hidden tests (programbench eval)…
+10:34:12 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] score 141/224 (ok)
+10:34:17 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] own suite of submission.tar.gz: 57/57
+10:34:17 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] score per step: repair#1 62.9%, final 62.9%
+10:34:17 [20261104-101900-42baf5 tomnomnom__gron.88a6234 s0] done: success

@@ -1,0 +1,23 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003182000,
+          "kind": "text",
+          "text": "Working."
+        },
+        {
+          "at": 1795003183000,
+          "kind": "error",
+          "text": "Node code failed: crash after 2.1s: node execution failed: Codex provider failure: unknown model gpt-5.1-codex-does-not-exist"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  }
+]

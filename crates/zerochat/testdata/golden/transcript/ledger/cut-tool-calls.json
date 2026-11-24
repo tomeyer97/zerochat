@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "at": 10,
+      "kind": "tool",
+      "tool": {
+        "id": "b1",
+        "input": {
+          "command": "cd /w && python3 - <<'EOF'\nprint(\"xx",
+          "description": "Rewrite the file"
+        },
+        "inputCut": true,
+        "name": "Bash",
+        "result": {
+          "at": 20,
+          "content": "done",
+          "isError": false
+        }
+      }
+    },
+    {
+      "at": 30,
+      "kind": "tool",
+      "tool": {
+        "id": "e1",
+        "input": {
+          "file_path": "/w/src/a.ts"
+        },
+        "inputCut": true,
+        "name": "Edit",
+        "result": {
+          "at": 40,
+          "content": "old_string not found",
+          "isError": true
+        }
+      }
+    },
+    {
+      "at": 50,
+      "kind": "tool",
+      "tool": {
+        "id": "r1",
+        "input": {
+          "file_path": "/w/README.md"
+        },
+        "inputCut": true,
+        "name": "Read",
+        "result": {
+          "at": 60,
+          "content": "# Title",
+          "isError": false
+        }
+      }
+    },
+    {
+      "at": 70,
+      "kind": "tool",
+      "tool": {
+        "id": "b2",
+        "input": {
+          "command": "ls"
+        },
+        "name": "Bash"
+      }
+    }
+  ],
+  "limitations": [],
+  "source": "ledger"
+}

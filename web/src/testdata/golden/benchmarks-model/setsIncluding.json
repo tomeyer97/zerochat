@@ -1,0 +1,76 @@
+{
+  "cheat__cheat.b8098dc": [
+    [
+      "holdout",
+      "clone-v1-sonnet-build"
+    ],
+    [
+      "holdout"
+    ],
+    []
+  ],
+  "k8s-job-backoff-limit-per-index": [
+    [
+      "k8s",
+      "k8s-sc-sonnet5"
+    ],
+    [],
+    []
+  ],
+  "mibk__dupl.1bf052b": [
+    [
+      "holdout",
+      "clone-v1-sonnet-build"
+    ],
+    [
+      "holdout"
+    ],
+    []
+  ],
+  "tomnomnom__gron.88a6234": [
+    [
+      "dev",
+      "smoke",
+      "r1-screen-spec2",
+      "r1-ctrl-diffloop",
+      "r2-hermetic",
+      "r2-hermetic2",
+      "r3-noaccept",
+      "r3-h2-noaccept",
+      "clone-v1-sonnet-build",
+      "clone-v1",
+      "ctrlc-test",
+      "haiku-adversarial",
+      "haiku-prototype-plan",
+      "replay-build-haiku",
+      "replay-build-sonnet",
+      "replay-sonnet-explore-haiku-build",
+      "sc-template-haiku",
+      "smoke-haiku",
+      "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+      "sweep:sweep-triage-repair:repair#1:claude-sonnet-5",
+      "sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5",
+      "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+      "ticket-v1"
+    ],
+    [
+      "dev"
+    ],
+    []
+  ],
+  "yaa110__nomino.f892499": [
+    [
+      "dev",
+      "r1-screen-spec2",
+      "r1-ctrl-diffloop",
+      "r2-hermetic",
+      "r2-hermetic2",
+      "r3-noaccept",
+      "r3-h2-noaccept"
+    ],
+    [
+      "dev"
+    ],
+    []
+  ]
+}

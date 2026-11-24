@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "invalid_request",
+    "message": "Unknown action `explode`; use one of: start, stop, unpause, max_parallel."
+  },
+  "status": 400
+}

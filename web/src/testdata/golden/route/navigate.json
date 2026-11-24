@@ -1,0 +1,78 @@
+[
+  {
+    "calls": [
+      [
+        "location.hash =",
+        "#/features"
+      ]
+    ],
+    "hash": "#/features",
+    "replace": false,
+    "route": {
+      "kind": "features"
+    }
+  },
+  {
+    "calls": [],
+    "hash": "#/features",
+    "replace": false,
+    "route": {
+      "kind": "features"
+    }
+  },
+  {
+    "calls": [
+      [
+        "history.replaceState",
+        null,
+        "",
+        "#/run/t/r/node/n/round/2"
+      ],
+      [
+        "window.dispatchEvent",
+        "hashchange"
+      ]
+    ],
+    "hash": "#/run/t/r/node/n/round/2",
+    "replace": true,
+    "route": {
+      "kind": "run",
+      "node": "n",
+      "round": 2,
+      "run": "r",
+      "target": "t"
+    }
+  },
+  {
+    "calls": [
+      [
+        "location.hash =",
+        "#/"
+      ]
+    ],
+    "hash": "#/",
+    "replace": false,
+    "route": {
+      "kind": "home"
+    }
+  },
+  {
+    "calls": [
+      [
+        "history.replaceState",
+        null,
+        "",
+        "#/"
+      ],
+      [
+        "window.dispatchEvent",
+        "hashchange"
+      ]
+    ],
+    "hash": "#/",
+    "replace": true,
+    "route": {
+      "kind": "home"
+    }
+  }
+]

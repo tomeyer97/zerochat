@@ -1,0 +1,595 @@
+{
+  "body": {
+    "backgroundAgents": [
+      {
+        "errors": 0,
+        "firstAt": 1795175242035,
+        "lastAt": 1795175242667,
+        "lastLine": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.",
+        "lines": 2,
+        "name": "active_memory_graph",
+        "outcome": "failed",
+        "retries": 0
+      },
+      {
+        "errors": 0,
+        "firstAt": 1795175242061,
+        "lastAt": 1795175242639,
+        "lastLine": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.",
+        "lines": 2,
+        "name": "active_memory_graph_maintenance",
+        "outcome": "failed",
+        "retries": 0
+      },
+      {
+        "errors": 0,
+        "firstAt": 1795175242180,
+        "lastAt": 1795175242719,
+        "lastLine": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.",
+        "lines": 2,
+        "name": "active_memory_repository",
+        "outcome": "failed",
+        "retries": 0
+      },
+      {
+        "errors": 0,
+        "firstAt": 1795175242042,
+        "lastAt": 1795175242610,
+        "lastLine": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.",
+        "lines": 2,
+        "name": "active_memory_repository_maintenance",
+        "outcome": "failed",
+        "retries": 0
+      }
+    ],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "capabilities": [],
+    "context": null,
+    "costEstimated": false,
+    "costUsd": 0.0,
+    "createdAt": 1795175226871,
+    "cursor": 34,
+    "endedAt": 1795175237872,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": "provider",
+        "costUsd": 0.0,
+        "diagnostic": null,
+        "durationMs": 4918,
+        "endSeq": 8,
+        "endedAt": 1795175237872,
+        "error": {
+          "code": "crash",
+          "reason": "declared_failure"
+        },
+        "errorLines": [
+          "Node worker failed: crash after 4.8s: node execution failed: Claude provider failure: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.; provider process exited with status 1; stderr: [claude-code:unrecognized_model] {\"model\":\"claude-haiku-9-9-does-not-exist\",\"query_source\":\"sdk\"}"
+        ],
+        "harness": "claude",
+        "id": 1,
+        "input": {
+          "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        },
+        "lastActivityAt": 1795175237872,
+        "logLines": 3,
+        "mapIndices": [],
+        "model": "claude-haiku-9-9-does-not-exist",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "code": "crash",
+          "reason": "declared_failure",
+          "status": "error"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "cacde474-2720-4e8a-89bc-06f7be580d40",
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795175232954,
+        "state": "failed",
+        "timesApproximate": false,
+        "toolCalls": 0,
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "99392587ad42ed042f90760b005dd016185934a4",
+          "commit": "99392587ad42ed042f90760b005dd016185934a4",
+          "files": []
+        },
+        "workspaceStart": {
+          "commit": "99392587ad42ed042f90760b005dd016185934a4"
+        }
+      }
+    ],
+    "failure": {
+      "actions": [
+        "replay"
+      ],
+      "at": 1795175237872,
+      "attempt": 1,
+      "cause": "unknown model",
+      "class": "setup",
+      "closedAfterMs": 7827,
+      "closedByPostmortem": true,
+      "detail": "",
+      "execution": 1,
+      "exit": "worker_failed",
+      "feedback": [],
+      "fix": "Set a model Anthropic knows for `worker` in your runtime file, then start a new run.",
+      "fixCommand": null,
+      "intoRunMs": 10760,
+      "kept": [],
+      "lastErrors": [
+        "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      ],
+      "node": "worker",
+      "nodeKind": "step",
+      "primary": null,
+      "reason": "worker_failed",
+      "resetsAt": null,
+      "round": 1,
+      "title": "Unknown model claude-haiku-9-9-does-not-exist"
+    },
+    "features": {
+      "exactTimes": true,
+      "providerCost": true,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "bounds": {
+        "attemptsPerNode": {
+          "worker": 1
+        },
+        "maxNodeExecutions": 1,
+        "peakConcurrency": 1,
+        "termination": {
+          "kind": "acyclic",
+          "order": [
+            "run",
+            "worker",
+            "worker_result",
+            "worker_failed",
+            "done"
+          ]
+        }
+      },
+      "initialInput": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      },
+      "policy": {
+        "default": "deny",
+        "policy": "policy.native-v2@1"
+      },
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "attempts": 1,
+            "input": {
+              "fields": {
+                "task": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                }
+              },
+              "kind": "record"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "path": [
+                    "task"
+                  ],
+                  "source": "state"
+                }
+              }
+            ],
+            "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+            "kind": "step",
+            "name": "worker",
+            "output": {
+              "kind": "null"
+            },
+            "worker": "builtin.agent.worker@1",
+            "writeBindings": []
+          },
+          {
+            "branches": [
+              {
+                "node": {
+                  "kind": "fail",
+                  "name": "worker_failed",
+                  "reason": "worker_failed"
+                },
+                "when": {
+                  "kind": "in",
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ],
+                  "value": {
+                    "field": null,
+                    "name": "worker",
+                    "source": "error"
+                  }
+                }
+              }
+            ],
+            "kind": "choice",
+            "name": "worker_result",
+            "otherwise": {
+              "bindings": [],
+              "kind": "succeed",
+              "name": "done",
+              "output": {
+                "kind": "null"
+              }
+            },
+            "promotedStatePaths": [],
+            "state": {
+              "fields": {
+                "task": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                }
+              },
+              "kind": "record"
+            }
+          }
+        ],
+        "kind": "seq",
+        "name": "run",
+        "promotedStatePaths": [],
+        "state": {
+          "fields": {
+            "task": {
+              "required": true,
+              "type": {
+                "kind": "string"
+              }
+            }
+          },
+          "kind": "record"
+        }
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+        "kind": "step",
+        "loops": [],
+        "maxIterations": null,
+        "model": "claude-haiku-9-9-does-not-exist",
+        "name": "worker",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.worker@1"
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "choice",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "worker_result",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "worker_failed",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "worker_failed",
+        "parent": "worker_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "succeed",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "done",
+        "parent": "worker_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      }
+    ],
+    "initialInput": {
+      "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+    },
+    "lanes": [
+      {
+        "harness": "claude",
+        "model": "claude-haiku-9-9-does-not-exist",
+        "nodes": [
+          "worker"
+        ],
+        "provider": "anthropic"
+      }
+    ],
+    "lastActivityAt": 1795175245699,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": true,
+      "workspace": "<root>/work/unknown-model"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "nodes": {
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": 0.0,
+        "elapsedMs": 4918,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "failed",
+        "usage": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1f8c8-1df7-7b31-88f8-ac9d8c697132",
+    "runLog": [
+      {
+        "at": 1795175227112,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795175232954,
+        "seq": 3,
+        "stream": "system",
+        "text": "worker started (claude-haiku-9-9-does-not-exist)"
+      },
+      {
+        "at": 1795175237872,
+        "seq": 8,
+        "stream": "system",
+        "text": "worker failed: crashed"
+      },
+      {
+        "at": 1795175238026,
+        "seq": 10,
+        "stream": "system",
+        "text": "Active Memory postmortem started"
+      },
+      {
+        "at": 1795175238074,
+        "seq": 11,
+        "stream": "system",
+        "text": "Active Memory supplied manifest: known=false, snapshot_generation=0, supplied_revisions=0"
+      },
+      {
+        "at": 1795175238115,
+        "seq": 12,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph_maintenance started"
+      },
+      {
+        "at": 1795175238115,
+        "seq": 13,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository_maintenance started"
+      },
+      {
+        "at": 1795175238115,
+        "seq": 14,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph started"
+      },
+      {
+        "at": 1795175238115,
+        "seq": 15,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository started"
+      },
+      {
+        "agent": "active_memory_repository_maintenance",
+        "at": 1795175242610,
+        "seq": 20,
+        "stream": "system",
+        "text": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      },
+      {
+        "agent": "active_memory_graph_maintenance",
+        "at": 1795175242639,
+        "seq": 21,
+        "stream": "system",
+        "text": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      },
+      {
+        "agent": "active_memory_graph",
+        "at": 1795175242667,
+        "seq": 22,
+        "stream": "system",
+        "text": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      },
+      {
+        "agent": "active_memory_repository",
+        "at": 1795175242719,
+        "seq": 23,
+        "stream": "system",
+        "text": "There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model."
+      },
+      {
+        "at": 1795175243345,
+        "seq": 26,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository_maintenance failed"
+      },
+      {
+        "at": 1795175243394,
+        "seq": 28,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph failed"
+      },
+      {
+        "at": 1795175243476,
+        "seq": 30,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository failed"
+      },
+      {
+        "at": 1795175243566,
+        "seq": 31,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph_maintenance failed"
+      },
+      {
+        "at": 1795175243674,
+        "seq": 32,
+        "stream": "system",
+        "text": "Active Memory postmortem completed: 0 roles completed, 4 failed, 0 mutations published, cancelled=false"
+      },
+      {
+        "at": 1795175245699,
+        "seq": 33,
+        "stream": "error",
+        "text": "Run failed: worker_failed"
+      }
+    ],
+    "runtime": {
+      "harness": "claude",
+      "nodes": {
+        "worker": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-9-9-does-not-exist"
+        }
+      },
+      "provider": "anthropic",
+      "size": "small"
+    },
+    "source": null,
+    "startedAt": 1795175227112,
+    "status": "failed",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "context": {
+        "incomplete": false,
+        "recorded": [
+          {
+            "cursor": "v2:7",
+            "execution": {
+              "execution": "nv2-3a2b27704de0e1f926f2e380314d260df35185bbe17f1e27bb3eddd776eccb1a",
+              "node": "worker"
+            },
+            "message": "Node worker failed: crash after 4.8s: node execution failed: Claude provider failure: There's an issue with the selected model (claude-haiku-9-9-does-not-exist). It may not exist or you may not have access to it. Run --model to pick a different model.; provider process exited with status 1; stderr: [claude-code:unrecognized_model] {\"model\":\"claude-haiku-9-9-does-not-exist\",\"query_source\":\"sdk\"}"
+          }
+        ]
+      },
+      "reason": "worker_failed",
+      "status": "failed"
+    },
+    "title": "unknown-model [fork]",
+    "usage": {
+      "cacheCreationInputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

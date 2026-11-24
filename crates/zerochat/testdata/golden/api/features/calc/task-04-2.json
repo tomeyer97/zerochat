@@ -1,0 +1,9 @@
+{
+  "body": {
+    "attempt": 2,
+    "diff": "--- a/04-a1.md\n+++ b/04-a2.md\n@@ -1,3 +1,7 @@\n # Add farewell()\n \n Implement farewell() in calc/.\n+\n+## Notes from the developer\n+\n+Keep farewell() next to greet().\n",
+    "previousAttempt": 1,
+    "text": "# Add farewell()\n\nImplement farewell() in calc/.\n\n## Notes from the developer\n\nKeep farewell() next to greet().\n"
+  },
+  "status": 200
+}

@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "artifact_not_found",
+    "message": "No such artifact."
+  },
+  "status": 404
+}

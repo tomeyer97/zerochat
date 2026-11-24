@@ -1,0 +1,186 @@
+{
+  "post": {
+    "post/benchmark-start-invalid.json": [],
+    "post/benchmark-stop-invalid.json": [],
+    "post/feature-missing.json": [],
+    "post/feature-start-without-zsf.json": [],
+    "post/feature-unknown-action.json": [],
+    "post/invalid-json.json": [],
+    "post/replay-bad-runtime.json": [],
+    "post/replay-observe.json": [],
+    "post/resume-bad-checkpoint.json": [],
+    "post/resume-observe.json": [],
+    "post/slice-approve-not-checkpoint.json": [],
+    "post/slice-retry-waiting.json": [],
+    "post/slice-unknown.json": [],
+    "post/steer-control-character.json": [],
+    "post/steer-empty.json": [],
+    "post/steer-no-capability.json": [],
+    "post/steer-observe.json": [],
+    "post/steer-over-256k.json": [],
+    "post/steer-too-long.json": [],
+    "post/stop-observe.json": [],
+    "post/write-runtime-invalid.json": []
+  },
+  "table": [
+    [
+      null,
+      []
+    ],
+    [
+      "text",
+      []
+    ],
+    [
+      42,
+      []
+    ],
+    [
+      {},
+      []
+    ],
+    [
+      {
+        "replayOf": {
+          "changedNodes": [],
+          "reusedExecutions": 1
+        },
+        "valid": true
+      },
+      []
+    ],
+    [
+      {
+        "completedNodes": [
+          "plan",
+          "worker"
+        ],
+        "replayOf": {
+          "changedNodes": [
+            "worker",
+            "review"
+          ],
+          "reusedExecutions": 0
+        },
+        "valid": true
+      },
+      []
+    ],
+    [
+      {
+        "completedNodes": "not a list",
+        "replayOf": {
+          "reusedExecutions": 3
+        },
+        "valid": true
+      },
+      []
+    ],
+    [
+      {
+        "replayOf": {
+          "changedNodes": [
+            "x"
+          ]
+        },
+        "valid": true
+      },
+      []
+    ],
+    [
+      {
+        "message": "no such checkpoint",
+        "valid": false
+      },
+      [
+        "no such checkpoint"
+      ]
+    ],
+    [
+      {
+        "message": "ignored",
+        "valid": true
+      },
+      []
+    ],
+    [
+      {
+        "errors": [
+          "plain",
+          {
+            "message": "bad kind",
+            "path": "root.children[0]"
+          },
+          {
+            "field": "model",
+            "message": "unknown model",
+            "node": "worker"
+          },
+          {
+            "code": 7
+          },
+          5,
+          null
+        ]
+      },
+      [
+        "plain",
+        "root.children[0]: bad kind",
+        "worker model: unknown model",
+        "{\"code\":7}",
+        "5",
+        "null"
+      ]
+    ],
+    [
+      {
+        "issues": [
+          {
+            "message": "from issues",
+            "path": ""
+          }
+        ]
+      },
+      [
+        "from issues"
+      ]
+    ],
+    [
+      {
+        "message": "m",
+        "problems": "not an array",
+        "valid": false
+      },
+      [
+        "m"
+      ]
+    ],
+    [
+      {
+        "conflict": {
+          "message": "already running",
+          "node": "worker"
+        }
+      },
+      [
+        "worker: already running"
+      ]
+    ],
+    [
+      {
+        "conflict": "conflicting run"
+      },
+      [
+        "conflicting run"
+      ]
+    ],
+    [
+      {
+        "errors": [],
+        "message": "m",
+        "valid": false
+      },
+      []
+    ]
+  ]
+}

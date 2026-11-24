@@ -1,0 +1,294 @@
+{
+  "admitted-only": [
+    false,
+    true
+  ],
+  "attempts-exhausted": [
+    false,
+    true
+  ],
+  "checkout-unavailable": [
+    false,
+    true
+  ],
+  "closing-postmortem": [
+    false,
+    true
+  ],
+  "codex-estimate": [
+    false,
+    true
+  ],
+  "copilot-session": [
+    false,
+    true
+  ],
+  "delivery-failed": [
+    true,
+    true
+  ],
+  "diag-api-hang": [
+    false,
+    true
+  ],
+  "diag-code-authentication-required": [
+    false,
+    true
+  ],
+  "diag-code-crash": [
+    false,
+    true
+  ],
+  "diag-code-input-required": [
+    false,
+    true
+  ],
+  "diag-code-malformed-result": [
+    false,
+    true
+  ],
+  "diag-code-other": [
+    false,
+    true
+  ],
+  "diag-code-policy-denied": [
+    false,
+    true
+  ],
+  "diag-code-refusal": [
+    false,
+    true
+  ],
+  "diag-code-timeout": [
+    false,
+    true
+  ],
+  "diag-context": [
+    false,
+    true
+  ],
+  "diag-credentials": [
+    false,
+    true
+  ],
+  "diag-disk": [
+    false,
+    true
+  ],
+  "diag-malformed-stream": [
+    false,
+    true
+  ],
+  "diag-missing-cli": [
+    false,
+    true
+  ],
+  "diag-model": [
+    false,
+    true
+  ],
+  "diag-network": [
+    false,
+    true
+  ],
+  "diag-permission": [
+    false,
+    true
+  ],
+  "diag-provider-down": [
+    false,
+    true
+  ],
+  "diag-provider-timeout": [
+    false,
+    true
+  ],
+  "diag-rate-limit": [
+    false,
+    true
+  ],
+  "diag-stream-cut": [
+    false,
+    true
+  ],
+  "diag-usage-limit": [
+    false,
+    true
+  ],
+  "force-stopped": [
+    false,
+    true
+  ],
+  "fork-only/fork-bad-credentials": [
+    false,
+    true
+  ],
+  "fork-only/fork-chaos-transient": [
+    false,
+    true
+  ],
+  "fork-only/fork-chaos-usage-limit": [
+    false,
+    true
+  ],
+  "fork-only/fork-controller-killed": [
+    false,
+    true
+  ],
+  "fork-only/fork-force-stopped": [
+    false,
+    true
+  ],
+  "fork-only/fork-happy-path": [
+    false,
+    true
+  ],
+  "fork-only/fork-late-failure": [
+    false,
+    true
+  ],
+  "fork-only/fork-replay": [
+    false,
+    true
+  ],
+  "fork-only/fork-resumed": [
+    false,
+    true
+  ],
+  "fork-only/fork-reviewer-never-satisfied": [
+    false,
+    true
+  ],
+  "fork-only/fork-steered": [
+    false,
+    true
+  ],
+  "fork-only/fork-unknown-model": [
+    false,
+    true
+  ],
+  "fork-only/fork-worker-timeout": [
+    false,
+    true
+  ],
+  "fork-only/replay-child": [
+    false,
+    true
+  ],
+  "fork-only/replay-parent": [
+    true,
+    true
+  ],
+  "fork-only/steered": [
+    false,
+    true
+  ],
+  "graph-ended-other": [
+    true,
+    true
+  ],
+  "lane-mixed": [
+    true,
+    true
+  ],
+  "lane-unknown-harness": [
+    false,
+    true
+  ],
+  "map-parallel": [
+    false,
+    true
+  ],
+  "no-checkpoints": [
+    false,
+    true
+  ],
+  "resumed-original": [
+    false,
+    true
+  ],
+  "resumed-successor": [
+    true,
+    true
+  ],
+  "running-live": [
+    false,
+    true
+  ],
+  "running-stock": [
+    false,
+    true
+  ],
+  "runtime-failed-checkpoint": [
+    false,
+    true
+  ],
+  "runtime-failed-permission": [
+    false,
+    true
+  ],
+  "runtime-failed-storage": [
+    false,
+    true
+  ],
+  "runtime-failed-unknown": [
+    false,
+    true
+  ],
+  "runtime-lost": [
+    false,
+    true
+  ],
+  "stalled": [
+    false,
+    true
+  ],
+  "stalled-disk": [
+    false,
+    true
+  ],
+  "stalled-live-usage": [
+    false,
+    true
+  ],
+  "stalled-then-closed": [
+    false,
+    true
+  ],
+  "succeeded": [
+    true,
+    true
+  ],
+  "succeeded-stock": [
+    false,
+    true
+  ],
+  "tool-output-rate-limit": [
+    false,
+    true
+  ],
+  "unknown-phase": [
+    false,
+    true
+  ],
+  "voided": [
+    false,
+    true
+  ],
+  "work-exhausted": [
+    false,
+    true
+  ],
+  "zeroshot-16/zeroshot16-normal": [
+    false,
+    true
+  ],
+  "zeroshot-16/zeroshot16-steered": [
+    false,
+    true
+  ],
+  "zeroshot-16/zeroshot16-unknown-model": [
+    false,
+    true
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 45.0,
+        "capSteps": 12,
+        "capUsd": 1.0,
+        "costUsd": 0.0620568,
+        "cutShort": null,
+        "exitReason": "interrupted after 50s, 1 steps",
+        "overLimit": null,
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261103-121900-29af42",
+        "score": null,
+        "seed": 0,
+        "startedAt": 1793704740251,
+        "state": "interrupted",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": null,
+        "testsTotal": null,
+        "wallS": 51.811130285,
+        "zeroshotRunId": "01a1a122-480f-7012-a453-09a724ea9236"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      }
+    ],
+    "endedAt": 1793704792059,
+    "harnessVersion": "c2d7bd80",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": "claude-haiku-4-5",
+        "nodes": [
+          {
+            "effort": "high",
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "worker",
+            "parallel": null
+          },
+          {
+            "effort": "medium",
+            "kind": "verifier",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "reviewer",
+            "parallel": null
+          },
+          {
+            "effort": "high",
+            "kind": "step",
+            "loopMax": 4,
+            "loopName": "review_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 1,
+        "runtimeFile": null,
+        "runtimeMatches": true,
+        "source": "default",
+        "variant": null
+      }
+    ],
+    "id": "label:ctrlc-test",
+    "label": "ctrlc-test",
+    "limits": {
+      "maxCostUsd": 1.0,
+      "maxSteps": 12,
+      "maxWallMinutes": 45.0
+    },
+    "maxScore": null,
+    "meanScore": null,
+    "meanScoreFinished": null,
+    "minScore": null,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": null,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1793704740251,
+    "starting": false,
+    "status": "stopped",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 0.0620568,
+    "totalWallS": 51.811130285,
+    "zeroshotVersion": "zeroshot 10.6.0"
+  },
+  "status": 200
+}

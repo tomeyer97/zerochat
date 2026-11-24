@@ -1,0 +1,76 @@
+{
+  "body": {
+    "batchId": "20261108-152720-fb0664",
+    "capUsd": 6.0,
+    "costUsd": 1.7417891,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "r2-hermetic2",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.6697437,
+        "node": "build"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.4313005,
+        "node": "explore"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.3793446,
+        "node": "postmortem"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.2614003,
+        "node": "oracle"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 1.7417891,
+    "runId": "20261108-152720-f53c72",
+    "score": 0.428571429,
+    "seed": 1,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "build#1",
+        "score": 0.428571429,
+        "seq": 1,
+        "testsPassed": 96,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.428571429,
+        "seq": 2,
+        "testsPassed": 96,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 96,
+    "testsTotal": 224,
+    "wallS": 740.184732199,
+    "zeroshotRunId": "01a1bb9b-7cca-7503-b544-989eba2d064d"
+  },
+  "status": 200
+}

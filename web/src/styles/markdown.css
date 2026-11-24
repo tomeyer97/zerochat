@@ -1,0 +1,89 @@
+/* ---------- markdown: agent text rendered by Markdown.tsx (chat, feedback, specs) ---------- */
+.markdown {
+  font-size: 13.5px;
+  line-height: 1.58;
+  overflow-wrap: anywhere;
+}
+.markdown > * + * {
+  margin-top: 7px;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 650;
+  margin-top: 10px;
+}
+/* Markdown.tsx renders `#` as h3, `##` and deeper as h4 to h6. */
+.markdown h3 {
+  font-size: 15px;
+}
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-size: 13.5px;
+}
+.markdown ul,
+.markdown ol {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.markdown li + li {
+  margin-top: 2px;
+}
+.markdown li {
+  white-space: pre-wrap;
+}
+.markdown p {
+  white-space: pre-wrap;
+}
+.markdown blockquote {
+  margin: 0;
+  padding-left: 10px;
+  border-left: 3px solid var(--hairline);
+  color: var(--secondary);
+}
+.markdown hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+}
+.md-code {
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  background: var(--code-surface);
+  overflow: hidden;
+}
+.md-code-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 4px 1px 9px;
+  font-size: 10.5px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--hairline);
+  font-family: var(--font-mono);
+}
+.md-code pre {
+  padding: 8px 10px;
+  max-height: 440px;
+  overflow: auto;
+  white-space: pre;
+}
+.md-code pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+.md-table {
+  overflow: auto;
+}
+.md-table table {
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+.md-table th,
+.md-table td {
+  border: 1px solid var(--hairline);
+  padding: 3px 8px;
+  text-align: left;
+}

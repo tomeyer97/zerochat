@@ -1,0 +1,463 @@
+{
+  "executions": {
+    "attempts-exhausted#1": "—",
+    "attempts-exhausted#2": "—",
+    "closing-postmortem#1": "—",
+    "codex-estimate#1": "—",
+    "copilot-session#1": "—",
+    "delivery-failed#1": "$0.04",
+    "delivery-failed#2": "$0.01",
+    "delivery-failed#3": "$0.03",
+    "diag-api-hang#1": "$0.04",
+    "diag-code-authentication-required#1": "—",
+    "diag-code-crash#1": "—",
+    "diag-code-input-required#1": "—",
+    "diag-code-malformed-result#1": "—",
+    "diag-code-other#1": "—",
+    "diag-code-policy-denied#1": "—",
+    "diag-code-refusal#1": "—",
+    "diag-code-timeout#1": "—",
+    "diag-context#1": "—",
+    "diag-credentials#1": "—",
+    "diag-disk#1": "—",
+    "diag-malformed-stream#1": "—",
+    "diag-missing-cli#1": "—",
+    "diag-model#1": "—",
+    "diag-network#1": "—",
+    "diag-permission#1": "—",
+    "diag-provider-down#1": "—",
+    "diag-provider-timeout#1": "—",
+    "diag-rate-limit#1": "—",
+    "diag-stream-cut#1": "—",
+    "diag-usage-limit#1": "—",
+    "force-stopped#1": "$0.04",
+    "force-stopped#2": "—",
+    "force-stopped#3": "—",
+    "fork-only/fork-bad-credentials#1": "$0.00",
+    "fork-only/fork-chaos-transient#1": "$0.06",
+    "fork-only/fork-chaos-usage-limit#1": "$0.05",
+    "fork-only/fork-controller-killed#1": "$0.08",
+    "fork-only/fork-controller-killed#2": "~$0.03",
+    "fork-only/fork-controller-killed#3": "~$0.04",
+    "fork-only/fork-force-stopped#1": "$0.11",
+    "fork-only/fork-force-stopped#2": "—",
+    "fork-only/fork-force-stopped#3": "—",
+    "fork-only/fork-happy-path#1": "$0.07",
+    "fork-only/fork-happy-path#2": "$0.04",
+    "fork-only/fork-happy-path#3": "$0.04",
+    "fork-only/fork-late-failure#1": "$0.08",
+    "fork-only/fork-late-failure#2": "$0.04",
+    "fork-only/fork-late-failure#3": "~$0.04",
+    "fork-only/fork-replay#1": "$0.06",
+    "fork-only/fork-replay#2": "$0.04",
+    "fork-only/fork-replay#3": "$0.03",
+    "fork-only/fork-resumed#1": "$0.04",
+    "fork-only/fork-resumed#2": "$0.04",
+    "fork-only/fork-resumed#3": "$0.04",
+    "fork-only/fork-reviewer-never-satisfied#1": "$0.08",
+    "fork-only/fork-reviewer-never-satisfied#2": "$0.03",
+    "fork-only/fork-reviewer-never-satisfied#3": "$0.04",
+    "fork-only/fork-reviewer-never-satisfied#4": "$0.04",
+    "fork-only/fork-reviewer-never-satisfied#5": "$0.04",
+    "fork-only/fork-reviewer-never-satisfied#6": "$0.03",
+    "fork-only/fork-steered#1": "$0.04",
+    "fork-only/fork-unknown-model#1": "$0.00",
+    "fork-only/fork-worker-timeout#1": "~$0.09",
+    "fork-only/replay-child#1": "—",
+    "fork-only/replay-child#2": "$0.01",
+    "fork-only/replay-child#3": "—",
+    "fork-only/replay-parent#1": "$0.04",
+    "fork-only/replay-parent#2": "$0.01",
+    "fork-only/replay-parent#3": "$0.03",
+    "fork-only/steered#1": "$0.04",
+    "graph-ended-other#1": "$0.04",
+    "graph-ended-other#2": "$0.01",
+    "graph-ended-other#3": "$0.03",
+    "lane-mixed#1": "—",
+    "lane-unknown-harness#1": "—",
+    "map-parallel#1": "$0.04",
+    "map-parallel#2": "$0.04",
+    "map-parallel#3": "—",
+    "no-checkpoints#1": "—",
+    "resumed-original#1": "—",
+    "resumed-successor#1": "$0.04",
+    "resumed-successor#2": "$0.01",
+    "resumed-successor#3": "$0.03",
+    "running-live#1": "$0.04",
+    "running-live#2": "—",
+    "running-live#3": "—",
+    "running-live#4": "—",
+    "running-live#5": "—",
+    "running-stock#1": "—",
+    "runtime-failed-checkpoint#1": "—",
+    "runtime-failed-permission#1": "—",
+    "runtime-failed-storage#1": "—",
+    "runtime-failed-unknown#1": "—",
+    "runtime-lost#1": "—",
+    "stalled#1": "—",
+    "stalled-disk#1": "—",
+    "stalled-live-usage#1": "~$0.02",
+    "stalled-then-closed#1": "~$0.02",
+    "succeeded#1": "$0.04",
+    "succeeded#2": "$0.01",
+    "succeeded#3": "$0.03",
+    "succeeded-stock#1": "~$0.02",
+    "succeeded-stock#2": "~$0.02",
+    "succeeded-stock#3": "~$0.02",
+    "tool-output-rate-limit#1": "—",
+    "voided#1": "—",
+    "voided#2": "$0.04",
+    "work-exhausted#1": "$0.04",
+    "work-exhausted#2": "—",
+    "work-exhausted#3": "—",
+    "work-exhausted#4": "$0.04",
+    "work-exhausted#5": "—",
+    "work-exhausted#6": "—",
+    "zeroshot-16/zeroshot16-normal#1": "~$0.05",
+    "zeroshot-16/zeroshot16-steered#1": "~$0.03",
+    "zeroshot-16/zeroshot16-unknown-model#1": "—"
+  },
+  "runs": {
+    "admitted-only": "—",
+    "attempts-exhausted": "—",
+    "checkout-unavailable": "—",
+    "closing-postmortem": "—",
+    "codex-estimate": "—",
+    "copilot-session": "—",
+    "delivery-failed": "$0.08",
+    "diag-api-hang": "$0.04",
+    "diag-code-authentication-required": "—",
+    "diag-code-crash": "—",
+    "diag-code-input-required": "—",
+    "diag-code-malformed-result": "—",
+    "diag-code-other": "—",
+    "diag-code-policy-denied": "—",
+    "diag-code-refusal": "—",
+    "diag-code-timeout": "—",
+    "diag-context": "—",
+    "diag-credentials": "—",
+    "diag-disk": "—",
+    "diag-malformed-stream": "—",
+    "diag-missing-cli": "—",
+    "diag-model": "—",
+    "diag-network": "—",
+    "diag-permission": "—",
+    "diag-provider-down": "—",
+    "diag-provider-timeout": "—",
+    "diag-rate-limit": "—",
+    "diag-stream-cut": "—",
+    "diag-usage-limit": "—",
+    "force-stopped": "$0.04",
+    "fork-only/fork-bad-credentials": "$0.00",
+    "fork-only/fork-chaos-transient": "$0.06",
+    "fork-only/fork-chaos-usage-limit": "$0.05",
+    "fork-only/fork-controller-killed": "~$0.15",
+    "fork-only/fork-force-stopped": "$0.11",
+    "fork-only/fork-happy-path": "$0.15",
+    "fork-only/fork-late-failure": "~$0.16",
+    "fork-only/fork-replay": "$0.13",
+    "fork-only/fork-resumed": "$0.12",
+    "fork-only/fork-reviewer-never-satisfied": "$0.26",
+    "fork-only/fork-steered": "$0.04",
+    "fork-only/fork-unknown-model": "$0.00",
+    "fork-only/fork-worker-timeout": "~$0.09",
+    "fork-only/replay-child": "$0.01",
+    "fork-only/replay-parent": "$0.08",
+    "fork-only/steered": "$0.04",
+    "graph-ended-other": "$0.08",
+    "lane-mixed": "—",
+    "lane-unknown-harness": "—",
+    "map-parallel": "$0.08",
+    "no-checkpoints": "—",
+    "resumed-original": "—",
+    "resumed-successor": "$0.08",
+    "running-live": "$0.04",
+    "running-stock": "—",
+    "runtime-failed-checkpoint": "—",
+    "runtime-failed-permission": "—",
+    "runtime-failed-storage": "—",
+    "runtime-failed-unknown": "—",
+    "runtime-lost": "—",
+    "stalled": "—",
+    "stalled-disk": "—",
+    "stalled-live-usage": "~$0.02",
+    "stalled-then-closed": "~$0.02",
+    "succeeded": "$0.08",
+    "succeeded-stock": "~$0.05",
+    "tool-output-rate-limit": "—",
+    "unknown-phase": "—",
+    "voided": "$0.04",
+    "work-exhausted": "$0.08",
+    "zeroshot-16/zeroshot16-normal": "~$0.05",
+    "zeroshot-16/zeroshot16-steered": "~$0.03",
+    "zeroshot-16/zeroshot16-unknown-model": "—"
+  },
+  "table": [
+    [
+      "null",
+      [
+        "—",
+        "—"
+      ]
+    ],
+    [
+      "undefined",
+      [
+        "—",
+        "—"
+      ]
+    ],
+    [
+      "NaN",
+      [
+        "—",
+        "~—"
+      ]
+    ],
+    [
+      "Infinity",
+      [
+        "—",
+        "~—"
+      ]
+    ],
+    [
+      "-Infinity",
+      [
+        "—",
+        "~—"
+      ]
+    ],
+    [
+      "-1500",
+      [
+        "<$0.01",
+        "~<$0.01"
+      ]
+    ],
+    [
+      "-0.4",
+      [
+        "<$0.01",
+        "~<$0.01"
+      ]
+    ],
+    [
+      "0",
+      [
+        "$0.00",
+        "—"
+      ]
+    ],
+    [
+      "0.004",
+      [
+        "<$0.01",
+        "~<$0.01"
+      ]
+    ],
+    [
+      "0.005",
+      [
+        "<$0.01",
+        "~<$0.01"
+      ]
+    ],
+    [
+      "0.01",
+      [
+        "$0.01",
+        "~$0.01"
+      ]
+    ],
+    [
+      "0.499",
+      [
+        "$0.50",
+        "~$0.50"
+      ]
+    ],
+    [
+      "0.5",
+      [
+        "$0.50",
+        "~$0.50"
+      ]
+    ],
+    [
+      "1",
+      [
+        "$1.00",
+        "~$1.00"
+      ]
+    ],
+    [
+      "9.95",
+      [
+        "$9.95",
+        "~$9.95"
+      ]
+    ],
+    [
+      "42",
+      [
+        "$42.00",
+        "~$42.00"
+      ]
+    ],
+    [
+      "999",
+      [
+        "$999.00",
+        "~$999.00"
+      ]
+    ],
+    [
+      "999.5",
+      [
+        "$999.50",
+        "~$999.50"
+      ]
+    ],
+    [
+      "1000",
+      [
+        "$1,000",
+        "~$1,000"
+      ]
+    ],
+    [
+      "1049",
+      [
+        "$1,049",
+        "~$1,049"
+      ]
+    ],
+    [
+      "1050",
+      [
+        "$1,050",
+        "~$1,050"
+      ]
+    ],
+    [
+      "9949",
+      [
+        "$9,949",
+        "~$9,949"
+      ]
+    ],
+    [
+      "9950",
+      [
+        "$9,950",
+        "~$9,950"
+      ]
+    ],
+    [
+      "59999",
+      [
+        "$59,999",
+        "~$59,999"
+      ]
+    ],
+    [
+      "60000",
+      [
+        "$60,000",
+        "~$60,000"
+      ]
+    ],
+    [
+      "61000",
+      [
+        "$61,000",
+        "~$61,000"
+      ]
+    ],
+    [
+      "999499",
+      [
+        "$999,499",
+        "~$999,499"
+      ]
+    ],
+    [
+      "999500",
+      [
+        "$999,500",
+        "~$999,500"
+      ]
+    ],
+    [
+      "1000000",
+      [
+        "$1,000,000",
+        "~$1,000,000"
+      ]
+    ],
+    [
+      "3599999",
+      [
+        "$3,599,999",
+        "~$3,599,999"
+      ]
+    ],
+    [
+      "3600000",
+      [
+        "$3,600,000",
+        "~$3,600,000"
+      ]
+    ],
+    [
+      "9999999",
+      [
+        "$9,999,999",
+        "~$9,999,999"
+      ]
+    ],
+    [
+      "86399999",
+      [
+        "$86,399,999",
+        "~$86,399,999"
+      ]
+    ],
+    [
+      "172799999",
+      [
+        "$172,799,999",
+        "~$172,799,999"
+      ]
+    ],
+    [
+      "172800000",
+      [
+        "$172,800,000",
+        "~$172,800,000"
+      ]
+    ],
+    [
+      "1000000000",
+      [
+        "$1,000,000,000",
+        "~$1,000,000,000"
+      ]
+    ],
+    [
+      "1500000000",
+      [
+        "$1,500,000,000",
+        "~$1,500,000,000"
+      ]
+    ],
+    [
+      "1000000000000",
+      [
+        "$1,000,000,000,000",
+        "~$1,000,000,000,000"
+      ]
+    ]
+  ]
+}

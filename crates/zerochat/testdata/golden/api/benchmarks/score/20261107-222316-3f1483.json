@@ -1,0 +1,83 @@
+{
+  "body": {
+    "batchId": "20261107-222316-910b7d",
+    "capUsd": 6.0,
+    "costUsd": 6.0463509,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "r1-ctrl-diffloop",
+    "nodeCosts": [
+      {
+        "calls": 2,
+        "costUsd": 2.5238832,
+        "node": "repair"
+      },
+      {
+        "calls": 1,
+        "costUsd": 2.2117365,
+        "node": "build"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.7432091,
+        "node": "oracle"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.5675221,
+        "node": "explore"
+      }
+    ],
+    "overLimit": "budget",
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 6.0463509,
+    "runId": "20261107-222316-3f1483",
+    "score": 0.620535714,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "build#1",
+        "score": 0.647321429,
+        "seq": 1,
+        "testsPassed": 145,
+        "testsTotal": 224
+      },
+      {
+        "node": "repair#1",
+        "score": 0.616071429,
+        "seq": 2,
+        "testsPassed": 138,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.620535714,
+        "seq": 3,
+        "testsPassed": 139,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 139,
+    "testsTotal": 224,
+    "wallS": 2602.709150314,
+    "zeroshotRunId": "01a1b7e4-f2ba-73f0-9272-88dcb84e5ae4"
+  },
+  "status": 200
+}

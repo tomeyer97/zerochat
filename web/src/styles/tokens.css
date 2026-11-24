@@ -1,0 +1,192 @@
+/* Design tokens: every colour, font and layout width the stylesheets use. Light values on :root.
+   The dark palette applies when the system is dark and the user picked no theme, or when the user
+   picked dark (theme.ts sets data-theme). CSS cannot share one block between a media query and an
+   attribute selector, so the dark palette is written twice; tokens.test.ts checks the two blocks
+   stay identical. */
+:root {
+  /* Surfaces: the page, cards, and hover and selection states */
+  --canvas: #faf7f1;
+  --surface: #fff;
+  --surface-hover: #f7f3ed;
+  --group-surface: #fffcf7;
+  --code-surface: #f4f0e9;
+  --hover: #eae4da;
+  --subtle-hover: #eee8de;
+  --active: #eee6dc;
+  --selected: #eef3fb;
+  /* Text */
+  --ink: #171411;
+  --secondary: #4a433a;
+  --muted: #6f6558;
+  /* Accent. --accent fills buttons; --accent-text (links, running) and --focus (focus ring) are the
+     same blue in light mode and a lighter one in dark mode, where text on the canvas needs more
+     contrast. */
+  --accent: #2b5ea8;
+  --accent-hover: #234d8a;
+  --accent-text: #2b5ea8;
+  --focus: #2b5ea8;
+  --selection-ring: #2b5ea822;
+  /* Borders and graph edges */
+  --hairline: #e4ded3;
+  --control-border: #9a8e7e;
+  --border-hover: #a39685;
+  --card-border: #ccc2b3;
+  --edge: #b3a99c;
+  --edge-taken: #5f564b;
+  /* Status. Success is the expected outcome and stays quiet: muted, no tint (DESIGN: colour only for
+     failed, running and a pressing limit). Diff additions keep their own green (--add-*). */
+  --success: #6f6558;
+  --ok-surface: transparent;
+  --ok-border: #e4ded3;
+  --error-text: #a3240b;
+  --error-surface: #fff3ed;
+  --error-border: #e8c2b6;
+  --warn: #8a5a00;
+  --warn-surface: #fff6e0;
+  --warn-border: #ebd29a;
+  --info-surface: #f3f0ea;
+  /* Sub-agent messages in the chat */
+  --subagent: #5b3fa0;
+  --subagent-surface: #f3effb;
+  /* Diff lines */
+  --add-bg: #e8f5e9;
+  --add-text: #1d5c2c;
+  --del-bg: #fdecea;
+  --del-text: #8c1d10;
+  /* Shadows and the modal backdrop */
+  --shadow-popover: #20150016;
+  --shadow-modal: #26180726;
+  --shadow-panel: #2015001a;
+  --backdrop: #241b1459;
+  /* Text on an accent fill: the same in both themes */
+  --on-accent: #faf7f1;
+  /* Fonts */
+  --font-ui: 'Spline Sans Variable', system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  /* Layout widths (narrower below 1280px and 1100px: see the end of run.css) */
+  --panel-w: clamp(440px, 44vw, 720px);
+  --sidebar-w: 284px;
+  font-family: var(--font-ui);
+  color: var(--ink);
+  font-size: 14px;
+  color-scheme: light;
+}
+/* Dark palette, 1 of 2: the system is dark and the user picked no theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    /* Surfaces: the page, cards, and hover and selection states */
+    --canvas: #14110e;
+    --surface: #1e1a16;
+    --surface-hover: #2a241e;
+    --group-surface: #241e18;
+    --code-surface: #171410;
+    --hover: #362e25;
+    --subtle-hover: #2a241e;
+    --active: #352b22;
+    --selected: #1d2738;
+    /* Text */
+    --ink: #f5f2ec;
+    --secondary: #c9c2b8;
+    --muted: #a99f92;
+    /* Accent. --accent fills buttons; --accent-text (links, running) and --focus (focus ring) are the
+       same blue in light mode and a lighter one in dark mode, where text on the canvas needs more
+       contrast. */
+    --accent: #3b6fc0;
+    --accent-hover: #4a7dcc;
+    --accent-text: #86a6d8;
+    --focus: #86a6d8;
+    --selection-ring: #86a6d833;
+    /* Borders and graph edges */
+    --hairline: #40392f;
+    --control-border: #786b5d;
+    --border-hover: #9b8c79;
+    --card-border: #665a4b;
+    --edge: #6f6457;
+    --edge-taken: #c9bfb1;
+    /* Status. Success is the expected outcome and stays quiet: muted, no tint (DESIGN: colour only for
+       failed, running and a pressing limit). Diff additions keep their own green (--add-*). */
+    --success: #a99f92;
+    --ok-surface: transparent;
+    --ok-border: #40392f;
+    --error-text: #e39b84;
+    --error-surface: #352018;
+    --error-border: #754130;
+    --warn: #cdab62;
+    --warn-surface: #2f2614;
+    --warn-border: #6b5526;
+    --info-surface: #26211b;
+    /* Sub-agent messages in the chat */
+    --subagent: #c3b1f0;
+    --subagent-surface: #2a2336;
+    /* Diff lines */
+    --add-bg: #17301d;
+    --add-text: #a5dcb0;
+    --del-bg: #3a1a15;
+    --del-text: #f4b3a6;
+    /* Shadows and the modal backdrop */
+    --shadow-popover: #00000040;
+    --shadow-modal: #00000070;
+    --shadow-panel: #00000050;
+    --backdrop: #090705a6;
+  }
+}
+/* Dark palette, 2 of 2: the user picked dark. Same values as above. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  /* Surfaces: the page, cards, and hover and selection states */
+  --canvas: #14110e;
+  --surface: #1e1a16;
+  --surface-hover: #2a241e;
+  --group-surface: #241e18;
+  --code-surface: #171410;
+  --hover: #362e25;
+  --subtle-hover: #2a241e;
+  --active: #352b22;
+  --selected: #1d2738;
+  /* Text */
+  --ink: #f5f2ec;
+  --secondary: #c9c2b8;
+  --muted: #a99f92;
+  /* Accent. --accent fills buttons; --accent-text (links, running) and --focus (focus ring) are the
+     same blue in light mode and a lighter one in dark mode, where text on the canvas needs more
+     contrast. */
+  --accent: #3b6fc0;
+  --accent-hover: #4a7dcc;
+  --accent-text: #86a6d8;
+  --focus: #86a6d8;
+  --selection-ring: #86a6d833;
+  /* Borders and graph edges */
+  --hairline: #40392f;
+  --control-border: #786b5d;
+  --border-hover: #9b8c79;
+  --card-border: #665a4b;
+  --edge: #6f6457;
+  --edge-taken: #c9bfb1;
+  /* Status. Success is the expected outcome and stays quiet: muted, no tint (DESIGN: colour only for
+     failed, running and a pressing limit). Diff additions keep their own green (--add-*). */
+  --success: #a99f92;
+  --ok-surface: transparent;
+  --ok-border: #40392f;
+  --error-text: #e39b84;
+  --error-surface: #352018;
+  --error-border: #754130;
+  --warn: #cdab62;
+  --warn-surface: #2f2614;
+  --warn-border: #6b5526;
+  --info-surface: #26211b;
+  /* Sub-agent messages in the chat */
+  --subagent: #c3b1f0;
+  --subagent-surface: #2a2336;
+  /* Diff lines */
+  --add-bg: #17301d;
+  --add-text: #a5dcb0;
+  --del-bg: #3a1a15;
+  --del-text: #f4b3a6;
+  /* Shadows and the modal backdrop */
+  --shadow-popover: #00000040;
+  --shadow-modal: #00000070;
+  --shadow-panel: #00000050;
+  --backdrop: #090705a6;
+}

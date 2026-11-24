@@ -1,0 +1,4710 @@
+{
+  "empty": {
+    "<Map>": []
+  },
+  "hand": {
+    "<Map>": [
+      [
+        "a",
+        {
+          "height": 12,
+          "width": 10,
+          "x": 5,
+          "y": 6
+        }
+      ],
+      [
+        "b",
+        {
+          "height": 0,
+          "width": 0,
+          "x": 6,
+          "y": 8
+        }
+      ],
+      [
+        "c",
+        {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    ]
+  },
+  "runs": {
+    "admitted-only": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "attempts-exhausted": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "checkout-unavailable": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "closing-postmortem": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "codex-estimate": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "copilot-session": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "delivery-failed": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "diag-api-hang": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-authentication-required": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-crash": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-input-required": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-malformed-result": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-other": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-policy-denied": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-refusal": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-code-timeout": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-context": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-credentials": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-disk": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-malformed-stream": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-missing-cli": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-model": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-network": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-permission": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-provider-down": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-provider-timeout": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-rate-limit": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-stream-cut": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "diag-usage-limit": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "force-stopped": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-bad-credentials": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 44.5,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-chaos-transient": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 64,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-chaos-usage-limit": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 44.5,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-controller-killed": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-force-stopped": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-happy-path": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 210,
+              "y": 269
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 565,
+              "y": 110
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-late-failure": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "review_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 190.5,
+              "y": 269
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "review_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 565,
+              "y": 110
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-replay": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 210,
+              "y": 269
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 565,
+              "y": 110
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-resumed": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 210,
+              "y": 269
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 565,
+              "y": 110
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-reviewer-never-satisfied": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "change_attempts_exhausted",
+            {
+              "height": 32,
+              "width": 219,
+              "x": 148.5,
+              "y": 264
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "parallel_reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "change_attempts_exhausted",
+            {
+              "height": 32,
+              "width": 219,
+              "x": 560,
+              "y": 101
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-steered": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 64,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-unknown-model": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 44.5,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/fork-worker-timeout": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 44.5,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/replay-child": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/replay-parent": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "change_attempts_exhausted",
+            {
+              "height": 32,
+              "width": 219,
+              "x": 148.5,
+              "y": 264
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "change_attempts_exhausted",
+            {
+              "height": 32,
+              "width": 219,
+              "x": 560,
+              "y": 101
+            }
+          ]
+        ]
+      }
+    },
+    "fork-only/steered": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "graph-ended-other": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "lane-mixed": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "lane-unknown-harness": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "map-parallel": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "per_file",
+            {
+              "height": 98,
+              "width": 236,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "fix",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 40
+            }
+          ],
+          [
+            "summarize",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 136
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "per_file",
+            {
+              "height": 98,
+              "width": 236,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "fix",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 40
+            }
+          ],
+          [
+            "summarize",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 31
+            }
+          ]
+        ]
+      }
+    },
+    "no-checkpoints": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "resumed-original": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "resumed-successor": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "running-live": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "running-stock": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "runtime-failed-checkpoint": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "runtime-failed-permission": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "runtime-failed-storage": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "runtime-failed-unknown": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "runtime-lost": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "stalled": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "stalled-disk": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "stalled-live-usage": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "stalled-then-closed": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "succeeded": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "succeeded-stock": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "tool-output-rate-limit": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "unknown-phase": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ]
+        ]
+      }
+    },
+    "voided": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ]
+        ]
+      }
+    },
+    "work-exhausted": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 226,
+              "width": 500,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 154,
+              "y": 40
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 98,
+              "width": 472,
+              "x": 22,
+              "y": 122
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 36,
+              "y": 154
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 272,
+              "y": 154
+            }
+          ],
+          [
+            "change_attempts_exhausted",
+            {
+              "height": 32,
+              "width": 219,
+              "x": 148.5,
+              "y": 264
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "change_loop",
+            {
+              "height": 218,
+              "width": 512,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "code",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 22,
+              "y": 100
+            }
+          ],
+          [
+            "reviews",
+            {
+              "height": 172,
+              "width": 236,
+              "x": 270,
+              "y": 40
+            }
+          ],
+          [
+            "acceptance",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 72
+            }
+          ],
+          [
+            "code_review",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 284,
+              "y": 146
+            }
+          ],
+          [
+            "change_attempts_exhausted",
+            {
+              "height": 32,
+              "width": 219,
+              "x": 560,
+              "y": 101
+            }
+          ]
+        ]
+      }
+    },
+    "zeroshot-16/zeroshot16-normal": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 64,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "zeroshot-16/zeroshot16-steered": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 64,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "done",
+            {
+              "height": 32,
+              "width": 96,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    },
+    "zeroshot-16/zeroshot16-unknown-model": {
+      "DOWN": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 44.5,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "RIGHT": {
+        "<Map>": [
+          [
+            "worker",
+            {
+              "height": 52,
+              "width": 208,
+              "x": 8,
+              "y": 8
+            }
+          ],
+          [
+            "worker_failed",
+            {
+              "height": 32,
+              "width": 135,
+              "x": 256,
+              "y": 18
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+15:30:20 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] start label='ticket-v1' version=a6d4d43bd7 model=per-node art=/data/pb/runs/20261103-153020-39acd7
+15:30:21 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+15:30:27 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node start  intake (exec 1, attempt 1)
+15:32:35 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node done   intake -> verified 
+15:32:35 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node start  recon (exec 2, attempt 1)
+15:35:10 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node done   recon -> verified 
+15:35:12 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node start  testfirst (exec 3, attempt 1)
+15:37:26 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node done   testfirst -> verified 
+15:37:26 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node start  build (exec 4, attempt 1)
+15:44:03 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node done   build -> verified 
+15:44:05 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node start  trace (exec 5, attempt 1)
+15:46:39 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node done   trace -> verifier accepted
+15:46:41 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node start  adversary (exec 6, attempt 1)
+15:49:56 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node done   adversary -> verifier accepted
+15:49:56 [20261103-153020-39acd7 tomnomnom__gron.88a6234 s0] node st…[fixture: 1538 more characters cut]

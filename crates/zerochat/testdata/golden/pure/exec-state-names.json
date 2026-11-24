@@ -1,0 +1,30 @@
+[
+  [
+    "running",
+    "running"
+  ],
+  [
+    "succeeded",
+    "succeeded"
+  ],
+  [
+    "accepted",
+    "accepted"
+  ],
+  [
+    "rejected",
+    "rejected"
+  ],
+  [
+    "failed",
+    "failed"
+  ],
+  [
+    "voided",
+    "voided"
+  ],
+  [
+    "interrupted",
+    "interrupted"
+  ]
+]

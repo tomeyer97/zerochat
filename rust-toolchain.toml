@@ -1,0 +1,5 @@
+# The Rust release zerochat is built and tested with (CONTRIBUTING.md, Prerequisites).
+# rustup installs it on the first `cargo` run. Cargo.toml's `rust-version` is the same.
+[toolchain]
+channel = "1.90.0"
+components = ["rustfmt", "clippy"]

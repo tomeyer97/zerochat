@@ -1,0 +1,188 @@
+/* ---------- features ---------- */
+.nav-badge {
+  display: inline-block;
+  margin-left: 5px;
+  min-width: 17px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--warn);
+  color: var(--surface);
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 17px;
+  text-align: center;
+}
+.feature-table .col-now {
+  font-size: 13px;
+  max-width: 360px;
+}
+.feature-table tr.needs-you .run-link {
+  font-weight: 600;
+}
+.feature-now-narrow {
+  display: none;
+}
+.feature-now {
+  margin: 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow-wrap: anywhere;
+}
+.feature-now-parts .inline-link,
+.slice-deps .inline-link,
+.attention-item .inline-link {
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0;
+}
+.crumbs {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.parallel-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--secondary);
+}
+.parallel-form input {
+  width: 52px;
+  padding: 3px 6px;
+  font: inherit;
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.parallel-form input[aria-invalid='true'] {
+  border-color: var(--error-text);
+}
+.branch-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.attention-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.attention-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding: 7px 10px;
+  border: 1px solid var(--hairline);
+  border-left-width: 3px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--ink);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.attention-item.tone-warn {
+  border-color: var(--warn-border);
+  border-left-color: var(--warn);
+  background: var(--warn-surface);
+}
+.attention-item.tone-bad {
+  border-color: var(--error-border);
+  border-left-color: var(--error-text);
+  background: var(--error-surface);
+}
+.attention-item.tone-muted {
+  background: var(--surface);
+}
+.attention-item > span:first-child {
+  min-width: 0;
+  flex: 1 1 240px;
+}
+.attention-buttons {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.feature-stale {
+  margin: 6px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--warn);
+}
+.feature-missing {
+  margin: 8px 0;
+  font-size: 13px;
+}
+/* Confirmations float over the page (no layout shift) and leave on their own. Not the shared
+   `.toast` (components.css): that one is an inline banner in the page's flow. */
+.feature-toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 60;
+  max-width: min(420px, calc(100vw - 32px));
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 6px 20px var(--shadow-popover);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.feature-toast.tone-bad {
+  border-color: var(--error-border);
+  color: var(--error-text);
+}
+/* The empty Features page: two sentences, the three steps with their commands, the docs link. */
+.features-empty {
+  display: grid;
+  gap: 12px;
+  max-width: 620px;
+  text-align: left;
+}
+.features-steps {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+}
+.features-steps li {
+  display: grid;
+  gap: 3px;
+}
+.features-step-label {
+  color: var(--ink);
+  font-weight: 600;
+}
+.features-install {
+  display: grid;
+  gap: 4px;
+}
+.features-install p {
+  margin: 0;
+}
+.features-docs {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  justify-self: start;
+}

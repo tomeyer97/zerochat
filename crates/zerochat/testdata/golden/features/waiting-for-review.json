@@ -1,0 +1,46 @@
+{
+  "requestChangesBlankNotes": {
+    "body": {
+      "code": "invalid_request",
+      "message": "Request changes needs notes: say what to change (`notes`)."
+    },
+    "status": 400
+  },
+  "requestChangesWithoutNotes": {
+    "body": {
+      "code": "invalid_request",
+      "message": "Request changes needs notes: say what to change (`notes`)."
+    },
+    "status": 400
+  },
+  "slice": {
+    "actions": [
+      "approve",
+      "retry",
+      "skip"
+    ],
+    "commit": null,
+    "id": "14",
+    "mergedAt": null,
+    "prUrl": "https://github.com/example/calc/pull/14",
+    "status": "waiting_for_review",
+    "worktreeChanges": {
+      "additions": 4,
+      "deletions": 0,
+      "files": [
+        {
+          "additions": 4,
+          "deletions": 0,
+          "path": "calc/ops.py"
+        }
+      ]
+    }
+  },
+  "worktree": {
+    "body": {
+      "diff": "diff --git a/calc/ops.py b/calc/ops.py\nindex 0953fca..af337bf 100644\n--- a/calc/ops.py\n+++ b/calc/ops.py\n@@ -11,3 +11,7 @@ def mul(a, b):\n \n \n # tidy\n+\n+\n+def max2(a, b):\n+    return a if a >= b else b\n",
+      "fork": "6ea2cf45e564a22af953adfdafe7f28f28530e66"
+    },
+    "status": 200
+  }
+}

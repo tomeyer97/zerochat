@@ -1,0 +1,81 @@
+{
+  "slices": {
+    "calc/01": [
+      "",
+      ""
+    ],
+    "calc/02": [
+      "",
+      ""
+    ],
+    "calc/03": [
+      "",
+      ""
+    ],
+    "calc/04": [
+      "",
+      ""
+    ],
+    "calc/05": [
+      "",
+      ""
+    ],
+    "calc/06": [
+      "blocked by 04 (failed)",
+      "waits for 04, 05"
+    ],
+    "calc/07": [
+      "",
+      ""
+    ],
+    "calc/08": [
+      "",
+      ""
+    ],
+    "calc/09": [
+      "",
+      ""
+    ],
+    "calc/10": [
+      "",
+      ""
+    ],
+    "calc/11": [
+      "",
+      ""
+    ],
+    "calc/12": [
+      "",
+      ""
+    ],
+    "calc/13": [
+      "blocked by 12 (failed)",
+      "waits for 12"
+    ],
+    "calc/14": [
+      "",
+      ""
+    ],
+    "fresh/01": [
+      "waits for Start",
+      "waits for Start"
+    ],
+    "fresh/02": [
+      "waits for 01",
+      "waits for 01"
+    ],
+    "paused/01": [
+      "",
+      ""
+    ]
+  },
+  "table": [
+    "ready",
+    "retry queued",
+    "lease held by 03",
+    "retry queued · disk",
+    "blocked by 01 (failed), 02 (interrupted)",
+    "blocked by 01 (failed)",
+    ""
+  ]
+}

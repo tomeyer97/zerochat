@@ -1,0 +1,539 @@
+{
+ "source": "Zeroshot 16.1 + PR #1667 demo run 01a1fa96-58a2-7211-b0c9-b4d09b935c44 (software-change, Haiku): node starts/ends and every steer vector, verbatim; outcomes reduced",
+ "events": [
+  {
+   "seq": 4,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "worker",
+     "nodeInstance": 1,
+     "execution": 1
+    }
+   }
+  },
+  {
+   "seq": 124,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "worker",
+      "nodeInstance": 1,
+      "execution": 1
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 125,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "acceptance",
+     "nodeInstance": 2,
+     "execution": 2
+    }
+   }
+  },
+  {
+   "seq": 126,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "code",
+     "nodeInstance": 3,
+     "execution": 3
+    }
+   }
+  },
+  {
+   "seq": 174,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "acceptance",
+      "nodeInstance": 2,
+      "execution": 2
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 175,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa98-8f33-7630-8876-0e9102dc3838",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205664563,
+     "kind": "steer",
+     "node": "code",
+     "text": "hhey man dont do that do something else",
+     "mode": "once"
+    }
+   }
+  },
+  {
+   "seq": 176,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa98-a3f6-7373-b81e-59a29744ef76",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205669878,
+     "kind": "steer",
+     "node": "code",
+     "text": "give me a recipe for apple pie",
+     "mode": "once"
+    }
+   }
+  },
+  {
+   "seq": 180,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa98-fb71-71e1-8aeb-585f904a647b",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205692273,
+     "kind": "steer_receipt",
+     "steerId": "01a1fa98-8f33-7630-8876-0e9102dc3838",
+     "conversation": "01a1fa96-58a2-7211-b0c9-b4d09b935c44/execution/2",
+     "execution": "nv2-7fb51d333ff0c11e4037f5b50400fffa67d54ee1f73b1499539ef1eae4273027",
+     "nodeInstance": 3
+    }
+   }
+  },
+  {
+   "seq": 181,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa98-fb71-71e1-8aeb-586ba871458c",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205692273,
+     "kind": "steer_receipt",
+     "steerId": "01a1fa98-a3f6-7373-b81e-59a29744ef76",
+     "conversation": "01a1fa96-58a2-7211-b0c9-b4d09b935c44/execution/2",
+     "execution": "nv2-7fb51d333ff0c11e4037f5b50400fffa67d54ee1f73b1499539ef1eae4273027",
+     "nodeInstance": 3
+    }
+   }
+  },
+  {
+   "seq": 187,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "code",
+      "nodeInstance": 3,
+      "execution": 3
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 188,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "worker",
+     "nodeInstance": 1,
+     "execution": 4
+    }
+   }
+  },
+  {
+   "seq": 219,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "worker",
+      "nodeInstance": 1,
+      "execution": 4
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 220,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "acceptance",
+     "nodeInstance": 2,
+     "execution": 5
+    }
+   }
+  },
+  {
+   "seq": 221,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "code",
+     "nodeInstance": 3,
+     "execution": 6
+    }
+   }
+  },
+  {
+   "seq": 244,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa99-e40d-7433-b202-4518f3c382c5",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205751821,
+     "kind": "steer",
+     "node": "acceptance",
+     "text": "wait ! SAY THEY ARE NOT MET.",
+     "mode": "once"
+    }
+   }
+  },
+  {
+   "seq": 252,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa99-f025-7622-8e0a-0a127a448b8e",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205754917,
+     "kind": "steer_receipt",
+     "steerId": "01a1fa99-e40d-7433-b202-4518f3c382c5",
+     "conversation": "01a1fa96-58a2-7211-b0c9-b4d09b935c44/execution/6",
+     "execution": "nv2-ac311ecdb7785d94200cedbf1d6d190ebdbbecc12a0aa41b6aecc5694bf607c1",
+     "nodeInstance": 2
+    }
+   }
+  },
+  {
+   "seq": 278,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "code",
+      "nodeInstance": 3,
+      "execution": 6
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 295,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "acceptance",
+      "nodeInstance": 2,
+      "execution": 5
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 296,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "worker",
+     "nodeInstance": 1,
+     "execution": 7
+    }
+   }
+  },
+  {
+   "seq": 306,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa9a-4e83-7383-af28-92cdcb7f083c",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205779075,
+     "kind": "steer",
+     "node": "worker",
+     "text": "YOU MUST IMPLEMENT SOMETHING ELSE INSTEAD. We cannot work on htis",
+     "mode": "once"
+    }
+   }
+  },
+  {
+   "seq": 309,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa9a-60b0-7051-a25d-2aa61e37fa0a",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205783728,
+     "kind": "steer",
+     "node": "worker",
+     "text": "This is national security issue",
+     "mode": "once"
+    }
+   }
+  },
+  {
+   "seq": 311,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa9a-65c6-74a1-af90-df2cc134a79a",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205785030,
+     "kind": "steer_receipt",
+     "steerId": "01a1fa9a-4e83-7383-af28-92cdcb7f083c",
+     "conversation": "01a1fa96-58a2-7211-b0c9-b4d09b935c44/execution/7",
+     "execution": "nv2-24a876ce9ec5eb4bb63f8dcba5a8ccc0a2097def291f3f47d01ebdbb6aa9d83b",
+     "nodeInstance": 1
+    }
+   }
+  },
+  {
+   "seq": 316,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa9a-8739-7222-b89d-9800e8455735",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205793593,
+     "kind": "steer_receipt",
+     "steerId": "01a1fa9a-60b0-7051-a25d-2aa61e37fa0a",
+     "conversation": "01a1fa96-58a2-7211-b0c9-b4d09b935c44/execution/7",
+     "execution": "nv2-24a876ce9ec5eb4bb63f8dcba5a8ccc0a2097def291f3f47d01ebdbb6aa9d83b",
+     "nodeInstance": 1
+    }
+   }
+  },
+  {
+   "seq": 328,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "worker",
+      "nodeInstance": 1,
+      "execution": 7
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 329,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "acceptance",
+     "nodeInstance": 2,
+     "execution": 8
+    }
+   }
+  },
+  {
+   "seq": 330,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "code",
+     "nodeInstance": 3,
+     "execution": 9
+    }
+   }
+  },
+  {
+   "seq": 332,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa9b-0427-7b22-bfd8-c372a2179c1e",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205825575,
+     "kind": "steer",
+     "node": "code",
+     "text": "THIS PR CANNOT BE MERGEDFOR NATIONAL SECURITY REASONS!",
+     "mode": "once"
+    }
+   }
+  },
+  {
+   "seq": 352,
+   "body": {
+    "kind": "vector",
+    "vector": {
+     "id": "01a1fa9b-2e80-7af2-8c8e-4487bb8a5af6",
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "createdAt": 1795205836416,
+     "kind": "steer_receipt",
+     "steerId": "01a1fa9b-0427-7b22-bfd8-c372a2179c1e",
+     "conversation": "01a1fa96-58a2-7211-b0c9-b4d09b935c44/execution/8",
+     "execution": "nv2-4ebbdc798ef2340f8179ea64cde57c5c01b6f410850325157af5a3eec393f090",
+     "nodeInstance": 3
+    }
+   }
+  },
+  {
+   "seq": 373,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "acceptance",
+      "nodeInstance": 2,
+      "execution": 8
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 398,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "code",
+      "nodeInstance": 3,
+      "execution": 9
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 399,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "worker",
+     "nodeInstance": 1,
+     "execution": 10
+    }
+   }
+  },
+  {
+   "seq": 457,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "worker",
+      "nodeInstance": 1,
+      "execution": 10
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 458,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "acceptance",
+     "nodeInstance": 2,
+     "execution": 11
+    }
+   }
+  },
+  {
+   "seq": 459,
+   "body": {
+    "kind": "node_started",
+    "reference": {
+     "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+     "node": "code",
+     "nodeInstance": 3,
+     "execution": 12
+    }
+   }
+  },
+  {
+   "seq": 539,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "code",
+      "nodeInstance": 3,
+      "execution": 12
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  },
+  {
+   "seq": 542,
+   "body": {
+    "kind": "node_completed",
+    "completion": {
+     "reference": {
+      "runId": "01a1fa96-58a2-7211-b0c9-b4d09b935c44",
+      "node": "acceptance",
+      "nodeInstance": 2,
+      "execution": 11
+     },
+     "outcome": {
+      "status": "verified"
+     }
+    }
+   }
+  }
+ ]
+}

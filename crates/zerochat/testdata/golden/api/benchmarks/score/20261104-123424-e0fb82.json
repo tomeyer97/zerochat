@@ -1,0 +1,62 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 25.0,
+    "costUsd": 6.1985388,
+    "exitReason": null,
+    "failingTests": [],
+    "label": "k8s-sc-sonnet5",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 4.76258,
+        "node": "worker"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.7047568,
+        "node": "postmortem"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.380338,
+        "node": "acceptance"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.350864,
+        "node": "code"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": 188,
+    "regressionTotal": 188,
+    "reportedCostUsd": 6.1985388,
+    "runId": "20261104-123424-e0fb82",
+    "score": 1.0,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "worker#1",
+        "score": 1.0,
+        "seq": 0,
+        "testsPassed": 20,
+        "testsTotal": 20
+      },
+      {
+        "node": "final",
+        "score": 1.0,
+        "seq": 1,
+        "testsPassed": 20,
+        "testsTotal": 20
+      }
+    ],
+    "task": "k8s-job-backoff-limit-per-index",
+    "testsPassed": 20,
+    "testsTotal": 20,
+    "wallS": 2135.186195374,
+    "zeroshotRunId": "01a1a656-c536-7252-b6ec-4768f1a2d2c4"
+  },
+  "status": 200
+}

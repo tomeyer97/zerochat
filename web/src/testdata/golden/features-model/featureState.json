@@ -1,0 +1,26 @@
+{
+  "detail/calc": {
+    "label": "Needs you",
+    "tone": "warn"
+  },
+  "detail/fresh": {
+    "label": "Not started",
+    "tone": "muted"
+  },
+  "detail/paused": {
+    "label": "Paused",
+    "tone": "warn"
+  },
+  "list/calc": {
+    "label": "Needs you",
+    "tone": "warn"
+  },
+  "list/fresh": {
+    "label": "Not started",
+    "tone": "muted"
+  },
+  "list/paused": {
+    "label": "Paused",
+    "tone": "warn"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 1,
+        "capMinutes": 40.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.0031999,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261107-222316-9e1324",
+        "score": 0.575892857,
+        "seed": 0,
+        "startedAt": 1794086596455,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 129,
+        "testsTotal": 224,
+        "wallS": 2135.60679841,
+        "zeroshotRunId": "01a1b7e4-f2b9-77c0-b2b7-c21eed50894e"
+      },
+      {
+        "attempts": 1,
+        "capMinutes": 40.0,
+        "capSteps": 24,
+        "capUsd": 6.0,
+        "costUsd": 6.0048309,
+        "cutShort": "budget",
+        "exitReason": null,
+        "overLimit": "budget",
+        "priorAttempts": [],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261107-225852-ea4461",
+        "score": 0.498402556,
+        "seed": 0,
+        "startedAt": 1794088732064,
+        "state": "scored",
+        "task": "yaa110__nomino.f892499",
+        "testsPassed": 156,
+        "testsTotal": 313,
+        "wallS": 2626.196182489,
+        "zeroshotRunId": "01a1b805-88e8-7d53-8785-5b539d9cdfb7"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.575892857,
+        "mean": 0.537147707,
+        "min": 0.498402556,
+        "n": 2
+      }
+    ],
+    "endedAt": 1794091358262,
+    "harnessVersion": "4259fe20",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": null,
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "explore",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "spec_extend",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-haiku-4-5",
+            "name": "build",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "verifier",
+            "loopMax": 8,
+            "loopName": "diff_loop",
+            "model": "claude-haiku-4-5",
+            "name": "oracle",
+            "parallel": null
+          },
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": 8,
+            "loopName": "diff_loop",
+            "model": "claude-haiku-4-5",
+            "name": "repair",
+            "parallel": null
+          }
+        ],
+        "runs": 2,
+        "runtimeFile": null,
+        "runtimeMatches": false,
+        "source": "custom",
+        "variant": null
+      }
+    ],
+    "id": "20261107-222316-71f62e",
+    "label": "r1-screen-spec2",
+    "limits": {
+      "maxCostUsd": 6.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 40.0
+    },
+    "maxScore": 0.575892857,
+    "meanScore": 0.537147707,
+    "meanScoreFinished": null,
+    "minScore": 0.498402556,
+    "models": [
+      "claude-haiku-4-5"
+    ],
+    "parallel": 1,
+    "replays": [],
+    "retriedAttempts": 0,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.575892857,
+        "mean": 0.575892857,
+        "min": 0.575892857,
+        "n": 1
+      },
+      {
+        "key": "yaa110__nomino.f892499",
+        "max": 0.498402556,
+        "mean": 0.498402556,
+        "min": 0.498402556,
+        "n": 1
+      }
+    ],
+    "seeds": [
+      0
+    ],
+    "startLog": null,
+    "startedAt": 1794086596400,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234",
+      "yaa110__nomino.f892499"
+    ],
+    "totalCostUsd": 12.0080308,
+    "totalWallS": 4761.8029809,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

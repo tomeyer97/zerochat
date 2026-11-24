@@ -1,0 +1,466 @@
+{
+  "attempts-exhausted#1": [
+    "Round 1",
+    ""
+  ],
+  "attempts-exhausted#2": [
+    "Round 1 · attempt 2",
+    "attempt 2"
+  ],
+  "closing-postmortem#1": [
+    "Round 1",
+    ""
+  ],
+  "codex-estimate#1": [
+    "Round 1",
+    ""
+  ],
+  "copilot-session#1": [
+    "Round 1",
+    ""
+  ],
+  "delivery-failed#1": [
+    "Round 1",
+    ""
+  ],
+  "delivery-failed#2": [
+    "Round 1",
+    ""
+  ],
+  "delivery-failed#3": [
+    "Round 1",
+    ""
+  ],
+  "diag-api-hang#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-authentication-required#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-crash#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-input-required#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-malformed-result#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-other#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-policy-denied#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-refusal#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-code-timeout#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-context#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-credentials#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-disk#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-malformed-stream#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-missing-cli#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-model#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-network#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-permission#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-provider-down#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-provider-timeout#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-rate-limit#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-stream-cut#1": [
+    "Round 1",
+    ""
+  ],
+  "diag-usage-limit#1": [
+    "Round 1",
+    ""
+  ],
+  "force-stopped#1": [
+    "Round 1",
+    ""
+  ],
+  "force-stopped#2": [
+    "Round 1",
+    ""
+  ],
+  "force-stopped#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-bad-credentials#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-chaos-transient#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-chaos-usage-limit#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-controller-killed#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-controller-killed#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-controller-killed#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-force-stopped#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-force-stopped#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-force-stopped#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-happy-path#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-happy-path#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-happy-path#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-late-failure#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-late-failure#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-late-failure#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-replay#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-replay#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-replay#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-resumed#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-resumed#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-resumed#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-reviewer-never-satisfied#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-reviewer-never-satisfied#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-reviewer-never-satisfied#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-reviewer-never-satisfied#4": [
+    "Round 2",
+    ""
+  ],
+  "fork-only/fork-reviewer-never-satisfied#5": [
+    "Round 2",
+    ""
+  ],
+  "fork-only/fork-reviewer-never-satisfied#6": [
+    "Round 2",
+    ""
+  ],
+  "fork-only/fork-steered#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-unknown-model#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/fork-worker-timeout#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/replay-child#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/replay-child#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/replay-child#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/replay-parent#1": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/replay-parent#2": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/replay-parent#3": [
+    "Round 1",
+    ""
+  ],
+  "fork-only/steered#1": [
+    "Round 1",
+    ""
+  ],
+  "graph-ended-other#1": [
+    "Round 1",
+    ""
+  ],
+  "graph-ended-other#2": [
+    "Round 1",
+    ""
+  ],
+  "graph-ended-other#3": [
+    "Round 1",
+    ""
+  ],
+  "lane-mixed#1": [
+    "Round 1",
+    ""
+  ],
+  "lane-unknown-harness#1": [
+    "Round 1",
+    ""
+  ],
+  "map-parallel#1": [
+    "Round 1",
+    ""
+  ],
+  "map-parallel#2": [
+    "Round 1",
+    ""
+  ],
+  "map-parallel#3": [
+    "Round 1",
+    ""
+  ],
+  "no-checkpoints#1": [
+    "Round 1",
+    ""
+  ],
+  "resumed-original#1": [
+    "Round 1",
+    ""
+  ],
+  "resumed-successor#1": [
+    "Round 1",
+    ""
+  ],
+  "resumed-successor#2": [
+    "Round 1",
+    ""
+  ],
+  "resumed-successor#3": [
+    "Round 1",
+    ""
+  ],
+  "running-live#1": [
+    "Round 1",
+    ""
+  ],
+  "running-live#2": [
+    "Round 1",
+    ""
+  ],
+  "running-live#3": [
+    "Round 1",
+    ""
+  ],
+  "running-live#4": [
+    "Round 2",
+    ""
+  ],
+  "running-live#5": [
+    "Round 2 · attempt 2",
+    "attempt 2"
+  ],
+  "running-stock#1": [
+    "Round 1",
+    ""
+  ],
+  "runtime-failed-checkpoint#1": [
+    "Round 1",
+    ""
+  ],
+  "runtime-failed-permission#1": [
+    "Round 1",
+    ""
+  ],
+  "runtime-failed-storage#1": [
+    "Round 1",
+    ""
+  ],
+  "runtime-failed-unknown#1": [
+    "Round 1",
+    ""
+  ],
+  "runtime-lost#1": [
+    "Round 1",
+    ""
+  ],
+  "stalled#1": [
+    "Round 1",
+    ""
+  ],
+  "stalled-disk#1": [
+    "Round 1",
+    ""
+  ],
+  "stalled-live-usage#1": [
+    "Round 1",
+    ""
+  ],
+  "stalled-then-closed#1": [
+    "Round 1",
+    ""
+  ],
+  "succeeded#1": [
+    "Round 1",
+    ""
+  ],
+  "succeeded#2": [
+    "Round 1",
+    ""
+  ],
+  "succeeded#3": [
+    "Round 1",
+    ""
+  ],
+  "succeeded-stock#1": [
+    "Round 1",
+    ""
+  ],
+  "succeeded-stock#2": [
+    "Round 1",
+    ""
+  ],
+  "succeeded-stock#3": [
+    "Round 1",
+    ""
+  ],
+  "tool-output-rate-limit#1": [
+    "Round 1",
+    ""
+  ],
+  "voided#1": [
+    "Round 1",
+    ""
+  ],
+  "voided#2": [
+    "Round 2",
+    ""
+  ],
+  "work-exhausted#1": [
+    "Round 1",
+    ""
+  ],
+  "work-exhausted#2": [
+    "Round 1",
+    ""
+  ],
+  "work-exhausted#3": [
+    "Round 1",
+    ""
+  ],
+  "work-exhausted#4": [
+    "Round 2",
+    ""
+  ],
+  "work-exhausted#5": [
+    "Round 2",
+    ""
+  ],
+  "work-exhausted#6": [
+    "Round 2",
+    ""
+  ],
+  "zeroshot-16/zeroshot16-normal#1": [
+    "Round 1",
+    ""
+  ],
+  "zeroshot-16/zeroshot16-steered#1": [
+    "Round 1",
+    ""
+  ],
+  "zeroshot-16/zeroshot16-unknown-model#1": [
+    "Round 1",
+    ""
+  ]
+}

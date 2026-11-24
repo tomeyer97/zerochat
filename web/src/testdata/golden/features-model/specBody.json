@@ -1,0 +1,30 @@
+{
+  "slices": {
+    "calc/01": "# Add sub()\n\nImplement Add sub() in calc/.\n",
+    "calc/02": "# Add mul()\n\nImplement Add mul() in calc/.\n",
+    "calc/03": "# Friendlier greeting\n\nImplement Friendlier greeting in calc/.\n",
+    "calc/04": "# Add farewell()\n\nImplement Add farewell() in calc/.\n",
+    "calc/05": "# Add square()\n\nImplement Add square() in calc/.\n",
+    "calc/06": "# Document the API\n\nImplement Document the API in calc/.\n",
+    "calc/07": "# Drop the legacy alias\n\nImplement Drop the legacy alias in calc/.\n",
+    "calc/08": "# Add div()\n\nImplement Add div() in calc/.\n",
+    "calc/09": "# Add pow()\n\nImplement Add pow() in calc/.\n",
+    "calc/10": "# Add mod()\n\nImplement Add mod() in calc/.\n",
+    "calc/11": "# Hand-finished tidy-up\n\nImplement Hand-finished tidy-up in calc/.\n",
+    "calc/12": "# Add neg()\n\nImplement Add neg() in calc/.\n",
+    "calc/13": "# Add abs()\n\nImplement Add abs() in calc/.\n",
+    "calc/14": null,
+    "fresh/01": null,
+    "fresh/02": null,
+    "paused/01": "# Retry me\n"
+  },
+  "table": [
+    "Body",
+    "Body\n",
+    "# 040: Other\nBody",
+    "Body",
+    "# axb: not dotted\nBody",
+    "Intro\n# 04: Late heading\nBody",
+    ""
+  ]
+}

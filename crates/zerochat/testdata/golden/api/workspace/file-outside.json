@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "invalid_path",
+    "message": "invalid path"
+  },
+  "status": 400
+}

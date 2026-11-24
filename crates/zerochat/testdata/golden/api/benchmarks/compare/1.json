@@ -1,0 +1,47 @@
+{
+  "body": {
+    "aId": "20261108-170007-63721d",
+    "aLabel": "r3-noaccept",
+    "aRunCount": 2,
+    "bId": "20261108-152720-fb0664",
+    "bLabel": "r2-hermetic2",
+    "bRunCount": 6,
+    "nodes": [],
+    "tasks": [
+      {
+        "a": null,
+        "b": {
+          "maxScore": 0.78125,
+          "meanCostUsd": 4.7927443,
+          "meanScore": 0.578869048,
+          "meanTimeS": 2052.110371113,
+          "minScore": 0.428571429,
+          "n": 3
+        },
+        "deltaCostUsd": null,
+        "deltaScore": null,
+        "deltaTimeS": null,
+        "noise": "n_a",
+        "task": "tomnomnom__gron.88a6234"
+      },
+      {
+        "a": null,
+        "b": {
+          "maxScore": 0.722044728,
+          "meanCostUsd": 5.80845805,
+          "meanScore": 0.653887114,
+          "meanTimeS": 2384.61702927,
+          "minScore": 0.565495208,
+          "n": 3
+        },
+        "deltaCostUsd": null,
+        "deltaScore": null,
+        "deltaTimeS": null,
+        "noise": "n_a",
+        "task": "yaa110__nomino.f892499"
+      }
+    ],
+    "totals": null
+  },
+  "status": 200
+}

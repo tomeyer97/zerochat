@@ -1,0 +1,8 @@
+12:19:00 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] start label='ctrlc-test' version=c2d7bd80ac model=claude-haiku-4-5 art=/data/pb/runs/20261103-121900-29af42
+12:19:00 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] sandbox up; launching zeroshot
+12:19:02 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] node start  worker (exec 1, attempt 1)
+12:19:50 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] LIMIT: interrupted after 50s, 1 steps
+12:19:50 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] force-stopping zeroshot run 01a1a122-480f-7012-a453-09a724ea9236
+12:19:51 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] node done   worker -> error 
+12:19:51 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] agent finished: interrupted — interrupted after 50s, 1 steps
+12:19:52 [20261103-121900-29af42 tomnomnom__gron.88a6234 s0] done: interrupted

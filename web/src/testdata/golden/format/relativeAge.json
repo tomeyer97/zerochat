@@ -1,0 +1,155 @@
+{
+  "runs": {
+    "admitted-only": "57m ago",
+    "attempts-exhausted": "56m ago",
+    "checkout-unavailable": "55m ago",
+    "closing-postmortem": "54m ago",
+    "codex-estimate": "53m ago",
+    "copilot-session": "52m ago",
+    "delivery-failed": "51m ago",
+    "diag-api-hang": "3m ago",
+    "diag-code-authentication-required": "50m ago",
+    "diag-code-crash": "49m ago",
+    "diag-code-input-required": "48m ago",
+    "diag-code-malformed-result": "47m ago",
+    "diag-code-other": "46m ago",
+    "diag-code-policy-denied": "45m ago",
+    "diag-code-refusal": "44m ago",
+    "diag-code-timeout": "43m ago",
+    "diag-context": "42m ago",
+    "diag-credentials": "41m ago",
+    "diag-disk": "40m ago",
+    "diag-malformed-stream": "39m ago",
+    "diag-missing-cli": "38m ago",
+    "diag-model": "37m ago",
+    "diag-network": "36m ago",
+    "diag-permission": "35m ago",
+    "diag-provider-down": "34m ago",
+    "diag-provider-timeout": "33m ago",
+    "diag-rate-limit": "32m ago",
+    "diag-stream-cut": "31m ago",
+    "diag-usage-limit": "30m ago",
+    "force-stopped": "29m ago",
+    "fork-only/fork-bad-credentials": "just now",
+    "fork-only/fork-chaos-transient": "just now",
+    "fork-only/fork-chaos-usage-limit": "just now",
+    "fork-only/fork-controller-killed": "just now",
+    "fork-only/fork-force-stopped": "just now",
+    "fork-only/fork-happy-path": "just now",
+    "fork-only/fork-late-failure": "just now",
+    "fork-only/fork-replay": "just now",
+    "fork-only/fork-resumed": "just now",
+    "fork-only/fork-reviewer-never-satisfied": "just now",
+    "fork-only/fork-steered": "just now",
+    "fork-only/fork-unknown-model": "just now",
+    "fork-only/fork-worker-timeout": "just now",
+    "fork-only/replay-child": "25m ago",
+    "fork-only/replay-parent": "59m ago",
+    "fork-only/steered": "13m ago",
+    "graph-ended-other": "28m ago",
+    "lane-mixed": "7m ago",
+    "lane-unknown-harness": "6m ago",
+    "map-parallel": "27m ago",
+    "no-checkpoints": "26m ago",
+    "resumed-original": "58m ago",
+    "resumed-successor": "24m ago",
+    "running-live": "7m ago",
+    "running-stock": "2m ago",
+    "runtime-failed-checkpoint": "21m ago",
+    "runtime-failed-permission": "20m ago",
+    "runtime-failed-storage": "19m ago",
+    "runtime-failed-unknown": "18m ago",
+    "runtime-lost": "17m ago",
+    "stalled": "16m ago",
+    "stalled-disk": "15m ago",
+    "stalled-live-usage": "14m ago",
+    "stalled-then-closed": "5m ago",
+    "succeeded": "12m ago",
+    "succeeded-stock": "11m ago",
+    "tool-output-rate-limit": "1m ago",
+    "unknown-phase": "10m ago",
+    "voided": "9m ago",
+    "work-exhausted": "8m ago",
+    "zeroshot-16/zeroshot16-normal": "just now",
+    "zeroshot-16/zeroshot16-steered": "just now",
+    "zeroshot-16/zeroshot16-unknown-model": "just now"
+  },
+  "table": [
+    [
+      "null",
+      ""
+    ],
+    [
+      "undefined",
+      ""
+    ],
+    [
+      "0",
+      "Jan 1, 1970"
+    ],
+    [
+      "1795003600000",
+      "just now"
+    ],
+    [
+      "1795003599999",
+      "just now"
+    ],
+    [
+      "1795003555001",
+      "just now"
+    ],
+    [
+      "1795003555000",
+      "1m ago"
+    ],
+    [
+      "1795003510001",
+      "1m ago"
+    ],
+    [
+      "1795000030000",
+      "1h ago"
+    ],
+    [
+      "1794917200000",
+      "24h ago"
+    ],
+    [
+      "1793880400000",
+      "13d ago"
+    ],
+    [
+      "1793794000000",
+      "Nov 4, 2026"
+    ],
+    [
+      "1760443600000",
+      "Oct 14, 2025"
+    ],
+    [
+      "1795007200000",
+      "just now"
+    ],
+    [
+      "1767225600000",
+      "Jan 1, 2026"
+    ],
+    [
+      "1767225599000",
+      "Dec 31, 2025"
+    ],
+    [
+      "1795132800000",
+      "just now"
+    ],
+    [
+      "1795219199000",
+      "just now"
+    ],
+    [
+      "1795089600000",
+      "just now"
+    ]
+  ]
+}

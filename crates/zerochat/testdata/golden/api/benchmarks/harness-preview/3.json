@@ -1,0 +1,83 @@
+{
+  "body": {
+    "errors": [],
+    "info": {
+      "agentHarness": "claude",
+      "modelOverride": null,
+      "nodes": [
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": null,
+          "loopName": null,
+          "model": null,
+          "name": "prototype",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": null,
+          "loopName": null,
+          "model": null,
+          "name": "planner",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": null,
+          "loopName": null,
+          "model": "claude-haiku-4-5",
+          "name": "worker",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "verifier",
+          "loopMax": 4,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "reviewer",
+          "parallel": "parallel_reviews"
+        },
+        {
+          "effort": null,
+          "kind": "verifier",
+          "loopMax": 4,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "bugfinder",
+          "parallel": "parallel_reviews"
+        },
+        {
+          "effort": null,
+          "kind": "verifier",
+          "loopMax": 4,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "triage",
+          "parallel": null
+        },
+        {
+          "effort": null,
+          "kind": "step",
+          "loopMax": 4,
+          "loopName": "review_loop",
+          "model": "claude-haiku-4-5",
+          "name": "repair",
+          "parallel": null
+        }
+      ],
+      "runs": 0,
+      "runtimeFile": null,
+      "runtimeMatches": false,
+      "source": "variant",
+      "variant": "haiku-prototype-plan"
+    },
+    "warnings": [
+      "The runtime gives no model to: prototype, planner."
+    ]
+  },
+  "status": 200
+}

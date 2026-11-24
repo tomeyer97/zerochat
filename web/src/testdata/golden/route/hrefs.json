@@ -1,0 +1,55 @@
+{
+  "benchmarksBatchHref": [
+    "#/benchmarks/batch/",
+    "#/benchmarks/batch/plain",
+    "#/benchmarks/batch/a%2Fb",
+    "#/benchmarks/batch/a%20b",
+    "#/benchmarks/batch/%C3%BC%23%3F%26%25",
+    "#/benchmarks/batch/label%3Asmoke"
+  ],
+  "benchmarksCompareHref": [
+    "#/benchmarks/compare",
+    "#/benchmarks/compare?a=a",
+    "#/benchmarks/compare?b=b",
+    "#/benchmarks/compare?a=a+b&b=c%26d"
+  ],
+  "benchmarksHref": "#/benchmarks",
+  "benchmarksStartHref": "#/benchmarks/start",
+  "benchmarksSweepReportHref": [
+    "#/benchmarks/sweep-report",
+    "#/benchmarks/sweep-report?ids=s1",
+    "#/benchmarks/sweep-report?ids=s1%2Cs2&label=x+y&task=t&budget=1.5",
+    "#/benchmarks/sweep-report?ids=s1"
+  ],
+  "benchmarksSweepsHref": "#/benchmarks/sweeps",
+  "featureHref": [
+    "#/features/",
+    "#/features/",
+    "#/features/plain",
+    "#/features/plain/slice/plain",
+    "#/features/a%2Fb",
+    "#/features/a%2Fb/slice/a%2Fb",
+    "#/features/a%20b",
+    "#/features/a%20b/slice/a%20b",
+    "#/features/%C3%BC%23%3F%26%25",
+    "#/features/%C3%BC%23%3F%26%25/slice/%C3%BC%23%3F%26%25",
+    "#/features/label%3Asmoke",
+    "#/features/label%3Asmoke/slice/label%3Asmoke"
+  ],
+  "featuresHref": "#/features",
+  "nodeHref": [
+    "#/run/t/r/node/n",
+    "#/run/t/r/node/n/round/1",
+    "#/run/t/r/node/n/round/1/attempt/2",
+    "#/run/t/r/node/n/exec/4",
+    "#/run/a%2Fb/r%23/node/n%20n/round/0"
+  ],
+  "runHref": [
+    "#/run//",
+    "#/run/plain/plain",
+    "#/run/a%2Fb/a%2Fb",
+    "#/run/a%20b/a%20b",
+    "#/run/%C3%BC%23%3F%26%25/%C3%BC%23%3F%26%25",
+    "#/run/label%3Asmoke/label%3Asmoke"
+  ]
+}

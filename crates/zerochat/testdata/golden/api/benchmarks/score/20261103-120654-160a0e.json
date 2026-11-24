@@ -1,0 +1,71 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 2.0,
+    "costUsd": 1.82763,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "smoke-haiku",
+    "nodeCosts": [
+      {
+        "calls": 1,
+        "costUsd": 0.9010651,
+        "node": "worker"
+      },
+      {
+        "calls": 2,
+        "costUsd": 0.8227063,
+        "node": "reviewer"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.1038586,
+        "node": "repair"
+      }
+    ],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 1.82763,
+    "runId": "20261103-120654-160a0e",
+    "score": 0.549107143,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "worker#1",
+        "score": 0.549107143,
+        "seq": 0,
+        "testsPassed": 123,
+        "testsTotal": 224
+      },
+      {
+        "node": "repair#1",
+        "score": 0.549107143,
+        "seq": 1,
+        "testsPassed": 123,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.549107143,
+        "seq": 2,
+        "testsPassed": 123,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 123,
+    "testsTotal": 224,
+    "wallS": 707.141429901,
+    "zeroshotRunId": "01a1a117-3433-7660-97fe-bba97c25f34d"
+  },
+  "status": 200
+}

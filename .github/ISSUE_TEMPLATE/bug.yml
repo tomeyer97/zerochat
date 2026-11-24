@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in zerochat or zsf does not work as documented.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions go to [Discussions](https://github.com/tomeyer97/zerochat/discussions); security problems go to [SECURITY.md](https://github.com/tomeyer97/zerochat/blob/main/SECURITY.md), never here. Remove tokens, paths and other secrets from anything you paste.
+  - type: input
+    id: zerochat-version
+    attributes:
+      label: zerochat version
+      description: Output of `zerochat --version`.
+      placeholder: zerochat 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: "`zerochat doctor` output"
+      description: Run `zerochat doctor` and paste all of its output.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: zeroshot-version
+    attributes:
+      label: Zeroshot version
+      description: Output of `zeroshot --version`, or "not installed".
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS and architecture
+      description: For example "Ubuntu 24.04 x64", "macOS 15 arm64", "Windows 11, WSL Ubuntu".
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How you installed zerochat
+      options:
+        - npm (npx zerochat or npm i -g zerochat)
+        - GitHub Release archive or shell installer
+        - From source (make)
+        - Other (say in the steps)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `zerochat`
+        2. Open a run
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: What happened instead. Error messages, logs or a screenshot help.
+    validations:
+      required: true

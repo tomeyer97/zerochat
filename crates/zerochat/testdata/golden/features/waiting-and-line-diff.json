@@ -1,0 +1,44 @@
+{
+  "approve": [
+    "03",
+    "14"
+  ],
+  "failed": [
+    "04",
+    "12"
+  ],
+  "lineDiff": [
+    {
+      "diff": "",
+      "new": "a\nb\nc\n",
+      "old": "a\nb\nc\n"
+    },
+    {
+      "diff": "--- a/x-a1.md\n+++ b/x-a2.md\n@@ -1,3 +1,4 @@\n a\n-b\n+B\n c\n+d\n",
+      "new": "a\nB\nc\nd\n",
+      "old": "a\nb\nc\n"
+    },
+    {
+      "diff": "--- a/x-a1.md\n+++ b/x-a2.md\n@@ -0,0 +1,1 @@\n+new\n",
+      "new": "new\n",
+      "old": ""
+    },
+    {
+      "diff": "--- a/x-a1.md\n+++ b/x-a2.md\n@@ -1,1 +0,0 @@\n-old\n",
+      "new": "",
+      "old": "old\n"
+    },
+    {
+      "diff": "--- a/x-a1.md\n+++ b/x-a2.md\n@@ -1,3 +1,7 @@\n # Add farewell()\n \n Implement farewell() in calc/.\n+\n+## Notes from the developer\n+\n+Keep farewell() next to greet().\n",
+      "new": "# Add farewell()\n\nImplement farewell() in calc/.\n\n## Notes from the developer\n\nKeep farewell() next to greet().\n",
+      "old": "# Add farewell()\n\nImplement farewell() in calc/.\n"
+    }
+  ],
+  "names": [
+    "broken",
+    "calc",
+    "fresh",
+    "paused"
+  ],
+  "needsYou": 2
+}

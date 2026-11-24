@@ -1,0 +1,19 @@
+{
+  "replays": {
+    "label_replay-build-haiku#0": "on haiku-4-5 (as recorded)",
+    "label_replay-build-sonnet#0": "on sonnet-5 (recorded: haiku-4-5)",
+    "label_replay-sonnet-explore-haiku-build#0": "on sonnet-5 (recorded: haiku-4-5)",
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5#0": "on haiku-4-5 (as recorded)",
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5#0": "on sonnet-5 (recorded: haiku-4-5)",
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5#0": "on haiku-4-5 (as recorded)",
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5#0": "on sonnet-5 (recorded: haiku-4-5)"
+  },
+  "table": [
+    null,
+    "on haiku-4-5 (as recorded)",
+    "on sonnet-5 (as recorded)",
+    "on sonnet-5 (recorded: haiku-4-5)",
+    "on sonnet-5, gpt-5 (recorded: sonnet-5)",
+    "on gpt-5"
+  ]
+}

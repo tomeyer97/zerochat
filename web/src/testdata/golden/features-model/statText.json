@@ -1,0 +1,30 @@
+{
+  "changes": {
+    "calc/changes": "2 files, +12 −1",
+    "calc/changes-diff": "2 files, +12 −1"
+  },
+  "slices": {
+    "calc/01": null,
+    "calc/02": null,
+    "calc/03": null,
+    "calc/04": "1 file, +4 −0",
+    "calc/05": null,
+    "calc/06": null,
+    "calc/07": null,
+    "calc/08": null,
+    "calc/09": null,
+    "calc/10": null,
+    "calc/11": null,
+    "calc/12": null,
+    "calc/13": null,
+    "calc/14": "1 file, +4 −0",
+    "fresh/01": null,
+    "fresh/02": null,
+    "paused/01": null
+  },
+  "table": [
+    "0 files, +0 −0",
+    "1 file, +16 −0",
+    "2 files, +3 −4"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "body": {
+    "execution": {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 58500,
+      "endSeq": null,
+      "endedAt": null,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": 1795003546500,
+      "logLines": 5,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": null,
+      "output": null,
+      "retries": 1,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795003541500,
+      "state": "running",
+      "timesApproximate": false,
+      "toolCalls": 1,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "pending",
+      "voidReason": null,
+      "workspaceEnd": null,
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000001"
+      }
+    },
+    "instructions": "Do the task.",
+    "sourceNote": null,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003542500,
+          "kind": "tool",
+          "tool": {
+            "id": "toolu_013Q1Cc1gwLu5V3gMSPuHaJu",
+            "input": {
+              "command": "echo \"HTTP 429 rate_limit_error: You have hit your usage limit. Rate limit exceeded, retry-after 60\""
+            },
+            "name": "Bash",
+            "result": {
+              "at": 1795003543500,
+              "content": "HTTP 429 rate_limit_error: You have hit your usage limit. Rate limit exceeded, retry-after 60",
+              "isError": false
+            }
+          }
+        },
+        {
+          "at": 1795003544500,
+          "kind": "text",
+          "text": "The client now handles 429 Too Many Requests and overloaded_error with a retry."
+        },
+        {
+          "at": 1795003545500,
+          "kind": "retry",
+          "text": "retried 1 of 3 (rate limit (quoted by the agent))"
+        },
+        {
+          "at": 1795003546500,
+          "kind": "rate_limit",
+          "text": "5-hour limit hit"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

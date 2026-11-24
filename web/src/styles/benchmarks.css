@@ -1,0 +1,391 @@
+/* ---------- benchmarks: batches list, batch matrix, run score card ---------- */
+/* Colours follow DESIGN.md (UI): the score is the only coloured value (one hue), red only for a
+   failure, amber for a limit, grey for a Stop, blue for running and actions. */
+.bm-table .col-score {
+  width: 150px;
+}
+/* Why a batch's score is "—" (stopped or crashed before a run was scored), under the dash. */
+.bm-table .bm-why {
+  display: block;
+  white-space: normal;
+}
+/* The batch-list and sweep-list status cell holds a text pill (e.g. "running"), not the main
+   Runs list's small dot — the shared `.col-status` width (sized for a dot) clips it against the
+   next column. Scoped to Benchmarks only. */
+.bm-table .bm-status-col {
+  width: 72px;
+}
+/* Hidden by default; shown only at phone width (below), where the ordinary numeric columns
+   this reuses from `.run-table` go display:none — see the next rule. */
+.bm-row-compact {
+  display: none;
+}
+@media (max-width: 640px) {
+  /* `.run-table` hides its numeric columns at this width (the main Runs list's rule), which
+     would leave each batch with only its label and a subtitle that is the same on every row.
+     The row's numbers come back on a second line instead. */
+  /* Wraps: every number carries its label here, so the line is longer than one row. */
+  .bm-row-compact {
+    display: block;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+.bm-matrix-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  margin-top: 4px;
+  /* Contain the scroll to the box itself: on a phone a wide matrix would otherwise scroll the
+     whole layout sideways. */
+  max-width: 100%;
+}
+.bm-matrix {
+  border-collapse: collapse;
+  font-size: 13px;
+  width: 100%;
+  table-layout: fixed;
+}
+.bm-matrix th,
+.bm-matrix td {
+  padding: 7px 10px;
+  border-top: 1px solid var(--hairline);
+  white-space: nowrap;
+}
+.bm-matrix thead th {
+  border-top: none;
+  text-align: left;
+  font-size: 11.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.bm-matrix th.bm-task,
+.bm-matrix td.bm-task {
+  text-align: left;
+  font-weight: 500;
+  color: var(--ink);
+  width: 190px;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* The one column a reader needs while scrolling the rest sideways: keep it in view instead
+     of scrolling off with everything else. */
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+  z-index: 1;
+}
+.bm-matrix tbody th.bm-task {
+  background: var(--surface);
+}
+.bm-matrix tfoot th,
+.bm-matrix tfoot td {
+  border-top: 2px solid var(--hairline);
+  font-weight: 600;
+}
+.bm-matrix tfoot th:first-child {
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+  z-index: 1;
+}
+.bm-cell {
+  text-align: center;
+  padding: 3px 6px;
+}
+.bm-cell-link {
+  display: block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 12.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bm-cell-link:hover {
+  background: var(--subtle-hover);
+}
+.bm-cell-link[aria-disabled='true'] {
+  pointer-events: none;
+  color: var(--muted);
+}
+/* A cell's state colour. `.bm-cell-link` sets its own `color` after the shared `.tone-text-*`
+   rules, so each tone is repeated here at a higher specificity. The tones come from the
+   `CELL_STATES` table (benchmarks/cell-states.ts); `scored` and `evaluating` have none. */
+.bm-cell-link.tone-text-bad {
+  color: var(--error-text);
+}
+.bm-cell-link.tone-text-warn {
+  color: var(--warn);
+}
+.bm-cell-link.tone-text-muted {
+  color: var(--muted);
+}
+.bm-cell-link.tone-text-running {
+  color: var(--accent-text);
+}
+/* The batch matrix sizes its columns to their content (under `table-layout: fixed` a 25-seed
+   batch squeezed every score into "0…"), scrolls sideways inside its own box, and keeps both
+   the task (left) and the per-task Mean (right) in view while it does. */
+.bm-batch-matrix {
+  table-layout: auto;
+  width: max-content;
+  min-width: 100%;
+}
+.bm-batch-matrix td.bm-cell {
+  min-width: 64px;
+}
+.bm-batch-matrix.bm-many-seeds td.bm-cell,
+.bm-batch-matrix.bm-many-seeds th.bm-seed-col {
+  min-width: 52px;
+}
+.bm-batch-matrix th.bm-seed-col {
+  text-align: center;
+}
+.bm-batch-matrix .bm-mean-col {
+  position: sticky;
+  right: 0;
+  z-index: 1;
+  background: var(--surface);
+  box-shadow: inset 1px 0 0 var(--hairline);
+  min-width: 90px;
+}
+.bm-batch-matrix thead .bm-mean-col {
+  background: var(--surface);
+}
+/* A scored cell's harness was cut short (a limit, a Stop, a crash): a visible amber tag naming
+   what stopped it (amber is the colour for a limit). */
+.bm-cut {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  border: 1px solid var(--warn-border);
+  border-radius: 3px;
+  background: var(--warn-surface);
+  color: var(--warn);
+  font-size: 10.5px;
+  font-weight: 550;
+  line-height: 1.5;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+.bm-attempts {
+  margin-left: 3px;
+  font-size: 11px;
+  color: var(--muted);
+}
+/* Queued: planned but not started — an outline, unlike an empty "—" or a muted stopped cell. */
+.bm-cell-queued {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px dashed var(--control-border);
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.bm-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 18px;
+  margin: 14px 0 6px;
+}
+.bm-summary-mean {
+  font-size: 15px;
+}
+/* What a replay batch replayed, and its recorded baseline. */
+.bm-replay {
+  margin: 10px 0 4px;
+}
+.bm-replay p {
+  margin: 0 0 4px;
+}
+.bm-replay-baseline {
+  white-space: nowrap;
+}
+/* A running cell's current node and live spend, under "running · 12m". */
+.bm-live {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.25;
+}
+.bm-live-detail {
+  color: var(--secondary);
+  white-space: nowrap;
+}
+/* A batch pb has not recorded yet (or whose runner died before it could). */
+.bm-starting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 14px 0 8px;
+}
+.bm-start-log pre {
+  margin: 6px 0 0;
+  padding: 8px 10px;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 12px;
+  background: var(--surface-hover);
+  border: 1px solid var(--control-border);
+  border-radius: 6px;
+}
+.bm-legend {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  color: var(--secondary);
+}
+.bm-legend .bm-cut {
+  margin-left: 0;
+}
+/* What was benchmarked: the graph's agent nodes in order, with model and effort (HarnessNodes in
+   benchmarks/WhatRan.tsx). `bm-` is the Benchmarks page; `bm-h*` is this harness strip:
+   `bm-hnodes` the list, `bm-hseq` a run of nodes in sequence, `bm-hloop` a repeated group (its
+   caption and dashed `bm-hloop-body`), `bm-hnode-wrap` a node with the `bm-hsep` separator
+   (→ or ‖) before it, `bm-hnode` the node chip and `bm-hnode-name` its name. */
+.bm-harness {
+  margin: 10px 0 4px;
+  display: grid;
+  gap: 8px;
+}
+.bm-harness p {
+  margin: 0 0 4px;
+}
+.bm-hnodes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 6px 4px;
+  font-size: 12.5px;
+}
+.bm-hseq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 6px;
+}
+.bm-hloop {
+  display: grid;
+  gap: 2px;
+}
+.bm-hloop-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 6px;
+  padding: 4px 6px;
+  border: 1px dashed var(--control-border);
+  border-radius: 7px;
+}
+.bm-hnode-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+.bm-hsep {
+  white-space: pre;
+}
+.bm-hnode {
+  padding: 1px 7px;
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  background: var(--group-surface);
+  white-space: nowrap;
+}
+.bm-hnode-name {
+  font-weight: 600;
+}
+.bm-harness-mixed {
+  color: var(--warn);
+}
+/* A real, measurable change (`deltaTone`): the diff palette (--add-text/--del-text), which
+   already means "a gain/loss" in both themes. `--success` would not do: it is muted on purpose,
+   so success stays quiet elsewhere. Only Benchmarks' compare and sweep views use these. */
+.bm-signal-pos {
+  color: var(--add-text);
+  font-weight: 600;
+}
+.bm-signal-neg {
+  color: var(--del-text);
+  font-weight: 600;
+}
+.bm-agg {
+  font-weight: 600;
+}
+
+.score-card {
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  background: var(--group-surface);
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  display: grid;
+  gap: 8px;
+}
+.score-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  align-items: center;
+  font-size: 13.5px;
+}
+.score-card-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.score-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 3px;
+  font-size: 12px;
+}
+.score-steps li {
+  display: grid;
+  grid-template-columns: minmax(70px, 110px) 1fr 42px;
+  align-items: center;
+  gap: 8px;
+}
+.score-step-node {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.score-step-bar {
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--hairline);
+  overflow: hidden;
+}
+.score-step-bar > span {
+  display: block;
+  height: 100%;
+}
+.score-step-value {
+  text-align: right;
+}
+.score-card-nodecosts {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .score-steps li {
+    grid-template-columns: 70px 1fr 42px;
+  }
+}

@@ -1,0 +1,1927 @@
+{
+  "body": {
+    "backgroundAgents": [
+      {
+        "errors": 0,
+        "firstAt": 1795175298763,
+        "lastAt": 1795175311713,
+        "lastLine": "reported its result",
+        "lines": 7,
+        "name": "active_memory_graph",
+        "outcome": "completed",
+        "retries": 0
+      },
+      {
+        "errors": 0,
+        "firstAt": 1795175298648,
+        "lastAt": 1795175309274,
+        "lastLine": "reported its result",
+        "lines": 7,
+        "name": "active_memory_graph_maintenance",
+        "outcome": "completed",
+        "retries": 0
+      },
+      {
+        "errors": 0,
+        "firstAt": 1795175298835,
+        "lastAt": 1795175317843,
+        "lastLine": "reported its result",
+        "lines": 7,
+        "name": "active_memory_repository",
+        "outcome": "completed",
+        "retries": 0
+      },
+      {
+        "errors": 0,
+        "firstAt": 1795175298812,
+        "lastAt": 1795175308461,
+        "lastLine": "reported its result",
+        "lines": 6,
+        "name": "active_memory_repository_maintenance",
+        "outcome": "completed",
+        "retries": 0
+      }
+    ],
+    "backgroundUsage": {
+      "cacheCreationInputTokens": 156818,
+      "cacheReadInputTokens": 272868,
+      "inputTokens": 80,
+      "outputTokens": 4763
+    },
+    "capabilities": [],
+    "context": null,
+    "costEstimated": false,
+    "costUsd": 0.1452256,
+    "createdAt": 1795175229828,
+    "cursor": 138,
+    "endedAt": 1795175295050,
+    "executions": [
+      {
+        "accepted": null,
+        "attempt": 1,
+        "costSource": "provider",
+        "costUsd": 0.0719954,
+        "diagnostic": null,
+        "durationMs": 34492,
+        "endSeq": 37,
+        "endedAt": 1795175271391,
+        "error": null,
+        "errorLines": [],
+        "harness": "claude",
+        "id": 1,
+        "input": {
+          "acceptanceFeedback": "",
+          "codeFeedback": "",
+          "deliveryFeedback": "",
+          "phase": {},
+          "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        },
+        "lastActivityAt": 1795175271038,
+        "logLines": 32,
+        "mapIndices": [],
+        "model": "claude-haiku-4-5",
+        "node": "worker",
+        "nodeInstance": 1,
+        "outcome": {
+          "artifacts": [],
+          "output": null,
+          "status": "verified"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "55e2c673-11d9-483e-a66d-f8ce1399e1ba",
+        "signals": null,
+        "startSeq": 3,
+        "startedAt": 1795175236899,
+        "state": "succeeded",
+        "timesApproximate": false,
+        "toolCalls": 12,
+        "usage": {
+          "cacheCreationInputTokens": 14042,
+          "cacheReadInputTokens": 275394,
+          "inputTokens": 92,
+          "outputTokens": 3256
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "4f2cf878d2b107cccfccc7dd89b1324347602be9",
+          "commit": "24b0a06d20bab0b59802601dacbe9f12e99a2709",
+          "files": [
+            {
+              "additions": 14,
+              "deletions": 1,
+              "path": "tests/test_core.py",
+              "status": "modified"
+            },
+            {
+              "additions": 2,
+              "deletions": 2,
+              "path": "textkit/__init__.py",
+              "status": "modified"
+            },
+            {
+              "additions": 11,
+              "deletions": 0,
+              "path": "textkit/core.py",
+              "status": "modified"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "4f2cf878d2b107cccfccc7dd89b1324347602be9"
+        }
+      },
+      {
+        "accepted": true,
+        "attempt": 1,
+        "costSource": "provider",
+        "costUsd": 0.0371772,
+        "diagnostic": {
+          "message": "Implementation verified. The slugify function correctly lowercases text, replaces runs of non-alphanumeric characters with single hyphens, and strips leading/trailing hyphens. It is properly exported from textkit/__init__.py. All 3 unit tests pass, including comprehensive edge cases: multiple spaces/dashes, special characters, leading/trailing dashes, empty strings, and mixed alphanumeric content. No dependencies missing, all checks successful."
+        },
+        "durationMs": 19292,
+        "endSeq": 88,
+        "endedAt": 1795175293420,
+        "error": null,
+        "errorLines": [],
+        "harness": "claude",
+        "id": 2,
+        "input": {
+          "deliveryFeedback": "",
+          "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        },
+        "lastActivityAt": 1795175292906,
+        "logLines": 19,
+        "mapIndices": [],
+        "model": "claude-haiku-4-5",
+        "node": "acceptance",
+        "nodeInstance": 2,
+        "outcome": {
+          "artifacts": [],
+          "diagnostic": {
+            "message": "Implementation verified. The slugify function correctly lowercases text, replaces runs of non-alphanumeric characters with single hyphens, and strips leading/trailing hyphens. It is properly exported from textkit/__init__.py. All 3 unit tests pass, including comprehensive edge cases: multiple spaces/dashes, special characters, leading/trailing dashes, empty strings, and mixed alphanumeric content. No dependencies missing, all checks successful."
+          },
+          "output": null,
+          "signals": {
+            "verdict": "accepted"
+          },
+          "status": "verifier"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "b2d55908-d5f0-458c-ba84-e12883d7f6b3",
+        "signals": {
+          "verdict": "accepted"
+        },
+        "startSeq": 38,
+        "startedAt": 1795175274128,
+        "state": "accepted",
+        "timesApproximate": false,
+        "toolCalls": 5,
+        "usage": {
+          "cacheCreationInputTokens": 10319,
+          "cacheReadInputTokens": 86682,
+          "inputTokens": 36,
+          "outputTokens": 1567
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "24b0a06d20bab0b59802601dacbe9f12e99a2709",
+          "commit": "0e8293e3a1b8071604da93ded5164f522fe6e0d4",
+          "files": [
+            {
+              "path": "tests/__pycache__/__init__.cpython-312.pyc",
+              "status": "added"
+            },
+            {
+              "path": "tests/__pycache__/test_core.cpython-312.pyc",
+              "status": "added"
+            },
+            {
+              "path": "textkit/__pycache__/__init__.cpython-312.pyc",
+              "status": "added"
+            },
+            {
+              "path": "textkit/__pycache__/core.cpython-312.pyc",
+              "status": "added"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "24b0a06d20bab0b59802601dacbe9f12e99a2709"
+        }
+      },
+      {
+        "accepted": true,
+        "attempt": 1,
+        "costSource": "provider",
+        "costUsd": 0.036053,
+        "diagnostic": {
+          "message": "Implementation is correct and complete. The slugify function properly lowercases text, replaces non-alphanumeric character runs with single dashes, and strips leading/trailing dashes. Function is properly exported and all 11 test cases pass, including edge cases like empty strings, special characters, and multiple consecutive separators."
+        },
+        "durationMs": 20922,
+        "endSeq": 94,
+        "endedAt": 1795175295050,
+        "error": null,
+        "errorLines": [],
+        "harness": "claude",
+        "id": 3,
+        "input": {
+          "deliveryFeedback": "",
+          "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+        },
+        "lastActivityAt": 1795175294686,
+        "logLines": 32,
+        "mapIndices": [],
+        "model": "claude-haiku-4-5",
+        "node": "code",
+        "nodeInstance": 3,
+        "outcome": {
+          "artifacts": [],
+          "diagnostic": {
+            "message": "Implementation is correct and complete. The slugify function properly lowercases text, replaces non-alphanumeric character runs with single dashes, and strips leading/trailing dashes. Function is properly exported and all 11 test cases pass, including edge cases like empty strings, special characters, and multiple consecutive separators."
+          },
+          "output": null,
+          "signals": {
+            "verdict": "accepted"
+          },
+          "status": "verifier"
+        },
+        "output": null,
+        "retries": 0,
+        "reused": false,
+        "round": 1,
+        "sessionId": "ac884d53-1d6d-4a3e-b4e1-a07a055dc4ec",
+        "signals": {
+          "verdict": "accepted"
+        },
+        "startSeq": 39,
+        "startedAt": 1795175274128,
+        "state": "accepted",
+        "timesApproximate": false,
+        "toolCalls": 5,
+        "usage": {
+          "cacheCreationInputTokens": 10082,
+          "cacheReadInputTokens": 62030,
+          "inputTokens": 26,
+          "outputTokens": 1932
+        },
+        "usageSource": "ledger",
+        "voidReason": null,
+        "workspaceEnd": {
+          "base": "24b0a06d20bab0b59802601dacbe9f12e99a2709",
+          "commit": "2046b99947f7613d5ab1a0cb47ea32230d5b6f50",
+          "files": [
+            {
+              "path": "tests/__pycache__/__init__.cpython-312.pyc",
+              "status": "added"
+            },
+            {
+              "path": "tests/__pycache__/test_core.cpython-312.pyc",
+              "status": "added"
+            },
+            {
+              "path": "textkit/__pycache__/__init__.cpython-312.pyc",
+              "status": "added"
+            },
+            {
+              "path": "textkit/__pycache__/core.cpython-312.pyc",
+              "status": "added"
+            }
+          ]
+        },
+        "workspaceStart": {
+          "commit": "24b0a06d20bab0b59802601dacbe9f12e99a2709"
+        }
+      }
+    ],
+    "failure": null,
+    "features": {
+      "exactTimes": true,
+      "providerCost": true,
+      "toolCalls": true,
+      "workspaceSnapshots": true
+    },
+    "graph": {
+      "bounds": {
+        "attemptsPerNode": {
+          "acceptance": 2,
+          "code": 2,
+          "worker": 1
+        },
+        "maxNodeExecutions": 9,
+        "peakConcurrency": 2,
+        "termination": {
+          "kind": "bounded",
+          "maxIterations": 3,
+          "ranking": [
+            [
+              "change_loop"
+            ]
+          ]
+        }
+      },
+      "initialInput": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      },
+      "policy": {
+        "default": "deny",
+        "policy": "policy.native-v2@1"
+      },
+      "profile": "openengine.graph.full/v1",
+      "root": {
+        "children": [
+          {
+            "body": {
+              "children": [
+                {
+                  "attempts": 1,
+                  "input": {
+                    "fields": {
+                      "acceptanceFeedback": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      },
+                      "codeFeedback": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      },
+                      "deliveryFeedback": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      },
+                      "phase": {
+                        "required": true,
+                        "type": {
+                          "fields": {
+                            "after": {
+                              "required": false,
+                              "type": {
+                                "kind": "enum",
+                                "values": [
+                                  "accepted",
+                                  "rejected"
+                                ]
+                              }
+                            }
+                          },
+                          "kind": "record"
+                        }
+                      },
+                      "task": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      }
+                    },
+                    "kind": "record"
+                  },
+                  "inputBindings": [
+                    {
+                      "target": [
+                        "task"
+                      ],
+                      "value": {
+                        "path": [
+                          "task"
+                        ],
+                        "source": "state"
+                      }
+                    },
+                    {
+                      "target": [
+                        "phase"
+                      ],
+                      "value": {
+                        "path": [
+                          "phase"
+                        ],
+                        "source": "state"
+                      }
+                    },
+                    {
+                      "target": [
+                        "acceptanceFeedback"
+                      ],
+                      "value": {
+                        "path": [
+                          "acceptanceFeedback"
+                        ],
+                        "source": "state"
+                      }
+                    },
+                    {
+                      "target": [
+                        "codeFeedback"
+                      ],
+                      "value": {
+                        "path": [
+                          "codeFeedback"
+                        ],
+                        "source": "state"
+                      }
+                    },
+                    {
+                      "target": [
+                        "deliveryFeedback"
+                      ],
+                      "value": {
+                        "path": [
+                          "deliveryFeedback"
+                        ],
+                        "source": "state"
+                      }
+                    }
+                  ],
+                  "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+                  "kind": "step",
+                  "name": "worker",
+                  "output": {
+                    "kind": "null"
+                  },
+                  "worker": "builtin.agent.software-worker@1",
+                  "writeBindings": []
+                },
+                {
+                  "branches": [
+                    {
+                      "node": {
+                        "kind": "fail",
+                        "name": "worker_failed",
+                        "reason": "worker_failed"
+                      },
+                      "when": {
+                        "kind": "in",
+                        "labels": [
+                          "crash",
+                          "malformed",
+                          "refusal",
+                          "timeout"
+                        ],
+                        "value": {
+                          "field": null,
+                          "name": "worker",
+                          "source": "error"
+                        }
+                      }
+                    }
+                  ],
+                  "kind": "choice",
+                  "name": "worker_result",
+                  "otherwise": {
+                    "children": [
+                      {
+                        "branches": [
+                          {
+                            "attempts": 2,
+                            "diagnostic": {
+                              "fields": {
+                                "message": {
+                                  "required": true,
+                                  "type": {
+                                    "kind": "string"
+                                  }
+                                }
+                              },
+                              "kind": "record"
+                            },
+                            "input": {
+                              "fields": {
+                                "deliveryFeedback": {
+                                  "required": true,
+                                  "type": {
+                                    "kind": "string"
+                                  }
+                                },
+                                "task": {
+                                  "required": true,
+                                  "type": {
+                                    "kind": "string"
+                                  }
+                                }
+                              },
+                              "kind": "record"
+                            },
+                            "inputBindings": [
+                              {
+                                "target": [
+                                  "task"
+                                ],
+                                "value": {
+                                  "path": [
+                                    "task"
+                                  ],
+                                  "source": "state"
+                                }
+                              },
+                              {
+                                "target": [
+                                  "deliveryFeedback"
+                                ],
+                                "value": {
+                                  "path": [
+                                    "deliveryFeedback"
+                                  ],
+                                  "source": "state"
+                                }
+                              }
+                            ],
+                            "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+                            "kind": "verifier",
+                            "name": "acceptance",
+                            "output": {
+                              "kind": "null"
+                            },
+                            "signals": {
+                              "verdict": [
+                                "accepted",
+                                "rejected"
+                              ]
+                            },
+                            "worker": "builtin.agent.acceptance-verifier@1",
+                            "writeBindings": [
+                              {
+                                "target": [
+                                  "phase",
+                                  "after"
+                                ],
+                                "value": {
+                                  "channel": "signal",
+                                  "node": "acceptance",
+                                  "path": [
+                                    "verdict"
+                                  ]
+                                }
+                              },
+                              {
+                                "target": [
+                                  "acceptanceFeedback"
+                                ],
+                                "value": {
+                                  "channel": "diagnostic",
+                                  "node": "acceptance",
+                                  "path": [
+                                    "message"
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "attempts": 2,
+                            "diagnostic": {
+                              "fields": {
+                                "message": {
+                                  "required": true,
+                                  "type": {
+                                    "kind": "string"
+                                  }
+                                }
+                              },
+                              "kind": "record"
+                            },
+                            "input": {
+                              "fields": {
+                                "deliveryFeedback": {
+                                  "required": true,
+                                  "type": {
+                                    "kind": "string"
+                                  }
+                                },
+                                "task": {
+                                  "required": true,
+                                  "type": {
+                                    "kind": "string"
+                                  }
+                                }
+                              },
+                              "kind": "record"
+                            },
+                            "inputBindings": [
+                              {
+                                "target": [
+                                  "task"
+                                ],
+                                "value": {
+                                  "path": [
+                                    "task"
+                                  ],
+                                  "source": "state"
+                                }
+                              },
+                              {
+                                "target": [
+                                  "deliveryFeedback"
+                                ],
+                                "value": {
+                                  "path": [
+                                    "deliveryFeedback"
+                                  ],
+                                  "source": "state"
+                                }
+                              }
+                            ],
+                            "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+                            "kind": "verifier",
+                            "name": "code",
+                            "output": {
+                              "kind": "null"
+                            },
+                            "signals": {
+                              "verdict": [
+                                "accepted",
+                                "rejected"
+                              ]
+                            },
+                            "worker": "builtin.agent.code-verifier@1",
+                            "writeBindings": [
+                              {
+                                "target": [
+                                  "codeFeedback"
+                                ],
+                                "value": {
+                                  "channel": "diagnostic",
+                                  "node": "code",
+                                  "path": [
+                                    "message"
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "join": {
+                          "kind": "all"
+                        },
+                        "kind": "par",
+                        "name": "parallel_reviews",
+                        "promotedStatePaths": [
+                          [
+                            "acceptanceFeedback"
+                          ],
+                          [
+                            "codeFeedback"
+                          ],
+                          [
+                            "phase"
+                          ]
+                        ],
+                        "state": {
+                          "fields": {
+                            "acceptanceFeedback": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            },
+                            "codeFeedback": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            },
+                            "continueItems": {
+                              "required": true,
+                              "type": {
+                                "items": {
+                                  "kind": "null"
+                                },
+                                "kind": "array"
+                              }
+                            },
+                            "deliveryFeedback": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            },
+                            "phase": {
+                              "required": true,
+                              "type": {
+                                "fields": {
+                                  "after": {
+                                    "required": false,
+                                    "type": {
+                                      "kind": "enum",
+                                      "values": [
+                                        "accepted",
+                                        "rejected"
+                                      ]
+                                    }
+                                  }
+                                },
+                                "kind": "record"
+                              }
+                            },
+                            "task": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            }
+                          },
+                          "kind": "record"
+                        }
+                      },
+                      {
+                        "branches": [
+                          {
+                            "node": {
+                              "kind": "fail",
+                              "name": "review_failed",
+                              "reason": "review_failed"
+                            },
+                            "when": {
+                              "guards": [
+                                {
+                                  "kind": "in",
+                                  "labels": [
+                                    "crash",
+                                    "malformed",
+                                    "refusal",
+                                    "timeout"
+                                  ],
+                                  "value": {
+                                    "field": null,
+                                    "name": "acceptance",
+                                    "source": "error"
+                                  }
+                                },
+                                {
+                                  "kind": "in",
+                                  "labels": [
+                                    "crash",
+                                    "malformed",
+                                    "refusal",
+                                    "timeout"
+                                  ],
+                                  "value": {
+                                    "field": null,
+                                    "name": "code",
+                                    "source": "error"
+                                  }
+                                }
+                              ],
+                              "kind": "any"
+                            }
+                          },
+                          {
+                            "node": {
+                              "bindings": [],
+                              "kind": "succeed",
+                              "name": "done",
+                              "output": {
+                                "kind": "null"
+                              }
+                            },
+                            "when": {
+                              "guards": [
+                                {
+                                  "kind": "in",
+                                  "labels": [
+                                    "accepted"
+                                  ],
+                                  "value": {
+                                    "field": "verdict",
+                                    "name": "acceptance",
+                                    "source": "signal"
+                                  }
+                                },
+                                {
+                                  "kind": "in",
+                                  "labels": [
+                                    "accepted"
+                                  ],
+                                  "value": {
+                                    "field": "verdict",
+                                    "name": "code",
+                                    "source": "signal"
+                                  }
+                                }
+                              ],
+                              "kind": "all"
+                            }
+                          }
+                        ],
+                        "kind": "choice",
+                        "name": "review_result",
+                        "otherwise": {
+                          "body": {
+                            "kind": "fail",
+                            "name": "review_retry_invalid",
+                            "reason": "invalid_retry_state"
+                          },
+                          "kind": "map",
+                          "maxItems": 1,
+                          "name": "review_retry",
+                          "over": {
+                            "path": [
+                              "continueItems"
+                            ],
+                            "source": "state"
+                          },
+                          "promotedStatePaths": [],
+                          "state": {
+                            "fields": {
+                              "acceptanceFeedback": {
+                                "required": true,
+                                "type": {
+                                  "kind": "string"
+                                }
+                              },
+                              "codeFeedback": {
+                                "required": true,
+                                "type": {
+                                  "kind": "string"
+                                }
+                              },
+                              "continueItems": {
+                                "required": true,
+                                "type": {
+                                  "items": {
+                                    "kind": "null"
+                                  },
+                                  "kind": "array"
+                                }
+                              },
+                              "deliveryFeedback": {
+                                "required": true,
+                                "type": {
+                                  "kind": "string"
+                                }
+                              },
+                              "phase": {
+                                "required": true,
+                                "type": {
+                                  "fields": {
+                                    "after": {
+                                      "required": false,
+                                      "type": {
+                                        "kind": "enum",
+                                        "values": [
+                                          "accepted",
+                                          "rejected"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "kind": "record"
+                                }
+                              },
+                              "task": {
+                                "required": true,
+                                "type": {
+                                  "kind": "string"
+                                }
+                              }
+                            },
+                            "kind": "record"
+                          }
+                        },
+                        "promotedStatePaths": [
+                          [
+                            "deliveryFeedback"
+                          ],
+                          [
+                            "phase"
+                          ]
+                        ],
+                        "state": {
+                          "fields": {
+                            "acceptanceFeedback": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            },
+                            "codeFeedback": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            },
+                            "continueItems": {
+                              "required": true,
+                              "type": {
+                                "items": {
+                                  "kind": "null"
+                                },
+                                "kind": "array"
+                              }
+                            },
+                            "deliveryFeedback": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            },
+                            "phase": {
+                              "required": true,
+                              "type": {
+                                "fields": {
+                                  "after": {
+                                    "required": false,
+                                    "type": {
+                                      "kind": "enum",
+                                      "values": [
+                                        "accepted",
+                                        "rejected"
+                                      ]
+                                    }
+                                  }
+                                },
+                                "kind": "record"
+                              }
+                            },
+                            "task": {
+                              "required": true,
+                              "type": {
+                                "kind": "string"
+                              }
+                            }
+                          },
+                          "kind": "record"
+                        }
+                      }
+                    ],
+                    "kind": "seq",
+                    "name": "reviews",
+                    "promotedStatePaths": [
+                      [
+                        "acceptanceFeedback"
+                      ],
+                      [
+                        "codeFeedback"
+                      ],
+                      [
+                        "phase"
+                      ],
+                      [
+                        "deliveryFeedback"
+                      ]
+                    ],
+                    "state": {
+                      "fields": {
+                        "acceptanceFeedback": {
+                          "required": true,
+                          "type": {
+                            "kind": "string"
+                          }
+                        },
+                        "codeFeedback": {
+                          "required": true,
+                          "type": {
+                            "kind": "string"
+                          }
+                        },
+                        "continueItems": {
+                          "required": true,
+                          "type": {
+                            "items": {
+                              "kind": "null"
+                            },
+                            "kind": "array"
+                          }
+                        },
+                        "deliveryFeedback": {
+                          "required": true,
+                          "type": {
+                            "kind": "string"
+                          }
+                        },
+                        "phase": {
+                          "required": true,
+                          "type": {
+                            "fields": {
+                              "after": {
+                                "required": false,
+                                "type": {
+                                  "kind": "enum",
+                                  "values": [
+                                    "accepted",
+                                    "rejected"
+                                  ]
+                                }
+                              }
+                            },
+                            "kind": "record"
+                          }
+                        },
+                        "task": {
+                          "required": true,
+                          "type": {
+                            "kind": "string"
+                          }
+                        }
+                      },
+                      "kind": "record"
+                    }
+                  },
+                  "promotedStatePaths": [
+                    [
+                      "acceptanceFeedback"
+                    ],
+                    [
+                      "codeFeedback"
+                    ],
+                    [
+                      "phase"
+                    ],
+                    [
+                      "deliveryFeedback"
+                    ]
+                  ],
+                  "state": {
+                    "fields": {
+                      "acceptanceFeedback": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      },
+                      "codeFeedback": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      },
+                      "continueItems": {
+                        "required": true,
+                        "type": {
+                          "items": {
+                            "kind": "null"
+                          },
+                          "kind": "array"
+                        }
+                      },
+                      "deliveryFeedback": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      },
+                      "phase": {
+                        "required": true,
+                        "type": {
+                          "fields": {
+                            "after": {
+                              "required": false,
+                              "type": {
+                                "kind": "enum",
+                                "values": [
+                                  "accepted",
+                                  "rejected"
+                                ]
+                              }
+                            }
+                          },
+                          "kind": "record"
+                        }
+                      },
+                      "task": {
+                        "required": true,
+                        "type": {
+                          "kind": "string"
+                        }
+                      }
+                    },
+                    "kind": "record"
+                  }
+                }
+              ],
+              "kind": "seq",
+              "name": "change_iteration",
+              "promotedStatePaths": [
+                [
+                  "acceptanceFeedback"
+                ],
+                [
+                  "codeFeedback"
+                ],
+                [
+                  "phase"
+                ],
+                [
+                  "deliveryFeedback"
+                ]
+              ],
+              "state": {
+                "fields": {
+                  "acceptanceFeedback": {
+                    "required": true,
+                    "type": {
+                      "kind": "string"
+                    }
+                  },
+                  "codeFeedback": {
+                    "required": true,
+                    "type": {
+                      "kind": "string"
+                    }
+                  },
+                  "continueItems": {
+                    "required": true,
+                    "type": {
+                      "items": {
+                        "kind": "null"
+                      },
+                      "kind": "array"
+                    }
+                  },
+                  "deliveryFeedback": {
+                    "required": true,
+                    "type": {
+                      "kind": "string"
+                    }
+                  },
+                  "phase": {
+                    "required": true,
+                    "type": {
+                      "fields": {
+                        "after": {
+                          "required": false,
+                          "type": {
+                            "kind": "enum",
+                            "values": [
+                              "accepted",
+                              "rejected"
+                            ]
+                          }
+                        }
+                      },
+                      "kind": "record"
+                    }
+                  },
+                  "task": {
+                    "required": true,
+                    "type": {
+                      "kind": "string"
+                    }
+                  }
+                },
+                "kind": "record"
+              }
+            },
+            "kind": "loop",
+            "maxIterations": 3,
+            "name": "change_loop",
+            "promotedStatePaths": [
+              [
+                "acceptanceFeedback"
+              ],
+              [
+                "codeFeedback"
+              ],
+              [
+                "phase"
+              ],
+              [
+                "deliveryFeedback"
+              ]
+            ],
+            "state": {
+              "fields": {
+                "acceptanceFeedback": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                },
+                "codeFeedback": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                },
+                "continueItems": {
+                  "required": true,
+                  "type": {
+                    "items": {
+                      "kind": "null"
+                    },
+                    "kind": "array"
+                  }
+                },
+                "deliveryFeedback": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                },
+                "phase": {
+                  "required": true,
+                  "type": {
+                    "fields": {
+                      "after": {
+                        "required": false,
+                        "type": {
+                          "kind": "enum",
+                          "values": [
+                            "accepted",
+                            "rejected"
+                          ]
+                        }
+                      }
+                    },
+                    "kind": "record"
+                  }
+                },
+                "task": {
+                  "required": true,
+                  "type": {
+                    "kind": "string"
+                  }
+                }
+              },
+              "kind": "record"
+            }
+          },
+          {
+            "kind": "fail",
+            "name": "change_attempts_exhausted",
+            "reason": "change_attempts_exhausted"
+          }
+        ],
+        "kind": "seq",
+        "name": "run",
+        "promotedStatePaths": [],
+        "state": {
+          "fields": {
+            "acceptanceFeedback": {
+              "required": true,
+              "type": {
+                "kind": "string"
+              }
+            },
+            "codeFeedback": {
+              "required": true,
+              "type": {
+                "kind": "string"
+              }
+            },
+            "continueItems": {
+              "required": true,
+              "type": {
+                "items": {
+                  "kind": "null"
+                },
+                "kind": "array"
+              }
+            },
+            "deliveryFeedback": {
+              "required": true,
+              "type": {
+                "kind": "string"
+              }
+            },
+            "phase": {
+              "required": true,
+              "type": {
+                "fields": {
+                  "after": {
+                    "required": false,
+                    "type": {
+                      "kind": "enum",
+                      "values": [
+                        "accepted",
+                        "rejected"
+                      ]
+                    }
+                  }
+                },
+                "kind": "record"
+              }
+            },
+            "task": {
+              "required": true,
+              "type": {
+                "kind": "string"
+              }
+            }
+          },
+          "kind": "record"
+        }
+      }
+    },
+    "graphNodes": [
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "run",
+        "parent": null,
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "loop",
+        "loops": [],
+        "maxIterations": 3,
+        "model": null,
+        "name": "change_loop",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "change_iteration",
+        "parent": "change_loop",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 1,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Implement the requested software change fully in the shared workspace. Follow the repository's guidance, keep the change focused, and run relevant checks. Delivery runs `git add --all`; do not leave unrelated unignored files in the repository checkout. Use current input on every visit. An empty phase means implementation; phase.after accepted or rejected means repair the latest acceptanceFeedback and codeFeedback; ci_failed, conflict, or repair_required means repair deliveryFeedback. Other feedback is historical. Resolve Git/CI issues without weakening the task; preserve integrated upstream changes. sourceRevision is original provenance, reviewBaseRevision the captured target. Do not restore files merely to match sourceRevision. Run relevant checks after repairs.",
+        "kind": "step",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "worker",
+        "parent": "change_iteration",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.software-worker@1"
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "choice",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "worker_result",
+        "parent": "change_iteration",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "worker_failed",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "worker_failed",
+        "parent": "worker_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "seq",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "reviews",
+        "parent": "worker_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "par",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "parallel_reviews",
+        "parent": "reviews",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": 2,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Verify the change independently against the user's request and observable behavior. Try to run the repository's pre-commit checks and report the results. When delivery feedback is present, verify that the repair addresses it. Accept only with concrete evidence; otherwise return actionable feedback. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+        "kind": "verifier",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "acceptance",
+        "parent": "parallel_reviews",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.acceptance-verifier@1"
+      },
+      {
+        "attempts": 2,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": "Review the change independently for correctness, safety, integration, and substantive maintainability. Do not reject for style-only preferences. When delivery feedback is present, verify that the repair addresses it. Return actionable feedback when rejecting. Delivery feedback's sourceRevision is immutable checkout provenance. When reviewBaseRevision is provided, assess the change against that captured target revision and preserve integrated upstream changes. Never restore original-source files solely because they differ. If the review base is unavailable, do not infer that a rollback is needed.",
+        "kind": "verifier",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": "claude-haiku-4-5",
+        "name": "code",
+        "parent": "parallel_reviews",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": "builtin.agent.code-verifier@1"
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "choice",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "review_result",
+        "parent": "reviews",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "review_failed",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "review_failed",
+        "parent": "review_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "succeed",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "done",
+        "parent": "review_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": null,
+        "harness": "claude",
+        "instructions": null,
+        "kind": "map",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "review_retry",
+        "parent": "review_result",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "invalid_retry_state",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [
+          "change_loop"
+        ],
+        "maxIterations": null,
+        "model": null,
+        "name": "review_retry_invalid",
+        "parent": "review_retry",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      },
+      {
+        "attempts": null,
+        "effort": null,
+        "failReason": "change_attempts_exhausted",
+        "harness": "claude",
+        "instructions": null,
+        "kind": "fail",
+        "loops": [],
+        "maxIterations": null,
+        "model": null,
+        "name": "change_attempts_exhausted",
+        "parent": "run",
+        "provider": "anthropic",
+        "timeoutMs": null,
+        "worker": null
+      }
+    ],
+    "initialInput": {
+      "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+    },
+    "lanes": [
+      {
+        "harness": "claude",
+        "model": "claude-haiku-4-5",
+        "nodes": [
+          "worker",
+          "acceptance",
+          "code"
+        ],
+        "provider": "anthropic"
+      }
+    ],
+    "lastActivityAt": 1795175318279,
+    "local": {
+      "controllerAlive": false,
+      "controllerLiveness": "dead",
+      "controllerPid": null,
+      "hasCheckpoints": false,
+      "replays": [
+        "01a1f8c9-b7e1-7b90-872a-0ec8e68d28d1"
+      ],
+      "resumedAs": "01a1f8c9-b7e1-7b90-872a-0ec8e68d28d1",
+      "workspace": "<root>/work/happy-path"
+    },
+    "nodeUsage": {
+      "cacheCreationInputTokens": 34443,
+      "cacheReadInputTokens": 424106,
+      "inputTokens": 154,
+      "outputTokens": 6755
+    },
+    "nodes": {
+      "acceptance": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": 0.0371772,
+        "elapsedMs": 19292,
+        "executions": [
+          2
+        ],
+        "rounds": 1,
+        "state": "accepted",
+        "usage": {
+          "cacheCreationInputTokens": 10319,
+          "cacheReadInputTokens": 86682,
+          "inputTokens": 36,
+          "outputTokens": 1567
+        }
+      },
+      "code": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": 0.036053,
+        "elapsedMs": 20922,
+        "executions": [
+          3
+        ],
+        "rounds": 1,
+        "state": "accepted",
+        "usage": {
+          "cacheCreationInputTokens": 10082,
+          "cacheReadInputTokens": 62030,
+          "inputTokens": 26,
+          "outputTokens": 1932
+        }
+      },
+      "worker": {
+        "activeSince": null,
+        "costEstimated": false,
+        "costUsd": 0.0719954,
+        "elapsedMs": 34492,
+        "executions": [
+          1
+        ],
+        "rounds": 1,
+        "state": "succeeded",
+        "usage": {
+          "cacheCreationInputTokens": 14042,
+          "cacheReadInputTokens": 275394,
+          "inputTokens": 92,
+          "outputTokens": 3256
+        }
+      }
+    },
+    "phase": "finished",
+    "pressures": [],
+    "replayOf": null,
+    "replays": [
+      "01a1f8c9-b7e1-7b90-872a-0ec8e68d28d1"
+    ],
+    "resumedAs": null,
+    "resumedFrom": null,
+    "runId": "01a1f8c8-2984-7640-bc40-aaa51b13aa24",
+    "runLog": [
+      {
+        "at": 1795175230079,
+        "seq": 1,
+        "stream": "system",
+        "text": "Preparing execution environment"
+      },
+      {
+        "at": 1795175236899,
+        "seq": 3,
+        "stream": "system",
+        "text": "worker started (claude-haiku-4-5)"
+      },
+      {
+        "at": 1795175271391,
+        "seq": 37,
+        "stream": "system",
+        "text": "worker finished"
+      },
+      {
+        "at": 1795175274128,
+        "seq": 38,
+        "stream": "system",
+        "text": "acceptance started (claude-haiku-4-5)"
+      },
+      {
+        "at": 1795175274128,
+        "seq": 39,
+        "stream": "system",
+        "text": "code started (claude-haiku-4-5)"
+      },
+      {
+        "at": 1795175293420,
+        "seq": 88,
+        "stream": "system",
+        "text": "acceptance finished"
+      },
+      {
+        "at": 1795175295050,
+        "seq": 94,
+        "stream": "system",
+        "text": "code finished"
+      },
+      {
+        "at": 1795175295153,
+        "seq": 96,
+        "stream": "system",
+        "text": "Active Memory postmortem started"
+      },
+      {
+        "at": 1795175295204,
+        "seq": 97,
+        "stream": "system",
+        "text": "Active Memory supplied manifest: known=true, snapshot_generation=0, supplied_revisions=0"
+      },
+      {
+        "at": 1795175295261,
+        "seq": 98,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph_maintenance started"
+      },
+      {
+        "at": 1795175295262,
+        "seq": 99,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository_maintenance started"
+      },
+      {
+        "at": 1795175295262,
+        "seq": 100,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph started"
+      },
+      {
+        "at": 1795175295263,
+        "seq": 101,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository started"
+      },
+      {
+        "agent": "active_memory_repository_maintenance",
+        "at": 1795175306233,
+        "seq": 106,
+        "stream": "system",
+        "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+      },
+      {
+        "agent": "active_memory_graph_maintenance",
+        "at": 1795175307406,
+        "seq": 109,
+        "stream": "system",
+        "text": "```json\n{\n  \"response\": {\n    \"output\": {\n      \"decisions\": []\n    },\n    \"signals\": {},\n    \"diagnostic\": null\n  }\n}\n```"
+      },
+      {
+        "agent": "active_memory_repository_maintenance",
+        "at": 1795175308455,
+        "seq": 113,
+        "stream": "system",
+        "text": "reported its result"
+      },
+      {
+        "at": 1795175309016,
+        "seq": 116,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository_maintenance completed"
+      },
+      {
+        "agent": "active_memory_graph_maintenance",
+        "at": 1795175309268,
+        "seq": 117,
+        "stream": "system",
+        "text": "reported its result"
+      },
+      {
+        "agent": "active_memory_graph",
+        "at": 1795175309324,
+        "seq": 119,
+        "stream": "system",
+        "text": "```json\n{\n  \"response\": {\n    \"diagnostic\": null,\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {}\n  }\n}\n```"
+      },
+      {
+        "at": 1795175309822,
+        "seq": 124,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph_maintenance completed"
+      },
+      {
+        "agent": "active_memory_graph",
+        "at": 1795175311705,
+        "seq": 125,
+        "stream": "system",
+        "text": "reported its result"
+      },
+      {
+        "at": 1795175312298,
+        "seq": 128,
+        "stream": "system",
+        "text": "Active Memory active_memory_graph completed"
+      },
+      {
+        "agent": "active_memory_repository",
+        "at": 1795175315454,
+        "seq": 129,
+        "stream": "system",
+        "text": "```json\n{\n  \"response\": {\n    \"diagnostic\": null,\n    \"output\": {\n      \"lessons\": []\n    },\n    \"signals\": {}\n  }\n}\n```"
+      },
+      {
+        "agent": "active_memory_repository",
+        "at": 1795175317837,
+        "seq": 133,
+        "stream": "system",
+        "text": "reported its result"
+      },
+      {
+        "at": 1795175318227,
+        "seq": 136,
+        "stream": "system",
+        "text": "Active Memory active_memory_repository completed"
+      },
+      {
+        "at": 1795175318279,
+        "seq": 137,
+        "stream": "system",
+        "text": "Active Memory postmortem completed: 4 roles completed, 0 failed, 0 mutations published, cancelled=false"
+      }
+    ],
+    "runtime": {
+      "harness": "claude",
+      "nodes": {
+        "acceptance": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        },
+        "code": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        },
+        "worker": {
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          },
+          "kind": "agent",
+          "model": "claude-haiku-4-5"
+        }
+      },
+      "provider": "anthropic",
+      "size": "medium"
+    },
+    "source": null,
+    "startedAt": 1795175230079,
+    "status": "succeeded",
+    "target": "local",
+    "targetKind": "local",
+    "targetName": "This machine",
+    "terminal": {
+      "output": null,
+      "status": "succeeded"
+    },
+    "title": "happy-path [fork]",
+    "usage": {
+      "cacheCreationInputTokens": 191261,
+      "cacheReadInputTokens": 696974,
+      "inputTokens": 234,
+      "outputTokens": 11518
+    },
+    "usageLive": false,
+    "usagePending": false
+  },
+  "status": 200
+}

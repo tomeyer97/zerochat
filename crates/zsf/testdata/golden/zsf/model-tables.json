@@ -1,0 +1,193 @@
+{
+  "attemptKinds": [
+    [
+      "first",
+      "first"
+    ],
+    [
+      "infra-retry",
+      "infra-retry"
+    ],
+    [
+      "rerun",
+      "rerun"
+    ],
+    [
+      "manual-retry",
+      "manual-retry"
+    ],
+    [
+      "gate-rerun",
+      "gate-rerun"
+    ]
+  ],
+  "oneLine": "Ran 4 tests / OK",
+  "slugs": [
+    [
+      "Add sub()",
+      "add-sub"
+    ],
+    [
+      "  my Title: here ",
+      "my-title-here"
+    ],
+    [
+      "Ünïcode — dashes",
+      "n-code-dashes"
+    ],
+    [
+      "a very long title that goes on and on and on past forty characters",
+      "a-very-long-title-that-goes-on-and-on-an"
+    ],
+    [
+      "---",
+      ""
+    ],
+    [
+      "",
+      ""
+    ]
+  ],
+  "stateRoundTrip": {
+    "active": true,
+    "consecutive_infra": 0,
+    "slices": {
+      "01": {
+        "attempts": [
+          {
+            "kind": "infra-retry",
+            "n": 1,
+            "result": "integration_failed",
+            "started_ms": 5,
+            "task_file": "t.md"
+          }
+        ],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "job": {
+          "accept": true,
+          "job": "integrate"
+        },
+        "retry": {
+          "fresh": true
+        },
+        "status": "failed"
+      }
+    },
+    "updated_ms": 0,
+    "version": 1
+  },
+  "statuses": [
+    {
+      "display": "pending",
+      "displayApproved": "pending",
+      "displayCheckpoint": "pending",
+      "serde": "pending",
+      "status": "pending"
+    },
+    {
+      "display": "launching",
+      "displayApproved": "launching",
+      "displayCheckpoint": "launching",
+      "serde": "launching",
+      "status": "launching"
+    },
+    {
+      "display": "running",
+      "displayApproved": "running",
+      "displayCheckpoint": "running",
+      "serde": "running",
+      "status": "running"
+    },
+    {
+      "display": "integrating",
+      "displayApproved": "integrating",
+      "displayCheckpoint": "integrating",
+      "serde": "integrating",
+      "status": "integrating"
+    },
+    {
+      "display": "waiting_for_review",
+      "displayApproved": "waiting_for_review",
+      "displayCheckpoint": "waiting_for_review",
+      "serde": "waiting_for_review",
+      "status": "waiting_for_review"
+    },
+    {
+      "display": "merged",
+      "displayApproved": "merged",
+      "displayCheckpoint": "waiting_for_approval",
+      "serde": "merged",
+      "status": "merged"
+    },
+    {
+      "display": "failed",
+      "displayApproved": "failed",
+      "displayCheckpoint": "failed",
+      "serde": "failed",
+      "status": "failed"
+    },
+    {
+      "display": "interrupted",
+      "displayApproved": "interrupted",
+      "displayCheckpoint": "interrupted",
+      "serde": "interrupted",
+      "status": "interrupted"
+    },
+    {
+      "display": "skipped",
+      "displayApproved": "skipped",
+      "displayCheckpoint": "skipped",
+      "serde": "skipped",
+      "status": "skipped"
+    }
+  ],
+  "time": [
+    [
+      0,
+      "0s",
+      "2026-11-18 11:06:40Z"
+    ],
+    [
+      59000,
+      "59s",
+      "2026-11-18 11:07:39Z"
+    ],
+    [
+      60000,
+      "1m",
+      "2026-11-18 11:07:40Z"
+    ],
+    [
+      3599000,
+      "59m",
+      "2026-11-18 12:06:39Z"
+    ],
+    [
+      3600000,
+      "1h 00m",
+      "2026-11-18 12:06:40Z"
+    ],
+    [
+      3725000,
+      "1h 02m",
+      "2026-11-18 12:08:45Z"
+    ],
+    [
+      86400000,
+      "1d 0h",
+      "2026-11-19 11:06:40Z"
+    ],
+    [
+      90061000,
+      "1d 1h",
+      "2026-11-19 12:07:41Z"
+    ]
+  ],
+  "unknownEvent": {
+    "detail": "x",
+    "kind": "other",
+    "ts": 1
+  }
+}

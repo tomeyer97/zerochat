@@ -1,0 +1,595 @@
+{
+  "events": [
+    {
+      "kind": "initialized",
+      "ts": 0
+    },
+    {
+      "kind": "started",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-001",
+      "slice": "01",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-001",
+      "slice": "01",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-001",
+      "slice": "01",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "failed: change_attempts_exhausted",
+      "kind": "run_finished",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "review loop exhausted (run run-002)",
+      "kind": "quality_failed",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "waiting for review, not merged (approve = check and merge)",
+      "kind": "checkpoint_waiting",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "zeroshot run: exit 2",
+      "kind": "launch_failed",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "#1: launch failed: zeroshot run: exit 2",
+      "kind": "infra_failure",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "infra-retry attempt",
+      "kind": "launched",
+      "run_id": "run-004",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-004",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-004",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-005",
+      "slice": "06",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "checking and merging",
+      "kind": "approved",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "with notes: Add the missing test.",
+      "kind": "retried",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "kind": "skipped",
+      "run_id": "run-005",
+      "slice": "06",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "manual-retry attempt",
+      "kind": "launched",
+      "run_id": "run-006",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-006",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-006",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-007",
+      "slice": "04",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-007",
+      "slice": "04",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-007",
+      "slice": "04",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-008",
+      "slice": "07",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "zeroshot recorded the run as failed: runtime_lost",
+      "kind": "interrupted",
+      "run_id": "run-008",
+      "slice": "07",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "resumed run-008 as run-009",
+      "kind": "resumed",
+      "run_id": "run-009",
+      "slice": "07",
+      "ts": 0
+    }
+  ],
+  "report": {
+    "active": true,
+    "base": "main",
+    "branch": "feature/x",
+    "dir": "<root>/state/feat",
+    "max_parallel": 1,
+    "merged": 5,
+    "name": "feat",
+    "repo": "<root>/repo",
+    "slices": [
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-01-a1-<time>",
+          "log_file": "<root>/state/feat/runs/01-a1.log",
+          "n": 1,
+          "result": "merged",
+          "run_id": "run-001",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/01-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "commit": "<commit>",
+        "deps": [],
+        "id": "01",
+        "status": "merged",
+        "title": "Slice 01"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "manual-retry",
+          "launch_key": "zsf-feat-02-a2-<time>",
+          "log_file": "<root>/state/feat/runs/02-a2.log",
+          "n": 2,
+          "result": "merged",
+          "run_id": "run-006",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/02-a2.md"
+        },
+        "attempts": 2,
+        "checkpoint": false,
+        "commit": "<commit>",
+        "deps": [],
+        "id": "02",
+        "status": "merged",
+        "title": "Slice 02"
+      },
+      {
+        "approved": true,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-03-a1-<time>",
+          "log_file": "<root>/state/feat/runs/03-a1.log",
+          "n": 1,
+          "result": "merged",
+          "run_id": "run-003",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/03-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": true,
+        "commit": "<commit>",
+        "deps": [],
+        "id": "03",
+        "status": "merged",
+        "title": "Slice 03"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-04-a1-<time>",
+          "log_file": "<root>/state/feat/runs/04-a1.log",
+          "n": 1,
+          "result": "merged",
+          "run_id": "run-007",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/04-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "commit": "<commit>",
+        "deps": [
+          "03"
+        ],
+        "id": "04",
+        "status": "merged",
+        "title": "Slice 04"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "infra-retry",
+          "launch_key": "zsf-feat-05-a2-<time>",
+          "log_file": "<root>/state/feat/runs/05-a2.log",
+          "n": 2,
+          "result": "merged",
+          "run_id": "run-004",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/05-a2.md"
+        },
+        "attempts": 2,
+        "checkpoint": false,
+        "commit": "<commit>",
+        "deps": [],
+        "id": "05",
+        "status": "merged",
+        "title": "Slice 05"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-06-a1-<time>",
+          "log_file": "<root>/state/feat/runs/06-a1.log",
+          "n": 1,
+          "result": "skipped",
+          "run_id": "run-005",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/06-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "deps": [],
+        "id": "06",
+        "reason": "skipped",
+        "status": "skipped",
+        "title": "Slice 06",
+        "worktree": "<root>/state/feat/worktrees/06-slice-06"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "earlier_runs": [
+            "run-008"
+          ],
+          "kind": "first",
+          "launch_key": "zsf-feat-07-a1-<time>",
+          "log_file": "<root>/state/feat/runs/07-a1.log",
+          "n": 1,
+          "resume_tried": true,
+          "resumed_ms": 0,
+          "run_id": "run-009",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/07-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "deps": [],
+        "id": "07",
+        "status": "running",
+        "title": "Slice 07",
+        "worktree": "<root>/state/feat/worktrees/07-slice-07"
+      }
+    ],
+    "total": 7
+  },
+  "state": {
+    "active": true,
+    "consecutive_infra": 0,
+    "slices": {
+      "01": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-01-a1-<time>",
+            "log_file": "<root>/state/feat/runs/01-a1.log",
+            "n": 1,
+            "result": "merged",
+            "run_id": "run-001",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/01-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/01-slice-01",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "merged"
+      },
+      "02": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-02-a1-<time>",
+            "log_file": "<root>/state/feat/runs/02-a1.log",
+            "n": 1,
+            "reason": "review loop exhausted (run run-002)",
+            "result": "quality_failed",
+            "run_id": "run-002",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/02-a1.md"
+          },
+          {
+            "ended_ms": 0,
+            "kind": "manual-retry",
+            "launch_key": "zsf-feat-02-a2-<time>",
+            "log_file": "<root>/state/feat/runs/02-a2.log",
+            "n": 2,
+            "result": "merged",
+            "run_id": "run-006",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/02-a2.md"
+          }
+        ],
+        "branch": "zsf/feature/x/02-slice-02",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "notes": [
+          "Add the missing test."
+        ],
+        "status": "merged"
+      },
+      "03": {
+        "approved": true,
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-03-a1-<time>",
+            "log_file": "<root>/state/feat/runs/03-a1.log",
+            "n": 1,
+            "result": "merged",
+            "run_id": "run-003",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/03-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/03-slice-03",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "merged"
+      },
+      "04": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-04-a1-<time>",
+            "log_file": "<root>/state/feat/runs/04-a1.log",
+            "n": 1,
+            "result": "merged",
+            "run_id": "run-007",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/04-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/04-slice-04",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "merged"
+      },
+      "05": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-05-a1-<time>",
+            "log_file": "<root>/state/feat/runs/05-a1.log",
+            "n": 1,
+            "reason": "launch failed: zeroshot run: exit 2",
+            "result": "launch_failed",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/05-a1.md"
+          },
+          {
+            "ended_ms": 0,
+            "kind": "infra-retry",
+            "launch_key": "zsf-feat-05-a2-<time>",
+            "log_file": "<root>/state/feat/runs/05-a2.log",
+            "n": 2,
+            "result": "merged",
+            "run_id": "run-004",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/05-a2.md"
+          }
+        ],
+        "branch": "zsf/feature/x/05-slice-05",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 1,
+        "status": "merged"
+      },
+      "06": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-06-a1-<time>",
+            "log_file": "<root>/state/feat/runs/06-a1.log",
+            "n": 1,
+            "result": "skipped",
+            "run_id": "run-005",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/06-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/06-slice-06",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "reason": "skipped",
+        "status": "skipped",
+        "worktree": "<root>/state/feat/worktrees/06-slice-06"
+      },
+      "07": {
+        "attempts": [
+          {
+            "earlier_runs": [
+              "run-008"
+            ],
+            "kind": "first",
+            "launch_key": "zsf-feat-07-a1-<time>",
+            "log_file": "<root>/state/feat/runs/07-a1.log",
+            "n": 1,
+            "resume_tried": true,
+            "resumed_ms": 0,
+            "run_id": "run-009",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/07-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/07-slice-07",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "running",
+        "worktree": "<root>/state/feat/worktrees/07-slice-07"
+      }
+    },
+    "updated_ms": 0,
+    "version": 1
+  },
+  "status": [
+    "feat: 5 of 7 merged, branch feature/x, daemon not running, active",
+    "  01  merged               Slice 01  <short>",
+    "  02  merged               Slice 02  <short>",
+    "  03* merged               Slice 03  <short>",
+    "  04  merged               Slice 04  <short>",
+    "  05  merged               Slice 05  <short>",
+    "  06  skipped              Slice 06  ",
+    "  07  running              Slice 07  first attempt 1, run run-009, <duration>"
+  ]
+}

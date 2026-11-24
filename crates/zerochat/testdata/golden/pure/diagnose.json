@@ -1,0 +1,354 @@
+[
+  {
+    "diagnosis": {
+      "http": 403,
+      "kind": "permission",
+      "model": "claude-opus-4-1",
+      "resets": null
+    },
+    "httpStatuses": [
+      403
+    ],
+    "lines": [
+      "API Error: 403 {\"type\":\"error\",\"error\":{\"type\":\"permission_error\"}} There's an issue with the selected model (claude-opus-4-1). "
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 403,
+      "kind": "permission",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "does not have permission to use this model"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 401,
+      "kind": "credentials",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      401
+    ],
+    "lines": [
+      "API Error: 401 Unauthorized"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 401,
+      "kind": "credentials",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      401
+    ],
+    "lines": [
+      "Failed to authenticate. API Error: 401"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "credentials",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "Invalid API key · Please run /login"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "usage_limit",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "Claude AI usage limit reached",
+      "1795000000"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "usage_limit",
+      "model": null,
+      "resets": "9:30am (UTC)"
+    },
+    "httpStatuses": [],
+    "lines": [
+      "You've hit your limit · resets 9:30am (UTC)"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "usage_limit",
+      "model": null,
+      "resets": "11am (UTC)"
+    },
+    "httpStatuses": [],
+    "lines": [
+      "Weekly limit reached · resets 11am (UTC)."
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "usage_limit",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "Credit balance is too low"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 429,
+      "kind": "rate_limit",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      429
+    ],
+    "lines": [
+      "API Error: 429 rate_limit_error"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 429,
+      "kind": "rate_limit",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      429
+    ],
+    "lines": [
+      "status 429 Too Many Requests"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "model",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "not_found_error: model: claude-x"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "model",
+      "model": "gpt-9",
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "{\"model\":\"gpt-9\",\"error\":\"model_not_found\"}"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 529,
+      "kind": "provider_down",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      529
+    ],
+    "lines": [
+      "API Error: 529 overloaded_error"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 502,
+      "kind": "provider_down",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      502
+    ],
+    "lines": [
+      "HTTP 502 Bad Gateway"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 503,
+      "kind": "provider_down",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      503
+    ],
+    "lines": [
+      "503 Service Unavailable"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": 500,
+      "kind": "provider_down",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [
+      500
+    ],
+    "lines": [
+      "\"status\":500 Internal Server Error"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "stream_cut",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "StreamNoEventsError"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "stream_cut",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "socket hang up"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "provider_timeout",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "Request timed out."
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "malformed_stream",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "malformed API response"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "context",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "prompt is too long"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "disk",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "ENOSPC: no space left on device"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "network",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "connect ECONNREFUSED 127.0.0.1:443"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "network",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "getaddrinfo ENOTFOUND api.anthropic.com"
+    ]
+  },
+  {
+    "diagnosis": {
+      "http": null,
+      "kind": "missing_cli",
+      "model": null,
+      "resets": null
+    },
+    "httpStatuses": [],
+    "lines": [
+      "spawn codex ENOENT: executable file not found"
+    ]
+  },
+  {
+    "diagnosis": null,
+    "httpStatuses": [],
+    "lines": [
+      "crash after 401.3s (pid 503)"
+    ]
+  },
+  {
+    "diagnosis": null,
+    "httpStatuses": [],
+    "lines": [
+      "line 404 of the file"
+    ]
+  },
+  {
+    "diagnosis": null,
+    "httpStatuses": [],
+    "lines": [
+      "everything is fine"
+    ]
+  }
+]

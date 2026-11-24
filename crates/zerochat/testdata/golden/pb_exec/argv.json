@@ -1,0 +1,7650 @@
+{
+  "start": [
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x"
+      ],
+      "case": "plain"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev,extra-task, t3",
+        "--seeds",
+        "2",
+        "--label",
+        "x"
+      ],
+      "case": "tasks list"
+    },
+    {
+      "case": "tasks blank",
+      "error": "Pick at least one task set or task."
+    },
+    {
+      "case": "tasks empty",
+      "error": "Pick at least one task set or task."
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "my label  x"
+      ],
+      "case": "label spaces"
+    },
+    {
+      "case": "label blank",
+      "error": "A label is required."
+    },
+    {
+      "case": "seeds 0",
+      "error": "Seeds must be at least 1."
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "1",
+        "--label",
+        "x"
+      ],
+      "case": "seeds 1"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "100",
+        "--label",
+        "x"
+      ],
+      "case": "seeds 100"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--model",
+        "claude-haiku-4-5"
+      ],
+      "case": "model"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--model",
+        " claude-haiku-4-5 "
+      ],
+      "case": "model padded"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x"
+      ],
+      "case": "model empty"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x"
+      ],
+      "case": "model blank"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "2.5"
+      ],
+      "case": "max_cost 2.5"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "2.5"
+      ],
+      "case": "max_minutes 2.5"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "0.1"
+      ],
+      "case": "max_cost 0.1"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "0.1"
+      ],
+      "case": "max_minutes 0.1"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "0.001"
+      ],
+      "case": "max_cost 0.001"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "0.001"
+      ],
+      "case": "max_minutes 0.001"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "30"
+      ],
+      "case": "max_cost 30.0"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "30"
+      ],
+      "case": "max_minutes 30.0"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "1000000"
+      ],
+      "case": "max_cost 1000000.0"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "1000000"
+      ],
+      "case": "max_minutes 1000000.0"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "0.30000000000000004"
+      ],
+      "case": "max_cost 0.30000000000000004"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "0.30000000000000004"
+      ],
+      "case": "max_minutes 0.30000000000000004"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-cost",
+        "1000000000000000000000"
+      ],
+      "case": "max_cost 1e21"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-minutes",
+        "1000000000000000000000"
+      ],
+      "case": "max_minutes 1e21"
+    },
+    {
+      "case": "max_cost 0.0",
+      "error": "Cost cap must be a positive dollar amount."
+    },
+    {
+      "case": "max_minutes 0.0",
+      "error": "Wall-time cap must be positive."
+    },
+    {
+      "case": "max_cost -1.0",
+      "error": "Cost cap must be a positive dollar amount."
+    },
+    {
+      "case": "max_minutes -1.0",
+      "error": "Wall-time cap must be positive."
+    },
+    {
+      "case": "max_steps 0",
+      "error": "Step cap must be positive."
+    },
+    {
+      "case": "parallel 0",
+      "error": "Parallelism must be at least 1."
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-steps",
+        "1"
+      ],
+      "case": "max_steps 1"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--parallel",
+        "1"
+      ],
+      "case": "parallel 1"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-steps",
+        "10"
+      ],
+      "case": "max_steps 10"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--parallel",
+        "10"
+      ],
+      "case": "parallel 10"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--max-steps",
+        "4294967295"
+      ],
+      "case": "max_steps 4294967295"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--parallel",
+        "4294967295"
+      ],
+      "case": "parallel 4294967295"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--model",
+        "m",
+        "--max-cost",
+        "2.5",
+        "--max-minutes",
+        "30",
+        "--max-steps",
+        "10",
+        "--parallel",
+        "3"
+      ],
+      "case": "all limits"
+    },
+    {
+      "case": "first error wins: model ok, cost and parallel bad",
+      "error": "Cost cap must be a positive dollar amount."
+    },
+    {
+      "case": "first error wins: minutes and steps bad",
+      "error": "Wall-time cap must be positive."
+    },
+    {
+      "case": "limit error before harness error",
+      "error": "Step cap must be positive."
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--graph",
+        "<pb_root>/harness/variants/clone-v1/graph.json",
+        "--runtime",
+        "<pb_root>/harness/variants/clone-v1/runtime.json"
+      ],
+      "case": "variant \"clone-v1\""
+    },
+    {
+      "case": "variant \"graph-only\"",
+      "error": "harness/variants/graph-only has no graph.json and runtime.json."
+    },
+    {
+      "case": "variant \"missing\"",
+      "error": "harness/variants/missing has no graph.json and runtime.json."
+    },
+    {
+      "case": "variant \"\"",
+      "error": "Invalid harness variant name."
+    },
+    {
+      "case": "variant \".hidden\"",
+      "error": "Invalid harness variant name."
+    },
+    {
+      "case": "variant \"..\"",
+      "error": "Invalid harness variant name."
+    },
+    {
+      "case": "variant \"a/b\"",
+      "error": "Invalid harness variant name."
+    },
+    {
+      "case": "variant \"a\\\\b\"",
+      "error": "Invalid harness variant name."
+    },
+    {
+      "case": "variant \"../../etc\"",
+      "error": "Invalid harness variant name."
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--model",
+        "m",
+        "--max-cost",
+        "1",
+        "--parallel",
+        "2",
+        "--graph",
+        "<pb_root>/harness/variants/clone-v1/graph.json",
+        "--runtime",
+        "<pb_root>/harness/variants/clone-v1/runtime.json"
+      ],
+      "case": "variant with all limits"
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--graph",
+        "<pb_root>/my/graph.json",
+        "--runtime",
+        "<pb_root>/my/runtime.json"
+      ],
+      "case": "custom \"my/graph.json\" \"my/runtime.json\""
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--graph",
+        "<pb_root>/my/graph.json",
+        "--runtime",
+        "<pb_root>/my/runtime.json"
+      ],
+      "case": "custom \"./my/graph.json\" \" my/runtime.json \""
+    },
+    {
+      "argv": [
+        "run",
+        "--detach",
+        "--tasks",
+        "dev",
+        "--seeds",
+        "2",
+        "--label",
+        "x",
+        "--graph",
+        "<pb_root>/my/graph.json",
+        "--runtime",
+        "<pb_root>/my/runtime.json"
+      ],
+      "case": "custom \"<pb_root>/my/graph.json\" \"my/runtime.json\""
+    },
+    {
+      "case": "custom \"\" \"my/runtime.json\"",
+      "error": "A custom harness needs both a graph and a runtime file."
+    },
+    {
+      "case": "custom \"my/graph.json\" \"  \"",
+      "error": "A custom harness needs both a graph and a runtime file."
+    },
+    {
+      "case": "custom \"nope/graph.json\" \"my/runtime.json\"",
+      "error": "Graph: File not found: nope/graph.json."
+    },
+    {
+      "case": "custom \"my/graph.json\" \"nope/runtime.json\"",
+      "error": "Runtime: File not found: nope/runtime.json."
+    },
+    {
+      "case": "custom \"../g.json\" \"my/runtime.json\"",
+      "error": "Graph: ../g.json: use a path inside the pb project, without `..`."
+    },
+    {
+      "case": "custom \"my/../my/graph.json\" \"my/runtime.json\"",
+      "error": "Graph: my/../my/graph.json: use a path inside the pb project, without `..`."
+    },
+    {
+      "case": "custom \"<outside>/g.json\" \"my/runtime.json\"",
+      "error": "Graph: <outside>/g.json is outside the pb project."
+    },
+    {
+      "case": "custom \"my/dir.json\" \"my/runtime.json\"",
+      "error": "Graph: my/dir.json is not a file."
+    }
+  ],
+  "sweep": [
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": null,
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": null,
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": null,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "4",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 4.0,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "2.5",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 2.5,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": null
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": ""
+    },
+    {
+      "argv": [
+        "sweep-report",
+        "sw-1",
+        "sw-2",
+        "--label",
+        "L x",
+        "--task",
+        "gron",
+        "--budget",
+        "0.30000000000000004",
+        "--write-runtime",
+        "out.json",
+        "--json"
+      ],
+      "budget": 0.30000000000000004,
+      "ids": [
+        "sw-1",
+        "sw-2"
+      ],
+      "label": "L x",
+      "task": "gron",
+      "writeRuntime": "out.json"
+    }
+  ]
+}

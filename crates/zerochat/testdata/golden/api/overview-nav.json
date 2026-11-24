@@ -1,0 +1,41 @@
+{
+  "body": {
+    "features": true,
+    "featuresNeedYou": 2,
+    "issue": null,
+    "now": 1795003600000,
+    "stateRoot": "<root>/state",
+    "targets": [
+      {
+        "id": "local",
+        "kind": "local",
+        "name": "This machine",
+        "origin": null,
+        "runs": [],
+        "status": "ok"
+      },
+      {
+        "id": "observe",
+        "kind": "observe",
+        "name": "observe",
+        "origin": null,
+        "runs": [],
+        "status": "ok"
+      },
+      {
+        "id": "pb",
+        "kind": "observe",
+        "name": "pb",
+        "origin": null,
+        "runs": [],
+        "status": "ok"
+      }
+    ],
+    "view": "nav",
+    "zeroshot": {
+      "program": "<root>/no-such-zeroshot",
+      "version": null
+    }
+  },
+  "status": 200
+}

@@ -1,0 +1,142 @@
+{
+  "body": {
+    "aId": "20261108-152720-fb0664",
+    "aLabel": "r2-hermetic2",
+    "aRunCount": 6,
+    "bId": "20261108-142204-d474ae",
+    "bLabel": "r2-hermetic",
+    "bRunCount": 6,
+    "nodes": [
+      {
+        "a": {
+          "execs": 6,
+          "meanCostUsd": 1.712657083,
+          "meanTimeS": 596.066441377
+        },
+        "b": {
+          "execs": 6,
+          "meanCostUsd": 1.790763317,
+          "meanTimeS": 825.881033103
+        },
+        "deltaMeanCostUsd": 0.078106233,
+        "deltaMeanTimeS": 229.814591726,
+        "node": "build"
+      },
+      {
+        "a": {
+          "execs": 6,
+          "meanCostUsd": 0.557040533,
+          "meanTimeS": 331.522980491
+        },
+        "b": {
+          "execs": 6,
+          "meanCostUsd": 0.538130617,
+          "meanTimeS": 275.5184563
+        },
+        "deltaMeanCostUsd": -0.018909917,
+        "deltaMeanTimeS": -56.004524191,
+        "node": "explore"
+      },
+      {
+        "a": {
+          "execs": 11,
+          "meanCostUsd": 0.412782364,
+          "meanTimeS": 227.503567392
+        },
+        "b": {
+          "execs": 16,
+          "meanCostUsd": 0.320285731,
+          "meanTimeS": 192.473747134
+        },
+        "deltaMeanCostUsd": -0.092496632,
+        "deltaMeanTimeS": -35.029820258,
+        "node": "oracle"
+      },
+      {
+        "a": {
+          "execs": 3,
+          "meanCostUsd": 0.267834533,
+          "meanTimeS": 21.794893503
+        },
+        "b": {
+          "execs": 1,
+          "meanCostUsd": 0.4332165,
+          "meanTimeS": 25.284659863
+        },
+        "deltaMeanCostUsd": 0.165381967,
+        "deltaMeanTimeS": 3.489766359,
+        "node": "postmortem"
+      },
+      {
+        "a": {
+          "execs": 8,
+          "meanCostUsd": 1.605163969,
+          "meanTimeS": 467.426500082
+        },
+        "b": {
+          "execs": 15,
+          "meanCostUsd": 1.012445833,
+          "meanTimeS": 328.178900512
+        },
+        "deltaMeanCostUsd": -0.592718135,
+        "deltaMeanTimeS": -139.24759957,
+        "node": "repair"
+      }
+    ],
+    "tasks": [
+      {
+        "a": {
+          "maxScore": 0.78125,
+          "meanCostUsd": 4.7927443,
+          "meanScore": 0.578869048,
+          "meanTimeS": 2052.110371113,
+          "minScore": 0.428571429,
+          "n": 3
+        },
+        "b": {
+          "maxScore": 0.6875,
+          "meanCostUsd": 5.561668167,
+          "meanScore": 0.613095238,
+          "meanTimeS": 2846.405657609,
+          "minScore": 0.473214286,
+          "n": 3
+        },
+        "deltaCostUsd": 0.768923867,
+        "deltaScore": 0.03422619,
+        "deltaTimeS": 794.295286496,
+        "noise": "within_noise",
+        "task": "tomnomnom__gron.88a6234"
+      },
+      {
+        "a": {
+          "maxScore": 0.722044728,
+          "meanCostUsd": 5.80845805,
+          "meanScore": 0.653887114,
+          "meanTimeS": 2384.61702927,
+          "minScore": 0.565495208,
+          "n": 3
+        },
+        "b": {
+          "maxScore": 0.616613419,
+          "meanCostUsd": 6.010944933,
+          "meanScore": 0.205537806,
+          "meanTimeS": 2585.967856248,
+          "minScore": 0.0,
+          "n": 3
+        },
+        "deltaCostUsd": 0.202486883,
+        "deltaScore": -0.448349308,
+        "deltaTimeS": 201.350826979,
+        "noise": "within_noise",
+        "task": "yaa110__nomino.f892499"
+      }
+    ],
+    "totals": {
+      "deltaCostUsd": 0.485705375,
+      "deltaScore": -0.207061559,
+      "deltaTimeS": 497.823056738,
+      "tasks": 2
+    }
+  },
+  "status": 200
+}

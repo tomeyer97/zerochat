@@ -1,0 +1,9 @@
+{
+  "body": {
+    "attempt": 1,
+    "diff": null,
+    "previousAttempt": null,
+    "text": "# Add farewell()\n\nImplement farewell() in calc/.\n"
+  },
+  "status": 200
+}

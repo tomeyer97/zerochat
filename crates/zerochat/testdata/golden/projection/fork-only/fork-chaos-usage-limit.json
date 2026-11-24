@@ -1,0 +1,664 @@
+{
+  "backgroundAgents": [
+    {
+      "errors": 0,
+      "firstAt": 1795175289869,
+      "lastAt": 1795175290058,
+      "lastLine": "You've hit your 5-hour limit · resets 12:58pm (UTC)",
+      "lines": 4,
+      "name": "active_memory_graph",
+      "outcome": "failed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175289006,
+      "lastAt": 1795175289124,
+      "lastLine": "You've hit your 5-hour limit · resets 12:58pm (UTC)",
+      "lines": 4,
+      "name": "active_memory_graph_maintenance",
+      "outcome": "failed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175289560,
+      "lastAt": 1795175289745,
+      "lastLine": "You've hit your 5-hour limit · resets 12:58pm (UTC)",
+      "lines": 4,
+      "name": "active_memory_repository",
+      "outcome": "failed",
+      "retries": 0
+    },
+    {
+      "errors": 0,
+      "firstAt": 1795175289611,
+      "lastAt": 1795175289743,
+      "lastLine": "You've hit your 5-hour limit · resets 12:58pm (UTC)",
+      "lines": 4,
+      "name": "active_memory_repository_maintenance",
+      "outcome": "failed",
+      "retries": 0
+    }
+  ],
+  "backgroundUsage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+  },
+  "costEstimated": false,
+  "costUsd": 0.0462804,
+  "createdAt": 1795175257016,
+  "cursor": 62,
+  "endedAt": 1795175285834,
+  "executions": [
+    {
+      "accepted": null,
+      "attempt": 1,
+      "costSource": "provider",
+      "costUsd": 0.0462804,
+      "diagnostic": null,
+      "durationMs": 21832,
+      "endSeq": 28,
+      "endedAt": 1795175285834,
+      "error": {
+        "code": "crash",
+        "reason": "declared_failure"
+      },
+      "errorLines": [
+        "Node worker failed: crash after 21.7s: node execution failed: Claude provider failure: You've hit your 5-hour limit · resets 12:58pm (UTC); provider process exited with status 1"
+      ],
+      "harness": "claude",
+      "id": 1,
+      "input": {
+        "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+      },
+      "lastActivityAt": 1795175285834,
+      "logLines": 23,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "worker",
+      "nodeInstance": 1,
+      "outcome": {
+        "code": "crash",
+        "reason": "declared_failure",
+        "status": "error"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": "53fb3d62-d741-4dec-bbfb-60448eacdbda",
+      "signals": null,
+      "startSeq": 3,
+      "startedAt": 1795175264002,
+      "state": "failed",
+      "timesApproximate": false,
+      "toolCalls": 7,
+      "usage": {
+        "cacheCreationInputTokens": 12595,
+        "cacheReadInputTokens": 105884,
+        "inputTokens": 42,
+        "outputTokens": 2092
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "6bfa35a14f40b64566f6db6c726ebe66fa2dc2b0",
+        "commit": "ec7b6e255890c7aaf762497fdad2f877aa69ee77",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "tests/test_core.py",
+            "status": "modified"
+          },
+          {
+            "additions": 2,
+            "deletions": 2,
+            "path": "textkit/__init__.py",
+            "status": "modified"
+          },
+          {
+            "additions": 11,
+            "deletions": 0,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "6bfa35a14f40b64566f6db6c726ebe66fa2dc2b0"
+      }
+    }
+  ],
+  "failure": {
+    "actions": [
+      "replay",
+      "resume"
+    ],
+    "at": 1795175285834,
+    "attempt": 1,
+    "cause": "usage limit",
+    "class": "provider",
+    "closedAfterMs": 7443,
+    "closedByPostmortem": true,
+    "detail": "",
+    "execution": 1,
+    "exit": "worker_failed",
+    "feedback": [],
+    "fix": null,
+    "fixCommand": null,
+    "intoRunMs": 28298,
+    "kept": [],
+    "lastErrors": [
+      "You've hit your 5-hour limit · resets 12:58pm (UTC)"
+    ],
+    "node": "worker",
+    "nodeKind": "step",
+    "primary": "resume",
+    "reason": "worker_failed",
+    "resetsAt": 1795179480000,
+    "round": 1,
+    "title": "worker hit the Anthropic usage limit"
+  },
+  "features": {
+    "exactTimes": true,
+    "providerCost": true,
+    "toolCalls": true,
+    "workspaceSnapshots": true
+  },
+  "graph": {
+    "bounds": {
+      "attemptsPerNode": {
+        "worker": 1
+      },
+      "maxNodeExecutions": 1,
+      "peakConcurrency": 1,
+      "termination": {
+        "kind": "acyclic",
+        "order": [
+          "run",
+          "worker",
+          "worker_result",
+          "worker_failed",
+          "done"
+        ]
+      }
+    },
+    "initialInput": {
+      "fields": {
+        "task": {
+          "required": true,
+          "type": {
+            "kind": "string"
+          }
+        }
+      },
+      "kind": "record"
+    },
+    "policy": {
+      "default": "deny",
+      "policy": "policy.native-v2@1"
+    },
+    "profile": "openengine.graph.full/v1",
+    "root": {
+      "children": [
+        {
+          "attempts": 1,
+          "input": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          },
+          "inputBindings": [
+            {
+              "target": [
+                "task"
+              ],
+              "value": {
+                "path": [
+                  "task"
+                ],
+                "source": "state"
+              }
+            }
+          ],
+          "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+          "kind": "step",
+          "name": "worker",
+          "output": {
+            "kind": "null"
+          },
+          "worker": "builtin.agent.worker@1",
+          "writeBindings": []
+        },
+        {
+          "branches": [
+            {
+              "node": {
+                "kind": "fail",
+                "name": "worker_failed",
+                "reason": "worker_failed"
+              },
+              "when": {
+                "kind": "in",
+                "labels": [
+                  "crash",
+                  "malformed",
+                  "refusal",
+                  "timeout"
+                ],
+                "value": {
+                  "field": null,
+                  "name": "worker",
+                  "source": "error"
+                }
+              }
+            }
+          ],
+          "kind": "choice",
+          "name": "worker_result",
+          "otherwise": {
+            "bindings": [],
+            "kind": "succeed",
+            "name": "done",
+            "output": {
+              "kind": "null"
+            }
+          },
+          "promotedStatePaths": [],
+          "state": {
+            "fields": {
+              "task": {
+                "required": true,
+                "type": {
+                  "kind": "string"
+                }
+              }
+            },
+            "kind": "record"
+          }
+        }
+      ],
+      "kind": "seq",
+      "name": "run",
+      "promotedStatePaths": [],
+      "state": {
+        "fields": {
+          "task": {
+            "required": true,
+            "type": {
+              "kind": "string"
+            }
+          }
+        },
+        "kind": "record"
+      }
+    }
+  },
+  "graphNodes": [
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "seq",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "run",
+      "parent": null,
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": 1,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+      "kind": "step",
+      "loops": [],
+      "maxIterations": null,
+      "model": "claude-haiku-4-5",
+      "name": "worker",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": "builtin.agent.worker@1"
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "choice",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_result",
+      "parent": "run",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": "worker_failed",
+      "harness": "claude",
+      "instructions": null,
+      "kind": "fail",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "worker_failed",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    },
+    {
+      "attempts": null,
+      "effort": null,
+      "failReason": null,
+      "harness": "claude",
+      "instructions": null,
+      "kind": "succeed",
+      "loops": [],
+      "maxIterations": null,
+      "model": null,
+      "name": "done",
+      "parent": "worker_result",
+      "provider": "anthropic",
+      "timeoutMs": null,
+      "worker": null
+    }
+  ],
+  "initialInput": {
+    "task": "Add a function `slugify(text: str) -> str` to textkit/core.py that lowercases the text, replaces every run of non-alphanumeric characters with a single '-', and strips leading and trailing '-'. Export it from textkit/__init__.py and add unit tests to tests/test_core.py. Run `python3 -m unittest -v` and make sure it passes."
+  },
+  "lanes": [
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "nodes": [
+        "worker"
+      ],
+      "provider": "anthropic"
+    }
+  ],
+  "lastActivityAt": 1795175293277,
+  "local": {
+    "controllerAlive": false,
+    "controllerLiveness": "dead",
+    "controllerPid": null,
+    "hasCheckpoints": true,
+    "workspace": "<root>/work/chaos-usage-limit"
+  },
+  "nodeUsage": {
+    "cacheCreationInputTokens": 12595,
+    "cacheReadInputTokens": 105884,
+    "inputTokens": 42,
+    "outputTokens": 2092
+  },
+  "nodes": {
+    "worker": {
+      "activeSince": null,
+      "costEstimated": false,
+      "costUsd": 0.0462804,
+      "elapsedMs": 21832,
+      "executions": [
+        1
+      ],
+      "rounds": 1,
+      "state": "failed",
+      "usage": {
+        "cacheCreationInputTokens": 12595,
+        "cacheReadInputTokens": 105884,
+        "inputTokens": 42,
+        "outputTokens": 2092
+      }
+    }
+  },
+  "phase": "finished",
+  "pressures": [],
+  "replayOf": null,
+  "replays": [],
+  "resumedAs": null,
+  "resumedFrom": null,
+  "runId": "01a1f8c8-93b8-7b81-97ea-4b8a2800bbe3",
+  "runLog": [
+    {
+      "at": 1795175257536,
+      "seq": 1,
+      "stream": "system",
+      "text": "Preparing execution environment"
+    },
+    {
+      "at": 1795175264002,
+      "seq": 3,
+      "stream": "system",
+      "text": "worker started (claude-haiku-4-5)"
+    },
+    {
+      "at": 1795175285834,
+      "seq": 28,
+      "stream": "system",
+      "text": "worker failed: crashed"
+    },
+    {
+      "at": 1795175285993,
+      "seq": 30,
+      "stream": "system",
+      "text": "Active Memory postmortem started"
+    },
+    {
+      "at": 1795175286059,
+      "seq": 31,
+      "stream": "system",
+      "text": "Active Memory supplied manifest: known=false, snapshot_generation=0, supplied_revisions=0"
+    },
+    {
+      "at": 1795175286110,
+      "seq": 32,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance started"
+    },
+    {
+      "at": 1795175286110,
+      "seq": 33,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance started"
+    },
+    {
+      "at": 1795175286110,
+      "seq": 34,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph started"
+    },
+    {
+      "at": 1795175286110,
+      "seq": 35,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository started"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175289120,
+      "seq": 37,
+      "stream": "system",
+      "text": "5-hour limit hit"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175289124,
+      "seq": 38,
+      "stream": "system",
+      "text": "Claude usage or rate limit reached"
+    },
+    {
+      "agent": "active_memory_graph_maintenance",
+      "at": 1795175289124,
+      "seq": 39,
+      "stream": "system",
+      "text": "You've hit your 5-hour limit · resets 12:58pm (UTC)"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175289739,
+      "seq": 42,
+      "stream": "system",
+      "text": "5-hour limit hit"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175289742,
+      "seq": 43,
+      "stream": "system",
+      "text": "5-hour limit hit"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175289743,
+      "seq": 44,
+      "stream": "system",
+      "text": "Claude usage or rate limit reached"
+    },
+    {
+      "agent": "active_memory_repository_maintenance",
+      "at": 1795175289743,
+      "seq": 48,
+      "stream": "system",
+      "text": "You've hit your 5-hour limit · resets 12:58pm (UTC)"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175289745,
+      "seq": 47,
+      "stream": "system",
+      "text": "Claude usage or rate limit reached"
+    },
+    {
+      "agent": "active_memory_repository",
+      "at": 1795175289745,
+      "seq": 51,
+      "stream": "system",
+      "text": "You've hit your 5-hour limit · resets 12:58pm (UTC)"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175290053,
+      "seq": 49,
+      "stream": "system",
+      "text": "5-hour limit hit"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175290058,
+      "seq": 52,
+      "stream": "system",
+      "text": "Claude usage or rate limit reached"
+    },
+    {
+      "agent": "active_memory_graph",
+      "at": 1795175290058,
+      "seq": 54,
+      "stream": "system",
+      "text": "You've hit your 5-hour limit · resets 12:58pm (UTC)"
+    },
+    {
+      "at": 1795175290254,
+      "seq": 50,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph_maintenance failed"
+    },
+    {
+      "at": 1795175290647,
+      "seq": 56,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository_maintenance failed"
+    },
+    {
+      "at": 1795175290745,
+      "seq": 57,
+      "stream": "system",
+      "text": "Active Memory active_memory_repository failed"
+    },
+    {
+      "at": 1795175290991,
+      "seq": 59,
+      "stream": "system",
+      "text": "Active Memory active_memory_graph failed"
+    },
+    {
+      "at": 1795175291041,
+      "seq": 60,
+      "stream": "system",
+      "text": "Active Memory postmortem completed: 0 roles completed, 4 failed, 0 mutations published, cancelled=false"
+    },
+    {
+      "at": 1795175293277,
+      "seq": 61,
+      "stream": "error",
+      "text": "Run failed: worker_failed"
+    }
+  ],
+  "runtime": {
+    "harness": "claude",
+    "nodes": {
+      "worker": {
+        "connections": {
+          "anthropic": [
+            "CLAUDE_CODE_OAUTH_TOKEN"
+          ]
+        },
+        "kind": "agent",
+        "model": "claude-haiku-4-5"
+      }
+    },
+    "provider": "anthropic",
+    "size": "medium"
+  },
+  "source": null,
+  "startedAt": 1795175257536,
+  "status": "failed",
+  "target": "local",
+  "terminal": {
+    "context": {
+      "incomplete": false,
+      "recorded": [
+        {
+          "cursor": "v2:27",
+          "execution": {
+            "execution": "nv2-3a375d41d847e3901972461ac4f3bb84737fae9b5917eae993d13321ca202fbf",
+            "node": "worker"
+          },
+          "message": "Node worker failed: crash after 21.7s: node execution failed: Claude provider failure: You've hit your 5-hour limit · resets 12:58pm (UTC); provider process exited with status 1"
+        }
+      ]
+    },
+    "reason": "worker_failed",
+    "status": "failed"
+  },
+  "title": "chaos-usage-limit [fork]",
+  "usage": {
+    "cacheCreationInputTokens": 12595,
+    "cacheReadInputTokens": 105884,
+    "inputTokens": 42,
+    "outputTokens": 2092
+  },
+  "usageLive": false,
+  "usagePending": false
+}

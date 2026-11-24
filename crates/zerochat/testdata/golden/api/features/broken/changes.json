@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "internal",
+    "message": "<root>/zsf/broken/feature.toml is not valid: TOML parse error at line 2, column 1\n  |\n2 | not_a_field = 1\n  | ^^^^^^^^^^^\nunknown field `not_a_field`, expected one of `name`, `repo`, `branch`, `base`, `plan`, `worktrees`, `context`, `commit_prefix`, `launch`, `hooks`, `limits`, `leases`, `artifacts`, `env`\n"
+  },
+  "status": 500
+}

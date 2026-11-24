@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/tomeyer97/zerochat/discussions
+    about: Ask and discuss in GitHub Discussions; issues are for bugs and feature requests.
+  - name: Security problem
+    url: https://github.com/tomeyer97/zerochat/security/advisories/new
+    about: Report it privately (see SECURITY.md). Never in a public issue.

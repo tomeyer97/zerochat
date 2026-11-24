@@ -1,0 +1,724 @@
+{
+  "empty": [
+    null,
+    null,
+    5
+  ],
+  "transcripts": {
+    "attempts-exhausted/transcript-1": [
+      1795000242500,
+      1795000242500,
+      9999999999999
+    ],
+    "attempts-exhausted/transcript-2": [
+      1795000244500,
+      1795000244500,
+      9999999999999
+    ],
+    "closing-postmortem/transcript-1": [
+      1795000362500,
+      1795000362500,
+      9999999999999
+    ],
+    "codex-estimate/transcript-1": [
+      1795000422500,
+      1795000422500,
+      9999999999999
+    ],
+    "copilot-session/transcript-1": [
+      1795000501100,
+      1795000501100,
+      9999999999999
+    ],
+    "copilot-session/transcript-1-ledger": [
+      1795000482700,
+      1795000482700,
+      9999999999999
+    ],
+    "delivery-failed/transcript-1": [
+      1795000548300,
+      1795000548000,
+      9999999999999
+    ],
+    "delivery-failed/transcript-2": [
+      1795000553400,
+      1795000553100,
+      9999999999999
+    ],
+    "delivery-failed/transcript-3": [
+      1795000557000,
+      1795000556700,
+      9999999999999
+    ],
+    "diag-api-hang/transcript-1": [
+      1795003524400,
+      1795003524400,
+      9999999999999
+    ],
+    "diag-code-authentication-required/transcript-1": [
+      1795000606100,
+      1795000606100,
+      9999999999999
+    ],
+    "diag-code-crash/transcript-1": [
+      1795000666100,
+      1795000666100,
+      9999999999999
+    ],
+    "diag-code-input-required/transcript-1": [
+      1795000726100,
+      1795000726100,
+      9999999999999
+    ],
+    "diag-code-malformed-result/transcript-1": [
+      1795000786100,
+      1795000786100,
+      9999999999999
+    ],
+    "diag-code-other/transcript-1": [
+      1795000846100,
+      1795000846100,
+      9999999999999
+    ],
+    "diag-code-policy-denied/transcript-1": [
+      1795000906100,
+      1795000906100,
+      9999999999999
+    ],
+    "diag-code-refusal/transcript-1": [
+      1795000966100,
+      1795000966100,
+      9999999999999
+    ],
+    "diag-code-timeout/transcript-1": [
+      1795001026100,
+      1795001026100,
+      9999999999999
+    ],
+    "diag-context/transcript-1": [
+      1795001086100,
+      1795001086100,
+      9999999999999
+    ],
+    "diag-credentials/transcript-1": [
+      1795001146100,
+      1795001146100,
+      9999999999999
+    ],
+    "diag-disk/transcript-1": [
+      1795001206100,
+      1795001206100,
+      9999999999999
+    ],
+    "diag-malformed-stream/transcript-1": [
+      1795001266100,
+      1795001266100,
+      9999999999999
+    ],
+    "diag-missing-cli/transcript-1": [
+      1795001326100,
+      1795001326100,
+      9999999999999
+    ],
+    "diag-model/transcript-1": [
+      1795001386100,
+      1795001386100,
+      9999999999999
+    ],
+    "diag-network/transcript-1": [
+      1795001446100,
+      1795001446100,
+      9999999999999
+    ],
+    "diag-permission/transcript-1": [
+      1795001506100,
+      1795001506100,
+      9999999999999
+    ],
+    "diag-provider-down/transcript-1": [
+      1795001566100,
+      1795001566100,
+      9999999999999
+    ],
+    "diag-provider-timeout/transcript-1": [
+      1795001626100,
+      1795001626100,
+      9999999999999
+    ],
+    "diag-rate-limit/transcript-1": [
+      1795001686100,
+      1795001686100,
+      9999999999999
+    ],
+    "diag-stream-cut/transcript-1": [
+      1795001746100,
+      1795001746100,
+      9999999999999
+    ],
+    "diag-usage-limit/transcript-1": [
+      1795001807100,
+      1795001807100,
+      9999999999999
+    ],
+    "force-stopped/transcript-1": [
+      1795001865100,
+      1795001864800,
+      9999999999999
+    ],
+    "force-stopped/transcript-2": [
+      1795001867600,
+      1795001867600,
+      9999999999999
+    ],
+    "force-stopped/transcript-3": [
+      null,
+      null,
+      9999999999999
+    ],
+    "fork-only/fork-bad-credentials/transcript-1": [
+      1795175261873,
+      1795175260754,
+      9999999999999
+    ],
+    "fork-only/fork-bad-credentials/transcript-1-ledger": [
+      1795175261873,
+      1795175261873,
+      9999999999999
+    ],
+    "fork-only/fork-chaos-transient/transcript-1": [
+      1795175331434,
+      1795175331432,
+      9999999999999
+    ],
+    "fork-only/fork-chaos-transient/transcript-1-ledger": [
+      1795175331434,
+      1795175331434,
+      9999999999999
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1": [
+      1795175285834,
+      1795175285396,
+      9999999999999
+    ],
+    "fork-only/fork-chaos-usage-limit/transcript-1-ledger": [
+      1795175285834,
+      1795175285834,
+      9999999999999
+    ],
+    "fork-only/fork-controller-killed/transcript-1": [
+      1795175293477,
+      1795175293475,
+      9999999999999
+    ],
+    "fork-only/fork-controller-killed/transcript-1-ledger": [
+      1795175293477,
+      1795175293477,
+      9999999999999
+    ],
+    "fork-only/fork-controller-killed/transcript-2": [
+      1795175318648,
+      1795175318648,
+      9999999999999
+    ],
+    "fork-only/fork-controller-killed/transcript-2-ledger": [
+      1795175328224,
+      1795175328224,
+      9999999999999
+    ],
+    "fork-only/fork-controller-killed/transcript-3": [
+      1795175315905,
+      1795175315905,
+      9999999999999
+    ],
+    "fork-only/fork-controller-killed/transcript-3-ledger": [
+      1795175328224,
+      1795175328224,
+      9999999999999
+    ],
+    "fork-only/fork-force-stopped/transcript-1": [
+      1795175302141,
+      1795175302138,
+      9999999999999
+    ],
+    "fork-only/fork-force-stopped/transcript-1-ledger": [
+      1795175302141,
+      1795175302141,
+      9999999999999
+    ],
+    "fork-only/fork-force-stopped/transcript-2": [
+      1795175305213,
+      1795175305213,
+      9999999999999
+    ],
+    "fork-only/fork-force-stopped/transcript-3": [
+      1795175305314,
+      1795175305314,
+      9999999999999
+    ],
+    "fork-only/fork-happy-path/transcript-1": [
+      1795175271038,
+      1795175271033,
+      9999999999999
+    ],
+    "fork-only/fork-happy-path/transcript-1-ledger": [
+      1795175271038,
+      1795175271038,
+      9999999999999
+    ],
+    "fork-only/fork-happy-path/transcript-2": [
+      1795175292906,
+      1795175292901,
+      9999999999999
+    ],
+    "fork-only/fork-happy-path/transcript-2-ledger": [
+      1795175292906,
+      1795175292906,
+      9999999999999
+    ],
+    "fork-only/fork-happy-path/transcript-3": [
+      1795175294686,
+      1795175294683,
+      9999999999999
+    ],
+    "fork-only/fork-happy-path/transcript-3-ledger": [
+      1795175294686,
+      1795175294686,
+      9999999999999
+    ],
+    "fork-only/fork-late-failure/transcript-1": [
+      1795175285092,
+      1795175285092,
+      9999999999999
+    ],
+    "fork-only/fork-late-failure/transcript-2": [
+      1795175310105,
+      1795175310105,
+      9999999999999
+    ],
+    "fork-only/fork-late-failure/transcript-3": [
+      1795175308691,
+      1795175308691,
+      9999999999999
+    ],
+    "fork-only/fork-replay/transcript-1": [
+      1795175370171,
+      1795175370168,
+      9999999999999
+    ],
+    "fork-only/fork-replay/transcript-1-ledger": [
+      1795175370171,
+      1795175370171,
+      9999999999999
+    ],
+    "fork-only/fork-replay/transcript-2": [
+      1795175401469,
+      1795175401468,
+      9999999999999
+    ],
+    "fork-only/fork-replay/transcript-2-ledger": [
+      1795175401469,
+      1795175401469,
+      9999999999999
+    ],
+    "fork-only/fork-replay/transcript-3": [
+      1795175399264,
+      1795175399261,
+      9999999999999
+    ],
+    "fork-only/fork-replay/transcript-3-ledger": [
+      1795175399264,
+      1795175399264,
+      9999999999999
+    ],
+    "fork-only/fork-resumed/transcript-1": [
+      1795175337692,
+      1795175337682,
+      9999999999999
+    ],
+    "fork-only/fork-resumed/transcript-1-ledger": [
+      1795175337692,
+      1795175337692,
+      9999999999999
+    ],
+    "fork-only/fork-resumed/transcript-2": [
+      1795175361648,
+      1795175361645,
+      9999999999999
+    ],
+    "fork-only/fork-resumed/transcript-2-ledger": [
+      1795175361648,
+      1795175361648,
+      9999999999999
+    ],
+    "fork-only/fork-resumed/transcript-3": [
+      1795175368915,
+      1795175368913,
+      9999999999999
+    ],
+    "fork-only/fork-resumed/transcript-3-ledger": [
+      1795175368915,
+      1795175368915,
+      9999999999999
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-1": [
+      1795175274737,
+      1795175274737,
+      9999999999999
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-2": [
+      1795175303286,
+      1795175303286,
+      9999999999999
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-3": [
+      1795175298508,
+      1795175298508,
+      9999999999999
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-4": [
+      1795175327041,
+      1795175327041,
+      9999999999999
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-5": [
+      1795175353243,
+      1795175353243,
+      9999999999999
+    ],
+    "fork-only/fork-reviewer-never-satisfied/transcript-6": [
+      1795175356463,
+      1795175356463,
+      9999999999999
+    ],
+    "fork-only/fork-steered/transcript-1": [
+      1795175298119,
+      1795175298117,
+      9999999999999
+    ],
+    "fork-only/fork-steered/transcript-1-ledger": [
+      1795175298119,
+      1795175298119,
+      9999999999999
+    ],
+    "fork-only/fork-unknown-model/transcript-1": [
+      1795175237872,
+      1795175237176,
+      9999999999999
+    ],
+    "fork-only/fork-unknown-model/transcript-1-ledger": [
+      1795175237872,
+      1795175237872,
+      9999999999999
+    ],
+    "fork-only/fork-worker-timeout/transcript-1": [
+      1795175286904,
+      1795175285381,
+      9999999999999
+    ],
+    "fork-only/fork-worker-timeout/transcript-1-ledger": [
+      1795175286904,
+      1795175286904,
+      9999999999999
+    ],
+    "fork-only/replay-child/transcript-1": [
+      null,
+      null,
+      9999999999999
+    ],
+    "fork-only/replay-child/transcript-2": [
+      null,
+      null,
+      9999999999999
+    ],
+    "fork-only/replay-child/transcript-3": [
+      null,
+      null,
+      9999999999999
+    ],
+    "fork-only/replay-parent/transcript-1": [
+      1795000068300,
+      1795000068000,
+      9999999999999
+    ],
+    "fork-only/replay-parent/transcript-2": [
+      1795000073400,
+      1795000073100,
+      9999999999999
+    ],
+    "fork-only/replay-parent/transcript-3": [
+      1795000077000,
+      1795000076700,
+      9999999999999
+    ],
+    "fork-only/steered/transcript-1": [
+      1795002826500,
+      1795002826500,
+      9999999999999
+    ],
+    "graph-ended-other/transcript-1": [
+      1795001928300,
+      1795001928000,
+      9999999999999
+    ],
+    "graph-ended-other/transcript-2": [
+      1795001933400,
+      1795001933100,
+      9999999999999
+    ],
+    "graph-ended-other/transcript-3": [
+      1795001937000,
+      1795001936700,
+      9999999999999
+    ],
+    "lane-mixed/transcript-1": [
+      1795003183000,
+      1795003183000,
+      9999999999999
+    ],
+    "lane-unknown-harness/transcript-1": [
+      1795003243000,
+      1795003243000,
+      9999999999999
+    ],
+    "map-parallel/transcript-1": [
+      1795001985600,
+      1795001985300,
+      9999999999999
+    ],
+    "map-parallel/transcript-2": [
+      1795001989200,
+      1795001988900,
+      9999999999999
+    ],
+    "map-parallel/transcript-3": [
+      1795001993700,
+      1795001993700,
+      9999999999999
+    ],
+    "no-checkpoints/transcript-1": [
+      1795002042500,
+      1795002042500,
+      9999999999999
+    ],
+    "resumed-original/transcript-1": [
+      1795000127100,
+      1795000126800,
+      9999999999999
+    ],
+    "resumed-successor/transcript-1": [
+      1795002168300,
+      1795002168000,
+      9999999999999
+    ],
+    "resumed-successor/transcript-2": [
+      1795002173400,
+      1795002173100,
+      9999999999999
+    ],
+    "resumed-successor/transcript-3": [
+      1795002177000,
+      1795002176700,
+      9999999999999
+    ],
+    "running-live/transcript-1": [
+      null,
+      null,
+      9999999999999
+    ],
+    "running-live/transcript-2": [
+      null,
+      null,
+      9999999999999
+    ],
+    "running-live/transcript-3": [
+      null,
+      null,
+      9999999999999
+    ],
+    "running-live/transcript-4": [
+      1795003566500,
+      1795003566500,
+      9999999999999
+    ],
+    "running-live/transcript-5": [
+      1795003569500,
+      1795003569500,
+      9999999999999
+    ],
+    "running-stock/transcript-1": [
+      1795003506000,
+      1795003506000,
+      9999999999999
+    ],
+    "runtime-failed-checkpoint/transcript-1": [
+      1795002345100,
+      1795002344800,
+      9999999999999
+    ],
+    "runtime-failed-permission/transcript-1": [
+      1795002405100,
+      1795002404800,
+      9999999999999
+    ],
+    "runtime-failed-storage/transcript-1": [
+      1795002465100,
+      1795002464800,
+      9999999999999
+    ],
+    "runtime-failed-unknown/transcript-1": [
+      1795002525100,
+      1795002524800,
+      9999999999999
+    ],
+    "runtime-lost/transcript-1": [
+      1795002585100,
+      1795002584800,
+      9999999999999
+    ],
+    "stalled-disk/transcript-1": [
+      1795002705100,
+      1795002704800,
+      9999999999999
+    ],
+    "stalled-live-usage/transcript-1": [
+      1795002778510,
+      1795002778510,
+      9999999999999
+    ],
+    "stalled-live-usage/transcript-1-ledger": [
+      1795002765300,
+      1795002765000,
+      9999999999999
+    ],
+    "stalled-then-closed/transcript-1": [
+      1795003318510,
+      1795003318510,
+      9999999999999
+    ],
+    "stalled-then-closed/transcript-1-ledger": [
+      1795003471500,
+      1795003471500,
+      9999999999999
+    ],
+    "stalled/transcript-1": [
+      1795002645100,
+      1795002644800,
+      9999999999999
+    ],
+    "succeeded-stock/transcript-1": [
+      1795002947600,
+      1795002947300,
+      9999999999999
+    ],
+    "succeeded-stock/transcript-2": [
+      1795002951200,
+      1795002950900,
+      9999999999999
+    ],
+    "succeeded-stock/transcript-3": [
+      1795002954800,
+      1795002954500,
+      9999999999999
+    ],
+    "succeeded/transcript-1": [
+      1795002898510,
+      1795002898510,
+      9999999999999
+    ],
+    "succeeded/transcript-1-ledger": [
+      1795002888300,
+      1795002888000,
+      9999999999999
+    ],
+    "succeeded/transcript-2": [
+      1795002898510,
+      1795002898510,
+      9999999999999
+    ],
+    "succeeded/transcript-2-ledger": [
+      1795002893400,
+      1795002893100,
+      9999999999999
+    ],
+    "succeeded/transcript-3": [
+      1795002898510,
+      1795002898510,
+      9999999999999
+    ],
+    "succeeded/transcript-3-ledger": [
+      1795002897000,
+      1795002896700,
+      9999999999999
+    ],
+    "tool-output-rate-limit/transcript-1": [
+      1795003546500,
+      1795003546500,
+      9999999999999
+    ],
+    "voided/transcript-1": [
+      null,
+      null,
+      9999999999999
+    ],
+    "voided/transcript-2": [
+      1795003065600,
+      1795003065300,
+      9999999999999
+    ],
+    "work-exhausted/transcript-1": [
+      1795003125100,
+      1795003124800,
+      9999999999999
+    ],
+    "work-exhausted/transcript-2": [
+      null,
+      null,
+      9999999999999
+    ],
+    "work-exhausted/transcript-3": [
+      null,
+      null,
+      9999999999999
+    ],
+    "work-exhausted/transcript-4": [
+      1795003131700,
+      1795003131400,
+      9999999999999
+    ],
+    "work-exhausted/transcript-5": [
+      null,
+      null,
+      9999999999999
+    ],
+    "work-exhausted/transcript-6": [
+      null,
+      null,
+      9999999999999
+    ],
+    "zeroshot-16/zeroshot16-normal/transcript-1": [
+      1795175292762,
+      1795175292757,
+      9999999999999
+    ],
+    "zeroshot-16/zeroshot16-normal/transcript-1-ledger": [
+      1795175292762,
+      1795175292762,
+      9999999999999
+    ],
+    "zeroshot-16/zeroshot16-steered/transcript-1": [
+      1795175346717,
+      1795175346717,
+      9999999999999
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1": [
+      1795175274969,
+      1795175274209,
+      9999999999999
+    ],
+    "zeroshot-16/zeroshot16-unknown-model/transcript-1-ledger": [
+      1795175274969,
+      1795175274969,
+      9999999999999
+    ]
+  }
+}

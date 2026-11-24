@@ -1,0 +1,450 @@
+{
+  "runs": {
+    "admitted-only": [
+      "11:09 AM",
+      "—"
+    ],
+    "attempts-exhausted": [
+      "11:10 AM",
+      "11:10 AM"
+    ],
+    "checkout-unavailable": [
+      "11:11 AM",
+      "11:11 AM"
+    ],
+    "closing-postmortem": [
+      "11:12 AM",
+      "11:12 AM"
+    ],
+    "codex-estimate": [
+      "11:13 AM",
+      "11:13 AM"
+    ],
+    "copilot-session": [
+      "11:14 AM",
+      "11:14 AM"
+    ],
+    "delivery-failed": [
+      "11:15 AM",
+      "11:15 AM"
+    ],
+    "diag-api-hang": [
+      "12:03 PM",
+      "12:03 PM"
+    ],
+    "diag-code-authentication-required": [
+      "11:16 AM",
+      "11:16 AM"
+    ],
+    "diag-code-crash": [
+      "11:17 AM",
+      "11:17 AM"
+    ],
+    "diag-code-input-required": [
+      "11:18 AM",
+      "11:18 AM"
+    ],
+    "diag-code-malformed-result": [
+      "11:19 AM",
+      "11:19 AM"
+    ],
+    "diag-code-other": [
+      "11:20 AM",
+      "11:20 AM"
+    ],
+    "diag-code-policy-denied": [
+      "11:21 AM",
+      "11:21 AM"
+    ],
+    "diag-code-refusal": [
+      "11:22 AM",
+      "11:22 AM"
+    ],
+    "diag-code-timeout": [
+      "11:23 AM",
+      "11:23 AM"
+    ],
+    "diag-context": [
+      "11:24 AM",
+      "11:24 AM"
+    ],
+    "diag-credentials": [
+      "11:25 AM",
+      "11:25 AM"
+    ],
+    "diag-disk": [
+      "11:26 AM",
+      "11:26 AM"
+    ],
+    "diag-malformed-stream": [
+      "11:27 AM",
+      "11:27 AM"
+    ],
+    "diag-missing-cli": [
+      "11:28 AM",
+      "11:28 AM"
+    ],
+    "diag-model": [
+      "11:29 AM",
+      "11:29 AM"
+    ],
+    "diag-network": [
+      "11:30 AM",
+      "11:30 AM"
+    ],
+    "diag-permission": [
+      "11:31 AM",
+      "11:31 AM"
+    ],
+    "diag-provider-down": [
+      "11:32 AM",
+      "11:32 AM"
+    ],
+    "diag-provider-timeout": [
+      "11:33 AM",
+      "11:33 AM"
+    ],
+    "diag-rate-limit": [
+      "11:34 AM",
+      "11:34 AM"
+    ],
+    "diag-stream-cut": [
+      "11:35 AM",
+      "11:35 AM"
+    ],
+    "diag-usage-limit": [
+      "11:36 AM",
+      "11:36 AM"
+    ],
+    "force-stopped": [
+      "11:37 AM",
+      "11:37 AM"
+    ],
+    "fork-only/fork-bad-credentials": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-chaos-transient": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-chaos-usage-limit": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-controller-killed": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-force-stopped": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-happy-path": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-late-failure": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-replay": [
+      "Nov 20, 11:48 AM",
+      "11:48 AM"
+    ],
+    "fork-only/fork-resumed": [
+      "Nov 20, 11:48 AM",
+      "11:48 AM"
+    ],
+    "fork-only/fork-reviewer-never-satisfied": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-steered": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-unknown-model": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/fork-worker-timeout": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "fork-only/replay-child": [
+      "11:41 AM",
+      "11:41 AM"
+    ],
+    "fork-only/replay-parent": [
+      "11:07 AM",
+      "11:07 AM"
+    ],
+    "fork-only/steered": [
+      "11:53 AM",
+      "11:53 AM"
+    ],
+    "graph-ended-other": [
+      "11:38 AM",
+      "11:38 AM"
+    ],
+    "lane-mixed": [
+      "11:59 AM",
+      "11:59 AM"
+    ],
+    "lane-unknown-harness": [
+      "12:00 PM",
+      "12:00 PM"
+    ],
+    "map-parallel": [
+      "11:39 AM",
+      "11:39 AM"
+    ],
+    "no-checkpoints": [
+      "11:40 AM",
+      "11:40 AM"
+    ],
+    "resumed-original": [
+      "11:08 AM",
+      "11:08 AM"
+    ],
+    "resumed-successor": [
+      "11:42 AM",
+      "11:42 AM"
+    ],
+    "running-live": [
+      "12:00 PM",
+      "12:00 PM"
+    ],
+    "running-stock": [
+      "12:05 PM",
+      "12:05 PM"
+    ],
+    "runtime-failed-checkpoint": [
+      "11:45 AM",
+      "11:45 AM"
+    ],
+    "runtime-failed-permission": [
+      "11:46 AM",
+      "11:46 AM"
+    ],
+    "runtime-failed-storage": [
+      "11:47 AM",
+      "11:47 AM"
+    ],
+    "runtime-failed-unknown": [
+      "11:48 AM",
+      "11:48 AM"
+    ],
+    "runtime-lost": [
+      "11:49 AM",
+      "11:49 AM"
+    ],
+    "stalled": [
+      "11:50 AM",
+      "11:50 AM"
+    ],
+    "stalled-disk": [
+      "11:51 AM",
+      "11:51 AM"
+    ],
+    "stalled-live-usage": [
+      "11:52 AM",
+      "11:52 AM"
+    ],
+    "stalled-then-closed": [
+      "12:01 PM",
+      "12:01 PM"
+    ],
+    "succeeded": [
+      "11:54 AM",
+      "11:54 AM"
+    ],
+    "succeeded-stock": [
+      "11:55 AM",
+      "11:55 AM"
+    ],
+    "tool-output-rate-limit": [
+      "12:05 PM",
+      "12:05 PM"
+    ],
+    "unknown-phase": [
+      "11:56 AM",
+      "11:56 AM"
+    ],
+    "voided": [
+      "11:57 AM",
+      "11:57 AM"
+    ],
+    "work-exhausted": [
+      "11:58 AM",
+      "11:58 AM"
+    ],
+    "zeroshot-16/zeroshot16-normal": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "zeroshot-16/zeroshot16-steered": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model": [
+      "Nov 20, 11:47 AM",
+      "11:47 AM"
+    ]
+  },
+  "table": [
+    [
+      "null",
+      [
+        "—",
+        "—",
+        "—"
+      ]
+    ],
+    [
+      "undefined",
+      [
+        "—",
+        "—",
+        "—"
+      ]
+    ],
+    [
+      "0",
+      [
+        "Jan 1, 1970",
+        "Jan 1, 1970",
+        "Jan 1, 1970"
+      ]
+    ],
+    [
+      "1795003600000",
+      [
+        "12:06 PM",
+        "12:06 PM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1795003599999",
+      [
+        "12:06 PM",
+        "12:06 PM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1795003555001",
+      [
+        "12:05 PM",
+        "12:05 PM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1795003555000",
+      [
+        "12:05 PM",
+        "12:05 PM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1795003510001",
+      [
+        "12:05 PM",
+        "12:05 PM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1795000030000",
+      [
+        "11:07 AM",
+        "11:07 AM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1794917200000",
+      [
+        "Nov 17, 12:06 PM",
+        "Nov 17, 12:06 PM",
+        "Nov 17, 2026"
+      ]
+    ],
+    [
+      "1793880400000",
+      [
+        "Nov 5, 12:06 PM",
+        "Nov 5, 12:06 PM",
+        "Nov 5, 2026"
+      ]
+    ],
+    [
+      "1793794000000",
+      [
+        "Nov 4, 12:06 PM",
+        "Nov 4, 12:06 PM",
+        "Nov 4, 2026"
+      ]
+    ],
+    [
+      "1760443600000",
+      [
+        "Oct 14, 2025",
+        "Oct 14, 2025",
+        "Oct 14, 2025"
+      ]
+    ],
+    [
+      "1795007200000",
+      [
+        "1:06 PM",
+        "1:06 PM",
+        "Nov 18, 2026"
+      ]
+    ],
+    [
+      "1767225600000",
+      [
+        "Jan 1, 12:00 AM",
+        "Jan 1, 12:00 AM",
+        "Jan 1, 2026"
+      ]
+    ],
+    [
+      "1767225599000",
+      [
+        "Dec 31, 2025",
+        "Dec 31, 2025",
+        "Dec 31, 2025"
+      ]
+    ],
+    [
+      "1795132800000",
+      [
+        "Nov 20, 12:00 AM",
+        "Nov 20, 12:00 AM",
+        "Nov 20, 2026"
+      ]
+    ],
+    [
+      "1795219199000",
+      [
+        "Nov 20, 11:59 PM",
+        "Nov 20, 11:59 PM",
+        "Nov 20, 2026"
+      ]
+    ],
+    [
+      "1795089600000",
+      [
+        "Nov 19, 12:00 PM",
+        "Nov 19, 12:00 PM",
+        "Nov 19, 2026"
+      ]
+    ]
+  ]
+}

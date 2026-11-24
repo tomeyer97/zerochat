@@ -1,0 +1,172 @@
+{
+  "body": {
+    "cells": [
+      {
+        "attempts": 2,
+        "capMinutes": 40.0,
+        "capSteps": 24,
+        "capUsd": 12.0,
+        "costUsd": 5.8355968,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [
+          {
+            "costUsd": null,
+            "exitReason": "runner process died before finishing",
+            "runId": "20261103-161534-90ca94",
+            "state": "interrupted",
+            "wallS": null,
+            "zeroshotRunId": null
+          }
+        ],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261104-094037-fb26fa",
+        "score": 0.883928571,
+        "seed": 0,
+        "startedAt": 1793781637327,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 198,
+        "testsTotal": 224,
+        "wallS": 1575.639360666,
+        "zeroshotRunId": "01a1a5b7-a50e-7733-b254-b6c04e9480b2"
+      },
+      {
+        "attempts": 2,
+        "capMinutes": 40.0,
+        "capSteps": 24,
+        "capUsd": 12.0,
+        "costUsd": 5.263022,
+        "cutShort": null,
+        "exitReason": null,
+        "overLimit": null,
+        "priorAttempts": [
+          {
+            "costUsd": null,
+            "exitReason": "runner process died before finishing",
+            "runId": "20261103-161534-59f5da",
+            "state": "interrupted",
+            "wallS": null,
+            "zeroshotRunId": null
+          }
+        ],
+        "regressionPassed": null,
+        "regressionTotal": null,
+        "runId": "20261104-094037-b61618",
+        "score": 0.816964286,
+        "seed": 1,
+        "startedAt": 1793781637328,
+        "state": "scored",
+        "task": "tomnomnom__gron.88a6234",
+        "testsPassed": 183,
+        "testsTotal": 224,
+        "wallS": 1704.791758299,
+        "zeroshotRunId": "01a1a5b7-a50e-7123-bf2e-c8b6b6baf64f"
+      }
+    ],
+    "colAggregates": [
+      {
+        "key": "0",
+        "max": 0.883928571,
+        "mean": 0.883928571,
+        "min": 0.883928571,
+        "n": 1
+      },
+      {
+        "key": "1",
+        "max": 0.816964286,
+        "mean": 0.816964286,
+        "min": 0.816964286,
+        "n": 1
+      }
+    ],
+    "endedAt": 1793783216176,
+    "harnessVersion": "998df48b",
+    "harnesses": [
+      {
+        "agentHarness": "claude",
+        "modelOverride": "claude-sonnet-5",
+        "nodes": [
+          {
+            "effort": null,
+            "kind": "step",
+            "loopMax": null,
+            "loopName": null,
+            "model": "claude-sonnet-5",
+            "name": "build",
+            "parallel": null
+          }
+        ],
+        "runs": 4,
+        "runtimeFile": null,
+        "runtimeMatches": false,
+        "source": "custom",
+        "variant": null
+      }
+    ],
+    "id": "label:replay-build-sonnet",
+    "label": "replay-build-sonnet",
+    "limits": {
+      "maxCostUsd": 12.0,
+      "maxSteps": 24,
+      "maxWallMinutes": 40.0
+    },
+    "maxScore": 0.883928571,
+    "meanScore": 0.850446429,
+    "meanScoreFinished": null,
+    "minScore": 0.816964286,
+    "models": [
+      "claude-sonnet-5"
+    ],
+    "parallel": null,
+    "replays": [
+      {
+        "base": "explore#1 (snapshot)",
+        "models": [
+          "claude-sonnet-5"
+        ],
+        "node": "build#1",
+        "recordedModel": "claude-haiku-4-5",
+        "recordedScore": 0.526785714,
+        "runs": 4,
+        "sourceBatch": "label:clone-v1",
+        "sourceLabel": "clone-v1",
+        "sourceRun": "20261103-151748-ef96e3",
+        "sourceScore": 0.616071429,
+        "sourceTask": "tomnomnom__gron.88a6234",
+        "sourceZeroshotRunId": "01a1a1c5-fa55-7dd0-be80-efd5703a4356",
+        "sweepId": null,
+        "sweepLabel": null,
+        "through": null
+      }
+    ],
+    "retriedAttempts": 2,
+    "retriedCostUsd": null,
+    "rowAggregates": [
+      {
+        "key": "tomnomnom__gron.88a6234",
+        "max": 0.883928571,
+        "mean": 0.850446429,
+        "min": 0.816964286,
+        "n": 2
+      }
+    ],
+    "seeds": [
+      0,
+      1
+    ],
+    "startLog": null,
+    "startedAt": 1793718934839,
+    "starting": false,
+    "status": "done",
+    "tasks": [
+      "tomnomnom__gron.88a6234"
+    ],
+    "totalCostUsd": 11.0986188,
+    "totalWallS": 3280.431118965,
+    "zeroshotVersion": "zeroshot 11.0.0"
+  },
+  "status": 200
+}

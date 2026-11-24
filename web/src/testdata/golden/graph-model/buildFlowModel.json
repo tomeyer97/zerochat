@@ -1,0 +1,4192 @@
+{
+  "admitted-only": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"admitted-only\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "attempts-exhausted": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"attempts-exhausted\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"attempts-exhausted\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"attempts-exhausted\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "failed",
+        "stats": "<ref:runs[\"attempts-exhausted\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"attempts-exhausted\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "checkout-unavailable": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"checkout-unavailable\"].graphNodes[1]>",
+        "iteration": 0,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"checkout-unavailable\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"checkout-unavailable\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "closing-postmortem": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"closing-postmortem\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"closing-postmortem\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"closing-postmortem\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "failed",
+        "stats": "<ref:runs[\"closing-postmortem\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"closing-postmortem\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"closing-postmortem\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "codex-estimate": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"codex-estimate\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"codex-estimate\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"codex-estimate\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "copilot-session": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"copilot-session\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"copilot-session\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"copilot-session\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "delivery-failed": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"delivery-failed\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"delivery-failed\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"delivery-failed\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"delivery-failed\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"delivery-failed\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"delivery-failed\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"delivery-failed\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"delivery-failed\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"delivery-failed\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"delivery-failed\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-api-hang": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-api-hang\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-api-hang\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-api-hang\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-authentication-required": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-authentication-required\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-authentication-required\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-authentication-required\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-crash": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-crash\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-crash\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-crash\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-input-required": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-input-required\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-input-required\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-input-required\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-malformed-result": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-malformed-result\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-malformed-result\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-malformed-result\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-other": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-other\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-other\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-other\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-policy-denied": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-policy-denied\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-policy-denied\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-policy-denied\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-refusal": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-refusal\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-refusal\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-refusal\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-code-timeout": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-code-timeout\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-code-timeout\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-code-timeout\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-context": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-context\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-context\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-context\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-credentials": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-credentials\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-credentials\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-credentials\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-disk": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-disk\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-disk\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-disk\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-malformed-stream": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-malformed-stream\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-malformed-stream\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-malformed-stream\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-missing-cli": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-missing-cli\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-missing-cli\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-missing-cli\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-model": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-model\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-model\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-model\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-network": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-network\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-network\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-network\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-permission": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-permission\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-permission\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-permission\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-provider-down": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-provider-down\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-provider-down\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-provider-down\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-provider-timeout": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-provider-timeout\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-provider-timeout\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-provider-timeout\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-rate-limit": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-rate-limit\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-rate-limit\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-rate-limit\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-stream-cut": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-stream-cut\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-stream-cut\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-stream-cut\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "diag-usage-limit": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"diag-usage-limit\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"diag-usage-limit\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"diag-usage-limit\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "force-stopped": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"force-stopped\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"force-stopped\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"force-stopped\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"force-stopped\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"force-stopped\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"force-stopped\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"force-stopped\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"force-stopped\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"force-stopped\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"force-stopped\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-bad-credentials": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->worker_failed#0",
+        "label": "errored",
+        "source": "worker",
+        "taken": true,
+        "target": "worker_failed",
+        "title": "when worker errored"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-bad-credentials\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-bad-credentials\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "otherwise",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"fork-only/fork-bad-credentials\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": "worker_failed",
+        "graphKind": "fail",
+        "id": "worker_failed",
+        "info": "<ref:runs[\"fork-only/fork-bad-credentials\"].graphNodes[3]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-chaos-transient": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->done#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "done",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-chaos-transient\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-chaos-transient\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-chaos-transient\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"fork-only/fork-chaos-transient\"].graphNodes[4]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-chaos-usage-limit": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->worker_failed#0",
+        "label": "errored",
+        "source": "worker",
+        "taken": true,
+        "target": "worker_failed",
+        "title": "when worker errored"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "otherwise",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": "worker_failed",
+        "graphKind": "fail",
+        "id": "worker_failed",
+        "info": "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graphNodes[3]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-controller-killed": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 3,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[0]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-controller-killed\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "any errored",
+            "id": "review_failed",
+            "kind": "fail"
+          },
+          {
+            "condition": "both accepted",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[1]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"fork-only/fork-controller-killed\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-controller-killed\"].executions[2]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"fork-only/fork-controller-killed\"].nodes.code>",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-force-stopped": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 3,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[0]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-force-stopped\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "any errored",
+            "id": "review_failed",
+            "kind": "fail"
+          },
+          {
+            "condition": "both accepted",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[1]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"fork-only/fork-force-stopped\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-force-stopped\"].executions[2]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"fork-only/fork-force-stopped\"].nodes.code>",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-happy-path": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      },
+      {
+        "branch": false,
+        "id": "parallel_reviews->done#1",
+        "label": "both accepted",
+        "source": "parallel_reviews",
+        "taken": true,
+        "target": "done",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 3,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-happy-path\"].executions[0]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-happy-path\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "any errored",
+            "id": "review_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-happy-path\"].executions[1]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-happy-path\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-happy-path\"].executions[2]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-happy-path\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[12]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-late-failure": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      },
+      {
+        "branch": false,
+        "id": "parallel_reviews->review_failed#1",
+        "label": "any errored",
+        "source": "parallel_reviews",
+        "taken": true,
+        "target": "review_failed",
+        "title": "when any of: acceptance errored; code errored"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-late-failure\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-late-failure\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "both accepted",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-late-failure\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-late-failure\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-late-failure\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "failed",
+        "stats": "<ref:runs[\"fork-only/fork-late-failure\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "failReason": "review_failed",
+        "graphKind": "fail",
+        "id": "review_failed",
+        "info": "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[11]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-replay": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      },
+      {
+        "branch": false,
+        "id": "parallel_reviews->done#1",
+        "label": "both accepted",
+        "source": "parallel_reviews",
+        "taken": true,
+        "target": "done",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-replay\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 3,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-replay\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-replay\"].executions[0]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-replay\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-replay\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "any errored",
+            "id": "review_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-replay\"].executions[1]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-replay\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-replay\"].executions[2]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-replay\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"fork-only/fork-replay\"].graphNodes[12]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-resumed": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      },
+      {
+        "branch": false,
+        "id": "parallel_reviews->done#1",
+        "label": "both accepted",
+        "source": "parallel_reviews",
+        "taken": true,
+        "target": "done",
+        "title": "when all of: acceptance accepted; code accepted"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 3,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-resumed\"].executions[0]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-resumed\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "any errored",
+            "id": "review_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-resumed\"].executions[1]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-resumed\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-resumed\"].executions[2]>",
+        "loop": {
+          "max": 3,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-resumed\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[12]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-reviewer-never-satisfied": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "change_loop->change_attempts_exhausted#0",
+        "label": "<undefined>",
+        "source": "change_loop",
+        "taken": true,
+        "target": "change_attempts_exhausted",
+        "title": "<undefined>"
+      },
+      {
+        "branch": false,
+        "id": "worker->parallel_reviews#1",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "parallel_reviews",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[1]>",
+        "iteration": 2,
+        "kind": "group",
+        "loopBackFrom": [
+          "review_retry"
+        ],
+        "maxIterations": 2,
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[3]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "parallel_reviews",
+        "info": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[7]>",
+        "kind": "group",
+        "maxIterations": null,
+        "otherExits": [
+          {
+            "condition": "any errored",
+            "id": "review_failed",
+            "kind": "fail"
+          },
+          {
+            "condition": "both accepted",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[4]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "rejected",
+        "stats": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].executions[5]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "parallel_reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "failReason": "change_attempts_exhausted",
+        "graphKind": "fail",
+        "id": "change_attempts_exhausted",
+        "info": "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[15]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-steered": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->done#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "done",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-steered\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-steered\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/fork-steered\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"fork-only/fork-steered\"].graphNodes[4]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-unknown-model": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->worker_failed#0",
+        "label": "errored",
+        "source": "worker",
+        "taken": true,
+        "target": "worker_failed",
+        "title": "when worker errored"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-unknown-model\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-unknown-model\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "otherwise",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"fork-only/fork-unknown-model\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": "worker_failed",
+        "graphKind": "fail",
+        "id": "worker_failed",
+        "info": "<ref:runs[\"fork-only/fork-unknown-model\"].graphNodes[3]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/fork-worker-timeout": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->worker_failed#0",
+        "label": "errored",
+        "source": "worker",
+        "taken": true,
+        "target": "worker_failed",
+        "title": "when worker errored"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/fork-worker-timeout\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/fork-worker-timeout\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "otherwise",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"fork-only/fork-worker-timeout\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": "worker_failed",
+        "graphKind": "fail",
+        "id": "worker_failed",
+        "info": "<ref:runs[\"fork-only/fork-worker-timeout\"].graphNodes[3]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/replay-child": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/replay-child\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/replay-child\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/replay-child\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/replay-child\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"fork-only/replay-child\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/replay-child\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/replay-child\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/replay-child\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/replay-child\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/replay-parent": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      },
+      {
+        "branch": false,
+        "id": "change_loop->change_attempts_exhausted#1",
+        "label": "<undefined>",
+        "source": "change_loop",
+        "taken": true,
+        "target": "change_attempts_exhausted",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"fork-only/replay-parent\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"fork-only/replay-parent\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/replay-parent\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/replay-parent\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"fork-only/replay-parent\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/replay-parent\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "rejected",
+        "stats": "<ref:runs[\"fork-only/replay-parent\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/replay-parent\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"fork-only/replay-parent\"].nodes.code_review>",
+        "visited": true
+      },
+      {
+        "failReason": "change_attempts_exhausted",
+        "graphKind": "fail",
+        "id": "change_attempts_exhausted",
+        "info": "<ref:runs[\"fork-only/replay-parent\"].graphNodes[7]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "fork-only/steered": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"fork-only/steered\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"fork-only/steered\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"fork-only/steered\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "graph-ended-other": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"graph-ended-other\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"graph-ended-other\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"graph-ended-other\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"graph-ended-other\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"graph-ended-other\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"graph-ended-other\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"graph-ended-other\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"graph-ended-other\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"graph-ended-other\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"graph-ended-other\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "lane-mixed": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"lane-mixed\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 1,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"lane-mixed\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"lane-mixed\"].executions[0]>",
+        "loop": {
+          "max": 1,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "failed",
+        "stats": "<ref:runs[\"lane-mixed\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"lane-mixed\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 1,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"lane-mixed\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 1,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "lane-unknown-harness": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"lane-unknown-harness\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"lane-unknown-harness\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"lane-unknown-harness\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "map-parallel": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "per_file->summarize#0",
+        "label": "<undefined>",
+        "source": "per_file",
+        "taken": true,
+        "target": "summarize",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "map",
+        "groupKind": "map",
+        "id": "per_file",
+        "info": "<ref:runs[\"map-parallel\"].graphNodes[1]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "fix",
+        "info": "<ref:runs[\"map-parallel\"].graphNodes[2]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"map-parallel\"].executions[1]>",
+        "loop": "<undefined>",
+        "parent": "per_file",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"map-parallel\"].nodes.fix>",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "summarize",
+        "info": "<ref:runs[\"map-parallel\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"map-parallel\"].executions[2]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"map-parallel\"].nodes.summarize>",
+        "visited": true
+      }
+    ]
+  },
+  "no-checkpoints": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"no-checkpoints\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"no-checkpoints\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"no-checkpoints\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "resumed-original": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"resumed-original\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"resumed-original\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"resumed-original\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"resumed-original\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"resumed-original\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"resumed-original\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "resumed-successor": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"resumed-successor\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"resumed-successor\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"resumed-successor\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"resumed-successor\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"resumed-successor\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"resumed-successor\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"resumed-successor\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"resumed-successor\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"resumed-successor\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"resumed-successor\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "running-live": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"running-live\"].graphNodes[1]>",
+        "iteration": 2,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "running",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"running-live\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"running-live\"].executions[4]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "running",
+        "stats": "<ref:runs[\"running-live\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"running-live\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"running-live\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"running-live\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "rejected",
+        "stats": "<ref:runs[\"running-live\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"running-live\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"running-live\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"running-live\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "running-stock": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"running-stock\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"running-stock\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "running",
+        "stats": "<ref:runs[\"running-stock\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "runtime-failed-checkpoint": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"runtime-failed-checkpoint\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"runtime-failed-checkpoint\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "runtime-failed-permission": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"runtime-failed-permission\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"runtime-failed-permission\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"runtime-failed-permission\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"runtime-failed-permission\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"runtime-failed-permission\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "runtime-failed-storage": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"runtime-failed-storage\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"runtime-failed-storage\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"runtime-failed-storage\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"runtime-failed-storage\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"runtime-failed-storage\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "runtime-failed-unknown": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"runtime-failed-unknown\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"runtime-failed-unknown\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"runtime-failed-unknown\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"runtime-failed-unknown\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"runtime-failed-unknown\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "runtime-lost": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"runtime-lost\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"runtime-lost\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"runtime-lost\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"runtime-lost\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"runtime-lost\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"runtime-lost\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "stalled": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs.stalled.graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs.stalled.graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs.stalled.executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs.stalled.nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs.stalled.graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs.stalled.graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs.stalled.graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "stalled-disk": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"stalled-disk\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"stalled-disk\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"stalled-disk\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"stalled-disk\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"stalled-disk\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"stalled-disk\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "stalled-live-usage": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"stalled-live-usage\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"stalled-live-usage\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"stalled-live-usage\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"stalled-live-usage\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"stalled-live-usage\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "stalled-then-closed": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"stalled-then-closed\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"stalled-then-closed\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"stalled-then-closed\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "interrupted",
+        "stats": "<ref:runs[\"stalled-then-closed\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"stalled-then-closed\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "succeeded": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs.succeeded.graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs.succeeded.graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs.succeeded.executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs.succeeded.nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs.succeeded.graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs.succeeded.graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs.succeeded.executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs.succeeded.nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs.succeeded.graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs.succeeded.executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs.succeeded.nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "succeeded-stock": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"succeeded-stock\"].graphNodes[1]>",
+        "iteration": 1,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"succeeded-stock\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"succeeded-stock\"].executions[0]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"succeeded-stock\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"succeeded-stock\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"succeeded-stock\"].executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"succeeded-stock\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"succeeded-stock\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"succeeded-stock\"].executions[2]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"succeeded-stock\"].nodes.code_review>",
+        "visited": true
+      }
+    ]
+  },
+  "tool-output-rate-limit": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"tool-output-rate-limit\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"tool-output-rate-limit\"].executions[0]>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "running",
+        "stats": "<ref:runs[\"tool-output-rate-limit\"].nodes.worker>",
+        "visited": true
+      }
+    ]
+  },
+  "unknown-phase": {
+    "edges": [],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"unknown-phase\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": "<undefined>",
+        "parent": "<undefined>",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "voided": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": false,
+        "target": "reviews",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs.voided.graphNodes[1]>",
+        "iteration": 2,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "otherExits": [
+          {
+            "condition": "<undefined>",
+            "id": "change_attempts_exhausted",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs.voided.graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs.voided.executions[1]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs.voided.nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs.voided.graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs.voided.graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs.voided.graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<undefined>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "idle",
+        "stats": "<undefined>",
+        "visited": false
+      }
+    ]
+  },
+  "work-exhausted": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "code->reviews#0",
+        "label": "<undefined>",
+        "source": "code",
+        "taken": true,
+        "target": "reviews",
+        "title": "<undefined>"
+      },
+      {
+        "branch": false,
+        "id": "change_loop->change_attempts_exhausted#1",
+        "label": "<undefined>",
+        "source": "change_loop",
+        "taken": true,
+        "target": "change_attempts_exhausted",
+        "title": "<undefined>"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "loop",
+        "groupKind": "loop",
+        "id": "change_loop",
+        "info": "<ref:runs[\"work-exhausted\"].graphNodes[1]>",
+        "iteration": 2,
+        "kind": "group",
+        "loopBackFrom": [
+          "reviews"
+        ],
+        "maxIterations": 2,
+        "parent": "<undefined>",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "step",
+        "id": "code",
+        "info": "<ref:runs[\"work-exhausted\"].graphNodes[3]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"work-exhausted\"].executions[3]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "change_loop",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"work-exhausted\"].nodes.code>",
+        "visited": true
+      },
+      {
+        "graphKind": "par",
+        "groupKind": "par",
+        "id": "reviews",
+        "info": "<ref:runs[\"work-exhausted\"].graphNodes[4]>",
+        "kind": "group",
+        "maxIterations": null,
+        "parent": "change_loop",
+        "state": "idle",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "acceptance",
+        "info": "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"work-exhausted\"].executions[4]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "rejected",
+        "stats": "<ref:runs[\"work-exhausted\"].nodes.acceptance>",
+        "visited": true
+      },
+      {
+        "graphKind": "verifier",
+        "id": "code_review",
+        "info": "<ref:runs[\"work-exhausted\"].graphNodes[6]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"work-exhausted\"].executions[5]>",
+        "loop": {
+          "max": 2,
+          "name": "change_loop"
+        },
+        "parent": "reviews",
+        "state": "accepted",
+        "stats": "<ref:runs[\"work-exhausted\"].nodes.code_review>",
+        "visited": true
+      },
+      {
+        "failReason": "change_attempts_exhausted",
+        "graphKind": "fail",
+        "id": "change_attempts_exhausted",
+        "info": "<ref:runs[\"work-exhausted\"].graphNodes[7]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  },
+  "zeroshot-16/zeroshot16-normal": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->done#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "done",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graphNodes[4]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "zeroshot-16/zeroshot16-steered": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->done#0",
+        "label": "otherwise",
+        "source": "worker",
+        "taken": true,
+        "target": "done",
+        "title": "when no other condition matched"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "errored",
+            "id": "worker_failed",
+            "kind": "fail"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "succeeded",
+        "stats": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": null,
+        "graphKind": "succeed",
+        "id": "done",
+        "info": "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graphNodes[4]>",
+        "kind": "succeed",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "succeeded",
+        "visited": true
+      }
+    ]
+  },
+  "zeroshot-16/zeroshot16-unknown-model": {
+    "edges": [
+      {
+        "branch": false,
+        "id": "worker->worker_failed#0",
+        "label": "errored",
+        "source": "worker",
+        "taken": true,
+        "target": "worker_failed",
+        "title": "when worker errored"
+      }
+    ],
+    "items": [
+      {
+        "graphKind": "step",
+        "id": "worker",
+        "info": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graphNodes[1]>",
+        "kind": "agent",
+        "latest": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].executions[0]>",
+        "loop": "<undefined>",
+        "otherExits": [
+          {
+            "condition": "otherwise",
+            "id": "done",
+            "kind": "succeed"
+          }
+        ],
+        "parent": "<undefined>",
+        "state": "failed",
+        "stats": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].nodes.worker>",
+        "visited": true
+      },
+      {
+        "failReason": "worker_failed",
+        "graphKind": "fail",
+        "id": "worker_failed",
+        "info": "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graphNodes[3]>",
+        "kind": "fail",
+        "parent": "<undefined>",
+        "reached": true,
+        "state": "failed",
+        "visited": true
+      }
+    ]
+  }
+}

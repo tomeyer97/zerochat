@@ -1,0 +1,33 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003502000,
+          "kind": "thinking",
+          "text": "Thinking about it"
+        },
+        {
+          "at": 1795003503000,
+          "kind": "text",
+          "text": "Here is the plan."
+        },
+        {
+          "at": 1795003505000,
+          "kind": "error",
+          "text": "Error: API Error: 503 Service Unavailable"
+        },
+        {
+          "at": 1795003506000,
+          "kind": "retry",
+          "text": "retried 1 of 10 (rate limit)"
+        }
+      ],
+      "limitations": [
+        "Tool calls not recorded by this Zeroshot"
+      ],
+      "source": "ledger"
+    }
+  }
+]

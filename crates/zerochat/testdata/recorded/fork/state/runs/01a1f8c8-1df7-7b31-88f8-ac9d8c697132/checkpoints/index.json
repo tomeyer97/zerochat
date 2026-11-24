@@ -1,0 +1,10 @@
+[
+  {
+    "checkpointId": "01a1f8c8-3511-7e02-beeb-68c40aff11d6",
+    "sequence": 1,
+    "node": "worker",
+    "mapIndices": [],
+    "loopIterations": [],
+    "createdAt": 1795175232785
+  }
+]

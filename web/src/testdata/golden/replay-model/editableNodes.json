@@ -1,0 +1,1930 @@
+{
+  "admitted-only": {
+    "no_such_node": [
+      "<ref:runs[\"admitted-only\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"admitted-only\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"admitted-only\"].graphNodes[1]>"
+    ]
+  },
+  "attempts-exhausted": {
+    "acceptance": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"attempts-exhausted\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "checkout-unavailable": {
+    "acceptance": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[3]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[3]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[3]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[3]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[3]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[5]>",
+      "<ref:runs[\"checkout-unavailable\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "closing-postmortem": {
+    "acceptance": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[3]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[3]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[3]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[3]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"closing-postmortem\"].graphNodes[3]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[5]>",
+      "<ref:runs[\"closing-postmortem\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "codex-estimate": {
+    "no_such_node": [
+      "<ref:runs[\"codex-estimate\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"codex-estimate\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"codex-estimate\"].graphNodes[1]>"
+    ]
+  },
+  "copilot-session": {
+    "no_such_node": [
+      "<ref:runs[\"copilot-session\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"copilot-session\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"copilot-session\"].graphNodes[1]>"
+    ]
+  },
+  "delivery-failed": {
+    "acceptance": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[3]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[3]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[3]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[3]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"delivery-failed\"].graphNodes[3]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[5]>",
+      "<ref:runs[\"delivery-failed\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "diag-api-hang": {
+    "no_such_node": [
+      "<ref:runs[\"diag-api-hang\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-api-hang\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-api-hang\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-authentication-required": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-authentication-required\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-authentication-required\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-authentication-required\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-crash": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-crash\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-crash\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-crash\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-input-required": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-input-required\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-input-required\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-input-required\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-malformed-result": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-malformed-result\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-malformed-result\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-malformed-result\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-other": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-other\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-other\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-other\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-policy-denied": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-policy-denied\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-policy-denied\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-policy-denied\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-refusal": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-refusal\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-refusal\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-refusal\"].graphNodes[1]>"
+    ]
+  },
+  "diag-code-timeout": {
+    "no_such_node": [
+      "<ref:runs[\"diag-code-timeout\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-code-timeout\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-code-timeout\"].graphNodes[1]>"
+    ]
+  },
+  "diag-context": {
+    "no_such_node": [
+      "<ref:runs[\"diag-context\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-context\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-context\"].graphNodes[1]>"
+    ]
+  },
+  "diag-credentials": {
+    "no_such_node": [
+      "<ref:runs[\"diag-credentials\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-credentials\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-credentials\"].graphNodes[1]>"
+    ]
+  },
+  "diag-disk": {
+    "no_such_node": [
+      "<ref:runs[\"diag-disk\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-disk\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-disk\"].graphNodes[1]>"
+    ]
+  },
+  "diag-malformed-stream": {
+    "no_such_node": [
+      "<ref:runs[\"diag-malformed-stream\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-malformed-stream\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-malformed-stream\"].graphNodes[1]>"
+    ]
+  },
+  "diag-missing-cli": {
+    "no_such_node": [
+      "<ref:runs[\"diag-missing-cli\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-missing-cli\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-missing-cli\"].graphNodes[1]>"
+    ]
+  },
+  "diag-model": {
+    "no_such_node": [
+      "<ref:runs[\"diag-model\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-model\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-model\"].graphNodes[1]>"
+    ]
+  },
+  "diag-network": {
+    "no_such_node": [
+      "<ref:runs[\"diag-network\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-network\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-network\"].graphNodes[1]>"
+    ]
+  },
+  "diag-permission": {
+    "no_such_node": [
+      "<ref:runs[\"diag-permission\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-permission\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-permission\"].graphNodes[1]>"
+    ]
+  },
+  "diag-provider-down": {
+    "no_such_node": [
+      "<ref:runs[\"diag-provider-down\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-provider-down\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-provider-down\"].graphNodes[1]>"
+    ]
+  },
+  "diag-provider-timeout": {
+    "no_such_node": [
+      "<ref:runs[\"diag-provider-timeout\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-provider-timeout\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-provider-timeout\"].graphNodes[1]>"
+    ]
+  },
+  "diag-rate-limit": {
+    "no_such_node": [
+      "<ref:runs[\"diag-rate-limit\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-rate-limit\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-rate-limit\"].graphNodes[1]>"
+    ]
+  },
+  "diag-stream-cut": {
+    "no_such_node": [
+      "<ref:runs[\"diag-stream-cut\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-stream-cut\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-stream-cut\"].graphNodes[1]>"
+    ]
+  },
+  "diag-usage-limit": {
+    "no_such_node": [
+      "<ref:runs[\"diag-usage-limit\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"diag-usage-limit\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"diag-usage-limit\"].graphNodes[1]>"
+    ]
+  },
+  "force-stopped": {
+    "acceptance": [
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[5]>",
+      "<ref:runs[\"force-stopped\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "fork-only/fork-bad-credentials": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-bad-credentials\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-bad-credentials\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-bad-credentials\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "fork-only/fork-chaos-transient": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-chaos-transient\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-chaos-transient\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-chaos-transient\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "fork-only/fork-chaos-usage-limit": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-chaos-usage-limit\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "fork-only/fork-controller-killed": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-controller-killed\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-force-stopped": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-force-stopped\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-happy-path": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-happy-path\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-late-failure": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-late-failure\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-replay": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-replay\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-resumed": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-resumed\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-reviewer-never-satisfied": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_iteration": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "change_loop": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "parallel_reviews": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "review_failed": [],
+    "review_result": [],
+    "review_retry": [],
+    "review_retry_invalid": [],
+    "reviews": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "worker_failed": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ],
+    "worker_result": [
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[8]>",
+      "<ref:runs[\"fork-only/fork-reviewer-never-satisfied\"].graphNodes[9]>"
+    ]
+  },
+  "fork-only/fork-steered": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-steered\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-steered\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-steered\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "fork-only/fork-unknown-model": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-unknown-model\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-unknown-model\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-unknown-model\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "fork-only/fork-worker-timeout": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/fork-worker-timeout\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/fork-worker-timeout\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/fork-worker-timeout\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "fork-only/replay-child": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-child\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "fork-only/replay-parent": {
+    "acceptance": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[3]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[5]>",
+      "<ref:runs[\"fork-only/replay-parent\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "fork-only/steered": {
+    "no_such_node": [
+      "<ref:runs[\"fork-only/steered\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"fork-only/steered\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"fork-only/steered\"].graphNodes[1]>"
+    ]
+  },
+  "graph-ended-other": {
+    "acceptance": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[3]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[3]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[3]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[3]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"graph-ended-other\"].graphNodes[3]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[5]>",
+      "<ref:runs[\"graph-ended-other\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "lane-mixed": {
+    "acceptance": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[3]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[3]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[3]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[3]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"lane-mixed\"].graphNodes[3]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[5]>",
+      "<ref:runs[\"lane-mixed\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "lane-unknown-harness": {
+    "no_such_node": [
+      "<ref:runs[\"lane-unknown-harness\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"lane-unknown-harness\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"lane-unknown-harness\"].graphNodes[1]>"
+    ]
+  },
+  "map-parallel": {
+    "fix": [
+      "<ref:runs[\"map-parallel\"].graphNodes[2]>",
+      "<ref:runs[\"map-parallel\"].graphNodes[3]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"map-parallel\"].graphNodes[2]>",
+      "<ref:runs[\"map-parallel\"].graphNodes[3]>"
+    ],
+    "per_file": [
+      "<ref:runs[\"map-parallel\"].graphNodes[2]>",
+      "<ref:runs[\"map-parallel\"].graphNodes[3]>"
+    ],
+    "run": [
+      "<ref:runs[\"map-parallel\"].graphNodes[2]>",
+      "<ref:runs[\"map-parallel\"].graphNodes[3]>"
+    ],
+    "summarize": [
+      "<ref:runs[\"map-parallel\"].graphNodes[3]>"
+    ],
+    "undefined": []
+  },
+  "no-checkpoints": {
+    "no_such_node": [
+      "<ref:runs[\"no-checkpoints\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"no-checkpoints\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"no-checkpoints\"].graphNodes[1]>"
+    ]
+  },
+  "resumed-original": {
+    "acceptance": [
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"resumed-original\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"resumed-original\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"resumed-original\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"resumed-original\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"resumed-original\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-original\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "resumed-successor": {
+    "acceptance": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"resumed-successor\"].graphNodes[3]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[5]>",
+      "<ref:runs[\"resumed-successor\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "running-live": {
+    "acceptance": [
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"running-live\"].graphNodes[3]>",
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"running-live\"].graphNodes[3]>",
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"running-live\"].graphNodes[3]>",
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"running-live\"].graphNodes[3]>",
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"running-live\"].graphNodes[3]>",
+      "<ref:runs[\"running-live\"].graphNodes[5]>",
+      "<ref:runs[\"running-live\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "running-stock": {
+    "no_such_node": [
+      "<ref:runs[\"running-stock\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"running-stock\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"running-stock\"].graphNodes[1]>"
+    ]
+  },
+  "runtime-failed-checkpoint": {
+    "acceptance": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-checkpoint\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "runtime-failed-permission": {
+    "acceptance": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-permission\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "runtime-failed-storage": {
+    "acceptance": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-storage\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "runtime-failed-unknown": {
+    "acceptance": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-failed-unknown\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "runtime-lost": {
+    "acceptance": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"runtime-lost\"].graphNodes[3]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[5]>",
+      "<ref:runs[\"runtime-lost\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "stalled": {
+    "acceptance": [
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs.stalled.graphNodes[3]>",
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs.stalled.graphNodes[3]>",
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs.stalled.graphNodes[3]>",
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs.stalled.graphNodes[3]>",
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs.stalled.graphNodes[3]>",
+      "<ref:runs.stalled.graphNodes[5]>",
+      "<ref:runs.stalled.graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "stalled-disk": {
+    "acceptance": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"stalled-disk\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-disk\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "stalled-live-usage": {
+    "acceptance": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-live-usage\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "stalled-then-closed": {
+    "acceptance": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[3]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[5]>",
+      "<ref:runs[\"stalled-then-closed\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "succeeded": {
+    "acceptance": [
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs.succeeded.graphNodes[3]>",
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs.succeeded.graphNodes[3]>",
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs.succeeded.graphNodes[3]>",
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs.succeeded.graphNodes[3]>",
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs.succeeded.graphNodes[3]>",
+      "<ref:runs.succeeded.graphNodes[5]>",
+      "<ref:runs.succeeded.graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "succeeded-stock": {
+    "acceptance": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[3]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[3]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[3]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[3]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"succeeded-stock\"].graphNodes[3]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[5]>",
+      "<ref:runs[\"succeeded-stock\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "tool-output-rate-limit": {
+    "no_such_node": [
+      "<ref:runs[\"tool-output-rate-limit\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"tool-output-rate-limit\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"tool-output-rate-limit\"].graphNodes[1]>"
+    ]
+  },
+  "unknown-phase": {
+    "no_such_node": [
+      "<ref:runs[\"unknown-phase\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"unknown-phase\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"unknown-phase\"].graphNodes[1]>"
+    ]
+  },
+  "voided": {
+    "acceptance": [
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs.voided.graphNodes[3]>",
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs.voided.graphNodes[3]>",
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs.voided.graphNodes[3]>",
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs.voided.graphNodes[3]>",
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs.voided.graphNodes[3]>",
+      "<ref:runs.voided.graphNodes[5]>",
+      "<ref:runs.voided.graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "work-exhausted": {
+    "acceptance": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "change_attempts_exhausted": [],
+    "change_loop": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "code": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "code_review": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "iteration": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "no_such_node": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "reviews": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "run": [
+      "<ref:runs[\"work-exhausted\"].graphNodes[3]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[5]>",
+      "<ref:runs[\"work-exhausted\"].graphNodes[6]>"
+    ],
+    "undefined": []
+  },
+  "zeroshot-16/zeroshot16-normal": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-normal\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "zeroshot-16/zeroshot16-steered": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-steered\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  },
+  "zeroshot-16/zeroshot16-unknown-model": {
+    "done": [],
+    "no_such_node": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graphNodes[1]>"
+    ],
+    "run": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graphNodes[1]>"
+    ],
+    "undefined": [],
+    "worker": [
+      "<ref:runs[\"zeroshot-16/zeroshot16-unknown-model\"].graphNodes[1]>"
+    ],
+    "worker_failed": [],
+    "worker_result": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "base_missing",
+    "message": "The commit 0123456789abcdef0123456789abcdef01234567 is no longer in <root>/work/succeeded/repo."
+  },
+  "status": 503
+}

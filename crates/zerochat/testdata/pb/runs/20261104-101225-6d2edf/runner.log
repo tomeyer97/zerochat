@@ -1,0 +1,15 @@
+10:12:25 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] start label='clone-v1-sonnet-build' version=c4d472548d model=per-node art=/data/pb/runs/20261104-101225-6d2edf
+10:12:25 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] pulling programbench/mibk_1776_dupl.1bf052b:task_cleanroom_v6 (first use, ~3 GB unpacked)…
+10:12:30 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] sandbox up; launching zeroshot
+10:12:36 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node start  explore (exec 1, attempt 1)
+10:15:42 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node done   explore -> verified 
+10:15:44 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node start  build (exec 2, attempt 1)
+11:11:58 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node done   build -> verified 
+11:12:01 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node start  coverage (exec 3, attempt 1)
+11:15:13 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node done   coverage -> verifier rejected
+11:15:17 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node start  bugfinder (exec 4, attempt 1)
+11:16:29 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node done   bugfinder -> verifier rejected
+11:16:33 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node start  triage (exec 5, attempt 1)
+11:17:29 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node done   triage -> verifier rejected
+11:17:33 [20261104-101225-6d2edf mibk__dupl.1bf052b s0] node start  repair (exec 6, attempt 1)
+11:21:21 [20261104-101225-6d2edf mibk__dupl.1bf052b s0]…[fixture: 1969 more characters cut]

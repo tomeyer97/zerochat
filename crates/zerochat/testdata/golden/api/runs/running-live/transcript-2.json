@@ -1,0 +1,84 @@
+{
+  "body": {
+    "execution": {
+      "accepted": false,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": {
+        "message": "needs tests"
+      },
+      "durationMs": 500,
+      "endSeq": 7,
+      "endedAt": 1795003203000,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 2,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": null,
+      "logLines": 0,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "acceptance",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "diagnostic": {
+          "message": "needs tests"
+        },
+        "output": null,
+        "signals": {
+          "verdict": "rejected"
+        },
+        "status": "verifier"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 1,
+      "sessionId": null,
+      "signals": {
+        "verdict": "rejected"
+      },
+      "startSeq": 6,
+      "startedAt": 1795003202500,
+      "state": "rejected",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000002",
+        "commit": "0000000000000000000000000000000000000066",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000002"
+      }
+    },
+    "instructions": null,
+    "sourceNote": null,
+    "transcript": {
+      "items": [],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

@@ -1,0 +1,146 @@
+{
+  "submission": {
+    "title": "worker-timeout [fork]",
+    "graph": {
+      "profile": "openengine.graph.full/v1",
+      "initialInput": {
+        "kind": "record",
+        "fields": {
+          "task": {
+            "type": {
+              "kind": "string"
+            },
+            "required": true
+          }
+        }
+      },
+      "policy": {
+        "policy": "policy.native-v2@1",
+        "default": "deny"
+      },
+      "root": {
+        "kind": "seq",
+        "name": "run",
+        "state": {
+          "kind": "record",
+          "fields": {
+            "task": {
+              "type": {
+                "kind": "string"
+              },
+              "required": true
+            }
+          }
+        },
+        "children": [
+          {
+            "kind": "step",
+            "name": "worker",
+            "worker": "builtin.agent.worker@1",
+            "instructions": "Complete the requested task in the shared workspace. Follow repository guidance, make focused changes, and run the relevant checks.",
+            "input": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "output": {
+              "kind": "null"
+            },
+            "inputBindings": [
+              {
+                "target": [
+                  "task"
+                ],
+                "value": {
+                  "source": "state",
+                  "path": [
+                    "task"
+                  ]
+                }
+              }
+            ],
+            "writeBindings": [],
+            "timeoutMs": 45000,
+            "attempts": 1
+          },
+          {
+            "kind": "choice",
+            "name": "worker_result",
+            "state": {
+              "kind": "record",
+              "fields": {
+                "task": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "required": true
+                }
+              }
+            },
+            "branches": [
+              {
+                "when": {
+                  "kind": "in",
+                  "value": {
+                    "name": "worker",
+                    "source": "error",
+                    "field": null
+                  },
+                  "labels": [
+                    "crash",
+                    "malformed",
+                    "refusal",
+                    "timeout"
+                  ]
+                },
+                "node": {
+                  "kind": "fail",
+                  "name": "worker_failed",
+                  "reason": "worker_failed"
+                }
+              }
+            ],
+            "otherwise": {
+              "kind": "succeed",
+              "name": "done",
+              "output": {
+                "kind": "null"
+              },
+              "bindings": []
+            },
+            "promotedStatePaths": []
+          }
+        ],
+        "promotedStatePaths": []
+      }
+    },
+    "initialInput": {
+      "task": "Extend textkit with six new functions, one at a time. For EACH function: implement it in textkit/core.py, export it, add at least three unit tests, run `python3 -m unittest -v`, and then explain in one short paragraph what you did before starting the next function. Functions: 1) slugify(text) as a URL slug, 2) title_case(text) that keeps small words (a, an, the, of, and, or) lowercase except at the start, 3) truncate(text, n) that cuts at a word boundary and appends '…', 4) count_vowels(text), 5) is_palindrome(text) ignoring case and punctuation, 6) wrap(text, width) that wraps lines at word boundaries. Work carefully and verify every step with the tests."
+    },
+    "runtime": {
+      "harness": "claude",
+      "provider": "anthropic",
+      "size": "medium",
+      "nodes": {
+        "worker": {
+          "kind": "agent",
+          "model": "claude-haiku-4-5",
+          "connections": {
+            "anthropic": [
+              "CLAUDE_CODE_OAUTH_TOKEN"
+            ]
+          }
+        }
+      }
+    },
+    "submissionKey": "cli-61a502b0bf721ad7881afee63138709b"
+  },
+  "workspace": "/work/worker-timeout",
+  "deliveryRunId": "01a1f8c8-41b6-7b03-aa65-c28cfafd21cc"
+}

@@ -1,0 +1,12 @@
+{
+  "defaultHarnessOptions": {
+    "defaultMaxCostUsd": 5,
+    "defaultMaxSteps": 12,
+    "defaultMaxWallMinutes": 45,
+    "repoTasks": [],
+    "taskSets": [],
+    "tasks": [],
+    "variants": []
+  },
+  "startOptionsStatus": 200
+}

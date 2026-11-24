@@ -1,0 +1,108 @@
+[
+  {
+    "checkpointId": "01a1bbe3-8648-7a72-a147-b5f7631804e8",
+    "sequence": 1,
+    "node": "explore",
+    "mapIndices": [],
+    "loopIterations": [],
+    "createdAt": 1794153612872
+  },
+  {
+    "checkpointId": "01a1bbe6-a9fa-7ed3-9342-04fae14fffd2",
+    "sequence": 2,
+    "node": "build",
+    "mapIndices": [],
+    "loopIterations": [],
+    "createdAt": 1794153818618
+  },
+  {
+    "checkpointId": "01a1bbef-7233-7bf1-8245-bfcdb6bbefe1",
+    "sequence": 3,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1794154394163
+  },
+  {
+    "checkpointId": "01a1bbf1-d32f-73f1-8c2b-999ec7089e8f",
+    "sequence": 4,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1794154550063
+  },
+  {
+    "checkpointId": "01a1bbfb-1ceb-7bf0-a755-4b87101f1db6",
+    "sequence": 5,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      2
+    ],
+    "createdAt": 1794155158763
+  },
+  {
+    "checkpointId": "01a1bbfe-0d7f-7c10-a6f5-2cd1ea00b43f",
+    "sequence": 6,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      2
+    ],
+    "createdAt": 1794155351423
+  },
+  {
+    "checkpointId": "01a1bc03-68fd-7ae3-ad98-eda4d0b0d6b5",
+    "sequence": 7,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      3
+    ],
+    "createdAt": 1794155702525
+  },
+  {
+    "checkpointId": "01a1bc06-8a90-7521-91b6-4df917947360",
+    "sequence": 8,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      3
+    ],
+    "createdAt": 1794155907728
+  },
+  {
+    "checkpointId": "01a1bc08-d4d7-7a53-acbd-03521f6ed49f",
+    "sequence": 9,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      4
+    ],
+    "createdAt": 1794156057815
+  },
+  {
+    "checkpointId": "01a1bc0d-6170-7042-958e-af6ce1724599",
+    "sequence": 10,
+    "node": "repair",
+    "mapIndices": [],
+    "loopIterations": [
+      4
+    ],
+    "createdAt": 1794156355952
+  },
+  {
+    "checkpointId": "01a1bc0d-c32b-7d81-8a55-a2e3becaaf80",
+    "sequence": 11,
+    "node": "oracle",
+    "mapIndices": [],
+    "loopIterations": [
+      5
+    ],
+    "createdAt": 1794156380971
+  }
+]

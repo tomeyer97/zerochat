@@ -1,0 +1,19 @@
+{
+  "calc/01": "merged",
+  "calc/02": "merged",
+  "calc/03": "merged",
+  "calc/04": "gate failed",
+  "calc/05": "failed",
+  "calc/06": "failed",
+  "calc/07": "failed",
+  "calc/08": "run failed",
+  "calc/09": "run failed",
+  "calc/10": "failed",
+  "calc/11": "stopped",
+  "calc/12": "review rounds ran out",
+  "calc/13": "launch failed",
+  "calc/14": "failed",
+  "fresh/01": "failed",
+  "fresh/02": "failed",
+  "paused/01": "run failed"
+}

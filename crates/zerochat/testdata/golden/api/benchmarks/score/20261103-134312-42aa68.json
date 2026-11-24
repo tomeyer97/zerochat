@@ -1,0 +1,26 @@
+{
+  "body": {
+    "batchId": null,
+    "capUsd": 5.0,
+    "costUsd": 0.0,
+    "exitReason": "zeroshot 11.0.0 runtime_failed: workspace checkpoint Permission denied (reference binary unreadable by restic)",
+    "failingTests": [],
+    "label": "haiku-adversarial",
+    "nodeCosts": [],
+    "overLimit": null,
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": null,
+    "runId": "20261103-134312-42aa68",
+    "score": null,
+    "seed": 0,
+    "state": "crashed",
+    "steps": [],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": null,
+    "testsTotal": null,
+    "wallS": 8.114544153,
+    "zeroshotRunId": "01a1a16f-60eb-7ec3-9f78-bd21fc2d5db8"
+  },
+  "status": 200
+}

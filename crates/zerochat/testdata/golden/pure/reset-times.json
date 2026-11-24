@@ -1,0 +1,47 @@
+[
+  {
+    "after": 1795000000000,
+    "resetsAt": 1795080600000,
+    "text": "9:30am (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": 1795086000000,
+    "text": "11am (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": 1795046400000,
+    "text": "12am (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": 1795003200000,
+    "text": "12pm (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": 1795035900000,
+    "text": "21:05 (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": 1795075200000,
+    "text": "8:00am (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": null,
+    "text": "9:30am (CET)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": null,
+    "text": "25:00 (UTC)"
+  },
+  {
+    "after": 1795000000000,
+    "resetsAt": null,
+    "text": "noon"
+  }
+]

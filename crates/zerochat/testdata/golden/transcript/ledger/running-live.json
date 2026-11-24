@@ -1,0 +1,63 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  {
+    "execution": 4,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003561500,
+          "kind": "retry",
+          "text": "retried 1 of 10 (rate limit)"
+        },
+        {
+          "at": 1795003562500,
+          "kind": "text",
+          "text": "doing work"
+        },
+        {
+          "at": 1795003563500,
+          "kind": "retry",
+          "text": "retried 2 of 10 (overloaded error)"
+        },
+        {
+          "at": 1795003564500,
+          "kind": "rate_limit",
+          "text": "5-hour limit: 85% used"
+        },
+        {
+          "at": 1795003566500,
+          "kind": "rate_limit",
+          "text": "7-day Opus limit hit"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  {
+    "execution": 5,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795003568500,
+          "kind": "retry",
+          "text": "retried 3 of 10 (a transient error)"
+        },
+        {
+          "at": 1795003569500,
+          "kind": "text",
+          "text": "usage limit reached for this hour"
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "target_not_found",
+    "message": "No target `nowhere` is configured."
+  },
+  "status": 404
+}

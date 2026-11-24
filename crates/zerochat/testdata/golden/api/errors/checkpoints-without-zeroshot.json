@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "zeroshot_not_found",
+    "message": "cannot start <root>/no-such-zeroshot: No such file or directory (os error 2)"
+  },
+  "status": 503
+}

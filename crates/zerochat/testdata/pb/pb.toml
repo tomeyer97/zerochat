@@ -1,0 +1,117 @@
+# pb configuration. Every table here is read at `pb run` time, so adding tasks,
+# task sets, or model prices never needs a code change.
+
+[paths]
+db = "pb.sqlite"            # results database (relative to this file)
+runs_dir = "runs"           # one artifact directory per run lives here
+tasks_dir = "tasks"         # repo-history tasks: tasks/<task_id>/task.toml (pb task build|validate)
+
+[harness]
+# The harness under test. Its version is the git commit + dirty flag of these
+# files in this repo, a hash of their contents, and the zeroshot binary version.
+graph = "harness/graph.json"
+runtime = "harness/runtime.json"
+task_prompt = "harness/task_prompt.md"
+repo_task_prompt = "harness/repo_task_prompt.md"   # preamble for repo-history tasks; the task's spec is appended
+zeroshot_bin = "~/.nvm/versions/node/v22.22.2/lib/node_modules/@the-open-engine-company/zeroshot/bin/native/zeroshot"
+claude_bin = "~/.nvm/versions/node/v22.22.2/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe"
+# Environment variable(s) forwarded into the sandbox for the agent. Values are
+# read from your shell at run time and never written to disk.
+secret_env = ["CLAUDE_CODE_OAUTH_TOKEN"]
+# If a secret is not in your shell environment, pb reads it from this KEY=VALUE file
+# (keep it chmod 600, outside the repo).
+secret_env_file = "~/.config/pb/secrets.env"
+
+[limits]
+max_cost_usd = 6.0
+max_wall_minutes = 45
+max_steps = 24             # node executions (worker, reviewer, repair, retries...)
+eval_after_limit = true    # still score whatever code exists when a limit stops the run
+
+[sandbox]
+image_tag = "task_cleanroom_v6"
+allow_hosts = ["api.anthropic.com"]   # the only egress the agent gets
+drop_sudo = true           # enforce execute-only on ./executable (sudo go/cargo could read it)
+cpus = 8
+memory = "16g"
+
+[eval]
+docker_cpus = 4
+branch_workers = 2
+score_steps = true         # also score the code after every code-writing step (worker, repair, ...)
+step_eval_parallel = 2     # step evals run in parallel; identical code trees are scored once
+snapshot_max_mb = 200      # a step snapshot (git-trackable files, each ≤ 50 MB) bigger than this is skipped
+micro_snapshots = false    # also snapshot inside each agent session after file-modifying tool calls (`pb steps --micro`)
+micro_interval_s = 30      # at most one micro-snapshot per call per this many seconds (unchanged trees are skipped)
+own_suite_dir = "spec/cases"   # a scored snapshot carrying this case suite also gets it run against its own build ("" = off)
+own_suite_case_timeout_s = 10
+
+# --- Task sets -------------------------------------------------------------
+# Tasks are ProgramBench instance IDs (any ID from `programbench`'s task list; the image name is
+# derived automatically) or repo-history task IDs: a directory tasks/<id>/ with a task.toml.
+[task_sets]
+dev = ["tomnomnom__gron.88a6234", "yaa110__nomino.f892499"]
+holdout = ["cheat__cheat.b8098dc", "mibk__dupl.1bf052b"]
+smoke = ["tomnomnom__gron.88a6234"]
+k8s = ["k8s-job-backoff-limit-per-index"]
+
+# --- Pricing (USD per million tokens) ---------------------------------------
+# Anthropic first-party list prices. cache_write = 5-minute TTL write (1.25x input),
+# cache_write_1h = 1-hour TTL write (2x input), cache_read usually 0.1x input.
+# Model IDs are matched exactly first, then by longest prefix, so dated IDs like
+# claude-haiku-4-5-20251001 resolve to claude-haiku-4-5.
+[pricing."claude-fable-5-1"]
+input = 10.0
+output = 50.0
+cache_read = 0.25
+cache_write = 12.5
+cache_write_1h = 20.0
+
+[pricing."claude-fable-5"]
+input = 10.0
+output = 50.0
+cache_read = 1.0
+cache_write = 12.5
+cache_write_1h = 20.0
+
+[pricing."claude-opus-5-5"]
+input = 4.0
+output = 20.0
+cache_read = 0.20
+cache_write = 5.0
+cache_write_1h = 8.0
+
+[pricing."claude-opus-5"]
+input = 5.0
+output = 25.0
+cache_read = 0.50
+cache_write = 6.25
+cache_write_1h = 10.0
+
+[pricing."claude-opus-4"]
+input = 5.0
+output = 25.0
+cache_read = 0.50
+cache_write = 6.25
+cache_write_1h = 10.0
+
+[pricing."claude-sonnet-5"]
+input = 2.0
+output = 10.0
+cache_read = 0.20
+cache_write = 2.5
+cache_write_1h = 4.0
+
+[pricing."claude-sonnet-4"]
+input = 3.0
+output = 15.0
+cache_read = 0.30
+cache_write = 3.75
+cache_write_1h = 6.0
+
+[pricing."claude-haiku-4-5"]
+input = 1.0
+output = 5.0
+cache_read = 0.10
+cache_write = 1.25
+cache_write_1h = 2.0

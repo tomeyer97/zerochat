@@ -1,0 +1,8 @@
+{
+  "body": {
+    "commit": null,
+    "content": "import re\n\n\ndef title(text):\n    return text.title()\n\n\ndef slugify(text):\n    return re.sub(r\"[^a-z0-9]+\", \"-\", text.lower()).strip(\"-\")\n",
+    "path": "textkit/core.py"
+  },
+  "status": 200
+}

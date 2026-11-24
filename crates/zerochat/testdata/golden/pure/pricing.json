@@ -1,0 +1,595 @@
+{
+  "codexUsage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 60000,
+    "inputTokens": 100000,
+    "outputTokens": 20000
+  },
+  "estimates": [
+    {
+      "harness": null,
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.4
+    },
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.4
+    },
+    {
+      "harness": "codex",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.206
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.3625
+    },
+    {
+      "harness": null,
+      "model": "claude-haiku-4-5-20251001",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.4
+    },
+    {
+      "harness": "claude",
+      "model": "claude-haiku-4-5-20251001",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.4
+    },
+    {
+      "harness": "codex",
+      "model": "claude-haiku-4-5-20251001",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.206
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-haiku-4-5-20251001",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.3625
+    },
+    {
+      "harness": null,
+      "model": "claude-sonnet-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 1.2
+    },
+    {
+      "harness": "claude",
+      "model": "claude-sonnet-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 1.2
+    },
+    {
+      "harness": "codex",
+      "model": "claude-sonnet-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.618
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-sonnet-4-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 1.0875
+    },
+    {
+      "harness": null,
+      "model": "claude-sonnet-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.8
+    },
+    {
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.8
+    },
+    {
+      "harness": "codex",
+      "model": "claude-sonnet-5",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.412
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-sonnet-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.725
+    },
+    {
+      "harness": null,
+      "model": "claude-opus-4-1",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 6.0
+    },
+    {
+      "harness": "claude",
+      "model": "claude-opus-4-1",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 6.0
+    },
+    {
+      "harness": "codex",
+      "model": "claude-opus-4-1",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 3.09
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-opus-4-1",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 5.4375
+    },
+    {
+      "harness": null,
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 1.4
+    },
+    {
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 1.4
+    },
+    {
+      "harness": "codex",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 0.812
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": 1.25
+    },
+    {
+      "harness": null,
+      "model": "claude-3-5-haiku",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "claude-3-5-haiku",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "claude-3-5-haiku",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "claude-3-5-haiku",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": null,
+      "model": "gpt-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "gpt-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "gpt-5",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": null,
+      "model": "gpt-5-codex",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "gpt-5-codex",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5-codex",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "gpt-5-codex",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": null,
+      "model": "gpt-5-mini",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "gpt-5-mini",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5-mini",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "gpt-5-mini",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": null,
+      "model": "o3",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "o3",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "o3",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "o3",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": null,
+      "model": "gemini-2.5-pro",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "gemini-2.5-pro",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "gemini-2.5-pro",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "gemini-2.5-pro",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": null,
+      "model": "unknown-model",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "claude",
+      "model": "unknown-model",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "codex",
+      "model": "unknown-model",
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 60000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    },
+    {
+      "harness": "copilot",
+      "model": "unknown-model",
+      "usage": {
+        "cacheCreationInputTokens": 50000,
+        "cacheReadInputTokens": 1000000,
+        "inputTokens": 100000,
+        "outputTokens": 20000
+      },
+      "usd": null
+    }
+  ],
+  "sum": {
+    "cacheCreationInputTokens": 50000,
+    "cacheReadInputTokens": 1060000,
+    "inputTokens": 200000,
+    "outputTokens": 40000
+  },
+  "sumTotal": 1350000,
+  "usage": {
+    "cacheCreationInputTokens": 50000,
+    "cacheReadInputTokens": 1000000,
+    "inputTokens": 100000,
+    "outputTokens": 20000
+  }
+}

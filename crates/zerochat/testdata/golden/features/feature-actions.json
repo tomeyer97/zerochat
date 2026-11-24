@@ -1,0 +1,670 @@
+[
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "start",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "start",
+      "stop",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop"
+    ],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop"
+    ],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "unpause",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "start",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "start",
+      "stop",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": false,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "unpause"
+    ],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "unpause"
+    ],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause"
+    ],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause"
+    ],
+    "active": false,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "start",
+      "stop",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": false,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "start",
+      "stop",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause",
+      "max_parallel"
+    ],
+    "active": true,
+    "allFinished": false,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": false,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": false,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  },
+  {
+    "actions": [],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": false
+  },
+  {
+    "actions": [
+      "stop",
+      "unpause"
+    ],
+    "active": true,
+    "allFinished": true,
+    "canSpawn": true,
+    "daemonAlive": true,
+    "paused": true,
+    "readable": true
+  }
+]

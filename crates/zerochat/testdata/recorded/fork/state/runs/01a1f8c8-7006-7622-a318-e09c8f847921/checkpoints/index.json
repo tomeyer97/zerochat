@@ -1,0 +1,22 @@
+[
+  {
+    "checkpointId": "01a1f8c8-815a-7cf2-937f-63e43ee9b7c9",
+    "sequence": 1,
+    "node": "worker",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1795175252314
+  },
+  {
+    "checkpointId": "01a1f8c9-2ab6-7e22-a9f0-74979c99c83a",
+    "sequence": 2,
+    "node": "parallel_reviews",
+    "mapIndices": [],
+    "loopIterations": [
+      1
+    ],
+    "createdAt": 1795175295670
+  }
+]

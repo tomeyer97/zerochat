@@ -1,0 +1,95 @@
+{
+  "body": {
+    "batchId": "20261108-152720-fb0664",
+    "capUsd": 6.0,
+    "costUsd": 6.0542834,
+    "exitReason": null,
+    "failingTests": [
+      "bc90bea37ab6/tests.test_gaps.test_colorize_gron_output",
+      "bc90bea37ab6/tests.test_gaps.test_colorize_json_output_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_array_length",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_json_statement_type_assertion",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_numeric_key_in_ungron",
+      "bc90bea37ab6/tests.test_gaps.test_invalid_quoted_key_in_ungron"
+    ],
+    "label": "r2-hermetic2",
+    "nodeCosts": [
+      {
+        "calls": 2,
+        "costUsd": 2.550665,
+        "node": "repair"
+      },
+      {
+        "calls": 1,
+        "costUsd": 1.612412,
+        "node": "build"
+      },
+      {
+        "calls": 3,
+        "costUsd": 1.3109317,
+        "node": "oracle"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.5802747,
+        "node": "explore"
+      },
+      {
+        "calls": 1,
+        "costUsd": 0.0,
+        "node": "postmortem"
+      }
+    ],
+    "overLimit": "budget",
+    "regressionPassed": null,
+    "regressionTotal": null,
+    "reportedCostUsd": 6.0542834,
+    "runId": "20261108-152720-47b18a",
+    "score": 0.78125,
+    "seed": 0,
+    "state": "scored",
+    "steps": [
+      {
+        "node": "explore#1",
+        "score": 0.0,
+        "seq": 0,
+        "testsPassed": 0,
+        "testsTotal": 224
+      },
+      {
+        "node": "build#1",
+        "score": 0.15625,
+        "seq": 1,
+        "testsPassed": 35,
+        "testsTotal": 224
+      },
+      {
+        "node": "repair#1",
+        "score": 0.183035714,
+        "seq": 2,
+        "testsPassed": 41,
+        "testsTotal": 224
+      },
+      {
+        "node": "repair#2",
+        "score": 0.78125,
+        "seq": 3,
+        "testsPassed": 175,
+        "testsTotal": 224
+      },
+      {
+        "node": "final",
+        "score": 0.78125,
+        "seq": 4,
+        "testsPassed": 175,
+        "testsTotal": 224
+      }
+    ],
+    "task": "tomnomnom__gron.88a6234",
+    "testsPassed": 175,
+    "testsTotal": 224,
+    "wallS": 3457.537902832,
+    "zeroshotRunId": "01a1bb8e-8377-7e71-b506-53e82f281c70"
+  },
+  "status": 200
+}

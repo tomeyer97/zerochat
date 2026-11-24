@@ -1,0 +1,629 @@
+[
+  [
+    "",
+    []
+  ],
+  [
+    "\n\n\n",
+    []
+  ],
+  [
+    "plain paragraph",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "plain paragraph"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "line one\nline two\n\nsecond paragraph",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "line one\nline two"
+          }
+        ],
+        "t": "p"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "second paragraph"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "windows\r\nline\rendings",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "windows\nline\nendings"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "# h1\n## h2 ##\n###### h6\n####### seven\n#nospace",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "h1"
+          }
+        ],
+        "level": 1,
+        "t": "h"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "h2"
+          }
+        ],
+        "level": 2,
+        "t": "h"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "h6"
+          }
+        ],
+        "level": 6,
+        "t": "h"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "####### seven\n#nospace"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "```\ncode\n```",
+    [
+      {
+        "lang": "",
+        "t": "code",
+        "v": "code"
+      }
+    ]
+  ],
+  [
+    "```ts title\nconst x = 1;\n\n```\nafter",
+    [
+      {
+        "lang": "ts",
+        "t": "code",
+        "v": "const x = 1;\n"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "after"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "~~~py\nunclosed fence",
+    [
+      {
+        "lang": "py",
+        "t": "code",
+        "v": "unclosed fence"
+      }
+    ]
+  ],
+  [
+    "````\n```\ninner\n````",
+    [
+      {
+        "lang": "",
+        "t": "code",
+        "v": "```\ninner"
+      }
+    ]
+  ],
+  [
+    "  ```js\n  indented fence\n  ```",
+    [
+      {
+        "lang": "js",
+        "t": "code",
+        "v": "  indented fence"
+      }
+    ]
+  ],
+  [
+    "---\n***\n___\n- - -\n--",
+    [
+      {
+        "t": "hr"
+      },
+      {
+        "t": "hr"
+      },
+      {
+        "t": "hr"
+      },
+      {
+        "t": "hr"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "--"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "> quote\n> # heading in quote\n>\n> - item",
+    [
+      {
+        "c": [
+          {
+            "c": [
+              {
+                "t": "text",
+                "v": "quote"
+              }
+            ],
+            "t": "p"
+          },
+          {
+            "c": [
+              {
+                "t": "text",
+                "v": "heading in quote"
+              }
+            ],
+            "level": 1,
+            "t": "h"
+          },
+          {
+            "items": [
+              [
+                {
+                  "t": "text",
+                  "v": "item"
+                }
+              ]
+            ],
+            "t": "ul"
+          }
+        ],
+        "t": "quote"
+      }
+    ]
+  ],
+  [
+    ">no space\n> > nested",
+    [
+      {
+        "c": [
+          {
+            "c": [
+              {
+                "t": "text",
+                "v": "no space"
+              }
+            ],
+            "t": "p"
+          },
+          {
+            "c": [
+              {
+                "c": [
+                  {
+                    "t": "text",
+                    "v": "nested"
+                  }
+                ],
+                "t": "p"
+              }
+            ],
+            "t": "quote"
+          }
+        ],
+        "t": "quote"
+      }
+    ]
+  ],
+  [
+    "- a\n- b\n  continued\n* c\n+ d",
+    [
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "a"
+            }
+          ],
+          [
+            {
+              "t": "text",
+              "v": "b\ncontinued"
+            }
+          ],
+          [
+            {
+              "t": "text",
+              "v": "c"
+            }
+          ],
+          [
+            {
+              "t": "text",
+              "v": "d"
+            }
+          ]
+        ],
+        "t": "ul"
+      }
+    ]
+  ],
+  [
+    "1. one\n2) two\n10. ten",
+    [
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "one"
+            }
+          ],
+          [
+            {
+              "t": "text",
+              "v": "two"
+            }
+          ],
+          [
+            {
+              "t": "text",
+              "v": "ten"
+            }
+          ]
+        ],
+        "start": 1,
+        "t": "ol"
+      }
+    ]
+  ],
+  [
+    "3. starts at three\n4. four",
+    [
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "starts at three"
+            }
+          ],
+          [
+            {
+              "t": "text",
+              "v": "four"
+            }
+          ]
+        ],
+        "start": 3,
+        "t": "ol"
+      }
+    ]
+  ],
+  [
+    "- item\n\n- after blank",
+    [
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "item"
+            }
+          ]
+        ],
+        "t": "ul"
+      },
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "after blank"
+            }
+          ]
+        ],
+        "t": "ul"
+      }
+    ]
+  ],
+  [
+    "- item\nparagraph right after",
+    [
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "item"
+            }
+          ]
+        ],
+        "t": "ul"
+      },
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "paragraph right after"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "para\n- list right after",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "para"
+          }
+        ],
+        "t": "p"
+      },
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "list right after"
+            }
+          ]
+        ],
+        "t": "ul"
+      }
+    ]
+  ],
+  [
+    "para\n1. numbered right after",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "para"
+          }
+        ],
+        "t": "p"
+      },
+      {
+        "items": [
+          [
+            {
+              "t": "text",
+              "v": "numbered right after"
+            }
+          ]
+        ],
+        "start": 1,
+        "t": "ol"
+      }
+    ]
+  ],
+  [
+    "| a | b |\n|---|:--:|\n| 1 | **2** |\n| 3 |",
+    [
+      {
+        "rows": [
+          [
+            [
+              {
+                "t": "text",
+                "v": "a"
+              }
+            ],
+            [
+              {
+                "t": "text",
+                "v": "b"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "text",
+                "v": "1"
+              }
+            ],
+            [
+              {
+                "c": [
+                  {
+                    "t": "text",
+                    "v": "2"
+                  }
+                ],
+                "t": "strong"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "text",
+                "v": "3"
+              }
+            ]
+          ]
+        ],
+        "t": "table"
+      }
+    ]
+  ],
+  [
+    "| only header |\n| --- |",
+    [
+      {
+        "rows": [
+          [
+            [
+              {
+                "t": "text",
+                "v": "only header"
+              }
+            ]
+          ]
+        ],
+        "t": "table"
+      }
+    ]
+  ],
+  [
+    "| not | a table |\nno separator",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "| not | a table |\nno separator"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "a | b\n--|--\n1 | 2",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "a | b\n--|--\n1 | 2"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "|---|---|\n|---|---|\n| x | y |",
+    [
+      {
+        "rows": [
+          [
+            [
+              {
+                "t": "text",
+                "v": "---"
+              }
+            ],
+            [
+              {
+                "t": "text",
+                "v": "---"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "text",
+                "v": "x"
+              }
+            ],
+            [
+              {
+                "t": "text",
+                "v": "y"
+              }
+            ]
+          ]
+        ],
+        "t": "table"
+      }
+    ]
+  ],
+  [
+    "<script>alert(1)</script>\n<b>raw html</b>",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "<script>alert(1)</script>\n<b>raw html</b>"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "\\# not a heading\n\\- not a list",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "# not a heading\n- not a list"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ],
+  [
+    "   \n  # indented heading?\n",
+    [
+      {
+        "c": [
+          {
+            "t": "text",
+            "v": "  # indented heading?"
+          }
+        ],
+        "t": "p"
+      }
+    ]
+  ]
+]

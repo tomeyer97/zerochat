@@ -1,0 +1,53 @@
+{
+  "editable": {
+    "node": {
+      "button": "Replay with changes from acceptance…",
+      "confirm": "Replay with changes",
+      "confirmTitle": "Replay with changes from In parallel (round 2)?",
+      "hint": "Start a new run from a checkpoint, changing prompts or models",
+      "lineageAs": "Replayed with changes as",
+      "lineageFrom": "Replayed with changes from",
+      "next": "Replay with changes…",
+      "started": "Replay with changes started.",
+      "title": "Replay with changes"
+    },
+    "plain": {
+      "button": "Replay with changes…",
+      "confirm": "Replay with changes",
+      "confirmTitle": "Replay with changes?",
+      "hint": "Start a new run from a checkpoint, changing prompts or models",
+      "lineageAs": "Replayed with changes as",
+      "lineageFrom": "Replayed with changes from",
+      "next": "Replay with changes…",
+      "started": "Replay with changes started.",
+      "title": "Replay with changes"
+    },
+    "resume": "Continues in a new run from where this one stopped (its latest checkpoint), with the same graph, prompts and models. The workspace is kept as it is. To change settings, use Replay with changes."
+  },
+  "rollback": "The workspace goes back to the In parallel (round 2) checkpoint: changes made in it after that point are discarded.",
+  "stock": {
+    "node": {
+      "button": "Start again from acceptance…",
+      "confirm": "Start again",
+      "confirmTitle": "Start again from In parallel (round 2)?",
+      "hint": "Start a new run from a checkpoint you pick, with the same settings",
+      "lineageAs": "Resumed as",
+      "lineageFrom": "Resumed from",
+      "next": "Start again…",
+      "started": "Started again from the In parallel (round 2) checkpoint.",
+      "title": "Start again from a checkpoint"
+    },
+    "plain": {
+      "button": "Start again from…",
+      "confirm": "Start again",
+      "confirmTitle": "Start again?",
+      "hint": "Start a new run from a checkpoint you pick, with the same settings",
+      "lineageAs": "Resumed as",
+      "lineageFrom": "Resumed from",
+      "next": "Start again…",
+      "started": "Started again.",
+      "title": "Start again from a checkpoint"
+    },
+    "resume": "Continues in a new run from where this one stopped (its latest checkpoint), with the same graph, prompts and models. The workspace is kept as it is."
+  }
+}

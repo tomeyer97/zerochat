@@ -1,0 +1,15 @@
+14:22:04 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] start label='r2-hermetic' version=bb5e174caf model=per-node art=/data/pb/runs/20261108-142204-d922d5
+14:22:05 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] sandbox up; launching zeroshot
+14:22:12 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node start  explore (exec 1, attempt 1)
+14:26:37 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node done   explore -> verified 
+14:26:42 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node start  build (exec 2, attempt 1)
+14:37:11 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node done   build -> verified 
+14:37:17 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node start  oracle (exec 3, attempt 1)
+14:40:26 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node done   oracle -> verifier rejected
+14:40:32 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node start  repair (exec 4, attempt 1)
+14:48:49 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node done   repair -> verified 
+14:48:55 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node start  oracle (exec 5, attempt 1)
+14:51:12 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node done   oracle -> verifier rejected
+14:51:20 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] node start  repair (exec 6, attempt 1)
+14:59:44 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] LIMIT: budget_exceeded after 2259s, 6 steps
+14:59:44 [20261108-142204-d922d5 yaa110__nomino.f892499 s0] force-stopping…[fixture: 1407 more characters cut]

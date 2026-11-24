@@ -1,0 +1,36 @@
+[
+  {
+    "execution": 1,
+    "transcript": {
+      "items": [
+        {
+          "at": 1795002822500,
+          "kind": "text",
+          "text": "Running sleep 20."
+        },
+        {
+          "at": 1795002823500,
+          "kind": "steer",
+          "text": "Write BANANA instead of APPLE."
+        },
+        {
+          "at": 1795002824500,
+          "kind": "steer",
+          "text": "Also add a test.\n\n[queued]"
+        },
+        {
+          "at": 1795002825500,
+          "kind": "steer",
+          "text": "Too late.\n\n[undelivered]"
+        },
+        {
+          "at": 1795002826500,
+          "kind": "text",
+          "text": "Understood: writing BANANA."
+        }
+      ],
+      "limitations": [],
+      "source": "ledger"
+    }
+  }
+]

@@ -1,0 +1,519 @@
+{
+  "empty": [],
+  "snapshots": {
+    "features/calc/changes": [
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "greet.py",
+            "path": "calc/greet.py"
+          },
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "ops.py",
+            "path": "calc/ops.py"
+          }
+        ],
+        "dir": true,
+        "name": "calc",
+        "path": "calc"
+      }
+    ],
+    "features/calc/changes-diff": [
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "greet.py",
+            "path": "calc/greet.py"
+          },
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "ops.py",
+            "path": "calc/ops.py"
+          }
+        ],
+        "dir": true,
+        "name": "calc",
+        "path": "calc"
+      }
+    ],
+    "workspace/changes": [
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "test_core.py",
+            "path": "tests/test_core.py"
+          }
+        ],
+        "dir": true,
+        "name": "tests",
+        "path": "tests"
+      },
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "core.py",
+            "path": "textkit/core.py"
+          }
+        ],
+        "dir": true,
+        "name": "textkit",
+        "path": "textkit"
+      },
+      {
+        "children": "<undefined>",
+        "dir": false,
+        "name": "NOTES.md",
+        "path": "NOTES.md"
+      }
+    ],
+    "workspace/changes-execution": [
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "test_core.py",
+            "path": "tests/test_core.py"
+          }
+        ],
+        "dir": true,
+        "name": "tests",
+        "path": "tests"
+      },
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "core.py",
+            "path": "textkit/core.py"
+          }
+        ],
+        "dir": true,
+        "name": "textkit",
+        "path": "textkit"
+      }
+    ],
+    "workspace/tree": [
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "test_core.py",
+            "path": "tests/test_core.py"
+          }
+        ],
+        "dir": true,
+        "name": "tests",
+        "path": "tests"
+      },
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "core.py",
+            "path": "textkit/core.py"
+          }
+        ],
+        "dir": true,
+        "name": "textkit",
+        "path": "textkit"
+      },
+      {
+        "children": "<undefined>",
+        "dir": false,
+        "name": "NOTES.md",
+        "path": "NOTES.md"
+      },
+      {
+        "children": "<undefined>",
+        "dir": false,
+        "name": "README.md",
+        "path": "README.md"
+      }
+    ],
+    "workspace/tree-at-commit": [
+      {
+        "children": [
+          {
+            "children": "<undefined>",
+            "dir": false,
+            "name": "core.py",
+            "path": "textkit/core.py"
+          }
+        ],
+        "dir": true,
+        "name": "textkit",
+        "path": "textkit"
+      },
+      {
+        "children": "<undefined>",
+        "dir": false,
+        "name": "README.md",
+        "path": "README.md"
+      }
+    ]
+  },
+  "table": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "path.ts",
+              "path": "/abs/path.ts"
+            }
+          ],
+          "dir": true,
+          "name": "abs",
+          "path": "/abs"
+        }
+      ],
+      "dir": true,
+      "name": "",
+      "path": ""
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "m.cpython-312.pyc",
+          "path": "__pycache__/m.cpython-312.pyc"
+        }
+      ],
+      "dir": true,
+      "name": "__pycache__",
+      "path": "__pycache__"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "x",
+          "path": ".mypy_cache/x"
+        }
+      ],
+      "dir": true,
+      "name": ".mypy_cache",
+      "path": ".mypy_cache"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "v",
+          "path": ".pytest_cache/v"
+        }
+      ],
+      "dir": true,
+      "name": ".pytest_cache",
+      "path": ".pytest_cache"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "x",
+          "path": ".ruff_cache/x"
+        }
+      ],
+      "dir": true,
+      "name": ".ruff_cache",
+      "path": ".ruff_cache"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "x",
+          "path": ".tox/x"
+        }
+      ],
+      "dir": true,
+      "name": ".tox",
+      "path": ".tox"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "python",
+              "path": ".venv/bin/python"
+            }
+          ],
+          "dir": true,
+          "name": "bin",
+          "path": ".venv/bin"
+        }
+      ],
+      "dir": true,
+      "name": ".venv",
+      "path": ".venv"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "y.js",
+              "path": "a/node_modules/y.js"
+            }
+          ],
+          "dir": true,
+          "name": "node_modules",
+          "path": "a/node_modules"
+        }
+      ],
+      "dir": true,
+      "name": "a",
+      "path": "a"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": ".DS_Store",
+          "path": "dir/.DS_Store"
+        }
+      ],
+      "dir": true,
+      "name": "dir",
+      "path": "dir"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "slash.ts",
+              "path": "double//slash.ts"
+            }
+          ],
+          "dir": true,
+          "name": "",
+          "path": "double/"
+        }
+      ],
+      "dir": true,
+      "name": "double",
+      "path": "double"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "z.js",
+          "path": "my_node_modules/z.js"
+        }
+      ],
+      "dir": true,
+      "name": "my_node_modules",
+      "path": "my_node_modules"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "index.js",
+              "path": "node_modules/x/index.js"
+            }
+          ],
+          "dir": true,
+          "name": "x",
+          "path": "node_modules/x"
+        }
+      ],
+      "dir": true,
+      "name": "node_modules",
+      "path": "node_modules"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "m.pyc",
+              "path": "pkg/__pycache__/m.pyc"
+            }
+          ],
+          "dir": true,
+          "name": "__pycache__",
+          "path": "pkg/__pycache__"
+        }
+      ],
+      "dir": true,
+      "name": "pkg",
+      "path": "pkg"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "PKG-INFO",
+          "path": "pkg.egg-info/PKG-INFO"
+        }
+      ],
+      "dir": true,
+      "name": "pkg.egg-info",
+      "path": "pkg.egg-info"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": "<undefined>",
+              "dir": false,
+              "name": "c.ts",
+              "path": "src/lib/c.ts"
+            }
+          ],
+          "dir": true,
+          "name": "lib",
+          "path": "src/lib"
+        },
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "a.ts",
+          "path": "src/a.ts"
+        },
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "b.ts",
+          "path": "src/b.ts"
+        }
+      ],
+      "dir": true,
+      "name": "src",
+      "path": "src"
+    },
+    {
+      "children": [
+        {
+          "children": "<undefined>",
+          "dir": false,
+          "name": "",
+          "path": "trailing/"
+        }
+      ],
+      "dir": true,
+      "name": "trailing",
+      "path": "trailing"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "",
+      "path": ""
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": ".DS_Store",
+      "path": ".DS_Store"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "alpha.txt",
+      "path": "alpha.txt"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "e.txt",
+      "path": "e.txt"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "é.txt",
+      "path": "é.txt"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "egg-info",
+      "path": "egg-info"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "m.pyc",
+      "path": "m.pyc"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "m.pyo",
+      "path": "m.pyo"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "README.md",
+      "path": "README.md"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "src",
+      "path": "src"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "tsconfig.tsbuildinfo",
+      "path": "tsconfig.tsbuildinfo"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "x.DS_Store",
+      "path": "x.DS_Store"
+    },
+    {
+      "children": "<undefined>",
+      "dir": false,
+      "name": "Zeta.txt",
+      "path": "Zeta.txt"
+    }
+  ]
+}

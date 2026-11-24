@@ -1,0 +1,73 @@
+# The label set of the repository. scripts/labels.sh applies it (gh label create --force).
+# How the labels are used for triage: CONTRIBUTING.md, "Issues and triage".
+# One label per entry; keep the three keys on single lines (labels.sh reads them line by line).
+
+# Type: what kind of work
+- name: "bug"
+  color: "d73a4a"
+  description: "Something does not work as documented"
+- name: "feature"
+  color: "a2eeef"
+  description: "A new feature or a change to one"
+- name: "docs"
+  color: "0075ca"
+  description: "Documentation only"
+- name: "chore"
+  color: "cfd3d7"
+  description: "Maintenance: build, CI, refactoring, tooling"
+
+# Status: where it stands
+- name: "needs-triage"
+  color: "fbca04"
+  description: "New; the maintainer has not looked at it yet"
+- name: "confirmed"
+  color: "0e8a16"
+  description: "Reproduced or accepted; ready to work on"
+- name: "blocked"
+  color: "b60205"
+  description: "Waiting on something else (named in a comment)"
+- name: "needs-info"
+  color: "fef2c0"
+  description: "Waiting on the reporter for details"
+
+# Priority
+- name: "priority: high"
+  color: "b60205"
+  description: "Breaks a main use or many users; next to fix"
+- name: "priority: medium"
+  color: "d93f0b"
+  description: "Should be fixed soon"
+- name: "priority: low"
+  color: "c5def5"
+  description: "Nice to have"
+
+# Area: which part of the repository
+- name: "area: server"
+  color: "5319e7"
+  description: "The zerochat server (crates/zerochat)"
+- name: "area: web"
+  color: "5319e7"
+  description: "The web UI (web/)"
+- name: "area: zsf"
+  color: "5319e7"
+  description: "zsf, Zeroshot features (crates/zsf)"
+- name: "area: npm"
+  color: "5319e7"
+  description: "The npm packages and shims (npm/)"
+- name: "area: release"
+  color: "5319e7"
+  description: "Release pipeline and packaging"
+- name: "area: docs"
+  color: "5319e7"
+  description: "README, docs/ and the community files"
+
+# Contributors
+- name: "good first issue"
+  color: "7057ff"
+  description: "Small and well described; a good start"
+- name: "help wanted"
+  color: "008672"
+  description: "The maintainer would welcome a pull request"
+- name: "dependencies"
+  color: "0366d6"
+  description: "Dependency updates (Dependabot)"

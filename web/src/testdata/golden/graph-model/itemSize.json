@@ -1,0 +1,1024 @@
+{
+  "admitted-only": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "attempts-exhausted": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "checkout-unavailable": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "closing-postmortem": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "codex-estimate": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "copilot-session": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "delivery-failed": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "diag-api-hang": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-authentication-required": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-crash": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-input-required": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-malformed-result": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-other": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-policy-denied": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-refusal": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-code-timeout": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-context": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-credentials": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-disk": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-malformed-stream": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-missing-cli": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-model": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-network": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-permission": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-provider-down": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-provider-timeout": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-rate-limit": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-stream-cut": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "diag-usage-limit": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "force-stopped": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "fork-only/fork-bad-credentials": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    },
+    "worker_failed": {
+      "height": 32,
+      "width": 135
+    }
+  },
+  "fork-only/fork-chaos-transient": {
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-chaos-usage-limit": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    },
+    "worker_failed": {
+      "height": 32,
+      "width": 135
+    }
+  },
+  "fork-only/fork-controller-killed": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-force-stopped": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-happy-path": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-late-failure": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "review_failed": {
+      "height": 32,
+      "width": 135
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-replay": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-resumed": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-reviewer-never-satisfied": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_attempts_exhausted": {
+      "height": 32,
+      "width": 219
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "parallel_reviews": {
+      "height": 60,
+      "width": 200
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-steered": {
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "fork-only/fork-unknown-model": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    },
+    "worker_failed": {
+      "height": 32,
+      "width": 135
+    }
+  },
+  "fork-only/fork-worker-timeout": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    },
+    "worker_failed": {
+      "height": 32,
+      "width": 135
+    }
+  },
+  "fork-only/replay-child": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "fork-only/replay-parent": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_attempts_exhausted": {
+      "height": 32,
+      "width": 219
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "fork-only/steered": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "graph-ended-other": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "lane-mixed": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "lane-unknown-harness": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "map-parallel": {
+    "fix": {
+      "height": 52,
+      "width": 208
+    },
+    "per_file": {
+      "height": 60,
+      "width": 200
+    },
+    "summarize": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "no-checkpoints": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "resumed-original": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "resumed-successor": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "running-live": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "running-stock": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "runtime-failed-checkpoint": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "runtime-failed-permission": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "runtime-failed-storage": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "runtime-failed-unknown": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "runtime-lost": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "stalled": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "stalled-disk": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "stalled-live-usage": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "stalled-then-closed": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "succeeded": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "succeeded-stock": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "tool-output-rate-limit": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "unknown-phase": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "voided": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "work-exhausted": {
+    "acceptance": {
+      "height": 52,
+      "width": 208
+    },
+    "change_attempts_exhausted": {
+      "height": 32,
+      "width": 219
+    },
+    "change_loop": {
+      "height": 60,
+      "width": 200
+    },
+    "code": {
+      "height": 52,
+      "width": 208
+    },
+    "code_review": {
+      "height": 52,
+      "width": 208
+    },
+    "reviews": {
+      "height": 60,
+      "width": 200
+    }
+  },
+  "zeroshot-16/zeroshot16-normal": {
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "zeroshot-16/zeroshot16-steered": {
+    "done": {
+      "height": 32,
+      "width": 96
+    },
+    "worker": {
+      "height": 52,
+      "width": 208
+    }
+  },
+  "zeroshot-16/zeroshot16-unknown-model": {
+    "worker": {
+      "height": 52,
+      "width": 208
+    },
+    "worker_failed": {
+      "height": 32,
+      "width": 135
+    }
+  }
+}

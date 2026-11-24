@@ -1,0 +1,7 @@
+{
+  "body": {
+    "code": "file_unavailable",
+    "message": "no such file in the workspace"
+  },
+  "status": 404
+}

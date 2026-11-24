@@ -1,0 +1,218 @@
+{
+  "out": [
+    [
+      "nothing",
+      []
+    ],
+    [
+      "one set",
+      [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    ],
+    [
+      "two sets",
+      [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499",
+        "cheat__cheat.b8098dc",
+        "mibk__dupl.1bf052b"
+      ]
+    ],
+    [
+      "sets and ids",
+      [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499",
+        "cheat__cheat.b8098dc",
+        "mibk__dupl.1bf052b",
+        "unknown-task"
+      ]
+    ],
+    [
+      "unknown set name",
+      [
+        "no-such-set"
+      ]
+    ],
+    [
+      "every set",
+      [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499",
+        "cheat__cheat.b8098dc",
+        "mibk__dupl.1bf052b",
+        "k8s-job-backoff-limit-per-index"
+      ]
+    ]
+  ],
+  "taskSets": [
+    {
+      "name": "dev",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "holdout",
+      "tasks": [
+        "cheat__cheat.b8098dc",
+        "mibk__dupl.1bf052b"
+      ]
+    },
+    {
+      "name": "k8s",
+      "tasks": [
+        "k8s-job-backoff-limit-per-index"
+      ]
+    },
+    {
+      "name": "smoke",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "r1-screen-spec2",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "r1-ctrl-diffloop",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "r2-hermetic",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "r2-hermetic2",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "r3-noaccept",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "r3-h2-noaccept",
+      "tasks": [
+        "tomnomnom__gron.88a6234",
+        "yaa110__nomino.f892499"
+      ]
+    },
+    {
+      "name": "clone-v1-sonnet-build",
+      "tasks": [
+        "cheat__cheat.b8098dc",
+        "mibk__dupl.1bf052b",
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "clone-v1",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "ctrlc-test",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "haiku-adversarial",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "haiku-prototype-plan",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "k8s-sc-sonnet5",
+      "tasks": [
+        "k8s-job-backoff-limit-per-index"
+      ]
+    },
+    {
+      "name": "replay-build-haiku",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "replay-build-sonnet",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "replay-sonnet-explore-haiku-build",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "sc-template-haiku",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "smoke-haiku",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "sweep:sweep-triage-repair:repair#1:claude-haiku-4-5",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "sweep:sweep-triage-repair:repair#1:claude-sonnet-5",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "sweep:sweep-triage-repair:triage#1:repair#1:claude-haiku-4-5",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "sweep:sweep-triage-repair:triage#1:repair#1:claude-sonnet-5",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    },
+    {
+      "name": "ticket-v1",
+      "tasks": [
+        "tomnomnom__gron.88a6234"
+      ]
+    }
+  ]
+}

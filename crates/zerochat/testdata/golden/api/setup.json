@@ -1,0 +1,41 @@
+{
+  "body": {
+    "app": "zerochat",
+    "ok": false,
+    "pb": {
+      "configured": true,
+      "root": "<root>/pb"
+    },
+    "problems": [
+      {
+        "check": "zeroshot",
+        "fix": "npm i -g @the-open-engine-company/zeroshot@latest",
+        "message": "Zeroshot not found at <root>/no-such-zeroshot"
+      }
+    ],
+    "runs": {
+      "count": "<runs in the world>",
+      "exists": true,
+      "readable": true,
+      "stateDir": "<root>/state"
+    },
+    "version": "<version>",
+    "zeroshot": {
+      "found": false,
+      "meetsMinimum": false,
+      "minimum": "16.1.0",
+      "program": "<root>/no-such-zeroshot",
+      "steer": false,
+      "steerNode": false,
+      "stopResume": false,
+      "version": null
+    },
+    "zsf": {
+      "features": "<features in the world>",
+      "found": false,
+      "program": null,
+      "version": null
+    }
+  },
+  "status": 200
+}

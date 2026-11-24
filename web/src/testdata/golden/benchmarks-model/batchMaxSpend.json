@@ -1,0 +1,35 @@
+{
+  "details": {
+    "20261107-222316-71f62e": 12,
+    "20261107-222316-910b7d": 36,
+    "20261108-142204-d474ae": 36,
+    "20261108-152720-fb0664": 36,
+    "20261108-170007-63721d": 36,
+    "20261108-170009-cace9c": 36,
+    "label_clone-v1": 8,
+    "label_clone-v1-sonnet-build": 45,
+    "label_ctrlc-test": 1,
+    "label_haiku-adversarial": 20,
+    "label_haiku-prototype-plan": 16,
+    "label_k8s-sc-sonnet5": 25,
+    "label_replay-build-haiku": 4,
+    "label_replay-build-sonnet": 48,
+    "label_replay-sonnet-explore-haiku-build": 16,
+    "label_sc-template-haiku": 2,
+    "label_smoke-haiku": 2,
+    "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5": 16,
+    "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5": 16,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5": 16,
+    "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5": 16,
+    "label_ticket-v1": 10
+  },
+  "table": [
+    null,
+    null,
+    null,
+    null,
+    20,
+    10,
+    0
+  ]
+}

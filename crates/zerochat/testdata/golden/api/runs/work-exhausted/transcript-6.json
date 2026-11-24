@@ -1,0 +1,80 @@
+{
+  "body": {
+    "execution": {
+      "accepted": true,
+      "attempt": 1,
+      "costSource": null,
+      "costUsd": null,
+      "diagnostic": null,
+      "durationMs": 1000,
+      "endSeq": 26,
+      "endedAt": 1795003134200,
+      "error": null,
+      "errorLines": [],
+      "harness": "claude",
+      "id": 6,
+      "input": {
+        "task": "Add slugify() to textkit."
+      },
+      "lastActivityAt": null,
+      "logLines": 0,
+      "mapIndices": [],
+      "model": "claude-haiku-4-5",
+      "node": "code_review",
+      "nodeInstance": 1,
+      "outcome": {
+        "artifacts": [],
+        "diagnostic": null,
+        "output": null,
+        "signals": {
+          "verdict": "approved"
+        },
+        "status": "verifier"
+      },
+      "output": null,
+      "retries": 0,
+      "reused": false,
+      "round": 2,
+      "sessionId": null,
+      "signals": {
+        "verdict": "approved"
+      },
+      "startSeq": 24,
+      "startedAt": 1795003133200,
+      "state": "accepted",
+      "timesApproximate": false,
+      "toolCalls": 0,
+      "usage": {
+        "cacheCreationInputTokens": 0,
+        "cacheReadInputTokens": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "usageSource": "ledger",
+      "voidReason": null,
+      "workspaceEnd": {
+        "base": "0000000000000000000000000000000000000006",
+        "commit": "000000000000000000000000000000000000006a",
+        "files": [
+          {
+            "additions": 12,
+            "deletions": 1,
+            "path": "textkit/core.py",
+            "status": "modified"
+          }
+        ]
+      },
+      "workspaceStart": {
+        "commit": "0000000000000000000000000000000000000006"
+      }
+    },
+    "instructions": null,
+    "sourceNote": "Claude's session log could not be matched to this node (this Zeroshot does not record the session id).",
+    "transcript": {
+      "items": [],
+      "limitations": [],
+      "source": "ledger"
+    }
+  },
+  "status": 200
+}

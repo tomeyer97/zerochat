@@ -1,0 +1,464 @@
+{
+  "batch/20261107-222316-71f62e#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/20261107-222316-71f62e#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/20261107-222316-71f62e#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/20261107-222316-71f62e#0\"].nodes[2]>"
+      ]
+    },
+    {
+      "loopMax": 8,
+      "loopName": "diff_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/20261107-222316-71f62e#0\"].nodes[3]>",
+        "<ref:harnesses[\"batch/20261107-222316-71f62e#0\"].nodes[4]>"
+      ]
+    }
+  ],
+  "batch/20261107-222316-910b7d#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/20261107-222316-910b7d#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/20261107-222316-910b7d#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 8,
+      "loopName": "diff_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/20261107-222316-910b7d#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/20261107-222316-910b7d#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/20261108-142204-d474ae#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-142204-d474ae#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/20261108-142204-d474ae#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 8,
+      "loopName": "diff_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-142204-d474ae#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/20261108-142204-d474ae#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/20261108-152720-fb0664#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-152720-fb0664#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/20261108-152720-fb0664#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 8,
+      "loopName": "diff_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-152720-fb0664#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/20261108-152720-fb0664#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/20261108-170007-63721d#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-170007-63721d#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/20261108-170007-63721d#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 8,
+      "loopName": "diff_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-170007-63721d#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/20261108-170007-63721d#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/20261108-170009-cace9c#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-170009-cace9c#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/20261108-170009-cace9c#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 8,
+      "loopName": "diff_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/20261108-170009-cace9c#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/20261108-170009-cace9c#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/label_clone-v1#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_clone-v1#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_clone-v1#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 3,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_clone-v1#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_clone-v1#0\"].nodes[3]>",
+        "<ref:harnesses[\"batch/label_clone-v1#0\"].nodes[4]>",
+        "<ref:harnesses[\"batch/label_clone-v1#0\"].nodes[5]>"
+      ]
+    }
+  ],
+  "batch/label_clone-v1-sonnet-build#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_clone-v1-sonnet-build#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_clone-v1-sonnet-build#0\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 3,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_clone-v1-sonnet-build#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_clone-v1-sonnet-build#0\"].nodes[3]>",
+        "<ref:harnesses[\"batch/label_clone-v1-sonnet-build#0\"].nodes[4]>",
+        "<ref:harnesses[\"batch/label_clone-v1-sonnet-build#0\"].nodes[5]>"
+      ]
+    }
+  ],
+  "batch/label_ctrlc-test#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_ctrlc-test#0\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_ctrlc-test#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_ctrlc-test#0\"].nodes[2]>"
+      ]
+    }
+  ],
+  "batch/label_haiku-adversarial#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_haiku-adversarial#0\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_haiku-adversarial#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_haiku-adversarial#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_haiku-adversarial#0\"].nodes[3]>",
+        "<ref:harnesses[\"batch/label_haiku-adversarial#0\"].nodes[4]>"
+      ]
+    }
+  ],
+  "batch/label_haiku-adversarial#1": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_haiku-adversarial#1\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_haiku-adversarial#1\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_haiku-adversarial#1\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_haiku-adversarial#1\"].nodes[3]>",
+        "<ref:harnesses[\"batch/label_haiku-adversarial#1\"].nodes[4]>"
+      ]
+    }
+  ],
+  "batch/label_haiku-prototype-plan#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[2]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[3]>",
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[4]>",
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[5]>",
+        "<ref:harnesses[\"batch/label_haiku-prototype-plan#0\"].nodes[6]>"
+      ]
+    }
+  ],
+  "batch/label_k8s-sc-sonnet5#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_k8s-sc-sonnet5#0\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 10,
+      "loopName": "change_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_k8s-sc-sonnet5#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_k8s-sc-sonnet5#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_k8s-sc-sonnet5#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/label_replay-build-haiku#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_replay-build-haiku#0\"].nodes[0]>"
+      ]
+    }
+  ],
+  "batch/label_replay-build-sonnet#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_replay-build-sonnet#0\"].nodes[0]>"
+      ]
+    }
+  ],
+  "batch/label_replay-sonnet-explore-haiku-build#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_replay-sonnet-explore-haiku-build#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_replay-sonnet-explore-haiku-build#0\"].nodes[1]>"
+      ]
+    }
+  ],
+  "batch/label_sc-template-haiku#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_sc-template-haiku#0\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 10,
+      "loopName": "change_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_sc-template-haiku#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_sc-template-haiku#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_sc-template-haiku#0\"].nodes[3]>"
+      ]
+    }
+  ],
+  "batch/label_smoke-haiku#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_smoke-haiku#0\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_smoke-haiku#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_smoke-haiku#0\"].nodes[2]>"
+      ]
+    }
+  ],
+  "batch/label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5#0\"].nodes[0]>"
+      ]
+    }
+  ],
+  "batch/label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5#0\"].nodes[0]>"
+      ]
+    }
+  ],
+  "batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5#0\"].nodes[1]>"
+      ]
+    }
+  ],
+  "batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5#0\"].nodes[1]>"
+      ]
+    }
+  ],
+  "batch/label_ticket-v1#0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[0]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[1]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[2]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[3]>"
+      ]
+    },
+    {
+      "loopMax": 3,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[4]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[5]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[6]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[7]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[8]>",
+        "<ref:harnesses[\"batch/label_ticket-v1#0\"].nodes[9]>"
+      ]
+    }
+  ],
+  "preview/0": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"preview/0\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"preview/0\"].nodes[1]>",
+        "<ref:harnesses[\"preview/0\"].nodes[2]>"
+      ]
+    }
+  ],
+  "preview/1": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"preview/1\"].nodes[0]>",
+        "<ref:harnesses[\"preview/1\"].nodes[1]>"
+      ]
+    },
+    {
+      "loopMax": 3,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"preview/1\"].nodes[2]>",
+        "<ref:harnesses[\"preview/1\"].nodes[3]>",
+        "<ref:harnesses[\"preview/1\"].nodes[4]>",
+        "<ref:harnesses[\"preview/1\"].nodes[5]>"
+      ]
+    }
+  ],
+  "preview/2": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"preview/2\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"preview/2\"].nodes[1]>",
+        "<ref:harnesses[\"preview/2\"].nodes[2]>",
+        "<ref:harnesses[\"preview/2\"].nodes[3]>",
+        "<ref:harnesses[\"preview/2\"].nodes[4]>"
+      ]
+    }
+  ],
+  "preview/3": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"preview/3\"].nodes[0]>",
+        "<ref:harnesses[\"preview/3\"].nodes[1]>",
+        "<ref:harnesses[\"preview/3\"].nodes[2]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"preview/3\"].nodes[3]>",
+        "<ref:harnesses[\"preview/3\"].nodes[4]>",
+        "<ref:harnesses[\"preview/3\"].nodes[5]>",
+        "<ref:harnesses[\"preview/3\"].nodes[6]>"
+      ]
+    }
+  ],
+  "preview/model-override": [
+    {
+      "loopMax": null,
+      "loopName": null,
+      "nodes": [
+        "<ref:harnesses[\"preview/model-override\"].nodes[0]>"
+      ]
+    },
+    {
+      "loopMax": 4,
+      "loopName": "review_loop",
+      "nodes": [
+        "<ref:harnesses[\"preview/model-override\"].nodes[1]>",
+        "<ref:harnesses[\"preview/model-override\"].nodes[2]>"
+      ]
+    }
+  ]
+}

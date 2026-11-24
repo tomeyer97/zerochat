@@ -1,0 +1,419 @@
+{
+  "events": [
+    {
+      "kind": "initialized",
+      "ts": 0
+    },
+    {
+      "kind": "started",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-001",
+      "slice": "01",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-001",
+      "slice": "01",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-001",
+      "slice": "01",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "failed: change_attempts_exhausted",
+      "kind": "run_finished",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "review loop exhausted (run run-002)",
+      "kind": "quality_failed",
+      "run_id": "run-002",
+      "slice": "02",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "waiting for review, not merged (approve = check and merge)",
+      "kind": "checkpoint_waiting",
+      "run_id": "run-003",
+      "slice": "03",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "zeroshot run: exit 2",
+      "kind": "launch_failed",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "#1: launch failed: zeroshot run: exit 2",
+      "kind": "infra_failure",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "infra-retry attempt",
+      "kind": "launched",
+      "run_id": "run-004",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "succeeded",
+      "kind": "run_finished",
+      "run_id": "run-004",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 2,
+      "detail": "<short> on feature/x",
+      "kind": "merged",
+      "run_id": "run-004",
+      "slice": "05",
+      "ts": 0
+    },
+    {
+      "attempt": 1,
+      "detail": "first attempt",
+      "kind": "launched",
+      "run_id": "run-005",
+      "slice": "06",
+      "ts": 0
+    }
+  ],
+  "report": {
+    "active": true,
+    "base": "main",
+    "branch": "feature/x",
+    "dir": "<root>/state/feat",
+    "max_parallel": 1,
+    "merged": 2,
+    "name": "feat",
+    "repo": "<root>/repo",
+    "slices": [
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-01-a1-<time>",
+          "log_file": "<root>/state/feat/runs/01-a1.log",
+          "n": 1,
+          "result": "merged",
+          "run_id": "run-001",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/01-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "commit": "<commit>",
+        "deps": [],
+        "id": "01",
+        "status": "merged",
+        "title": "Slice 01"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-02-a1-<time>",
+          "log_file": "<root>/state/feat/runs/02-a1.log",
+          "n": 1,
+          "reason": "review loop exhausted (run run-002)",
+          "result": "quality_failed",
+          "run_id": "run-002",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/02-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "deps": [],
+        "id": "02",
+        "reason": "review loop exhausted (run run-002)",
+        "status": "failed",
+        "title": "Slice 02",
+        "worktree": "<root>/state/feat/worktrees/02-slice-02"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "first",
+          "launch_key": "zsf-feat-03-a1-<time>",
+          "log_file": "<root>/state/feat/runs/03-a1.log",
+          "n": 1,
+          "run_id": "run-003",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/03-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": true,
+        "deps": [],
+        "id": "03",
+        "status": "waiting_for_review",
+        "title": "Slice 03",
+        "worktree": "<root>/state/feat/worktrees/03-slice-03"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [
+          "03"
+        ],
+        "id": "04",
+        "status": "pending",
+        "title": "Slice 04",
+        "waits_for": [
+          "03"
+        ]
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "ended_ms": 0,
+          "kind": "infra-retry",
+          "launch_key": "zsf-feat-05-a2-<time>",
+          "log_file": "<root>/state/feat/runs/05-a2.log",
+          "n": 2,
+          "result": "merged",
+          "run_id": "run-004",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/05-a2.md"
+        },
+        "attempts": 2,
+        "checkpoint": false,
+        "commit": "<commit>",
+        "deps": [],
+        "id": "05",
+        "status": "merged",
+        "title": "Slice 05"
+      },
+      {
+        "approved": false,
+        "attempt": {
+          "kind": "first",
+          "launch_key": "zsf-feat-06-a1-<time>",
+          "log_file": "<root>/state/feat/runs/06-a1.log",
+          "n": 1,
+          "run_id": "run-005",
+          "started_ms": 0,
+          "task_file": "<root>/state/feat/tasks/06-a1.md"
+        },
+        "attempts": 1,
+        "checkpoint": false,
+        "deps": [],
+        "id": "06",
+        "status": "running",
+        "title": "Slice 06",
+        "worktree": "<root>/state/feat/worktrees/06-slice-06"
+      },
+      {
+        "approved": false,
+        "attempts": 0,
+        "checkpoint": false,
+        "deps": [],
+        "id": "07",
+        "status": "pending",
+        "title": "Slice 07"
+      }
+    ],
+    "total": 7
+  },
+  "state": {
+    "active": true,
+    "consecutive_infra": 0,
+    "slices": {
+      "01": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-01-a1-<time>",
+            "log_file": "<root>/state/feat/runs/01-a1.log",
+            "n": 1,
+            "result": "merged",
+            "run_id": "run-001",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/01-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/01-slice-01",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "merged"
+      },
+      "02": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-02-a1-<time>",
+            "log_file": "<root>/state/feat/runs/02-a1.log",
+            "n": 1,
+            "reason": "review loop exhausted (run run-002)",
+            "result": "quality_failed",
+            "run_id": "run-002",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/02-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/02-slice-02",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "reason": "review loop exhausted (run run-002)",
+        "status": "failed",
+        "worktree": "<root>/state/feat/worktrees/02-slice-02"
+      },
+      "03": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-03-a1-<time>",
+            "log_file": "<root>/state/feat/runs/03-a1.log",
+            "n": 1,
+            "run_id": "run-003",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/03-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/03-slice-03",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "waiting_for_review",
+        "worktree": "<root>/state/feat/worktrees/03-slice-03"
+      },
+      "04": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      },
+      "05": {
+        "attempts": [
+          {
+            "ended_ms": 0,
+            "kind": "first",
+            "launch_key": "zsf-feat-05-a1-<time>",
+            "log_file": "<root>/state/feat/runs/05-a1.log",
+            "n": 1,
+            "reason": "launch failed: zeroshot run: exit 2",
+            "result": "launch_failed",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/05-a1.md"
+          },
+          {
+            "ended_ms": 0,
+            "kind": "infra-retry",
+            "launch_key": "zsf-feat-05-a2-<time>",
+            "log_file": "<root>/state/feat/runs/05-a2.log",
+            "n": 2,
+            "result": "merged",
+            "run_id": "run-004",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/05-a2.md"
+          }
+        ],
+        "branch": "zsf/feature/x/05-slice-05",
+        "commit": "<commit>",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 1,
+        "status": "merged"
+      },
+      "06": {
+        "attempts": [
+          {
+            "kind": "first",
+            "launch_key": "zsf-feat-06-a1-<time>",
+            "log_file": "<root>/state/feat/runs/06-a1.log",
+            "n": 1,
+            "run_id": "run-005",
+            "started_ms": 0,
+            "task_file": "<root>/state/feat/tasks/06-a1.md"
+          }
+        ],
+        "branch": "zsf/feature/x/06-slice-06",
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "running",
+        "worktree": "<root>/state/feat/worktrees/06-slice-06"
+      },
+      "07": {
+        "attempts": [],
+        "conflict_reruns": 0,
+        "gate_reruns": 0,
+        "infra_failures": 0,
+        "status": "pending"
+      }
+    },
+    "updated_ms": 0,
+    "version": 1
+  },
+  "status": [
+    "feat: 2 of 7 merged, branch feature/x, daemon not running, active",
+    "  01  merged               Slice 01  <short>",
+    "  02  failed               Slice 02  review loop exhausted (run run-002)",
+    "                                     worktree <root>/state/feat/worktrees/02-slice-02",
+    "  03* waiting_for_review   Slice 03  not merged; check and merge: zsf approve feat 03",
+    "                                     worktree <root>/state/feat/worktrees/03-slice-03",
+    "  04  pending              Slice 04  waits for 03",
+    "  05  merged               Slice 05  <short>",
+    "  06  running              Slice 06  first attempt 1, run run-005, <duration>",
+    "  07  pending              Slice 07  ready"
+  ]
+}

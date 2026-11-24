@@ -1,0 +1,586 @@
+{
+  "admitted-only": {
+    "all": null,
+    "noFailure": null,
+    "none": null,
+    "othersOnly": null,
+    "reversed": null,
+    "unrelated": "x-2"
+  },
+  "attempts-exhausted": {
+    "all": "cp-2",
+    "noFailure": "cp-2",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-2",
+    "unrelated": "x-1"
+  },
+  "checkout-unavailable": {
+    "all": null,
+    "noFailure": null,
+    "none": null,
+    "othersOnly": null,
+    "reversed": null,
+    "unrelated": "x-1"
+  },
+  "closing-postmortem": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "codex-estimate": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "copilot-session": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "delivery-failed": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-2",
+    "reversed": "cp-3",
+    "unrelated": "x-1"
+  },
+  "diag-api-hang": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-authentication-required": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-crash": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-input-required": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-malformed-result": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-other": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-policy-denied": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-refusal": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-code-timeout": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-context": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-credentials": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-disk": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-malformed-stream": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-missing-cli": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-model": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-network": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-permission": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-provider-down": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-provider-timeout": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-rate-limit": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-stream-cut": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "diag-usage-limit": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "force-stopped": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-2",
+    "reversed": "cp-3",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-bad-credentials": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-chaos-transient": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "fork-only/fork-chaos-usage-limit": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-controller-killed": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-2",
+    "reversed": "cp-3",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-force-stopped": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-2",
+    "reversed": "cp-3",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-happy-path": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "fork-only/fork-late-failure": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-3",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-replay": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "fork-only/fork-resumed": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "fork-only/fork-reviewer-never-satisfied": {
+    "all": "cp-5",
+    "noFailure": "cp-6",
+    "none": null,
+    "othersOnly": "cp-4",
+    "reversed": "cp-5",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-steered": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "fork-only/fork-unknown-model": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "fork-only/fork-worker-timeout": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "fork-only/replay-child": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "fork-only/replay-parent": {
+    "all": "cp-2",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-2",
+    "unrelated": "x-1"
+  },
+  "fork-only/steered": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "graph-ended-other": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-2",
+    "reversed": "cp-3",
+    "unrelated": "x-1"
+  },
+  "lane-mixed": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "lane-unknown-harness": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "map-parallel": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "no-checkpoints": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "resumed-original": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "resumed-successor": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "running-live": {
+    "all": "cp-5",
+    "noFailure": "cp-5",
+    "none": null,
+    "othersOnly": "cp-5",
+    "reversed": "cp-5",
+    "unrelated": "x-2"
+  },
+  "running-stock": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "runtime-failed-checkpoint": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "runtime-failed-permission": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "runtime-failed-storage": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "runtime-failed-unknown": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "runtime-lost": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "stalled": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "stalled-disk": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "stalled-live-usage": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "stalled-then-closed": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  },
+  "succeeded": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "succeeded-stock": {
+    "all": "cp-3",
+    "noFailure": "cp-3",
+    "none": null,
+    "othersOnly": "cp-3",
+    "reversed": "cp-3",
+    "unrelated": "x-2"
+  },
+  "tool-output-rate-limit": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "unknown-phase": {
+    "all": null,
+    "noFailure": null,
+    "none": null,
+    "othersOnly": null,
+    "reversed": null,
+    "unrelated": "x-2"
+  },
+  "voided": {
+    "all": "cp-2",
+    "noFailure": "cp-2",
+    "none": null,
+    "othersOnly": "cp-2",
+    "reversed": "cp-2",
+    "unrelated": "x-2"
+  },
+  "work-exhausted": {
+    "all": "cp-5",
+    "noFailure": "cp-6",
+    "none": null,
+    "othersOnly": "cp-4",
+    "reversed": "cp-5",
+    "unrelated": "x-1"
+  },
+  "zeroshot-16/zeroshot16-normal": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "zeroshot-16/zeroshot16-steered": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": "cp-1",
+    "reversed": "cp-1",
+    "unrelated": "x-2"
+  },
+  "zeroshot-16/zeroshot16-unknown-model": {
+    "all": "cp-1",
+    "noFailure": "cp-1",
+    "none": null,
+    "othersOnly": null,
+    "reversed": "cp-1",
+    "unrelated": "x-1"
+  }
+}

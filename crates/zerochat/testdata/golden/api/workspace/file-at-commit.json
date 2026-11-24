@@ -1,0 +1,8 @@
+{
+  "body": {
+    "commit": "118a4951ec2a91d523353d1694fc2efe57f5c8cb",
+    "content": "def title(text):\n    return text.title()\n",
+    "path": "textkit/core.py"
+  },
+  "status": 200
+}

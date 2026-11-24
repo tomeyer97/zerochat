@@ -1,0 +1,334 @@
+/* ---------- run graph: agents, loop/parallel frames and the exit reached; choices are folded into edges ---------- */
+.graph-section {
+  margin: 14px 0 18px;
+}
+.graph-wrap {
+  position: relative;
+  min-height: 90px;
+  max-height: 560px;
+}
+.graph-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+.graph-empty {
+  padding: 16px;
+  color: var(--muted);
+}
+.react-flow {
+  --xy-background-color: transparent;
+  --xy-edge-stroke: var(--edge);
+  --xy-controls-button-background-color: var(--surface);
+  --xy-controls-button-background-color-hover: var(--surface-hover);
+  --xy-controls-button-color: var(--secondary);
+  --xy-controls-button-border-color: var(--hairline);
+  --xy-node-boxshadow-selected: none;
+}
+.graph-wrap .react-flow__controls {
+  margin: 4px;
+  box-shadow: none;
+  opacity: 0.55;
+  transition: opacity 0.15s;
+}
+.graph-wrap:hover .react-flow__controls,
+.graph-wrap:focus-within .react-flow__controls {
+  opacity: 1;
+}
+.react-flow__node {
+  font-family: var(--font-ui);
+}
+.react-flow__node-agent {
+  cursor: pointer;
+}
+/* React Flow's own stylesheet removes the outline on `.selectable:focus-visible` and only
+   restores a box-shadow for its built-in node-default/-input/-output/-group types, not our
+   custom "agent" type, so a keyboard-focused agent node had no visible focus at all. */
+.react-flow__node-agent.selectable:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+.react-flow__node-group,
+.react-flow__node-decision,
+.react-flow__node-exit {
+  cursor: default;
+}
+.react-flow__node-group {
+  pointer-events: none !important;
+  background: none;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+.react-flow__handle {
+  opacity: 0;
+  pointer-events: none;
+  width: 4px;
+  height: 4px;
+  min-width: 0;
+  min-height: 0;
+}
+.react-flow__edge.taken path.react-flow__edge-path {
+  stroke: var(--edge-taken);
+  stroke-width: 1.5;
+}
+.react-flow__edge.untaken path.react-flow__edge-path {
+  stroke: var(--edge);
+  stroke-dasharray: 3 4;
+}
+/* A loop-back edge reads differently from the forward flow on purpose: it goes back into
+   the loop it belongs to, not forward through the graph. */
+.react-flow__edge.loop-back path.react-flow__edge-path {
+  stroke-dasharray: 2 3;
+}
+.edge-hit {
+  pointer-events: stroke;
+  cursor: help;
+}
+.edge-label {
+  position: absolute;
+  pointer-events: all;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: var(--canvas);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--secondary);
+  white-space: nowrap;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.flow-card {
+  width: 100%;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 7px;
+}
+.flow-card.agent {
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.flow-card.agent:hover {
+  border-color: var(--border-hover);
+}
+.flow-card.agent.selected {
+  box-shadow: 0 0 0 3px var(--selection-ring);
+  border-color: var(--accent-text) !important;
+}
+.flow-card.agent.state-running {
+  border-color: var(--accent-text);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+/* A card that needs a second look sets its tone once: --card-tone for the stripe and the state
+   word, --card-tone-border for the border. An agent card's border and the state word of any flow
+   card (the slice graph's too) read it. Red stays reserved for an actual failure: the deciding
+   round is still marked, but a rejected culprit gets the same amber "Rejected" already uses
+   everywhere else, not red, and a stopped/interrupted node is never repainted red just for being
+   the deciding one. */
+.flow-card.state-failed {
+  --card-tone: var(--error-text);
+  --card-tone-border: var(--error-border);
+}
+.flow-card.state-rejected.culprit {
+  --card-tone: var(--warn);
+  --card-tone-border: var(--warn-border);
+}
+.flow-card.agent.state-failed,
+.flow-card.agent.state-rejected.culprit {
+  border-color: var(--card-tone-border);
+  box-shadow: inset 3px 0 0 var(--card-tone);
+}
+.flow-card.agent.state-idle {
+  border-style: dashed;
+  background: transparent;
+}
+.flow-card.agent.state-idle .card-name,
+.flow-card.agent.state-voided .card-name {
+  color: var(--muted);
+  font-weight: 500;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.card-name {
+  font-weight: 600;
+  font-size: 13.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+.card-meta {
+  display: flex;
+  gap: 8px;
+  padding-left: 20px;
+  font-size: 11.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.flow-card.state-failed .card-state,
+.flow-card.state-rejected.culprit .card-state {
+  color: var(--card-tone);
+  font-weight: 600;
+}
+.card-live {
+  color: var(--accent-text);
+}
+.card-live.level-warning {
+  color: var(--warn);
+}
+.card-live.level-critical {
+  color: var(--error-text);
+}
+.flow-card.decision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.flow-card.exit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--secondary);
+  background: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.flow-card.exit span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.flow-group {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed var(--hairline);
+  border-radius: 10px;
+}
+.flow-group.group-par {
+  border-style: solid;
+}
+.group-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 12px;
+  font-size: 11.5px;
+  color: var(--muted);
+  pointer-events: auto;
+}
+.group-round.level-warning {
+  color: var(--warn);
+}
+
+/* ---------- replay dialog ---------- */
+.dialog-section {
+  font-size: 13.5px;
+  font-weight: 650;
+  margin-top: 6px;
+}
+.checkpoint-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  max-height: 260px;
+  overflow: auto;
+}
+.checkpoint-list li + li {
+  border-top: 1px solid var(--hairline);
+}
+.checkpoint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.checkpoint.selected {
+  background: var(--selected);
+}
+.cp-time {
+  margin-left: auto;
+  white-space: nowrap;
+}
+.node-edits {
+  display: grid;
+  gap: 6px;
+}
+fieldset.node-edits {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+fieldset.node-edits:disabled {
+  opacity: 0.55;
+}
+.node-edit {
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+.node-edit[open] {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 10px;
+}
+.node-edit summary {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.node-edit[open] .node-edit-model {
+  display: none;
+}
+.replay-changes summary {
+  font-weight: 600;
+  font-size: 14px;
+}
+.replay-changes[open] {
+  display: grid;
+  gap: 10px;
+}
+.advanced summary {
+  font-weight: 550;
+}
+.advanced[open] {
+  display: grid;
+  gap: 8px;
+}
+.replay-result {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  align-items: flex-start;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.replay-result svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}

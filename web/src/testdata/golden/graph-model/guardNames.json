@@ -1,0 +1,414 @@
+{
+  "graphs": {
+    "fork-only/fork-bad-credentials#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-chaos-transient#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-chaos-usage-limit#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-controller-killed#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-controller-killed#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-controller-killed#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-force-stopped#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-force-stopped#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-force-stopped#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-happy-path#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-happy-path#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-happy-path#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-late-failure#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-late-failure#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-late-failure#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-replay#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-replay#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-replay#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-resumed#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-resumed#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-resumed#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-reviewer-never-satisfied#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-reviewer-never-satisfied#1@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-reviewer-never-satisfied#2@review_result": [
+      "acceptance",
+      "code"
+    ],
+    "fork-only/fork-steered#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-unknown-model#0@worker_result": [
+      "worker"
+    ],
+    "fork-only/fork-worker-timeout#0@worker_result": [
+      "worker"
+    ],
+    "zeroshot-16/zeroshot16-normal#0@worker_result": [
+      "worker"
+    ],
+    "zeroshot-16/zeroshot16-steered#0@worker_result": [
+      "worker"
+    ],
+    "zeroshot-16/zeroshot16-unknown-model#0@worker_result": [
+      "worker"
+    ]
+  },
+  "table": [
+    [
+      "<undefined>",
+      []
+    ],
+    [
+      null,
+      []
+    ],
+    [
+      "text",
+      []
+    ],
+    [
+      {},
+      []
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "accepted"
+        ],
+        "value": {
+          "name": "review"
+        }
+      },
+      [
+        "review"
+      ]
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "accepted"
+        ],
+        "value": {
+          "field": "verdict",
+          "name": "review"
+        }
+      },
+      [
+        "review"
+      ]
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "high",
+          "very_high"
+        ],
+        "value": {
+          "field": "risk_level",
+          "name": "triage"
+        }
+      },
+      [
+        "triage"
+      ]
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "crash",
+          "malformed",
+          "refusal",
+          "timeout"
+        ],
+        "value": {
+          "name": "w",
+          "source": "error"
+        }
+      },
+      [
+        "w"
+      ]
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "timeout",
+          "odd_label"
+        ],
+        "value": {
+          "name": "w",
+          "source": "error"
+        }
+      },
+      [
+        "w"
+      ]
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [],
+        "value": {
+          "name": "w"
+        }
+      },
+      [
+        "w"
+      ]
+    ],
+    [
+      {
+        "kind": "in",
+        "labels": [
+          "ok"
+        ]
+      },
+      []
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "a"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "b"
+            }
+          }
+        ],
+        "kind": "all"
+      },
+      [
+        "a",
+        "b"
+      ]
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "a"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "b"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "c"
+            }
+          }
+        ],
+        "kind": "any"
+      },
+      [
+        "a",
+        "b",
+        "c"
+      ]
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "a"
+            }
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "rejected"
+            ],
+            "value": {
+              "name": "b"
+            }
+          }
+        ],
+        "kind": "all"
+      },
+      [
+        "a",
+        "b"
+      ]
+    ],
+    [
+      {
+        "guards": [
+          {
+            "kind": "in",
+            "labels": [
+              "accepted"
+            ],
+            "value": {
+              "name": "a"
+            }
+          }
+        ],
+        "kind": "all"
+      },
+      [
+        "a"
+      ]
+    ],
+    [
+      {
+        "guards": [],
+        "kind": "all"
+      },
+      []
+    ],
+    [
+      {
+        "guard": {
+          "kind": "in",
+          "labels": [
+            "accepted"
+          ],
+          "value": {
+            "name": "a"
+          }
+        },
+        "kind": "not"
+      },
+      [
+        "a"
+      ]
+    ],
+    [
+      {
+        "kind": "not"
+      },
+      []
+    ],
+    [
+      {
+        "guards": [
+          {
+            "guard": {
+              "kind": "in",
+              "labels": [
+                "x"
+              ],
+              "value": {
+                "name": "a"
+              }
+            },
+            "kind": "not"
+          },
+          {
+            "kind": "in",
+            "labels": [
+              "y"
+            ],
+            "value": {
+              "name": "a"
+            }
+          }
+        ],
+        "kind": "any"
+      },
+      [
+        "a"
+      ]
+    ],
+    [
+      {
+        "kind": "mystery",
+        "value": {
+          "name": "z"
+        }
+      },
+      [
+        "z"
+      ]
+    ]
+  ]
+}

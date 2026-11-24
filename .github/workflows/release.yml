@@ -1,0 +1,504 @@
+# Release: builds, attests and publishes zerochat and zsf from a version tag. Nothing else starts it.
+#
+# Edited by hand. It started as `dist generate` output (dist 0.34.0, https://opensource.axo.dev/cargo-dist/);
+# dist-workspace.toml sets `allow-dirty = ["ci"]`, so dist never rewrites it. After a dist upgrade, generate
+# into a scratch copy and port what changed. .github/build-setup.yml mirrors the build-setup steps below.
+#
+# Who can release:
+# - only a pushed tag `vX.Y.Z` or `vX.Y.Z-<pre>` starts this workflow;
+# - a tag ruleset lets only maintainers create, move or delete `v*` tags;
+# - every job that publishes (`host`: the GitHub Release; `publish-npm`: npm) runs in the `release`
+#   environment and waits for its required reviewer to approve. RELEASING.md has the steps.
+#
+# Order: test -> notices (THIRD_PARTY_NOTICES.md, SBOMs) -> plan -> build-local-artifacts (dist; Linux is
+# static musl, checked) -> build-global-artifacts (installers, checksums) -> npm-layout (the npm packages,
+# laid out from the same archives, completeness check) -> host (GitHub Release) -> publish-npm (trusted
+# publishing with provenance: the 4 platform packages first, `zerochat` last).
+#
+# Hardening: read-only token by default, write permissions per job; actions pinned by commit SHA;
+# tools from pinned versions with checksums (no `curl | sh`); no caches; credentials not persisted.
+
+name: Release
+
+permissions:
+  contents: read
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+      - "v[0-9]+.[0-9]+.[0-9]+-*"
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  # dist 0.34.0 release archives (github.com/axodotdev/cargo-dist/releases), checked by sha256.
+  DIST_VERSION: "0.34.0"
+  CARGO_CYCLONEDX_VERSION: "0.5.10"
+  CYCLONEDX_NPM_VERSION: "7.0.1"
+
+jobs:
+  # The whole test suite on the tagged commit: nothing is built for release unless it passes.
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Build the web UI
+        run: npm --prefix web ci && npm --prefix web run build
+      - name: Tests (cargo test --workspace, web, npm/)
+        run: make test
+      - name: Goldens
+        run: make goldens
+
+  # THIRD_PARTY_NOTICES.md (shipped in every archive and npm package) and CycloneDX SBOMs (attached to
+  # the GitHub Release, with build-provenance attestations).
+  notices:
+    needs: test
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Install the web dependencies
+        run: npm --prefix web ci
+      - name: Install cargo-about and cargo-cyclonedx (pinned versions, --locked)
+        run: |
+          cargo install --locked cargo-about --version "$(scripts/third-party-notices.sh --tool-version)" --features cli
+          cargo install --locked cargo-cyclonedx --version "$CARGO_CYCLONEDX_VERSION"
+      - name: THIRD_PARTY_NOTICES.md
+        run: scripts/third-party-notices.sh THIRD_PARTY_NOTICES.md
+      - name: SBOMs (Rust crates per release target, web bundle)
+        run: |
+          mkdir -p sbom
+          node npm/build.js targets | while read -r target _; do
+            cargo cyclonedx --format json --spec-version 1.5 --no-build-deps --target "$target" --target-in-filename
+          done
+          mv crates/*/*.cdx.json sbom/
+          (cd web && npx --yes "@cyclonedx/cyclonedx-npm@$CYCLONEDX_NPM_VERSION" --omit dev --output-format JSON --output-file ../sbom/zerochat-web.cdx.json)
+          ls -l sbom
+      - name: Attest the SBOMs
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: sbom/*.cdx.json
+      # artifacts-* are attached to the GitHub Release by `host`.
+      - name: Upload the notices
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: artifacts-notices
+          path: THIRD_PARTY_NOTICES.md
+          if-no-files-found: error
+      - name: Upload the SBOMs
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: artifacts-sbom
+          path: sbom/*.cdx.json
+          if-no-files-found: error
+
+  # Run 'dist host --steps=create' to determine what to build
+  plan:
+    needs: test
+    runs-on: ubuntu-24.04
+    outputs:
+      val: ${{ steps.plan.outputs.manifest }}
+      tag: ${{ github.ref_name }}
+      tag-flag: ${{ format('--tag={0}', github.ref_name) }}
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Install dist (pinned release archive, sha256 checked)
+        run: |
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            Linux-X64) triple=x86_64-unknown-linux-gnu sha=7fee44ff3ff71ed0064b32d4ec62fee6b58bd37c5887b12a86aedddc5af0c7b5 ;;
+            Linux-ARM64) triple=aarch64-unknown-linux-gnu sha=58efb33edf01342875bfd0c3ce2befa9d73075579ca1b3e5dd75b98c88f92e83 ;;
+            macOS-X64) triple=x86_64-apple-darwin sha=6aa89bb1e7c18f51ae8b148ce2fc6ab00ac46ed8173d4f2ed9afa12101218773 ;;
+            macOS-ARM64) triple=aarch64-apple-darwin sha=d1eec30e63eed23e5a5bd48fe96eae314799811bffca254ec1d2264638ba1890 ;;
+            *) echo "::error::no pinned dist for $RUNNER_OS-$RUNNER_ARCH"; exit 1 ;;
+          esac
+          archive="cargo-dist-$triple.tar.xz"
+          curl --proto '=https' --tlsv1.2 -fsSL -o "$RUNNER_TEMP/$archive" "https://github.com/axodotdev/cargo-dist/releases/download/v$DIST_VERSION/$archive"
+          echo "$sha  $RUNNER_TEMP/$archive" | shasum -a 256 -c -
+          tar -xJf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP"
+          mkdir -p "$HOME/.cargo/bin"
+          install -m 755 "$RUNNER_TEMP/cargo-dist-$triple/dist" "$HOME/.cargo/bin/dist"
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+          "$HOME/.cargo/bin/dist" --version
+      - name: Cache dist
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: cargo-dist-cache
+          path: ~/.cargo/bin/dist
+      - id: plan
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          dist host --steps=create "--tag=$TAG" --output-format=json > plan-dist-manifest.json
+          echo "dist ran successfully"
+          cat plan-dist-manifest.json
+          echo "manifest=$(jq -c "." plan-dist-manifest.json)" >> "$GITHUB_OUTPUT"
+      - name: "Upload dist-manifest.json"
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: artifacts-plan-dist-manifest
+          path: plan-dist-manifest.json
+
+  # Build and package all the platform-specific things
+  build-local-artifacts:
+    name: build-local-artifacts (${{ join(matrix.targets, ', ') }})
+    needs:
+      - plan
+      - notices
+    if: ${{ fromJson(needs.plan.outputs.val).ci.github.artifacts_matrix.include != null }}
+    strategy:
+      fail-fast: false
+      # Target platforms/runners are computed by dist in plan: runner, dist_args, targets. Both Linux
+      # targets build natively (x86_64 on ubuntu, aarch64 on ubuntu-24.04-arm) with musl-tools.
+      matrix: ${{ fromJson(needs.plan.outputs.val).ci.github.artifacts_matrix }}
+    runs-on: ${{ matrix.runner }}
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BUILD_MANIFEST_NAME: target/distrib/${{ join(matrix.targets, '-') }}-dist-manifest.json
+    permissions:
+      attestations: write
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      # Build setup (mirrored in .github/build-setup.yml): zerochat embeds web/dist at compile time,
+      # and every archive carries THIRD_PARTY_NOTICES.md (dist-workspace.toml `include`).
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Build the web UI
+        run: npm --prefix web ci && npm --prefix web run build
+      - name: Fetch THIRD_PARTY_NOTICES.md
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: artifacts-notices
+          path: .
+      - name: Install dist (pinned release archive, sha256 checked)
+        run: |
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            Linux-X64) triple=x86_64-unknown-linux-gnu sha=7fee44ff3ff71ed0064b32d4ec62fee6b58bd37c5887b12a86aedddc5af0c7b5 ;;
+            Linux-ARM64) triple=aarch64-unknown-linux-gnu sha=58efb33edf01342875bfd0c3ce2befa9d73075579ca1b3e5dd75b98c88f92e83 ;;
+            macOS-X64) triple=x86_64-apple-darwin sha=6aa89bb1e7c18f51ae8b148ce2fc6ab00ac46ed8173d4f2ed9afa12101218773 ;;
+            macOS-ARM64) triple=aarch64-apple-darwin sha=d1eec30e63eed23e5a5bd48fe96eae314799811bffca254ec1d2264638ba1890 ;;
+            *) echo "::error::no pinned dist for $RUNNER_OS-$RUNNER_ARCH"; exit 1 ;;
+          esac
+          archive="cargo-dist-$triple.tar.xz"
+          curl --proto '=https' --tlsv1.2 -fsSL -o "$RUNNER_TEMP/$archive" "https://github.com/axodotdev/cargo-dist/releases/download/v$DIST_VERSION/$archive"
+          echo "$sha  $RUNNER_TEMP/$archive" | shasum -a 256 -c -
+          tar -xJf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP"
+          mkdir -p "$HOME/.cargo/bin"
+          install -m 755 "$RUNNER_TEMP/cargo-dist-$triple/dist" "$HOME/.cargo/bin/dist"
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+          "$HOME/.cargo/bin/dist" --version
+      # Get the dist-manifest
+      - name: Fetch local artifacts
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: artifacts-*
+          path: target/distrib/
+          merge-multiple: true
+      # musl-tools: the musl C toolchain for the C in rusqlite (bundled SQLite) and ring. Both Linux
+      # targets build on a native runner, so no cross compiler (or cargo-zigbuild) is needed.
+      - name: Install the musl toolchain
+        if: ${{ contains(join(matrix.targets, ','), 'linux-musl') }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends musl-tools
+      - name: Build artifacts
+        env:
+          TAG_FLAG: ${{ needs.plan.outputs.tag-flag }}
+          DIST_ARGS: ${{ matrix.dist_args }}
+        run: |
+          # shellcheck disable=SC2086 # DIST_ARGS holds several flags
+          dist build "$TAG_FLAG" --print=linkage --output-format=json $DIST_ARGS > dist-manifest.json
+          echo "dist ran successfully"
+      - name: Check that the Linux binaries are static
+        if: ${{ contains(join(matrix.targets, ','), 'linux-musl') }}
+        run: |
+          checked=0
+          for archive in target/distrib/*-unknown-linux-musl.tar.xz; do
+            dir=$(mktemp -d)
+            tar -xJf "$archive" -C "$dir"
+            for bin in "$dir"/*/zerochat "$dir"/*/zsf; do
+              [ -f "$bin" ] || continue
+              desc=$(file -b "$bin")
+              echo "$(basename "$archive"): $desc"
+              case "$desc" in
+                *"statically linked"* | *"static-pie linked"*) ;;
+                *) echo "::error::$(basename "$archive"): not a static binary: $desc"; exit 1 ;;
+              esac
+              if ldd "$bin" 2>&1 | grep -q '=>'; then
+                echo "::error::$(basename "$archive"): ldd lists shared libraries"; ldd "$bin"; exit 1
+              fi
+              checked=$((checked + 1))
+            done
+          done
+          [ "$checked" -gt 0 ] || { echo "::error::no Linux binary found to check"; exit 1; }
+      - name: Attest
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: "target/distrib/*${{ join(matrix.targets, ', ') }}*"
+      - id: cargo-dist
+        name: Post-build
+        run: |
+          # Parse out what we just built and upload it to scratch storage
+          {
+            echo "paths<<EOF"
+            dist print-upload-files-from-manifest --manifest dist-manifest.json
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          cp dist-manifest.json "$BUILD_MANIFEST_NAME"
+      - name: "Upload artifacts"
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: artifacts-build-local-${{ join(matrix.targets, '_') }}
+          path: |
+            ${{ steps.cargo-dist.outputs.paths }}
+            ${{ env.BUILD_MANIFEST_NAME }}
+
+  # Build and package all the platform-agnostic(ish) things
+  build-global-artifacts:
+    needs:
+      - plan
+      - build-local-artifacts
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BUILD_MANIFEST_NAME: target/distrib/global-dist-manifest.json
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Install cached dist
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: cargo-dist-cache
+          path: ~/.cargo/bin/
+      - run: chmod +x ~/.cargo/bin/dist
+      # Get all the local artifacts for the global tasks to use (for e.g. checksums)
+      - name: Fetch local artifacts
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: artifacts-*
+          path: target/distrib/
+          merge-multiple: true
+      - id: cargo-dist
+        env:
+          TAG_FLAG: ${{ needs.plan.outputs.tag-flag }}
+        run: |
+          dist build "$TAG_FLAG" --output-format=json "--artifacts=global" > dist-manifest.json
+          echo "dist ran successfully"
+
+          # Parse out what we just built and upload it to scratch storage
+          {
+            echo "paths<<EOF"
+            jq --raw-output ".upload_files[]" dist-manifest.json
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          cp dist-manifest.json "$BUILD_MANIFEST_NAME"
+      - name: "Upload artifacts"
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: artifacts-build-global
+          path: |
+            ${{ steps.cargo-dist.outputs.paths }}
+            ${{ env.BUILD_MANIFEST_NAME }}
+
+  # The 5 npm packages, laid out from dist's archives (the attested binaries, sha256 checked), then the
+  # completeness check: all 5 packages, both binaries per platform (static on Linux), the tag's version
+  # everywhere, `zerochat` pinning exactly the 4 platform packages. Publishes nothing.
+  npm-layout:
+    needs:
+      - build-local-artifacts
+      - notices
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Fetch the archives
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: artifacts-build-local-*
+          path: target/distrib/
+          merge-multiple: true
+      - name: Fetch THIRD_PARTY_NOTICES.md
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: artifacts-notices
+          path: target/notices/
+      - name: Lay out the npm packages
+        run: node npm/build.js from-dist --dist target/distrib --out target/npm --notices target/notices/THIRD_PARTY_NOTICES.md
+      - name: Completeness check
+        env:
+          TAG: ${{ github.ref_name }}
+        run: node npm/build.js check target/npm --version "${TAG#v}"
+      - name: What each package holds (npm pack --dry-run)
+        run: |
+          node npm/build.js publish-order target/npm | while read -r dir; do
+            (cd "$dir" && npm pack --dry-run --ignore-scripts --json) | node npm/build.js pack-list
+          done
+      # A tar keeps the binaries' file modes (an artifact upload does not).
+      - name: Pack the layout
+        run: tar -cf npm-packages.tar -C target/npm .
+      - name: Upload the npm packages
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: npm-packages
+          path: npm-packages.tar
+          if-no-files-found: error
+
+  # Creates the GitHub Release with every artifacts-* file: archives, checksums, installers, notices,
+  # SBOMs. Runs only after the npm layout passed its check, and only after the `release` approval.
+  host:
+    needs:
+      - plan
+      - notices
+      - build-local-artifacts
+      - build-global-artifacts
+      - npm-layout
+    runs-on: ubuntu-24.04
+    environment: release
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    outputs:
+      val: ${{ steps.host.outputs.manifest }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Install cached dist
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: cargo-dist-cache
+          path: ~/.cargo/bin/
+      - run: chmod +x ~/.cargo/bin/dist
+      # Fetch artifacts from scratch-storage
+      - name: Fetch artifacts
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: artifacts-*
+          path: target/distrib/
+          merge-multiple: true
+      - id: host
+        env:
+          TAG_FLAG: ${{ needs.plan.outputs.tag-flag }}
+        run: |
+          dist host "$TAG_FLAG" --steps=upload --steps=release --output-format=json > dist-manifest.json
+          echo "artifacts uploaded and released successfully"
+          cat dist-manifest.json
+          echo "manifest=$(jq -c "." dist-manifest.json)" >> "$GITHUB_OUTPUT"
+      - name: "Upload dist-manifest.json"
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          # Overwrite the previous copy
+          name: artifacts-dist-manifest
+          path: dist-manifest.json
+      # Create a GitHub Release while uploading all files to it
+      - name: "Download GitHub Artifacts"
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: artifacts-*
+          path: artifacts
+          merge-multiple: true
+      - name: Cleanup
+        run: |
+          # Remove the granular manifests
+          rm -f artifacts/*-dist-manifest.json
+      - name: Create GitHub Release
+        env:
+          PRERELEASE_FLAG: "${{ fromJson(steps.host.outputs.manifest).announcement_is_prerelease && '--prerelease' || '' }}"
+          ANNOUNCEMENT_TITLE: "${{ fromJson(steps.host.outputs.manifest).announcement_title }}"
+          ANNOUNCEMENT_BODY: "${{ fromJson(steps.host.outputs.manifest).announcement_github_body }}"
+          RELEASE_COMMIT: "${{ github.sha }}"
+          TAG: ${{ needs.plan.outputs.tag }}
+        run: |
+          # Write and read notes from a file to avoid quoting breaking things
+          echo "$ANNOUNCEMENT_BODY" > "$RUNNER_TEMP/notes.txt"
+
+          # shellcheck disable=SC2086 # PRERELEASE_FLAG is empty or one flag
+          gh release create "$TAG" --target "$RELEASE_COMMIT" $PRERELEASE_FLAG --title "$ANNOUNCEMENT_TITLE" --notes-file "$RUNNER_TEMP/notes.txt" artifacts/*
+
+  # npm trusted publishing (OIDC: no npm token secret); npm adds provenance that links each package to
+  # this workflow run. The 4 platform packages first, `zerochat` last, so `zerochat` never pins a
+  # missing package. A version already on npm is skipped, so a failed run can be re-run.
+  publish-npm:
+    needs:
+      - host
+      - npm-layout
+    runs-on: ubuntu-24.04
+    environment: release
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      # Trusted publishing needs npm 11.5.1 or later (Node 24 ships it).
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - name: Check the npm version
+        run: |
+          npm --version
+          node -e 'const [a, b, c] = process.argv[1].split(".").map(Number); process.exit(a > 11 || (a === 11 && (b > 5 || (b === 5 && c >= 1))) ? 0 : 1)' "$(npm --version)" ||
+            { echo "::error::trusted publishing needs npm 11.5.1 or later"; exit 1; }
+      - name: Fetch the npm packages
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: npm-packages
+          path: target/
+      - name: Unpack
+        run: mkdir -p target/npm && tar -xf target/npm-packages.tar -C target/npm
+      - name: Completeness check (again, on exactly what is published)
+        env:
+          TAG: ${{ github.ref_name }}
+        run: node npm/build.js check target/npm --version "${TAG#v}"
+      - name: Publish (platform packages first, zerochat last)
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          version="${TAG#v}"
+          # A pre-release (v1.2.3-rc.1) must not become `latest`.
+          dist_tag=latest
+          if [[ "$version" == *-* ]]; then dist_tag=next; fi
+          mapfile -t dirs < <(node npm/build.js publish-order target/npm)
+          for dir in "${dirs[@]}"; do
+            name=$(node -p 'require(process.argv[1]).name' "$dir/package.json")
+            if npm view "$name@$version" version >/dev/null 2>&1; then
+              echo "skip $name@$version: already published"
+              continue
+            fi
+            (cd "$dir" && npm publish --provenance --access public --tag "$dist_tag")
+          done

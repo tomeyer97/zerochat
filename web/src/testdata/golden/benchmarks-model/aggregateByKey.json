@@ -1,0 +1,498 @@
+{
+  "20261107-222316-71f62e": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"20261107-222316-71f62e\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"20261107-222316-71f62e\"].rowAggregates[0]>"
+        ],
+        [
+          "yaa110__nomino.f892499",
+          "<ref:batches[\"20261107-222316-71f62e\"].rowAggregates[1]>"
+        ]
+      ]
+    }
+  },
+  "20261107-222316-910b7d": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"20261107-222316-910b7d\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"20261107-222316-910b7d\"].colAggregates[1]>"
+        ],
+        [
+          "2",
+          "<ref:batches[\"20261107-222316-910b7d\"].colAggregates[2]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"20261107-222316-910b7d\"].rowAggregates[0]>"
+        ],
+        [
+          "yaa110__nomino.f892499",
+          "<ref:batches[\"20261107-222316-910b7d\"].rowAggregates[1]>"
+        ]
+      ]
+    }
+  },
+  "20261108-142204-d474ae": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"20261108-142204-d474ae\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"20261108-142204-d474ae\"].colAggregates[1]>"
+        ],
+        [
+          "2",
+          "<ref:batches[\"20261108-142204-d474ae\"].colAggregates[2]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"20261108-142204-d474ae\"].rowAggregates[0]>"
+        ],
+        [
+          "yaa110__nomino.f892499",
+          "<ref:batches[\"20261108-142204-d474ae\"].rowAggregates[1]>"
+        ]
+      ]
+    }
+  },
+  "20261108-152720-fb0664": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"20261108-152720-fb0664\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"20261108-152720-fb0664\"].colAggregates[1]>"
+        ],
+        [
+          "2",
+          "<ref:batches[\"20261108-152720-fb0664\"].colAggregates[2]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"20261108-152720-fb0664\"].rowAggregates[0]>"
+        ],
+        [
+          "yaa110__nomino.f892499",
+          "<ref:batches[\"20261108-152720-fb0664\"].rowAggregates[1]>"
+        ]
+      ]
+    }
+  },
+  "20261108-170007-63721d": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"20261108-170007-63721d\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"20261108-170007-63721d\"].colAggregates[1]>"
+        ],
+        [
+          "2",
+          "<ref:batches[\"20261108-170007-63721d\"].colAggregates[2]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"20261108-170007-63721d\"].rowAggregates[0]>"
+        ],
+        [
+          "yaa110__nomino.f892499",
+          "<ref:batches[\"20261108-170007-63721d\"].rowAggregates[1]>"
+        ]
+      ]
+    }
+  },
+  "20261108-170009-cace9c": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"20261108-170009-cace9c\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"20261108-170009-cace9c\"].colAggregates[1]>"
+        ],
+        [
+          "2",
+          "<ref:batches[\"20261108-170009-cace9c\"].colAggregates[2]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"20261108-170009-cace9c\"].rowAggregates[0]>"
+        ],
+        [
+          "yaa110__nomino.f892499",
+          "<ref:batches[\"20261108-170009-cace9c\"].rowAggregates[1]>"
+        ]
+      ]
+    }
+  },
+  "label_clone-v1": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_clone-v1\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_clone-v1\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_clone-v1-sonnet-build": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_clone-v1-sonnet-build\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "cheat__cheat.b8098dc",
+          "<ref:batches[\"label_clone-v1-sonnet-build\"].rowAggregates[0]>"
+        ],
+        [
+          "mibk__dupl.1bf052b",
+          "<ref:batches[\"label_clone-v1-sonnet-build\"].rowAggregates[1]>"
+        ],
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_clone-v1-sonnet-build\"].rowAggregates[2]>"
+        ]
+      ]
+    }
+  },
+  "label_ctrlc-test": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_ctrlc-test\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_ctrlc-test\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_haiku-adversarial": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_haiku-adversarial\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_haiku-adversarial\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_haiku-prototype-plan": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_haiku-prototype-plan\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_haiku-prototype-plan\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_k8s-sc-sonnet5": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_k8s-sc-sonnet5\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "k8s-job-backoff-limit-per-index",
+          "<ref:batches[\"label_k8s-sc-sonnet5\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_replay-build-haiku": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_replay-build-haiku\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_replay-build-haiku\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_replay-build-haiku\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_replay-build-sonnet": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_replay-build-sonnet\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_replay-build-sonnet\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_replay-build-sonnet\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_replay-sonnet-explore-haiku-build": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_replay-sonnet-explore-haiku-build\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_replay-sonnet-explore-haiku-build\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_replay-sonnet-explore-haiku-build\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_sc-template-haiku": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_sc-template-haiku\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_sc-template-haiku\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_smoke-haiku": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_smoke-haiku\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_smoke-haiku\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_repair_1_claude-haiku-4-5\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_repair_1_claude-sonnet-5\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_triage_1_repair_1_claude-haiku-4-5\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5\"].colAggregates[0]>"
+        ],
+        [
+          "1",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5\"].colAggregates[1]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_sweep_sweep-triage-repair_triage_1_repair_1_claude-sonnet-5\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  },
+  "label_ticket-v1": {
+    "cols": {
+      "<Map>": [
+        [
+          "0",
+          "<ref:batches[\"label_ticket-v1\"].colAggregates[0]>"
+        ]
+      ]
+    },
+    "rows": {
+      "<Map>": [
+        [
+          "tomnomnom__gron.88a6234",
+          "<ref:batches[\"label_ticket-v1\"].rowAggregates[0]>"
+        ]
+      ]
+    }
+  }
+}

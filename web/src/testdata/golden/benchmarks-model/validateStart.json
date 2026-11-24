@@ -1,0 +1,45 @@
+{
+  "NaN seeds": {
+    "seeds": "At least 1 seed."
+  },
+  "cost Infinity": {
+    "maxCost": "A positive dollar amount."
+  },
+  "cost fractional": {},
+  "cost zero": {
+    "maxCost": "A positive dollar amount.",
+    "maxMinutes": "A positive number of minutes.",
+    "maxSteps": "A whole number, at least 1."
+  },
+  "custom missing runtime": {
+    "harness": "Choose both a graph and a runtime file."
+  },
+  "custom ok": {},
+  "empty harness errors": {},
+  "everything wrong": {
+    "harness": "Choose a harness variant.",
+    "label": "A label is required: it names the batch in the list and in compares.",
+    "maxCost": "A positive dollar amount.",
+    "maxMinutes": "A positive number of minutes.",
+    "maxSteps": "A whole number, at least 1.",
+    "parallel": "A whole number, at least 1.",
+    "seeds": "At least 1 seed.",
+    "tasks": "Pick at least one task set or task."
+  },
+  "fractional seeds": {
+    "seeds": "At least 1 seed."
+  },
+  "harness errors": {
+    "harness": "graph: File not found. runtime: bad."
+  },
+  "harness errors and variant missing": {
+    "harness": "Choose a harness variant."
+  },
+  "ok": {},
+  "parallel 0": {
+    "parallel": "A whole number, at least 1."
+  },
+  "parallel hex": {},
+  "parallel padded": {},
+  "variant chosen": {}
+}
