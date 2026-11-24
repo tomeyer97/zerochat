@@ -12,7 +12,7 @@ read boom after 0 error: ORIGIN answered 500 Internal Server Error: kaput
 read plain after 0 error: ORIGIN answered 503 Service Unavailable: no details
 no-ui listings error: BARE does not serve run history (a target built without the UI)
 no-ui read error (RunNotFound): run not found
-unreachable probe error: http://127.0.0.1:1 is unreachable: Connection refused (os error 111)
+unreachable probe error: http://127.0.0.1:1 is unreachable: Connection refused (os error)
 request /.well-known/zeroshot-native-v2 origin=ORIGIN
 request /ui/api/runs? origin=ORIGIN
 request /ui/api/runs?after=page-2 origin=ORIGIN

@@ -173,9 +173,44 @@ async fn replay() -> String {
     {
         out.push(format!("request {line}"));
     }
-    out.join("\n")
-        .replace(&origin, "ORIGIN")
-        .replace(&bare, "BARE")
+    without_os_error_codes(
+        &out.join("\n")
+            .replace(&origin, "ORIGIN")
+            .replace(&bare, "BARE"),
+    )
+}
+
+/// `(os error 111)` on Linux is `(os error 61)` on macOS for the same refused connection: the
+/// number is the OS's, not ours, so the expected text has `(os error)`.
+fn without_os_error_codes(text: &str) -> String {
+    let mut out = String::with_capacity(text.len());
+    let mut rest = text;
+    while let Some(at) = rest.find("(os error ") {
+        let after = &rest[at + "(os error ".len()..];
+        let digits = after.len() - after.trim_start_matches(|c: char| c.is_ascii_digit()).len();
+        if digits > 0 && after[digits..].starts_with(')') {
+            out.push_str(&rest[..at]);
+            out.push_str("(os error)");
+            rest = &after[digits + 1..];
+        } else {
+            out.push_str(&rest[..at + 1]);
+            rest = &rest[at + 1..];
+        }
+    }
+    out.push_str(rest);
+    out
+}
+
+#[test]
+fn os_error_codes_are_dropped_only_in_the_os_error_shape() {
+    assert_eq!(
+        without_os_error_codes("refused (os error 111) and (os error 61)"),
+        "refused (os error) and (os error)"
+    );
+    assert_eq!(
+        without_os_error_codes("(os error x) (os error 1"),
+        "(os error x) (os error 1"
+    );
 }
 
 const EXPECTED: &str = include_str!("remote_replay_expected.txt");
