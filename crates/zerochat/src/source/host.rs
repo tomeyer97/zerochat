@@ -275,13 +275,14 @@ mod tests {
 
     /// Spawns `program` (a copy of `sleep` under that name) with `args`, in `cwd`.
     #[cfg(target_os = "linux")]
+    /// A process named `program` (its argv[0], which the readers match) that sleeps in `cwd`.
+    /// A shell with that argv[0], not a copy of `sleep`: where coreutils is one multi-call
+    /// binary (uutils, Ubuntu 25.10 and later) a copy called `claude` exits at once.
     fn sleeper(dir: &Path, program: &str, cwd: &Path, args: &[&str]) -> std::process::Child {
-        let bin = dir.join(program);
-        if !bin.exists() {
-            std::fs::copy("/bin/sleep", &bin).unwrap();
-        }
-        let child = std::process::Command::new(&bin)
-            .args(args)
+        use std::os::unix::process::CommandExt;
+        let child = std::process::Command::new("/bin/sh")
+            .arg0(dir.join(program))
+            .args(["-c", &format!("sleep {}; :", args.join(" "))])
             .current_dir(cwd)
             .spawn()
             .unwrap();
