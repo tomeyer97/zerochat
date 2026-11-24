@@ -16,7 +16,7 @@ import { FirstRunCard } from './FirstRunCard';
 import { ZeroshotStrip } from './ZeroshotStrip';
 import { FirstVisitHint, FirstVisitHintView, HINT_KEY } from './FirstVisitHint';
 import { GlossaryButton, GlossaryList } from './Glossary';
-import { GLOSSARY } from './glossary';
+import { GLOSSARY } from './glossary-terms';
 import { brandTitle, EXAMPLE_COMMAND, homePath, setupLine, stripText } from './setup-model';
 import { fetchSetup } from './setup-api';
 import { repeatedTitles, rowSubtitle } from './run-rows';

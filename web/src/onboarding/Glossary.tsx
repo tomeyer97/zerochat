@@ -2,7 +2,7 @@
 import { Fragment, useEffect, useState, type ReactNode } from 'react';
 import { CircleHelp } from 'lucide-react';
 import { Modal } from '../common';
-import { GLOSSARY } from './glossary';
+import { GLOSSARY } from './glossary-terms';
 import { setupLine } from './setup-model';
 import type { Setup } from '../generated/discovery';
 
