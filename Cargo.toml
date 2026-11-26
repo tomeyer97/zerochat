@@ -18,7 +18,7 @@ publish = false
 
 [workspace.dependencies]
 # Process and disk facts on macOS and Windows (Linux reads /proc directly; the tests check both agree).
-sysinfo = { version = "0.38", default-features = false, features = ["system", "disk"] }
+sysinfo = { version = "0.40", default-features = false, features = ["system", "disk"] }
 
 # The profile dist builds release archives with (dist-workspace.toml).
 [profile.dist]
