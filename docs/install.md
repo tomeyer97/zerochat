@@ -16,8 +16,8 @@ Every route installs two programs: `zerochat` and `zsf` (Zeroshot features, used
 Needs Node.js `^22.22.2 || ^24.15.0 || >=26.0.0` with npm.
 
 ```sh
-npx zerochat          # try it without installing
-npm i -g zerochat     # install `zerochat` and `zsf`
+npx @zerochat/cli          # try it without installing
+npm i -g @zerochat/cli     # install `zerochat` and `zsf`
 ```
 
 npm picks the package for your platform (`@zerochat/cli-<os>-<arch>`); there is no install script.
@@ -59,7 +59,7 @@ make install         # install `zerochat` and `zsf` into ~/.cargo/bin
 
 | Installed with | Upgrade |
 |---|---|
-| npm | `npm i -g zerochat@latest` |
+| npm | `npm i -g @zerochat/cli@latest` |
 | archive | download the new archives and replace both binaries |
 | shell installer | run the new release's installers again |
 | source | `git pull`, then `make install` |
@@ -68,7 +68,7 @@ make install         # install `zerochat` and `zsf` into ~/.cargo/bin
 
 | Installed with | Remove |
 |---|---|
-| npm | `npm rm -g zerochat` |
+| npm | `npm rm -g @zerochat/cli` |
 | archive | delete the `zerochat` and `zsf` binaries you unpacked |
 | shell installer | `rm ~/.cargo/bin/zerochat ~/.cargo/bin/zsf` |
 | source (`make install`) | `cargo uninstall zerochat zsf` |

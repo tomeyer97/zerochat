@@ -47,7 +47,7 @@ arrives. Work in private until step 7.
       come from the same tagged CI run.
 - [ ] Add the fix to CHANGELOG.md under `### Security`, without exploit details.
 - [ ] Deprecate affected npm versions:
-      `npm deprecate zerochat@"<x.y.z" "Security fix in x.y.z; see <advisory URL>"`.
+      `npm deprecate @zerochat/cli@"<x.y.z" "Security fix in x.y.z; see <advisory URL>"`.
 
 ## 7. Publish
 

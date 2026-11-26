@@ -37,6 +37,6 @@ export const ZSF_INSTALL = {
   message: 'zsf is not installed.',
   /** The one line that says how to get it; the two commands follow it. */
   how: 'It comes with the zerochat npm package; from source, `make` builds it next to zerochat, or install it with cargo:',
-  npm: 'npm install -g zerochat',
+  npm: 'npm install -g @zerochat/cli',
   source: 'cargo install --path crates/zsf',
 } as const;

@@ -1,5 +1,5 @@
 {
-  "name": "zerochat",
+  "name": "@zerochat/cli",
   "version": "0.0.0-dev",
   "description": "A local web UI for Zeroshot runs: history, failure explanations, steering, replay and Features (zsf)",
   "license": "MIT",

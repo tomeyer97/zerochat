@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/tomeyer97/zerochat/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tomeyer97/zerochat/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/zerochat.svg)](https://www.npmjs.com/package/zerochat)
+[![npm](https://img.shields.io/npm/v/@zerochat/cli.svg)](https://www.npmjs.com/package/@zerochat/cli)
 
 **Status:** early 0.x release. Expect breaking changes between versions.
 
@@ -29,8 +29,8 @@ Linux (x64, arm64) and macOS (x64, arm64). Windows: use WSL.
 With npm (Node.js `^22.22.2 || ^24.15.0 || >=26.0.0`):
 
 ```sh
-npx zerochat          # try it
-npm i -g zerochat     # keep it; then run `zerochat`
+npx @zerochat/cli          # try it
+npm i -g @zerochat/cli     # keep it; then run `zerochat`
 ```
 
 If your distribution's Node is older (Ubuntu 24.04 ships Node 18 and no `npx`), get Node from

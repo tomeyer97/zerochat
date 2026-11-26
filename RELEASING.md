@@ -81,7 +81,7 @@ packages it lays out, and `release.yml` checks it equals the tag.
    gh release download vX.Y.Z --repo tomeyer97/zerochat --dir /tmp/zc-vX.Y.Z
    cd /tmp/zc-vX.Y.Z && sha256sum -c --ignore-missing sha256.sum
    gh attestation verify zerochat-x86_64-unknown-linux-musl.tar.xz --repo tomeyer97/zerochat
-   npx zerochat@X.Y.Z --version
+   npx @zerochat/cli@X.Y.Z --version
    ```
 9. **Announce**: a post in [Discussions](https://github.com/tomeyer97/zerochat/discussions)
    linking the GitHub Release.
@@ -95,15 +95,15 @@ versions already on npm, so re-running a failed run is safe.
 - The bump script copies the Unreleased entries into the pre-release section and keeps them under
   `Unreleased`, so the final `X.Y.Z` collects everything.
 - dist marks the GitHub Release as a pre-release; npm publishes with the dist-tag `next`, so
-  `npm i zerochat` keeps getting `latest`.
+  `npm i @zerochat/cli` keeps getting `latest`.
 
 ## Rollback
 
 A tag and a published version are never moved, reused or deleted. Instead:
 
-1. **npm**: `npm deprecate zerochat@X.Y.Z "broken: use X.Y.Z+1"` (and each `@zerochat/cli-*@X.Y.Z`).
+1. **npm**: `npm deprecate @zerochat/cli@X.Y.Z "broken: use X.Y.Z+1"` (and each `@zerochat/cli-*@X.Y.Z`).
    Never `npm unpublish`: after 72 hours npm does not allow it, and before that it breaks lockfiles.
-   If `latest` points at the bad version: `npm dist-tag add zerochat@<good> latest`.
+   If `latest` points at the bad version: `npm dist-tag add @zerochat/cli@<good> latest`.
 2. **GitHub Release**: edit it, tick "Set as a pre-release" and put a warning at the top of the notes.
 3. **Ship a patch** (X.Y.Z+1) with a `Fixed` entry, through the checklist above.
 

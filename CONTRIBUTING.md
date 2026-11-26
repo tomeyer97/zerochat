@@ -52,7 +52,7 @@ the web UI uses Biome (`web/biome.json`).
 
 ## Packaging
 
-zerochat ships on npm as `zerochat` (JS shims for `zerochat` and `zsf`) plus one package per platform
+zerochat ships on npm as `@zerochat/cli` (JS shims for `zerochat` and `zsf`) plus one package per platform
 holding both binaries; names live in `npm/zerochat/packages.json`, the version in the root `Cargo.toml`.
 GitHub Releases archives come from dist (`dist-workspace.toml`, `.github/workflows/release.yml`).
 

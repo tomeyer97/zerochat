@@ -11,8 +11,8 @@ zerochat is an independent community project, not affiliated with The Open Engin
 ## Install
 
 ```sh
-npx zerochat          # try it
-npm i -g zerochat     # keep it; then run `zerochat`
+npx @zerochat/cli          # try it
+npm i -g @zerochat/cli     # keep it; then run `zerochat`
 ```
 
 ## Requirements

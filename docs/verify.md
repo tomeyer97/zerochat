@@ -71,12 +71,12 @@ The npm packages (`zerochat` and `@zerochat/cli-<os>-<arch>`) are laid out from 
 archives and published by the same workflow with npm provenance.
 
 ```sh
-npm i -g zerochat
+npm i -g @zerochat/cli
 npm audit signatures              # checks registry signatures and provenance attestations
 zerochat --version
 ```
 
-- On https://www.npmjs.com/package/zerochat, the version page shows **Provenance**: it must link to
+- On https://www.npmjs.com/package/@zerochat/cli, the version page shows **Provenance**: it must link to
   `tomeyer97/zerochat`, the workflow `.github/workflows/release.yml` and the tag `vX.Y.Z`.
 - The same holds for each `@zerochat/cli-*` package.
 

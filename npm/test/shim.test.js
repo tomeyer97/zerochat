@@ -36,7 +36,7 @@ test('a missing platform package says how to reinstall', () => {
   };
   assert.throws(() => binaryPath('zsf', { platform: 'linux', arch: 'x64', resolve }), {
     message:
-      'NATIVE_BINARY_MISSING: @zerochat/cli-linux-x64 is not installed; reinstall zerochat with optional dependencies enabled (npm i -g zerochat, without --omit=optional or --no-optional)',
+      'NATIVE_BINARY_MISSING: @zerochat/cli-linux-x64 is not installed; reinstall @zerochat/cli with optional dependencies enabled (npm i -g @zerochat/cli, without --omit=optional or --no-optional)',
   });
 });
 
@@ -51,14 +51,14 @@ test('both binaries come from the same platform package directory', () => {
   const options = { platform: 'darwin', arch: 'arm64', resolve };
   assert.strictEqual(binaryPath('zerochat', options), path.join(dir, 'bin', 'zerochat'));
   assert.strictEqual(path.dirname(binaryPath('zsf', options)), path.dirname(binaryPath('zerochat', options)));
-  assert.throws(() => binaryPath('zerochat', { ...options, platform: 'darwin' , resolve: () => path.join(tmp(), 'package.json') }), /^Error: NATIVE_BINARY_MISSING: .*bin\/zerochat; reinstall zerochat/);
+  assert.throws(() => binaryPath('zerochat', { ...options, platform: 'darwin' , resolve: () => path.join(tmp(), 'package.json') }), /^Error: NATIVE_BINARY_MISSING: .*bin\/zerochat; reinstall @zerochat\/cli/);
 });
 
-// An installed layout: node_modules/zerochat (the shims) beside node_modules/@zerochat/cli-<host>.
+// An installed layout: node_modules/@zerochat/cli (the shims) beside node_modules/@zerochat/cli-<host>.
 function installed(script) {
   const root = tmp();
   const modules = path.join(root, 'node_modules');
-  const main = path.join(modules, 'zerochat');
+  const main = path.join(modules, '@zerochat', 'cli');
   fs.cpSync(path.join(__dirname, '../zerochat'), main, { recursive: true });
   const host = path.join(modules, platformPackage());
   fs.mkdirSync(path.join(host, 'bin'), { recursive: true });

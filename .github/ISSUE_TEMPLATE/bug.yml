@@ -41,7 +41,7 @@ body:
     attributes:
       label: How you installed zerochat
       options:
-        - npm (npx zerochat or npm i -g zerochat)
+        - npm (npx @zerochat/cli or npm i -g @zerochat/cli)
         - GitHub Release archive or shell installer
         - From source (make)
         - Other (say in the steps)

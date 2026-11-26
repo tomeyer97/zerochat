@@ -1,6 +1,6 @@
 {
   "comment": "The one place for npm package names; nothing else may spell them. The main package is `name`; a platform package is `<platformPrefix><platform>-<arch>` under the project's own npm scope (so nobody else can publish a package the main one depends on) and holds every binary. Linux builds are static musl, so they run on glibc and musl alike. Targets match dist-workspace.toml (npm/test checks it).",
-  "name": "zerochat",
+  "name": "@zerochat/cli",
   "platformPrefix": "@zerochat/cli-",
   "binaries": ["zerochat", "zsf"],
   "targets": [

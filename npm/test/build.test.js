@@ -88,8 +88,8 @@ test('neither crate can be published to crates.io, and dist still releases both'
   }
 });
 
-test('the npm names: unscoped zerochat, platform packages under the @zerochat scope', () => {
-  assert.strictEqual(spec.name, 'zerochat');
+test('the npm names: @zerochat/cli, platform packages beside it in the @zerochat scope', () => {
+  assert.strictEqual(spec.name, '@zerochat/cli');
   assert.deepStrictEqual(
     spec.targets.map((t) => platformPackage(t.platform, t.arch)),
     ['@zerochat/cli-linux-x64', '@zerochat/cli-linux-arm64', '@zerochat/cli-darwin-x64', '@zerochat/cli-darwin-arm64'],
@@ -118,10 +118,10 @@ test('the layout: shims and optional platform packages, both binaries per platfo
   const dirs = layout({ out, binaries: { 'darwin-arm64': darwin }, notices, cargo: { version: '1.2.3', repository: 'https://example.com/r' } });
   assert.deepStrictEqual(
     dirs.map((d) => path.relative(out, d)),
-    ['zerochat', path.join('@zerochat', 'cli-darwin-arm64')],
+    [path.join('@zerochat', 'cli'), path.join('@zerochat', 'cli-darwin-arm64')],
   );
 
-  const main = readJson(path.join(out, 'zerochat/package.json'));
+  const main = readJson(path.join(out, '@zerochat/cli/package.json'));
   assert.strictEqual(main.version, '1.2.3');
   assert.strictEqual(main.license, 'MIT');
   assert.deepStrictEqual(main.bin, { zerochat: 'bin/zerochat.js', zsf: 'bin/zsf.js' });
@@ -137,7 +137,7 @@ test('the layout: shims and optional platform packages, both binaries per platfo
   assert.strictEqual(main.private, true, 'one platform of four: the main package cannot be published');
   assert.deepStrictEqual(main.files, ['bin', 'lib', 'packages.json', 'THIRD_PARTY_NOTICES.md']);
   for (const f of ['bin/zerochat.js', 'bin/zsf.js', 'lib/shim.js', 'packages.json', 'README.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md']) {
-    assert.ok(fs.existsSync(path.join(out, 'zerochat', f)), f);
+    assert.ok(fs.existsSync(path.join(out, '@zerochat/cli', f)), f);
   }
 
   const dir = path.join(out, '@zerochat/cli-darwin-arm64');
@@ -152,7 +152,7 @@ test('the layout: shims and optional platform packages, both binaries per platfo
     if (process.platform !== 'win32') assert.ok(fs.statSync(file).mode & 0o100, `${b} is executable`);
   }
   for (const f of ['README.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md']) assert.ok(fs.existsSync(path.join(dir, f)), f);
-  assert.match(fs.readFileSync(path.join(dir, 'README.md'), 'utf8'), /^Internal package of \[`zerochat`\].*Install `zerochat` instead/m);
+  assert.match(fs.readFileSync(path.join(dir, 'README.md'), 'utf8'), /^Internal package of \[`@zerochat\/cli`\].*Install `@zerochat\/cli` instead/m);
 
   layout({ out, binaries: { 'linux-x64': bins(target('linux-x64')) }, cargo: { version: '1.2.3' } });
   const linux = readJson(path.join(out, '@zerochat/cli-linux-x64/package.json'));
@@ -164,13 +164,13 @@ test('the layout: shims and optional platform packages, both binaries per platfo
 test('the npm README is written for npm: absolute links, no contributor commands', () => {
   const out = tmp('zerochat-npm-');
   layout({ out, cargo: { version: '1.0.0' } });
-  const readme = fs.readFileSync(path.join(out, 'zerochat/README.md'), 'utf8');
+  const readme = fs.readFileSync(path.join(out, '@zerochat/cli/README.md'), 'utf8');
   assert.strictEqual(readme, fs.readFileSync(path.join(ROOT, 'npm/zerochat/README.md'), 'utf8'));
   assert.notStrictEqual(readme, fs.readFileSync(path.join(ROOT, 'README.md'), 'utf8'));
   assert.match(readme, /zerochat is an independent community project, not affiliated with The Open Engine Company\./);
   assert.match(readme, /!\[[^\]]*\]\(https:\/\/raw\.githubusercontent\.com\/tomeyer97\/zerochat\/[^/]+\/docs\/img\/failed-run\.png\)/);
-  assert.match(readme, /npx zerochat/);
-  assert.match(readme, /npm i -g zerochat/);
+  assert.match(readme, /npx @zerochat\/cli/);
+  assert.match(readme, /npm i -g @zerochat\/cli/);
   assert.match(readme, /\^22\.22\.2 \|\| \^24\.15\.0 \|\| >=26\.0\.0/);
   for (const doc of ['docs/install.md', 'SECURITY.md', 'docs/verify.md']) {
     assert.ok(readme.includes(`https://github.com/tomeyer97/zerochat/blob/main/${doc}`), doc);
@@ -204,16 +204,16 @@ test('the completeness check passes only a full, consistent release set', () => 
   const full = () => layout({ out, binaries: allBinaries(), notices, cargo: { version: '1.2.3' } });
   full();
   assert.deepStrictEqual(check(out, { version: '1.2.3' }), []);
-  assert.strictEqual(readJson(path.join(out, 'zerochat/package.json')).private, undefined, 'complete: publishable');
+  assert.strictEqual(readJson(path.join(out, '@zerochat/cli/package.json')).private, undefined, 'complete: publishable');
 
   // The tag says another version.
-  assert.ok(check(out, { version: '1.2.4' }).some((p) => p === 'zerochat: version 1.2.3, not 1.2.4'));
+  assert.ok(check(out, { version: '1.2.4' }).some((p) => p === '@zerochat/cli: version 1.2.3, not 1.2.4'));
 
   // A platform package is missing: the main package is private, and check names the gap.
   const partial = tmp('zerochat-npm-');
   layout({ out: partial, binaries: { 'darwin-arm64': bins(target('darwin-arm64')) }, notices, cargo: { version: '1.2.3' } });
   const problems = check(partial, { version: '1.2.3' });
-  assert.ok(problems.includes('zerochat: private (a local or incomplete build)'), problems.join('\n'));
+  assert.ok(problems.includes('@zerochat/cli: private (a local or incomplete build)'), problems.join('\n'));
   for (const name of ['@zerochat/cli-linux-x64', '@zerochat/cli-linux-arm64', '@zerochat/cli-darwin-x64']) {
     assert.ok(problems.includes(`missing package ${name} (no package.json)`), name);
   }
@@ -227,15 +227,15 @@ test('the completeness check passes only a full, consistent release set', () => 
 
   // optionalDependencies that do not pin exactly the four platform packages at the version.
   full();
-  const mainFile = path.join(out, 'zerochat/package.json');
+  const mainFile = path.join(out, '@zerochat/cli/package.json');
   const main = readJson(mainFile);
   delete main.optionalDependencies['@zerochat/cli-darwin-x64'];
   fs.writeFileSync(mainFile, JSON.stringify(main));
-  assert.ok(check(out, { version: '1.2.3' }).some((p) => p.startsWith('zerochat: optionalDependencies ')));
+  assert.ok(check(out, { version: '1.2.3' }).some((p) => p.startsWith('@zerochat/cli: optionalDependencies ')));
 
   // No notices file.
   layout({ out, binaries: allBinaries(), cargo: { version: '1.2.3' } });
-  assert.ok(check(out, { version: '1.2.3' }).includes('zerochat: no THIRD_PARTY_NOTICES.md'));
+  assert.ok(check(out, { version: '1.2.3' }).includes('@zerochat/cli: no THIRD_PARTY_NOTICES.md'));
 
   // The command exits 1 and says nothing may be published.
   const cli = spawnSync(process.execPath, [BUILD, 'check', out, '--version', '1.2.3'], { encoding: 'utf8' });
@@ -243,14 +243,14 @@ test('the completeness check passes only a full, consistent release set', () => 
   assert.match(cli.stderr, /nothing may be published/);
 });
 
-test('publish order: the four platform packages first, zerochat last', () => {
+test('publish order: the four platform packages first, @zerochat/cli last', () => {
   const out = '/o';
   assert.deepStrictEqual(publishOrder(out), [
     '/o/@zerochat/cli-linux-x64',
     '/o/@zerochat/cli-linux-arm64',
     '/o/@zerochat/cli-darwin-x64',
     '/o/@zerochat/cli-darwin-arm64',
-    '/o/zerochat',
+    '/o/@zerochat/cli',
   ].map((p) => path.join(p)));
 });
 
@@ -319,6 +319,6 @@ test('layout names packages with the shim\'s rule (one place)', () => {
 });
 
 test('pack-list prints each file and a total', () => {
-  const json = JSON.stringify([{ name: 'zerochat', version: '1.0.0', entryCount: 2, size: 4500, files: [{ path: 'bin/zsf.js', size: 100 }, { path: 'bin/zsf', size: 5 << 20 }] }]);
-  assert.deepStrictEqual(packList(json), ['      0.1 kB  bin/zsf.js', '      5.0 MB  bin/zsf', '   zerochat@1.0.0: 2 files, 4.4 kB packed']);
+  const json = JSON.stringify([{ name: '@zerochat/cli', version: '1.0.0', entryCount: 2, size: 4500, files: [{ path: 'bin/zsf.js', size: 100 }, { path: 'bin/zsf', size: 5 << 20 }] }]);
+  assert.deepStrictEqual(packList(json), ['      0.1 kB  bin/zsf.js', '      5.0 MB  bin/zsf', '   @zerochat/cli@1.0.0: 2 files, 4.4 kB packed']);
 });
