@@ -137,16 +137,24 @@ Intro.
   assert.deepStrictEqual(git(dir, 'diff', '--name-only').trim().split('\n').sort(), [...EDITED].sort());
 });
 
-test("the repository's own CHANGELOG: the first release dates the pending section", () => {
+// The section written ahead of its release (`## [X.Y.Z] - Unreleased`), if the repository has one: a release
+// PR dates it, so after that release there is none and the test below has nothing to check.
+const PENDING = /^## \[(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)\] - Unreleased$/m.exec(read(ROOT, 'CHANGELOG.md'))?.[1];
+
+test("the repository's own CHANGELOG: releasing the pending section dates it", { skip: !PENDING && 'no section is waiting for its release' }, () => {
   const dir = scratch();
   const before = read(dir, 'CHANGELOG.md');
-  assert.match(before, new RegExp(`^## \\[${CURRENT.replace(/\./g, '\\.')}\\] - Unreleased$`, 'm'));
-  const r = bump(dir, CURRENT);
+  const r = bump(dir, PENDING);
   assert.strictEqual(r.status, 0, r.stderr);
   const after = read(dir, 'CHANGELOG.md');
-  assert.strictEqual(after, before.replace(`## [${CURRENT}] - Unreleased`, `## [${CURRENT}] - ${DATE}`));
-  // The version is unchanged, so only the CHANGELOG changed.
-  assert.strictEqual(git(dir, 'status', '--porcelain'), ' M CHANGELOG.md\n');
+  assert.ok(after.includes(`## [${PENDING}] - ${DATE}`), 'the pending section is dated');
+  assert.ok(!after.includes(`## [${PENDING}] - Unreleased`));
+  // Everything else in the notes stays: only that heading and the compare links change.
+  const body = (text) => text.replace(/^## \[.*$/gm, '').replace(/^\[[^\]]+\]: .*$/gm, '');
+  assert.strictEqual(body(after), body(before));
+  // A pending section of the current version changes only the CHANGELOG; a later one also the version.
+  const changed = git(dir, 'status', '--porcelain').split('\n').filter(Boolean).map((l) => l.slice(3)).sort();
+  assert.deepStrictEqual(changed, PENDING === CURRENT ? ['CHANGELOG.md'] : [...EDITED].sort());
 });
 
 test('a pre-release copies the Unreleased entries (the final release collects them)', () => {

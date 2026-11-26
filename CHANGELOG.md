@@ -17,11 +17,6 @@ How to write entries:
 
 ## [Unreleased]
 
-## [0.1.0-rc.1] - 2026-11-26
-
-A release candidate of 0.1.0 (the same contents) that runs the whole release pipeline once: the
-release notes are under 0.1.0 below. npm: `npm i -g @zerochat/cli@next`.
-
 ## [0.1.0] - Unreleased
 
 The first public release.
@@ -52,6 +47,11 @@ The first public release.
 - Known bugs are pinned by the golden tests and listed in [tests/KNOWN-BUGS.md](https://github.com/tomeyer97/zerochat/blob/main/tests/KNOWN-BUGS.md).
 - Benchmarks needs pb (ProgramBench runner), which is not public yet.
 - The local HTTP API has no per-start token yet: see [docs/threat-model.md](https://github.com/tomeyer97/zerochat/blob/main/docs/threat-model.md).
+
+## [0.1.0-rc.1] - 2026-11-26
+
+A release candidate of 0.1.0 (the same contents) that runs the whole release pipeline once: the
+release notes are under 0.1.0 below. npm: `npm i -g @zerochat/cli@next`.
 
 [Unreleased]: https://github.com/tomeyer97/zerochat/compare/v0.1.0-rc.1...HEAD
 [0.1.0-rc.1]: https://github.com/tomeyer97/zerochat/releases/tag/v0.1.0-rc.1
