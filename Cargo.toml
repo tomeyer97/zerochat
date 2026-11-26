@@ -4,7 +4,7 @@ members = ["crates/zerochat", "crates/zsf"]
 
 [workspace.package]
 # One version for zerochat, zsf and the npm packages (npm/build.js reads it from here).
-version = "0.1.0"
+version = "0.1.0-rc.1"
 edition = "2024"
 # The oldest Rust that builds it; rust-toolchain.toml pins this release.
 rust-version = "1.90"
